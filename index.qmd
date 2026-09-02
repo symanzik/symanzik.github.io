@@ -1,0 +1,37 @@
+---
+title: "J&uuml;rgen Symanzik"
+image: js.jpg
+about:
+  template: trestles
+  links:
+    - text: Department of Mathematics and Statistics Faculty Page
+      url: "https://artsci.usu.edu/math-stats/directory/faculty/symanzik-juergen"
+    - text: Google Scholar
+      url: "https://scholar.google.com/citations?user=9Vmsn3oAAAAJ&hl=en"
+    - text: ResearchGate
+      icon: journal
+      url: "https://www.researchgate.net/profile/Juergen-Symanzik"
+    - text: GitHub
+      icon: github
+      url: "https://github.com/symanzik"
+    - text: Email
+      icon: envelope
+      url: "mailto:juergen.symanzik@usu.edu"
+    - text: CV
+      url: "resume_2026_02.pdf"
+comments: false
+---
+
+::: column-page
+## Bio
+
+Dr. Symanzik joined Utah State University's Department of Mathematics and Statistics in 1999. He holds degrees in Statistics (1991) and Computer Science (1992) at the MS level (Universitaet Dortmund, Germany) and a co-major PhD (1996) in these two fields (Iowa State University, Ames, Iowa). His research interests include all forms of statistical graphics and visualization, e.g., static/dynamic/interactive, on the Web, in a geographical framework, and applied to educational and medical data.
+
+On this site, you can find a list of [my publications](papers), [presentations](talks), [classes taught](teaching), and [my CV](cv.pdf).
+
+<p>
+
+</p>
+:::
+
+<link rel="me" href="https://www.usu.edu/math/symanzik/">

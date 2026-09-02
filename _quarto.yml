@@ -1,0 +1,34 @@
+project:
+  type: website
+  resources:
+    - keybase.txt
+    - resume.pdf
+    - cv.pdf
+
+website:
+  title: "J&uuml;rgen Symanzik"
+  site-url: https://symanzik.github.io
+  description: "Mathematics and Statistics"
+  open-graph:
+    locale: en_US
+  twitter-card:
+    creator: "J&uuml;rgen Symanzik"
+  comments:
+    utterances:
+      repo: github.com/symanzik/symanzik.github.io
+  navbar:
+    right:
+      - text: "Home"
+        href: index.html
+      - text: "Papers"
+        href: papers
+      - text: "Presentations"
+        href: presentations
+      - text: "Teaching"
+        href: teaching
+  page-footer:
+    left: "© Copyright 2026 J&uuml;rgen Symanzik. Except where otherwise noted, all text and images licensed CC-BY-NC 4.0."
+format:
+  html:
+    theme: [sandstone, _variables.scss]
+    css: styles.css

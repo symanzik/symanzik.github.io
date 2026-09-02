@@ -1,0 +1,9 @@
+https://github.com/alburycatalina/Personal-Research-Website
+https://alburycatalina.github.io/
+
+https://quarto.org/docs/publishing/github-pages.html#github-action
+
+https://quarto.org/docs/gallery/#websites
+https://www.mm218.dev/
+https://github.com/mikemahoney218/mm218.dev
+https://github.com/mikemahoney218/mm218.dev/blob/main/index.qmd
