@@ -2,6 +2,8 @@ project:
   type: website
   resources:
     - resume.pdf
+    - "talks/"
+    - "teaching/"
 
 website:
   title: "J&uuml;rgen Symanzik"
