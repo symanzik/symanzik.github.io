@@ -1,0 +1,23 @@
+5) Khat and Simulation Envelopes:
+
+par (mfrow = c(1,2))
+
+vol.khat _ Khat (vol.spp, plot = F)
+plot (vol.khat$values[vol.khat$values[,1] < 500, ])
+title ("Khat & Simulation Envelopes, dist < 500")
+
+vol.kenv _ Kenv (vol.spp, nsims = 39, add = F)
+vol.index _ vol.kenv$dist < 500
+lines (vol.kenv$dist[vol.index], vol.kenv$lower[vol.index])
+lines (vol.kenv$dist[vol.index], vol.kenv$upper[vol.index])
+   # if there was any doubt - certainly clustering at these distances!
+
+
+plot (vol.khat$values[vol.khat$values[,1] < 100, ])
+title ("Khat & Simulation Envelopes, dist < 100")
+
+vol.index _ vol.kenv$dist < 100
+lines (vol.kenv$dist[vol.index], vol.kenv$lower[vol.index])
+lines (vol.kenv$dist[vol.index], vol.kenv$upper[vol.index])
+   # regularity not very likely at small distances!
+

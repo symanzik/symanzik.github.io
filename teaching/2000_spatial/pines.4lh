@@ -1,0 +1,19 @@
+4) Lhat and envelopes: Figure 8.7 (c) in Ripley
+
+pines.lhat _ Lhat (pines.spp)
+title ("Lhat")
+abline(0, 1)
+
+pines.env _ Lenv (pines.spp, nsims = 50, process = "binomial", 
+  boundary = bbox(x = c(0, 10), y = c(0, 10)))
+
+# concentrate on interval from 0.0 to 2.0
+
+pines.hatdist _ pines.lhat$values[,1] < 2.0
+plot (pines.lhat$values[pines.hatdist,])
+title ("Lhat in [0.0, 2.0]")
+lines (pines.env$dist[pines.hatdist], 
+  pines.env$upper[pines.hatdist])
+lines (pines.env$dist[pines.hatdist], 
+  pines.env$lower[pines.hatdist])
+abline(0, 1)

@@ -1,0 +1,14 @@
+5) Nearest Neighbor Plot Ghat and envelopes: should be Figure 8.7 (d) in Ripley
+
+pines.ghat _ Ghat (pines.spp, plot = F)
+
+pines.sdist = seq(0.0, 1.6, by = 0.05)
+
+pines.genv _ ghat.env (n = 71, s = 100, pines.sdist,
+  boundary = bbox(x = c(0, 10), y = c(0, 10)))
+
+plot (c(0, 1.6), c(0, 1.0), xlab = "distance", ylab = "Ghat", type = "n")
+title ("Ghat in [0.0, 1.6]")
+points (pines.ghat)
+lines (pines.sdist, pines.genv$Up, lty = 2)
+lines (pines.sdist, pines.genv$Down, lty = 2)

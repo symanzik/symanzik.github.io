@@ -1,0 +1,213 @@
+Stat 5810 Applied Spatial Statistics                                 Fall 2000
+
+
+                    Introduction to S+SpatialStats (2)
+                    ==================================
+
+                             Wed 11/15/00 
+
+
+Dr. Juergen Symanzik
+
+------------------------------------------------------------------------------
+
+References:
+
+Kaluzny, S. P., Vega, S. C., Cardoso, T. P., Shelly, A. A. (1998): 
+S+SpatialStats - User's Manual for Windows and UNIX, Springer, New York.
+
+------------------------------------------------------------------------------
+
+Analyzing Spatially Continuous Data:
+====================================
+
+Spatially continuous data sets included with S+SpatialStats:
+
+aquifer
+coal.ash
+iron.ore
+scallops
+
+------------------------------------------------------------------------------
+
+Basic Plots for  Spatially Continuous Data:
+
+par(mfrow = c(1, 3))
+plot(aquifer)
+
+par(mfrow = c(2, 2), pty = "s")
+plot(aquifer$easting, aquifer$northing)
+hist(aquifer$head)
+
+> summary (aquifer)
+     easting           northing            head     
+    Min.:-145.20      Min.:  9.414      Min.:1024  
+ 1st Qu.: -21.30   1st Qu.: 33.680   1st Qu.:1548  
+  Median:  11.66    Median: 59.160    Median:1797  
+    Mean:  16.89      Mean: 79.360      Mean:2002  
+ 3rd Qu.:  70.90   3rd Qu.:131.800   3rd Qu.:2540  
+    Max.: 112.80      Max.:184.800      Max.:3571  
+
+
+aqu.interp _ interp (x = aquifer$easting, y = aquifer$northing, 
+  z = aquifer$head / 1000)
+contour (aqu.interp)
+image (aqu.interp)
+
+par(mfrow = c(1, 1), pty = "s")
+persp (aqu.interp, zlab = "Z / 1000", eye = c(300, -1500, 15))
+cloud (head ~ easting * northing, data = aquifer)
+
+------------------------------------------------------------------------------
+
+Variogram Clouds and Variograms:
+
+aqu.varcloud _ variogram.cloud (head ~ loc(easting, northing), data = aquifer)
+
+> aqu.varcloud[1:10,]
+    distance iindex jindex    gamma 
+ 1  79.25931      1      2 592960.5
+ 2  61.29274      1      3 240818.0
+ 3  79.92831      1      4 491040.5
+ 4  82.80194      1      5  42632.0
+ 5  79.52998      1      6  28322.0
+ 6  84.51441      1      7  58140.5
+ 7 100.20856      1      8  55444.5
+ 8 107.15201      1      9  31250.0
+ 9  89.97830      1     10      2.0
+10 104.17854      1     11  35112.5
+
+
+aqu.varmom _ variogram (head ~ loc(easting, northing), data = aquifer)
+
+> aqu.varmom
+     distance      gamma  np azimuth 
+ 1   2.140951   7918.208  12       0
+ 2   6.768118  16691.490  52       0
+ 3  13.761070  18584.938  72       0
+ 4  20.591498  28335.207  87       0
+ 5  26.630336  29734.284  97       0
+ 6  33.884961  43063.465  85       0
+ 7  40.737678  60964.620  75       0
+ 8  47.272285  66935.436 110       0
+ 9  54.343456  81013.876 105       0
+10  61.152581 101877.250 114       0
+11  67.763697 123492.171 117       0
+12  74.583602 114557.912 142       0
+13  81.541152 170210.029 140       0
+14  87.940181 212991.636 154       0
+15  94.835540 238276.277 179       0
+16 101.764432 299421.709 206       0
+17 108.262561 329103.978 183       0
+18 115.246276 370136.633 162       0
+19 121.928166 351661.036 179       0
+20 128.654657 399034.124 125       0
+
+> summary(aqu.varmom)
+Call:
+variogram.formula(formula = head ~ loc(easting, northing), data = aquifer)
+      lag nlag  maxdist 
+ 6.776539   20 135.5308
+     distance           gamma              np       azimuth   
+    Min.:  2.141      Min.:  7918      Min.: 12.0   0:20     
+ 1st Qu.: 32.070   1st Qu.: 39730   1st Qu.: 86.5            
+  Median: 64.460    Median:108200    Median:115.5            
+    Mean: 64.490      Mean:153200      Mean:119.8            
+ 3rd Qu.: 96.570   3rd Qu.:253600   3rd Qu.:156.0            
+    Max.:128.700      Max.:399000      Max.:206.0            
+
+aqu.varrobust _ variogram (head ~ loc(easting, northing), data = aquifer,
+  method = "robust")
+
+
+par(mfrow = c(2, 2))
+
+plot (aqu.varcloud, main = "Variogram Cloud")
+
+plot (aqu.varmom, main = "Variogram (MoM)")
+
+plot (aqu.varrobust, main = "Variogram (Robust)")
+
+------------------------------------------------------------------------------
+
+Theoretical Variogram Models and Fitting a Theoretical Variogram:
+
+par (mfrow = c (2, 2))
+vdist _ 1:240
+vrange _ 120
+vsill _ 600000
+plot (vdist, exp.vgram(distance = vdist, range = vrange, sill = 600000), 
+  type = "l")
+plot (vdist, spher.vgram(distance = vdist, range = vrange, sill = 600000), 
+  type = "l")
+plot (vdist, gauss.vgram(distance = vdist, range = vrange, sill = 600000), 
+  type = "l")
+plot (aqu.varrobust, main = "Variogram (Robust)")
+
+> model.variogram(aqu.varrobust, fun = gauss.vgram,
+    range = vrange / 2, sill = 600000)
+Select a number to change a parameter (or 0 to exit):
+ Current objective = 666341708467
+1: range - current value: 60.
+2: sill - current value: 600000
+3: nugget - current value: 0
+Selection: 1
+New range : 90
+Select a number to change a parameter (or 0 to exit):
+ Current objective = 128252334042
+1: range - current value: 90.
+2: sill - current value: 600000
+3: nugget - current value: 0
+...
+
+------------------------------------------------------------------------------
+
+Trend Surface Models:
+
+aqu.lm1 _ lm (head ~ easting + northing, data = aquifer, x = T, y = T)
+
+> aqu.lm1
+Call:
+lm(formula = head ~ easting + northing, data = aquifer, x = T, y = T)
+
+Coefficients:
+ (Intercept)   easting  northing 
+    2591.327 -6.751872 -5.986175
+
+Degrees of freedom: 85 total; 82 residual
+Residual standard error: 203.3075 
+
+
+aqu.lm2 _ lm (head ~ easting * northing, data = aquifer, x = T, y = T)
+
+> aqu.lm2
+Call:
+lm(formula = head ~ easting * northing, data = aquifer, x = T, y = T)
+
+Coefficients:
+ (Intercept)   easting  northing easting:northing 
+    2626.994 -8.288185 -6.647954       0.02453368
+
+Degrees of freedom: 85 total; 81 residual
+Residual standard error: 191.9555 
+
+
+par (mfrow = c (2, 3))
+plot (aqu.lm1)
+plot (aqu.lm2)
+
+
+par (mfrow = c (1, 2))
+b0 _ coefficients(aqu.lm1)[1]
+b1 _ coefficients(aqu.lm1)[2]
+b2 _ coefficients(aqu.lm1)[3]
+aqu.pred _ b0 + b1 * aquifer$easting + b2 * aquifer$northing
+
+aqu.interppred _ interp (x = aquifer$easting, y = aquifer$northing, 
+  z = aqu.pred / 1000)
+
+persp (aqu.interp, zlab = "Z / 1000", eye = c(300, -1500, 15))
+persp (aqu.interppred, zlab = "Z / 1000", eye = c(300, -1500, 15))
+
+------------------------------------------------------------------------------
+

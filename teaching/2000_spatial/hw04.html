@@ -1,0 +1,111 @@
+<title>Stat 5810, Applied Spatial Statistics - Homework Assignment 4</title>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#OOOOOO">
+
+<h1>Stat 5810, Applied Spatial Statistics</h1>
+
+<center>
+Homework Assignment 4 (9/27/00)
+<BR>
+<BR>
+25 Points - Due Fr 10/6/00 by 4pm in my office or as a Web page
+</center>
+<BR>
+<BR>
+
+<b>You may work in groups of 2 people on this assignment
+and turn in a joint solution.</b>
+<BR>
+<BR>
+
+<em>You have to use S-Plus and S+SpatialStats to answer all of the following
+questions. Your solutions should consist of the S-Plus
+commands you have typed, any S-Plus functions you have written,
+and the output (text and postscript graphics) produced in
+S-Plus, i.e., exactly the same things as for Homework Assignment 3.</em>
+<BR>
+<BR>
+
+<ul>
+
+<li>1) Write a S-Plus function that creates a CSR pattern
+in the triangular region with vertices (x, y) = (0, 0), 
+(1, 0), and (0.5, 1). Note that <em>make.pattern</em>
+only supports rectangular boundaries - so you have to
+develop a completely new function based on the simulation
+mechanism described in Section 2.4.1. It might be easiest
+to develop 2 functions instead of one, i.e., one function that
+checks whether a randomly created point falls into the
+triangular region and one function that creates points in the
+rectangle that encloses the triangle until the desired
+number of points has been obtained.
+<BR>
+<BR>
+
+Simulate n = 1000 events inside this
+triangular region. Plot the raw data (and the triangular boundary)
+and provide at least two meaningful plots that verify
+that your simulated data indeed represents a homogeneous
+Poisson process
+in the triangular region. Comment on your results.
+(5 Points)
+<BR>
+<BR>
+
+<li>2) Write a S-Plus function for the Index of Dispersion Test
+discussed in Section 2.4.2. Work with randomly scattered
+quadrats in the region of interest (only use quadrats that
+fully fall inside this region). Input to this function
+should be the number m of quadrats, the identical area A of each quadrat,
+and an object of type spp. Make sure that the required conditions
+for this test are met (if not, prompt the user to increase m
+or use a larger area A).
+Test your function with the <em>quakes.bay</em> sample data set
+and different values for m and A.
+(5 Points)
+<BR>
+<BR>
+
+<li>3) Look at the other 3 sample point patterns that are
+available in S+SpatialStats, i.e., <em>bramble</em>, 
+<em>lansing</em>, and <em>quakes.wash</em>.
+Graphically (using at least 2 exploratory plots)
+assess whether one of these point patterns might represent 
+a homogeneous Poisson process. 
+(5 Points)
+<BR>
+<BR>
+
+<li>4) Using the <em>julian</em> function that
+converts between Julian and Calendar dates
+(an additional handout will be provided in class on Monday),
+extract the difference in days between two consecutive
+earthquakes from the <em>quakes.bay</em> data set.
+The <em>diff</em> command might also be helpful.
+<BR>
+<BR>
+Plot your obtained differences in days. Does your plot
+resemble any familiar distribution, e.g., exponential,
+gamma, log-normal, ...? If you think you identified
+the shape, use ML estimation to estimate the unknown
+parameter(s) of the assumed distribution.
+Use QQ plots (assuming a theoretical distribution
+based on your ML estimates) to further determine
+the distribution of the underlying data.
+(5 Points)
+<BR>
+<BR>
+
+<li>5) Argue why under H0, i.e., under CSR, the Byth & Ripley test
+statistic is approximately N(1/2, 1/(12m)) distributed. You can base
+your answer completely on simulations in S-Plus or formal
+arguments (without using S-Plus) or also combine simulation
+and formal arguments.
+(5 Points)
+<BR>
+<BR>
+
+
+</ul>
+ 
+

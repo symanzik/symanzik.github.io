@@ -1,0 +1,82 @@
+<html>
+<BODY bgcolor="FFFFFF" text="#000000">
+
+<h2>
+Stat 2000, Homework 6, Question 1 d) - Solution
+</h2>
+
+
+<BR><B>Residuals for Lurking Variables:</B><BR>
+
+There are many places on the Web that allow us to find some
+lurking variables, e.g.,
+<a href="http://geonames.usgs.gov/pls/gnis/web_query.gnis_web_query_form">
+http://geonames.usgs.gov/pls/gnis/web_query.gnis_web_query_form</a>
+<BR>
+
+Type in the city of interest under "Feature Name", select the
+"State or Territory", and click on "Send Query". This gives
+us the exact location (in latitude and longitude) of many places
+in the selected city. You can access the extended data set at
+<a href="http://www.math.usu.edu/~symanzik/teaching/2002_stat2000/hw05_weather_loc.dat">
+http://www.math.usu.edu/~symanzik/teaching/2002_stat2000/hw05_weather_loc.dat</a>
+<BR>
+<BR>
+
+Import this data into WebStat, construct the regression line,
+and plot the residuals versus Lat and Lon. 
+Decide yourself whether there is a (geographic) pattern of the Residuals
+with respect to Lat and Lon (negative values for the residuals have
+been brushed - these relate to cities in the central US). However,
+with only 8 data points, some patterns will occur just by chance!
+<BR>
+<BR>
+
+Here are the results:
+<BR>
+
+<BR CLEAR=LEFT><BR><A href="hw06_sol_dat.gif">
+<IMG SRC="hw06_sol_data.gif" BORDER=0></A>
+<BR>
+
+<BR><B>Simple linear regression results:</B><BR><B>Dependent Variable:</B>low<BR><B>Independent Variable:</B>high <BR><BR>Sample size: 10<BR>Correlation coefficient: 0.8649<BR>Estimate of sigma: 5.0653124<BR><BR><TABLE BGCOLOR=white BORDER=1 CELLPADDING=4 CELLSPACING=0 ALIGN=LEFT>
+<TR>
+<TD ALIGN=CENTER><B>Parameter</B></TD>
+<TD ALIGN=CENTER><B>Estimate</B></TD>
+<TD ALIGN=CENTER><B>Std. Err.</B></TD>
+<TD ALIGN=CENTER><B>DF</B></TD>
+<TD ALIGN=CENTER><B>T-Stat</B></TD>
+<TD ALIGN=CENTER><B>P-Value</B></TD>
+</TR>
+<TR>
+<TD>Intercept</TD>
+<TD ALIGN=RIGHT>5.537903</TD>
+<TD ALIGN=RIGHT>9.16283</TD>
+<TD ALIGN=RIGHT>8</TD>
+<TD ALIGN=RIGHT>0.6043878</TD>
+<TD ALIGN=RIGHT>0.2812</TD>
+</TR>
+<TR>
+<TD>high</TD>
+<TD ALIGN=RIGHT>0.6047056</TD>
+<TD ALIGN=RIGHT>0.1240954</TD>
+<TD ALIGN=RIGHT>8</TD>
+<TD ALIGN=RIGHT>4.872909</TD>
+<TD ALIGN=RIGHT>0.0006</TD>
+</TR>
+</TABLE>
+<BR CLEAR=LEFT>
+
+<BR CLEAR=LEFT><BR><A href="hw06_sol_reg.gif">
+<IMG SRC="hw06_sol_reg.gif" BORDER=0></A>
+
+<BR CLEAR=LEFT><BR><A href="hw06_sol_res1.gif">
+<IMG SRC="hw06_sol_res1.gif" BORDER=0></A>
+
+<BR CLEAR=LEFT><BR><A href="hw06_sol_res2.gif">
+<IMG SRC="hw06_sol_res2.gif" BORDER=0></A>
+
+
+</html>
+
+

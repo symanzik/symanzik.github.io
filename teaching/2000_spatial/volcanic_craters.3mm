@@ -1,0 +1,17 @@
+3) Simple Plots: Data and Kernel Estimates
+
+par (mfrow = c(2,2))
+par (pty = "s")
+plot (vol.spp, main = "Volcanic Craters")
+   # should be similar to Figure 3.1 in Bailey/Gatrell
+
+vol.kernel100 _ intensity (vol.spp, method = "kernel", bw = 100)
+image (vol.kernel100)
+
+vol.kernel220 _ intensity (vol.spp, method = "kernel", bw = 220)
+image (vol.kernel220)
+
+vol.kernel500 _ intensity (vol.spp, method = "kernel", bw = 500)
+image (vol.kernel500)
+   # should be similar to Figure 3.5 in Bailey/Gatrell
+

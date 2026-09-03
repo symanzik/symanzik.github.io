@@ -1,0 +1,33 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>HW 12 - Weiping</TITLE>
+</HEAD>
+<BODY>
+
+<B><P ALIGN="CENTER">Summary of Automating Statistics in WWW</P>
+</B><P ALIGN="CENTER">(After reading the paper: Automating Statistics in WWW,</P>
+<P ALIGN="CENTER">Computing Science and Statistics, Vol. 27, 1996, 485-489)</P>
+
+<BR>
+<BR>
+
+<P>  This paper investigated the feasibility of an approach using tools from the widely accessible WWW to facilitate the process of data collection and analysis. Their discussion is based on using the WWW as a medium to collect data, the programming language Perl to automate the coding of the data, and a Web browser as an interface to SAS for data analysis. Theses processes can be automated by the software system called CLS, providing an easy and quick method of collecting statistics via the WWW without any knowledge of HTML, PERL, or using SAS.</P>
+
+<P>  The CLS system main goal is to automate statistics in WWW by providing an interface for some statistical package. User only need to enter the questions for a survey, and interact through the same browser interface with a specific statistics package to obtain the desired results when data are collected. The initial CLS system uses the programming language Perl to write all the Common Gateway Interface (CGI) scripts.</P>
+
+<P>  The CLS system is basically comprised of three subsystems: <B>Survey Form Generation</B>,  <B>CGI Script Generation</B>, and <B>Data Analysis</B>. The first subsystem is responsible for the generation of HTML forms for the survey from information provided by the user. The second subsystem automatically generates the CGI scripts that handles the survey form and produces the SAS program that performs the basic data analysis. The third subsystem functions as a SAS graphical user interface. It generates appropriate procedures to create new SAS programs according to what analysis the user wants. The paper described in detail how the three phases work using examples and pictures. </P>
+
+<P>  There are some limitations concerning forms in WWW. No validation of input data is performed by the browser. Another limitation is concerning the stateless nature of the WWW client/server model. If multiple forms are required in a survey, the WWW server has no way to link the forms in a logical sequence. Surveys done using the WWW are able to collect a larger sample; however, it may be considered biased since only people with access to the Internet is being sampled.</P>
+
+<P>  The CLS system introduced in this paper did not allow modification of previously entered survey questions. The authors planned to add an option to allow modification of any previously entered question at any time before the generation of the final survey for. Also, the CLS system needs to allow multiple user access, and at the same time to ensure proper protection of file access of individual users. They liked to add password-required access to sensitive surveys that are to be protected from unauthorized net users.</P>
+
+<P>Weiping Deng<BR>
+06/03/00
+
+<BR>
+<BR>
+
+</BODY>
+</HTML>

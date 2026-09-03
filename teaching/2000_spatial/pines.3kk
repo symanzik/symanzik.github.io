@@ -1,0 +1,5 @@
+3) Simple Plot: Figure 8.7 (a) in Ripley
+
+par (mfrow = c(2,4))
+par (pty = "s")
+plot (pines.spp, main = "Pine Trees")

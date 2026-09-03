@@ -1,0 +1,71 @@
+<HTML>
+<HEAD>
+<TITLE>Chapter 27</TITLE>
+</HEAD>
+
+<BODY >
+<body bgcolor="ffffff">
+<body text="000000">
+<DIV ALIGN="CENTER">
+<FONT SIZE="+1"><B>Stat 1040
+<BR>
+Chapter 27 Solutions</B></FONT>
+<BR>
+</DIV>
+
+<P>
+
+<OL COMPACT>
+<LI VALUE=1> No. If they were correct, the number of positives should be like
+the sum of 500 draws from a box with one ``1'' and one ``0''. The expected number of 
+positives is 250 and the SE is sqrt{500}*0.5 = 11. The observed number of 
+positives is 2.4 SE's above what we would expect, so we conclude that 
+more than 50% of the tickets in the box show positive numbers.
+<P><LI VALUE=3><OL TYPE=a>
+        <LI> There are two samples, so we need a 2-sample z-test.
+        <LI> There are two boxes. In the 1985 box, there is a ticket for each person in the
+                population, marked ``1'' for those who would rate clergymen ``very high or 
+high'' and
+                marked ``0'' otherwise. The 1985 data are like 1000 draws from this box.
+                The 1992 box is set up the same way, for 1992. The null hypothesis says that the 
+                percentage of ``1''s in the 1985 box is the same as the percentage of ``1''s in the 1992
+                box. The alternative hypothesis says that the percentage of ``1''s in the 1992 box is 
+                smaller than that for the 1985 box.
+        <LI>   The SD of the 1985 box is estimated as sqrt{0.67*0.33} = 0.47 
+and the SE of the percent is 1.5%. Similarly, the SE for the 1992 percent is 1.6%.
+                The SE for the difference between these two percentages is sqrt{1.5^2 + 1.6^2} = 2.2%.
+                The observed percentages are 67% (1985) and 54% (1992), so the z-value is
+ z=(67-54)/2.2 = 6 and
+                the P-value is almost zero. We conclude that the difference is real (we can
+not say what the cause is).
+
+</OL><P><LI VALUE=7><OL TYPE=a>
+        <LI> The SE for the treatment percent is 2.0% and for the control percent it's 4.0%. The SE for the difference 
+        between the two percents is 4.5%. 
+        The observed difference is 1.1%, so z=0.24
+ and the P-value is large, so the observed difference
+        could easily be due to chance. There is no evidence that income support reduces recidivism.
+        <LI> The SE for the treatment average is 0.7, for the control it's 1.4, and for the difference it's 1.6.
+        The observed difference is -7.5 weeks, so z=-7.5/1.6 = -4.7 and the P-value is almost zero. We conclude that
+        the difference is real - income support makes the released prisoners work less.
+</OL><P><LI VALUE=8><OL TYPE=a>
+        <LI> The sample percentages are 47.8% and 4.4%. The standard errors for these 
+                percentages are 7.4% and 3.0%. The SE for the difference is 8%, so z=(47.8-4.4)/8 = 5.4.
+                The P-value is almost zero, so we reject the null hypothesis and conclude that the difference is
+                real - people are more likely to say they would do it than to actually do it.
+        <LI> The sample percentages are 30.4% and 4.4%. The standard errors are 6.8% and 3.0%.
+                The standard error of the difference is 7.4%, so z=(30.4-4.4)/7.4 = 3.5 and the P-value
+                is very small. We reject the null hypothesis and conclude that people are more likely to
+                volunteer if they have been first asked to predict whether they would.
+        <LI> These are the same people, so a 2-sample z-test is not valid (we need <i>independent</i>
+                simple random samples).
+</OL><P><LI VALUE=10>
+These are children from the same 400 families and the sampling was not random, so a 2-sample z-test is 
+not valid (we need <i>independent</i> simple random samples).
+
+</OL>
+
+<BR><HR>
+
+</BODY>
+</HTML>

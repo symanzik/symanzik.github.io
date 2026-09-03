@@ -1,0 +1,977 @@
+Stat 5810 Applied Spatial Statistics                                 Fall 2000
+
+
+                      Introduction to S and S-Plus
+                      ============================
+
+           Wed 9/13/00, Mon 9/18/00, Wed 9/20/00 & Mon 9/25/00
+
+
+Dr. Juergen Symanzik
+
+
+The material presented in this introduction is an update from 
+a workshop originally held in January 1997. The original material
+is available at 
+   http://math.usu.edu/~symanzik/teaching/1997_scourse/sintro
+
+
+------------------------------------------------------------------------------
+
+References:
+
+Becker, R. A., Chambers, J. M., and Wilks, A. R. (1988): The New S Language,
+Wadsworth & Brooks/Cole, Pacific Grove, CA.
+
+Chambers, J. M. (1998): Programming with Data - A Guide to the S Language,
+Springer, New York.
+[On reserve]
+
+Chambers, J. M., Hastie, T. J. (1993): Statistical Models in S,
+Chapman & Hall, New York, London.
+
+Kaluzny, S. P., Vega, S. C., Cardoso, T. P., Shelly, A. A. (1998): 
+S+SpatialStats - User's Manual for Windows and UNIX, Springer, New York.
+[On reserve]
+
+Krause, A., Olson, M. (2000): The Basics of S and S-Plus, 2nd Edition,
+Springer, New York.
+[1st Edition on reserve]
+
+Spector, P. (1994): An Introduction to S and S-Plus,
+Duxbury Press, Belmont, CA.
+[On reserve]
+
+Venables, W. N., Ripley, B. D. (1999): Modern Applied Statistics with S-Plus,
+3rd Edition, Springer, New York.
+[2nd Edition on reserve]
+
+------------------------------------------------------------------------------
+
+S/S-Plus on the WWW:
+
+S-Plus @ MathSoft:
+    http://www.splus.mathsoft.com/
+
+StatLib - Software and extensions for the S (S-Plus) language:
+    http://lib.stat.cmu.edu/S/
+
+  in particular: S-scripts for producing figures in W.S.Cleveland's 
+  "Visualizing Data" book (Hobart Press, Summit, New Jersey, 1993):
+    http://lib.stat.cmu.edu/S/visualizing.scripts
+
+StatLib - S-news Archive:
+    http://lib.stat.cmu.edu/s-news/
+
+Dalhousie University, Halifax, Nova Scotia, 
+Department of Mathematics and Statistics, S-Plus Tutorial:
+    http://www.mscs.dal.ca/Splus/contents.html
+
+B. Sueselbeck, Universitaet Muenster, Germany, S-Plus Help System:
+    http://www.uni-muenster.de/ZIV/Mitarbeiter/BennoSueselbeck/s-html/shelp.html
+
+A search for "Splus" using "Excite" resulted in about 7680 hits on
+9/13/00. In January 1997, the use of "Net Search" within Netscape
+resulted in 1022 documents found. The number of documents on the Web
+regarding S-Plus has been considerably increased over the last few
+years. It is to be expected that even more documents on S-Plus
+will be published on the Web in the near future.
+
+------------------------------------------------------------------------------
+
+Setting up .Data Directories & Starting S-Plus:
+
+% mkdir .Data
+% Splus
+
+# S-PLUS : Copyright (c) 1988, 1998 MathSoft, Inc.
+# S : Copyright Lucent Technologies, Inc.
+# Version 5.0 Release 3 for Sun SPARC, SunOS 5.5 : 1998 
+# Working data will be in .Data 
+ 
+!!! Warning: Different hardware platforms need different .Data directories !!!
+
+If Splus finds a .Data directory, it will use this directory to store all
+its data and user written functions. If NO .Data directory exists,
+Splus will create a new data directory called Schapterxxxx, where xxxx
+represents the process number of the Unix Splus process.
+Note that every Schapterxxxx directory contains a .Data subdirectory.
+
+% Splus
+
+# Creating data directory for chapter
+# S chapter initialized.
+# S-PLUS : Copyright (c) 1988, 1998 MathSoft, Inc.
+# S : Copyright Lucent Technologies, Inc.
+# Version 5.0 Release 3 for Sun SPARC, SunOS 5.5 : 1998 
+# Working data will be in /home/symanzik/Schapter793 
+
+
+Exiting S-Plus:
+
+> q()
+
+
+If you want to use a previously created data directory Schapterxxxx
+in another Splus session (that creates another data directory
+Schapteryyyy), this can be done using the attach command:
+
+> attach("Schapter793")
+
+Note that new data and user written functions will be written to
+the new Schapteryyyy/.Data directory. The old one will not be modified.
+
+Alternatively, you can cd into the Schapterxxxx directory and
+start Splus from there. Since in this case a local .Data directory
+is available, Splus will use this directory. No new Schapteryyyy
+directory will be created.
+
+------------------------------------------------------------------------------
+
+Getting Help:
+
+in S-Plus:
+
+> help ("command")
+
+e.g. help ("q")
+
+------------------------------------------------------------------------------
+
+A first Example:
+
+Starting a Graphics Window:
+
+> motif()
+
+The ":" operator generates a sequence of numbers:
+
+> 0:10
+ [1]  0  1  2  3  4  5  6  7  8  9 10
+> 0:10 * .314
+ [1] 0.000 0.314 0.628 0.942 1.256 1.570 1.884 2.198 2.512 2.826 3.140
+
+Assignment: "<-" or "_"
+
+> x0 <- 0:10
+> x0
+ [1]  0  1  2  3  4  5  6  7  8  9 10
+> x1 <- 0:10 * .314
+> x1
+ [1] 0.000 0.314 0.628 0.942 1.256 1.570 1.884 2.198 2.512 2.826 3.140
+> y _ sin (x1)
+> y
+ [1] 0.000000000 0.308865520 0.587527526 0.808736061 0.950859461 0.999999683
+ [7] 0.951351376 0.809671788 0.588815562 0.310379910 0.001592653
+
+Plotting:
+
+> plot (x1, y)
+> plot (x1, y, main = "Sine of x")
+> plot (x1, y, main = "Sine of x", xlab = "X Coordinates", ylab = "Y Coordinates")
+> plot (x1, y, main = "Sine of x", xlab = "X Coordinates", ylab = "Y Coordinates",
+  type = "l")
+
+------------------------------------------------------------------------------
+
+Question 1: Create a new plot of 101 points in the range [0, 2 pi] that 
+shows the cosine of these points. Points should be overlaid to the line
+that connects the points. Hint: See help page for "par". Guess how to get pi.
+
+------------------------------------------------------------------------------
+
+Data Structures/Accessing single components:
+
+Variables:
+
+> x1 _ 5
+> x1
+[1] 5
+
+Vectors:
+
+> x2 _ 1:10
+> x2
+ [1]  1  2  3  4  5  6  7  8  9 10
+> x2[3]
+[1] 3
+
+Matrices:
+
+> x3 _ matrix(1:10, 2, 5)
+> x3
+     [,1] [,2] [,3] [,4] [,5] 
+[1,]    1    3    5    7    9
+[2,]    2    4    6    8   10
+> x3[1,]
+[1] 1 3 5 7 9
+> x3[,4]
+[1] 7 8
+> x3[2,3]
+[1] 6
+
+> x4 _ matrix(1:10, 2, 5, byrow = T)
+> x4
+     [,1] [,2] [,3] [,4] [,5] 
+[1,]    1    2    3    4    5
+[2,]    6    7    8    9   10
+
+Lists:
+
+> x5 _ list (x1, x4, x2)
+> x5
+[[1]]:
+[1] 5
+
+[[2]]:
+     [,1] [,2] [,3] [,4] [,5] 
+[1,]    1    2    3    4    5
+[2,]    6    7    8    9   10
+
+[[3]]:
+ [1]  1  2  3  4  5  6  7  8  9 10
+> x5[[3]]
+ [1]  1  2  3  4  5  6  7  8  9 10
+> x5[[2]][,4]
+[1] 4 9
+
+Characters:
+
+> x6 _ c("alpha", "b", "3")
+> x6
+[1] "alpha" "b"     "3" 
+
+Logical values:
+
+> x7 _ c(T, F, F)
+> x7
+[1] T F F
+
+> x8 _ c(F, T, T)
+> x8
+[1] F T T
+
+> x6[x7]
+[1] "alpha"
+> x6[x8]
+[1] "b" "3"
+
+------------------------------------------------------------------------------
+
+Formulas and Basic Functions:
+
+> sum (x2)
+[1] 55
+> mean (x2)
+[1] 5.5
+> var (x2)
+[1] 9.166667
+
+> x2 * x2  
+ [1]   1   4   9  16  25  36  49  64  81 100
+> exp (x2)
+ [1]     2.718282     7.389056    20.085537    54.598150   148.413159
+ [6]   403.428793  1096.633158  2980.957987  8103.083928 22026.465795
+> log (x2)
+ [1] 0.0000000 0.6931472 1.0986123 1.3862944 1.6094379 1.7917595 1.9459101
+ [8] 2.0794415 2.1972246 2.3025851
+
+------------------------------------------------------------------------------
+
+Some Important Functions:
+
+c combines its arguments into a single vector:
+
+> data.vector <- c(1:3,5:7,9,11)
+> data.vector
+[1]  1  2  3  5  6  7  9 11
+
+
+rep replicates its first argument as many times as specified by its second argument:
+
+> rep(1,length(data.vector))
+[1] 1 1 1 1 1 1 1 1
+> rep(data.vector,2)
+[1]  1  2  3  5  6  7  9 11  1  2  3  5  6  7  9 11
+
+
+seq generates a sequence of numbers. The ":" operator is a special case 
+of the seq function:
+
+> seq(1,10)   # the same as 1:10
+[1]  1  2  3  4  5  6  7  8  9 10
+> seq(1,10,by=.5)
+ [1]  1.0  1.5  2.0  2.5  3.0  3.5  4.0  4.5  5.0  5.5  6.0  6.5  7.0  7.5  8.0
+[16]  8.5  9.0  9.5 10.0
+> seq(1,10,length=50)
+ [1]  1.000000  1.183673  1.367347  1.551020  1.734694  1.918367  2.102041
+ [8]  2.285714  2.469388  2.653061  2.836735  3.020408  3.204082  3.387755
+[15]  3.571429  3.755102  3.938776  4.122449  4.306122  4.489796  4.673469
+[22]  4.857143  5.040816  5.224490  5.408163  5.591837  5.775510  5.959184
+[29]  6.142857  6.326531  6.510204  6.693878  6.877551  7.061224  7.244898
+[36]  7.428571  7.612245  7.795918  7.979592  8.163265  8.346939  8.530612
+[43]  8.714286  8.897959  9.081633  9.265306  9.448980  9.632653  9.816327
+[50] 10.000000
+
+
+cut creates categories by cutting continuous data:
+
+> cut (data.vector, 3)
+[1] 1 1 1 2 2 2 3 3
+attr(, "levels"):
+[1] "0.9+ thru  4.3" "4.3+ thru  7.7" "7.7+ thru 11.1"
+
+
+sort returns an vector which is a sorted version of the input: 
+
+> sort (rep(data.vector,2))
+ [1]  1  1  2  2  3  3  5  5  6  6  7  7  9  9 11 11
+
+------------------------------------------------------------------------------
+
+Question 2: Calculate the temperature in degrees Celsius (C) for all
+Fahrenheit (F) degrees in the range -40 to 100 in steps of 10.
+The formula is: C = (F - 32) / 1.8
+
+------------------------------------------------------------------------------
+
+Logical Operations:
+
+> x2
+ [1]  1  2  3  4  5  6  7  8  9 10
+> x9 _ 11:2
+> x9
+ [1] 11 10  9  8  7  6  5  4  3  2
+
+> x2 >= x9       
+ [1] F F F F F T T T T T
+> x2 < x9
+ [1] T T T T T F F F F F
+
+> x2[x2 < x9]
+[1] 1 2 3 4 5
+
+------------------------------------------------------------------------------
+
+Dealing with NA's:
+
+> x10 _ -5:5
+> x10
+ [1] -5 -4 -3 -2 -1  0  1  2  3  4  5
+
+> x11 _ log (x10)
+Warning messages:
+  NAs generated in: log(x)
+> x11
+ [1]        NA        NA        NA        NA        NA      -Inf 0.0000000
+ [8] 0.6931472 1.0986123 1.3862944 1.6094379
+
+> median (x11)
+[1] NA
+> median (x11, na.rm = T)
+[1] 0.8958797
+> mean (x11[8:9])
+[1] 0.8958797
+
+> is.na(x11)
+ [1] T T T T T F F F F F F
+> x11 [ ! is.na(x11)]
+[1]      -Inf 0.0000000 0.6931472 1.0986123 1.3862944 1.6094379
+
+> median (x11 [ ! is.na(x11)])
+[1] 0.8958797
+
+------------------------------------------------------------------------------
+
+Matrix Algebra:
+
+> x12 _ matrix(1:4, 2, 2)
+> x12   
+     [,1] [,2] 
+[1,]    1    3
+[2,]    2    4
+> x12 * x12
+     [,1] [,2] 
+[1,]    1    9
+[2,]    4   16
+
+Matrix Multiplication:
+
+> x12 %*% x12
+     [,1] [,2] 
+[1,]    7   15
+[2,]   10   22
+
+Transpose:
+
+> t (x12)
+     [,1] [,2] 
+[1,]    1    2
+[2,]    3    4
+
+Inverse:
+
+> solve (x12)
+     [,1] [,2] 
+[1,]   -2  1.5
+[2,]    1 -0.5
+
+> x12 %*% solve(x12)
+             [,1]          [,2] 
+[1,] 1.000000e+00 -4.440892e-16
+[2,] 8.881784e-16  1.000000e+00
+
+Apply a Function to Sections of an Array
+(MARGIN parameter: 1 indicates rows and 2 indicates columns):
+
+> apply (x12, 1, exp)
+          [,1]      [,2] 
+[1,]  2.718282  7.389056
+[2,] 20.085537 54.598150
+> apply (x12, 2, exp)
+         [,1]     [,2] 
+[1,] 2.718282 20.08554
+[2,] 7.389056 54.59815
+
+
+Better example for apply:
+
+> matrix (9:1, 3, 3)
+     [,1] [,2] [,3] 
+[1,]    9    6    3
+[2,]    8    5    2
+[3,]    7    4    1
+> apply (matrix (9:1, 3, 3), 1, sort)
+     [,1] [,2] [,3] 
+[1,]    3    2    1
+[2,]    6    5    4
+[3,]    9    8    7
+> apply (matrix (9:1, 3, 3), 2, sort)
+     [,1] [,2] [,3] 
+[1,]    7    4    1
+[2,]    8    5    2
+[3,]    9    6    3
+
+------------------------------------------------------------------------------
+
+Reading in Data:
+
+The contents of the file js.data is:
+
+12 34 45 67
+31 45 43 76
+
+> jsread _ scan ("/home/symanzik/splus/js.data")
+> jsread
+[1] 12 34 45 67 31 45 43 76
+
+> jsread2 _ matrix( scan ("/home/symanzik/splus/js.data"), 2, 4)
+> jsread2   
+     [,1] [,2] [,3] [,4] 
+[1,]   12   45   31   43
+[2,]   34   67   45   76
+
+> jsread3 _ matrix( scan ("/home/symanzik/splus/js.data"), 2, 4, byrow = T)
+> jsread3   
+     [,1] [,2] [,3] [,4] 
+[1,]   12   34   45   67
+[2,]   31   45   43   76
+
+Finally, the right format!
+
+
+Reading in and Executing entire Files:
+
+> source ("/home/symanzik/splus/sourcetest")
+
+
+Reading Tables of Data - data frame:
+
+> jstable _ read.table ("/home/symanzik/splus/js.data")
+> jstable
+  V1 V2 V3 V4 
+1 12 34 45 67
+2 31 45 43 76
+> dim(jstable)
+[1] 2 4
+> dimnames(jstable)
+[[1]]:
+[1] "1" "2"
+
+[[2]]:
+[1] "V1" "V2" "V3" "V4"
+
+
+A standard data set:
+
+ state _ data.frame (state.center, state.x77, row.names = state.abb)
+> state [1:5, ]
+           x       y Population Income Illiteracy Life.Exp Murder HS.Grad 
+AL  -86.7509 32.5901       3615   3624        2.1    69.05   15.1    41.3
+AK -127.2500 49.2500        365   6315        1.5    69.31   11.3    66.7
+AZ -111.6250 34.2192       2212   4530        1.8    70.55    7.8    58.1
+AR  -92.2992 34.7336       2110   3378        1.9    70.66   10.1    39.9
+CA -119.7730 36.5341      21198   5114        1.1    71.71   10.3    62.6
+   Frost   Area 
+AL    20  50708
+AK   152 566432
+AZ    15 113417
+AR    65  51945
+CA    20 156361
+
+> dimnames(state.x77)[[2]]
+[1] "Population" "Income"     "Illiteracy" "Life Exp"   "Murder"    
+[6] "HS Grad"    "Frost"      "Area"      
+
+> state _ data.frame (state.center, state.x77,
+  name = state.name, region = state.region, row.names = state.abb)
+> state [1:5, ]
+           x       y Population Income Illiteracy Life.Exp Murder HS.Grad 
+AL  -86.7509 32.5901       3615   3624        2.1    69.05   15.1    41.3
+AK -127.2500 49.2500        365   6315        1.5    69.31   11.3    66.7
+AZ -111.6250 34.2192       2212   4530        1.8    70.55    7.8    58.1
+AR  -92.2992 34.7336       2110   3378        1.9    70.66   10.1    39.9
+CA -119.7730 36.5341      21198   5114        1.1    71.71   10.3    62.6
+   Frost   Area       name region 
+AL    20  50708    Alabama  South
+AK   152 566432     Alaska   West
+AZ    15 113417    Arizona   West
+AR    65  51945   Arkansas  South
+CA    20 156361 California   West
+
+------------------------------------------------------------------------------
+
+Attaching Other People's Directories:
+
+Check availability of data at the UNIX level:
+
+tolkien% pwd
+/home/symanzik/splus
+tolkien% ls -l
+total 6
+-rw-r--r--   1 symanzik staff         24 Sep 13 14:53 js.data
+-rw-r--r--   1 symanzik staff         87 Sep 13 14:53 sourcetest
+-rw-r--r--   1 symanzik staff         68 Sep 13 15:03 splusdemodata
+
+In Splus:
+
+> splusdemodata
+Error: Object "splusdemodata" not found
+> attach ("/home/symanzik/splus")   [needs full path]
+> splusdemodata
+ [1]  1  2  3  4  5  6  7  8  9 10
+
+
+Create a startup function:
+
+.First _ function()
+{
+ print ("Attaching JS directory")
+ attach ("/home/symanzik/splus")
+ print (splusdemodata)
+}
+
+quit Splus, restart, and see what happens
+
+
+Removing this function again:
+
+> rm (.First)
+
+
+Similarly:
+
+> xx _ 1
+> xx
+[1] 1
+> rm (xx)
+> xx
+Error: Object "xx" not found
+
+------------------------------------------------------------------------------
+
+Random Number Generation:
+
+> runif (100)
+  [1] 0.960659164 0.937460009 0.044101933 0.764618514 0.705857692 0.503550521
+  [7] 0.928648222 0.840273120 0.547101672 0.487805105 0.398984732 0.263519622
+ [13] 0.925924629 0.428514566 0.960061379 0.298337657 0.577215644 0.488645311
+ [19] 0.159736846 0.182527061 0.213183025 0.265985790 0.732723788 0.643868097
+ [25] 0.897489898 0.499814727 0.576943601 0.905813668 0.014425047 0.746565899
+ [31] 0.421574195 0.494985684 0.725713329 0.071925794 0.279651628 0.975036673
+ [37] 0.509669911 0.772227993 0.980533611 0.714941630 0.471561028 0.119847733
+ [43] 0.716741297 0.303822581 0.775616636 0.136684868 0.017757831 0.791862543
+ [49] 0.723880269 0.880876297 0.412518194 0.222057927 0.805116300 0.549268416
+ [55] 0.404414877 0.554270512 0.868483483 0.031665142 0.217252275 0.803386038
+ [61] 0.226833535 0.510908458 0.375442212 0.494554662 0.645866242 0.783326366
+ [67] 0.951738726 0.836408332 0.127163784 0.931654924 0.698016137 0.049239687
+ [73] 0.912288268 0.926898122 0.116276071 0.348985139 0.501943978 0.858758209
+ [79] 0.381377962 0.006793533 0.158040394 0.860326129 0.474985190 0.932033515
+ [85] 0.795743512 0.256793795 0.637563583 0.655271475 0.706128572 0.373451429
+ [91] 0.086245694 0.258623377 0.417373099 0.636045368 0.011345901 0.517812594
+ [97] 0.315782589 0.701276027 0.249960655 0.514386513
+> rnorm (100)
+  [1] -0.917764850 -1.761528002  0.303701970 -0.524866891  1.467455342
+  [6]  0.453631521  0.407779687  0.536222095  0.075956898  0.323955633
+ [11] -1.353166483 -2.422615027  0.344129949  2.464569565  2.990625941
+ [16] -1.556408910  1.271734502  1.544720216  0.803162292 -0.585806580
+ [21]  0.887564070 -2.356727153  1.269861580 -1.108051749  0.562733355
+ [26]  0.245423365  0.291905162  0.986758660  0.101259514  0.303514806
+ [31]  0.044807527  1.435044924 -2.459295013  0.907460530  0.508864764
+ [36] -1.118441465  0.513715984  0.582297380  2.286813997 -0.065091333
+ [41] -0.898497927  0.687970758 -0.762046062 -1.021641427  1.349464485
+ [46]  1.359369817  2.248522469 -1.270765249  0.198357403  2.484674224
+ [51] -1.604709652  1.351729921 -0.582867798 -0.485981545  0.963504212
+ [56] -0.563410076  1.323822092 -0.873647927 -1.700700570 -1.421790493
+ [61]  0.796397824 -0.248718984 -0.827949229  0.749582735  1.097697150
+ [66] -2.233537687  0.065925376 -0.315599656 -1.242237825 -0.967936934
+ [71] -1.294310424 -0.511646201 -1.183767255 -0.443604339 -0.168885605
+ [76]  0.417472634 -0.100217195  0.583684538 -0.282444864  0.189648235
+ [81]  0.009124648 -1.957229831 -0.843219234 -1.142369140 -1.625863978
+ [86] -0.593153260 -0.277026588 -1.036525482 -0.194730628 -0.952137384
+ [91]  0.372314331 -0.345667301  0.066380799 -0.712903265 -1.673258866
+ [96] -0.646916651 -0.446425318  0.489922573  0.449102068  0.008685083
+
+------------------------------------------------------------------------------
+
+More on Plotting:
+
+> hist (runif(100))
+> hist (runif(100))
+> hist (runif(100))
+
+> hist (rnorm(100))
+> hist (rnorm(100))
+> hist (rnorm(100))
+
+> boxplot (rnorm(100))
+> boxplot (rnorm(100))
+> boxplot (rnorm(100))
+
+> boxplot (runif(100), runif(100), rnorm(100), rnorm(100))
+
+> plot (sort (rnorm(100)), qnorm( (1:100 - 0.5) / 100))
+> plot (sort (rnorm(100)), qnorm( (1:100 - 0.5) / 100))
+> plot (sort (rnorm(100)), qnorm( (1:100 - 0.5) / 100))
+
+Creating multiple plots on 1 page:
+
+> par(mfrow = c(2,3))
+> plot (sort (rnorm(100)), qnorm( (1:100 - 0.5) / 100))
+> plot (sort (rnorm(100)), qnorm( (1:100 - 0.5) / 100))
+> plot (sort (rnorm(100)), qnorm( (1:100 - 0.5) / 100))
+> plot (sort (rnorm(100)), qnorm( (1:100 - 0.5) / 100))
+> plot (sort (rnorm(100)), qnorm( (1:100 - 0.5) / 100))
+> plot (sort (rnorm(100)), qnorm( (1:100 - 0.5) / 100))
+
+------------------------------------------------------------------------------
+
+Q3:
+
+There exist several other distributions such as 
+beta, cauchy, chisq, exp, f, gamma, lnorm, logis, norm, stab, t, unif.
+
+Select 4 of them, look up their parameters and see how a QQplot of
+random numbers vs quantiles looks. Plot all these QQplots on
+one single side. Give each plot an individual title. 
+Select a main title.
+
+------------------------------------------------------------------------------
+
+Writing Functions:
+
+myrexp _ function (mu, num = 1)
+{
+ cat ("This is my exp random function based on Inversion.\n", fill = T)
+ cat ("Calculating random value(s) from exponential with mu = ")
+ print (mu)
+ cat ("", fill = T)
+ cat ("That's all the text !", fill = T)
+
+ -mu * log (runif(num))
+}
+
+
+> myrexp (1)
+This is my exp random function based on Inversion.
+        
+Calculating random value(s) from exponential with mu = [1] 1
+
+That's all the text !
+[1] 2.141541
+
+
+Also try:
+myrexp (2, 100)
+
+hist (myrexp (2, 100))
+
+------------------------------------------------------------------------------
+
+Iterations:
+
+For loop (known number of iterations):
+
+> for (i in 1:5) print (i^2)
+[1] 1
+[1] 4
+[1] 9
+[1] 16
+[1] 25
+
+> for (i in c(3, 6, 10)) print (i^2)
+[1] 9
+[1] 36
+[1] 100
+
+
+While loop (check condition at the start):
+
+Solution to the famous birthday problem: Assuming birthdays
+are uniformly distributed over the year, how many people do
+I have to select randomly to obtain a probability >= 0.5
+that at least 2 people have the same birthday, i.e.,
+P(at least 2 identical birthdays) = 1 - P(no identical birthday)
+
+n _ 1
+pno _ 1
+while (pno > 0.5) 
+{
+  pno _ pno * (365 - n) / 365
+  n _ n + 1
+}
+
+> n
+[1] 23
+> pno
+[1] 0.4927028
+
+
+Repeat loop (check condition at the end):
+
+myfactorial _ function (n)
+{
+  if (n == 0) 
+    return (1)
+  fact _ 1
+  num _ 1
+  repeat
+  {
+    fact _ fact * num
+    num _ num + 1
+    if (num > n) break
+  }
+  fact
+}
+
+> myfactorial(0)
+[1] 1
+> myfactorial(1)
+[1] 1
+> myfactorial(2)
+[1] 2
+> myfactorial(3)
+[1] 6
+> myfactorial(4)
+[1] 24
+
+------------------------------------------------------------------------------
+
+What to avoid: 
+
+!!! Vectorize whenever possible !!!
+
+veryslow _ function (num)
+{
+ print (unix("date"))
+
+ x _ 1:num
+
+ for (i in 1:num)
+   x[i] _ x[i] * 2
+
+ print (unix("date"))
+
+ x
+}
+
+> test1 _ veryslow (10000)
+[1] "Wed Sep 13 15:20:54 MDT 2000"
+[1] "Wed Sep 13 15:21:03 MDT 2000"
+
+> test1 _ veryslow (10000)
+[1] "Wed Sep 13 15:21:20 MDT 2000"
+[1] "Wed Sep 13 15:21:29 MDT 2000"
+
+
+veryfast _ function (num)
+{
+ print (unix("date"))
+
+ x _ 1:num * 2
+ print (unix("date"))
+
+ x
+}
+
+> test2 _ veryfast (10000)
+[1] "Wed Sep 13 15:22:27 MDT 2000"
+[1] "Wed Sep 13 15:22:27 MDT 2000"
+
+> test2 _ veryfast (10000)
+[1] "Wed Sep 13 15:22:31 MDT 2000"
+[1] "Wed Sep 13 15:22:31 MDT 2000"
+
+------------------------------------------------------------------------------
+
+Fitting Linear Models:
+
+> attach (state)
+> summary (state)
+         x                y           Population        Income    
+ Min.   :-127.20   Min.   :27.87   Min.   :  365   Min.   :3098  
+ 1st Qu.:-104.20   1st Qu.:35.55   1st Qu.: 1079   1st Qu.:3993  
+ Median : -89.90   Median :39.62   Median : 2838   Median :4519  
+ Mean   : -92.46   Mean   :39.41   Mean   : 4246   Mean   :4436  
+ 3rd Qu.: -78.98   3rd Qu.:43.14   3rd Qu.: 4968   3rd Qu.:4813  
+ Max.   : -68.98   Max.   :49.25   Max.   :21200   Max.   :6315  
+                                                                 
+    Illiteracy       Life.Exp         Murder          HS.Grad     
+ Min.   :0.500   Min.   :67.96   Min.   : 1.400   Min.   :37.80  
+ 1st Qu.:0.625   1st Qu.:70.12   1st Qu.: 4.350   1st Qu.:48.05  
+ Median :0.950   Median :70.67   Median : 6.850   Median :53.25  
+ Mean   :1.170   Mean   :70.88   Mean   : 7.378   Mean   :53.11  
+ 3rd Qu.:1.575   3rd Qu.:71.89   3rd Qu.:10.670   3rd Qu.:59.15  
+ Max.   :2.800   Max.   :73.60   Max.   :15.100   Max.   :67.30  
+                                                                 
+      Frost             Area                   name             region   
+ Min.   :  0.00   Min.   :  1049   Wyoming      : 1   Northeast    : 9  
+ 1st Qu.: 66.25   1st Qu.: 36990   Wisconsin    : 1   South        :16  
+ Median :114.50   Median : 54280   West Virginia: 1   North Central:12  
+ Mean   :104.50   Mean   : 70740   Washington   : 1   West         :13  
+ 3rd Qu.:139.70   3rd Qu.: 81160   Virginia     : 1                     
+ Max.   :188.00   Max.   :566400   Vermont      : 1                     
+                                   (Other)      :44                
+
+
+> state.fit _ lm (Income ~ Illiteracy + HS.Grad + Murder, state)
+
+
+> state.fit
+Call:
+lm(formula = Income ~ Illiteracy + HS.Grad + Murder, data = state)
+
+Coefficients:
+ (Intercept) Illiteracy  HS.Grad   Murder 
+    2017.962  -176.8359 45.18885 30.47528
+
+Degrees of freedom: 50 total; 46 residual
+Residual standard error: 490.1023 
+
+
+> coef (state.fit)
+ (Intercept) Illiteracy  HS.Grad   Murder 
+    2017.962  -176.8359 45.18885 30.47528
+
+
+> summary (state.fit)
+
+Call: lm(formula = Income ~ Illiteracy + HS.Grad + Murder, data = state)
+Residuals:
+   Min     1Q Median    3Q  Max 
+ -1068 -274.7 -40.47 182.7 1204
+
+Coefficients:
+                 Value Std. Error    t value   Pr(>|t|) 
+(Intercept)  2017.9618   750.1040     2.6902     0.0099
+ Illiteracy  -176.8359   187.2546    -0.9444     0.3499
+    HS.Grad    45.1889    11.5143     3.9246     0.0003
+     Murder    30.4753    26.6988     1.1414     0.2596
+
+Residual standard error: 490.1 on 46 degrees of freedom
+Multiple R-Squared: 0.4028 
+F-statistic: 10.34 on 3 and 46 degrees of freedom, the p-value is 2.551e-05 
+
+Correlation of Coefficients:
+           (Intercept) Illiteracy HS.Grad 
+Illiteracy -0.5520                       
+   HS.Grad -0.9758      0.5061           
+    Murder -0.1324     -0.5811     0.0485
+
+
+> par(mfrow = c(2,3))
+> plot (state.fit)
+
+
+> state.fit2_ update (state.fit, . ~ . - Murder - Illiteracy)
+
+
+> summary (state.fit2)
+
+Call: lm(formula = Income ~ HS.Grad, data = state)
+Residuals:
+   Min     1Q Median    3Q  Max 
+ -1083 -277.4 -34.15 241.5 1238
+
+Coefficients:
+                Value Std. Error   t value  Pr(>|t|) 
+(Intercept) 1931.1047  462.7391     4.1732    0.0001
+    HS.Grad   47.1623    8.6161     5.4738    0.0000
+
+Residual standard error: 487.1 on 48 degrees of freedom
+Multiple R-Squared: 0.3843 
+F-statistic: 29.96 on 1 and 48 degrees of freedom, the p-value is 1.579e-06 
+
+Correlation of Coefficients:
+        (Intercept) 
+HS.Grad -0.9889    
+
+
+> plot (state.fit2)
+
+
+Other models: 
+
+  Analysis of Variance Model (aov)
+  Generalized Linear Model (glm)
+  Nonlinear Mixed Effects Model (nlme)
+  Nonlinear Least Squares Regression (nls)
+
+------------------------------------------------------------------------------
+
+Creating ps output files for future use:
+
+> dev.off ()                 [turn off previous graphics device]
+ null device 
+           1
+> postscript ("MYFILE")      [open ps graphics device]
+> plot (state.fit2)          [plot us usual]
+> dev.off ()                 [write to file - only this creates a correct file]
+Generated postscript file "MYFILE".
+ null device 
+           1
+
+Outside S-Plus:
+
+ghostview MYFILE              [to see the file on your screen]
+
+lpr MYFILE                    [to print the file]
+  
+------------------------------------------------------------------------------
+
+Additional Capabilities:
+
+
+Calling Fortran and C
+
+Having C call S-Plus
+
+Object-oriented stuff
+
+Advanced modeling
+
+Advanced graphics
+
+Additional packages based on S-Plus, e.g., spatial
+
+------------------------------------------------------------------------------

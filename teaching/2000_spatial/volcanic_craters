@@ -1,0 +1,29 @@
+Stat 5810 Applied Spatial Statistics                                 Fall 2000
+
+         Analysis of the Volcanic Craters Data by Bailey/Gatrell
+         =======================================================
+
+                               Mo 10/9/00
+
+
+Dr. Juergen Symanzik
+
+------------------------------------------------------------------------------
+
+1) Load the volcanic craters data from the Web, i.e., from
+  http://math.usu.edu/~symanzik/teaching/2000_spatial/infomap_data/Volcano.txt
+Store it locally in a file.
+Open the file in a text editor. 
+Remove the headings and the "'" symbols. 
+Then store the data set locally.
+
+2) Reading in the Data and Creating a SPP:
+
+3) Simple Plots: Data and Kernel Estimates
+
+4) Nearest Neighbor Plots, Khat & Lhat function:
+
+5) Khat and Simulation Envelopes:
+
+
+

@@ -1,0 +1,13 @@
+# test a bivariate normal with correlation 0 
+xn _ rnorm (1000)
+yn _ rnorm (1000)
+nn _ matrix (c(xn, yn), 1000, 2)
+par (mfrow = c(1, 2))
+plot (nn)
+drawquadrats (nn)
+
+nn2 _ nn[(nn[,1] < 0) & (nn[,2] < 0),]
+par (mfrow = c(1, 2))
+plot (nn2)
+drawquadrats (nn2)
+

@@ -1,0 +1,36 @@
+1) Coding of the binning function:
+
+binning _ function (spp, xbins = 10, ybins = 10)
+{
+  if (xbins < 1 || ybins < 1)
+  {
+    cat ("xbin and ybin must be >= 1.", fill = T)
+    return (matrix(-1, 1, 1))
+  }
+
+  bincount _ matrix(0, xbins, ybins)
+
+  x _ spp[,1]
+  y _ spp[,2]
+
+  xmin _ min (x)
+  xmax _ max (x)
+  ymin _ min (y)
+  ymax _ max (y)
+
+  deltax _ xmax - xmin
+  deltay _ ymax - ymin
+
+  for (i in 1:nrow(spp))
+  {
+    xx _ ifelse (x[i] == xmax, xbins, trunc ( (x[i] - xmin) / deltax * xbins + 1))
+    yy _ ifelse (y[i] == ymax, ybins, trunc ( (y[i] - ymin) / deltay * ybins + 1))
+    bincount[xx, yy] _ bincount[xx, yy] + 1
+  }
+
+  cat (sum(bincount))
+  cat (" events have been binned.", fill = T)
+
+  return (bincount)
+}
+

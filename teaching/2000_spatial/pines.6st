@@ -1,0 +1,6 @@
+6) Strauss process - Simple Plot
+
+pines.strauss _ make.pattern (71, process = "Strauss", 
+  radius = 0.7, cpar = 0.2, boundary = bbox(x = c(0, 10), y = c(0, 10)))
+
+plot(pines.strauss)

@@ -1,0 +1,50 @@
+Received: from zimbabwe.gis.iastate.edu (zimbabwe.gis.iastate.edu [129.186.142.124])
+	by pop-3.iastate.edu (8.8.5/8.8.5) with SMTP id OAA20050;
+	Mon, 9 Jun 1997 14:53:49 -0500 (CDT)
+Received: by zimbabwe.gis.iastate.edu with sendmail-5.65v3.2 
+	id <AA03354@zimbabwe.gis.iastate.edu>; Mon, 9 Jun 1997 14:53:47 -0500
+Message-Id: <9706091953.AA03354@zimbabwe.gis.iastate.edu>
+To: wqmeeker@iastate.edu
+Cc: symanzik@iastate.edu
+Subject: C in Splus: Thanks
+Date: Mon, 09 Jun 1997 14:53:47 CDT
+From: Nicholas Lewin <nlewin@iastate.edu>
+
+Dear Dr. Meeker,
+	Thanks for your advice this morning, I figured out the
+problem. Pointers of course. It seems Splus passes arrays as one
+long vector. I was using a double index so of course the array was
+out of bounds. Is there a way to force Splus to send a two
+dimensional array or is everything stored as vectors? Anyway the new
+commands for an alpha are for future reference
+
+1) compiling:
+ Splus SHLIB -o <out filename>.so <src1>.c <src2>.c ..... -lm
+returns a compiled libray <name>.so
+
+2) loading: the command is now
+dyn.load.shared("./<out filename>.so")
+
+3)calling: Calling the C or fortran routine is the same as in
+earlier versions using the .C or .Fortran commands
+
+Nicholas
+
+
+
+
+                      CH3                  
+                       |                          
+                       N                  Nicholas Lewin
+                      / \                 GIS Support and Research Facility
+                N----C   C==O             218 Durham Center
+               ||   ||   |                Iowa State University
+               ||   ||   |                Ames, IA 50011
+               CH    C   N--CH3
+                 \  / \ /                 nlewin@iastate.edu
+                  N    C                  515-294-2279 
+                  |   ||                  515-294-1717 (Fax)
+                 CH3   O
+
+          The Real Part of Coffee 
+

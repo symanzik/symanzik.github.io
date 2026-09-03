@@ -1,0 +1,150 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.7 [en] (X11; U; SunOS 5.7 sun4u) [Netscape]">
+   <title>Applied Spatial Statistics Project #1: Lancashire cancer data.</title>
+</head>
+<body bgcolor="#FFFFFF">
+
+<center><font size=+3>Analysis of Lancashire larynx and lung cancer data
+in R/ S/ S-plus and with the SPLANCS module</font>
+<br><font size=+2><a href="mailto:youjins@fox.cee.usu.edu">You Jinsheng</a>,
+<a href="mailto:tong.yin@usu.edu">Tong
+Yin</a>, <a href="mailto:gserbin@mendel.usu.edu">Guy Serbin</a>, <a href="mailto:sl977@cc.usu.edu">Mingyo
+Chung</a>, <a href="mailto:saraeva@aaron.cee.usu.edu">Katya Saraeva</a>,
+<a href="mailto:vasile@cc.usu.edu">Vasile
+Turcu</a></font></center>
+
+<hr><img SRC="green.gif" ><font size=+2>Introduction</font>
+<br><font size=+1>The Lancashire lung and larynx cancer data set contains
+population, lung and larynx cancer data sets. These data sets, when read
+into statistical software packages such as <a href="http://cran.R-project.org/">R
+(GNU S)</a>, S and S-plus, and used in conjuction with the SPLANCS module,
+may be analyzed to determine whether or the concentrations of certain cancers
+are due to local environmental or these occur randomly in the population.</font>
+<p><font size=+1>An overview of the steps that we took may be viewed <a href="Introduction.pdf">here</a>.</font>
+<p><img SRC="green.gif" ><font size=+2>Exportation of data from INFO-MAP
+and formatting</font>
+<br><font size=+1>The initial step to performing the data analysis is to
+download the data set from the INFO-MAP software package and format such
+that it may be read by your statistical software. <a href="import2.html">Instructions
+on how to do this may be found here.</a></font>
+<p><img SRC="green.gif" ><font size=+2>Reading the data into statistical
+software package</font>
+<br><font size=+1>Two data files are to be used in the analysis of this
+data set (Bailey and Gatrell, 1995):</font>
+<ol>
+<li>
+<font size=+1><a href="Larnyxy.txt">Larnyxy.txt</a> - Larynx cancer data</font></li>
+
+<li>
+<font size=+1><a href="LungCancer.txt">LungCancer.txt </a>- Lung cancer
+data</font></li>
+</ol>
+<img SRC="green.gif" ><font size=+2>The basic commands used are the following
+(Rowlingson and Diggle, 1993):</font>
+<p><b><font size=+1>Reading in the data from a text file(remember that
+both files are need to be used):</font></b>
+<br><font size=+1>cases _ spoints (scan ("cases.xy"))</font>
+<p><b><font size=+1>Plotting a dot plot:</font></b>
+<br><font size=+1>pointmap (cases)</font>
+<p><b><font size=+1>Drawing and adding a polygon:</font></b>
+<br><font size=+1>cases.poly _ getpoly()</font>
+<br><font size=+1>polymap (cases.poly, add=T)</font>
+<p><b><font size=+1>We need to define a distance scale at which to evaluate
+the K-functions. As a rule, it is useful only to evaluate the K-function
+up to about one-third of the linear extent of the polygon. At distances
+larger than this the K-function estimate becomes inefficient (we (and the
+book) suggest the range from 0 to 2000). The S function seq is used to
+generate a vector of distances for the K-function.</font></b>
+<br><font size=+1>s _ seq (from = 0, to = 2000, len = 20)</font>
+<br><font size=+1>Kcase _ khat (cases, cases.poly, s)&nbsp; <b>(the same
+for the "control" data set)</b></font>
+<br><font size=+1>SEcc _ secal (cases, cont, cases.poly, s)</font>
+<p><b><font size=+1>Now the difference between the K-functions can be plotted
+on a graph together with an approximate 95% confidence envelope calculated
+as +/-2SE:</font></b>
+<br><font size=+1>matplot (s, 2*cbind (SEcc, - SEcc), type = "l", lty =
+1, col = 1)</font>
+<br><font size=+1>lines (s, Kcase - Kcont, lwd = 2)</font>
+<br><font size=+1>title ("K-function difference and +/- 2SE envelope")</font>
+<p><img SRC="green.gif" ><font size=+2>The code that we used:</font>
+<pre><font size=+1>1. Load the library of splancs:
+
+> library(splancs)
+
+2. Read in the point datasets:
+
+Larynx.pts&lt;-spoints(scan("/home/ssa8/Larnyxy.txt"))
+LungCancer.pts&lt;-spoints(scan("/home/ssa8/LungCancer.txt"))
+
+3. Draw the point map of the datasets (two ways- separate maps
+for each data set and one with both data sets):</font></pre>
+
+<pre><font size=+1>a) 2 maps:
+&nbsp;
+par (mfrow = c (1,2))
+par (pty = "s")
+pointmap (LungCancer.pts)
+title(main="Lung cancer cases", xlab="Easting", ylab="Northing")
+pointmap (Larynx.pts)
+title(main="Larynx cancer cases", xlab="Easting", ylab="Northing")</font>
+
+<img SRC="map1.gif" ></pre>
+
+<pre><font size=+1>b) 1 map, 2 data sets:</font></pre>
+
+<pre><font size=+1>par (mfrow = c (1,1))
+par (pty = "s")
+pointmap(LungCancer.pts,pch="|", col = 1)
+pointmap(Larynx.pts, add = T, pch = "*", col = 2)
+title(main="Lung and larynx cancer cases", xlab="Easting", ylab="Northing")
+legend(x=346000, y=413000, c("Lung cancer", "Larynx cancer"), lty = 1, col = 1:2)</font>
+
+<img SRC="map2.gif" ></pre>
+
+<pre><font size=+1>4. Draw a polygon on the point map, and create a polygon map:
+
+> Larynx.poly&lt;-getpoly()&nbsp;&nbsp;&nbsp;&nbsp; #only once</font></pre>
+
+<pre><img SRC="map.gif" ></pre>
+
+<pre><font size=+1>OPTIONAL: To add the polygon map to the point plot:
+
+> polymap(Larynx.poly, add = T)</font></pre>
+
+<pre><font size=+1>5. Get the K-hat:
+
+s_seq(from=0, to =2000, len=20)
+Larynx.khat_khat(Larynx.pts,Larynx.poly,s)
+LungCancer.khat_khat(LungCancer.pts,Larynx.poly,s)
+
+6. Get Difference and plot:
+
+SEcc_secal(Larynx.pts,LungCancer.pts,Larynx.poly,s)
+matplot(s,2*cbind(SEcc,-SEcc),type='l',lty=1,col=1)
+lines(s,Larynx.khat-LungCancer.khat,lwd=2)
+title("Difference between K functions for larynx and lung cancers",
+&nbsp; xlab="distance", ylab="Difference in K functions and limits")</font></pre>
+
+<pre><img SRC="kfun.gif" height=445 width=576></pre>
+<img SRC="green.gif" ><font size=+2>References</font>
+<ol type="1">
+<li>
+<font size=+1>T. C. Bailey, A. C. Gatrell (1995): Interactive Spatial Data
+Analysis, Longman/Wiley, New York.</font></li>
+
+<li>
+<font size=+1>B.S.Rowlingson, P.J.Diggle (1993): SPLANCS: SPATIAL POINT
+PATTERN ANALYSIS CODE IN S-PLUS, <i>Computers and Geosciences</i>, <b>19</b>,
+5, pp. 627- 655.</font></li>
+</ol>
+
+<hr><img SRC="green.gif" ><font size=+1> </font><font size=+2>The free
+statistical S- based software package, as well as SPLANCS are available
+for a wide variety of platforms (including MS-Windows 9x/NT/2000) from
+<a href="http://cran.R-project.org/">CRAN,
+http://cran.R-project.org/</a>.</font>
+</body>
+</html>

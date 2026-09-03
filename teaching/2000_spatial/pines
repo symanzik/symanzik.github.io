@@ -1,0 +1,59 @@
+Stat 5810 Applied Spatial Statistics                                 Fall 2000
+
+         Analysis of the Pines Data by Ripley & Venables/Ripley
+         ======================================================
+
+                               Mo 10/23/00
+
+
+Dr. Juergen Symanzik
+
+------------------------------------------------------------------------------
+
+
+1) Reading in the Data and Creating a SPP:
+
+the file is stored at
+   /home/symanzik/splus/pines.dat
+
+
+2) ghat.env function from Kaluzny et al...
+
+ghat.env _ function (n, s, dist, 
+  boundary = bbox(x = c(0,1), y = c(0,1)))
+{
+  hold _ matrix(0, s, length(dist))
+  for (i in 1:s)
+  {
+    hold[i, ] _ Ghat(make.pattern(n, boundary = boundary), 
+      dist.ghat = dist, plot = F)[,2]
+  }
+
+  mn _ apply(hold, 2, mean)
+  Up _ apply(hold, 2, max)
+  Down _ apply(hold, 2, min)
+  return(data.frame(mn, Up, Down))
+}
+
+
+3) Simple Plot: Figure 8.7 (a) in Ripley
+
+
+4) Lhat and envelopes: Figure 8.7 (c) in Ripley
+
+# first plot this in the entire range,
+# then concentrate on interval from 0.0 to 2.0
+
+
+5) Nearest Neighbor Plot Ghat and envelopes: should be Figure 8.7 (d) in Ripley
+
+
+6) Strauss process - Simple Plot
+
+
+7) Strauss process - Lhat and envelopes: Figure 8.7 (e) in Ripley
+
+# first plot this in the entire range,
+# then concentrate on interval from 0.0 to 2.0
+
+

@@ -1,0 +1,33 @@
+4) Testing:
+
+x _ quakes.bay$longitude
+y _ quakes.bay$latitude
+
+x _ x[1:100]
+y _ y[1:100]
+
+xmin _ min (x)
+xmax _ max (x)
+ymin _ min (y)
+ymax _ max (y)
+
+deltax _ xmax - xmin
+deltay _ ymax - ymin
+
+xbins _ 5 
+ybins _ 5
+
+ifelse (x == xmax, xbins, trunc ( (x - xmin) / deltax * xbins + 1))
+
+spp _ matrix (c(x, y), 100, 2)
+binning (spp)
+binning (spp, 0, 1)
+binning (spp, 1, 1)
+binning (spp, 2, 2)
+binning (spp, 10, 15)
+
+drawquadrats (spp)
+drawquadrats (spp, 0, 1)
+drawquadrats (spp, 1, 1)
+drawquadrats (spp, 2, 2)
+drawquadrats (spp, 10, 15)

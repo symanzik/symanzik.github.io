@@ -1,0 +1,241 @@
+<HTML>
+<HEAD>
+<TITLE>Web-based Statistics: Lecture 12 - May 26, 2000</TITLE>
+</HEAD>
+<BODY BGCOLOR="white">
+<FONT SIZE=-1><I>Web-based Statistics:<BR>
+Lecture 12<BR>
+Friday, May 26, 2000
+</I></FONT>
+<BR>
+
+
+<CENTER>
+<H1>
+An  Introduction  to XploRe</H1>
+<P>
+<H3><a href="http://www.XploRe-stat.de" Target="top">
+http://www.XploRe-stat.de</a>
+</H3></CENTER>
+
+<BR>
+
+<P>
+XploRe is a combination of classical and modern statistical procedures. It is the basis for statistical analysis, research, and teaching. Its purpose lies in the exploration and analysis of data, as well as in the development of new techniques.
+ 
+<P>
+Now we want to see how its XploRe can be used as a statistical package to perform statistical analyses.
+
+<P>
+The <B>Net Based Statistics</B> exists. But it is inconvenient, because it will take long time to get response from the server. So we give it up and use the old version XploRe.
+
+<P>
+First, we must download XploRe package from the web. 
+
+<OL>
+
+<LI>Click <B>Try XploRe</B> on the homepage and get the download information.
+<LI>Fill out the form on the page. 
+<LI>Click <B>Submit All Given Information & Download</B> XploRe botton.
+<LI>Choose all files to download.
+<LI>Then install it according to the directions.
+<LI>After the files are installed, click on the XploRe icon, and three windows open up on the screen. 
+
+</OL>
+
+<P>
+These windows are:
+
+<UL>
+ 
+<LI>the <U>main window</U>, with its menu bar.(Click the program button and click new, we get the editor window in which we can write programs.)
+
+<LI>the <U>input window</U>, in which you can enter instructions interactively, the input-window   
+makes it enable to feed and execute single commandlines. A better functionality and a facility of writing procedures and complex programs over serveral lines allows the editor window. In this lecture we will use editor window . 
+
+<LI>the <U>output window</U>, which displays the numerical results and text information.
+
+</UL>
+
+<P>
+<H2>Read Data</H2>
+
+<P>
+We can open the editor-window in XploRe, and load the data from a file.
+
+<P>
+<B>(1) Use READ to read the Numerical Data.</B>
+
+<P>
+Now we will show you some simple examples using the data "pullover" within the XploRe datasets.
+
+<P>
+<B>Example 1.</B> How to read numerical data only(using build-in datasets "pullover")
+<P>
+<I>Solution:</I>  copy the following program in the editor window:
+
+<DIR>
+<PRE>          
+ x = read("pullover")  //pullover is the file name of data 
+ x    // if you want to list the data in the output window
+</PRE>
+</DIR>
+
+
+<P>
+<B>
+(2). Use READM to read the Mixed Data that contains Numerical Data and Text Data. </B></P>
+
+<P>
+<B>Example 2:</B> How to read mixed data (using user-entered datasets)
+Now open the following file:
+
+<BR>
+<DIR><a href="http://www.math.usu.edu/~vukasino/teaching/spring2000/complab/student_data1.prn" Target="top">
+http://www.math.usu.edu/~vukasino/teaching/spring2000/complab/student_data1.prn</a>,</DIR>and copy the data to a new  editor-window in the XploRe.  We should delete the first line. The data is in the matrix form. Then save the data as <I>user.dat</I> .
+
+<P>
+Let's open a new editor-window by clicking the program again. Since this data set includes both Numerical and Text Data, we use READM  to read the mixed data set.
+
+<P>
+Then copy the following lines into a new editor area:
+
+<DIR>
+<PRE>
+library("XploRe")
+x = readm("user")
+x
+</PRE>
+</DIR> 
+
+<P>
+Click the <B>Execute</B> to get the output. In the output-window, '<I>x.type</I>', '<I>x.double</I>' and '<I>x.text</I>' are shown. The original data set was divided into two  parts.  The numerical data are double type, and the character data are text type. The '<I>x.double</I>' has 5 variables in order : nr, age, sibling, height, weight. 
+
+<P>
+<H2>Compute statistics</H2>
+
+<P>
+Let's pick the last four numerical variables as matrix <B>y</B> to compute the statistics using function mean and median. Copy the following lines into the editor-window.
+
+<DIR>
+<PRE>
+y = x.double[ , 2:5]
+library("stats")
+mean(y)
+median(y)
+var(y)
+</PRE>
+</DIR>
+
+<P>
+We can also use the function <B>summarize</B> to obtain the statistical summary.
+
+<DIR>
+<PRE>
+library("stats")
+summarize(y, "age"|"sibling"|"height"|"weight")
+</PRE>
+</DIR>
+
+<P>
+<H2>Plot histogram and boxplot</H2>
+
+<P>
+Now, let's plot histogram and boxplot, using the functions <B>plothist</B> and <B>plotbox</B> to plot the fourth column height. Note that Plothist and plotbox can only plot for data in one column. Copy the following short program in a new editor.
+
+<DIR>
+<PRE>
+library("XploRe")
+x = readm("user")
+z = x.double[ , 4]
+library ("plot")
+plothist(z)
+plotbox(z)
+</PRE>
+</DIR>
+<P>
+Then click the <B>Execute</B>.
+
+<P>
+<B>Exercise 1.</B> Please write a program to plot the histogram and plotbox for age by yourselves.
+
+<P>
+<H2>Simple Linear Regression</H2>
+
+<P>
+Now, let's do the linear regression weight on age. First show the ANOVA table , and then plot the scatterplot and regression line. Copy the following program in a new editor-window.
+
+<DIR>
+<PRE>
+library("XploRe")
+x = readm("user")
+y = x.double[ , 2|5]
+y1 = y[ , 1]
+y2 = y[ , 2]
+library("stats")
+{b, bse, bstan, bpval} = linreg(y1, y2)
+library("plot")
+plot(y)
+regy=grlinreg(y)
+plot(y, regy)
+</PRE>
+</DIR>
+
+<P>
+<B>Exercise 2.</B>
+Please write a program, to obtain the ANOVA table, and plot the regression 
+line of height on age.
+
+
+<P>
+<H2>
+Basic features of XploRe</H2>
+
+
+<OL>
+  
+<LI>
+XploRe is developed for Windows 95 / NT, Solaris 2, HP-UX, SGI, and Linux 1.2. The Java Client/Server engines are available for these platforms as well. XploRe may be downloaded for a free trial period. 
+
+<P>
+<LI>
+The user writes procedures or functions, like in Pascal or C/C++. In contrast to these languages the declaration of variables is not necessary. Furthermore, variables can be collected in list structures, so that it is possible to hold common information of a data set in a single data object. 
+
+<P>
+<LI>
+Case sensitive.
+
+</OL>
+
+<P>
+<B>Homework:</B>
+
+<P>
+
+<OL>
+
+<LI>
+Write a program to plot the histogram and boxplot for sibling and weight ,  respectively.
+
+<P>
+<LI>
+Write a program to perform the regression analysis and plot the regression line of Weight on height.
+
+</OL>
+
+<BR>
+<BR>
+
+</BODY>
+</HTML>
+
+
+
+
+
+
+
+
+ 
+
+

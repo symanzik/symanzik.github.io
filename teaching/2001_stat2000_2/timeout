@@ -1,0 +1,99 @@
+From: "Palyne Gaenir" <palyne@sciencehorizon.com>
+Organization: ScienceHorizon Web Media
+To: Juergen Symanzik <symanzik@sunfs.math.usu.edu>
+Date: Mon, 10 Sep 2001 14:51:10 -0500
+Subject: (Fwd) 15min Security Timeout CyberStats
+
+Dear Juergen,
+
+Here is a fwd of a message I  sent another user recently which might 
+give some ideas for getting around the security timeout.  Try them  
+before you assume each one works for your particular computer setup,  
+though! We're here if you need anything else. -- Palyne,  CyberStats
+
+------- Forwarded message follows ------- 
+
+The 15 minute time is longer than secure sites such as banks will    
+give; we do not force a refresh on pages as 'truly' secure sites will 
+(except in our testbank).  But I agree, if you really want to do all  
+of a set of exercises (which often includes going browsing on the    
+internet and other things) while "sitting in" the page itself, it is  
+not nearly enough time to do all that before security times-out!    
+
+I will give you suggestions as "workarounds" I would use were I in    
+your situation.  Some are more complex than others but all will work  
+ pretty well.  There is no reason to lose data you have input.  It    
+only disappears if you don't go back and get it.    
+
+However, before I give you these ideas I have to bore you a bit: as   
+our User Agreement and other notes emphasize, work of quality    
+*should* be done on your own computer so you have a copy of your own  
+work, and so you can use the advantage of a basic word processor (or  
+at least a larger space than a little box!) to check spelling and    
+other things that affect the quality of work.    
+
+In the end you are responsible for your schoolwork. Any of the up-to- 
+ 30 internet links between your ISP and the webserver may go down,    
+your ISP could go down or disconnect you, you could lose power,    
+something in your environment could cause a power or keystroke issue, 
+ your software could freeze up, your security could time out -- there 
+  is a long list of reasons you should have your own copy of your   
+work.  No matter what thing "could" happen to affect your submission  
+ or its  receipt, you are responsible to your instructor for your   
+work.  So, a  backup -- for your own reference -- is a good  idea.  
+
+But here are some ideas for dealing with system time-out issues.   
+
+If you time-out, when you press the submit button it will take you to 
+ the login page.  If you are at that point, do one of two things:    
+
+1. Go ahead and log in.  Then use your browser's "back" key to    
+quickly go back a few times to the exercises page you were sitting    
+in, which should still be in your browser's cache (should include all 
+ your typing).  Press the submit button again. That should work.   
+
+2.  Better: Ignore the transfer to the login page, and go "back" to  
+the page you were in by using your browser's back key.  Then press  
+Ctrl+N (or   File / New) to open a new browser window.  In THAT  
+second/new  browser  window, go to the login page (bookmark this for  
+ease, or just hit submit on that one and it'll send you there).  Log  
+ in.  That  sets the values for all windows.  Switch back into your  
+Q&A page and press the submit button again.  That should work. 
+
+3.  Keep a second browser window open, say on your student home page, 
+ while you work in an exercises page.  Say you have 15 questions to   
+ answer.  Every time you finish answering a question, click on the    
+other page and press Ctrl+R (or the "refresh/reload" button).  This   
+ will "update" all your browser windows timeout (reset it to 0). As   
+ long as no single question takes more than 15 minutes, this would    
+work fine, and would keep your in-page connection live for working on 
+ pop-up interactivites, etc.   
+
+4.  As a more complicated approach, which will prohibit use of    
+interactivities during this but would open up to indefinite your time 
+ in-page otherwise, you could use either MS I.E. or Netscape to    
+"bookmark/save for offline viewing" a given area of the website.   
+
+This would probably save an entire unit at a time just FYI; don't    
+choose to save more than 1 level, no off-server links, etc. (or it'll 
+ take eons to save it all). (Also, you'd need to do this in a browser 
+  program, not Acrobat/Word, because you'll need to be connected to   
+ browser cookie values that come when you login later.)  Then you    
+could go to the page offline and spend as long as you wanted in it... 
+   
+...When you are ready to submit, open a second browser window and log 
+ into the website with it, and then go back to your first browser    
+window with the saved page, and press the submit button.  Because the 
+ value that is set with login will apply to all your browser windows  
+  that should also work fine.   
+
+Hope this helps!   
+
+Regards,   
+Palyne   
+Program Manager   
+CyberStats   
+
+------- End of forwarded message ------- 
+
+

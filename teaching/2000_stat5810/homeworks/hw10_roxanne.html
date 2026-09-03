@@ -1,0 +1,134 @@
+<HTML>
+<HEAD>
+ <TITLE>HW 10 - Roxanne</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="white">
+
+<H2>
+Homework #10
+</H2>
+
+<BR><BR>
+ 
+<B><FONT SIZE=+2>
+Rweb:</FONT></B>
+
+<P>Correlation between height and weight: 
+<DIR>
+<PRE>
+Height 1.0000000 Weight 0.5379353
+</PRE>
+</DIR>
+
+<P>Summary statistics:
+<DIR>
+<PRE>
+Height           Weight
+
+Min. :  59.00    Min. :  108.0
+1st Qu.:67.00    1st Qu.:142.5
+Median :69.00    Median :155.0
+Mean :  69.12    Mean :  159.9
+3rd Qu.:72.50    3rd Qu.:173.0
+Max. :  74.00    Max. :  250.0
+Std Dev: 3.98    Std Dev: 28.9
+</PRE>
+</DIR>
+
+<P>Scatterplot:
+<CENTER><IMG SRC="Image39.gif"></CENTER>
+
+<P>
+<B><FONT SIZE=+2>
+WebStat:</FONT></B>
+
+<OL TYPE = "a">
+
+<LI>
+Labor force participation rate of women for 1968 and '72 for 19 
+cities according to the US Dept of Labor Statistics.
+<LI>
+The difference was zero in only 4 out of 19 cities.  
+Pval=0.024 so Ho is rejected at the 5% confidence level.
+<LI>
+1972:  mean= 0.5268 var= 0.0050 s= 0.0708 median= 0.53
+<LI>
+1968: mean= 0.4932 var= 0.0046 s= 0.0680 median= 0.5
+<LI>
+I did a means plot to display the data.
+
+</OL>
+
+<P>
+<B><FONT SIZE=+2>
+XploRe:</FONT></B>
+
+<P>
+<I>hw#1</I>
+
+<DIR>
+<PRE>
+library("XploRe")
+x = readm("user")
+z = x.double[ , 3]
+library ("plot")
+plothist(z)
+plotbox(z)
+<BR><BR>
+library("XploRe")
+x = readm("user")
+z = x.double[ , 5]
+library ("plot")
+plothist(z)
+plotbox(z)
+</PRE>
+</DIR>
+
+<P>
+<I>hw#2</I>
+
+<DIR>
+<PRE>
+library("XploRe")
+x = readm("user")
+y = x.double[ , 5|4]
+y1 =3D y[ , 1]
+y2 =3D y[ , 2]
+library("stats")
+{b, bse, bstan, bpval} =3D linreg(y1, y2)
+<BR><BR>
+library("plot")
+plot(y)
+regy=3Dgrlinreg(y)
+plot(y, regy)
+</PRE>
+</DIR>
+
+<B><FONT SIZE=+2>
+Master of Statlets HW:</FONT></B>
+
+<P>
+After loading the data into Statlets, I changed the outlier 103 to 67 inches then did a t-test.
+<PRE>
+95% confidence interval: [68.3,70.8]
+H0: mu=68", we do reject.
+</PRE>
+<P>
+Another reason:  Not only do we get this result from the applet, we know we will reject because 68.0 does not fall within this interval.
+Would not reject for any value of mu that is within the interval [68.3,70.8]
+</P>
+
+
+<P>
+<I>Roxanne Drachenberg<BR>
+(435) 752-8375<BR>
+<a href="mailto:roxanned@pcu.net">roxanned@pcu.net</a>
+</I>
+
+<BR>
+<BR>
+
+</BODY>
+
+</HTML>

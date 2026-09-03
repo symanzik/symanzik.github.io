@@ -1,0 +1,16 @@
+7) Strauss process - Lhat and envelopes: Figure 8.7 (e) in Ripley
+
+pines.strlhat _ Lhat (pines.strauss)
+pines.strkenv _ Lenv (pines.strauss, nsims = 50, process = "Strauss", 
+  radius = 0.7, cpar = 0.2, boundary = bbox(x = c(0, 10), y = c(0, 10)))
+title ("Lhat for Strauss")
+
+# concentrate on interval from 0.0 to 2.0
+
+pines.strhatdist _ pines.strlhat$values[,1] < 2.0
+plot (pines.strlhat$values[pines.strhatdist,])
+title ("Lhat for Strauss in [0.0, 2.0]")
+lines (pines.strkenv$dist[pines.strhatdist], 
+  pines.strkenv$upper[pines.strhatdist])
+lines (pines.strkenv$dist[pines.strhatdist], 
+  pines.strkenv$lower[pines.strhatdist])

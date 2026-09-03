@@ -1,0 +1,110 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.76 [en] (Windows NT 5.0; U) [Netscape]">
+   <title>Importation of Lancashire</title>
+</head>
+<body bgcolor="FFFFFF">
+
+<center><font size=+3>Importation of Lancashire larynx and lung cancer
+data from INFO-MAP to R/ S/ S-plus</font></center>
+
+<hr><font size=+1>Assuming that you have the INFO-MAP software installed
+on your PC, you may proceed with following steps:</font>
+<br><img SRC="green.gif" ><font size=+1> </font><font size=+2>Exportation
+of data set from INFO-MAP to text file:</font>
+<ol type="1">
+<li>
+<font size=+1>Run INFO-MAP (C:\INFOMAP\INFOMAP.EXE).</font></li>
+
+<li>
+<font size=+1>Press Alt+F to access file menu, choose open option us up
+or down arrows.</font></li>
+
+<li>
+<font size=+1>In the window that opens up, use down arrow to find and choose
+"Lancashire lung &amp; larynx cases", and press ENTER key.</font></li>
+
+<li>
+<font size=+1>Press Alt+D to bring up Data menu and choose "Open".</font></li>
+
+<li>
+<font size=+1>Press Alt+D to bring up Data menu and choose "Modify".</font></li>
+
+<li>
+<font size=+1>In the next screen,press Alt+D to bring up Data menu and
+choose "Export".</font></li>
+
+<li>
+<font size=+1>Choose file name to be exported (program defaults to "larynx.txt"),
+and then press the ENTER key. From hereon you need to hit Alt+F twice in
+order to exit INFO-MAP.</font></li>
+</ol>
+<font size=+1><b>IMPORTANT:</b> This data file should be imported into
+spreadsheet and "cleaned up" so that it can be read into R/ S/ S-plus.
+It would also be advisable to break this data set up into two different
+files. The raw text file, <a href="larynx.txt">larynx.txt</a> may be viewed
+<a href="larynx.txt">here</a>.
+Please note that it is necessary to delete all header and text information
+(such as those in quotes), as well as population data, separate out the
+two different data types of interest(lung cancer case locations and larynx
+case locations) and then remove all data cells containing values of 1.00
+and -999.00.</font>
+<br><img SRC="green.gif" ><font size=+1> </font><font size=+2>Importation
+of data set from INFO-MAP to Microsoft Excel for preparation of text files
+(these can and should be adapted for different spreadsheet programs such
+as StarOffice, QuattroPro, Lotus 123, etc.):</font>
+<ol type="1">
+<li>
+<font size=+1>In Excel, type Alt+O, go into the /File/Open menu or press
+the open file button.</font></li>
+
+<li>
+<font size=+1>In the dialog box change "Files of type" option to "All files"
+or "Text files". Go to directory where "larynx.txt" resides and double
+click on file to open.</font></li>
+
+<li>
+<font size=+1>In the "Import file" dialog box you must choose the "Fixed
+width" (the default) option. Click on "Next".</font></li>
+
+<li>
+<font size=+1>It may be necessary in this screen to add a delimiting line
+between the first and second columns. If this is the case do so. Afterwards
+you may click on the "Finished" button.</font></li>
+
+<li>
+<font size=+1>It is the recommended to add two worksheets to this Excel
+workbook. This may be achieved either via right clicking the tab at the
+bottom of the worksheet and choosing "Insert" or going to /Insert/Worksheet
+menu. You may also use "Notepad" instead of using worksheets.</font></li>
+
+<li>
+<font size=+1>The two data sets of interest are easily distinguishable
+from each other by the type of data in them. Data sets are determinable
+by where values in the three rightmost columns change from -999.00 to some
+other value. From analyzing the first five rows on the raw text file, we
+can tell that the column "B" is Easting, "C" is Northing, with the data
+sets being defined by non- -999.00 values in columns "D" population data,
+then "E" lung cancer data and lastly "F" larynx cancer data. As the only
+thing of interest in these data sets are the coordinates of each individual
+case, we only need copy the easting and northing data (columns "B" and
+"C") for that set.</font></li>
+
+<li>
+<font size=+1>The lung cancer data set has a total of 917 cases/ records/
+rows. Paste and save in a file name that is easy to identify.</font></li>
+
+<li>
+<font size=+1>The larynx cancer data is to be dealt with in a similar manner
+as the lung cancer, excepting the fact that it only has 57 cases/ rows/
+records.</font></li>
+</ol>
+
+<p><br><font size=+1><b>If you have succeeded in doing all of these steps
+then you are ready to continue on to the next steps of the data analysis.
+<hr><img SRC="green.gif" ></b> <a href=".">Back to the Lancashire lung
+and larynx cancer data analysis instruction page.</a></font>
+</body>
+</html>
