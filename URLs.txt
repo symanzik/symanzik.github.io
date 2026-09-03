@@ -1,10 +1,12 @@
+https://quarto.org/docs/publishing/github-pages.html#github-action
+https://quarto.org/docs/gallery/#websites
+
+Catalina Albury
 https://alburycatalina.github.io/
 https://github.com/alburycatalina/alburycatalina.github.io
 https://github.com/alburycatalina/Personal-Research-Website
 
-https://quarto.org/docs/publishing/github-pages.html#github-action
-https://quarto.org/docs/gallery/#websites
-
+Mike Mahoney
 https://www.mm218.dev/
 https://github.com/mikemahoney218/mm218.dev
 https://github.com/mikemahoney218/mm218.dev/blob/main/index.qmd
