@@ -1,0 +1,236 @@
+<title>Stat 2000, Section 002, Homework Assignment 9</title>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#OOOOOO">
+
+<h1>Stat 2000, Section 002, Homework Assignment 9 (Due 11/5/2001 11:59pm)</h1>
+
+
+<ul>
+<li>*) <font color="#FF0000">Reminder: Quiz 2 will take place
+on Friday 11/2/2001</font>
+<BR>
+<BR>
+
+Note that all the material discussed
+in class (that is not part of CyberStats) is relevant for the
+quiz as well.
+<BR>
+<BR>
+
+<li>0) Review: CyberStats Units A.5 - A.8 and D.1 - D.3 
+(as outlined in Homework 8), Additional Handouts,
+<font color="FF0000">Homework Solutions</font>
+<BR>
+<BR>
+
+<li>1) Please work on the following CyberStats exercises:
+<BR>
+<BR>
+
+<ul>
+
+<li> Unit A-8 -- Correlation Describing Bivariate Data, 
+Exercises 1.8 - 1.16 (1/2 Point each)
+<BR>
+<BR>
+
+<li> Unit D-2 -- Simple Linear Regression, 
+Exercises 1.1 - 1.3 (1/2 Point each)
+<BR>
+<BR>
+
+<li> Unit D-3 -- Residuals, 
+Exercises 1.6 - 1.9, 1.15-1.16 (1/2 Point each)
+<BR>
+<BR>
+
+</ul>
+
+<li>2) Lamb's-quarter is a common wheat that interferes with the
+growth of corn. An agriculture researcher planted corn at the same
+rate in 16 small plots of ground, then weeded the plots by hand
+to allow a fixed number of lamb's-quarter plants to grow in each
+meter of corn row. No other weeds were allowed to grow. Here are
+the yields of corn (bushels per acre) in each of the plots
+(data provided by Samuel Phillips, Purdue University):
+<BR>
+<BR>
+
+<CENTER>
+<TABLE BORDER=2>
+<TR ALIGN="LEFT"><TD>Weeds</TD> <TD>Corn</TD> </TR>
+<TD>  0 </TD> <TD> 166.7 </TD></TR>
+<TD>  0 </TD> <TD> 172.2 </TD></TR>
+<TD>  0 </TD> <TD> 165.0 </TD></TR>
+<TD>  0 </TD> <TD> 176.9 </TD></TR>
+<TD>  1 </TD> <TD> 166.2 </TD></TR>
+<TD>  1 </TD> <TD> 157.3 </TD></TR>
+<TD>  1 </TD> <TD> 166.7 </TD></TR>
+<TD>  1 </TD> <TD> 161.1 </TD></TR>
+<TD>  3 </TD> <TD> 158.6 </TD></TR>
+<TD>  3 </TD> <TD> 176.4 </TD></TR>
+<TD>  3 </TD> <TD> 153.1 </TD></TR>
+<TD>  3 </TD> <TD> 156.0 </TD></TR>
+<TD>  9 </TD> <TD> 162.8 </TD></TR>
+<TD>  9 </TD> <TD> 142.4 </TD></TR>
+<TD>  9 </TD> <TD> 162.8 </TD></TR>
+<TD>  9 </TD> <TD> 162.4 </TD></TR>
+</TABLE>
+</CENTER>
+<BR>
+
+
+The output below has been obtained from WebStat for the data 
+listed above. (5 Points)
+<BR>
+<BR>
+
+<PRE>
+Simple linear regression results: 
+
+Independent variable: var1
+Dependent variable: var2
+Sample size: 16
+Correlation coefficient: -0.4596
+(See fitted line plot in Graphics Panel.)
+Estimate of sigma: 8.006156
+
+Parameter   Estimate     Std. Err.   DF   Tstat        Pval
+Intercept   166.48334    2.734623    14   60.879814    0
+var1        -1.1102564   0.5733327   14   -1.9364958   0.0366
+</PRE>
+
+<img src="hw09_weeds.gif">
+<BR>
+<BR>
+
+<ul>
+
+<li>a) Indicate the exact values for slope, y-intercept, the regression equation,
+and the correlation coefficient obtained from WebStat. What is the explanatory
+variable and what is the response variable? Comment on the relationship.
+<BR>
+<BR>
+
+<li>b) Use this regression equation to predict the corn yield for 5, 10, and 
+100 weeds per meter. Which of these predictions are meaningful, which not?
+Explain your answer.
+<BR>
+<BR>
+
+<li>c) Below is a plot of the residuals versus Weeds. Does the residual
+plot show any unusual pattern or do you think that, based on this
+residual plot, our least squares regression line describes the
+data reasonably well?
+<BR>
+
+<img src="hw09_weeds_resids.gif">
+<BR>
+<BR>
+
+</ul>
+
+
+
+<li>3) (2 Points)
+<BR>
+
+<img src="hw09_lines.gif">
+<BR>
+<BR>
+
+
+<li>4)
+When we introduced micromaps in class, we looked at a statistical display that
+contains information on the percentage of urban census tracts in a region
+and hazardous air pollutants in the same region. My claim was that
+there is a very close relationship between these two factors
+(however, we couldn't express this in terms of a regression line
+and correlation at that time).
+<BR>
+<BR>
+
+Below is a scatterplot
+of the same data. Our explanatory x-variable in this case
+is the percentage of urban census tracts and our response
+y-variable is the average concentration of hazardous air
+pollutants in each state. We are looking at data of
+48 states plus Washington, D.C., i.e, n = 49. (5 Points)
+<BR>
+<BR>
+
+<img src="hw09_reg_img.gif">
+<BR>
+<BR>
+
+<ul>
+<li>a) Fit a least squares (linear regression) line to the data
+using WebStat. You can either try to copy/paste the data
+into WebStat or load the data directly from the URL
+<a href="http://www.math.usu.edu/~symanzik/teaching/2001_stat2000_2/hap_urban.dat">
+http://www.math.usu.edu/~symanzik/teaching/2001_stat2000_2/hap_urban.dat</a>
+<BR>
+<BR>
+<font color="#FF0000">Note that Netscape may work better than
+Internet Explorer.</font>
+<BR>
+<BR>
+
+
+<li>b) What is a possible interpretation of the slope and y-intercept
+you calculated in (a) above? Explain.
+<BR>
+<BR>
+
+<li>c) Calculate Pearson's correlation coefficient r between x and y.
+How can we interpret this value for our given data set? 
+<BR>
+<BR>
+
+<li>d) Based on your calculations in (a), what is the predicted
+concentration of air pollutants for a region that has 0%, 40%, 
+60%, 100% of urban census tracts.
+Which of these 4 predictions are more reliable, 
+which are less reliable? Why?
+<BR>
+<BR>
+
+</ul>
+
+
+<li>5) Look at these 4 residual plots from G.A.F. Seber's
+``Linear Regression Analysis'' book and answer the following
+two questions: (4 Points)
+<BR>
+<BR>
+
+<img src="hw09_residuals.gif">
+<BR>
+<BR>
+
+<ul>
+
+<li> Which of these residual plot(s) represent(s) satisfactory pattern(s)
+that show that your selected statistical model (e.g., a
+least squares regression line) describes the data reasonably well.
+<BR>
+<BR>
+
+<li> For each of the residual plots that does not represent
+a satisfactory pattern, indicate the type of problem that occurs
+with the data in that particular case.
+<BR>
+<BR>
+
+</ul>
+
+<BR>
+<BR>
+
+</ul>
+
+You should work on all exercises as 
+part of your preparation for Quiz 2. Try to work on
+these exercises before Friday!
+<BR>
+<BR>

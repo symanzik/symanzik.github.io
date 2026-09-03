@@ -1,0 +1,81 @@
+Stat 5810 Applied Spatial Statistics                                 Fall 2000
+
+         Analysis of the Volcanic Craters Data by Bailey/Gatrell
+         =======================================================
+
+                        Wed 10/11/00 & Mon 10/16/00 
+
+
+Dr. Juergen Symanzik
+
+------------------------------------------------------------------------------
+
+1) Load the volcanic craters data from the Web, i.e., from
+  http://math.usu.edu/~symanzik/teaching/2000_spatial/infomap_data/Volcano.txt
+Store it locally in a file.
+Open the file in a text editor. 
+Remove the headings and the "'" symbols. 
+Then store the data set locally.
+
+
+2) Reading in the Data and Creating a SPP:
+
+vol _ matrix( scan ("/home/symanzik/splus/Volcano.dat"), 120, 4, byrow = T)
+vol.coord _ matrix( c(vol[,2], vol[,3]), 120, 2)
+vol.spp _ spp (vol.coord)
+summary (vol.spp)
+
+
+3) Simple Plots: Data and Kernel Estimates
+
+par (mfrow = c(2,2))
+par (pty = "s")
+plot (vol.spp, main = "Volcanic Craters")
+   # should be similar to Figure 3.1 in Bailey/Gatrell
+
+vol.kernel100 _ intensity (vol.spp, method = "kernel", bw = 100)
+image (vol.kernel100)
+
+vol.kernel220 _ intensity (vol.spp, method = "kernel", bw = 220)
+image (vol.kernel220)
+
+vol.kernel500 _ intensity (vol.spp, method = "kernel", bw = 500)
+image (vol.kernel500)
+   # should be similar to Figure 3.5 in Bailey/Gatrell
+
+
+4) Nearest Neighbor Plots, Khat & Lhat function:
+
+par (mfrow = c(2,2))
+vol.ghat _ Ghat (vol.spp)
+   # should be similar to Figure 3.6 in Bailey/Gatrell
+vol.khat _ Khat (vol.spp)
+vol.lhat _ Lhat (vol.spp)
+abline(0, 1)
+   # positive peaks between 100 and 1500 - probably clustering!
+
+
+5) Khat and Simulation Envelopes:
+
+par (mfrow = c(1,2))
+
+vol.khat _ Khat (vol.spp, plot = F)
+plot (vol.khat$values[vol.khat$values[,1] < 500, ])
+title ("Khat & Simulation Envelopes, dist < 500")
+
+vol.kenv _ Kenv (vol.spp, nsims = 39, add = F)
+vol.index _ vol.kenv$dist < 500
+lines (vol.kenv$dist[vol.index], vol.kenv$lower[vol.index])
+lines (vol.kenv$dist[vol.index], vol.kenv$upper[vol.index])
+   # if there was any doubt - certainly clustering at these distances!
+
+
+plot (vol.khat$values[vol.khat$values[,1] < 100, ])
+title ("Khat & Simulation Envelopes, dist < 100")
+
+vol.index _ vol.kenv$dist < 100
+lines (vol.kenv$dist[vol.index], vol.kenv$lower[vol.index])
+lines (vol.kenv$dist[vol.index], vol.kenv$upper[vol.index])
+   # regularity not very likely at small distances!
+
+

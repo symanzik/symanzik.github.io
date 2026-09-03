@@ -1,0 +1,58 @@
+VR Class Projects: Mini-Cave
+============================
+
+The aim of this project is to explore if PCs (hardware and software)
+can be used as basis of a Virtual Environment we currently call
+"Mini-Cave". Try to answer the following questions:
+
++ Can you install the following hardware (a PC, projection device, and
+stereoscopic shutterglases - more details later on)
+to produce a stereoscopic 3D image? You should set up the equipment
+in room 142 ("Holodeck") and use the back wall as the projection screen.
+
++ At which rate can you create the stereoscopic images within the computer,
+i.e., how many left eye and right eye images can you produce per second?
+Is the projection device capable to project images at the same frequency
+or are some of its colors too slow for such a frequency? In the latter
+case you will see parts of the image remain visible for more than
+1/frequency seconds and therefore have a distorted 3D impression.
+
++ Transfer one of the current SGI-based 3D applications into a PC-based
+3D application. This will mostly require to rewrite GL functions into
+OpenGL functions. We think that the "flight simulator" might be a
+good example. Let us know if you expect any problems with
+this application.
+
++ Compare the SGI-based and PC-based applications. Can you see any
+difference? Which one do you prefer? Why? If there are different
+opinions in your group, let us know about all these opinions.
+
++ To manoueuver in a Virtual Environment, one needs 3D interaction
+capabilities. We  consider to make use of the human voice. For your
+previously selected application prepare a list of meaningful words
+that might be used for its control. Consider the following in case
+of the "flight simulator": If you say "fly left", the application
+does not know how far "left" you want it to go. So perhaps
+"fly left by 30 degrees" might be more useful. But wouldn't
+"left 30" do the same? Work closely with the Speech-Recognition
+group. What are their recommendations on the maximum number of
+words the application can understand to yield a high percentage
+of correctly identified words in the speaker-independent case
+(probably you do not want to use all numbers from 1 to 360
+to select an angle)? What do they suggest as maximum number
+of words in one command?
+
++ BONUS: If time permits, work with the Speech-Recognition group to combine
+both projects, i.e., have the speech recognition software control
+the Mini-Cave application.
+
+Turn in a typewritten report (10-20 pages of text, plus appendix
+such as computer code, computer output, protocols of experiments)
+by MONDAY 4/27/98. Report everything that might be of interest.
+If you planned to do something but couldn't realize it due to
+unexpected problems, let us know about these problems.
+
+Prepare a 30 minute talk for presentation in class on 
+THURSDAY 4/30/98. Also be ready to give a demonstration of
+your work some time the same week.
+

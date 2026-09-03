@@ -1,0 +1,51 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.7 [en] (X11; U; SunOS 5.7 sun4u) [Netscape]">
+</head>
+<body text="#000000" bgcolor="#FFFF99" link="#0000EE" vlink="#551A8B" alink="#FF0000">
+<font color="#3366FF"><font size=+1>Edge effects - the nearest neighbor
+distance for an event near the boundary R will be biased.&nbsp; Because
+the event near the boundary is denied the possibility of neighbors outside
+the boundary.&nbsp; Edge points tend to have greater bias than the ones
+further inside the region.</font></font>
+<br><font color="#3366FF"><font size=+1>Two options:</font></font>
+<br><font color="#3366FF"><font size=+1>1. Create guard area inside the
+perimeter of R.&nbsp; Nearest neighbor distances are not used for events
+within the guard area, but events in the guard area are allowed as neighbors
+of any events in the rest of R.</font></font>
+<br><font color="#3366FF"><font size=+1>2. Toroidal edge correction where
+the top of R is joined to the bottom of R, and left side is joined to right.&nbsp;
+The study area is considered to be the center of a 3x3 grid which can consider
+neighbors outside the R boundary.</font></font>
+<p><font color="#3366FF"><font size=+1>There is no exact rule for edge
+corrections.&nbsp; Usually with rectangles, you can get away without it,
+but it never hurts to do it either.&nbsp; If you do a correction using
+option 1, you have to make sure you have enough points to justify excluding
+some.</font></font>
+<br><font color="#3366FF"><font size=+1>&nbsp; So if you only have a small
+point pattern, with few points, edge correction wouldn't be a good idea.</font></font>
+<p><font color="#3366FF"><font size=+1>o When comparing Fhat, Ghat or Khat
+to theoretical F,&nbsp; G, or K function, you have to apply edge corrections.</font></font>
+<br><font color="#3366FF"><font size=+1>o If you compare Fhat, Ghat or
+Khat&nbsp; to simulation envelopes you do not need an edge correction.&nbsp;&nbsp;&nbsp;
+This is because the effect of not using edge correction cancels out for
+the observed data and the data obtained by simulation.</font></font>
+<p><font color="#3366FF"><font size=+1>Since our data falls into a rectangle,
+and we don't have that many points, we do not really&nbsp; need an edge
+correction.&nbsp; But, with the Khat we did compare it to the theoretical
+K and so when we created our theoretical K by toroidal shift, we essentially
+created an edge correction on our simulation.</font></font>
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+</body>
+</html>

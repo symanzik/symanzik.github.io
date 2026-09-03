@@ -1,0 +1,5 @@
+print ("This file is sourced.")
+
+print ("It (hopefully) starts up X11.")
+
+X11()

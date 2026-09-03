@@ -1,0 +1,210 @@
+<HTML>
+<HEAD>
+<TITLE>Web-based Statistics: Lecture 10 - May 23, 2000</TITLE>
+</HEAD>
+<BODY BGCOLOR="white">
+<FONT SIZE=-1><I>Web-based Statistics:<BR>
+Lecture 10<BR>
+Tuesday, May 23, 2000
+</I></FONT>
+<BR>
+
+<CENTER>
+<H2><CENTER>Rice Virtual Lab in Statistics</CENTER></H2>
+<H3><a href="http://www.ruf.rice.edu/~lane/rvls.html" Target="top"> http://www.ruf.rice.edu/~lane/rvls.html</a></H3>
+</CENTER>
+
+<P>Rice Virtual Lab in Statistics has already been mentioned
+when we discussed about teaching tools. Now we want to see
+how its <B>Analysis Lab</B> can be used as a statistical package
+to perform statistical analyses.
+
+<P>When the Rice Virtual Lab homepage is loaded, click on
+"Analysis Lab" to activate the program. 
+
+<P>When the page is fully loaded, click on
+ the "Analyze" button and the following
+Data Analysis Lab window will appear:
+<P><CENTER><IMG SRC="ricewin1.jpg"></CENTER></P>
+
+<P><U>Using built-in datasets</U>
+
+<P>Now, you can select <B>Data Library</B> and 
+a <B>Dataset</B> within the data library.
+These datasets are taken from different
+introductory statistics textbooks.
+
+<P>Select now <B>Moore_McCabe</B> data library and
+the <B>p36</B> dataset. The description of tha data
+appears in the right-hand side window.
+
+<P>Select now "Calories" as dependent variable and
+"Sodium" as predictor variable. Note that some of the
+blue and red windows below become activated. In each
+window, an explanation of the available analysis is
+displayed.
+
+<P>Click now on <B>Descriptive</B> window.
+A window containing descriptive statistics
+for the dependent variable "Calories" will
+appear. Similarly, by clicking on <B>Box plot</B>,
+a window containing a box plot for "Calories"
+will appear.
+
+<P>Click now on <B>Histogram</B> window.
+The window with a histogram for "Calories" appears.
+Note that the applet allows some interactivity,
+i.e., you can change the bin width and the lower limit
+of the first bin. The histogram applet automatically 
+provides auxiliary graphs of the cross-validation 
+functions that estimate the quality of the currently 
+displayed histogram. Smaller values of the cross-validation 
+function generally imply smaller errors in the approximation. 
+
+<P>Click now on <B>Correlation/Regression</B>
+window. A window with the scatterplot
+of calories on sodium will appear.
+You can choose whether or not to show
+the regression line and the numerical results
+of the regression analysis. 
+ 
+<P><B>Exercise 1 (7 min.)</B></P>
+<P>Continue clicking on other active blue and red
+windows to see what happens. Are there windows that
+are not active? Why?
+
+<P>Now go back to the variable selection and choose
+"Type" as <B>Grouping Variable</B>. What changes
+in the description of the analyses in the blue and
+red windows have you noticed? Which windows have become
+active? Which ones are not active now? Why?
+
+<P>Note that you can always go back to the 
+starting window, where you can find links to the
+<B>on-line documentation</B>.
+
+<P><U>Using user-entered datasets</U>
+
+<P>We can also analyze our own data using 
+Data Analysis Lab. By clicking on
+<B>Enter/Edit User Data</B> a clipboard 
+will appear. You can either type in the data
+directly or copy/paste the existing datafile
+(opened in a text editor).
+
+<P>Now open the following file:
+<a href="http://www.math.usu.edu/~vukasino/teaching/spring2000/complab/student_data1.prn" Target="top">
+http://www.math.usu.edu/~vukasino/teaching/spring2000/complab/student_data1.prn</a>.
+
+<P>
+However, we cannot use this data directly, because it contains 
+non-numerical values. The Data Analysis Lab requires all data
+to be numeric. So first we have to recode the nonnumerical variables
+(Gender, Eyecolor, Major) and replace them by the coding integer values,
+ranging from 1 to the number of levels of the variable.
+
+<P>
+To recode the data, open the file in a text editor 
+that has a "Replace" function (such as Word, Wordpad,
+UNIX Textedit) and recode the non-numerical variables 
+as follows:
+
+<UL>
+<LI>Gender:
+<UL>
+<LI>1 - male
+<LI>2 - female
+</UL>
+
+<LI>Eyecolor:
+<UL>
+<LI>1 - blue
+<LI>2 - brown
+<LI>3 - green
+</UL>
+
+<LI>Major:
+<UL>
+<LI>1 - Biology
+<LI>2 - CompSci
+<LI>3 - Chemistry
+<LI>4 - Health
+<LI>5 - Other
+</UL>
+</UL>
+
+<P>After recoding the data, while still in the text
+editor, select "Select all" from the "Edit" menu and
+then "Copy". Then change to the Data Analysis
+Clipboard window and paste the data (by clicking
+on "Paste" in the "Data" menu at the top of the
+window). If this does not work, paste the data
+by pressing "Control" and "v" key at the
+same time. Do not delete the first
+row which contains the names of the variables.
+Click on <B>Accept Data.</B> The clipboard
+window should disappear.
+
+<P>When the data are accepted, the names of the
+variables will appear in the window on the right.
+In the selection menu on the left, you can choose
+any of the variables as dependent or
+predictor variable. However, only "Gender",
+"Eyecolor", and "Major" are listed as possible
+grouping variables. Actually, all variables
+that have integer values from one
+to (any) number of levels without any gaps
+will be listed as grouping variables.
+   
+<P>Now choose "Age" as dependent variable. Click
+on <B>Descriptive</B> window to obtain
+summary statistics for Age. Click on 
+<B>Box Plot</B>, <B>Histogram</B> and
+<B>Stem-and-Leaf</B> windows.
+
+<P>Then go back to the selection menu and
+select "Siblings" as dependent variable and
+"Age" as  predictor variable. Click on 
+<B>Correlation/regression</B> window to
+perform a regression analysis of "Siblings"
+on "Age".
+
+<P>Again, go back to the selection menu and select
+"Gender" as grouping variable. Note that all the
+windows change and now offer separate analyses
+for each level of the grouping variable.
+
+<P><BR>
+<B>Homework problems</B>
+
+<P>Using Rice's Data Analysis Lab Package, 
+solve the problems listed below. Describe exactly
+all steps needed to obtain the required results
+(including data editing/recoding). If you encounter
+any problem (e.g., if a certain applet is not
+working or if you can clearly see that the results are
+wrong) mention this explicitely in your 
+written report. 
+<UL>
+<LI>Obtain summary statistics for "Height"
+and "Weight". Also obtain possible 
+graphical displays for these variables.
+
+<LI>Perform a regression analysis of
+weight on age. What is the predictor
+variable? What is the dependent variable?
+
+<LI>Does color of eyes (variable "Eyecolor")
+have significant influence on weight?
+Answer this question by carrying out an
+ANOVA analysis.
+
+</UL> 
+ 
+<br>
+<br>
+</BODY>
+</HTML>
+
+
+ 

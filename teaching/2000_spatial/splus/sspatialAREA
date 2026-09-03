@@ -1,0 +1,516 @@
+Stat 5810 Applied Spatial Statistics                                 Fall 2000
+
+
+                    Introduction to S+SpatialStats (3)
+                    ==================================
+
+                             Wed 11/29/00 
+
+
+Dr. Juergen Symanzik
+
+------------------------------------------------------------------------------
+
+References:
+
+Kaluzny, S. P., Vega, S. C., Cardoso, T. P., Shelly, A. A. (1998): 
+S+SpatialStats - User's Manual for Windows and UNIX, Springer, New York.
+
+------------------------------------------------------------------------------
+
+Analyzing Area (Lattice) Data:
+==============================
+
+Area (lattice) data sets included with S+SpatialStats:
+
+coal.ash
+iron.ore
+sids  (and sids.neighbor)
+sids2 (and sids.neighbor)
+wheat
+
+------------------------------------------------------------------------------
+
+Basic Plots for Area Data:
+
+par(mfrow = c(1, 4))
+plot(iron.ore)
+
+par(mfrow = c(2, 2), pty = "s")
+plot(iron.ore$easting, iron.ore$northing)
+hist(iron.ore$ore)
+
+> summary (iron.ore)
+     easting          northing          ore          residuals      
+    Min.: 1.000      Min.:1.000      Min.:45.40      Min.:-8.2800  
+ 1st Qu.: 5.750   1st Qu.:3.000   1st Qu.:52.58   1st Qu.:-1.5060  
+  Median: 9.000    Median:5.000    Median:55.85    Median: 0.0000  
+    Mean: 9.089      Mean:5.009      Mean:54.97      Mean:-0.2546  
+ 3rd Qu.:12.250   3rd Qu.:7.000   3rd Qu.:57.80   3rd Qu.: 1.4580  
+    Max.:17.000      Max.:9.000      Max.:60.80      Max.: 5.8970  
+
+iron.interp _ interp (x = iron.ore$easting, y = iron.ore$northing, 
+  z = iron.ore$ore - 45)
+contour (iron.interp)
+image (iron.interp)
+
+par(mfrow = c(1, 1), pty = "s")
+persp (iron.interp, zlab = "Z - 45", eye = c(30, -15, 30))
+cloud (ore ~ easting * northing, data = iron.ore)
+
+------------------------------------------------------------------------------
+
+Median Polish:
+
+iron.mp _ twoway(ore ~ easting + northing, data = iron.ore)
+
+> iron.mp
+$grand:
+[1] 54.51337
+
+$row:
+        1         2         3          4        5 6          7        8 
+ -3.55307 -3.173534 -1.553066 -0.1936951 1.546783 0 0.04672623 2.926464
+
+        9 
+ 4.186394
+
+$col:
+         1         2           3 4         5         6        7          8 
+ -7.289996 -4.939993 -0.03676397 0 -1.089887 -0.330037 1.300032 -0.2198053
+
+          9      10       11       12       13       14         15       16 
+ -0.1797631 2.16008 2.339876 4.210004 2.139691 0.539767 -0.4367636 2.763235
+
+       17 
+ 2.080321
+
+$residuals:
+  [1]  1.429686e+00 -1.429686e+00  2.479685e+00 -2.479685e+00 -9.030775e-01
+  [6] -1.523543e+00 -7.829162e-01  1.766081e-01 -1.766081e-01  5.766678e-01
+  ...
+[111]  0.000000e+00 -5.340417e+00
+
+$call:
+twoway.formula(formula = ore ~ easting + northing, data = iron.ore)
+
+# calculate the predicted data
+
+iron.pred _ iron.ore$ore - iron.mp$residuals
+
+# convert vectors to matrices, determine range of both matrices,
+# and plot original data and predicted data
+
+iron.mat _ tapply(iron.ore$ore, 
+             list(iron.ore$easting, iron.ore$northing),
+             function(x) x
+           )
+
+iron.predmat _ tapply(iron.pred, 
+             list(iron.ore$easting, iron.ore$northing),
+             function(x) x
+           )
+
+iron.resmat _ tapply(iron.mp$residuals, 
+             list(iron.ore$easting, iron.ore$northing),
+             function(x) x
+           )
+
+zmin _ min(iron.mat, iron.predmat, na.rm = T)
+zmax _ max(iron.mat, iron.predmat, na.rm = T)
+zminres _ min(iron.resmat, na.rm = T)
+zmaxres _ max(iron.resmat, na.rm = T)
+
+par(mfrow = c(2, 2), pty = "s")
+image(iron.mat, zlim = c(zmin, zmax), main = "Observed")
+image(iron.predmat, zlim = c(zmin, zmax), main = "Predicted")
+image(iron.resmat, zlim = c(zminres, zmaxres), main = "Residuals")
+
+------------------------------------------------------------------------------
+
+Finding Spatial Neighbors:
+
+# for a full regular grid
+
+iron.neigh _ neighbor.grid (nrow = 17, ncol = 9, 
+  neighbor.type = "first.order")
+
+> iron.neigh[1:10,]
+Total number of spatial units =  153 
+(Matrix was NOT defined as symmetric)
+   row.id col.id weights matrix 
+ 1      1      2       1      1
+ 2      1     18       1      1
+ 3      2      1       1      1
+ 4      2      3       1      1
+ 5      2     19       1      1
+ 6      3      2       1      1
+ 7      3      4       1      1
+ 8      3     20       1      1
+ 9      4      3       1      1
+10      4      5       1      1
+
+
+# for an irregular structure
+
+iron.neighirreg _ find.neighbor (cbind(iron.ore$easting, iron.ore$northing),
+  quadtree = quad.tree(cbind(iron.ore$easting, iron.ore$northing)),
+  max.dist = 1.1)
+
+> iron.neighirreg[1:10,]
+   index1 index2 distances 
+ 1      1      1         0
+ 2      1      2         1
+ 3      1      3         1
+ 4      2      2         0
+ 5      2      1         1
+ 6      2      4         1
+ 7      3      3         0
+ 8      3      4         1
+ 9      3      1         1
+10      3      6         1
+
+iron.neighirreg1 _ iron.neighirreg[iron.neighirreg[,3] > 0,]
+
+> iron.neighirreg1[1:10,]
+   index1 index2 distances 
+ 2      1      2         1
+ 3      1      3         1
+ 5      2      1         1
+ 6      2      4         1
+ 8      3      4         1
+ 9      3      1         1
+10      3      6         1
+12      4      3         1
+13      4      2         1
+14      4      7         1
+
+iron.neighirreg2 _ spatial.neighbor(row.id = iron.neighirreg1[,1],
+  col.id = iron.neighirreg1[,2], 
+  matrix.id = rep(1, length(iron.neighirreg1[,1])))
+
+> iron.neighirreg2[1:10,]
+Total number of spatial units =  112 
+(Matrix was NOT defined as symmetric)
+   row.id col.id weights matrix 
+ 2      1      2       1      1
+ 3      1      3       1      1
+ 5      2      1       1      1
+ 6      2      4       1      1
+ 8      3      4       1      1
+ 9      3      1       1      1
+10      3      6       1      1
+12      4      3       1      1
+13      4      2       1      1
+14      4      7       1      1
+
+------------------------------------------------------------------------------
+
+Spatial Autocorrelation:
+
+iron.cor1 _ spatial.cor(iron.ore$ore, neighbor = iron.neighirreg2,
+  statistic = "moran", sampling = "free", npermutes = 1000)
+
+> iron.cor1
+
+        Spatial Correlation Estimate
+
+Statistic = "moran" Sampling = "free"
+
+Correlation =  0.4075
+Variance    =  0.004903
+Std. Error  =  0.07002 
+
+Normal statistic =  5.949 
+Normal p-value (2-sided) =  2.705e-9 
+
+Null Hypothesis:  No spatial autocorrelation
+
+Summary of the permutation-correlations :
+    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ -0.1990 -0.0538 -0.0100 -0.0081  0.0334  0.2381
+
+permutation p-value = 0 
+
+----
+
+iron.cor2 _ spatial.cor(iron.ore$ore, neighbor = iron.neighirreg2,
+  statistic = "geary", sampling = "free", npermutes = 1000)
+
+> iron.cor2
+
+        Spatial Correlation Estimate
+
+Statistic = "geary" Sampling = "free"
+
+Correlation =  0.5464
+Variance    =  0.005537
+Std. Error  =  0.07441 
+
+Normal statistic =  -6.097 
+Normal p-value (2-sided) =  1.082e-9 
+
+Null Hypothesis:  No spatial autocorrelation
+
+Summary of the permutation-correlations :
+  Min. 1st Qu. Median  Mean 3rd Qu.  Max. 
+ 0.790 0.949   1.000  1.000 1.050   1.259
+
+permutation p-value = 0 
+
+----
+
+iron.cor3 _ spatial.cor(iron.mp$residuals, neighbor = iron.neighirreg2,
+  statistic = "moran", sampling = "free", npermutes = 1000)
+
+> iron.cor3 
+
+        Spatial Correlation Estimate
+
+Statistic = "moran" Sampling = "free"
+
+Correlation =  0.0712
+Variance    =  0.004903
+Std. Error  =  0.07002 
+
+Normal statistic =  1.146 
+Normal p-value (2-sided) =  0.252 
+
+Null Hypothesis:  No spatial autocorrelation
+
+Summary of the permutation-correlations :
+    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ -0.2374 -0.0568 -0.0093 -0.0095  0.0368  0.2284
+
+permutation p-value = 0.129 
+
+----
+
+iron.cor4 _ spatial.cor(iron.mp$residuals, neighbor = iron.neighirreg2,
+  statistic = "geary", sampling = "free", npermutes = 1000)
+
+> iron.cor4 
+
+        Spatial Correlation Estimate
+
+Statistic = "geary" Sampling = "free"
+
+Correlation =  0.8555
+Variance    =  0.005537
+Std. Error  =  0.07441 
+
+Normal statistic =  -1.942 
+Normal p-value (2-sided) =  0.05209 
+
+Null Hypothesis:  No spatial autocorrelation
+
+Summary of the permutation-correlations :
+  Min. 1st Qu. Median  Mean 3rd Qu.  Max. 
+ 0.762 0.949   1.002  1.003 1.056   1.271
+
+permutation p-value = 0.025 
+
+------------------------------------------------------------------------------
+
+Micromaps:
+
+source('/home/symanzik/splus/spat_penn1.s')
+
+The following code will be executed:
+
+# File:         penn1.s
+# Programmer:   Dan Carr
+# Date:         Revised June 6, 1999
+# Purpose       Pennsylvania LM dot plot for benzene
+
+# The data: penn.ben
+# and boundary files: penn.bnd
+# are in a dump file
+
+data.restore('/home/symanzik/splus/penn1_panel.dmp')
+data.restore('/home/symanzik/splus/penn1.dmp')
+
+#data.restore('penn1_panel.dmp')
+#data.restore('penn1.dmp')
+
+
+# History of data file creation
+# benzene data
+#penn.ben <- read.table(file='penn_benzene.txt',sep=',')
+#names(penn.ben) <- c('Tracts', 'Mean', 'Median', 'Min', 'P25', 'P75', 'Max')
+
+vals <- penn.ben$Median
+tnams <- row.names(penn.ben)
+nams <- penn.bnd$countyid[tnams]
+
+
+#sorting
+ord <- order(vals)
+ord <- rev(ord)
+vals <- vals[ord]
+nams <- nams[ord]
+tnams <- tnams[ord]
+
+# scaling
+rx <- range(vals)
+rx <- mean(rx) + .57*diff(rx)*c(-1,1)
+ry <- c(0,1)
+a <- .25
+grid.x <- inbounds(rx)
+
+
+id <- penn.bnd$id
+bnd.rx <- penn.bnd$rx
+bnd.rx <- mean(bnd.rx)+ 1.04*diff(bnd.rx)*c(-.5,.5)
+
+bnd.ry <- penn.bnd$ry
+bnd.ry <- mean(bnd.ry)+ 1.04*diff(bnd.ry)*c(-.5,.5)
+
+
+micolors <- matrix(c(
+  .00, .00, .00,
+ 1.00,1.00,1.00,
+  .78, .78, .78,
+ 1.00, .1, .1 ,
+ 1.00, .50, .00,
+  .10,1.00, .00,
+  .10, .50,1.00,
+  .70, .40,1.00,
+  .20, .20, .20,
+ 1.00,1.00, .80,
+  .78, .78, .78,
+  .50, .50, .50,
+  .80, .50,1.00),ncol=3,byrow=T)
+ps.options(black.and.white="false",rasters=600)
+#postscript(file='penn1.ps',colors=micolors,hori=F,width=8.5,height=10)
+
+motif("hpage")
+par(xpd=T)
+
+
+
+if(names(dev.cur())=='postscript'){
+   pch<- 183
+   outline <- T
+} else {
+   pch<- 16
+   outline <- F
+}
+
+panels <- panel.layout(nrow=8,ncol=6,
+                        col.size=c(1.5,1.0,1.3,1.5,1.0,1.3),
+                        col.sep=c(0,0,0,.15,0,0,0),
+                        row.sep=c(0,0,0,0,.15,0,0,0,0),bottom.mar=.2,
+                        left.mar=0,top.mar=.7,borders=c(.25,.25,.25,.25))
+
+pan.outline <- panel.layout(nrow=2,ncol=6,
+                        col.size=c(1.5,1.0,1.3,1.5,1.0,1.3),
+                        col.sep=c(0,0,0,.15,0,0,0),
+                        row.sep=c(0,.15,0),bottom.mar=.2,
+                        left.mar=0,top.mar=.7,borders=c(.25,.25,.25,.25))
+
+pan.title <- panel.layout(nrow=1,ncol=1,bottom.mar=.2,
+                        left.mar=0,top.mar=.7,borders=c(.25,.25,.25,.25))
+
+
+ie <- cumsum(c(rep(c(4,4,4,5),3),c(4,4,4,4)))
+npanel <- length(ie)
+ib <- c(1,ie[-npanel]+1)
+
+for (i in 1:length(ib)){
+   subs <- seq(ib[i],ie[i])
+   gnams <- nams[subs]
+   txtnams <- tnams[subs]
+   if(i <= 8){
+     pan.r <- i
+     pan.c1 <- 1
+     pan.c2 <- 2
+     pan.c3 <- 3
+     if(i<=4)cont <- nams[ib[1]:ie[4]] else
+             cont <- nams[ib[5]:ie[8]]
+   } else {
+     pan.r <- i-8
+     pan.c1 <- 4
+     pan.c2 <- 5
+     pan.c3 <- 6
+     if(i <= 12) cont <- nams[ib[9]:ie[12]] else
+                 cont <- nams[ib[13]:ie[16]] 
+   }
+#plot maps
+   panel.select(panels,pan.r,pan.c1)
+   panel.scale(bnd.rx,bnd.ry)
+
+#  background
+   back <- is.na(match(penn.bnd$fid,cont))
+   tx <- penn.bnd$x[back]
+   ty <- penn.bnd$y[back]
+   polygon(tx,ty,col=11,border=F)
+   polygon(tx,ty,col=2,density=0,lwd=0)
+
+#  midground
+   tx <- penn.bnd$x[!back]
+   ty <- penn.bnd$y[!back]
+   polygon(tx,ty,col=10,border=F)
+   polygon(tx,ty,col=1,density=0,lwd=0)
+
+#  highlight
+   good <- !is.na(match(penn.bnd$fid,gnams))
+   tx <- penn.bnd$x[good]
+   ty <- penn.bnd$y[good]
+   pen <- match(penn.bnd$id,gnams,0)
+   pen <- pen[pen>0]+3
+   polygon(tx,ty,col=pen,border=F)
+   polygon(tx,ty,col=1,density=0)
+
+#  final outline
+  polygon(penn.bnd$out.x,penn.bnd$out.y,density=0,lwd=0)
+                
+# _________________ plot id's____________________
+   panel.select(panels,pan.r,pan.c2)
+   panel.scale(c(0,1),ry)
+   nums <- rev(seq(along=subs))
+   n <- length(nums)
+   y <- (nums-a)/(n+1-2*a)
+   text(rep(.025,n),y,txtnams,adj=0,cex=.65)
+
+# plot dots
+   panel.select(panels,pan.r,pan.c3)
+   panel.scale(rx,ry)
+   panel.fill(col=3)
+   panel.mygrid(x=grid.x,col=2)
+   panel.outline(col=2)
+   if(pan.r==8){
+      axis(side=1,at=grid.x,labels=as.character(grid.x),cex=.7,mgp=c(2,.2,0))
+      text(mean(rx),-.3," g/m ",adj=.5,cex=.7)
+      points(mean(rx)-.12*diff(rx),-.34,pch=109,font=13,cex=.7)
+      text(mean(rx)+.13*diff(rx),-.27,"3",adj=.5,cex=.5)
+   }
+   nums <- rev(seq(along=subs))
+   n <- length(nums)+1
+   y <- (nums-a)/(n-2*a)
+   for (j in 1:length(nums)){
+      points(vals[subs[j]],y[j],col=1,cex=1.9,pch=pch)
+      points(vals[subs[j]],y[j],col=j+3,cex=1.6,pch=pch)
+   }
+} 
+   panel.select(pan.outline,1,3)
+   panel.scale(rx,ry)
+   panel.outline()
+
+   panel.select(pan.outline,2,3)
+   panel.scale(rx,ry)
+   panel.outline()
+   panel.select(pan.outline,1,6)
+   panel.scale(rx,ry)
+   panel.outline()
+   panel.select(pan.outline,2,6)
+   panel.scale(rx,ry)
+   panel.outline()
+
+   panel.select(pan.title,margin='top')
+   panel.scale()
+   text(.5,.9,'Pennslyvania: Median of Modeled 1990 Census Tract Benzene Concentrations',adj=.5)
+   text(.25,.3,'Above County Median',cex=.9)
+   text(.75,.3,'Below County Median',cex=.9)
+
+------------------------------------------------------------------------------

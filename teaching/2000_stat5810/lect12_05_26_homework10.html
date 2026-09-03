@@ -1,0 +1,170 @@
+<HTML>
+<HEAD>
+<TITLE>Web-based Statistics: Lecture 12 - May 26, 2000</TITLE>
+</HEAD>
+<BODY BGCOLOR="white">
+<FONT SIZE=-1><I>Web-based Statistics:<BR>
+Lecture 12<BR>
+Friday, May 26, 2000
+</I></FONT>
+<BR>
+
+
+<CENTER>
+<h2>Statistical Software on the Web</CENTER></h2>
+<BR><BR>
+
+<P>
+<B>
+Homework 10 (20 points) - due 05/31/00</B>
+</P>
+
+
+<B>Note that this was previously posted as Homework 9, Part III.
+However, more details are given here, the due date has been
+extended by one day, and the number of points is now 20.</B>
+<BR>
+<BR>
+
+<P>
+<H3>Rweb</H3>
+
+<P>
+<B>Problem 1:</B><BR>
+ Recall the exercise we tried
+in class in Lecture 10 (05/23). We used the student
+data available on
+<a href="http://www.math.usu.edu/~vukasino/teaching/spring2000/complab/student_data1.prn"> 
+http://www.math.usu.edu/~vukasino/teaching/spring2000/complab/student_data1.prn</a>
+and used the JavaScript version of Rweb to
+obtained summary statistics for the variables
+<b>Age</b> and <b>Siblings</b>.
+Now try yourself to calculate a few more summary
+statistics such as the median and the variance of 
+<b>Height</b> and <b>Weight</b>. First make sure to identify the
+appropriate columns of the matrix <b>X</b> that represent
+these two variables. Can you also calculate the correlation
+between these two variables and draw a scatterplot of
+<b>Height</b> (horizontal) vs. <b>Weight</b> (vertical)?
+<BR>
+<BR>
+
+<B>Problem 2:</B><BR>
+ Also, recall how we calculated 
+simple linear regression of <b>Siblings</b> on
+<b>Age</b>. Now try yourself to calculate a simple linear
+regression where <b>Weight</b> is the response and <b>Age</b>
+is the predictor variable. The required syntax is
+<b>result <- lm(response ~ predictor)</b>. Here,
+<b>result <-</b> means that we assign the outcome of the
+calculation right of <b><-</b> to a new variable called
+<b>result</b>. <b>lm</b> represents a function that calculates
+a linear model. <b>response ~ predictor</b> represents the
+expression that should be calculated. You have to replace
+<b>response</b> and <b>predictor</b> with the appropriate
+columns of the matrix <b>X</b>. Finally, you have to produce
+some visible output using the command <b>summary(result)</b>.
+<BR>
+<BR>
+<BR>
+
+<P>
+<H3>Rice Virtual Lab in Statistics - Data Analysis</H3>
+
+<P><BR>
+<B>Homework problems</B>
+
+<P>Using Rice's Data Analysis Lab Package, 
+solve the problems listed below. Describe exactly
+all steps needed to obtain the required results
+(including data editing/recoding). If you encounter
+any problem (e.g., if a certain applet is not
+working or if you can clearly see that the results are
+wrong) mention this explicitely in your 
+written report. 
+<UL>
+<LI>Obtain summary statistics for "Height"
+and "Weight". Also obtain possible 
+graphical displays for these variables.
+
+<LI>Perform a regression analysis of
+weight on age. What is the predictor
+variable? What is the dependent variable?
+
+<LI>Does color of eyes (variable "Eyecolor")
+have significant influence on weight?
+Answer this question by carrying out an
+ANOVA analysis.
+
+</UL>
+<BR>
+<BR>
+
+
+<P>
+<H3>Webstat</H3>
+
+<B>
+* Homework:</B>
+
+<P>
+Using the data set on Labor force available as a sample data set in the site:
+
+<UL>
+
+<LI>provide a brief statement on what the data set is measuring.
+<LI>analyze for differences between 1968 and 1972 in the measured variable 
+(hint: a paired t-test would probably be useful here).
+<LI>report summary statistics and results of analysis.
+<LI>produce whichever graphics you think will best display the data
+
+</UL>
+<BR>
+<BR>
+
+
+<P>
+<H3>Statlets</H3>
+
+<U><P>Homework Problem:</U> 
+
+Open Statlets, load the data.  After speaking to the person who put 
+down that they were 8'7&quot; we found out that they actually wrote 5'7&quot; 
+but the 5 looked like an 8.  Find this outlier in the data in the Statlets 
+data screen and change 103.0&quot; to 67.0&quot;. What is the 95% confidence 
+interval?  Then do a t-test on H<SUB>o</SUB>:  
+</FONT><FONT FACE="Symbol" SIZE=4>m</FONT> = 68&quot;.  
+Do we reject at 5%?  Give another reason why you know this to be the case.  
+For what value of </FONT><FONT FACE="Symbol" SIZE=4>m </FONT>would we not 
+reject at 5%?</P>
+<BR>
+<BR>
+
+<P>
+<H3>XploRe</H3>
+
+<P>
+<B>Homework:</B>
+
+<P>
+
+<OL>
+
+<LI>
+Write a program to plot the histogram and boxplot for sibling and weight,  
+respectively.
+
+<P>
+<LI>
+Write a program to perform the regression analysis and plot the regression 
+line of Weight on height.
+
+</OL>
+
+<BR>
+<BR>
+
+</BODY>
+</HTML>
+
+

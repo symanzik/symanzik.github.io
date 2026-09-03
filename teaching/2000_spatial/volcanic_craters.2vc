@@ -1,0 +1,6 @@
+2) Reading in the Data and Creating a SPP:
+
+vol _ matrix( scan ("/home/symanzik/splus/Volcano.dat"), 120, 4, byrow = T)
+vol.coord _ matrix( c(vol[,2], vol[,3]), 120, 2)
+vol.spp _ spp (vol.coord)
+summary (vol.spp)

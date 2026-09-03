@@ -1,0 +1,191 @@
+<HTML>
+<HEAD>
+<TITLE>Stat 1040 - Formula Sheet, Midterm 2</TITLE>
+</HEAD>
+
+<BODY >
+<body bgcolor="ffffff">
+<body text="000000">
+<DIV ALIGN="CENTER">
+<B>Formulas</B>
+
+</DIV>
+
+<P>
+
+Let A and B denote the names of any two events.
+
+<P>
+Multiplication Rule
+<BR>
+The chance that both A and B happen equals the chance that A happens multiplied
+by the conditional chance that B happens <EM>given</EM> that A has happened.
+
+<P>
+Independence
+<BR>
+A and B are independent if (and only if) the chance B happens given that
+A has happened is equal to the unconditional chance that B happens.
+
+<P>
+With Replacement
+<BR>
+When drawing at random, <EM>with</EM> replacement, the <EM>different</EM> draws
+are independent.
+
+<P>
+Mutually Exclusive
+<BR>
+A and B are mutally exclusive if they cannot both happen together.
+
+<P>
+Addition Rule
+<BR>
+If A and B are mutually exclusive, then the chance that one happens is the 
+<EM>sum</EM> of their chances.
+
+<P>
+Expanded Addition Rule
+<BR>
+If A and B are <EM>not</EM> mutually exclusive, then the chance that <EM>at 
+least</EM> one happens is the sum of their chances minus the chance that
+<EM>both</EM> happen.
+
+<P>
+Opposites Rule
+<BR>
+The chance of an event plus the chance of its opposite is 1 (or 100%).<BR>
+<P>
+Expected Values and SEs
+<BR>
+When drawing at random with replacement from a box of numbered tickets, the
+expected values and SEs of the sample sum, percentage, or average are:
+
+<DIV ALIGN="CENTER"><TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="CENTER"><FONT SIZE="+1"><B>Sample Estimate</B> </TD>
+<TD ALIGN="CENTER"><FONT SIZE="+1"> <FONT SIZE="+1"><B>Expected Value</B> </TD>
+<TD ALIGN="CENTER"><FONT SIZE="+1"> <FONT SIZE="+1"><B>Standard Error</B> </TD>
+</TR>
+<TR><TD ALIGN="CENTER"><FONT SIZE="+1"> 
+ 
+Sum </TD>
+<TD ALIGN="CENTER"> <!-- MATH
+ $\mbox{Number of Draws} \times \mbox{Average of Box}$
+ -->
+<IMG
+ WIDTH="278" HEIGHT="32" ALIGN="MIDDLE" BORDER="0"
+ SRC="ev1.png"
+ ALT="$\mbox{Number of Draws} \times \mbox{Average of Box}$"> </TD>
+<TD ALIGN="CENTER"><FONT SIZE="+1"> 
+<!--MATH
+ $\sqrt{\mbox{Number of Draws}}\times \mbox{SD of Box}$
+ -->
+<IMG
+ WIDTH="254" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="se1.png"
+ ALT="$\sqrt{\mbox{Number of Draws}}\times \mbox{SD of Box}$"> </TD>
+</TR>
+<TR><TD ALIGN="CENTER"><FONT SIZE="+1">  
+Percent </TD>
+<TD ALIGN="CENTER"><FONT SIZE="+1"> Box Percentage </TD>
+<TD ALIGN="CENTER"><FONT SIZE="+1"> 
+<!-- MATH
+ $\frac{\mbox{SE of Sum}}{\mbox{Number of Draws}}\times\mbox{100\%}$
+ -->
+<IMG
+ WIDTH="205" HEIGHT="46" ALIGN="MIDDLE" BORDER="0"
+ SRC="se2.png"
+ ALT="$\frac{\mbox{SE of Sum}}{\mbox{Number of Draws}}\times\mbox{100\%}$"></TD>
+</TR>
+<TR><TD ALIGN="CENTER"><FONT SIZE="+1">  
+Average </TD>
+<TD ALIGN="CENTER"><FONT SIZE="+1"> Average of Box </TD>
+<TD ALIGN="CENTER"><FONT SIZE="+1"> 
+<!-- MATH
+ $\frac{\mbox{SE of Sum}}{\mbox{Number of Draws}}$
+ -->
+<IMG
+ WIDTH="143" HEIGHT="46" ALIGN="MIDDLE" BORDER="0"
+ SRC="se3.png"
+ ALT="$\frac{\mbox{SE of Sum}}{\mbox{Number of Draws}}$"></TD>
+</TR>
+</TABLE></DIV>
+<P>
+SD of 2-value Box
+<BR>
+If box (or sample) contains only two different values, the SD is given by:
+
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\mbox{SD}_{\mbox{Box}} = \mbox{(Larger Value - Smaller Value)}\times
+\sqrt{\mbox{(Fraction of Larger)}\times
+\mbox{(Fraction of Smaller)}}
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="673" HEIGHT="35" BORDER="0"
+ SRC="sd.png"
+ ALT="\begin{displaymath}\mbox{SD}_{\mbox{Box}} = \mbox{(Larger Value - Smaller Value)...
+...\mbox{(Fraction of Larger)}\times
+\mbox{(Fraction of Smaller)}}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<P>
+Correction Factor
+<BR>
+When sampling at random <EM>without</EM> replacement, the SEs above need to be 
+multiplied by the finite correction factor, which is:
+
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\sqrt{\frac{\mbox{Population Size - Sample Size}}
+{\mbox{Population Size - 1}}}
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="246" HEIGHT="55" BORDER="0"
+ SRC="cf.png"
+ ALT="\begin{displaymath}\sqrt{\frac{\mbox{Population Size - Sample Size}}
+{\mbox{Population Size - 1}}}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<P>
+Confidence Intervals
+<BR>
+The generic formula for a confidence interval is:
+
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\mbox{Observed Sample Estimate} \pm (\mbox{Z-multiplier}) \times
+\mbox{SE of Sample Estimate}
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="528" HEIGHT="31" BORDER="0"
+ SRC="ci.png"
+ ALT="\begin{displaymath}\mbox{Observed Sample Estimate} \pm (\mbox{Z-multiplier}) \times
+\mbox{SE of Sample Estimate}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+where the multiplier is found from the Z-table for the 
+required confidence level.
+
+<P>
+<hr>
+<a href="http://math.usu.edu/~minnotte/S1040S01">
+Return to Stat 1040 home page. </a>
+<hr>
+</BODY>
+</HTML>

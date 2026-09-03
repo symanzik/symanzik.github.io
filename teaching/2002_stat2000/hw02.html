@@ -1,0 +1,926 @@
+<title>Stat 2000, Section 001, Homework Assignment 2</title>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#OOOOOO">
+
+<h1>Stat 2000, Section 001, Homework Assignment 2 (Due 9/18/2002 11:59pm)</h1>
+
+<ul>
+
+<li>0) Reading: Section 1.2
+<BR>
+<BR>
+
+<li>1) Please work on the following textbook exercises from
+Moore/McCabe (3rd Edition):
+<BR>
+<BR>
+
+<ul>
+
+<li> Exercise 1.25 (1 Point):
+<BR>
+Table 1.3 contains the percent of residents 65 years of age and over in
+each of the 50 states.
+<BR>(a)  Make a stemplot of these data using percent as stems and
+tenths of a percent as leaves.  Then make a second stemplot splitting each
+stem in two (for leaves 0 to 4 and leaves 5 to 9).
+Which display do you prefer?
+<BR>(b) Describe the shape, center, and spread of the distribution.  Is it 
+roughly symmetric or distinctly skewed?  Which states are clear outliers?
+Use what you know about the states to explain these outliers.
+<P>
+<DIV ALIGN="CENTER">
+<B>Table 1.3</B>  Percent of population 65 years old
+   and over, by state (1995)
+
+</DIV>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="CENTER" COLSPAN=1>State</TD>
+<TD ALIGN="CENTER">Percent</TD>
+<TD ALIGN="CENTER" COLSPAN=1>State</TD>
+<TD ALIGN="CENTER">Percent</TD>
+<TD ALIGN="CENTER" COLSPAN=1>State</TD>
+<TD ALIGN="CENTER">Percent</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Alabama</TD>
+<TD ALIGN="CENTER">13.0</TD>
+<TD ALIGN="LEFT">Louisiana</TD>
+<TD ALIGN="CENTER">11.4</TD>
+<TD ALIGN="LEFT">Ohio</TD>
+<TD ALIGN="CENTER">13.4</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Alaska</TD>
+<TD ALIGN="CENTER">&nbsp;4.9</TD>
+<TD ALIGN="LEFT">Maine</TD>
+<TD ALIGN="CENTER">13.9</TD>
+<TD ALIGN="LEFT">Oklahoma</TD>
+<TD ALIGN="CENTER">13.5</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Arizona</TD>
+<TD ALIGN="CENTER">13.3</TD>
+<TD ALIGN="LEFT">Maryland</TD>
+<TD ALIGN="CENTER">11.3</TD>
+<TD ALIGN="LEFT">Oregon</TD>
+<TD ALIGN="CENTER">13.6</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Arkansas</TD>
+<TD ALIGN="CENTER">14.5</TD>
+<TD ALIGN="LEFT">Massachusetts</TD>
+<TD ALIGN="CENTER">14.2</TD>
+<TD ALIGN="LEFT">Pennsylvania</TD>
+<TD ALIGN="CENTER">15.9</TD>
+</TR>
+<TR><TD ALIGN="LEFT">California</TD>
+<TD ALIGN="CENTER">11.0</TD>
+<TD ALIGN="LEFT">Michigan</TD>
+<TD ALIGN="CENTER">12.4</TD>
+<TD ALIGN="LEFT">Rhode Island</TD>
+<TD ALIGN="CENTER">15.7</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Colorado</TD>
+<TD ALIGN="CENTER">10.0</TD>
+<TD ALIGN="LEFT">Minnesota</TD>
+<TD ALIGN="CENTER">12.4</TD>
+<TD ALIGN="LEFT">South Carolina</TD>
+<TD ALIGN="CENTER">12.0</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Connecticut</TD>
+<TD ALIGN="CENTER">14.3</TD>
+<TD ALIGN="LEFT">Mississippi</TD>
+<TD ALIGN="CENTER">12.3</TD>
+<TD ALIGN="LEFT">South Dakota</TD>
+<TD ALIGN="CENTER">14.4</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Delaware</TD>
+<TD ALIGN="CENTER">12.6</TD>
+<TD ALIGN="LEFT">Missouri</TD>
+<TD ALIGN="CENTER">13.9</TD>
+<TD ALIGN="LEFT">Tennessee</TD>
+<TD ALIGN="CENTER">12.5</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Florida</TD>
+<TD ALIGN="CENTER">18.6</TD>
+<TD ALIGN="LEFT">Montana</TD>
+<TD ALIGN="CENTER">13.1</TD>
+<TD ALIGN="LEFT">Texas</TD>
+<TD ALIGN="CENTER">10.2</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Georgia</TD>
+<TD ALIGN="CENTER">10.0</TD>
+<TD ALIGN="LEFT">Nebraska</TD>
+<TD ALIGN="CENTER">13.9</TD>
+<TD ALIGN="LEFT">Utah</TD>
+<TD ALIGN="CENTER">&nbsp;8.8</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Hawaii</TD>
+<TD ALIGN="CENTER">12.6</TD>
+<TD ALIGN="LEFT">Nevada</TD>
+<TD ALIGN="CENTER">11.4</TD>
+<TD ALIGN="LEFT">Vermont</TD>
+<TD ALIGN="CENTER">12.0</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Idaho</TD>
+<TD ALIGN="CENTER">11.4</TD>
+<TD ALIGN="LEFT">New Hampshire</TD>
+<TD ALIGN="CENTER">11.9</TD>
+<TD ALIGN="LEFT">Virginia</TD>
+<TD ALIGN="CENTER">11.1</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Illinois</TD>
+<TD ALIGN="CENTER">12.5</TD>
+<TD ALIGN="LEFT">New Jersey</TD>
+<TD ALIGN="CENTER">13.7</TD>
+<TD ALIGN="LEFT">Washington</TD>
+<TD ALIGN="CENTER">11.6</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Indiana</TD>
+<TD ALIGN="CENTER">12.6</TD>
+<TD ALIGN="LEFT">New Mexico</TD>
+<TD ALIGN="CENTER">10.9</TD>
+<TD ALIGN="LEFT">West Virginia</TD>
+<TD ALIGN="CENTER">15.3</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Iowa</TD>
+<TD ALIGN="CENTER">15.2</TD>
+<TD ALIGN="LEFT">New York</TD>
+<TD ALIGN="CENTER">13.4</TD>
+<TD ALIGN="LEFT">Wisconsin</TD>
+<TD ALIGN="CENTER">13.3</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Kansas</TD>
+<TD ALIGN="CENTER">13.7</TD>
+<TD ALIGN="LEFT">North Carolina</TD>
+<TD ALIGN="CENTER">12.5</TD>
+<TD ALIGN="LEFT">Wyoming</TD>
+<TD ALIGN="CENTER">11.1</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Kentucky</TD>
+<TD ALIGN="CENTER">12.6</TD>
+<TD ALIGN="LEFT">North Dakota</TD>
+<TD ALIGN="CENTER">14.5</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="CENTER">&nbsp;</TD>
+</TR>
+<TR><TD ALIGN="LEFT" COLSPAN=6>Source: <EM>Statistical Abstract of the United
+States</EM>, 1996.</TD>
+</TR>
+</TABLE>
+</DIV>
+
+<BR>
+<BR>
+
+<li> Exercise 1.29 (1 Point):
+<BR>
+Make a graph of the distribution of IQ scores for the seventh-grade
+students in Table 1.6.  Describe the shape, center, and spread of
+the distribution, as well as any outliers.  IQ scores are usually
+said to be centered at 100.  Is the midpoint for these students close
+to 100, clearly above, or clearly below?
+
+<P>
+<DIV ALIGN="CENTER">
+<B>Table 1.6</B>  Educational data for 78 seventh-grade students
+
+</DIV>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="CENTER">OBS</TD>
+<TD ALIGN="RIGHT">GPA</TD>
+<TD ALIGN="RIGHT">IQ</TD>
+<TD ALIGN="CENTER">Gender</TD>
+<TD ALIGN="CENTER">Self concept</TD>
+</TR>
+<TR><TD ALIGN="CENTER">001</TD>
+<TD ALIGN="RIGHT">7.940</TD>
+<TD ALIGN="RIGHT">111</TD>
+<TD ALIGN="CENTER">M</TD>
+<TD ALIGN="CENTER">67</TD>
+</TR>
+<TR><TD ALIGN="CENTER">002</TD>
+<TD ALIGN="RIGHT">8.292</TD>
+<TD ALIGN="RIGHT">107</TD>
+<TD ALIGN="CENTER">M</TD>
+<TD ALIGN="CENTER">43</TD>
+</TR>
+<TR><TD ALIGN="CENTER">003</TD>
+<TD ALIGN="RIGHT">4.643</TD>
+<TD ALIGN="RIGHT">100</TD>
+<TD ALIGN="CENTER">M</TD>
+<TD ALIGN="CENTER">52</TD>
+</TR>
+<TR><TD ALIGN="CENTER">004</TD>
+<TD ALIGN="RIGHT">7.470</TD>
+<TD ALIGN="RIGHT">107</TD>
+<TD ALIGN="CENTER">M</TD>
+<TD ALIGN="CENTER">66</TD>
+</TR>
+<TR><TD ALIGN="CENTER">005</TD>
+<TD ALIGN="RIGHT">8.882</TD>
+<TD ALIGN="RIGHT">114</TD>
+<TD ALIGN="CENTER">F</TD>
+<TD ALIGN="CENTER">58</TD>
+</TR>
+<TR><TD ALIGN="CENTER">006</TD>
+<TD ALIGN="RIGHT">7.585</TD>
+<TD ALIGN="RIGHT">115</TD>
+<TD ALIGN="CENTER">M</TD>
+<TD ALIGN="CENTER">51</TD>
+</TR>
+<TR><TD ALIGN="CENTER">007</TD>
+<TD ALIGN="RIGHT">7.650</TD>
+<TD ALIGN="RIGHT">111</TD>
+<TD ALIGN="CENTER">M</TD>
+<TD ALIGN="CENTER">71</TD>
+</TR>
+<TR><TD ALIGN="CENTER">008</TD>
+<TD ALIGN="RIGHT">2.412</TD>
+<TD ALIGN="RIGHT">&nbsp;97</TD>
+<TD ALIGN="CENTER">M</TD>
+<TD ALIGN="CENTER">51</TD>
+</TR>
+<TR><TD ALIGN="CENTER">009</TD>
+<TD ALIGN="RIGHT">6.000</TD>
+<TD ALIGN="RIGHT">100</TD>
+<TD ALIGN="CENTER">F</TD>
+<TD ALIGN="CENTER">49</TD>
+</TR>
+<TR><TD ALIGN="CENTER">010</TD>
+<TD ALIGN="RIGHT">8.833</TD>
+<TD ALIGN="RIGHT">112</TD>
+<TD ALIGN="CENTER">M</TD>
+<TD ALIGN="CENTER">51</TD>
+</TR>
+<TR><TD ALIGN="CENTER">011</TD>
+<TD ALIGN="RIGHT">7.470</TD>
+<TD ALIGN="RIGHT">104</TD>
+<TD ALIGN="CENTER">F</TD>
+<TD ALIGN="CENTER">35</TD>
+</TR>
+<TR><TD ALIGN="CENTER">012</TD>
+<TD ALIGN="RIGHT">5.528</TD>
+<TD ALIGN="RIGHT">&nbsp;89</TD>
+<TD ALIGN="CENTER">F</TD>
+<TD ALIGN="CENTER">54</TD>
+</TR>
+<TR><TD ALIGN="CENTER">013</TD>
+<TD ALIGN="RIGHT">7.167</TD>
+<TD ALIGN="RIGHT">104</TD>
+<TD ALIGN="CENTER">M</TD>
+<TD ALIGN="CENTER">54</TD>
+</TR>
+<TR><TD ALIGN="CENTER">014</TD>
+<TD ALIGN="RIGHT">7.571</TD>
+<TD ALIGN="RIGHT">102</TD>
+<TD ALIGN="CENTER">F</TD>
+<TD ALIGN="CENTER">64</TD>
+</TR>
+<TR><TD ALIGN="CENTER">015</TD>
+<TD ALIGN="RIGHT">4.700</TD>
+<TD ALIGN="RIGHT">&nbsp;91</TD>
+<TD ALIGN="CENTER">F</TD>
+<TD ALIGN="CENTER">56</TD>
+</TR>
+<TR><TD ALIGN="CENTER">016</TD>
+<TD ALIGN="RIGHT">8.167</TD>
+<TD ALIGN="RIGHT">114</TD>
+<TD ALIGN="CENTER">F</TD>
+<TD ALIGN="CENTER">69</TD>
+</TR>
+<TR><TD ALIGN="CENTER">017</TD>
+<TD ALIGN="RIGHT">7.822</TD>
+<TD ALIGN="RIGHT">114</TD>
+<TD ALIGN="CENTER">F</TD>
+<TD ALIGN="CENTER">55</TD>
+</TR>
+<TR><TD ALIGN="CENTER">018</TD>
+<TD ALIGN="RIGHT">7.598</TD>
+<TD ALIGN="RIGHT">103</TD>
+<TD ALIGN="CENTER">F</TD>
+<TD ALIGN="CENTER">65</TD>
+</TR>
+<TR><TD ALIGN="CENTER">019</TD>
+<TD ALIGN="RIGHT">4.000</TD>
+<TD ALIGN="RIGHT">106</TD>
+<TD ALIGN="CENTER">M</TD>
+<TD ALIGN="CENTER">40</TD>
+</TR>
+<TR><TD ALIGN="CENTER">020</TD>
+<TD ALIGN="RIGHT">6.231</TD>
+<TD ALIGN="RIGHT">105</TD>
+<TD ALIGN="CENTER">F</TD>
+<TD ALIGN="CENTER">66</TD>
+</TR>
+<TR><TD ALIGN="CENTER">021</TD>
+<TD ALIGN="RIGHT">7.643</TD>
+<TD ALIGN="RIGHT">113</TD>
+<TD ALIGN="CENTER">M</TD>
+<TD ALIGN="CENTER">55</TD>
+</TR>
+<TR><TD ALIGN="CENTER">022</TD>
+<TD ALIGN="RIGHT">1.760</TD>
+<TD ALIGN="RIGHT">109</TD>
+<TD ALIGN="CENTER">M</TD>
+<TD ALIGN="CENTER">20</TD>
+</TR>
+<TR><TD ALIGN="CENTER">024</TD>
+<TD ALIGN="RIGHT">6.419</TD>
+<TD ALIGN="RIGHT">108</TD>
+<TD ALIGN="CENTER">F</TD>
+<TD ALIGN="CENTER">56</TD>
+</TR>
+<TR><TD ALIGN="CENTER">026</TD>
+<TD ALIGN="RIGHT">9.648</TD>
+<TD ALIGN="RIGHT">113</TD>
+<TD ALIGN="CENTER">M</TD>
+<TD ALIGN="CENTER">68</TD>
+</TR>
+<TR><TD ALIGN="CENTER">027</TD>
+<TD ALIGN="RIGHT">10.700</TD>
+<TD ALIGN="RIGHT">130</TD>
+<TD ALIGN="CENTER">F</TD>
+<TD ALIGN="CENTER">69</TD>
+</TR>
+<TR><TD ALIGN="CENTER">028</TD>
+<TD ALIGN="RIGHT">10.580</TD>
+<TD ALIGN="RIGHT">128</TD>
+<TD ALIGN="CENTER">M</TD>
+<TD ALIGN="CENTER">70</TD>
+</TR>
+<TR><TD ALIGN="CENTER">029</TD>
+<TD ALIGN="RIGHT">9.429</TD>
+<TD ALIGN="RIGHT">128</TD>
+<TD ALIGN="CENTER">M</TD>
+<TD ALIGN="CENTER">80</TD>
+</TR>
+<TR><TD ALIGN="CENTER">030</TD>
+<TD ALIGN="RIGHT">8.000</TD>
+<TD ALIGN="RIGHT">118</TD>
+<TD ALIGN="CENTER">M</TD>
+<TD ALIGN="CENTER">53</TD>
+</TR>
+<TR><TD ALIGN="CENTER">031</TD>
+<TD ALIGN="RIGHT">9.585</TD>
+<TD ALIGN="RIGHT">113</TD>
+<TD ALIGN="CENTER">M</TD>
+<TD ALIGN="CENTER">65</TD>
+</TR>
+<TR><TD ALIGN="CENTER">032</TD>
+<TD ALIGN="RIGHT">9.571</TD>
+<TD ALIGN="RIGHT">120</TD>
+<TD ALIGN="CENTER">F</TD>
+<TD ALIGN="CENTER">67</TD>
+</TR>
+<TR><TD ALIGN="CENTER">033</TD>
+<TD ALIGN="RIGHT">8.998</TD>
+<TD ALIGN="RIGHT">132</TD>
+<TD ALIGN="CENTER">F</TD>
+<TD ALIGN="CENTER">62</TD>
+</TR>
+<TR><TD ALIGN="CENTER">034</TD>
+<TD ALIGN="RIGHT">8.333</TD>
+<TD ALIGN="RIGHT">111</TD>
+<TD ALIGN="CENTER">F</TD>
+<TD ALIGN="CENTER">39</TD>
+</TR>
+<TR><TD ALIGN="CENTER">035</TD>
+<TD ALIGN="RIGHT">8.175</TD>
+<TD ALIGN="RIGHT">124</TD>
+<TD ALIGN="CENTER">M</TD>
+<TD ALIGN="CENTER">71</TD>
+</TR>
+<TR><TD ALIGN="CENTER">036</TD>
+<TD ALIGN="RIGHT">8.000</TD>
+<TD ALIGN="RIGHT">127</TD>
+<TD ALIGN="CENTER">M</TD>
+<TD ALIGN="CENTER">59</TD>
+</TR>
+<TR><TD ALIGN="CENTER">037</TD>
+<TD ALIGN="RIGHT">9.333</TD>
+<TD ALIGN="RIGHT">128</TD>
+<TD ALIGN="CENTER">F</TD>
+<TD ALIGN="CENTER">60</TD>
+</TR>
+<TR><TD ALIGN="CENTER">038</TD>
+<TD ALIGN="RIGHT">9.500</TD>
+<TD ALIGN="RIGHT">136</TD>
+<TD ALIGN="CENTER">M</TD>
+<TD ALIGN="CENTER">64</TD>
+</TR>
+<TR><TD ALIGN="CENTER">039</TD>
+<TD ALIGN="RIGHT">9.167</TD>
+<TD ALIGN="RIGHT">106</TD>
+<TD ALIGN="CENTER">M</TD>
+<TD ALIGN="CENTER">71</TD>
+</TR>
+<TR><TD ALIGN="CENTER">040</TD>
+<TD ALIGN="RIGHT">10.140</TD>
+<TD ALIGN="RIGHT">118</TD>
+<TD ALIGN="CENTER">F</TD>
+<TD ALIGN="CENTER">72</TD>
+</TR>
+<TR><TD ALIGN="CENTER">041</TD>
+<TD ALIGN="RIGHT">9.999</TD>
+<TD ALIGN="RIGHT">119</TD>
+<TD ALIGN="CENTER">F</TD>
+<TD ALIGN="CENTER">54</TD>
+</TR>
+</TABLE>
+</DIV>
+
+<P>
+
+<P>
+<DIV ALIGN="CENTER">
+<B>Table 1.6 continued</B>  Educational data for 78 seventh-grade students
+
+</DIV>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="CENTER">OBS</TD>
+<TD ALIGN="RIGHT">GPA</TD>
+<TD ALIGN="RIGHT">IQ</TD>
+<TD ALIGN="CENTER">Gender</TD>
+<TD ALIGN="CENTER">Self concept</TD>
+</TR>
+<TR><TD ALIGN="CENTER">043</TD>
+<TD ALIGN="RIGHT">10.760</TD>
+<TD ALIGN="RIGHT">123</TD>
+<TD ALIGN="CENTER">M</TD>
+<TD ALIGN="CENTER">64</TD>
+</TR>
+<TR><TD ALIGN="CENTER">044</TD>
+<TD ALIGN="RIGHT">9.763</TD>
+<TD ALIGN="RIGHT">124</TD>
+<TD ALIGN="CENTER">M</TD>
+<TD ALIGN="CENTER">58</TD>
+</TR>
+<TR><TD ALIGN="CENTER">045</TD>
+<TD ALIGN="RIGHT">9.410</TD>
+<TD ALIGN="RIGHT">126</TD>
+<TD ALIGN="CENTER">M</TD>
+<TD ALIGN="CENTER">70</TD>
+</TR>
+<TR><TD ALIGN="CENTER">046</TD>
+<TD ALIGN="RIGHT">9.167</TD>
+<TD ALIGN="RIGHT">116</TD>
+<TD ALIGN="CENTER">M</TD>
+<TD ALIGN="CENTER">72</TD>
+</TR>
+<TR><TD ALIGN="CENTER">047</TD>
+<TD ALIGN="RIGHT">9.348</TD>
+<TD ALIGN="RIGHT">127</TD>
+<TD ALIGN="CENTER">M</TD>
+<TD ALIGN="CENTER">70</TD>
+</TR>
+<TR><TD ALIGN="CENTER">048</TD>
+<TD ALIGN="RIGHT">8.167</TD>
+<TD ALIGN="RIGHT">119</TD>
+<TD ALIGN="CENTER">M</TD>
+<TD ALIGN="CENTER">47</TD>
+</TR>
+<TR><TD ALIGN="CENTER">050</TD>
+<TD ALIGN="RIGHT">3.647</TD>
+<TD ALIGN="RIGHT">&nbsp;97</TD>
+<TD ALIGN="CENTER">M</TD>
+<TD ALIGN="CENTER">52</TD>
+</TR>
+<TR><TD ALIGN="CENTER">051</TD>
+<TD ALIGN="RIGHT">3.408</TD>
+<TD ALIGN="RIGHT">&nbsp;86</TD>
+<TD ALIGN="CENTER">F</TD>
+<TD ALIGN="CENTER">46</TD>
+</TR>
+<TR><TD ALIGN="CENTER">052</TD>
+<TD ALIGN="RIGHT">3.936</TD>
+<TD ALIGN="RIGHT">102</TD>
+<TD ALIGN="CENTER">M</TD>
+<TD ALIGN="CENTER">66</TD>
+</TR>
+<TR><TD ALIGN="CENTER">053</TD>
+<TD ALIGN="RIGHT">7.167</TD>
+<TD ALIGN="RIGHT">110</TD>
+<TD ALIGN="CENTER">M</TD>
+<TD ALIGN="CENTER">67</TD>
+</TR>
+<TR><TD ALIGN="CENTER">054</TD>
+<TD ALIGN="RIGHT">7.647</TD>
+<TD ALIGN="RIGHT">120</TD>
+<TD ALIGN="CENTER">M</TD>
+<TD ALIGN="CENTER">63</TD>
+</TR>
+<TR><TD ALIGN="CENTER">055</TD>
+<TD ALIGN="RIGHT">0.530</TD>
+<TD ALIGN="RIGHT">103</TD>
+<TD ALIGN="CENTER">M</TD>
+<TD ALIGN="CENTER">53</TD>
+</TR>
+<TR><TD ALIGN="CENTER">056</TD>
+<TD ALIGN="RIGHT">6.173</TD>
+<TD ALIGN="RIGHT">115</TD>
+<TD ALIGN="CENTER">M</TD>
+<TD ALIGN="CENTER">67</TD>
+</TR>
+<TR><TD ALIGN="CENTER">057</TD>
+<TD ALIGN="RIGHT">7.295</TD>
+<TD ALIGN="RIGHT">&nbsp;93</TD>
+<TD ALIGN="CENTER">M</TD>
+<TD ALIGN="CENTER">61</TD>
+</TR>
+<TR><TD ALIGN="CENTER">058</TD>
+<TD ALIGN="RIGHT">7.295</TD>
+<TD ALIGN="RIGHT">&nbsp;72</TD>
+<TD ALIGN="CENTER">F</TD>
+<TD ALIGN="CENTER">54</TD>
+</TR>
+<TR><TD ALIGN="CENTER">059</TD>
+<TD ALIGN="RIGHT">8.938</TD>
+<TD ALIGN="RIGHT">111</TD>
+<TD ALIGN="CENTER">F</TD>
+<TD ALIGN="CENTER">60</TD>
+</TR>
+<TR><TD ALIGN="CENTER">060</TD>
+<TD ALIGN="RIGHT">7.882</TD>
+<TD ALIGN="RIGHT">103</TD>
+<TD ALIGN="CENTER">F</TD>
+<TD ALIGN="CENTER">60</TD>
+</TR>
+<TR><TD ALIGN="CENTER">061</TD>
+<TD ALIGN="RIGHT">8.353</TD>
+<TD ALIGN="RIGHT">123</TD>
+<TD ALIGN="CENTER">M</TD>
+<TD ALIGN="CENTER">63</TD>
+</TR>
+<TR><TD ALIGN="CENTER">062</TD>
+<TD ALIGN="RIGHT">5.062</TD>
+<TD ALIGN="RIGHT">&nbsp;79</TD>
+<TD ALIGN="CENTER">M</TD>
+<TD ALIGN="CENTER">30</TD>
+</TR>
+<TR><TD ALIGN="CENTER">063</TD>
+<TD ALIGN="RIGHT">8.175</TD>
+<TD ALIGN="RIGHT">119</TD>
+<TD ALIGN="CENTER">M</TD>
+<TD ALIGN="CENTER">54</TD>
+</TR>
+<TR><TD ALIGN="CENTER">064</TD>
+<TD ALIGN="RIGHT">8.235</TD>
+<TD ALIGN="RIGHT">110</TD>
+<TD ALIGN="CENTER">M</TD>
+<TD ALIGN="CENTER">66</TD>
+</TR>
+<TR><TD ALIGN="CENTER">065</TD>
+<TD ALIGN="RIGHT">7.588</TD>
+<TD ALIGN="RIGHT">110</TD>
+<TD ALIGN="CENTER">M</TD>
+<TD ALIGN="CENTER">44</TD>
+</TR>
+<TR><TD ALIGN="CENTER">068</TD>
+<TD ALIGN="RIGHT">7.647</TD>
+<TD ALIGN="RIGHT">107</TD>
+<TD ALIGN="CENTER">M</TD>
+<TD ALIGN="CENTER">49</TD>
+</TR>
+<TR><TD ALIGN="CENTER">069</TD>
+<TD ALIGN="RIGHT">5.237</TD>
+<TD ALIGN="RIGHT">&nbsp;74</TD>
+<TD ALIGN="CENTER">F</TD>
+<TD ALIGN="CENTER">44</TD>
+</TR>
+<TR><TD ALIGN="CENTER">071</TD>
+<TD ALIGN="RIGHT">7.825</TD>
+<TD ALIGN="RIGHT">105</TD>
+<TD ALIGN="CENTER">M</TD>
+<TD ALIGN="CENTER">67</TD>
+</TR>
+<TR><TD ALIGN="CENTER">072</TD>
+<TD ALIGN="RIGHT">7.333</TD>
+<TD ALIGN="RIGHT">112</TD>
+<TD ALIGN="CENTER">F</TD>
+<TD ALIGN="CENTER">64</TD>
+</TR>
+<TR><TD ALIGN="CENTER">074</TD>
+<TD ALIGN="RIGHT">9.167</TD>
+<TD ALIGN="RIGHT">105</TD>
+<TD ALIGN="CENTER">M</TD>
+<TD ALIGN="CENTER">73</TD>
+</TR>
+<TR><TD ALIGN="CENTER">076</TD>
+<TD ALIGN="RIGHT">7.996</TD>
+<TD ALIGN="RIGHT">110</TD>
+<TD ALIGN="CENTER">M</TD>
+<TD ALIGN="CENTER">59</TD>
+</TR>
+<TR><TD ALIGN="CENTER">077</TD>
+<TD ALIGN="RIGHT">8.714</TD>
+<TD ALIGN="RIGHT">107</TD>
+<TD ALIGN="CENTER">F</TD>
+<TD ALIGN="CENTER">37</TD>
+</TR>
+<TR><TD ALIGN="CENTER">078</TD>
+<TD ALIGN="RIGHT">7.833</TD>
+<TD ALIGN="RIGHT">103</TD>
+<TD ALIGN="CENTER">F</TD>
+<TD ALIGN="CENTER">63</TD>
+</TR>
+<TR><TD ALIGN="CENTER">079</TD>
+<TD ALIGN="RIGHT">4.885</TD>
+<TD ALIGN="RIGHT">&nbsp;77</TD>
+<TD ALIGN="CENTER">M</TD>
+<TD ALIGN="CENTER">36</TD>
+</TR>
+<TR><TD ALIGN="CENTER">080</TD>
+<TD ALIGN="RIGHT">7.998</TD>
+<TD ALIGN="RIGHT">&nbsp;98</TD>
+<TD ALIGN="CENTER">F</TD>
+<TD ALIGN="CENTER">64</TD>
+</TR>
+<TR><TD ALIGN="CENTER">083</TD>
+<TD ALIGN="RIGHT">3.820</TD>
+<TD ALIGN="RIGHT">&nbsp;90</TD>
+<TD ALIGN="CENTER">M</TD>
+<TD ALIGN="CENTER">42</TD>
+</TR>
+<TR><TD ALIGN="CENTER">084</TD>
+<TD ALIGN="RIGHT">5.936</TD>
+<TD ALIGN="RIGHT">&nbsp;96</TD>
+<TD ALIGN="CENTER">F</TD>
+<TD ALIGN="CENTER">28</TD>
+</TR>
+<TR><TD ALIGN="CENTER">085</TD>
+<TD ALIGN="RIGHT">9.000</TD>
+<TD ALIGN="RIGHT">112</TD>
+<TD ALIGN="CENTER">F</TD>
+<TD ALIGN="CENTER">60</TD>
+</TR>
+<TR><TD ALIGN="CENTER">086</TD>
+<TD ALIGN="RIGHT">9.500</TD>
+<TD ALIGN="RIGHT">112</TD>
+<TD ALIGN="CENTER">F</TD>
+<TD ALIGN="CENTER">70</TD>
+</TR>
+<TR><TD ALIGN="CENTER">087</TD>
+<TD ALIGN="RIGHT">6.057</TD>
+<TD ALIGN="RIGHT">114</TD>
+<TD ALIGN="CENTER">M</TD>
+<TD ALIGN="CENTER">51</TD>
+</TR>
+<TR><TD ALIGN="CENTER">088</TD>
+<TD ALIGN="RIGHT">6.057</TD>
+<TD ALIGN="RIGHT">&nbsp;93</TD>
+<TD ALIGN="CENTER">F</TD>
+<TD ALIGN="CENTER">21</TD>
+</TR>
+<TR><TD ALIGN="CENTER">089</TD>
+<TD ALIGN="RIGHT">6.938</TD>
+<TD ALIGN="RIGHT">106</TD>
+<TD ALIGN="CENTER">M</TD>
+<TD ALIGN="CENTER">56</TD>
+</TR>
+</TABLE>
+</DIV>
+
+<BR>
+<BR>
+
+<li> Exercise 1.43 (3 Points):
+<BR>
+Here are the scores on the Survey of Study Habits and Attitudes (SSHA) 
+for 18 first-year college women:
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3>
+<TR><TD ALIGN="CENTER">154</TD>
+<TD ALIGN="CENTER">109</TD>
+<TD ALIGN="CENTER">137</TD>
+<TD ALIGN="CENTER">115</TD>
+<TD ALIGN="CENTER">152</TD>
+<TD ALIGN="CENTER">140</TD>
+<TD ALIGN="CENTER">154</TD>
+<TD ALIGN="CENTER">178</TD>
+<TD ALIGN="CENTER">101</TD>
+</TR>
+<TR><TD ALIGN="CENTER">103</TD>
+<TD ALIGN="CENTER">126</TD>
+<TD ALIGN="CENTER">126</TD>
+<TD ALIGN="CENTER">137</TD>
+<TD ALIGN="CENTER">165</TD>
+<TD ALIGN="CENTER">165</TD>
+<TD ALIGN="CENTER">129</TD>
+<TD ALIGN="CENTER">200</TD>
+<TD ALIGN="CENTER">148</TD>
+</TR>
+</TABLE>
+</DIV>
+and for 20 first-year college men:
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3>
+<TR><TD ALIGN="RIGHT">108</TD>
+<TD ALIGN="RIGHT">140</TD>
+<TD ALIGN="RIGHT">114</TD>
+<TD ALIGN="RIGHT">91</TD>
+<TD ALIGN="RIGHT">180</TD>
+<TD ALIGN="RIGHT">115</TD>
+<TD ALIGN="RIGHT">126</TD>
+<TD ALIGN="RIGHT">92</TD>
+<TD ALIGN="RIGHT">169</TD>
+<TD ALIGN="RIGHT">146</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">109</TD>
+<TD ALIGN="RIGHT">132</TD>
+<TD ALIGN="RIGHT">75</TD>
+<TD ALIGN="RIGHT">88</TD>
+<TD ALIGN="RIGHT">113</TD>
+<TD ALIGN="RIGHT">151</TD>
+<TD ALIGN="RIGHT">70</TD>
+<TD ALIGN="RIGHT">115</TD>
+<TD ALIGN="RIGHT">187</TD>
+<TD ALIGN="RIGHT">104</TD>
+</TR>
+</TABLE>
+</DIV>
+(a) Make a back-to-back stemplot of these data, or use your result
+from Exercise 1.20.
+<BR>(b) Find the mean 
+<!-- <IMG
+ WIDTH="16" HEIGHT="27" ALIGN="BOTTOM" BORDER="0"
+ SRC="img22.png"
+ ALT="$\overline{x}$"> 
+-->
+and the median  for both sets
+of SSHA scores.  What feature of each distribution explains the fact
+that 
+the mean is larger than the median?
+<!--
+<!-- MATH
+ $\overline{x} > M$
+ -->
+<!--
+<IMG
+ WIDTH="62" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img87.png"
+ ALT="$\overline{x} &gt; M$">?
+-->
+<BR>(c) Find the five-number summaries for both sets of SSHA scores.
+Your plot in (a) suggests that there is an outlier among the
+women's scores.  Does the 
+1.5 x IQR
+<!--
+<!-- MATH
+ $1.5 \times IQR$
+ -->
+<!--
+<IMG
+ WIDTH="27" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img52.png"
+ ALT="$1.5 \times IQR$"> 
+-->
+criterion flag this
+observation?  Make side-by-side boxplots for the two distributions.
+(Be sure to use a common scale to make comparison easy.)
+<BR>(d) Use your results to write a brief comparison of the two groups.  Do
+women as a group score higher than men?  Which of your descriptions
+(stemplots, boxplots, numerical measures) show this?  Which group of
+scores is more spread out when we ignore outliers?  Which of your
+descriptions shows this most clearly?
+
+
+<BR>
+<BR>
+
+</ul>
+
+<li>2) As promised, here are the colored versions of the micromaps
+we discussed in class on 9/9: 
+<a href="mmap_HAP.gif">the HAP data</a>,
+<a href="mmap_CO2.gif">the CO2 data</a>, and
+<a href="mmap_wheat.gif">the wheat data</a>.
+
+You should be able to detect additional information in these
+colored versions that is hard to see in the grayscale handout
+provided in class.
+<BR>
+<BR>
+
+Many more designs and examples for micromaps exist. Several articles
+on micromaps have been published in the Statistical Computing and
+Statistical Graphics Newsletter by Carr et al., e.g., in
+Vol. 7, No. 3, pp. 16-23, and Vol. 9, No. 1, pp. 24-32.
+Actually, the micromaps with the CO2 data and the wheat data
+are Figures 1 and 2 of the Carr et al. article in  Vol. 9, No. 1.
+<BR>
+<BR>
+
+The Statistical Computing and Statistical Graphics Newsletter
+is accessible at
+<a href="http://cm.bell-labs.com/cm/ms/who/cocteau/newsletter/index.html">
+http://cm.bell-labs.com/cm/ms/who/cocteau/newsletter/index.html</a>
+and provides access to complete issues as pdf and postscript files.
+It is informative and easy to read.
+<BR>
+<BR>
+
+Here are three more micromaps for 
+<a href="mmap_iowa.gif">Iowa</a>,
+<a href="mmap_mich.gif">Michigan</a>, and
+<a href="mmap_penn.gif">Pennsylvania</a>.
+Select <em> one </em> of these three maps and carefully
+describe and interpret it (about one half page up to one page).
+Use all your geographical knowledge (e.g., where are big cities,
+sparsely populated rural areas, what is happening in
+counties just outside the visible area) and technical
+knowledge (where do benzene and lead originate from? -
+note that the data for Michigan is an aggregation of
+148 HAPs with lead and benzene as major components).
+Also note that the data is from 1990. (6 Points)
+<BR>
+<BR>
+
+
+<li>3) This is an example from Mark Monmonier's book
+"How to Lie with Maps". The 4 graphics (maps) show the 
+effect of selecting different class widths and starting
+points when visualizing data in a geographic context. (8 Points)
+<BR><BR>
+
+<img SRC="maps.gif" height=500>
+
+<ul>
+<li>a) (i) If you were the governor of New York, which graphic would
+you use to demonstrate how advanced your state is? <BR>
+
+(ii) If you were the governor of Connecticut, which graphic would
+you use to demonstrate how advanced your state is? <BR>
+
+(iii) If you were the governor of New Jersey, which graphic would
+you use to demonstrate how advanced your state is? <BR>
+
+(iv) If you were the governor of Virginia, which graphic would
+you use to demonstrate how far behind your state is and 
+desperately needs federal funding? <BR>
+
+(v) If you were a historician who wants to show how few telephones
+were around in 1960, which graphic would you use?<BR>
+<BR>
+
+<li>b) Now find the "true" interval for the following 5 states.
+Do this by calculating the intersection of the class intervals used within
+the 4 graphics above:<BR>
+
+Maine<BR>
+New York<BR>
+Connecticut<BR>
+New Jersey<BR>
+Virginia<BR>
+<BR>
+
+<li>c) Describe your findings from b) in one or two sentences.<BR>
+<BR>
+
+<li>d) Now think of micromaps. Can you manipulate these as easily
+as these maps to express different political opinions? Explain.
+Describe how a micromap of this data might look like.
+</ul>
+<BR>
+<BR>
+
+
+<li>4) What is wrong with these three graphics? (6 Points)
+<BR><BR>
+
+<img SRC="tuf.gif" height=700>
+<BR>
+<BR>
+
+Unfortunately, the small print got lost when scanning in these
+graphics. 
+<BR>
+<BR>
+
+In the upper graphic, the lines under "Fuel Economy..."
+read "Set by Congress and supplemented by the Transportation Department.
+In Miles per gallon".
+<BR>
+<BR>
+
+In the middle graphic, the text at the 4 markers in the upper right part
+reads: "Jan 1, 5% increase", "April 1, 3.809% increase",
+"July 1, 2.294% increase", and "Oct. 1, 2.691% increase".
+The Dollar amounts given underneath are "$13.34", "$13.84",
+"$14.16", and "$14.54". The labels at the bottom under "1979"
+read "Jan to March", "April to June", "July to Sept.", and
+"Oct to Dec".
+<BR>
+<BR>
+
+In the bottom graphic, it should read "1972 = 100".
+
+</ul>
+
+<BR>
+<BR>
+<BR>
+
+
+
+

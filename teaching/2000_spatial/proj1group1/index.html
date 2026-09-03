@@ -1,0 +1,366 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.7 [en] (X11; U; SunOS 5.7 sun4u) [Netscape]">
+</head>
+<body text="#000000" bgcolor="#CBE6FF" link="#0000EE" vlink="#551A8B" alink="#FF0000">
+<font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Spatial Statistics Stat 5810</font>
+<br><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Project 1, Nov 2000</font>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <font size=+1>Aaron,
+Ann, Cristina, Leslie, Raj</font>
+<br>&nbsp;
+<p><font size=+1>&nbsp;</font><b><font size=+2>Group 1: Analysis of Multiple
+Types of Events</font></b>
+<br>&nbsp;
+<p>For information on how to extract the data, <a href="dataextraction.html">click
+here</a>
+<br>&nbsp;
+<p><b><font size=+1>INTRODUCTION</font></b>
+<p><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Here we present an example of analyzing a dataset that has two or more
+different types of 'events'. In this situation, we are interested in assessing
+the</font>
+<br><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+relationship between the patterns of the types of events, and in particular,
+whether they are independent.</font>
+<p><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+For the example we have used the dataset presented in Bailey and Gatrell
+(see section 4.2; Analysis of Multiple Types of Events) regarding the locations
+of</font>
+<br><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+property theft offenses perpetrated by white and black people in Oklahoma
+City in the late 1970s. Thus, the different types of events here are the
+offenses</font>
+<br><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+committed by white people and those committed by black people.</font>
+<blockquote><font size=+1>The analyses that we present will help us determine
+whether white offenses and black offenses exhibit different spatial patterns
+and whether these patterns are related (i.e. dependent on each other)&nbsp;
+in any way. It is possible to imagine that the patterns may in fact be
+non-independent. The different types of events may be negatively correlated
+(ie. they exhibit repulsion) if, for example, whites and black residences
+are negatively correlated and the offenders commit crime close to home.
+Conversely, the events may be positively correlated (i.e.. they show attraction)
+if certain areas of the town are 'attractive' to thieves and thus both
+black and white thieves commit their crimes in similar areas.</font></blockquote>
+<b><font size=+1>VISUAL DISPLAY OF DATA</font></b>
+<p><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+We first plotted the data to visually examine the distributions for patterns:</font>
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<p><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+POSITIONS OF BLACK AND WHITE OFFENSES</font>
+<br><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Black offenses = red circles</font>
+<br><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+White offenses = yellow circles</font>
+<center>
+<p><img SRC="xgobiplotpublic" height=427 width=401></center>
+
+<p><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p><b><font size=+1>BASIC ANALYSES: CHI SQUARE</font></b>
+<p><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+It is possible to test for independence between the spatial distribution
+of two different types of events by determining whether each event occurred
+or did not</font>
+<br><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+occur in each of a number of grids placed randomly or regularly over the
+region. This 'presence-absence' information can then be presented in a
+table as such:</font>
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<p><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Black offenses</font>
+<p><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Absence&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Presence</font>
+<p><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+________________________</font>
+<br><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+|</font>
+<br><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Absence&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+|</font>
+<br><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+|</font>
+<br><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+White offenses&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+|____________ |___________|</font>
+<br><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+|</font>
+<br><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Presence&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c21&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c22&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+|</font>
+<br><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+|</font>
+<br><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+| ____________|___________|</font>
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<p><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+We could then test this distribution against a chi-square distribution
+using the standard chi-square statistic. This test is inferior to other
+approaches in that</font>
+<br><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+it does not effectively use the data. It is easy to see that by using only
+presence/absence of offenses in the quadrats, we are losing data on the
+intensity or</font>
+<br><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+number of counts per quadrat. In addition, the size of the quadrat chosen
+can influence the analysis.</font>
+<p><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+To see the code you would use to analyze the data with a chi-square test,
+go to the <a href="chi-square.html">Chi-square code</a> page.</font>
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<p><b><font size=+1>MORE POWERFUL ANALYSES</font></b>
+<p><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Due to the problems with the chi-square analysis,&nbsp; we went on to use
+some more powerful tools.</font>
+<blockquote><font size=+1>When assessing multivariate data, the use of
+a set of nearest neighbor distribution functions (Gij(h)) can be illuminating.
+Gij(h) is the probability that the distance from a randomly chosen type
+i event (e.g. white offenses) to the nearest event of type j (e.g. black
+offenses) is less than or equal to h; h is the distance between a randomly
+chosen white crime (type i) event to the nearest black crime (type j) event.
+If the distributions of our two event types are independent, then the distribution
+of nearest neighbor distances to events of type j from an origin of measurement
+should be the same. Thus, we can compare our Gij(h) to Fj(h), where Fj(h)
+is the probability that the distance from a randomly chosen point to the
+nearest event of type j is less than or equal to h. This is done by plotting
+both Gij(h) and Fj(h) on the same plot against h. A similar line for each
+estimated distribution will indicate independence between our events types,
+whereas variations between the distributions will indicate non-independence.</font></blockquote>
+
+<br>&nbsp;
+<p><b><font size=+1>F-HAT AND G-HAT ANALYSIS</font></b>
+<p>Start Splus
+<p><font size=+1>&nbsp;library(splancs, first = T)</font>
+<blockquote><font size=+1>bkpts1 &lt;- matrix(scan("/home/ssa9/stats/project1/blackdata"),147,5,byrow
+= T)</font>
+<br><font size=+1>bkpts1[1,]</font>
+<p><font size=+1>&nbsp;bkptsx &lt;- bkpts1[,2]</font>
+<br><font size=+1>bkptsy &lt;- bkpts1[,3]</font>
+<br><font size=+1>&nbsp;blkpts &lt;- as.points(bkptsx, bkptsy)</font>
+<p><font size=+1>whpts1 &lt;- matrix(scan("/home/ssa9/stats/project1/whitedata"),104,5,byrow
+= T)</font>
+<br><font size=+1>whpts1[1,]</font>
+<p><font size=+1>whptsx &lt;- whpts1[,2]</font>
+<br><font size=+1>whptsy &lt;- whpts1[,3]</font>
+<br><font size=+1>whtpts &lt;- as.points(whptsx, whptsy)</font>
+<p><font size=+1>Description for the program 'findngh':</font>
+<br><font size=+1>The program takes each row of obj1 and adds it as the
+first row to the matrix that otherwise contains obj2.</font>
+<br><font size=+1>It then computes the distances between the points in
+the matrix using the 'dist' function. Since we are interested only in the
+distances from the first</font>
+<br><font size=+1>row(containing x,y of obj1) to the other points, we filter
+the first 'nrow(obj2)' distances and compute the shortest distance using
+the 'min' function.</font>
+<br><font size=+1>The result is added to a vector.</font>
+<p><font size=+1>findngh &lt;- function(obj1,obj2)</font>
+<br><font size=+1>{</font>
+<br><font size=+1>&nbsp; count &lt;- 0</font>
+<br><font size=+1>&nbsp; for (i in 1:nrow(obj1))</font>
+<br><font size=+1>&nbsp; {</font>
+<br><font size=+1>&nbsp;&nbsp;&nbsp; xyb &lt;- obj1[i,]</font>
+<p><font size=+1>&nbsp;&nbsp;&nbsp; xy &lt;- c(xyb[1], obj2[,1], xyb[2],
+obj2[,2])</font>
+<p><font size=+1>&nbsp;&nbsp;&nbsp; xymat &lt;- matrix(xy, nrow(obj2) +
+1,&nbsp; 2)</font>
+<p><font size=+1>&nbsp;&nbsp;&nbsp; if (count == 0)</font>
+<br><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</font>
+<br><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; smalldist &lt;- min(dist(xymat)[1:nrow(obj2)])</font>
+<br><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; count &lt;- 1</font>
+<br><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</font>
+<br><font size=+1>&nbsp;&nbsp;&nbsp; else</font>
+<br><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; smalldist &lt;- c(smalldist,
+min(dist(xymat)[1:nrow(obj2)]))</font>
+<p><font size=+1>&nbsp;&nbsp;&nbsp; }</font>
+<p><font size=+1>&nbsp;&nbsp;&nbsp; return(smalldist)</font>
+<br><font size=+1>}</font>
+<br>&nbsp;
+<p><font size=+1>g12hat &lt;- function(obj1,obj2,dist.ghat = all.dists)</font>
+<br><font size=+1>{</font>
+<br><font size=+1>&nbsp; all.dists &lt;- findngh(obj1,obj2)</font>
+<br><font size=+1>&nbsp; all.dists &lt;- sort(all.dists)</font>
+<br><font size=+1>&nbsp; n &lt;- length(all.dists)</font>
+<br><font size=+1>&nbsp; ghat &lt;- 1:n</font>
+<br><font size=+1>&nbsp; ghat &lt;- ghat/n</font>
+<br><font size=+1>&nbsp; plot(dist.ghat, ghat, xlab = "Distance", ylab
+= "Ghat")</font>
+<br><font size=+1>&nbsp; return(cbind(dist = dist.ghat, Ghat = ghat))</font>
+<br><font size=+1>}</font>
+<br>&nbsp;
+<p><font size=+1>&nbsp;par(mfrow = c(2,2))</font>
+<br><font size=+1>gbw &lt;- g12hat(blkpts,whtpts)</font>
+<br><font size=+1>title ("Ghat: from black to white")</font>
+<p><font size=+1>fw &lt;- Fhat(whtpts)</font>
+<br><font size=+1>pointmap(gbw, col = 3 , add = T)</font>
+<br><font size=+1>## Points out of bounds X= 75.3923 Y= 0.986395</font>
+<br><font size=+1>## Points out of bounds X= 77.8974 Y= 0.993197</font>
+<br><font size=+1>## Points out of bounds X= 101.1385 Y= 1</font>
+<br><font size=+1>## Warning messages:</font>
+<br><font size=+1>&nbsp; ## pointmap: plot type not square in: pointmap(gbw,
+col = 3, add = T)</font>
+<br><font size=+1>title("Fhat vs. Gbwhat")</font>
+<br>&nbsp;
+<p><font size=+1>&nbsp;gwb &lt;- g12hat(whtpts,blkpts)</font>
+<br><font size=+1>&nbsp;title ("Ghat: from white to black")</font>
+<p><font size=+1>fb &lt;- Fhat (blkpts)</font>
+<br><font size=+1>pointmap (gwb, col = 3, add = T)</font>
+<br><font size=+1>## Points out of bounds X= 76.5506 Y= 0.990385</font>
+<br><font size=+1>## Points out of bounds X= 94.8472 Y= 1</font>
+<br><font size=+1>## Warning messages:</font>
+<br><font size=+1>&nbsp;##&nbsp; pointmap: plot type not square in: pointmap(gwb,
+col = 3, add = T)</font>
+<br><font size=+1>title ("Fhat vs. Gwbhat")</font>
+<br>&nbsp;
+<br>&nbsp;
+<p><font size=+1>The output of this analysis should be:</font>
+<br>&nbsp;
+<br>&nbsp;
+<p><img SRC="proj2.jpg" height=734 width=812>
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;</blockquote>
+<b><font size=+1>BIVARIATE LHAT AND SIMULATION ENVELOPES</font></b>
+<blockquote>&nbsp;
+<br><font size=+1>For a dataset based on spatial locations, analyses based
+on the K function can be more powerful than using an analysis based on
+nearest neighbor distances.&nbsp; This is because the L-hat plots (derived
+from K functions) i) show black and white crime patterns considered separately
+and how they depart from spatial randomness, and ii) show the tendency
+for black and white crimes to occur together (attraction- positive peaks
+in the plot), or further apart (repulsion- negative troughs in the plot).</font>
+<p><font size=+1>Lets look briefly at the cross- K function:</font>
+<p><font size=+1>Since Kii(h) = univariate K function for white crime (i),
+and</font>
+<p><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Kjj(h) =&nbsp; univariate K function for black crime (j),</font>
+<p><font size=+1>then&nbsp;&nbsp;&nbsp; Kij(h) = the cross K function</font>
+<p><font size=+1>When used for analyses, we can see that</font>
+<p><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Lamba(j) * Kij(h) = E (# of black crimes less than some distance (h) from
+a white crime),&nbsp; where Lamba(j) = intensity of black crime.</font>
+<p><font size=+1>Under independence,</font>
+<p><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Kij(h) will equal pi(h<sup>2</sup>)</font>
+<p><font size=+1>But, if white and black crimes are further apart (i.e.
+negative correlation or repulsion), then Kij(h) will be less than pi(h<sup>2</sup>)&nbsp;
+and</font>
+<br><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if white
+and black crimes are close (i.e. positive correlation or attraction), then
+Kij(h) will be greater than pi(h<sup>2</sup>)</font>
+<p><font size=+1>Simulation envelopes are used to demonstrate how the K-hat
+function departs from its theoretical value.&nbsp; K-hat is an estimate
+of Kij(h).&nbsp; As the relationship between the two patterns is not affected
+by the spatial randomness of either, we do not compare the distributions
+to a CSR pattern.&nbsp; Instead, simulation of the entire point pattern
+can be done by randomly shifting all of the black crimes relative to all
+of the white crimes.</font>
+<br>&nbsp;
+<br>&nbsp;</blockquote>
+<b><font size=+1>THE CODE:</font></b>
+<blockquote>&nbsp;
+<br><font size=+1>The first command to enter is:</font>
+<p><font size=+1>&nbsp;library(splancs, first = T)</font>
+<p><font size=+1>We use "first = T" so that if the Splus Spatial Module
+is already loaded, Splancs</font>
+<br><font size=+1>will be accessed first.&nbsp; This is necessary in this
+case because both the Splus Spatial</font>
+<br><font size=+1>Module and Splancs have functions called "bbox" and if
+we don't specify that Splancs</font>
+<br><font size=+1>must be loaded first, it will use the Splus Spatial Module
+version of bbox when we</font>
+<br><font size=+1>really want the Splancs version.</font>
+<p><font size=+1>Next, we load the data into three different matrices,
+one with black data, one with white</font>
+<br><font size=+1>data, and one with both data sets together.&nbsp; These
+are simple Splus functions.</font>
+<p><font size=+1>white1 _ matrix(scan('/home/ssa5/project1/whitepts'),104,5,byrow=T)</font>
+<br><font size=+1>black1 _ matrix(scan('/home/ssa5/project1/blackpts.dat'),147,5,byrow=T)</font>
+<br><font size=+1>alldata _ matrix(scan('/home/ssa5/project1/alldata'),251,5,byrow=T)</font>
+<p><font size=+1>Then we need to get the data into data structures that
+Splancs can use, primarily points</font>
+<br><font size=+1>data sets and a polygon data set.&nbsp; Polypts is the
+bounding box for the two data sets together.</font>
+<br><font size=+1>Hvector is the vector if nearest neighbor distances between
+points in the two data sets, and</font>
+<br><font size=+1>sort sorts them into ascending order.</font>
+<p><font size=+1>whitepts _ as.points(white1[,2],white1[,3])</font>
+<br><font size=+1>blackpts _ as.points(black1[,2],black1[,3])</font>
+<br><font size=+1>polypts _ bbox(as.points(alldata[,2],alldata[,3]))</font>
+<br><font size=+1>hvector _ sort(nndistF(whitepts,blackpts))</font>
+<p><font size=+1>Next we calculate the cross-k with an Splancs function
+and the bivariate Lhat.</font>
+<p><font size=+1>kvector _ k12hat(whitepts,blackpts,polypts,hvector)</font>
+<br><font size=+1>lvector _ sqrt(kvector/pi)-hvector</font>
+<p><font size=+1>We then calculate the simulation envelopes with a toroidal
+shift using another Splancs function.</font>
+<br><font size=+1>This was done with 20 simulations.&nbsp; Upper and lower
+are the upper and lower bounds of the</font>
+<br><font size=+1>simulation envelope for the bivariate Lhat.</font>
+<p><font size=+1>K12env _ Kenv.tor(whitepts,blackpts,polypts,20,hvector)</font>
+<br><font size=+1>upper _ sqrt(K12env$upper/pi)-hvector</font>
+<br><font size=+1>lower _ sqrt(K12env$lower/pi)-hvector</font>
+<p><font size=+1>Plot the estimated bivariate Lhat and the simulation envelope.</font>
+<p><font size=+1>plot(hvector,lvector,type="l",ylim=c(-40,40),xlab="h",ylab="Bivariate
+Lhat")</font>
+<br><font size=+1>lines(hvector,upper,type="l",lty=2)</font>
+<br><font size=+1>lines(hvector,lower,type="l",lty=2)</font>
+<br><font size=+1>title(main="Estimated Bivariate Lhat and Simulation Envelopes")</font>
+<p><font size=+1>Splancs functions used:</font>
+<br><font size=+1>as.points</font>
+<br><font size=+1>nndistF</font>
+<br><font size=+1>k12hat</font>
+<br><font size=+1>Kenv.tor</font>
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<p><font size=+1>Thus, we get:</font>
+<center>
+<p><img SRC="lhatsim.jpg" height=723 width=810></center>
+
+<p><br></blockquote>
+<b><font size=+1>CONCLUSIONS: what do you think?&nbsp; Then, click here
+for <a href="conclusions.html">answers</a></font></b>
+<p><font size=+1>What about edge effects?&nbsp; Edge effects should be
+considered in analyses such as the ones presented.&nbsp; Due to time considerations,
+we have not discussed them in class in detail, but click here for information
+regarding
+<a href="edgecorr.html">edge effects.</a></font>
+<br>&nbsp;
+<br>&nbsp;
+</body>
+</html>

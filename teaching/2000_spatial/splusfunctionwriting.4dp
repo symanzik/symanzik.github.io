@@ -1,0 +1,12 @@
+2) Coding of the drawing function:
+
+
+drawquadrats _ function (spp, xbins = 10, ybins = 10)
+{
+  binmat _ binning (spp, xbins, ybins)
+  if (binmat[1,1] == -1)
+    cat ("No plot possible.", fill = T)
+  else
+    persp (binmat)
+  "OK"
+}

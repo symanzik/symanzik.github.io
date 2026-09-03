@@ -1,0 +1,136 @@
+<html>
+<BODY bgcolor="FFFFFF" text="#000000">
+
+<h2>
+Stat 2000, Homework 3, Question 3 - Solution
+</h2>
+
+<ul>
+
+<li>1) <strong> Summary Statistics: </strong>
+<BR>
+<BR>
+
+Below are the summary statistics for wins and payroll.
+The numbers listed here match those calculations we did in class.
+Note that this is the sample standard deviation.
+<BR>
+<BR>
+
+<BR>Summary statistics
+
+<TABLE BGCOLOR=white BORDER=1 CELLPADDING=4 CELLSPACING=0 ALIGN=LEFT>
+<TR>
+<TD ALIGN=CENTER><B>Variable</B></TD>
+<TD ALIGN=CENTER><B>n</B></TD>
+<TD ALIGN=CENTER><B>Mean</B></TD>
+<TD ALIGN=CENTER><B>Variance</B></TD>
+<TD ALIGN=CENTER><B>Std. Dev.</B></TD>
+<TD ALIGN=CENTER><B>Median</B></TD>
+<TD ALIGN=CENTER><B>Range</B></TD>
+<TD ALIGN=CENTER><B>Min</B></TD>
+<TD ALIGN=CENTER><B>Max</B></TD>
+<TD ALIGN=CENTER><B>Q1</B></TD>
+<TD ALIGN=CENTER><B>Q3</B></TD>
+</TR>
+<TR>
+<TD>wins</TD>
+<TD ALIGN=RIGHT>30</TD>
+<TD ALIGN=RIGHT>18.833334</TD>
+<TD ALIGN=RIGHT>19.591953</TD>
+<TD ALIGN=RIGHT>4.42628</TD>
+<TD ALIGN=RIGHT>19</TD>
+<TD ALIGN=RIGHT>21</TD>
+<TD ALIGN=RIGHT>8</TD>
+<TD ALIGN=RIGHT>29</TD>
+<TD ALIGN=RIGHT>16</TD>
+<TD ALIGN=RIGHT>21</TD>
+</TR>
+<TR>
+<TD>payroll</TD>
+<TD ALIGN=RIGHT>30</TD>
+<TD ALIGN=RIGHT>40.233334</TD>
+<TD ALIGN=RIGHT>224.87471</TD>
+<TD ALIGN=RIGHT>14.995823</TD>
+<TD ALIGN=RIGHT>41</TD>
+<TD ALIGN=RIGHT>60</TD>
+<TD ALIGN=RIGHT>9</TD>
+<TD ALIGN=RIGHT>69</TD>
+<TD ALIGN=RIGHT>31</TD>
+<TD ALIGN=RIGHT>52</TD>
+</TR>
+</TABLE>
+<BR CLEAR=LEFT>
+<BR>
+<BR>
+
+
+<li>2) <strong> Histograms: </strong>
+<BR>
+<BR>
+
+For 30 observations, we would expect about 5 to 6 (or perhaps up to 7)
+different classes. The histogram for wins only has 3 classes.
+The histogram for payroll is OK. 
+
+<IMG SRC="hw03_hist1a.gif">
+<IMG SRC="hw03_hist1b.gif">
+<BR>
+
+WebStat allows us to modify starting point and class width.
+Here is a better histogram for wins with 5 classes
+(where the selected starting point is 0 and the class width is 5).
+
+<IMG SRC="hw03_hist2.gif">
+<BR>
+
+
+<li>3) <strong> Stem-and-Leaf: </strong>
+<BR>
+<BR>
+
+The stem-and-leaf plot for payroll looks as expected.
+But why the `Low' amd `High' in the stem-and-leaf plot for wins?
+<BR>
+<BR>
+
+<PRE><B>Variable: wins</B>
+Low : 8.0
+1 : 144
+1 : 55666778999999
+2 : 0000124444
+2 : 6
+High: 29.0
+</PRE>
+<P>
+<BR>
+<PRE><B>Variable: payroll</B>
+0 : 9
+1 : 3
+2 : 02356
+3 : 1233479
+4 : 1157899
+5 : 022356
+6 : 039
+</PRE>
+
+
+<li>4) <strong> Boxplot: </strong>
+<BR>
+<BR>
+
+The boxplots for this data set look OK. But some warning -
+WebStat does not produce the modified version of the boxplot
+we introduced in class, i.e., outliers are not labeled 
+with a `*' symbol. The lines outside the box really stretch to the min
+and to the max - no matter whether these are below
+Q1 - 1.5 x IQR or above Q3 + 1.5 x IQR. Check yourself
+by adding some small or large value (e.g., -500 or 500) to the data set.
+
+<IMG SRC="hw03_boxplots.gif">
+<BR>
+
+
+</html>
+
+

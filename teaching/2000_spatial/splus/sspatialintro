@@ -1,0 +1,344 @@
+Stat 5810 Applied Spatial Statistics                                 Fall 2000
+
+
+                      Introduction to S+SpatialStats
+                      ==============================
+
+                        Wed 9/27/00 & Wed 10/18/00
+
+
+Dr. Juergen Symanzik
+
+------------------------------------------------------------------------------
+
+References:
+
+Kaluzny, S. P., Vega, S. C., Cardoso, T. P., Shelly, A. A. (1998): 
+S+SpatialStats - User's Manual for Windows and UNIX, Springer, New York.
+
+------------------------------------------------------------------------------
+
+Loading the Spatial Statistics module:
+
+> module (spatial)
+
+> .First _ function() {module (spatial) }
+
+------------------------------------------------------------------------------
+
+Analyzing Spatial Point Patterns:
+=================================
+
+SPP data sets included with S+SpatialStats:
+
+bramble
+lansing
+quakes.bay
+quakes.wash
+
+------------------------------------------------------------------------------
+
+Creating a Spatial Point Pattern:
+
+> summary (quakes.bay)
+    longitude         latitude       magnitude          date     
+    Min.:-123.3      Min.:36.01      Min.:2.500      Min.: 734  
+ 1st Qu.:-121.7   1st Qu.:36.61   1st Qu.:2.600   1st Qu.:2771  
+  Median:-121.5    Median:36.84    Median:2.800    Median:4588  
+    Mean:-121.5      Mean:37.00      Mean:2.947      Mean:4549  
+ 3rd Qu.:-121.2   3rd Qu.:37.36   3rd Qu.:3.100   3rd Qu.:6437  
+    Max.:-119.8      Max.:38.50      Max.:5.800      Max.:8024  
+
+       hour           minute          second     
+    Min.: 0.00      Min.: 0.00      Min.: 0.00  
+ 1st Qu.: 5.00   1st Qu.:15.00   1st Qu.:14.60  
+  Median:11.00    Median:31.00    Median:30.20  
+    Mean:11.47      Mean:30.09      Mean:30.07  
+ 3rd Qu.:18.00   3rd Qu.:45.00   3rd Qu.:45.20  
+    Max.:23.00      Max.:59.00      Max.:59.90  
+
+
+> quakes.spp _ spp (quakes.bay)
+> summary (quakes.spp)
+Total number of points: 2049
+Coordinate extents :
+ longitude :  -123.33 , -119.78 
+ latitude :  36.01 , 38.50 
+Number of boundary vertices : 4
+Other covariates :
+    magnitude          date           hour           minute     
+    Min.:2.500      Min.: 734      Min.: 0.00      Min.: 0.00  
+ 1st Qu.:2.600   1st Qu.:2771   1st Qu.: 5.00   1st Qu.:15.00  
+  Median:2.800    Median:4588    Median:11.00    Median:31.00  
+    Mean:2.947      Mean:4549      Mean:11.47      Mean:30.09  
+ 3rd Qu.:3.100   3rd Qu.:6437   3rd Qu.:18.00   3rd Qu.:45.00  
+    Max.:5.800      Max.:8024      Max.:23.00      Max.:59.00  
+
+      second     
+    Min.: 0.00  
+ 1st Qu.:14.60  
+  Median:30.20  
+    Mean:30.07  
+ 3rd Qu.:45.20  
+    Max.:59.90  
+
+
+> par (pty = "s")     # square plotting region
+> plot (quakes.spp, boundary = T)
+> bbox(quakes.spp)
+$x:
+[1] -123.33 -123.33 -119.78 -119.78
+
+$y:
+[1] 38.50 36.01 36.01 38.50
+
+
+------------------------------------------------------------------------------
+
+Creating a subset:
+
+> quakes.spp$magnitude[1:100]
+  [1] 3.0 2.8 2.6 2.5 3.7 2.5 2.6 3.9 2.7 2.5 3.2 2.5 2.7 3.4 3.0 3.1 3.1 2.9
+ [19] 2.6 3.0 3.1 4.1 3.1 3.4 3.0 3.7 3.5 3.0 3.5 2.7 2.6 3.0 4.7 2.7 2.8 2.7
+ [37] 2.7 3.1 3.8 2.8 2.8 2.6 2.7 2.9 2.7 2.6 3.1 2.7 2.5 2.6 3.2 2.7 2.6 3.1
+ [55] 2.6 3.3 2.8 3.0 3.0 2.6 2.5 3.6 2.9 3.2 3.7 3.4 2.5 3.0 2.6 2.7 2.5 2.6
+ [73] 3.6 2.5 3.6 2.7 2.7 2.8 2.7 2.9 2.9 3.7 2.5 2.7 2.5 2.8 2.7 3.3 2.7 3.0
+ [91] 3.4 3.7 2.5 2.8 2.6 3.6 2.6 3.2 3.1 3.3
+
+> attach(quakes.spp)
+> magnitude[1:100]
+ 1   2   3   4   5   6   7   8   9  10  11  12  13  14 15  16  17  18  19 20 
+ 3 2.8 2.6 2.5 3.7 2.5 2.6 3.9 2.7 2.5 3.2 2.5 2.7 3.4  3 3.1 3.1 2.9 2.6  3
+
+  21  22  23  24 25  26  27 28  29  30  31 32  33  34  35  36  37  38  39  40 
+ 3.1 4.1 3.1 3.4  3 3.7 3.5  3 3.5 2.7 2.6  3 4.7 2.7 2.8 2.7 2.7 3.1 3.8 2.8
+
+  41  42  43  44  45  46  47  48  49  50  51  52  53  54  55  56  57 58 59  60 
+ 2.8 2.6 2.7 2.9 2.7 2.6 3.1 2.7 2.5 2.6 3.2 2.7 2.6 3.1 2.6 3.3 2.8  3  3 2.6
+
+  61  62  63  64  65  66  67 68  69  70  71  72  73  74  75  76  77  78  79 
+ 2.5 3.6 2.9 3.2 3.7 3.4 2.5  3 2.6 2.7 2.5 2.6 3.6 2.5 3.6 2.7 2.7 2.8 2.7
+
+  80  81  82  83  84  85  86  87  88  89 90  91  92  93  94  95  96  97  98 
+ 2.9 2.9 3.7 2.5 2.7 2.5 2.8 2.7 3.3 2.7  3 3.4 3.7 2.5 2.8 2.6 3.6 2.6 3.2
+
+  99 100 
+ 3.1 3.3
+
+> quakes40.spp _ spp (quakes.bay[magnitude >= 4.0,], boundary = bbox(quakes.spp))
+> summary (quakes40.spp)
+Total number of points: 94
+Coordinate extents :
+ longitude :  -122.73 , -120.16 
+ latitude :  36.11 , 38.49 
+Number of boundary vertices : 4
+Other covariates :
+    magnitude          date           hour           minute     
+    Min.:4.000      Min.: 806      Min.: 0.00      Min.: 0.00  
+ 1st Qu.:4.100   1st Qu.:3568   1st Qu.: 6.00   1st Qu.:11.25  
+  Median:4.400    Median:5094    Median:11.00    Median:30.50  
+    Mean:4.469      Mean:4982      Mean:11.73      Mean:29.16  
+ 3rd Qu.:4.700   3rd Qu.:7157   3rd Qu.:18.00   3rd Qu.:43.75  
+    Max.:5.800      Max.:7941      Max.:23.00      Max.:59.00  
+
+      second     
+    Min.: 0.00  
+ 1st Qu.:13.03  
+  Median:26.95  
+    Mean:28.23  
+ 3rd Qu.:45.10  
+    Max.:59.70  
+
+
+par (mfrow = c(1, 2))
+par (pty = "s")
+plot (quakes.spp, boundary = T, main = "All Earthquakes")
+points (quakes40.spp, col = 2, pch = "x")
+plot (quakes40.spp, boundary = T, main = "Earthquakes with Magnitude >= 4.0")
+
+------------------------------------------------------------------------------
+
+Different plots of intensities:
+
+par (mfrow = c(3, 2))
+par (pty = "s")
+quakes.bin _ intensity (quakes.spp, method = "binning", nx = 30, ny = 30, span = 0.5)
+plot (quakes.spp)
+contour (quakes.bin)
+image (quakes.bin)
+persp (quakes.bin)
+quakes.kernel _ intensity (quakes.spp, method = "kernel", bw = 0.5)
+contour (quakes.kernel)
+image (quakes.kernel)
+
+------------------------------------------------------------------------------
+
+Nearest neighbor methods:
+
+par (mfrow = c(2, 2))
+quakes.ghat _ Ghat (quakes.spp)
+title (main = "All Earthquakes")
+quakes40.ghat _ Ghat (quakes40.spp)
+title (main = "Earthquakes >= 4.0")
+
+plot (c(0, 0.5), c(0, 1.0), type = "n", xlab = "dist", ylab = "Ghat")
+points (quakes.ghat)
+plot (c(0, 0.5), c(0, 1.0), type = "n", xlab = "dist", ylab = "Ghat")
+points (quakes40.ghat)
+
+------------------------------------------------------------------------------
+
+K & L function:
+
+par (mfrow = c(2, 2))
+quakes.khat _ Khat (quakes.spp)
+title (main = "All Earthquakes")
+quakes40.khat _ Khat (quakes40.spp)
+title (main = "Earthquakes >= 4.0")
+
+quakes.lhat _ Lhat (quakes.spp)
+abline(0, 1)
+quakes40.lhat _ Lhat (quakes40.spp)
+abline(0, 1)
+
+------------------------------------------------------------------------------
+
+Creating a CSR process:
+
+par (mfrow = c(2, 2))
+csr _ make.pattern (n = 2049)
+plot (csr)
+csr.bin _ intensity (csr, method = "binning", nx = 30, ny = 30, span = 0.1)
+persp (csr.bin)
+Khat (csr)
+Lhat (csr)
+abline(0, 1)
+
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+
+Creating CSR differently:
+
+par (mfrow = c(1, 2))
+csr _ make.pattern (n = 2049)
+plot (csr, main = "CSR with fixed n")
+summary(csr)
+#Total number of points: 2049
+#Coordinate extents :
+# x :  0.0005649887 , 0.9985041954 
+# y :  8.638017e-06 , 9.985471e-01 
+#Number of boundary vertices : 4
+
+csr2 _ make.pattern (process = "poisson", lambda = 2049)
+plot (csr2, main = "CSR defined via lambda")
+summary(csr2)
+#Total number of points: 2073
+#Coordinate extents :
+# x :  0.0004788809 , 0.9997592210 
+# y :  0.0001384751 , 0.9999346910 
+#Number of boundary vertices : 4
+
+------------------------------------------------------------------------------
+
+Creating point patterns other than CSR:
+
+par (mfrow = c(3, 3))
+
+ssi0.02 _ make.pattern (100, process = "SSI", radius = 0.02)
+plot (ssi0.02, main = "SSI with radius 0.02")
+
+ssi0.05 _ make.pattern (100, process = "SSI", radius = 0.05)
+plot (ssi0.05, main = "SSI with radius 0.05")
+
+ssi0.08 _ make.pattern (100, process = "SSI", radius = 0.08)
+plot (ssi0.08, main = "SSI with radius 0.08")
+
+
+strauss0.0 _ make.pattern (100, process = "Strauss", radius = 0.08, cpar = 0.0)
+plot (strauss0.0, main = "Strauss process with radius 0.08 and cpar = 0.0")
+
+strauss0.5 _ make.pattern (100, process = "Strauss", radius = 0.08, cpar = 0.5)
+plot (strauss0.5, main = "Strauss process with radius 0.08 and cpar = 0.5")
+
+strauss1.0 _ make.pattern (100, process = "Strauss", radius = 0.08, cpar = 1.0)
+plot (strauss1.0, main = "Strauss process with radius 0.08 and cpar = 1.0")
+
+
+cluster0.02 _ make.pattern (100, process = "cluster", radius = 0.02, cpar = 10)
+plot (cluster0.02, main = "Cluster process with radius 0.02")
+
+cluster0.05 _ make.pattern (100, process = "cluster", radius = 0.05, cpar = 10)
+plot (cluster0.05, main = "Cluster process with radius 0.05")
+
+cluster0.08 _ make.pattern (100, process = "cluster", radius = 0.08, cpar = 10)
+plot (cluster0.08, main = "Cluster process with radius 0.08")
+
+------------------------------------------------------------------------------
+
+Simulation envelopes:
+
+quakes.spp _ spp (quakes.bay)
+
+par (mfrow = c(1, 1))
+quakes.khat _ Khat (quakes.spp, plot = F)
+plot (quakes.khat$values[quakes.khat$values[,1] < 0.5, ])
+title ("Khat and Simulation Envelopes")
+
+quakes.kenv _ Kenv (quakes.spp, nsims = 4, add = F)
+quakes.index _ quakes.kenv$dist < 0.5
+lines (quakes.kenv$dist[quakes.index], quakes.kenv$lower[quakes.index])
+lines (quakes.kenv$dist[quakes.index], quakes.kenv$upper[quakes.index])
+
+(quakes.kenv$upper[quakes.index] - quakes.kenv$lower[quakes.index])[1:10]
+
+# [1] 0.0001416664 0.0003322114 0.0007732138 0.0008911356 0.0008334583
+# [6] 0.0011996496 0.0011787788 0.0012590687 0.0018577206 0.0014500613
+
+------------------------------------------------------------------------------
+
+Dealing with nearest neighbor distances:
+
+xmin _ min (bbox(quakes.spp)$x)
+xmax _ max (bbox(quakes.spp)$x)
+ymin _ min (bbox(quakes.spp)$y)
+ymax _ max (bbox(quakes.spp)$y)
+
+quakes.ext _ matrix (c(xmin, xmax, quakes.spp$longitude, 
+   ymin, ymax, quakes.spp$latitude), 2051, 2)
+
+quakes.neighbors _ find.neighbor (quakes.ext, k = 2)
+quakes.neighbors[1:10,]
+
+#   index1 index2  distances 
+# 1      1    760 1.14109596
+# 2      1      1 0.00000000
+# 3      2   1561 1.61969133
+# 4      2      2 0.00000000
+# 5      3    815 0.10000000
+# 6      3      3 0.00000000
+# 7      4    292 0.03162278
+# 8      4      4 0.00000000
+# 9      5   1803 0.03162278
+#10      5      5 0.00000000
+
+nrow(quakes.neighbors)
+# [1] 4102
+
+plot (quakes.spp)
+lines (c(xmin, quakes.spp$longitude[quakes.neighbors[1,2] - 2]),
+       c(ymin, quakes.spp$latitude[quakes.neighbors[1,2] - 2]) )
+lines (c(xmax, quakes.spp$longitude[quakes.neighbors[3,2] - 2]),
+       c(ymax, quakes.spp$latitude[quakes.neighbors[3,2] - 2]) )
+
+quakes.diff _ quakes.neighbors[quakes.neighbors[,3] > 0, ]
+nrow(quakes.diff)
+# [1] 1067
+
+quakes.diff2 _ quakes.neighbors[quakes.neighbors[,1] != quakes.neighbors[,2], ]
+nrow(quakes.diff2)
+# [1] 2375
+
+------------------------------------------------------------------------------
+
+
+

@@ -1,0 +1,131 @@
+<title>Stat 5810, Applied Spatial Statistics - Homework Assignment 5</title>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#OOOOOO">
+
+<h1>Stat 5810, Applied Spatial Statistics</h1>
+
+<center>
+Homework Assignment 5 (10/9/00)
+<BR>
+<BR>
+15 + 10 Points - Due Wed 10/18/00 in class or as a Web page
+</center>
+<BR>
+<BR>
+
+<b>You may work in groups of 2 people on this assignment
+and turn in a joint solution.</b>
+<BR>
+<BR>
+
+<em>You have to use S-Plus and S+SpatialStats to answer all of the following
+questions. Your solutions should consist of the S-Plus
+commands you have typed, any S-Plus functions you have written,
+and the output (text and postscript graphics) produced in
+S-Plus, i.e., exactly the same things as for Homework Assignment 3.</em>
+<BR>
+<BR>
+
+<ul>
+
+
+<li>1) We know that the sum of integers from 1 through n
+is <em>n * (n + 1) / 2</em>, e.g., <em>1 + 2 + 3 + 4 + 5 + 6 =
+6 * 7 / 2 = 21</em>. In this question, you should <b>not</b>
+use this fact. Instead, you should write 3 different S-Plus
+functions that sum up integers from 1 through a value <em>n</em>
+which is provided by the user as the input to each of these
+functions.
+<BR>
+<BR>
+
+1 of your functions should use a <em>for loop</em>,
+1 function a <em>while loop</em>, and
+1 function a <em>repeat loop</em>.
+Test your function for <em>n = 1, 2, 3, 6, 10</em>.
+<BR>
+<BR>
+
+Try to make <b>one</b> of your 3 functions fool proof
+and print error messages when the input is not a valid
+integer, e.g., <em>n = 0, -5, or 12.5</em>. For this
+check, the functions <em>floor</em> or <em>trunc</em>
+might be helpful.
+(5 Points)
+<BR>
+<BR>
+
+
+<li>2) If we sum
+<em>1 / 1^2 + 1 / 2^2 + 1 / 3^2 + 1 / 4^2 + 1 / 5^2 + ...
++ 1 / n^2 + ...</em> and continue indefinitely, the
+result is <em>pi^2 / 6</em> (let's call this <em>pi6</em>).
+For practical purposes, we want to know which value of
+<em>n</em> brings us close to <em>pi6</em>, i.e.,
+for which <em>n</em> do we observe that
+<em>(1 / 1^2 + 1 / 2^2 + 1 / 3^2 + 1 / 4^2 + 1 / 5^2 + ...
++ 1 / n^2) > (pi^2 / 6 - delta)</em> for the first time.
+<BR>
+<BR>
+
+Write an S-Plus function that takes <em>delta</em>
+as its input and returns <em>n</em>. You may assume
+that only valid values for <em>delta</em> will be used as
+input to this function. Test your function with
+<pre>
+  delta1 _ pi - 3
+  delta2 _ 0.01
+  delta3 _ 0.001
+  delta4 _ 0.0001
+  delta5 _ 0.00001
+</pre>
+(5 Points)
+<BR>
+<BR>
+
+<li>3) Write an S-Plus function that prints all prime numbers
+from 1 through a user input <em>n</em>. A prime number is an
+integer that is only dividable by 1 and itself, e.g., 
+<em>2, 3, 5, 7, 11, etc.</em> are prime numbers. <em>1</em>
+is not a prime number. You probably need the modulo
+operator "%%" which gives the remainder when its first
+operand is divided by its second operand.
+<BR>
+<BR>
+
+First develop a basic function and see what you get
+for <em>n = 1, 2, 3, 4, 10, and 100</em>.
+<BR>
+<BR>
+
+Then add a few <em>if</em> statements that help to speed
+up your function. For example, notice that <em>2</em>
+is the only even prime number. Also, when checking
+whether an integer <em>x</em> is dividable by another
+integer <em>y</em> with remainder <em>0</em>, the
+largest value for <em>y</em> you have to consider
+is <em>sqrt (x)</em>, e.g., for <em>x = 9</em> it is
+<em>ymax = 3</em> and for <em>x = 81</em> it is
+<em>ymax = 9</em> (obviously, <em>81 = 9 * 9 = 27 * 3</em> --
+but the pair <em>(27, 3)</em> has already been encountered before when we
+learned that <em>81 = 3 * 27</em>).
+Make sure that your enhanced function still returns
+the same result as your initial function.
+(5 Points)
+<BR>
+<BR>
+
+<li>4) Also turn in questions 1) and 3) from Homework Assignment 4
+at this time (questions 2), 4), and 5) from Homework Assignment 4
+will be due later this month). For question 3), you should restrict
+yourself to material related to Section 2.3 from our lecture.
+There will be a similar question in the future that is related 
+to Section 2.4 from our lecture.
+(5 + 5 Points)
+<BR>
+<BR>
+
+
+</ul>
+ 
+

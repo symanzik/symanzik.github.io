@@ -1,0 +1,58 @@
+VR Class Projects: Speech Recognition
+=====================================
+
+Install and play with the speech recognition software. Try to answer
+the following questions:
+
++ Can you train the software to understand additional words? Is the
+software speaker dependent or speaker independent? Can you store
+different pronounciations of one word into the same database so
+a spoken word is compared with different pronounciations?
+
++ How good is the performance, i.e, the percentage of correctly
+identified word, before training - 70%, 90%, or > 99%?
+And after training? Does this depend on the speaker/accent?
+
++ What does an additional new speaker have to do to be understood?
+How long does the required training take in average? Can we avoid
+additional training? How good is the performance if no training
+is done at all but using your extended database. Do some tests
+and ask other students and faculty to volunteer.
+
++ Which words to you want to train to the software? Prepare a list.
+Work together with the Mini-Cave group. Then train these
+words/commands to the speech recognition software. Also consider the effect
+of two possible listening modes: one, where every word you say
+is interpreted, and one where only words following the keyword
+"Computer" are interpreted.
+
++ What is your personal experience with the software? What do you
+think of its speed? Do you like it? Would you recommend its
+future use? Are there different opinions within your group? -
+If so, let us know about all these opinions!
+
++ Now the technical part of this project: Where does the software
+store the recognized words? Can you redirect this output?
+
++ Develop some software that makes use of interprocess communication (IPC)
+technology that passes the identified word from one computer system
+to another. This should work both in a homogeneous and in a 
+heterogeneous environment, e.g., from PC to PC or
+from PC to SGI. A client-server approach based on sockets or
+the use of Remote Procedure Calls (RPCs) might be best. Let the
+other system output the received words.
+
++ BONUS: If time permits, work with the Mini-Cave group to combine
+both projects, i.e., have the speech recognition software control
+the Mini-Cave application.
+
+Turn in a typewritten report (10-20 pages of text, plus appendix
+such as computer code, computer output, protocols of experiments)
+by MONDAY 4/27/98. Report everything that might be of interest.
+If you planned to do something but couldn't realize it due to
+unexpected problems, let us know about these problems.
+
+Prepare a 30 minute talk for presentation in class on 
+THURSDAY 4/30/98. Also be ready to give a demonstration of
+your work some time the same week.
+

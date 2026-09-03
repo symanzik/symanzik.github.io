@@ -1,0 +1,210 @@
+Stat 5810 Applied Spatial Statistics                                 Fall 2000
+
+               Introduction to XGobi and ArcView/XGobi/XploRe
+               ==============================================
+
+             Wed 10/25/00, Mon 10/30/00, Mon 11/6/00, Wed 11/8/00
+
+
+Dr. Juergen Symanzik
+
+------------------------------------------------------------------------------
+
+
+1) First time initialization:
+
+Add the following lines to your .cshrc-private file:
+
+############################################################
+
+# ArcView/XGobi/XploRe stuff
+
+setenv AXX_BASE /home/symanzik/axx
+setenv AV2XGOBI_HOME $AXX_BASE/av_dir
+setenv XGOBIDIR $AXX_BASE/xgobi
+setenv USEREXT $AXX_BASE/av_dir
+alias xgobi $XGOBIDIR/bin/xgobi
+
+setenv XPL4HOME $AXX_BASE/xplore
+setenv XPL4PROG $XPL4HOME
+setenv XPL4LIB $XPL4HOME/lib
+setenv XPL4DATA $XPL4HOME/data
+
+setenv HOST tolkien
+
+############################################################
+
+!!! Note - put the name of the machine you are using most frequently
+in the last setenv HOST command; if you work on another machine, reissue
+the command "setenv HOST currentmachinename", i.e., use the name
+of the machine you are currently working at
+
+These commands will be executed each time you log on again. To activate
+them for the current session, type:
+   source .cshrc-private
+
+Try
+   xgobi $XGOBIDIR/data_xgobi/places
+
+XGobi should pop up with the "places" data set
+
+------------------------------------------------------------------------------
+
+2) XGobi Background:
+
+XGobi is a dynamical statistical graphics program, developed
+by Debby Swayne, Di Cook, and Andreas Buja.
+
+It supports one-dimensional plots, scatterplots, scatterplot matrizes,
+parallel coordinate plots, the grand tour, linked brushing, and much more.
+It also provides exploratory features that are useful for spatial data sets.
+
++ The XGobi home page is
+   http://www.research.att.com/areas/stat/xgobi/
+
+Many papers on the use of XGobi are available through this page.
+
+
++ A book on XGobi is currently in the making. Draft chapters are
+available at
+   http://www.public.iastate.edu/~dicook/xgobi-book/xgobi.html
+
+Most useful for our class are the Introduction and the chapter on Space.
+
+
++ Additional publications how to use XGobi and ArcView/XGobi/XploRe
+are available through my "Publications & Videos" Web page.
+
+------------------------------------------------------------------------------
+
+3) XGobi Basics:
+
++ Click right mouse button: On-line help menu
+
++ Inside Variable Circle:
+  Click left mouse button: Select variable on horizontal axis
+
+  Click middle mouse button: Select variable on vertical axis
+
++ On Menu Item:
+  Click and hold left mouse button
+
++ In Brushing Mode:
+  Left mouse button moves brush
+
+  Middle mouse button resizes brush
+
+  Moving pointer to another location and clicking left mouse button
+  causes brush to jump to this new location
+
++ Scatterplot Matrix:
+  All variables are used that are currently active in the Grand Tour View
+
++ Persistent Brushing (in contrast to Transient Brushing) permanently
+  keeps the brushing information
+
+------------------------------------------------------------------------------
+
+4) Basic XGobi and ArcView/XGobi/XploRe Tutorial:
+
+  http://www.math.usu.edu/~symanzik/teaching/2000_spatial/workshop_epa.pdf
+
+Note that this has been created on a different machine.
+
+If you want to use XGobi with any of the data sets listed in this tutorial,
+you have to use
+   xgobi $XGOBIDIR/data_xgobi/data_file
+
+You should have set $XGOBIDIR as described in 1) above. data_file is the
+name of the sample file you want to explore. There are other sample files
+available in $XGOBIDIR/data_xgobi. Note that the files norm.500.5 and
+norm.diffvar.500.5 are not available in the current XGobi distribution.
+
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+
+5) Use of ArcView/XGobi:
+
+Before starting:
+
+Type "setenv" and check that the environment variable HOST is set to
+the name of the machine you are currently using. If this is not the case,
+type the command "setenv HOST currentmachinename", i.e., use the name
+of the machine you are currently working at.
+
+Start ArcView:
+  arcview &
+
+In the prompt, click on "Open an existing project", then "OK".
+CD into /home/symanzik/axx/av_dir/av_data and select the file
+"AV2XG_DEMO_UTall.apr" (and click OK).
+
+Select "File", then "Extensions", activate the "ArcView XGobi link",
+and click "OK". A new menu button "XGobi" will appear in the command
+line.
+
+Activate a theme, e.g., "Places", select "XGobi", then "Basic Link",
+hit the "Green Diamond", chose a field for row labels in XGobi
+(e.g., Name2), and click "OK". Then start brushing on either side...
+
+To stop XGobi, click on the "Red Diamond". Always stop XGobi first,
+then quit ArcView. In case that XGobi crashes or you save your project
+with the current symbols visible in the ArcView map view, you can
+select "Edit" and "Select All Graphics", followed by "Edit" and
+"Cut Graphics" which removes the symbols from the map view.
+
+If you made changes to this demo project and want to keep these
+changes for a future session, you have to use the option
+"File" and "Save Project As" and indicate a directory for which you 
+have write permission. If you just try "File" and "Save Project",
+you get the error message "ArcView cannot save or create this file" 
+since you do not have write permission to my directories.
+
+------------------------------------------------------------------------------
+
+6) On-line help on ArcView/XGobi/XploRe is available at
+  http://www.math.usu.edu/~symanzik/axx/
+and then following the link to the ArcView 3.1 - XGobi - XploRe 
+Environment Version 2.000 or by directly selecting
+  http://www.math.usu.edu/~symanzik/axx/axx2000/
+
+Unfortunately, there are some bugs in the current version
+of ArcView/XGobi/XploRe. In particular, try to avoid brushing
+too many points at a time in the Variogram Cloud, Lagged 
+Scatterplot, and Multivariate Variogram Cloud version of the link.
+Instead, add points by slowly moving the brush.
+
+Also, the CDF version of the link does not work at this stage.
+
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+
+7) XploRe is a statistical computing environment, developed at 
+Humboldt University zu Berlin, Germany, that has been added as 
+an analytical statistical package to the ArcView/XGobi link in 1997.
+
+The main XploRe Web page is
+  http://www.xplore-stat.de
+and a US mirror is available at
+  http://www.galaxy.gmu.edu/~xplore
+
+In short, XploRe can be started from within XGobi and it contains
+the spatial statistics functions described in Venables/Ripley (1999).
+Thus, we have the link ArcView <-> XGobi <-> XploRe
+
+A tutorial how to start XploRe from within XGobi and conduct 
+linked brushing is available at
+  http://www.xplore-stat.de/tutorials/rpcframe1.html
+  http://www.galaxy.gmu.edu/~xplore/tutorials/rpcframe1.html
+
+A tutorial on spatial statistics in XploRe is available at
+  http://www.xplore-stat.de/tutorials/spatialframe1.html
+  http://www.galaxy.gmu.edu/~xplore/tutorials/spatialframe1.html
+
+To start XploRe from within XGobi, select "Tools" and "Start XploRe"
+within XGobi. To select variables to be passed from XGobi to XploRe,
+select "Tools" and "Variable List" and mark those variables with a "+"
+you want to use in XploRe. Then select "File" and "XploRe (pass variables)"
+to pass the data into XploRe. On the XploRe side, you can then access
+the data from XGobi via the variable name XGobiData.
+

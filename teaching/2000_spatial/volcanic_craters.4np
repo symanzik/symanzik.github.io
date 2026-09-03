@@ -1,0 +1,9 @@
+4) Nearest Neighbor Plots, Khat & Lhat function:
+
+par (mfrow = c(2,2))
+vol.ghat _ Ghat (vol.spp)
+   # should be similar to Figure 3.6 in Bailey/Gatrell
+vol.khat _ Khat (vol.spp)
+vol.lhat _ Lhat (vol.spp)
+abline(0, 1)
+   # positive peaks between 100 and 1500 - probably clustering!

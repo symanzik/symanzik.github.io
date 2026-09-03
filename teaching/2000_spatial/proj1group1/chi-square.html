@@ -1,0 +1,127 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.7 [en] (X11; U; SunOS 5.7 sun4u) [Netscape]">
+</head>
+<body text="#000000" bgcolor="#4C4DB4" link="#0000EE" vlink="#551A8B" alink="#FF0000">
+<font color="#FFFF99"><font size=+1>Chi-Square Test for Independence</font></font>
+<br>&nbsp;
+<p><font color="#FFFF99"><font size=+1>This is the chisquare function.&nbsp;
+The inputs are "num" which is how many quadrats you want to create, "A"
+is the area you want your quadrats to be,</font></font>
+<br><font color="#FFFF99"><font size=+1>&nbsp;&nbsp;&nbsp; "pts" which
+is a point data set that has both classes(black and white) combined, "pts1",
+which is one point data set (ie, just black) and "pts2" is the other</font></font>
+<br><font color="#FFFF99"><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+dataset.&nbsp; The input data sets must be only two columns of x and y
+coordinate number.</font></font>
+<p><font color="#FFFF99"><font size=+1>This test is preliminary, and must
+be used with caution.&nbsp; The test disregards a lot of data.&nbsp; In
+addition, the results are highly dependent upon the number of randomly
+created quadrats, and the areas of those.&nbsp; The results of many different
+runs of this showed that, depending on what number you use, both dependence
+and independence were discovered.</font></font>
+<p><font color="#FFFF99"><font size=+1>chisquare _ function(num, A, pts,
+pts1, pts2)</font></font>
+<br><font color="#FFFF99"><font size=+1>{</font></font>
+<br><font color="#FFFF99"><font size=+1>&nbsp; if(A == 0){</font></font>
+<br><font color="#FFFF99"><font size=+1>&nbsp;&nbsp;&nbsp; cat("Area must
+be greater than 0")</font></font>
+<br><font color="#FFFF99"><font size=+1>&nbsp;&nbsp;&nbsp; return()}</font></font>
+<br><font color="#FFFF99"><font size=+1>&nbsp; if(num &lt;= 20){</font></font>
+<br><font color="#FFFF99"><font size=+1>&nbsp;&nbsp;&nbsp; cat(" number
+of quadrats should be greater than 20", "\n","in order to gain high enough
+expected values for the", "\n","Chi_Square statistic to be reliable.")</font></font>
+<br><font color="#FFFF99"><font size=+1>&nbsp;&nbsp;&nbsp; return()}</font></font>
+<br>&nbsp;
+<p><font color="#FFFF99"><font size=+1>&nbsp; else dist _ sqrt(A)/2</font></font>
+<p><font color="#FFFF99"><font size=+1>&nbsp; region _ sbox(pts)</font></font>
+<br><font color="#FFFF99"><font size=+1>&nbsp; corners _ list()</font></font>
+<br><font color="#FFFF99"><font size=+1>&nbsp; i _ 1</font></font>
+<br><font color="#FFFF99"><font size=+1>&nbsp; blk _ 0</font></font>
+<br><font color="#FFFF99"><font size=+1>&nbsp; wht _ 0</font></font>
+<br><font color="#FFFF99"><font size=+1>&nbsp; none _ 0</font></font>
+<br><font color="#FFFF99"><font size=+1>&nbsp; both _ 0</font></font>
+<p><font color="#FFFF99"><font size=+1>&nbsp; while(i &lt;= num){</font></font>
+<p><font color="#FFFF99"><font size=+1>&nbsp;&nbsp;&nbsp; x _ runif(1,
+min(region[,1]), max(region[,1]))</font></font>
+<br><font color="#FFFF99"><font size=+1>&nbsp;&nbsp;&nbsp; y _ runif(1,
+min(region[,2]), max(region[,2]))</font></font>
+<br><font color="#FFFF99"><font size=+1>&nbsp;&nbsp;&nbsp; corners$x _
+c(x - dist, x - dist, x + dist, x + dist)</font></font>
+<br><font color="#FFFF99"><font size=+1>&nbsp;&nbsp;&nbsp; corners$y _
+c(y - dist, y + dist, y + dist, y - dist)</font></font>
+<p><font color="#FFFF99"><font size=+1>&nbsp;&nbsp;&nbsp; cnr.points _
+as.points(corners)</font></font>
+<br><font color="#FFFF99"><font size=+1>&nbsp;&nbsp;&nbsp; quad _ sbox(cnr.points)</font></font>
+<br>&nbsp;
+<p><font color="#FFFF99"><font size=+1>&nbsp;&nbsp;&nbsp; pips1 _ inpip(pts1,
+quad)</font></font>
+<br><font color="#FFFF99"><font size=+1>&nbsp;&nbsp;&nbsp; pips2 _ inpip(pts2,
+quad)</font></font>
+<p><font color="#FFFF99"><font size=+1>&nbsp;&nbsp;&nbsp; if(( length(pips1)
+> 0 ) &amp;&amp; ( length(pips2) > 0 ))</font></font>
+<p><font color="#FFFF99"><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+both _ both + 1</font></font>
+<p><font color="#FFFF99"><font size=+1>&nbsp;&nbsp;&nbsp; if(( length(pips1)
+> 0 ) &amp;&amp; ( length(pips2) == 0 ))</font></font>
+<p><font color="#FFFF99"><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+blk _ blk + 1</font></font>
+<p><font color="#FFFF99"><font size=+1>&nbsp;&nbsp;&nbsp; if(( length(pips1)
+== 0 ) &amp;&amp; ( length(pips2) > 0 ))</font></font>
+<p><font color="#FFFF99"><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+wht _ wht + 1</font></font>
+<p><font color="#FFFF99"><font size=+1>&nbsp;&nbsp;&nbsp; if(( length(pips1)
+== 0 ) &amp;&amp; ( length(pips2) == 0 ))</font></font>
+<p><font color="#FFFF99"><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+none _ none + 1</font></font>
+<br>&nbsp;
+<p><font color="#FFFF99"><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp; i _ i +
+1</font></font>
+<p><font color="#FFFF99"><font size=+1>&nbsp;&nbsp; }</font></font>
+<p><font color="#FFFF99"><font size=+1>&nbsp;&nbsp;&nbsp; cat( "\n", "number
+of quadrats where no crimes were observed =", none, "\n",</font></font>
+<br><font color="#FFFF99"><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp; "number
+of quadrats where both white crimes and black crimes were observed =",
+both, "\n",</font></font>
+<br><font color="#FFFF99"><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp; "number
+of quadrats where only black crimes were observed =", blk, "\n",</font></font>
+<br><font color="#FFFF99"><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp; "number
+of quadrats where only white crimes were observed =", wht, "\n\n")</font></font>
+<p><font color="#FFFF99"><font size=+1>&nbsp;&nbsp;&nbsp; chi2mtx _ matrix(
+, 2, 2)</font></font>
+<br><font color="#FFFF99"><font size=+1>&nbsp;&nbsp;&nbsp; {</font></font>
+<br><font color="#FFFF99"><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+chi2mtx[1,1] _ both</font></font>
+<br><font color="#FFFF99"><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+chi2mtx[1,2] _ wht</font></font>
+<br><font color="#FFFF99"><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+chi2mtx[2,1] _ blk</font></font>
+<br><font color="#FFFF99"><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+chi2mtx[2,2] _ none</font></font>
+<br><font color="#FFFF99"><font size=+1>&nbsp;&nbsp;&nbsp; }</font></font>
+<br><font color="#FFFF99"><font size=+1>&nbsp;&nbsp;&nbsp; expmtx _ matrix(
+, 2, 2)</font></font>
+<br><font color="#FFFF99"><font size=+1>&nbsp;&nbsp;&nbsp; {</font></font>
+<br><font color="#FFFF99"><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+expmtx[1,1] _ (sum(chi2mtx[1,]) * sum(chi2mtx[,1])) / sum(chi2mtx)</font></font>
+<br><font color="#FFFF99"><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+expmtx[1,2] _ (sum(chi2mtx[1,]) * sum(chi2mtx[,2])) / sum(chi2mtx)</font></font>
+<br><font color="#FFFF99"><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+expmtx[2,1] _ (sum(chi2mtx[2,]) * sum(chi2mtx[,1])) / sum(chi2mtx)</font></font>
+<br><font color="#FFFF99"><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+expmtx[2,2] _ (sum(chi2mtx[2,]) * sum(chi2mtx[,2])) / sum(chi2mtx)</font></font>
+<br><font color="#FFFF99"><font size=+1>&nbsp;&nbsp;&nbsp; }</font></font>
+<p><font color="#FFFF99"><font size=+1>&nbsp;&nbsp;&nbsp; X2stat _ sum((chi2mtx
+- expmtx)^2 / expmtx)</font></font>
+<p><font color="#FFFF99"><font size=+1>&nbsp;&nbsp;&nbsp; cat("The Chi-Square
+Test Statistic =", X2stat, "\n \n")</font></font>
+<br><font color="#FFFF99"><font size=+1>&nbsp;&nbsp;&nbsp; cat("Test this
+number against the Chi-Square distribution number for .05 percent with
+\n one degree of freedom")</font></font>
+<br><font color="#FFFF99"><font size=+1>&nbsp;&nbsp;&nbsp; return()</font></font>
+<br><font color="#FFFF99"><font size=+1>}</font></font>
+<br>&nbsp;
+</body>
+</html>

@@ -1,0 +1,137 @@
+<title>Stat 5810, Applied Spatial Statistics - Homework Assignment 3</title>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#OOOOOO">
+
+<h1>Stat 5810, Applied Spatial Statistics</h1>
+
+<center>
+Homework Assignment 3 (9/18/00)
+<BR>
+<BR>
+25 Points - Due 9/25/00 in class
+</center>
+<BR>
+<BR>
+
+<b>You may work in groups of 2 people on this assignment
+and turn in a joint solution.</b>
+<BR>
+<BR>
+
+<em>You have to use S-Plus to answer all of the following
+questions. Your solutions should consist of the S-Plus
+commands you have typed, any S-Plus functions you have written,
+and the output (text and postscript graphics) produced in
+S-Plus. For example, let us assume we wrote a simple function
+called jstestfunction in a texteditor:
+</em>
+
+<pre>
+jstestfunction _ function ()
+{
+  "a simple function"
+}
+</pre>
+
+<em>
+After copying this function into S-Plus, you should type
+the function name (without the ``()'') such that S-Plus displays
+the code of this function. Then you call the function
+by typing in the function name (this time with the ``()'')
+and S-Plus will produce the result. 
+<BR>
+<BR>
+
+Your output should contain
+all three parts, i.e., the code of the function, the function
+calls (if parameters are involved, call the function with at
+least three different combinations of parameters - to test
+a function, even more combinations of parameters may be 
+required), and the results. Annotate the output to make
+things more readable. Here, the answer would be:
+</em>
+
+<pre>
+>                                ### here is the body of the function
+> jstestfunction      
+function()
+{
+        "a simple function"
+}
+>                                ### here the function is called without
+                                 ### any parameter
+> jstestfunction()
+[1] "a simple function"          ### and this is the result
+>
+</pre>
+<BR>
+<BR>
+
+<ul>
+
+<li>1) Calculate the first 50 powers of 2, i.e., 2, 2 * 2, 2 * 2 * 2,
+and so on. Calculate the squares of the integers from 1 to 50.
+Which pairs are equal, i.e., which integers fulfill the condition
+2^n = n^2? How many such pairs are there? Answer this question
+explicitely using S-Plus! 
+(5 Points)
+<BR>
+<BR>
+
+<li>2) Calculate the sine, cosine, and the tangent for the numbers
+ranging from 0 to 2 * pi with distance 0.1 between them.
+Remember that tan(x) = sin(x) / cos(x). Now calculate the
+difference between tan(x) and and sin(x) / cos (x) for the
+values above. Which values are exactly equal? What is the
+maximum absolute difference? What is the cause of the differences?
+(5 Points)
+<BR>
+<BR>
+
+
+<li>3) In a single figure, plot the functions sin, cos, and sin+cos
+with different colors and line styles. Use 1000 points in the
+interval [-10, 10]. Label the figure with a title, subtitle and
+axis labels.
+(5 Points)
+<BR>
+<BR>
+
+
+<li>4) Generate 100 and 1000 random numbers, both samples from
+a Normal distribution with mean value 3 and variance 5. Draw
+histograms with bin width 0.5, 1, and 2 for each of the
+two samples. Plot all histograms in a single graphics window
+(using the same scale for the x-axis) and label them accordingly.
+What is visible?
+(5 Points)
+<BR>
+<BR>
+
+
+<li>5) Many statistical procedures require that a matrix is symmetric.
+(If the elements of a matrix A are A[i,j], the matrix is symmetric
+if A[i,j] = A[j,i] for all i and j.) Using the 
+<em>ncol</em>, <em>nrow</em>, and <em>all</em>
+functions, write an S-Plus function that will test a matrix 
+to see if it is symmetric.
+<BR>
+<BR>
+
+Test your function with the matrices x0, x1, x2, and x3, which are defined as:
+<pre>
+x0 _ 1
+x1 _ matrix(1:10, 2, 5)
+x2 _ matrix(1:9, 3, 3)
+x3 _ matrix(c(1, 2, 3, 2, 2, 2, 3, 2, 3), 3, 3)
+</pre>
+(5 Points)
+<BR>
+<BR>
+
+
+
+
+</ul>
+ 
+

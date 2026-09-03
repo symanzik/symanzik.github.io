@@ -1,0 +1,56 @@
+Stat 5810 Applied Spatial Statistics                                 Fall 2000
+
+                      How to Solve a Problem in S-Plus
+                      ================================
+
+                               Mo 10/9/00
+
+
+Dr. Juergen Symanzik
+
+------------------------------------------------------------------------------
+
+Write S-Plus functions that implement the quadrat plot
+from Section 2.3.1. One function might be used to do the
+binning, i.e., to count how many points fall in each quadrat.
+Another function might be used to create a 3D plot. 
+Instead of drawing a full 3D histogram, you can
+simply work with `persp'. The user should call only the
+main function with 3 input parameters, where xbins and
+ybins are optional:
+
+  spp: a nx2 matrix of xy-coordinates representing a spatial point pattern
+  xbins: number of bins >= 1 in x direction, default = 10
+  ybins: number of bins >= 1 in y direction, default = 10
+
+Test your functions with the quakes.bay data set. Also create
+some data from a bivariate Normal distribution and use this
+to check your result.
+
+------------------------------------------------------------------------------
+
+How to proceed:
+
+1) For the binning function:
+
+a) test your input parameters
+b) set up a matrix that contains the counts
+c) loop through your data and count the number of events
+   in each bin
+d) test your function !!!
+
+
+2) For the plotting function:
+
+a) call persp
+b) test your function !!!
+
+
+3) Using the quakes.bay data set and data from a Normal distribution:
+
+a) extract longitude and latitude as x & y coordinates
+b) create the spp matrix
+c) call the function
+d) test your functions !!
+
+------------------------------------------------------------------------------

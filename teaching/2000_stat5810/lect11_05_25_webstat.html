@@ -1,0 +1,147 @@
+<HTML>
+<HEAD>
+<TITLE>Web-based Statistics: Lecture 11 - May 25, 2000</TITLE>
+</HEAD>
+<BODY BGCOLOR="white">
+<FONT SIZE=-1><I>Web-based Statistics:<BR>
+Lecture 11<BR>
+Thursday, May 25, 2000
+</I></FONT>
+<BR>
+
+<CENTER>
+<H2>
+WebStat:</H2>
+
+<H3>URL: <a href="http://www.stat.sc.edu/webstat/" Target="top">
+http://www.stat.sc.edu/webstat/</a>
+</H3>
+</Center>
+
+<P>
+* WebStat is freely available data analysis software for use over the World Wide Web. It is written in the form of a Java applet and is designed to run on any of the three major platforms (Mac, PC, Unix).  It is brought to us by Webster West (<a href="mailto:west@stat.sc.edu">west@stat.sc.edu</a>) and Todd Ogden (<a href="mailto:ogden@stat.sc.edu">ogden@stat.sc.edu</a>) from the Department of Statistics at the University of South Carolina. 
+
+<P>
+* The package was created as an initial attempt to solve many of the problems that exist with the delivery and use of modern statistical software. Many times statisticians develop procedures in languages such as Splus, SAS, Minitab, etc., which are very specific to statisticians. Students and other potential users may not have access to these languages, and therefore may not be able to use the procedures. By using Java and the World Wide Web, WebStat should reach the broadest possible audience of any statistical software of its kind.
+
+<P>
+* Support for instructors and older versions are available from the main page. E-mail help is also available at: <a href="mailto:webstat@stat.sc.edu">webstat@stat.sc.edu</a>.
+
+<P>
+* Let's look at the basic layout of the software:  
+
+<P>
+<DIR><DIR>Hit the orange button!</DIR></DIR>
+
+<P>
+<B>* Getting data into the table:</B>
+
+<P>
+In addition to manually entering data into the data table, there are three other options for importing data. They are: 
+
+<P>
+<B>+ Getting data from a URL: </B>
+
+<P>
+If your data is saved as ASCII text and in a file in a World Wide Web accessible location, you may import the data into WebStat by providing the URL of the file. Simply go to the <B>Data</B> menu , select <B>Get data</B>, and then select from URL within the sub-menu. When the dialog window appears, type in the URL of the data set you wish to load. Also, use the check box to specify whether or not the first line of the file should be used as variable names. By default, it is assumed that the first line does contain variable names. If your data is properly formatted for WebStat then you can ignore this option completely. The image below shows the URL for the Iris data set. Once you have entered the necessary information, click <B>Okay</B>. After a few moments, the data will appear in the data table. 
+
+<P>
+<B>
++ Pasting data</B>
+
+<P>
+You may also paste data contained in a local file into WebStat. Go the <B>Data</B> menu and select <B>Paste data</B>. The method you use from then on depends on the browser you are using. 
+
+<P>
+<U>Netscape:</U> A dialog window will appear as shown below. Select and copy your data from the file and then paste it into the text area provided. On a PC, once you have copied your data from the file, you may simply right click the mouse in the text area and then select <B>Paste</B>. Use the check box to specify whether or not the first line of the file should be used as variable names. By default, it is assumed that the first line does contain variable names.                                                                                 
+<P>        
+<U>Internet Explorer:</U> Since Internet Explorer will not allow clipboard operations in unsigned applet windows, another technique must be used. Your data will be temporarily written to a file on the WebStat server and then imported as a URL into WebStat. First, a new browser window will appear as shown below. Select and copy your data from the file and then paste it into the text area provided. On a PC, once you have copied your data from the file, you may simply right click the mouse in the text area and then select <B>Paste</B>. You may also type your data in manually or enter a formatting header into the text field if you so choose. The image below shows the Iris data in the new browser window. When you are finished, click <B>Submit</B>. 
+                                                                                            
+
+<P>
+<B>                                                                                	+ Loading data from a file</B>
+
+<P>
+This option will only work for users who have the HotJava browser. Since most people don't use this browser, it is not anticipated that this option will be very useful for most WebStat users (too bad for us, I guess!).
+
+<P>
+* The website also provides us with a number of sample data sets- see under <B>'sample data sets'</B> on the main page, complete with information on them such as what all the variable names refer to and what they are measuring. We'll use some of these today in our exercises.
+
+<P>
+<B>
+* Overview of our impressions of the site:</B>
+
+<P>
+We thought highly of this site. It is extremely user-friendly, and everything is explained clearly and in detail.  There are downfalls of the site, however. There is no search engine, and attempting to locate documentation for the site will send you around in circles.  The statistics that are available are limited in some ways (but we'll look at that as we work through the exercises). However, everything that the software does is laid out in front of you so it is easy to determine whether the site would be useful for your needs. 
+
+<P>
+<B>
+* Exercises:</B>
+
+<OL>
+
+<LI>Lets look at icecream consumption and its relation to price, income of consumer, and temperature.  Remember, if you want some more information on the data set or variables, click on icecream under sample data sets on the main page.  Now, it seems likely to us that icecream consumption increases with temperature.  What would be a good statistical method to assess this?  Lets go ahead and do it.  Report the results (e.g. R-square or such). 
+
+<LI>Here we'll go back and use Dr. Vukasinos data set, so we can get the feel of importing a data set.  So, go to 'get data' under 'data' and import: <a href="http://www.math.usu.edu/~vukasino/teaching/spring2000/complab/student_data1.prn"
+Target="top">
+http://www.math.usu.edu/~vukasino/teaching/spring2000/complab/student_data1.prn</a>
+
+<P>
+So, now that we have that in (and are well practiced at that form of data entry), we realize that Webstats only deals with numerical values, and since we want to look at whether students of Biology are fatties (overweight) compared to students of Health, we need to put the data set into wordpad, and replace:
+
+<BR><BR>
+
+<DIR>
+Biology with 1 <BR>
+CompSci with 2<BR>
+Health with 3<BR>
+Other with 4<BR>
+Chemistry with 5<BR>
+</DIR>
+
+<P>
+Now, using an ANOVA, lets try to work out if Biology students are really fatties or not. It would also be of value to look at some summary statistics here, so go ahead and generate those.  Can we answer our question now?
+
+</OL>
+<P>
+<B>
+* Homework:</B>
+
+<P>
+Using the data set on Labor force available as a sample data set in the site:
+
+<UL>
+
+<LI>provide a brief statement on what the data set is measuring.
+<LI>analyze for differences between 1968 and 1972 in the measured variable (hint: a paired t-test would probably be useful here).
+<LI>report summary statistics and results of analysis.
+<LI>produce whichever graphics you think will best display the data
+
+</UL>
+
+<P>
+<B>
+* More exercises for extra practice with Webstats:</B>
+
+<DIR><DIR>
+	Go to: <a href="http://www.stat.sc.edu/110/">http://www.stat.sc.edu/110/</a>
+<BR><BR>
+	Or click on the link under 'featured sites' on the main page.
+</DIR></DIR>
+
+<P>
+<B>
+* References on Webstat</B>
+
+<UL>
++ West, W.R., Ogden, T.R. (1997): "Statistical Analysis with WebStat, a Java applet for the World Wide Web" , Journal of Statistical Software, Vol. 2, Issue 3.
+
+<BR><BR>
+
++ West, W.R., Ogden, T.R. (1998): "WebStat: An Environment for Statistical Analysis on the World Wide Web", Computing Science and Statistics, Vol. 29, No. 1, 307-310.
+
+</UL>
+
+</BODY>
+
+</HTML>

@@ -1,0 +1,13 @@
+3) Using the quakes.bay data set:
+
+x _ quakes.bay$longitude
+y _ quakes.bay$latitude
+spp _ matrix (c(x, y), length(x), 2)
+
+drawquadrats (spp)
+drawquadrats (spp, 10, 15)
+
+par (mfrow = c(1, 2))
+plot (quakes.spp)
+drawquadrats (spp)
+

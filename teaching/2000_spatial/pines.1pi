@@ -1,0 +1,5 @@
+1) Reading in the Data and Creating a SPP:
+
+pines _ matrix( scan ("/home/symanzik/splus/pines.dat"), 71, 2, byrow = T)
+pines.spp _ spp (pines / 10, boundary = bbox(x = c(0, 10), y = c(0, 10)))
+summary (pines.spp)

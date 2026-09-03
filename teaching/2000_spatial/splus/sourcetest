@@ -1,0 +1,5 @@
+print ("This file is sourced.")
+
+print ("It will start up the motif window.")
+
+motif()
