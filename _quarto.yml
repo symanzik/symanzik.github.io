@@ -19,10 +19,10 @@ website:
     right:
       - text: "Home"
         href: index.html
-      - text: "Papers"
+      - text: "Publications"
         href: papers
       - text: "Presentations"
-        href: presentations
+        href: talks
       - text: "Teaching"
         href: teaching
   page-footer:
