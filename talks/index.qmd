@@ -1,0 +1,1550 @@
+
+<html>
+
+<head>
+<title>J&uuml;rgen Symanzik: Presentations</title>
+</head>
+
+<body>
+
+<h1>J&uuml;rgen Symanzik: Presentations</h1>
+
+
+<center>
+<img src=../images/rainbow.gif></img>
+</center>
+
+
+<h3><a name="Presentations">
+<img src=../images/Balls/red.gif>
+Presentations:</a></h3>
+
+<h4><a name="Pres25">
+<img src=../images/Balls/green.gif>
+2025</a></h4>
+
+<ul>
+<li><P>
+Conference (Keynote Talk), 
+IX Latin American Conference on Statistical Computing 
+(LACSC 2025),
+Valpara&iacute;so, Chile,
+Virtual (November 7, 2025):
+<i><a href="2025_LACSC.pdf">Statistical Graphics in the News, Media, and Scientific Publications: 
+Deceptive Practices and How to Fix Them</a></i>.
+[63 pages]
+</P>
+
+<li><P>
+Conference (Invited Talk), 
+2025 Joint Statistical Meetings (ASA), 
+Nashville, Tennessee (August 4, 2025): 
+<i><a href="2025_asa.pdf">Linked Micromap Plots for Point Locations</a></i>.
+[34 pages]
+</P>
+
+</ul>
+
+
+<h4><a name="Pres24">
+<img src=../images/Balls/green.gif>
+2024</a></h4>
+
+<ul>
+<li><P>
+Conference (Invited Talk),
+Human-Computer Interaction (HCI) 26th International Conference 2024 / 
+Human Interface and the Management of Information 
+(HCII 2024 / HIMI),
+Washington, D.C., 
+Virtual (June 29, 2024):
+<i><a href="2024_HIMI.pdf">The Linked Microposter Plots Family 
+as New Means for the Visualization of Eye Tracking Data</a></i>.
+[29 pages]
+</P>
+
+</ul>
+
+
+<h4><a name="Pres23">
+<img src=../images/Balls/green.gif>
+2023</a></h4>
+
+<ul>
+<li><P>
+Conference (Invited Talk),
+Statistical Computing and Robust Inference for 
+High Dimensional Data (SCRI 2023),
+Academia Sinica, Teipei, Taiwan (December 14, 2023):
+<i><a href="2023_Taiwan.pdf">Lessons Learned from an Eye-Tracking Study
+on Human Postures</a></i>.
+[36 pages]
+</P>
+
+<li><P>
+Conference (Keynote Talk),
+IASE 2023 Satellite Conference, 
+Toronto, Ontario, Canada (July 11, 2023):
+<i><a href="2023_IASE.pdf">Lessons Learned from Six Years of
+Data Technologies Course Projects at 
+Utah State University</a></i>.
+[41 pages]
+</P>
+
+</ul>
+
+
+<h4><a name="Pres22">
+<img src=../images/Balls/green.gif>
+2022</a></h4>
+
+<ul>
+<li><P>
+Colloquium,
+Instituto Tecnol gico Aut nomode M xico (ITAM),
+Divisi n Acad micade Ingenier a,
+Mexico City, Mexico,
+Virtual (October 21, 2022):
+<i><a href="2022_ITAM.pdf">The Good, the Bad, and the Ugly: 
+Three Years of Mostly Bad Coronavirus Graphs</a></i>.
+[57 pages]
+</P>
+
+<li><P>
+Conference (Invited Talk),
+Data Science, Statistics & Visualisation (DSSV) 2022, 
+Tainan, Taiwan, 
+Virtual (June 27, 2022):
+<i><a href="2022_DSSV.pdf">The Good, the Bad, and the Ugly: 
+Three Years of Mostly Bad Coronavirus Graphs</a></i>.
+[54 pages]
+</P>
+
+</ul>
+
+
+<h4><a name="Pres21">
+<img src=../images/Balls/green.gif>
+2021</a></h4>
+
+<ul>
+<li><P>
+Conference (Invited Talk),
+63rd ISI World Statistics Congress, 
+Virtual (July 13, 2021):
+<i><a href="2021_ISI.pdf">Panel Session: 
+Data Science and ISI</a></i>.
+[16 pages]
+</P>
+
+<li><P>
+Conference (Invited Talk),
+V Latin American Conference on Statistical Computing
+(LACSC 2021),
+Virtual (April 21, 2021):
+<i><a href="2021_LACSC.pdf">Is Africa Ready for a New 
+Regional IASC Section? Results and Student Experiences
+from a Web Scraping Assignment</a></i>.
+[22 pages]
+</P>
+
+<li><P>
+Colloquium,
+Southwest Michigan Chapter of the
+American Statistical Association,
+Virtual (January 7, 2021):
+<i><a href="2021_SouthwestMichiganChapter.pdf">The Good, 
+the Bad, and the Ugly Coronavirus Graphs</a></i>.
+[69 pages]
+</P>
+
+</ul>
+
+
+<h4><a name="Pres20">
+<img src=../images/Balls/green.gif>
+2020</a></h4>
+
+<ul>
+<li><P>
+Colloquium,
+Dynamic Interactive Data Visualization (DIDV) Lab,
+North Carolina State University,
+Virtual (November 3, 2020):
+<i><a href="2020_NCSU.pdf">The Good Samaritan: 
+How Statistical Graphics Helped to Save Lives</a></i>.
+[56 pages]
+</P>
+
+<li><P>
+Conference (Invited Talk), 
+2020 Joint Statistical Meetings (ASA), 
+Virtual (August 6, 2020): 
+<i><a href="2020_asa.pdf">The Good Samaritan: 
+How Statistical Graphics Helped to Save Lives</a></i>.
+[58 pages]
+</P>
+
+<li><P>
+Conference (Invited Talk),
+Data Science: 
+International Scientific and Practice Conference,
+Sankt-Peterburg, Russian Federation (February 5, 2020):
+<i><a href="2020_SanktPeterburg.pdf">Eye-Tracking in Practice:
+An Application to Human Postures</a></i>.
+[27 pages]
+</P>
+
+</ul>
+
+
+<h4><a name="Pres19">
+<img src=../images/Balls/green.gif>
+2019</a></h4>
+
+<ul>
+
+<li><P>
+Conference (Contributed Talk), 
+62nd ISI World Statistics Congress, 
+Kuala Lumpur, Malaysia (August 20, 2019):
+<i><a href="2019_ISI.pdf">Using  rmapshaper  to Modify 
+Boundary Files for Use in Linked Micromap Plots</a></i>.
+[26 pages]
+</P>
+
+<li><P>
+Conference (Invited Talk), 
+2019 Joint Statistical Meetings (ASA), 
+Denver, Colorado (July 30, 2019): 
+<i><a href="2019_asa.pdf">The Unsinkable Titanic Data</a></i>.
+[44 pages]
+</P>
+
+<li><P>
+Conference (Invited Talk),
+ICORS-LACSC 2019,
+Escuela Superior Polit cnica del Litoral (ESPOL), 
+Guayaquil, Ecuador (May 30, 2019):
+<i><a href="2019_ICORS-LACSC.pdf">Linked Micromap Plots: 
+Design Principles, Past Uses, and New  Perspectives via 
+the "rmapshaper" R Package</a></i>.
+[33 pages]
+</P>
+
+</ul>
+
+
+<h4><a name="Pres18">
+<img src=../images/Balls/green.gif>
+2018</a></h4>
+
+<ul>
+
+<li><P>
+Conference (Invited Talk),
+2018 Statistics Week Taiwan,
+National Central University, Taoyuan, Taiwan (November 9, 2018):
+<i><a href="2018_Taiwan_woAVI.pdf">Eye-Tracking in Practice: The EyeTrackR R Package and its Use in a Study on Human Postures</a></i>.
+[40 pages]
+</P>
+
+<li><P>
+Conference (Contributed Talk), 
+COMPSTAT 2018,
+Iasi, Romania (August 30, 2018):
+<i><a href="2018_ComStat.pdf">100+ Years of Graphs of the Titanic Data</a></i>.
+[40 pages]
+</P>
+
+<li><P>
+Conference (Contributed Talk), 
+2018 Joint Statistical Meetings (ASA), 
+Vancouver, British Columbia, Canada (July 31, 2018): 
+<i><a href="2018_asa.pdf">Eye-Tracking in Practice: Results from a Study on Human Postures</a></i>.
+[20 pages]
+</P>
+
+</ul>
+
+
+<h4><a name="Pres17">
+<img src=../images/Balls/green.gif>
+2017</a></h4>
+
+<ul>
+
+<li><P>
+Conference (Contributed Talk), 
+2017 Joint Statistical Meetings (ASA), 
+Baltimore, Maryland (August 2, 2017): 
+<i><a href="2017_asa.pdf">Eye-Tracking in Practice: A First Analysis of a Study on Human Postures</a></i>.
+[25 pages]
+</P>
+
+</ul>
+
+
+<h4><a name="Pres16">
+<img src=../images/Balls/green.gif>
+2016</a></h4>
+
+<ul>
+
+<li><P>
+Conference (Contributed Talk), 
+2016 Joint Statistical Meetings (ASA), 
+Chicago, Illinois (August 1, 2016): 
+<i><a href="2016_asa.pdf">Panel Session: Awareness and Quality Improvements for the Joint ASA/NCTM Poster Competition</a></i>.
+[16 pages]
+</P>
+
+<li><P>
+Short Course (2 Invited Short Courses),
+IRTG 1792 Short Course,
+Humboldt-Universit&auml;t zu Berlin, Berlin, Germany (July 20, 2016):
+<i><a href="2016_Berlin_VR.pdf">(1) Stereoscopic Displays and Virtual Reality for Statistical Graphics;</a></i> [86 pages] and
+<i><a href="2016_Berlin_VDM.pdf">(2) Visual Data Mining in Education, Social Sciences, and Environmental Sciences</a></i>.
+[74 pages]
+</P>
+
+<li><P>
+Workshop (Invited Talk),
+Summer Research Workshop: Quantitative Methods in Economics,
+Cottbus, Germany (July 11, 2016):
+<i><a href="2016_Cottbus.pdf">Linked Micromap Plots</a></i>.
+[22 pages]
+</P>
+
+<li><P>
+Conference (Invited Talk),
+CRC 649 ``Economic Risk'' Conference in Motzen,
+Motzen, Germany (July 9, 2016):
+<i><a href="2016_Motzen.pdf">Deceptive Statistical Graphics in the News and in Science</a></i>.
+[49 pages]
+</P>
+
+</ul>
+
+
+<h4><a name="Pres15">
+<img src=../images/Balls/green.gif>
+2015</a></h4>
+
+<ul>
+
+<li><P>
+Conference (Invited Talk), 
+(45th Symposium on the Interface: Computing Science and Statistics), 
+Morgantown, West Virginia (June 12, 2015):
+<i><a href="2015_Interface.pdf">Shapefile Modification in R as the Basis for Linked Micromap Plots for New Geographic Regions</a></i>.
+[27 pages]
+</P>
+
+</ul>
+
+
+<h4><a name="Pres14">
+<img src=../images/Balls/green.gif>
+2014</a></h4>
+
+<ul>
+
+<li><P>
+Conference (Invited Talk),
+2014 Joint Applied Statistics Symposium of
+International Chinese Statistical Association &
+Korean International Statistical Society (ICSA-KISS),
+Portland, Oregon (June 18, 2014):
+<i><a href="2014_ICSA_KISS.pdf">Recent Advancements in Geovisualization, with a Case Study on Chinese Religions</a></i>.
+[31 pages]
+</P>
+
+<li><P>
+Colloquium,
+Department of Statistics, Chonbuk National University, 
+Jeonju-city, Jeonbuk, Korea (June 10, 2014):
+<i><a href="2014_Korea2_Micromaps.pdf">Visual Data Mining via Linked Micromap Plots in R</a></i>.
+[29 pages]
+</P>
+
+<li><P>
+Workshop (2 Invited Talks),
+Okayama Reginal Section of the Behaviormetric Society of Japan,
+The 52nd Seminar: Visual Data Mining and Statistical Computing,
+Okayama University of Science, Okayama, Japan (May 31, 2014):
+<i><a href="2014_Japan1_VDM.pdf">(1) Visual Data Mining as a Tool for Educational Data;</a></i> [47 pages] and
+<i><a href="2014_Japan2_Micromaps.pdf">(2) Visual Data Mining via Linked Micromap Plots in R</a></i>.
+[27 pages]
+</P>
+
+<li><P>
+Colloquium,
+Department of Statistics, Chonbuk National University, 
+Jeonju-city, Jeonbuk, Korea (May 20, 2014):
+<i><a href="2014_Korea1_VDM.pdf">Visual Data Mining as a Tool for Educational Data</a></i>.
+[47 pages]
+</P>
+
+<li><P>
+Colloquium,
+China Data Center, University of Michigan,
+Ann Arbor, Michigan (February 4, 2014):
+<i><a href="2014_CDC.pdf">Linked Micromap Plots in R & Map Overlays via RgoogleMaps - With a Focus on Chinese Religions</a>
+[30 pages]</i>.
+</P>
+
+</ul>
+
+
+<h4><a name="Pres13">
+<img src=../images/Balls/green.gif>
+2013</a></h4>
+
+<ul>
+
+<li><P>
+Conference (Contributed Talk), 
+59th ISI World Statistics Congress, 
+Hong Kong, China (August 26, 2013):
+<i><a href="2013_ISI.pdf">Visualization of ``States'' in Online Educational Games</a></i>.
+[26 pages]
+</P>
+
+<li><P>
+Conference (Invited Talk),
+Joint Meeting of the IASC Satellite Conference for the 59th ISI WSC and
+the 8th Conference of the Asian Regional Section of the IASC,
+Seoul, Korea (August 22, 2013):
+<i><a href="2013_IASC2_Micromaps.pdf">Linked Micromap Plots in R</a></i>.
+[15 pages]
+</P>
+
+<li><P>
+Conference (Invited Talk),
+Joint Meeting of the IASC Satellite Conference for the 59th ISI WSC and
+the 8th Conference of the Asian Regional Section of the IASC,
+Seoul, Korea (August 22, 2013):
+<i><a href="2013_IASC1_Actigraphy.pdf">ActiVis, an R Package for the Visualization of Functional Actigraphy Data (and Beyond)</a></i>.
+[40 pages]
+</P>
+
+<li><P>
+Conference (Invited Talk), ENAR 2013 Spring Meeting, 
+Orlando, Florida (March 12, 2013):
+<i><a href="2013_ENAR.pdf">Visual Data Mining Techniques and Software for Functional Actigraphy Data</a></i>.
+[38 pages]
+</P>
+
+</ul>
+
+
+<h4><a name="Pres12">
+<img src=../images/Balls/green.gif>
+2012</a></h4>
+
+<ul>
+
+<li><P>
+Conference (Invited Talk), Interface 2012
+(43rd Symposium on the Interface: Computing Science and Statistics), 
+Houston, Texas (May 18, 2012):
+<i>The Anscombe Data Sets: Explained and Expanded</i>.
+</P>
+
+</ul>
+
+
+<h4><a name="Pres11">
+<img src=../images/Balls/green.gif>
+2011</a></h4>
+
+<ul>
+
+<li><P>
+Colloquium,
+Department of Statistics, Indiana University,
+Bloomington, Indiana (November 14, 2011):
+<i><a href="2011_IndianaUniversity.pdf">Statistical Graphics Meet Medicine and Public Health</a></i>.
+[41 pages]
+</P>
+
+<li><P>
+Conference (Invited Talk),
+2011 Joint Statistical Meetings (ASA),
+Miami Beach, Florida (August 3, 2011):
+<i><a href="2011_asa.pdf">Ignoring the Spatial Context in Intro Stats Classes - 
+And Some Simple Graphical Remedies</a></i>
+(with Nathan Voge).
+[31 pages]
+</P>
+
+<li><P>
+Conference (Invited Talk), Interface 2011
+(42nd Symposium on the Interface: Computing Science and Statistics), 
+Cary, North Carolina (June 2, 2011):
+<i><a href="2011_Interface.pdf">3-D Stereoscopic Plots: From History to R</a></i>.
+[29 pages]
+</P>
+
+</ul>
+
+
+<h4><a name="Pres10">
+<img src=../images/Balls/green.gif>
+2010</a></h4>
+
+<ul>
+
+<li><P>
+Conference (Contributed Talk), 2010 Joint Statistical Meetings (ASA), 
+Vancouver, British Columbia, Canada (August 5, 2010): 
+<i><a href="2010_asa.pdf">Accuracy, Bias, and Notable Observations for Experimental Actigraphy Data</a></i>.
+[22 pages]
+</P>
+
+<li><P>
+Conference (Invited Talk), Interface 2010
+(41st Symposium on the Interface: Computing Science and Statistics), 
+Seattle, Washington (June 18, 2010):
+<i><a href="2010_Interface.pdf">An Object-Oriented Approach in R for the Visualization of
+Functional Actigraphy Data</a></i> (with Abbass Sharif).
+[26 pages]
+</P>
+
+<li><P>
+Conference (Contributed Talk), 
+2010 Intermountain Section Meetings,
+The Mathematical Association of America (MAA),
+Logan, Utah (March 26, 2010):
+<i><a href="2010_USU_MAA.pdf">The Long Path from Static and Interactive Statistical Graphics to 
+Journal-Quality Graphics, with Examples from the Medical Field</a></i>.
+[23 pages]
+</P>
+
+<li><P>
+Seminar,
+Statistics Seminar Series,
+Department of Mathematics, Washington University at St. Louis,
+St. Louis, Missouri (March 16, 2010):
+<i><a href="2010_WUSTL.pdf">Interactive Statistical Visualization of Medical Data</a></i>.
+[43 pages]
+</P>
+
+<li><P>
+Seminar,
+Department of Statistics, Brigham Young University,
+Provo, Utah (March 4, 2010):
+<i><a href="2010_BYU.pdf">Interactive Statistical Visualization of Medical Data</a></i>.
+[43 pages]
+</P>
+
+</ul>
+
+
+<h4><a name="Pres09">
+<img src=../images/Balls/green.gif>
+2009</a></h4>
+
+<ul>
+
+<li><P>
+Seminar Series,
+Departamento de Estatistica, Universidade de Sao Paulo (USP),
+Sao Paulo, Brazil (December 4, 2009):
+<i><a href="2009_SP_Biostats_Graphics.pdf">Statistical Graphics and Visual Data Mining for 
+Biostatistical Research</a></i>.
+[43 pages]
+</P>
+
+<li><P>
+Workshop (3 Invited Talks), 
+Statistical Graphics for Spatial and Environmental Research: 
+Departamento de Estatistica, Universidade Federal de Minas Gerais (UFMG),
+Belo Horizonte, Brazil (November 30 - December 2, 2009):
+<i><a href="2009_UFMG_Session1_DSG_Intro.pdf">(1) Interactive and Dynamic Statistical 
+Graphics - An Overview;</a></i>
+[41 pages]
+<i><a href="2009_UFMG_Session2_Micromaps.pdf">(2) Linked Micromap Plots - In 
+Print and on the Web;</a></i> 
+[32 pages]
+and
+<i><a href="2009_UFMG_Session3_Special_Apps.pdf">(3) Interactive and Dynamic Statistical 
+Graphics - Special Applications</a></i>.
+[28 pages]
+</P>
+
+</ul>
+
+
+<h4><a name="Pres08">
+<img src=../images/Balls/green.gif>
+2008</a></h4>
+
+<ul>
+
+<li><P>
+Conference (Invited Talk), International Association
+for Statistical Computing (IASC) 2008: Joint Meeting of 
+4th World Conference of the IASC and 6th Conference of the 
+Asian Regional Section of the IASC on 
+Computational Statistics & Data Analysis, 
+Yokohama, Japan (December 8, 2008):
+<i><a href="2008_IASC2008_micromaps.pdf">Recent Advances in Linked Micromap Plots</a></i>.
+[28 pages]
+</P>
+
+<li><P>
+Workshop (Invited Talk), Statistical Computation and Visualization (SCV) 2008,
+Academia Sinica, Taipei, Taiwan (December 3, 2008):
+<i><a href="2008_SCV_talk.pdf">Statistical Graphics & Visual Data Mining 
+in the Medical Field</a></i>.
+[48 pages]
+</P>
+
+<li><P>
+Conference (Contributed Talk), 
+2008 Joint Statistical Meetings (ASA), 
+Denver, Colorado (August 5, 2008): 
+<i><a href="2008_asa.pdf">Exploratory Graphics for Functional Actigraphy Data</a></i>.
+[19 pages]
+</P>
+
+<li><P>
+Workshop (Invited Talk), Statistical Graphics:
+Data and Information Visualization in Today's Multimedia Society,
+Bremen, Germany (June 26, 2008):
+<i><a href="2008_DataViz.pdf">Statistical Graphics Visit Biostatistics: Graphical Experiences from a 
+One-Year Visit to the Washington University of St. Louis, MO, Medical School</a></i>.
+[38 pages]
+</P>
+
+<li><P>
+Seminar,
+Seminar Series,
+Division of Biostatistics,
+Washington University School of Medicine, St. Louis, Missouri
+(March 11, 2008):
+<i><a href="2008_WUSTL.pdf">Statistical Graphics and Visual Data Mining for 
+Biostatistical Research</a></i>.
+[55 pages]
+</P>
+
+</ul>
+
+
+<h4><a name="Pres07">
+<img src=../images/Balls/green.gif>
+2007</a></h4>
+
+<ul>
+
+<li><P>
+Conference (Contributed Talk), 
+2007 Joint Statistical Meetings (ASA), 
+Salt Lake City, Utah 
+(August 2, 2007): 
+<i><a href="2007_asa.pdf">A Color Image Grand Tour for Exploring Medical Images</a></i>.
+[13 pages]
+</P>
+
+<li><P>
+Conference (Contributed Talk), 
+Interface 2007 
+(39th Symposium on the Interface:  
+Computing Science and Statistics), 
+Philadelphia, Pennsylvania 
+(May 24, 2007): 
+<i><a href="2007_Interface.pdf">``Heated'' 3D Scatterplots for the Simultaneous Display of
+cgh Array and Gene Expression Data</a></i>.
+[29 pages]
+</P>
+
+</ul>
+
+
+<h4><a name="Pres06">
+<img src=../images/Balls/green.gif>
+2006</a></h4>
+
+<ul>
+
+<li><P>
+Seminar,
+Statistical Genetics Methods Forum,
+Division of Statistical Genomics,
+Washington University School of Medicine, St. Louis, Missouri
+(November 6, 2006):
+<i><a href="2006_WUSTL.pdf">Graphical Methods: From Visual Data Mining to
+Modern Presentation Graphics</a></i>.
+[80 pages]
+</P>
+
+<li><P>
+Workshop (Invited Talk), 
+Compstat 2006 Satellite Workshop on 
+Data and Information Visualization 2006,
+Wirtschaftswissenschaftliche Fakult&auml;t, Humboldt-Universit&auml;t zu Berlin, 
+Berlin, Germany 
+(August 24, 2006):
+<i><a href="2006_Berlin_Micromaps.pdf">Interactive Linked Micromap Plots for the Display of
+Geographically Referenced Data</a></i>.
+[43 pages]
+</P>
+
+<li><P>
+Conference (Contributed Talk), 
+2006 Joint Statistical Meetings (ASA), 
+Seattle, Washington 
+(August 7, 2006): 
+<i><a href="2006_asa.pdf">Changing Answers in Exams - For the Better or for the Worse?</a></i>
+[17 pages]
+</P>
+
+<li><P>
+Conference (Contributed Talk), 
+Interface 2006 
+(38th Symposium on the Interface of Statistics, 
+Computing Science, and Applications), 
+Pasadena, California (May 26, 2006): 
+<i><a href="2006_Interface.pdf">NDVI Data Reduction for a Fuzzy Statistical Evaluation</a></i>.
+[25 pages]
+</P>
+
+<li><P>
+Seminar, 
+AES/CCS/SCS/Statistics Colloquium Series, 
+George Mason University, Fairfax, Virginia 
+(February 24, 2006): 
+<i><a href="2006_gmu.pdf">Experiences with International Web-based Introductory
+Long-Distance Statistics Courses</a></i>.
+[40 pages]
+</P>
+
+</ul>
+
+
+<h4><a name="Pres05">
+<img src=../images/Balls/green.gif>
+2005</a></h4>
+
+<ul>
+
+<li><P>
+Conference (Contributed Talk),
+2005 Joint Statistical Meetings (ASA), Minneapolis, Minnesota
+(August 11, 2005): 
+<i><a href="2005_asa.pdf">Experiences with International Web-based
+Introductory Long-Distance Statistics Courses</a></i>.
+[19 pages]
+</P>
+
+<li><P>
+Workshop &amp; Seminar (2 Invited Talks),
+University of Toulouse, Toulouse, France 
+(June, 2005):
+<i><a href="2005_TLS_DSG_Intro.pdf">(1) Interactive and Dynamic Statistical Graphics - An Overview</a></i>; 
+[34 pages]
+and 
+<i><a href="2005_TLS_IntMicromaps.pdf">(2) Interactive Linked Micromap Plots with ``nViZn'', on the Web, 
+and with S-Plus</a></i>.
+[49 pages]
+</P>
+
+</ul>
+
+
+<h4><a name="Pres04">
+<img src=../images/Balls/green.gif>
+2004</a></h4>
+
+<ul>
+
+<li><P>
+Workshops (4 Invited Talks), 
+Modern Statistical Visualization and Related Topics (4): 
+Visualization, Statistical Software and Interactive Graphics,
+The Institute of Statistical Mathematics (ISM),
+Tokyo, Japan, and
+Okayama Regional Section - The 13th Meeting,
+Okayama University of Science, Okayama, Japan 
+(December, 2004):
+<i><a href="2004_ISM1_IntMicromaps.pdf">(1) Interactive Linked Micromap Plots with nViZn and on the Web</a></i>;
+[52 pages]
+<i><a href="2004_ISM2_DSG_Intro.pdf">(2) Interactive and Dynamic Statistical Graphics - An Overview</a></i>;
+[34 pages]
+<i><a href="2004_ISM3_VDM_Appls.pdf">(3) Applications of Visual Data Mining</a></i>; 
+[60 pages]
+and
+<i><a href="2004_Okayama_Micromaps.pdf">(4) On the Spread of the West Nile Virus Across the USA - 
+A Visual Analysis</a></i>.
+[29 pages]
+</P>
+
+<li><P>
+Presidential Address and Seminar,
+Utah Chapter of the American Statistical Association,
+Salt Lake City, Utah 
+(October 26, 2004):
+<i><a href="2004_ASA_UT.pdf">On the Spread of the West Nile Virus - A Visual Analysis</a></i>.
+[28 pages]
+</P>
+
+<li><P>
+Conference (Roundtable Leader), 
+2004 Joint Statistical Meetings (ASA), Toronto, Ontario, Canada
+(August 11, 2004):
+<i>Interactive Linked Micromap Plots</i>.
+[<a href="2004_asa_lunch.pdf">Handout</a>]
+</P>
+
+<li><P>
+Conference (Contributed Talk),
+2004 Joint Statistical Meetings (ASA), Toronto, Ontario, Canada
+(August 10, 2004): 
+<i><a href="2004_asa.pdf">On the Effect of the Ordering of Questions 
+in Exams - A Visual Analysis</a></i>.
+[21 pages]
+</P>
+
+<li><P>
+Conference (Invited Talk), 
+Interface 2004 
+(36th Symposium on the Interface: Computing Science and Statistics), 
+Baltimore, Maryland
+(May 28, 2004):
+<i><a href="2004_interface_post.pdf">Visualization, Web-Access, and
+Simulation of West Nile Virus Data - From the Regional to the
+National Level</a></i>.
+[30 pages]
+</P>
+
+</ul>
+
+
+<h4><a name="Pres03">
+<img src=../images/Balls/green.gif>
+2003</a></h4>
+
+<ul>
+
+<li><P>
+Conference (Invited Poster), 
+2003 Joint Statistical Meetings (ASA), 
+San Francisco, California 
+(August 10, 2003): 
+<i><a href="2003_asa.pdf">Visualizing the Spread of West Nile Virus</a></i>.
+[1 page]
+</P>
+
+
+</ul>
+
+
+<h4><a name="Pres02">
+<img src=../images/Balls/green.gif>
+2002</a></h4>
+
+<ul>
+
+<li><P>
+Workshop (Invited Talk), Spatial Statistics:
+Integrating Statistics, GIS, and Statistical Graphics,
+University of Washington, Seattle, Washington 
+(October 18, 2002):
+<i><a href="2002_spatial_seattle.pdf">From ArcView/XGobi to R/GGobi: 
+Recent Developments in Exploratory Spatial Data Analysis</a></i>.
+[17 pages]
+(<a href="2002_tao-nomiss.R">R commands</a>,
+<a href="2002_tao-nomiss.xml">TAO data set</a>)
+</P>
+
+<li><P>
+Conference (Invited Talk), 
+COMPSTAT 2002, Berlin, Germany 
+(August 28, 2002):
+<i><a href="2002_compstat.pdf">Teaching Statistics 
+with Electronic Textbooks</a></i>.
+[22 pages]
+</P>
+
+<li><P>
+Conference (Contributed Talk), 
+2002 Joint Statistical Meetings (ASA), 
+New York, New York 
+(August 11, 2002): 
+<i><a href="2002_asa.pdf">Recent Developments for Interactive 
+Statistical Graphics on the Web using ``nViZn''</a></i>.
+[14 pages]
+</P>
+
+<li><P>
+Seminar,
+Department of Mathematics, Weber State University,
+Ogden, Utah 
+(May 1, 2002):
+<i><a href="2002_weber.pdf">Exploratory Spatial Data Analysis - 
+Techniques and Examples</a></i>.
+[47 pages]
+</P>
+
+<li><P>
+Conference (Invited Talk), 
+Interface 2002 
+(34th Symposium on the Interface: Computing Science and Statistics), 
+Montreal, Quebec, Canada 
+(April 20, 2002):
+<i><a href="2002_interface.pdf">New Applications of the Image Grand Tour</a></i>.
+[25 pages]
+</P>
+
+</ul>
+
+
+<h4><a name="Pres01">
+<img src=../images/Balls/green.gif>
+2001</a></h4>
+
+<ul>
+
+<li><P>
+Conference (Invited Talk), 
+Seventh U.S. Army Conference on Applied Statistics, 
+Santa Fe, New Mexico 
+(October 26, 2001): 
+<i><a href="2001_army.pdf">Visual Data Mining of Remote Sensing Data</a></i>.
+[39 pages]
+</P>
+
+<li><P>
+Seminar,
+Department of Statistics, Brigham Young University,
+Provo, Utah 
+(September 18, 2001):
+<i><a href="2001_byu.pdf">Visual Data Mining - Techniques and Examples</a></i>.
+[51 pages]
+</P>
+
+<li><P>
+Conference (Invited Talk),
+The 53rd Session of the International Statistical Institute (ISI),
+Seoul, Republic of Korea 
+(August 24, 2001):
+<i><a href="2001_isi.pdf">Data Visualization and Exploration
+via Virtual Reality - An Overview</a></i>.
+[25 pages]
+</P>
+
+<li><P>
+Conference (Contributed Talk),
+2001 Joint Statistical Meetings (ASA), Atlanta, Georgia 
+(August 8, 2001):
+<i><a href="2001_asa.pdf">``nViZn'' Federal Statistical Data on the Web</a></i>.
+[30 pages]
+</P>
+
+<li><P>
+Seminar,
+Wirtschaftswissenschaftliche Fakult&auml;t, Empirische Wirtschaftsforschung,
+Humboldt-Universit&auml;t zu Berlin, Germany 
+(July 11, 2001):
+<i><a href="2001_interface/talk.html" target="_top">A Course on ``Web-Based Statistics''</a></i>
+(in German). 
+[html]
+</P>
+
+<li><P>
+Conference (Contributed Talk),
+Interface '01 (33rd Symposium on the Interface: Computing Science and Statistics),
+Costa Mesa, California
+(June 16, 2001):
+<i><a href="2001_interface/talk.html" target="_top">A Course on ``Web-Based Statistics''</a></i>.
+[html]
+</P>
+
+<li><P>
+Workshop (Invited Talk), 
+Data Viz II Workshop, 
+George Mason University, Fairfax, Virginia 
+(May 24, 2001):
+<i><a href="2001_data_viz.pdf">First User Experiences with nViZn</a></i>.
+[22 pages]
+</P>
+
+</ul>
+
+
+<h4><a name="Pres00">
+<img src=../images/Balls/green.gif>
+2000</a></h4>
+
+<ul>
+
+<li><P>
+Seminar, Fachbereich Statistik, Universit&auml;t Dortmund, 
+Dortmund, Germany 
+(December 21, 2000):
+<i><a href="2000_uni_do.pdf">Analyse r&auml;umlicher Daten 
+im ArcView/XGobi/XploRe Software Environment</a></i> (in German). 
+[42 pages]
+</P>
+
+<li><P>
+Conference (Invited Talk),
+2000 Joint Statistical Meetings (ASA), Indianapolis, Indiana 
+(August 17, 2000):
+<i><a href="2000_asa.pdf">Visual Exploration of Satellite Images</a></i>.
+[23 pages]
+</P>
+
+<li><P>
+Seminar,
+Wirtschaftswissenschaftliche Fakult&auml;t, Empirische Wirtschaftsforschung,
+Humboldt-Universit&auml;t zu Berlin, Germany 
+(July 10, 2000):
+<i><a href="2000_berlin.pdf">U.S. Umweltdaten auf dem Web - 
+Statistische Tools und Politik</a></i>
+(in German).
+[29 pages]
+</P>
+
+<li><P>
+Seminar,
+Utah Chapter of the American Statistical Association, Logan, Utah 
+(May 17, 2000):
+<i><a href="2000_asa_utah.pdf">Data Visualization and Data Mining</a></i>.
+[35 pages]
+</P>
+
+<li><P>
+Seminar,
+National Center for Health Statistics (NCHS), Hyattsville, Maryland 
+(May 13, 2000):
+<i>The ArcView/XGobi/XploRe Environment: Spatial Data Analysis in a 
+Linked Software Environment</i>.
+</P>
+
+<li><P>
+Seminar,
+Department of Computer Science, 
+Mississippi State University, Starkville, Mississippi
+(May 1, 2000):
+<i><a href="2000_MsState.pdf">Visual Data Mining and the MiniCAVE</a></i>.
+[31 pages]
+</P>
+
+<li><P>
+Conference (Invited Talk),
+The Association of American Geographers (AAG) 96th Annual Meeting,
+Pittsburgh, Pennsylvania 
+(April 5, 2000):
+<i><a href="2000_aag.pdf">The ArcView/XGobi/XploRe Environment: 
+Spatial Data Analysis in a Linked Software Environment</a></i>.
+[22 pages]
+</P>
+
+<li><P>
+Conference (Contributed Talk),
+The Association of American Geographers (AAG) 96th Annual Meeting,
+Pittsburgh, Pennsylvania 
+(April 5, 2000):
+<i><a href="2000_aag_micro.pdf">HAPs, Micromaps and GPL - 
+Visualization of Geographically Referenced Statistical Summaries 
+on the World Wide Web</a></i>.
+[29 pages]
+</P>
+
+</ul>
+
+
+<h4><a name="Pres99">
+<img src=../images/Balls/green.gif>
+1999</a></h4>
+
+<ul>
+
+<li><P>
+Conference (Roundtable Leader), 
+1999 Joint Statistical Meetings (ASA), Baltimore, Maryland
+(August 10, 1999):
+<i>GIS and Statistics - Present and Future</i>.
+<!-- <a href="1999_asa_lunch.ps">52K ps</a>, -->
+[<a href="1999_asa_lunch.pdf">Handout</a>]
+</P>
+
+<li><P>
+Conference (Contributed Talk),
+1999 Joint Statistical Meetings (ASA), Baltimore, Maryland 
+(August 10, 1999): 
+<i><a href="1999_asa.pdf">Interactive Tables and Maps - A Glance at
+EPA's Cumulative Exposure Web Page</a></i>.
+[31 pages]
+</P>
+
+<li><P>
+Conference (Contributed Talk),
+Interface '99 (31st Symposium on the Interface: Computing Science and Statistics),
+Schaumburg, Illinois
+(June 12, 1999):
+<i><a href="1999_interface.pdf">Visual Data Mining of Brain Cells</a></i>.
+[16 pages]
+</P>
+
+<li><P>
+Conference (Contributed Talk),
+3. International Immersive Projection Technology Workshop,
+Stuttgart, Germany
+(May 11, 1999): 
+<i><a href="1999_ipt.pdf">The MiniCAVE - A Voice-Controlled 
+IPT Environment</a></i>.
+[27 pages]
+</P>
+
+<li><P>
+Conference (Contributed Talk),
+1999 ACSM-WFPS Conference, Portland, Oregon
+(March 17, 1999): 
+<i><a href="1999_acsm.pdf">HAPs, Micromaps and GPL - 
+Visualization of Geographically Referenced
+Statistical Summaries on the World Wide Web</a></i>.
+[29 pages]
+</P>
+
+<li><P>
+Seminar, 
+CSI/Statistics Colloquium Series, 
+George Mason University, Fairfax, Virginia 
+(March 12, 1999): 
+<i><a href="1999_acsm.pdf">HAPs, Micromaps and GPL - 
+Visualization of Geographically Referenced
+Statistical Summaries on the World Wide Web</a></i>.
+[29 pages]
+</P>
+
+<li><P>
+Seminar,
+Department of Mathematics and Statistics,
+Utah State University, Logan, Utah
+(January 21, 1999):
+<i><a href="1999_usu.pdf">Dynamic and Interactive Statistical 
+Graphics for Spatially Referenced Data</a></i>.
+[34 pages]
+</P>
+
+</ul>
+
+
+<h4><a name="Pres98">
+<img src=../images/Balls/green.gif>
+1998</a></h4>
+
+<ul>
+
+<li><P>
+Seminar, 
+Wirtschaftswissenschaftliche Fakult&auml;t, 
+Institut f&uuml;r Statistik und &Ouml;konometrie,
+Humboldt-Universit&auml;t zu Berlin, Germany 
+(December 16, 1998): 
+<i>Current Internet Technology and Statistics -
+Blessing or Curse?</i> (in German).
+</P>
+
+<li><P>
+Seminar, 
+Washington Statistical Society, 
+Statistical Computing Section, Washington, D.C. 
+(October 6, 1998):
+<a href="1998_wss_internet/wss98_start.html" target="_top">
+<i>Current Internet Technology and Statistics -
+Blessing or Curse?</i></a>. [Update with 20% more links]
+</P>
+
+<li><P>
+Seminar,
+US Geological Survey, Reston, Virginia
+(September 10, 1998):
+<i>WWW-based Access and Visualization of Hazardous Air Pollutants</i>.
+</P>
+
+<li><P>
+Conference (Contributed Talk),
+1998 GIS in Public Health 3rd National Conference, San Diego, California 
+(August 20, 1998): 
+<i><a href="1998_gispubhealth.pdf">WWW-based Access and Visualization 
+of Hazardous Air Pollutants</a></i>.
+[17 pages]
+</P>
+
+<li><P>
+Conference (Contributed Talk),
+1998 Joint Statistical Meetings (ASA), Dallas, Texas 
+(August 10, 1998): 
+<a href="1998_asa/intro.html" target="_top">
+<i>XGobi and XploRe Meet ViRGIS</i></a>.
+</P>
+
+<li><P>
+Workshop (Invited Talk),
+Data Visualization in Statistics, Drew University, Madison, New Jersey 
+(July 8, 1998): 
+<i><a href="1998_datavis.pdf">The MiniCAVE Environment</a></i> 
+(with E. J. Wegman).
+[37 pages]
+</P>
+
+<li><P>
+Conference (Invited Talk),
+Interface '98 (30th Symposium on the Interface: Computing Science and Statistics),
+Minneapolis, Minnesota
+(May 16, 1998): 
+<a href="1998_interface_internet/int98_start.html" target="_top">
+<i>Current Internet Technology and Statistics -
+Blessing or Curse?</i></a>
+</P>
+
+<li><P>
+Conference (Contributed Talk),
+Interface '98 (30th Symposium on the Interface: Computing Science and Statistics),
+Minneapolis, Minnesota
+(May 16, 1998):
+<i><a href="1998_interface_motion.pdf">Exploratory Statistical Graphics 
+for an Initial Motion Control Experiment</a></i>.
+[23 pages] 
+</P>
+
+<li><P>
+Seminar, 
+Washington Statistical Society, 
+Statistical Computing Section, Washington, D.C. 
+(March 4, 1998):
+<i>Applications of Dynamic Statistical Graphics
+within a GIS and a VR Environment</i>.
+</P>
+
+<li><P>
+Seminar, 
+CSI/Statistics Colloquium Series, 
+George Mason University, Fairfax, Virginia 
+(February 6, 1998): 
+<i>Visualization of High-dimensional Biomedical Data</i>
+(with G. Michaels and P. Vandersluis).
+</P>
+
+<li><P>
+Seminar, 
+GeneData AG, Basel, Switzerland
+(January 5, 1998):
+<i>Highly Interactive Dynamic Statistical Graphics</i>.
+</P>
+
+</ul>
+
+
+<h4><a name="Pres97">
+<img src=../images/Balls/green.gif>
+1997</a></h4>
+
+<ul>
+
+<li><P>
+Seminar,
+Theoretical Computer Science, ETH Zurich, Switzerland
+(December 4, 1997):
+<a href="1997_ethz/intro.html" target="_top">
+<i>The ArcView/XGobi/XploRe Environment: Spatial Data
+Analysis in a Linked Software Environment</i></a>.
+</P>
+
+<li><P>
+Seminar, 
+CSI/Statistics Colloquium Series, 
+George Mason University, Fairfax, Virginia
+(October 31, 1997):
+<a href="1997_C2/intro.html" target="_top">
+<i>Dynamic Statistical Graphics in Iowa State's 
+Highly Immersive C2 Virtual Reality Environment</i></a>.
+</P>
+
+<li><P>
+Conference (Contributed Talk),
+Third U.S. Army Conference on Applied Statistics, Fairfax, Virginia 
+(October 23, 1997): 
+<a href="1997_army/intro.html" target="_top">
+<i>Exploration of Satellite Images in the Dynamically Linked
+ArcView/XGobi/XploRe Environment</i></a>.
+</P>
+
+<li><P>
+Workshop on Scientific Visualization and Virtual Reality,
+Third U.S. Army Conference on Applied Statistics, Fairfax, Virginia 
+(October 20, 1997): 
+<i>Demonstration of the ArcView/XGobi/XploRe Environment</i>.
+</P>
+
+<li><P>
+Conference (Contributed Talk),
+1997 Joint Statistical Meetings (ASA), Anaheim, California 
+(August 11, 1997): 
+<i>The ArcView/XGobi/XploRe Link: Technical Details and 
+Applications for Spatial Data Analysis</i>.
+</P>
+
+<li><P>
+Conference (Invited Talk),
+Interface '97 (29th Symposium on the Interface: Computing Science and Statistics),
+Houston, Texas
+(May 17, 1997): 
+<i>Spatial Data Analysis in the Dynamically
+Linked ArcView/XGobi/XploRe Environment</i>.
+</P>
+
+<li><P>
+Seminar, 
+Department of Mathematics and Computer Science,
+Clarkson University, Potsdam, New York
+(April 4, 1997):
+<i>Dynamic Graphics in a GIS - Concepts, Computational Methods,
+and Applications</i>.
+</P>
+
+<li><P>
+Conference (Contributed Talk), 
+Second World Conference of the International Association for 
+Statistical Computing (IASC),
+Pasadena, California
+(February 20, 1997):
+<i>Dynamic Graphics in a GIS: A Bidirectional Link between 
+ArcView 2.1 and XGobi - An Update</i>.
+</P>
+
+<li><P>
+Conference (Contributed Talk), 
+Second World Conference of the International Association for 
+Statistical Computing (IASC),
+Pasadena, California
+(February 20, 1997):
+<i>Dynamic Statistical Graphics in the C2 Virtual Reality Environment</i>.
+</P>
+
+<li><P>
+Seminar, 
+Wirtschaftswissenschaftliche Fakult&auml;t, 
+Institut f&uuml;r Statistik und &Ouml;konometrie,
+Humboldt-Universit&auml;t zu Berlin, Germany 
+(January 8, 1997): 
+<i>Dynamic Statistical Graphics in the C2
+Virtual Reality Environment</i> (in German).
+</P>
+
+</ul>
+
+
+<h4><a name="Pres96">
+<img src=../images/Balls/green.gif>
+1996</a></h4>
+
+<ul>
+
+<li><P>
+Seminar, 
+Fachbereich Statistik, Universit&auml;t Dortmund, Dortmund, Germany 
+(December 17, 1996):
+<i>Dynamic Statistical Graphics in the C2
+Virtual Reality Environment</i> (in German). 
+</P>
+
+<li><P>
+Conference (Contributed Talk),
+Fourth ACM Workshop on Advances in Geogrphic Information Systems (ACM-GIS'96), 
+Rockville, Maryland
+(November 16, 1996):
+<i>The Linked ArcView 2.1 and XGobi Environment -
+GIS, Dynamic Statistical Graphics, and Spatial Data</i>.
+</P>
+
+<li><P>
+Seminar, 
+Center for Computational Statistics, 
+George Mason University, Fairfax, Virginia
+(November 14, 1996):
+<i>The Linked ArcView 2.1 and XGobi Environment -
+GIS, Dynamic Statistical Graphics, and Spatial Data</i>.
+</P>
+
+<li><P>
+Seminar, 
+GIS Seminar Series, The University of Michigan, Ann Arbor, Michigan
+(November 12, 1996):
+<i>The Linked ArcView 2.1 and XGobi Environment -
+GIS, Dynamic Statistical Graphics, and Spatial Data</i>.
+</P>
+
+<li><P>
+Workshop, 
+GIS Seminar Series, The University of Michigan, Ann Arbor, Michigan
+(November 12, 1996):
+<i>Spatial Data Analysis in the Linked ArcView 2.1 and XGobi Environment</i>.
+</P>
+
+<li><P>
+Conference (Roundtable Leader), 1996 Joint Statistical Meetings (ASA),
+Chicago, Illinois
+(August 7, 1996):
+<i>How Can Virtual Reality be Useful in Statistics?</i>
+</P>
+
+<li><P>
+Conference (Contributed Talk),
+Interface '96 (28th Symposium on the Interface: Computing Science and Statistics),
+Sydney, Australia
+(July 9, 1996): 
+<i>Implementation Issues of Variogram Cloud Plots and Spatially Lagged 
+Scatterplots in the Linked ArcView 2.1 and XGobi Environment</i>.
+</P>
+
+<li><P>
+Workshop (Invited Talk),
+Dynamic Statistical Graphics Workshop, 
+Sydney, Australia
+(July 7, 1996):
+<i><a href="1996_DSG.pdf">Dynamic Statistical Graphics in Highly Immersive Environments</a></i>.
+[18 pages]
+</P>
+
+<li><P>
+Seminar, 
+AT&T Bell Laboratories, Murray Hill, New Jersey 
+(March 7, 1996):
+<i>Dynamic Graphics for Spatial Data: A Bidirectional Link
+between ArcView 2.1 and XGobi</i>.
+</P>
+
+</ul>
+
+
+<h4><a name="Pres95">
+<img src=../images/Balls/green.gif>
+1995</a></h4>
+
+<ul>
+
+<li><P>
+Seminar,
+Fachbereich Statistik, Universit&auml;t Dortmund, Dortmund, Germany 
+(December 19, 1995):
+<i>Graphische Analyse von r&auml;umlichen Daten</i> (in German).
+</P>
+
+<li><P>
+Seminar,
+Institut f&uuml;r Mathematik, Universit&auml;t Augsburg, Augsburg, Germany
+(December 11, 1995): 
+<i>Eine Schnittstelle f&uuml;r ArcView 2.1 und XGobi
+zur dynamischen, graphischen Analyse von r&auml;umlich referenzierten Daten</i>
+(in German).
+</P>
+
+<li><P>
+Seminar, 
+Statistical Laboratory, Iowa State University, Ames, Iowa 
+(September 11, 1995): 
+<i>A Link between ArcView 2.0 and XGobi: A Tool for Dynamic Graphical 
+Analysis of Spatially Referenced Data</i> (with J. Majure).
+</P>
+
+<li><P>
+Conference (Contributed Talk),
+Interface '95 (27th Symposium on the Interface: Computing Science and Statistics),
+Pittsburgh, Pennsylvania 
+(June 23, 1995): 
+<i>Dynamic Graphics in a GIS: A Bidirectional Link 
+between ArcView 2.0 and XGobi</i>.
+</P>
+
+</ul>
+
+
+<h4><a name="Pres94">
+<img src=../images/Balls/green.gif>
+1994</a></h4>
+
+<ul>
+
+<li><P>
+Seminar,
+Wirtschaftswissenschaftliche Fakult&auml;t, 
+Institut f&uuml;r Statistik und &Ouml;konometrie,
+Humboldt-Universit&auml;t zu Berlin, Germany 
+(December 20, 1994): 
+<i> Geographical Information Systems and Interactive Dynamic Graphics Programs: 
+A Link between ARC/INFO and XGobi</i>.
+</P>
+
+<li><P>
+Conference (Contributed Talk),
+Interface '94 (26th Symposium on the Interface: Computing Science and Statistics),
+Research Triangle Park, North Carolina 
+(June 18, 1994): 
+<i>Dynamic Graphics in a GIS: A Link between ARC/INFO and XGobi</i>.
+</P>
+
+</ul>
+
+
+<h4><a name="Pres93">
+<img src=../images/Balls/green.gif>
+1993</a></h4>
+
+<ul>
+
+<li><P>
+Conference (Contributed Talk),
+1993 Joint Statistical Meetings (ASA), San Francisco, California 
+(August 10, 1993): 
+<i><a href="1993_asa.pdf">Three-Dimensional Statistical Graphics based on 
+Interactively Animated Anaglyphs</a></i>.
+[11 pages]
+</P>
+
+</ul>
+
+
+<h4><a name="Pres92">
+<img src=../images/Balls/green.gif>
+1992</a></h4>
+
+<ul>
+
+<li><P>
+Conference (Contributed Poster),
+Statistische Woche, Braunschweig, Germany 
+(September 1992): 
+Software Presentation of the Program Anaglyphen 3D (with Franz Hering).
+</P>
+
+<li><P>
+Conference (Contributed Talk),
+16th Annual Conference of the "Gesellschaft f&uuml;r Klassifikation e.V." (GfKL), 
+Dortmund, Germany 
+(April 1992): 
+<i><a href="1992_gfkl_full.pdf">Anaglyphen 3D - A Program for the Interactive Representation of
+Three-Dimensional Perspective Plots of Statistical Data</a></i>.
+[12 pages]
+</P>
+
+</ul>
+
+
+<center>
+<img src=../images/rainbow.gif></img>
+</center>
+
+
+<br>
+Last Update September 3, 2026.
+</br>
+
+</body>
+</html>
+
