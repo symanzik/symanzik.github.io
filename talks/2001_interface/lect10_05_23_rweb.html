@@ -1,0 +1,444 @@
+<HTML>
+<HEAD>
+<TITLE>Web-based Statistics: Lecture 10 - May 23, 2000</TITLE>
+</HEAD>
+<BODY BGCOLOR="white">
+<FONT SIZE=-1><I>Web-based Statistics:<BR>
+Lecture 10<BR>
+Tuesday, May 23, 2000
+</I></FONT>
+<BR>
+
+<H2><CENTER>An Introduction to Rweb</H2></Center>
+<BR>
+<BR>
+
+Rweb is a Web-based interface into the statistical analysis package R.
+R itself is a non-commercial package that has been developed by
+<a href="http://www.stat.auckland.ac.nz/rgentlem/rgentlem.shtml">
+Robert Gentleman</a>
+and 
+<a href="http://www.stat.auckland.ac.nz/ihaka/rihaka.shtml">
+Ross Ihaka</a>. Its source code is almost
+compatible with S or Splus. If you know any of these
+languages it should be easy for you to use R and Rweb.
+
+
+<h4>Main References on R and Rweb</h4>
+
+<ul>
+
+<li>Banfield, J. (1999):
+<a href="http://www.stat.ucla.edu/journals/jss/v04/i01/">
+"Rweb: Web-based Statistical Analysis"</a>,
+Journal of Statistical Software, Vol. 4, Issue 1.
+<BR>
+<BR>
+
+<li>Gentleman, R., Ihaka, R. (1997):
+"The R Language",
+Computing Science and Statistics, Vol. 28, 326-330.
+<BR>
+<BR>
+
+<li>Ihaka, R. (1998):
+"R: Past and Future History",
+Computing Science and Statistics, Vol. 30, 392-396.
+<BR>
+<BR>
+
+<li>Ihaka, R., Gentleman, R. (1996):
+"R: A Language for Data Analysis and Graphics",
+Journal of Computational and Graphical Statistics,
+Vol. 5, No. 3, 299-314.
+<BR>
+
+
+</ul>
+
+
+<h4>Some References on S and S-Plus</h4>
+
+<ul>
+
+<li>Becker, R. A., Chambers, J. M., and Wilks, A. R. (1988): 
+"The New S Language",
+Wadsworth & Brooks/Cole, Pacific Grove, CA.
+<BR>
+<BR>
+
+<li>Chambers, J. M. (1998):
+"Programming With Data",
+Springer, New York.
+<BR>
+<BR>
+
+
+<li>Chambers, J. M. and Hastie, T. J. (1993): 
+"Statistical Models in S",
+Chapman & Hall, New York, London.
+<BR>
+<BR>
+
+<li>Krause, A., Olson, M. (1997):
+"The Basics of S and S-Plus",
+Springer, New York.
+<BR>
+<BR>
+
+<li>Spector, P. (1994): 
+"An Introduction to S and S-Plus",
+Duxbury Press, Belmont, CA.
+<BR>
+<BR>
+
+<li>Venables, W. N. and Ripley, B. D. (1994): 
+"Modern Applied Statistics with S-Plus",
+Springer, New York, Berlin, Heidelberg.
+<BR>
+
+</ul>
+
+
+<h4>R and Rweb on the Web</h4>
+
+<ul>
+
+<li>Rweb Home Page:
+<a href="http://www.math.montana.edu/Rweb/">
+http://www.math.montana.edu/Rweb/</a>
+<BR>
+<BR>
+
+<li>R Home Page:
+<a href="http://www.stat.auckland.ac.nz/r/r.html">
+http://www.stat.auckland.ac.nz/r/r.html</a>
+<BR>
+<BR>
+
+<li>R Archive:
+<a href="http://lib.stat.cmu.edu/R/CRAN/">
+http://lib.stat.cmu.edu/R/CRAN/</a>
+<BR>
+<BR>
+
+<li>R Notes:
+<a href="http://www.math.montana.edu/Rweb/Rnotes/R.html">
+http://www.math.montana.edu/Rweb/Rnotes/R.html</a>
+<BR>
+
+</ul>
+
+
+<h4>Versions of Rweb</h4>
+
+<ul>
+
+<li>Rweb modules: point and click forms useful for
+introductory statistics classes.
+<BR>
+<BR>
+
+<li>Rweb: simple Web interface into R (not discussed in class).
+<BR>
+<BR>
+
+<li>JavaScript Version of Rweb: similar to, but more enhanced
+than the simple Rweb interface.
+<BR>
+
+</ul>
+
+<BR>
+<BR>
+
+
+
+<H2><CENTER>Use of the Rweb modules</H2></Center>
+<BR>
+
+Start at <a href="http://www.math.montana.edu/Rweb/" target="top">
+http://www.math.montana.edu/Rweb/</a>.
+Then  click on "Rweb modules". 
+<BR>
+<BR>
+
+Scroll down on this page until you see 
+<B>Choose Analysis and Data Set</B>.
+Then make the following selections:
+
+<ul>
+
+<li>Analysis Menu: Summary
+<BR>
+<BR>
+
+<li>Data Set Menu: External Menu: Use an option below.
+<BR>
+<BR>
+
+<li>Remote Dataset URL:
+http://www.math.usu.edu/~vukasino/teaching/spring2000/complab/student_data1.prn 
+<BR>
+
+</ul>
+
+Then click on <b>Submit</b>. You should now see the following menu:
+<BR>
+<BR>
+
+<img src="rweb_01.gif" align=center>
+<BR>
+<BR>
+
+Now activate the variables Age, Siblings, Height, and Weight.
+Also activate Numerical Summaries. Then click on <b>Submit</b>.
+<BR>
+<BR>
+
+You should now see a page that reads <b>Summary Results</b>
+and has the following output at the bottom:
+
+<PRE>
+Rweb:> print(rbind ( Rweb.sum, paste( 'Std Dev:', Rweb.stdv) ), quote=F) 
+      Age           Siblings          Height          Weight      
+ Min.   :19.00   Min.   : 1.000   Min.   :59.00   Min.   :108.0   
+ 1st Qu.:21.00   1st Qu.: 3.000   1st Qu.:67.00   1st Qu.:142.5   
+ Median :23.00   Median : 4.000   Median :69.00   Median :155.0   
+ Mean   :23.07   Mean   : 4.233   Mean   :69.12   Mean   :159.9   
+ 3rd Qu.:25.00   3rd Qu.: 5.000   3rd Qu.:72.50   3rd Qu.:173.0   
+ Max.   :28.00   Max.   :11.000   Max.   :74.00   Max.   :250.0   
+ Std Dev: 2.35   Std Dev: 2.1     Std Dev: 3.98   Std Dev: 28.9   
+Rweb:>  
+</PRE>
+<BR>
+<BR>
+
+Now click on <b>Back</b> in your browser. Deactivate Numerical Summaries.
+See what happens when 
+you select Scatterplots, Histograms, Boxplots, etc.
+<BR>
+<BR>
+
+Experiment with some of the other options for a few minutes and see
+what happens.
+<BR>
+<BR>
+
+Click <b>Back</b> twice in your browser. You should now be back
+at the page that contains the  
+<B>Choose Analysis and Data Set</B> menu.
+<BR>
+<BR>
+
+<B>Excercise 1:</B> Now try yourself to calculate a simple linear
+regression where <b>Weight</b> is the response and <b>Age</b>
+is the predictor variable. Also display some useful residual plots,
+e.g., residuals vs. predictor and residuals vs. some of the
+lurking variables. So, do you think that <b>Age</b> is a good
+predictor variable for <b>Weight</b>?
+<BR>
+<BR>
+
+
+<B>Exercise 2:</B> Now try an ANOVA. Make <b>Weight</b>
+your response and select <b>Gender</b>, <b>Eyecolor</b>,
+and <b>Major</b> as your factors. Which factors
+(or interactions) are significant at the 5% level?
+<BR>
+<BR>
+<BR>
+
+
+
+<H2><CENTER>Use of the JavaScript Version of Rweb</H2></Center>
+<BR>
+
+Start at <a href="http://www.math.montana.edu/Rweb/" target="top">
+http://www.math.montana.edu/Rweb/</a>.
+Then  click on "JavaScript Version of Rweb". 
+<BR>
+<BR>
+
+Scroll down on this page until you see the
+<B>Open Code Window</B> button. Click this button.
+A new window appears. You may have to enlarge this
+window to see all of its features and controls.
+The last line in this window 
+should read "Last Modified: ..."
+<BR>
+<BR>
+
+In the field <b>Enter a dataset URL</b>, enter
+<PRE>
+http://www.math.usu.edu/~vukasino/teaching/spring2000/complab/student_data1.prn 
+</PRE>
+<BR>
+
+Then copy the following lines into the big input area:
+<PRE>
+mean(X[,3])
+mean(X[,4])
+hist(X[,4], main="Siblings")
+plot(X[,3], X[,4], main="Age vs Siblings")
+</PRE>
+<BR>
+
+Now click on <b>Submit</b>. It takes a few seconds to calculate
+the results. Then you should see three new windows.
+<BR>
+<BR>
+
+<ul>
+
+<li>One Window (without a name) contains the input and output
+produced when executing R. Here you see which commands
+have been executed internally, possible warnings, and error
+messages. Check this window carefully if you do not get
+the expected results in the other two windows.
+<BR>
+<BR>
+
+<li>The window entitled "Rweb Analysis Output" should contain
+<PRE>
+[1] 23.06977
+[1] 4.232558
+</PRE>
+which are the arithmetic means for <b>Age</b> and <b>Siblings</b>,
+respectively.
+<BR>
+<BR>
+
+<li>The window entitled "Rweb images" should contain 
+a histogram of <b>Siblings</b> and a scatterplot of 
+<b>Age</b> vs. <b>Siblings</b>.
+<BR>
+
+</ul>
+
+
+Now let us look at these commands line by line:
+<ul>
+
+<li><b>X</b> is the default name used for the data matrix that is
+created from the data stored at the given URL. In our case,
+<b>X</b> is a matrix that consists of 43 rows and 8 columns.
+For example, column 3 is <b>Age</b> and column 4 is <b>Siblings</b>.
+Note that R and Rweb are case sensitive, i.e., <b>X</b>
+is different from <b>x</b>. You will get an error message
+when you type <b>x</b> instead of <b>X</b> in any of your commands.
+<BR>
+<BR>
+
+<li>With <b>X[,3]</b> and <b>X[,4]</b>, we select the entire
+third column and fourth column of the matrix <b>X</b>. 
+Thus, <b>mean(X[,3])</b> and <b>mean(X[,4])</b> provide us with
+the means of the third column and fourth column of the matrix <b>X</b>,
+with the means of <b>Age</b> and <b>Siblings</b>.
+<BR>
+<BR>
+
+<li>With <b>hist(X[,4], main="Siblings")</b>, we create a histogram
+of the fourth column of the matrix <b>X</b>. Note what happens
+when we omit the part <b>main="Siblings"</b> and just type
+<b>hist(X[,4])</b>.
+<BR>
+<BR>
+
+<li>Finally, with <b>plot(X[,3], X[,4], main="Age vs Siblings")</b>, 
+we create a scatterplot of the third column (horizontal) and the
+fourth column (vertical) of the matrix <b>X</b>. Note what happens
+when we omit the part <b>main="Age vs Siblings"</b> and just type
+<b>plot(X[,3], X[,4])</b>.
+<BR>
+<BR>
+
+</ul>
+
+If you made a mistake while typing in your commands, just make
+a correction in the input area and click on <b>Submit</b> again.
+<BR>
+<BR>
+
+<B>Excercise 3:</B> Now try yourself to calculate a few more summary
+statistics such as the median and the variance of 
+<b>Height</b> and <b>Weight</b>. First make sure to identify the
+appropriate columns of the matrix <b>X</b> that represent
+these two variables. Can you also calculate the correlation
+between these two variables and draw a scatterplot of
+<b>Height</b> (horizontal) vs. <b>Weight</b> (vertical)?
+<BR>
+<BR>
+
+<B>Excercise 4:</B> Now try yourself to calculate a simple linear
+regression where <b>Weight</b> is the response and <b>Age</b>
+is the predictor variable. The required syntax is
+<b>result <- lm(response ~ predictor)</b>. Here,
+<b>result <-</b> means that we assign the outcome of the
+calculation right of <b><-</b> to a new variable called
+<b>result</b>. <b>lm</b> represents a function that calculates
+a linear model. <b>response ~ predictor</b> represents the
+expression that should be calculated. You have to replace
+<b>response</b> and <b>predictor</b> with the appropriate
+columns of the matrix <b>X</b>. Finally, you have to produce
+some visible output using the command <b>summary(result)</b>.
+<BR>
+<BR>
+
+
+<H2><CENTER>Similarity between R/Rweb and S/Splus</H2></Center>
+<BR>
+
+As we said earlier, R/Rweb is very similar to S/Splus. Let us
+verify this. 
+<BR>
+<BR>
+
+Open a new browser window that contains the notes
+I used in 1997 for a workshop on S and Splus:
+<BR>
+<a href="http://www.math.usu.edu/~symanzik/teaching/1997_scourse/sintro"
+target="top">
+http://www.math.usu.edu/~symanzik/teaching/1997_scourse/sintro</a>
+<BR>
+<BR>
+
+Scroll down on this page until you reach the part that reads
+"A first Example". We do not have to start a graphics window
+in Rweb (this is done automatically) so we can directly issue
+some of the commands. 
+<BR>
+<BR>
+
+Copy the following commands into the input area of the Rweb
+code window:
+<PRE>
+0:10
+0:10 * .314
+x0 <- 0:10
+x0
+x1 <- 0:10 * .314
+x1
+y _ sin (x1)
+y
+plot (x1, y)
+plot (x1, y, main = "Sine of x")
+plot (x1, y, main = "Sine of x", xlab = "X Coordinates", ylab = "Y Coordinates")
+plot (x1, y, main = "Sine of x", xlab = "X Coordinates", 
+  ylab = "Y Coordinates", type = "l")
+</PRE>
+
+What happens? Carefully look at the results of the "Rweb Images" and
+the "Rweb Analysis Output" window. Is this what you expected?
+<BR>
+<BR>
+
+If you have some time during the next few days, you may want to continue
+working through the S/Splus workshop material and see which commands are
+working in R/Rweb and which are not working. A homwork question on
+R/Rweb will be posted later this week.
+<BR>
+<BR>
+<BR>
+
+

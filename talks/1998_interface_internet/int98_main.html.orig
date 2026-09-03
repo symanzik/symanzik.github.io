@@ -1,0 +1,827 @@
+<HTML>
+
+<HEAD>
+   <TITLE>Current Internet Technology and Statistics</TITLE>
+   <META NAME="Author" CONTENT="Juergen Symanzik, symanzik@galaxy.gmu.edu">
+</HEAD>
+
+<BODY TEXT="#000000" BGCOLOR="#FFFFD0" LINK="#0303E0" VLINK="#602060" ALINK="#FF00FF">
+
+<FONT SIZE=+1>
+
+<H2><A NAME="Talk"></A></H2>
+
+<CENTER>
+<H1><FONT COLOR="#191970"><FONT SIZE=+3>
+Current Internet Technology and Statistics -
+Blessing or Curse?
+</FONT></FONT></H1>
+</CENTER>
+
+<CENTER>
+<H2><FONT COLOR="#191970"><FONT SIZE=+2>
+J&uuml;rgen Symanzik<BR>
+</FONT><FONT SIZE=+1>
+George Mason University<BR> 
+Center for Computational Statistics 4A7<BR>
+Fairfax, Virginia 22030<BR>
+<BR>
+Phone: (703) 993 - 3786<BR>
+FAX : (703) 993 - 1700<BR>
+<BR>
+e-mail: symanzik@galaxy.gmu.edu<BR>
+<A HREF ="http://www.galaxy.gmu.edu/~symanzik/">
+WWW: http://www.galaxy.gmu.edu/~symanzik/</A>
+</FONT></FONT></H2>
+</CENTER>
+
+<P>
+<HR WIDTH="100%"></P>
+
+
+<H2><A NAME="Cont"></A></H2>
+
+<CENTER>
+<H2><FONT COLOR="#191970"><FONT SIZE=+2>
+Contents
+</FONT></FONT></H2>
+</CENTER>
+
+<P>I. History and Features
+
+<P>II. Internet Technology and Statistics
+
+<P>III. Discussion
+
+
+<P>
+<HR WIDTH="100%"></P>
+
+
+<H2><A NAME="Hist"></A></H2>
+
+<CENTER>
+<H2><FONT COLOR="#191970"><FONT SIZE=+2>
+I. History and Features
+</FONT></FONT></H2>
+</CENTER>
+
+
+<H2><A NAME="Hist.1"></A></H2>
+
+<H2><FONT COLOR="#191970"><FONT SIZE=+1>
+I.1 History
+</FONT></FONT></H2>
+
+<UL>
+<LI><A HREF="www.neosoft.com/origins.html">Origins of the Internet</A>
+<BR>mirrored on 4/25/98 from:
+<BR><A HREF="http://www.neosoft.com/internet/presentation1/index.html">
+http://www.neosoft.com/internet/presentation1/index.html</A>
+<P>
+
+<LI>1969 Birth of Internet - 
+<BR>ARPANET with 4 Nodes at UCLA, Stanford, UCSB, U Utah
+<P>
+
+<LI>Comprehensive Historical Info available from InternetValley:
+<BR><A HREF="http://www.internetvalley.com/intval.html">
+http://www.internetvalley.com/intval.html</A>
+<BR><A HREF="http://www.internetvalley.com/archives/mirrors/davemarsh-timeline-1.htm">
+http://www.internetvalley.com/archives/mirrors/davemarsh-timeline-1.htm</A>
+<P>
+
+<LI><A HREF="ivalley.gif">30 Years of the Net in Brief  Stats Story</A>
+<BR>mirrored on 5/4/98 from:
+<BR><A HREF="http://www.internetvalley.com/intval.html">
+http://www.internetvalley.com/intval.html</A>
+<P>
+
+<LI>Additional Historical Info available from MCI:
+<BR><A HREF="http://www.mci.com/aboutus/company/news/internetpolicy/basics.shtml">
+http://www.mci.com/aboutus/company/news/internetpolicy/basics.shtml</A>
+<BR><A HREF="http://www.mci.com/aboutus/company/news/internetpolicy/yesterday.shtml">
+http://www.mci.com/aboutus/company/news/internetpolicy/yesterday.shtml</A>
+<P>
+</UL>
+
+
+<P>
+<HR WIDTH="100%"></P>
+
+
+<H2><A NAME="Hist.2"></A></H2>
+
+<H2><FONT COLOR="#191970"><FONT SIZE=+1>
+I.2 Services
+</FONT></FONT></H2>
+
+<UL>
+<LI>e-mail (since 1971)
+<P>
+
+<LI>telnet (since 1972)
+<P>
+
+<LI>ftp (File Transfer Protocol) (since 1973)
+<P>
+
+<LI>News Groups / Discussion Groups (since 1979)
+<P>
+
+<LI>gopher (since 1991)
+<P>
+
+<LI>WWW & http (HyperText Transfer Protocol) (since 1991)
+<P>
+</UL>
+
+
+<P>
+<HR WIDTH="100%"></P>
+
+
+<H2><A NAME="Hist.3"></A></H2>
+
+<H2><FONT COLOR="#191970"><FONT SIZE=+1>
+I.3 Type of Data / Information
+</FONT></FONT></H2>
+
+<UL>
+<LI>Text
+<P>
+
+<LI>Images
+<P>
+
+<LI>Data
+<P>
+
+<LI>Sound
+<P>
+
+<LI>Videos
+<P>
+
+<LI>Real-Audio
+<P>
+
+<LI>Real-Video
+<P>
+</UL>
+
+
+<P>
+<HR WIDTH="100%"></P>
+
+
+<H2><A NAME="Hist.4"></A></H2>
+
+<H2><FONT COLOR="#191970"><FONT SIZE=+1>
+I.4 Browsers
+</FONT></FONT></H2>
+
+<UL>
+<LI>NCSA (National Center for Supercomputing Applications) Mosaic:
+<BR><A HREF="http://www.ncsa.uiuc.edu/SDG/Software/Mosaic/NCSAMosaicHome.html">
+http://www.ncsa.uiuc.edu/SDG/Software/Mosaic/NCSAMosaicHome.html</A>
+<P>
+
+<LI>Netscape:
+<BR><A HREF="http://www.netscape.com/">http://www.netscape.com/</A>
+<P>
+
+<LI>Microsoft Internet Explorer:
+<BR><A HREF="http://www.microsoft.com/ie/">http://www.microsoft.com/ie/</A>
+<P>
+
+<LI>Common formats: html (HyperText Markup Language),
+Java, CGI (PERL) scripts 
+<P>
+
+<LI>Additional Plug-Ins for other formats
+<P>
+</UL>
+
+
+<P>
+<HR WIDTH="100%"></P>
+
+
+<H2><A NAME="Tech"></A></H2>
+
+<CENTER>
+<H2><FONT COLOR="#191970"><FONT SIZE=+2>
+II. Internet Technology and Statistics
+</FONT></FONT></H2>
+</CENTER>
+
+
+<H2><A NAME="Tech.1"></A></H2>
+
+<H2><FONT COLOR="#191970"><FONT SIZE=+1>
+II.1 Statistics on the Web
+</FONT></FONT></H2>
+
+<UL>
+<LI>Search using Excite (conducted on 5/4/98):
+<BR><A HREF="http://www.excite.com/">
+http://www.excite.com/</A>
+<P>
+
+<UL>
+<LI>+Statistics: 692,240 hits.
+<P>
+
+<LI>+Internet:  3,558,830 hits.
+<P>
+
+<LI>+Statistics +Internet:  10,930 hits.
+<P>
+
+<LI>+Sex: 562,870 hits. 
+<P>
+</UL>
+
+<LI>Statistics about the Web:
+<P>
+
+<UL>
+<LI>The Top 100 Words on the Web:
+<BR><A HREF="http://www.pretext.com/nov97/shorts/short4.htm">
+http://www.pretext.com/nov97/shorts/short4.htm</A>
+<P>
+
+<LI><A HREF="top10.gif">Yahoo! Top 200 Search Words</A>
+<BR>Top 10 mirrored on 5/4/98 from:
+<BR><A HREF="http://www.eyescream.com/yahootop200.html">
+http://www.eyescream.com/yahootop200.html</A>
+<P>
+</UL>
+
+</UL>
+
+
+<P>
+<HR WIDTH="100%"></P>
+
+
+<H2><A NAME="Tech.2"></A></H2>
+
+<H2><FONT COLOR="#191970"><FONT SIZE=+1>
+II.2 Statistical Summary Pages
+</FONT></FONT></H2>
+
+<UL>
+<LI>StatLib:
+<BR><A HREF="http://lib.stat.cmu.edu/">
+http://lib.stat.cmu.edu/</A>
+<BR><A HREF="statlib.gif">Choices</A> mirrored on 4/9/98
+<P>
+
+<LI>Internet Survival Guide of Industrial/Organizational
+Psychology - Statistics:
+<BR><A HREF="http://allserv.rug.ac.be/~flievens/stat.htm">
+http://allserv.rug.ac.be/~flievens/stat.htm</A>
+<P>
+
+<LI>A Guide to Statistical Computing Resources on the Internet:
+<BR><A HREF="http://henry.ugl.lib.umich.edu/chdocs/statistics/stat_guide_home.html">
+http://henry.ugl.lib.umich.edu/chdocs/statistics/stat_guide_home.html</A>
+<P>
+
+<LI>University of Florida Department of Statistics:
+<BR><A HREF="http://www.stat.ufl.edu/vlib/statistics.html">
+http://www.stat.ufl.edu/vlib/statistics.html</A>
+<P>
+
+<LI>Statistics on the Web:
+<BR><A HREF="http://www.execpc.com/~helberg/statistics.html">
+http://www.execpc.com/~helberg/statistics.html</A>
+<P>
+</UL>
+
+
+<P>
+<HR WIDTH="100%"></P>
+
+
+<H2><A NAME="Tech.3"></A></H2>
+
+<H2><FONT COLOR="#191970"><FONT SIZE=+1>
+II.3 Statistical Journals
+</FONT></FONT></H2>
+
+
+<UL>
+<LI>Homepage:
+<P>
+
+<UL>
+<LI>Computational Statistics: 
+<BR><A HREF="http://comst.wiwi.hu-berlin.de/">
+http://comst.wiwi.hu-berlin.de/</A>
+<P>
+
+<LI>Computational Statistics & Data Analysis:
+<BR><A HREF="http://www.elsevier.com/inca/publications/store/5/0/5/5/3/9/505539.pub.shtml">
+http://www.elsevier.com/inca/publications/store/5/0/5/5/3/9/505539.pub.shtml</A>
+<P>
+
+<LI>Almost every statistical journal ...
+<P>
+</UL>
+
+<BR>
+
+<LI>Homepage and Additional Material on Web:
+<P>
+
+<UL>
+
+<LI>Statistical Computing and Statistical Graphics Newsletter 
+<BR>(ps & pdf - since April 1993):
+<BR><A HREF="http://cm.bell-labs.com/cm/ms/who/cocteau/newsletter/index.html">
+http://cm.bell-labs.com/cm/ms/who/cocteau/newsletter/index.html</A>
+<P>
+
+<LI>Journal of Computational and Graphical Statistics (JCGS):
+<BR><A HREF="http://www.amstat.org/publications/jcgs/">
+http://www.amstat.org/publications/jcgs/</A>
+<P>
+</UL>
+
+<P>
+
+<LI>Electronic Journals:
+<P>
+
+<UL>
+<LI>Journal of Statistical Software (JSS)
+<BR>(ps, pdf, code & data - since 1996):
+<BR><A HREF="http://www.stat.ucla.edu/journals/jss/">
+http://www.stat.ucla.edu/journals/jss/</A>
+<P>
+
+<LI>Journal of Statistics Education (JSE)
+<BR>(html - since July 1993):
+<BR><A HREF="http://www.stat.ncsu.edu/info/jse/">
+http://www.stat.ncsu.edu/info/jse/</A>
+<P>
+</UL>
+
+</UL>
+
+
+<P>
+<HR WIDTH="100%"></P>
+
+
+<H2><A NAME="Tech.4"></A></H2>
+
+<H2><FONT COLOR="#191970"><FONT SIZE=+1>
+II.4 Statistical Software
+</FONT></FONT></H2>
+
+
+<UL>
+<LI>Homepage (Documentation, FAQS, Help, ...):
+<P>
+
+<UL>
+<LI>SAS Institute (SAS, JMP, StatView):
+<BR><A HREF="http://www.sas.com/">http://www.sas.com/</A>
+<BR><A HREF="http://www.jmpdiscovery.com/">http://www.jmpdiscovery.com/</A>
+<BR><A HREF="http://www.statview.com/">http://www.statview.com/</A>
+<P>
+
+<LI>MathSoft (S-Plus):
+<BR><A HREF="http://www.mathsoft.com/">http://www.mathsoft.com/</A>
+<BR><A HREF="http://www.mathsoft.com/splus/">http://www.mathsoft.com/splus/</A>
+<P>
+
+<LI>Allmost every statistical package ...
+<P>
+</UL>
+
+<P>
+
+<LI>Downloadable Software:
+<P>
+
+<UL>
+<LI>XGobi:
+<BR><A HREF="http://www.research.att.com/~andreas/xgobi/index.html">
+http://www.research.att.com/~andreas/xgobi/index.html</A>
+<P>
+
+<LI>XploRe:
+<BR><A HREF="http://www.xplore-stat.de/">http://www.xplore-stat.de/</A>
+<P>
+
+<LI>R:
+<BR><A HREF="http://www.stat.auckland.ac.nz/r/r.html">
+http://www.stat.auckland.ac.nz/r/r.html</A>
+<P>
+</UL>
+
+<P>
+
+<LI>Java-Based Software:
+<P>
+
+<UL>
+<LI>GASP (Globally Accessible Statistical Procedures) Initiative:
+<BR><A HREF="http://www.stat.sc.edu/rsrch/gasp/">
+http://www.stat.sc.edu/rsrch/gasp/</A>
+<P>
+
+<LI>WebStat:
+<BR><A HREF="http://www.stat.sc.edu/~west/webstat/version1.0/">
+http://www.stat.sc.edu/~west/webstat/version1.0/</A>
+<BR><A HREF="webstat.gif">Example</A> produced on 4/9/98
+<P>
+
+<LI>XploRe:
+<BR><A HREF="http://www.xplore-stat.de/WWWJava/x4java.html">
+http://www.xplore-stat.de/WWWJava/x4java.html</A>
+<P>
+
+<LI>The Graphics Production Library (GPL):
+<BR><A HREF="http://www.monumental.com/dan_rope/gpl/">
+http://www.monumental.com/dan_rope/gpl/</A>
+<BR><A HREF="gpl.gif">Example</A> mirrored on 5/3/98 from:
+<BR><A HREF="http://www.monumental.com/dan_rope/gpl/barley.html">
+http://www.monumental.com/dan_rope/gpl/barley.html</A>
+<P>
+
+<LI>S/Java Interface:
+<BR><A HREF="http://cm.bell-labs.com/cm/ms/departments/sia/project/java/html/index.html">
+http://cm.bell-labs.com/cm/ms/departments/sia/project/java/html/index.html</A>
+<BR><A HREF="sjava.gif">Example</A> mirrored on 5/3/98 from:
+<BR><A HREF="http://cm.bell-labs.com/cm/ms/who/cocteau/java/waferApplet/index.html">
+http://cm.bell-labs.com/cm/ms/who/cocteau/java/waferApplet/index.html</A>
+<P>
+
+<LI>Mondrian:
+<BR><A HREF="http://www.research.att.com/~theus/Mondrian/Mondrian.html">
+http://www.research.att.com/~theus/Mondrian/Mondrian.html</A>
+<P>
+</UL>
+
+<P>
+
+<LI>Teachware (Statistical Teaching Software):
+<P>
+
+<UL>
+<LI>STEPS (STatistical Education through Problem Solving):
+<BR><A HREF="http://www.stats.gla.ac.uk/steps/">
+http://www.stats.gla.ac.uk/steps/</A>
+<P>
+
+<LI>Quercus Project - Statistics for Bioscientists:
+<BR><A HREF="http://www.stams.strath.ac.uk/external/quercus/">
+http://www.stams.strath.ac.uk/external/quercus/</A>
+<P>
+</UL>
+
+<P>
+
+</UL>
+
+
+<P>
+<HR WIDTH="100%"></P>
+
+
+<H2><A NAME="Tech.5"></A></H2>
+
+<H2><FONT COLOR="#191970"><FONT SIZE=+1>
+II.5 On-line Access
+</FONT></FONT></H2>
+
+
+<UL>
+<LI>Organizations:
+<P>
+
+<UL>
+<LI>ASA (American Statistical Association):
+<BR><A HREF="http://www.amstat.org/">
+http://www.amstat.org/</A>
+<P>
+
+<LI>Interface Foundation:
+<BR><A HREF="http://www.galaxy.gmu.edu/stats/IFNA.html">
+http://www.galaxy.gmu.edu/stats/IFNA.html</A>
+<P>
+
+<LI>National Science Foundation:
+<BR><A HREF="http://www.nsf.gov/">
+http://www.nsf.gov/</A>
+<P>
+</UL>
+
+<LI>Universities (Statistics Departments I attended):
+<P>
+
+<UL>
+<LI>George Mason University:
+<BR><A HREF="http://www.galaxy.gmu.edu/">
+http://www.galaxy.gmu.edu/</A>
+<P>
+
+<LI>Iowa State University:
+<BR><A HREF="http://www.public.iastate.edu/~stat/">
+http://www.public.iastate.edu/~stat/</A>
+<P>
+
+<LI>Universit&auml;t Dortmund:
+<BR><A HREF="http://www.statistik.uni-dortmund.de/">
+http://www.statistik.uni-dortmund.de/</A>
+<P>
+
+<LI>University of Sheffield:
+<BR><A HREF="http://www.shef.ac.uk/uni/academic/I-M/ms/index.html">
+http://www.shef.ac.uk/uni/academic/I-M/ms/index.html</A>
+<P>
+</UL>
+
+<P>
+
+<LI>Conferences:
+<P>
+
+<UL>
+<LI>Amstat News - Dateline:
+<BR><A HREF="http://www.amstat.org/publications/amstat_news/Pages/Pages/dateline.html">
+http://www.amstat.org/publications/amstat_news/Pages/Pages/dateline.html</A>
+<P>
+
+<LI>Interface '98:
+<BR><A HREF="http://www.stat.umn.edu/interface98.html">
+http://www.stat.umn.edu/interface98.html</A>
+<P>
+
+<LI>Workshop: Data Visualization in Statistics:
+<BR><A HREF="http://www.research.att.com/~andreas/workshop98.html">
+http://www.research.att.com/~andreas/workshop98.html</A>
+<P>
+
+<LI>Workshop: Statistical Science and the Internet:
+<BR><A HREF="http://cm.bell-labs.com/cm/ms/who/cocteau/comsci/index.html">
+http://cm.bell-labs.com/cm/ms/who/cocteau/comsci/index.html</A>
+<P>
+</UL>
+
+<P>
+
+<LI>Individuals (Other speakers in this session):
+<P>
+
+<UL>
+<LI>Martin Theus, AT&T Labs:
+<BR><A HREF="http://www.research.att.com/~theus/">
+http://www.research.att.com/~theus/</A>
+<P>
+
+<LI>Mark Hansen, Bell Laboratories:
+<BR><A HREF="http://cm.bell-labs.com/cm/ms/who/cocteau/">
+http://cm.bell-labs.com/cm/ms/who/cocteau/</A>
+<P>
+</UL>
+
+<P>
+
+<LI>Data, Technical Reports, Preprints, Presentations, ... :
+<P>
+
+<UL>
+<LI>Earlier talk on Graphics for Motion Control Experiment:
+<BR><A HREF="http://www.healthrx.com/motion/">
+http://www.healthrx.com/motion/</A>
+<P>
+
+<LI>Basically everywhere !
+<P>
+</UL>
+
+</UL>
+
+
+<P>
+<HR WIDTH="100%"></P>
+
+
+<H2><A NAME="Tech.6"></A></H2>
+
+<H2><FONT COLOR="#191970"><FONT SIZE=+1>
+II.6 Other On-line Features
+</FONT></FONT></H2>
+
+
+<UL>
+<LI>Submission of Abstracts, Registration, Proposals, ... :
+<P>
+
+<UL>
+<LI>Joint Statistical Meetings
+<P>
+
+<LI>Interface Conference
+<P>
+
+<LI>NSF Proposals
+<P>
+</UL>
+
+<P>
+
+<LI>Local Features (at many Universities):
+<P>
+
+<UL>
+<LI>CIS (Current Index to Statistics)
+<P>
+
+<LI>Library Catalogue
+<P>
+
+<LI>Telephone Directory
+<P>
+</UL>
+
+<P>
+
+<LI>Book Orders and Publishers:
+<P>
+
+<UL>
+<LI>amazon.com:
+<BR><A HREF="http://www.amazon.com">
+http://www.amazon.com</A>
+<P>
+
+<LI>Springer-Verlag:
+<BR><A HREF="http://www.springer.de/">
+http://www.springer.de/</A>
+<P>
+
+<LI>Wiley:
+<BR><A HREF="http://www.wiley.com/">
+http://www.wiley.com/</A>
+<P>
+
+<LI>Chapman & Hall:
+<BR><A HREF="http://www.chaphall.com/">
+http://www.chaphall.com/</A>
+<P>
+</UL>
+
+</UL>
+
+
+<P>
+<HR WIDTH="100%"></P>
+
+
+<H2><A NAME="Disc"></A></H2>
+
+<CENTER>
+<H2><FONT COLOR="#191970"><FONT SIZE=+2>
+III. Discussion
+</FONT></FONT></H2>
+</CENTER>
+
+
+<H2><A NAME="Disc.1"></A></H2>
+
+<H2><FONT COLOR="#191970"><FONT SIZE=+1>
+III.1 Advantages
+</FONT></FONT></H2>
+
+<UL>
+
+<LI>Fast access to diversity of services
+<P>
+
+<LI>Easy to access (Mouse, Drag & Click)
+<P>
+
+<LI>Same service available at work, home,
+travel, public places, ... 
+<P>
+
+<LI>Cheap
+<P>
+
+<LI>Internationalization
+<P>
+</UL>
+
+
+<P>
+<HR WIDTH="100%"></P>
+
+
+<H2><A NAME="Disc.2"></A></H2>
+
+<H2><FONT COLOR="#191970"><FONT SIZE=+1>
+III.2 Disadvantages
+</FONT></FONT></H2>
+
+<UL>
+
+<LI>Slow access & connections at many places -
+<BR>"fast-access" vs "slow-access" world
+<P>
+
+<LI>Security of transfered data? 
+<BR>(Credit card number, Internal data)
+<P>
+
+<LI>Reliability of services - 
+<BR>Is it still there tomorrow?
+<BR>Is this particular version still there tomorrow?
+<BR>What if person changes job or dies? 
+<BR>What if Web server goes down permanently,
+<BR>company goes out of business, 
+<BR>university department is closed?
+<P>
+
+<LI>Old versions usually deleted after update,
+<BR>i.e., no traceable history available -
+<BR>What if I want old info?
+<BR>What if data is formatted for old version?
+<P>
+
+<LI>Possible Solution: Internet Archives -
+<BR>Who maintains them?
+<BR>Updated how often?
+<BR>Which information stored?
+<P>
+
+<LI>Frequent changes of URLs -
+<BR>Will I find a particular document?
+<P>
+
+<LI>How to cite a URL? -
+<BR>Indicate URL and date of access
+<P>
+</UL>
+
+
+<P>
+<HR WIDTH="100%"></P>
+
+
+<H2><A NAME="Disc.3"></A></H2>
+
+<H2><FONT COLOR="#191970"><FONT SIZE=+1>
+III.3 Dangers
+</FONT></FONT></H2>
+
+<UL>
+<LI>Viruses through plugins & downloaded files possible
+<P>
+
+<LI>Possible exposure of individuals to the whole world:
+<BR>Resume, Publications, Travels, Talks, Salary,
+<BR>Leisure activities, Friends, Relationships, Families, ...
+<P>
+
+<LI>Who reads my e-mail or sends fraudulent e-mail?
+<P>
+
+<LI>Easy to track down profile of employees
+<BR>(e.g., check Netscape Cache):
+<BR>% work related pages, % leisure pages, % xxx pages, ...
+<P>
+
+<LI>Final Destination? -
+<BR>A network where everyone knows everything about anyone and
+<BR>has immediate access to all knowledge ever accumulated ?!? -
+<BR>
+<BR>That would we <A HREF="cube.gif">THIS</A> and 
+<A HREF="pic.gif">THIS</A> ! -
+<BR>a species with a collective mind and memory linked through a network !
+<P>
+</UL>
+
+<P>
+<HR WIDTH="100%"></P>
+
+
+<P ALIGN="RIGHT"><I><FONT SIZE=-1>
+Presentation last updated 05/10/98<BR>
+</ALIGN>
+
+
+<P>
+<HR WIDTH="100%"></P>
+
+
+</BODY>
+</HTML>
+
