@@ -2,10 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://symanzik.github.io/talks/index.html</loc>
-    <lastmod>2026-09-03T17:48:35.955Z</lastmod>
+    <lastmod>2026-09-03T17:58:14.791Z</lastmod>
   </url>
   <url>
     <loc>https://symanzik.github.io/index.html</loc>
-    <lastmod>2026-09-03T17:48:34.326Z</lastmod>
+    <lastmod>2026-09-03T17:58:13.028Z</lastmod>
+  </url>
+  <url>
+    <loc>https://symanzik.github.io/teaching/index.html</loc>
+    <lastmod>2026-09-03T17:58:14.797Z</lastmod>
   </url>
 </urlset>
