@@ -1,0 +1,423 @@
+\documentclass[11pt]{article}
+
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{verbatim}
+\usepackage[title,titletoc,toc]{appendix}
+\usepackage{wasysym}
+
+\renewcommand{\topfraction}{1.0}
+\renewcommand{\bottomfraction}{1.0}
+\renewcommand{\textfraction}{0.0}
+\renewcommand{\floatpagefraction}{1.0}
+\renewcommand{\dbltopfraction}{1.0}
+
+\textwidth 16cm
+\textheight 23cm
+\voffset -0.5in
+\hoffset -0.5in
+
+\parindent0pt
+\setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
+
+
+\begin{document}
+
+\SweaveOpts{concordance=TRUE}
+
+\begin{titlepage}
+
+\begin{center}
+{\large STAT 6910 Advanced R} \\[4cm]
+
+{\LARGE \bf Homework  1} \\[1cm]
+by \\[0.5cm]
+{\bf J\"urgen Symanzik} \\[2.5cm]
+{\bf Date:} \today \\[2cm]
+{\bf Due Date:} Friday, November 1, 2013, 11:59pm (by e--mail) \\[2cm]
+
+
+UTAH STATE UNIVERSITY \\[0.5cm]
+Logan, UT \\[0.5cm]
+Fall 2013 \\[0.5cm]
+\end{center}
+
+\thispagestyle{empty}
+\vfill
+\end{titlepage}
+
+
+\newpage 
+
+
+\pagenumbering{roman}
+
+\tableofcontents
+
+
+\newpage
+
+
+\listoftables
+\addcontentsline{toc}{section}{List of Tables}
+
+%\newpage
+
+\listoffigures
+\addcontentsline{toc}{section}{List of Figures}
+
+\newpage 
+
+
+\pagenumbering{arabic}
+
+\section{General Instructions}
+
+You have to work in small groups of exactly two students 
+on this assignment. If you can't find a partner, please
+send me an e--mail and I will team you up with someone.
+We are 16 students --- so we will have exactly eight groups
+of two students.
+
+I would suggest that you first work independently on this 
+assignment and then compare your results with your partner.
+You can submit only one final version!
+
+You have to submit two files via e--mail: The \verb|.Rnw|
+file that contains the \LaTeX\ and R/Sweave (or R/knitr) code
+and the resulting \verb|.pdf| file prepared on your side.
+Your files should be named
+\verb|LastName1_LastName2_HW01.Rnw| and
+\verb|LastName1_LastName2_HW01.pdf|.
+
+Your R code has to be fully reproducible! 
+Make sure to reset the random number seed once as specified
+in part 2 of the question.
+You cannot include
+any constants in your \LaTeX\ text. Rather, you have
+to work with \verb|\Sexpr| to extract numeric values
+from your R code. I will likely make changes to your
+R code, e.g., change some of the numerical values,
+to check whether your results properly get adapted to
+these new values.
+
+Use this \verb|.Rnw| file as the basis for your answers.
+Update the title page, e.g., fill in your names and indicate when
+this homework gets submitted. Moreover, fill in the chunks
+of R code where the current file states
+\verb|### Your R code here|.
+Before you submit your homework, check once more that you
+follow all recommendations from
+Google's R Style Guide
+(see \url{http://google-styleguide.googlecode.com/svn/trunk/Rguide.xml}).
+
+{\large \bf For general questions related to this homework, please
+use the corresponding discussion board in Canvas! I will try to
+reply as quickly as possible. Moreover, if one of you knows
+an answer, please post it. It is fine to refer to web pages
+and R commands, but do not provide the exact R command! This
+will be the task for each individual group.}
+
+
+\newpage
+
+
+\section{Question 1 (7 $\times$ 10 Points $=$ 70 Points)}
+
+Recall that $n!$ (read: ``n factorial'') is defined as follows:
+$0! = 1$ and $n! = n \cdot (n-1)!$
+
+\begin{enumerate}
+\item Write six R functions called \verb|myFactorial1| through \verb|myFactorial6|
+that calculate $n!$ in six different ways. You can assume that $n$ is a valid
+positive integer or equal to zero (if not, just let R produce its own
+error message). These six functions should have the following properties:
+\begin{enumerate}
+\item \verb|myFactorial1| should be based on the existing
+\verb|factorial| function.
+<<>>=
+### Your R code here
+@
+The result should be:
+<<>>=
+myFactorial1(0)
+myFactorial1(1)
+myFactorial1(5)
+myFactorial1(10)
+myFactorial1(100)
+@
+
+
+\item \verb|myFactorial2| should be based on the \verb|prod| function.
+<<>>=
+### Your R code here
+@
+The result should be:
+<<>>=
+myFactorial2(0)
+myFactorial2(1)
+myFactorial2(5)
+myFactorial2(10)
+myFactorial2(100)
+@
+
+
+\item \verb|myFactorial3| should be based on a for--loop that multiplies
+the previous result with the current loop index.
+<<>>=
+### Your R code here
+@
+The result should be:
+<<>>=
+myFactorial3(0)
+myFactorial3(1)
+myFactorial3(5)
+myFactorial3(10)
+myFactorial3(100)
+@
+
+
+\item \verb|myFactorial4| should be based on a while--loop that checks whether
+$n$ has been surpassed. If not, the previous result should be multiplied
+with the current counter.
+<<>>=
+### Your R code here
+@
+The result should be:
+<<>>=
+myFactorial4(0)
+myFactorial4(1)
+myFactorial4(5)
+myFactorial4(10)
+myFactorial4(100)
+@
+
+
+\item \verb|myFactorial5| should be done in a recursive way, using the fact
+that $\mbox{myFactorial5}(n) = n \cdot \mbox{myFactorial5}(n - 1)$.
+<<>>=
+### Your R code here
+@
+The result should be:
+<<>>=
+myFactorial5(0)
+myFactorial5(1)
+myFactorial5(5)
+myFactorial5(10)
+myFactorial5(100)
+@
+
+
+\item \verb|myFactorial6| should be similar to \verb|myFactorial5|, 
+but now write the recursion as 
+$\mbox{myFactorial6}(n) = \mbox{myFactorial6}(n - 1) \cdot n$.
+The result should be:
+<<>>=
+myFactorial6(0)
+myFactorial6(1)
+myFactorial6(5)
+myFactorial6(10)
+myFactorial6(100)
+@
+
+\end{enumerate}
+
+\item We want to determine which of these six factorial functions is fastest.
+To do so, we want to run each of these functions $l$ consecutive times
+and repeat this $k$ times. So, for each of the six functions,
+we will have $k$ blocks of $l$ consecutive times this 
+function is run.
+
+A general principle in statistics is a fully randomized experiment. We should {\bf not}
+simply run \verb|myFactorial1| $k * l$ times, followed by 
+\verb|myFactorial2| $k * l$ times, and so on. There might be other things 
+happening on your computer that slow down your computer at a particular time
+(e.g., downloading of software upgrades in the background, virus checking,
+web browsing, or garbage collection). 
+Therefore, we need to randomize the order. 
+However, it will be fine if it happens by chance that one of the 
+functions is run $l$ consecutive times and then immediately
+is run again $l$ consecutive times. There is no need that 
+in the first six (times $l$) runs all of the six different
+functions are run. The examples below should clarify this part.
+
+Write a function called \verb|CreateSampleOrder| 
+that creates such a random order. The first argument should be
+called \verb|options| (with no default value) and the second argument
+should be called \verb|blocks| (with a default value of 1).
+We will use \verb|options = 6| in this assignment, but someone
+else might want to compare more or fewer functions. Therefore,
+do not assign any default value to options.
+
+To make your results fully reproducible, you must reset the random number
+generator. Use the combination of the days of your birthday as a seed,
+e.g., if your birthdays are October 18 and December 31, use the following:
+<<>>=
+set.seed(1831) # or use set.seed(3118)
+@
+
+<<>>=
+### Your R code here
+@
+
+Here are some possible results:
+<<>>=
+CreateSampleOrder(6)
+CreateSampleOrder(6)
+CreateSampleOrder(6, 2)
+CreateSampleOrder(6, 2)
+CreateSampleOrder(6, 5)
+mySampleOrder = CreateSampleOrder(options = 6, blocks = 5)
+mySampleOrder
+@
+
+
+\item Now, write a function called \verb|DetermineRunTimes|.
+The arguments for this function should be \verb|sampleOrder|,
+\verb|l| (with a default value of 10) that indicates how
+many consecutive times each of the six factorial functions
+will be run, and \verb|n| that determines for which value
+the factorial is calculated (and has a default value of 100). 
+We want to measure the total time for each of the $k$ blocks of
+the $l$ consecutive runs of the factorial function
+(as specified by \verb|sampleOrder|). 
+The result of the \verb|DetermineRunTimes| function
+should be a matrix with six columns (representing the
+six factorial functions) and $k$ rows that contain the
+times for the $l$ consecutive runs for each of the $k$
+runs of the corresponding factorial function. Name the
+columns of the matrix according to the names of 
+the six factorial functions.
+
+\underline{Hint:} You need some additional help vector(s) that count how many
+times each of the six functions has been tested so far so
+that you fill in the right row (and column) of the matrix.
+Also note that we only are interested in the \verb|user| component
+of \verb|system.time|
+
+<<>>=
+### Your R code here
+@
+
+Initially, test your code with:
+<<>>=
+allRunTimes = DetermineRunTimes(sampleOrder = mySampleOrder, 
+                                l = 1000, n = 10)
+allRunTimes
+@
+Note that several of the run times will likely be identical
+within each of the six functions
+(and this will cause problems in the t--test in part 5. later on
+as the variance will be equal to zero).
+You gradually have to increase \verb|n| to obtain 
+different run times for each of the six functions.
+
+
+Finally, once you are sure that everything in your code is correct, 
+run the following:
+<<>>=
+mySampleOrderFinal = CreateSampleOrder(options = 6, blocks = 100)
+length(mySampleOrderFinal)
+head(mySampleOrderFinal, n = 100)
+
+### Create a meaningful plot here that shows that each of the
+### numbers 1 through 6 indeed shows up 100 times in mySampleOrderFinal.
+
+### Your R code here
+
+allRunTimes = DetermineRunTimes(sampleOrder = mySampleOrderFinal, 
+                                l = 10000, n = 100)
+dim(allRunTimes)
+allRunTimes[1:10, ]
+@
+Initially, while still debugging your R code and
+working on the formatting of your \LaTeX\ document,
+you should comment out all of these lines via \%.
+When you are finally ready to run this, 
+you need to transfer this back into a true R code chunk
+by removing the \% symbols.
+{\bf Enjoy your dinner or keep this running overnight!!!} \smiley 
+
+
+\item Create side--by--side boxplots of the run times for
+the six different factorial functions. What does this graphic
+tell you? Are the data symmetric or skewed? If so, to which side?
+Are there any outliers? If so, explicitly mention them.
+It is not sufficient to write 
+{``as we can clearly see in the figure $\ldots$''}.
+It is your responsibility as the author of a document to summarize
+what can be seen in a figure!
+
+<<>>=
+### Your R code here
+@
+
+\begin{figure}[h]
+\begin{center}
+<<echo=false,fig=true,width=19,height=12>>=
+###
+@
+\caption{\label{Boxplots}
+Boxplots for the run times of the six different
+factorial functions.}
+\end{center}
+\end{figure}
+
+
+\item We are statisticians, aren't we? So, conduct all two--sided
+pairwise t--tests with a Bonferroni adjustment. 
+You need to figure out the proper R command(s) yourself!
+Do {\bf not} pool the SD! You need to understand the help page
+for this specific function --- and then apply this to your 
+\verb|allRunTimes|.
+
+<<>>=
+### Your R code here
+@
+
+\item Create a table that lists the mean, median, and 
+standard deviation (SD) for
+the six different factorial functions. Round to three decimal
+digits. The function \verb|sprintf| might be helpful here.
+Try some of the examples on the help page to better
+understand this function!
+
+\begin{table}[h]
+\begin{center}
+\caption{\label{Summary}
+Mean, median, and SD for the run times of the
+six different factorial functions.}
+\begin{tabular}{l||r|r|r}
+ & Mean & Median & SD \\
+\hline
+\verb|MyFactorial1| & \Sexpr{#1} &
+  \Sexpr{#2} &
+  \Sexpr{#3} \\
+etc. & & & 
+\end{tabular}
+\end{center}
+\end{table}
+
+
+\item Provide an overall summary and discuss your results.
+Which function would you recommend to use for the factorial?
+
+\underline{Note:} In any document, you {\bf must} reference
+each figure and each table in the main text and you {\bf must}
+also provide a caption for each. Statements such as
+``the table above shows $\ldots$'' are not acceptable.
+Instead, you must refer to them by number, e.g.,
+``Figure~\ref{Boxplots} shows $\ldots$'' or
+``Table~\ref{Summary} provides $\ldots$''.
+Capitalize {\it Figure} and {\it Table} if you refer to a
+specific figure or table. However, if you continue to
+refer to the same figure or table, then use lowercase,
+e.g., ``this figure also shows $\ldots$''.
+
+
+\end{enumerate}
+
+
+\end{document}
+

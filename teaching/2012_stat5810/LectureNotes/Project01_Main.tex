@@ -1,0 +1,217 @@
+\documentclass[11pt]{article}
+
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{wasysym}
+
+\usepackage{geometry}
+\geometry{letterpaper}
+
+% See this URL for more details about the geometry Latex package:
+%   ftp://ftp.tex.ac.uk/tex-archive/macros/latex/contrib/geometry/geometry.pdf
+% Try what happens when you replace letterpaper in the Latex command above
+% by screen, a5paper, etc.
+
+\renewcommand{\topfraction}{1.0}
+\renewcommand{\bottomfraction}{1.0}
+\renewcommand{\textfraction}{0.0}
+\renewcommand{\floatpagefraction}{1.0}
+\renewcommand{\dbltopfraction}{1.0}
+
+
+\begin{document}
+
+{\bf \Large
+\noindent Stat 5810/6810 --- Project 1 (50 Points) --- Fr 11/02/2012 \\[0.1in]
+General Instructions \\[0.1in]
+Due: Th 11/15/2012, 11:59pm (by e-mail)
+}
+
+\vspace{2em}
+
+For this project, you will work with real data files that are recorded in the context of
+near--infrared spectroscopy (NIRS). NIRS is an optical imaging method
+for studying brain activity. In a NIRS--based experiment, 
+an array of fiber--optic probes is placed on the head of a human participant
+(see Figure~\ref{Hespos_NIRS} for details).
+
+\begin{figure}[t]
+\centerline{\includegraphics[width=0.85\textwidth]{Hespos_NIRS.jpg}}
+\caption{\label{Hespos_NIRS}
+\small
+Photos of infants who were in our experiments. The photos on the top show the
+cap with chin strap and elastic bandage combination that provides a snug fit between the probes
+and the infant's head. The pictures on the bottom represent the placement of the probes over the
+auditory and visual cortices (on the left and right respectively). The red circles indicate the
+approximate placement of the source probes and the blue circles represent the detector probes.
+The black squares indicate where the NIRS system would detect blood flow between each
+source--detector pairing. This particular probe arrangement consists of two sets of 3 $\times$ 3 optode
+arrays comprising 24 channels that each detect changes in oxy-- and deoxyhemoglobin.
+[Figure and caption taken from p.~7 of
+Hespos, S. J. (2010) ``What is Optical Imaging?'', Journal of Cognition and Development 11(1):3--15.]
+}
+\end{figure}
+
+While the cap that is worn is fixed for each human participant in a particular study, the
+exact dimensions of the head may differ considerably among participants. Therefore,
+head measurements for each participant must be obtained first. These measurements
+are stored in a so--called {\tt .pos} file. 
+
+At this time, there exists no R package that allows us to read in data from these {\tt .pos} files
+for further processing in R. It is our task to write functions that read in the data
+from the {\tt .pos} files and provide some basic visualization of these data.
+
+{\bf You are allowed to work in groups of up to two students. A final report in \LaTeX\
+with your figures, a summary of your results, main features of your R code you
+would like to highlight,
+and the R code in the appendix
+must be turned in as a {\tt .pdf} file. I also need the {\tt .R} file!}
+
+Below are the specific instructions:
+\begin{enumerate}
+\item The {\tt .pos} files are plain ASCII file that can be opened in any text editor.
+You should make yourselves familiar with the different files that are being provided.
+What is identical, what is different in those files that are provided?
+
+\item Write a function that reads in a {\tt .pos} file and creates a list  with the
+content of this file. You should use regular expressions wherever possible
+to extract the content from the {\tt .pos} file.
+Your function should be called in the following way:
+\begin{verbatim}
+  Participant1 = NIRSReadPosFile(filename ="0320NLA18F.pos", processed = TRUE)
+\end{verbatim}
+{\tt filename} will be a required parameter. Your function should stop and report
+an error if a file with this name does not exist.
+
+{\tt processed} is an optional paramter and it can take values TRUE and FALSE. The default
+is TRUE. Everything else (other than TRUE or FALSE) 
+should result in a warning, but  this should be interpreted as TRUE
+and the execution of the code should be continued. Thus, only FALSE is really interpreted as FALSE.
+The effect of this parameter will be described in more detail later on.
+
+Your main list with all the data should be structured as a combination of several sub--lists and matrices.
+The first sub--list should be called {\tt processed} and simply contain {\tt TRUE} or {\tt FALSE},
+according to the setting of this parameter.
+ The second sub--list should be called {\tt FileInfo} (with elements such as
+{\tt ID}, {\tt VER}, etc.). 
+The third sub--list should be called {\tt User} (with elements such as 
+{\tt Name}, {\tt ID}, etc.). 
+The next few sub--lists should be called {\tt Probe1, $\ldots$, Probe$N$}, and {\tt MRI}. 
+
+This should be follow by a matrix called {\tt Markers}.
+The rows should be named {\tt LeftEar, RightEar, Nasion, Back,} and {\tt Top}.
+The columns should be named {\tt X, Y,} and {\tt Z}.
+This structure is fixed.
+
+This should be follow by another matrix called {\tt Probes}.
+The rows should be named {\tt Probe$i$ch$j$}.
+The columns should be named {\tt X} to {\tt NZ}.
+This structure is variable with respect to the number of rows.
+
+Finally, there will be two more sub--lists, called {\tt Angle} and {\tt Measure}.
+
+You cannot assume that the file format always is exactly the same as in your sample files.
+Obviously, the number of probes and channels can change. Moreover, the manufacturer
+of the device may decide to write additional information into this file. Surprisingly,
+the serial number of the device and date and time of the recordings are not
+stored in this file. Thus, it could easily happen that a future version of
+this file contains entries such as {\tt SerialNumber, Date,} and {\tt Time}.
+Therefore, you cannot assume that each of the main components described
+above always appears in exactly the same line of the {\tt .pos} file.
+Rather, you have to assume that {\tt [User]} may occur in line 8 in one
+data file and in line 10 in the next {\tt .pos} file. Thus, your code has to be flexible.
+
+ As we do not know how future additional components will be named,
+we have to obtain the names for the components of our sub--lists from the data.
+Then, if there will be a future entry called {\tt SerialNo} (and not
+{\tt SerialNumber}), this will nevertheless get processed properly.
+The following code snippet shows how you can add names to a list after
+it has been created:
+\begin{verbatim}
+  > xx = list(c(1:4), c("a", "b"))
+  > names(xx) = c("Numbers", "Letters")
+  > xx$Numbers
+  [1] 1 2 3 4
+  > xx$Letters
+  [1] "a" "b"
+\end{verbatim}
+
+\item Let us now describe the {\tt processed} parameter in more detail.
+If it is FALSE, then all data will be saved exactly as stored in the {\tt .pos} file.
+This means that a missing entry after the ``$=$'' will be stored as an empty string, 
+the string ``~~~18y'' for Age will be saved as is, and all numbers will also 
+be saved as strings. This format will allow us to check whether we are
+reading the data correctly, in particular that we do not mix up any
+lines and identifiers.
+
+Otherwise, if {\tt processed} is TRUE (or anything different from FALSE),
+we will further process, i.e., transform, the data according to these rules:
+\begin{itemize}
+\item No entry after the ``$=$'' or an arbitrary number of spaces will be 
+interpreted as missing ({\tt NA}).
+
+\item Space at the start or end should be suppressed, i.e., ``~~~Abc~~~''
+should be saved as ``Abc''.
+
+\item For the {\tt Sex} field, entries {\tt Female} and {\tt Male} should be 
+translated to {\tt F} and {\tt M}, respectively. This should happen, based
+on the first letter, i.e., {\tt Femal} still should be translated to {\tt F}.
+The same should be done for lower case versions of the genders.
+If this field is empty, the {\tt NA}--rule from above applies. If this field
+contains anything else that cannot be transformed into {\tt F} or {\tt M},
+a warning should be issued and {\tt NA} should be assigned.
+
+\item For the {\tt Age} field, an entry such as ``~~~18y'' simply
+should be translated into the number 18.
+
+\item All apparent numbers should be translated into numeric. 
+This includes data for the probes, the angles, and several 
+variables early in the file. Note that some unusual
+data entries exist, e.g., ``--0.0'', which apparently 
+should be 0.
+\end{itemize}
+
+Extensively test your {\tt NIRSReadPosFile} function.
+Also create copies of the data {\tt .pos} files and manipulate
+those manually, e.g., by adding or deleting some variables.
+You should also modify some of the content to check whether
+your error--checking works properly.
+
+\item Let's not forget that these data orignate from a human head.
+We want to display the data in a 3--dimensional (3D) plot to check
+that the measurements are plausible.
+
+Install the R package {\it rgl} and read its documentation, in particular
+for the 3D plot command. When we issue a command such as
+\begin{verbatim}
+  NIRSPlot3D(Participant1)
+\end{verbatim}
+the following should happen: 
+\begin{itemize}
+\item If the {\tt processed} list is {\tt FALSE}, we stop with an error message.
+Nothing will be plotted.
+
+\item Otherwise, all 3D {\tt X, Y, Z} coordinates  from {\tt Probe$i$ch$j$}
+should be plotted in gray. Also, the 3D {\tt X, Y, Z} coordinates from the 
+five markers should be plotted as well with slightly bigger symbols.
+Select the colors from a 
+qualitative color scheme from {\tt RColorBrewer} with three
+different colors. Use one color for {\tt Nasion} and {\tt Back},
+another color for the ears, and the third color for {\tt Top}.
+\end{itemize}
+
+For each of the provided {\tt .pos} files,
+produce four snapshots for your report showing different 3D rotations.
+Do not mix up the files and snapshots. It would be best to label
+them similar to the corresponding data file, e.g., \verb|0320NLA18F_snap1.jpg|. 
+Your figure caption
+also should specify to which data file these snapshots belong.
+\end{enumerate}
+
+
+{\large \bf Good luck!!!}
+
+
+\end{document}  
+

@@ -1,0 +1,339 @@
+\documentclass[11pt]{article}
+
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{verbatim}
+\usepackage[title,titletoc,toc]{appendix}
+\usepackage{wasysym}
+
+\renewcommand{\topfraction}{1.0}
+\renewcommand{\bottomfraction}{1.0}
+\renewcommand{\textfraction}{0.0}
+\renewcommand{\floatpagefraction}{1.0}
+\renewcommand{\dbltopfraction}{1.0}
+
+\textwidth 16cm
+\textheight 23cm
+\voffset -0.5in
+\hoffset -0.5in
+
+\parindent0pt
+\setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
+
+
+\begin{document}
+
+\SweaveOpts{concordance=TRUE}
+
+\begin{titlepage}
+
+\begin{center}
+{\large STAT 6910 Advanced R} \\[4cm]
+
+{\LARGE \bf Homework  2} \\[1cm]
+by \\[0.5cm]
+{\bf J\"urgen Symanzik} \\[2.5cm]
+{\bf Date:} \today \\[2cm]
+{\bf Due Date:} Monday, November 25, 2013, 11:59pm (by e--mail) \\[2cm]
+
+
+UTAH STATE UNIVERSITY \\[0.5cm]
+Logan, UT \\[0.5cm]
+Fall 2013 \\[0.5cm]
+\end{center}
+
+\thispagestyle{empty}
+\vfill
+\end{titlepage}
+
+
+\newpage 
+
+
+\pagenumbering{roman}
+
+\tableofcontents
+
+
+\newpage
+
+
+%\listoftables
+%\addcontentsline{toc}{section}{List of Tables}
+
+%\newpage
+
+\listoffigures
+\addcontentsline{toc}{section}{List of Figures}
+
+\newpage 
+
+
+\pagenumbering{arabic}
+
+\section{General Instructions}
+
+You have to work in small groups of exactly two students 
+on this assignment. Unless you have a strong request to
+work with someone else for this assignment, you will
+work with the same partner. Any requests to work
+with a new group partner must be made by 10pm on
+Monday, November 11, 2013.
+
+I would suggest that you first work independently on this 
+assignment and then compare your results with your partner.
+You can submit only one final version!
+
+You have to submit two files via e--mail: The \verb|.Rnw|
+file that contains the \LaTeX\ and R/Sweave (or R/knitr) code
+and the resulting \verb|.pdf| file prepared on your side.
+Your files should be named
+\verb|LastName1_LastName2_HW02.Rnw| and
+\verb|LastName1_LastName2_HW02.pdf|.
+
+Your R code has to be fully reproducible! 
+Make sure to reset the random number seed once.
+You cannot include
+any constants in your \LaTeX\ text. Rather, you have
+to work with \verb|\Sexpr| to extract numeric values
+from your R code. I will likely make changes to your
+R code, e.g., change some of the numerical values,
+to check whether your results properly get adapted to
+these new values.
+
+Use this \verb|.Rnw| file as the basis for your answers.
+Update the title page, e.g., fill in your names and indicate when
+this homework gets submitted. Moreover, fill in the chunks
+of R code where the current file states
+\verb|### Your R code here|.
+Before you submit your homework, check once more that you
+follow all recommendations from
+Google's R Style Guide
+(see \url{http://google-styleguide.googlecode.com/svn/trunk/Rguide.xml}).
+
+{\large \bf For general questions related to this homework, please
+use the corresponding discussion board in Canvas! I will try to
+reply as quickly as possible. Moreover, if one of you knows
+an answer, please post it. It is fine to refer to web pages
+and R commands, but do not provide the exact R command! This
+will be the task for each individual group.}
+
+
+\newpage
+
+
+\section{Question 1 (8 $\times$ 8 Points $=$ 64 Points $+$ 4 EC Points)}
+
+Assume we are interested in properties of the following
+statistical process: First, a $n$--sided die ($n \geq 2$) is rolled once
+(see Figure~\ref{Dice} for examples of such dice).
+Suppose the outcome
+is $k$, where $k \in \{ 1, \ldots n \}$. Now, this same $n$--sided die
+is rolled $k$ times. We are interested in the distributional
+properties of a random variable called $D$ that represents
+the {\bf sum} of these $k$ dice rolls (but ignoring the outcome
+of the very first die roll in the calculation of the sum).
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=3in]{HW02_dice.jpg}
+\caption{\label{Dice}
+Examples of 4--, 6--, 8--, 10--, 12--, and 20--sided dice,
+obtained from \url{http://jackadreams.info/2012/11/25/dice-divination/}.}
+\end{center}
+\end{figure}
+
+
+\begin{enumerate}
+
+\item Write an R function that simulates a $n$--sided die ($n \geq 2$)
+and then determines the sum of $k$ dice rolls of the same $n$--sided die.
+The return value of this function should be just this sum.
+
+<<>>=
+### Your R code here
+@
+
+\item Write a function that simulates $m$ of these two--staged dice rolls.
+For the following parts, work with $m = 10,000$.
+However, to speed up
+the calculations and the translation of your R/Sweave/\LaTeX\ report, 
+reduce $m$ initially.
+
+<<>>=
+### Your R code here
+@
+
+\item Provide at least two different graphical summaries of your experiment for
+$n = 4$ and $n = 6$ that show the sampling distribution of the 
+sum of the dice rolls. Keep in mind that these are discrete distributions ---
+so do not over--simplify your plots. Fine--tune your figures for the 
+resulting pdf version and not for the screen version. 
+
+<<>>=
+### Your R code here
+@
+
+\item What are $E(D)$ and $Var(D)$, based on your $m$ simulation runs
+for $n = 4$ and $n = 6$?
+And what is a 90\% confidence interval for the mean of the sums?
+
+<<>>=
+### Your R code here
+@
+
+\item {\it Manually} tabulate all possible ordered sequences in a \LaTeX\ table
+when $n = 2$ and $n = 3$. There should be 6 and 39 such sequences,
+respectively. For each sequence, add two additional columns
+that list the sum $d$ and the probability $p$ for each of these
+sequences. Indicate the probabilities as a fraction and not as
+a decimal. Then, create two more tables that only list the
+sums $d$ and the probalities for these sums. Check in each
+table that the probabilities sum up to exactly 1.
+
+
+\item What is the {\bf exact} result for $E(D)$ and $Var(D)$ 
+for $n = 4$ and $n = 6$?
+
+To obtain these results, generalize your hand calculations from the
+previous part and write an R function to obtain these tables and
+probabilities. Include these computer--generated results here,
+but only for $n = 2$ and $n = 3$.
+Compare these results with those from
+your manual calculations and make sure they are matching.
+If not, check whether you made a mistake in your manual
+calculations or in your R code.
+
+Then, use simple summation (as introduced in any intro stats course)
+to determine $E(D)$ and $Var(D)$ for $n = 4$ and $n = 6$. Be careful 
+that you work with the proper probabilities. 
+
+<<>>=
+### Your R code here
+@
+
+
+\item Determine $P(D < 5)$ and $P(12 \leq D \leq 16)$
+for $n = 4$ and $n = 6$, based on your simulation results.
+Also use the results from the previous part 
+to obtain these exact probabilities.
+Be careful with the end points!
+Create a table in \LaTeX\
+that lists the simulation and exact results for these
+probabilities, the absolute differences ($\mid$ simulated $-$ exact $\mid$),
+and the relative differences (simulated $/$ exact $\cdot 100\%$).
+Round to two decimal digits.
+
+<<>>=
+### Your R code here
+@
+
+
+\item Summarize your results. Was $m = 10,000$ a good choice,
+or would it be (highly) beneficial to increase $m$?
+
+
+\item (4 EC Points) 
+Find a solution based on Mathematical Statistics 
+for $E(D)$ and $Var(D)$ for $n = 4$ and $n = 6$ and write it up in \LaTeX. 
+If you are interested in my \LaTeX\ lecture notes for Stat 6710/6720 as 
+a template, I can send those upon request.
+
+
+\end{enumerate}
+
+
+\newpage
+
+
+\section{Question 2 (5 $\times$ 8 Points $=$ 40 Points)}
+
+Obtain a Monte Carlo estimate for the base of the natural logarithm, $e$.
+This question is based on the concept we used to
+find an estimate of $\pi$ via simulation.
+We do {\bf not} want to calculate $e$ via any of the mathematical
+formulas we know from Mathematical Statistics here.
+Your results must be fully reproducible!
+
+As a reminder, it holds that
+\[
+\int_1^e \frac{1}{x} dx = \ln(e) - \ln (1) = 1 - 0 = 1.
+\]
+Sketch a graph that shows this fact and use this as the basis
+of your simulation. You can assume that $e \leq 4$.
+
+{\bf Hint:} You need to find the smallest of the sorted $x$--values
+such that the area underneath the curve $1/x$ inside the
+rectangle $[1, x] \times [0, 1]$ is $\geq 1$.
+
+\begin{enumerate}
+
+\item Your estimate of $e$ should be based on 
+$m = 1,000$, $m = 10,000$ and $m = 100,000$ pairs of random numbers.
+First write a function that creates a single pair of these random numbers.
+Then write a function that calls your first function $m$ times.
+The return value of this function should be a single estimate of $e$.
+
+<<>>=
+### Your R code here
+@
+
+
+\item Create plots of the first four simulation runs for $m = 1,000$
+that highlight the points that contribute to the calculation
+of $e$, the area of interest, and the estimate of $e$ for that
+specific simulation run. Optimize the spacing and size of these plots
+and arrange them in a single figure. 
+
+<<>>=
+### Your R code here
+@
+
+\item Obtain results for 100 and 1,000 replications for the 
+three different values of $m$, i.e., you are conducting 
+$2 \times 3 = 6$ different simulation experiments.
+Tabulate the mean, median, and a 95\% confidence interval
+for each of these six experiments. How close
+do you get to the true $e$?
+
+Also, create six boxplots in a $2 \times 3$ layout.
+Label them clearly. Recall the principle for small multiples
+that must be applied here.
+
+{\bf Note:} 1,000 replications of $m = 100,000$ pairs will
+take a while. Test your code (R \& \LaTeX) initially for smaller
+values and only use the larger numbers when everything seems
+to be correct.
+
+<<>>=
+### Your R code here
+@
+
+\item Tabulate results from the expression
+\[
+\left( 1 + \frac{1}{n} \right)^n,
+\]
+for $n = 100$, 1,000, 10,000, and 100,000
+and compare with your simulation results. 
+Which seems to be the better way to obtain $e$ --- and why?
+
+<<>>=
+### Your R code here
+@
+
+\item This is a tricky question that requires some careful mathematical
+and geometrical
+considerations and not only some fast implementation of R code.
+In this last part, you have to provide a verbal explanation of your
+algorithm --- and why it is expected to give us a correct result.
+
+{\bf Note:} As a reminder, make sure that your figures and tables are properly numbered
+and have a meaningful caption --- and that you refer to each of them
+at least once from the main text.
+
+\end{enumerate}
+
+
+\end{document}
+

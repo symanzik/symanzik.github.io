@@ -1,0 +1,39 @@
+\documentclass{article}
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+
+Here are normal random numbers!
+
+<<echo=false>>=
+xx = rnorm(100)
+xx
+@
+
+
+<<fig=TRUE>>=
+hist(xx)
+@
+
+
+The mean is
+<<echo=false>>=
+mean(xx)
+@
+and the SD is
+<<echo=false>>=
+sd(xx)
+@
+
+\textbf{Attempt 2:}
+
+The mean is
+\Sexpr{format(mean(xx), digits = 4)}
+and the SD is
+\Sexpr{format(sd(xx), digits = 3)}.
+
+\textbf{THE END!}
+
+
+
+\end{document}

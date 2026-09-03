@@ -1,0 +1,280 @@
+\documentclass[12pt]{article}
+
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{verbatim}
+\usepackage[title,titletoc,toc]{appendix}
+\usepackage{wasysym}
+
+\renewcommand{\topfraction}{1.0}
+\renewcommand{\bottomfraction}{1.0}
+\renewcommand{\textfraction}{0.0}
+\renewcommand{\floatpagefraction}{1.0}
+\renewcommand{\dbltopfraction}{1.0}
+
+
+\begin{document}
+
+\begin{titlepage}
+
+\begin{center}
+{\large STAT 5810/6810 Introduction to Statistical Computing} \\[4cm]
+
+{\LARGE \bf Solutions for Homework  3} \\[1cm]
+by \\[0.5cm]
+{\bf J\"urgen Symanzik} \\[2.5cm]
+{\bf Date:} \today \\[2cm]
+
+UTAH STATE UNIVERSITY \\[0.5cm]
+Logan, UT \\[0.5cm]
+Fall 2012 \\[0.5cm]
+\end{center}
+
+\thispagestyle{empty}
+\vfill
+\end{titlepage}
+
+
+\newpage 
+
+
+\pagenumbering{roman}
+
+\tableofcontents
+
+
+\newpage
+
+
+%\listoftables
+%\addcontentsline{toc}{section}{List of Tables}
+%
+%\newpage
+
+\listoffigures
+\addcontentsline{toc}{section}{List of Figures}
+
+\newpage 
+
+
+\pagenumbering{arabic}
+
+
+\section{Solutions for Homework 3}
+
+\subsection{General Comments}
+
+Here are my solutions for Homework 3 --- and, as usual, a few more \LaTeX\ features! 
+In particular, note how we can use the {\tt appendix} \LaTeX\ package, rather than
+the \verb|\appendix| command. Noteworthy are the numbering and the modified
+entries in the table of contents.
+
+Specific results and figures for HW03 can be found in Section~\ref{Results}.
+R code for all questions can be found in Appendix~\ref{AppendixWithRCode}.
+
+
+\subsection{Self--Explanatory Figures}
+
+When creating figures and figure captions, it is expected that these are
+self--explanatory. This means that a reader gets sufficient information
+by just looking at a figure and its caption without having to read the
+main text. The main text is used to provide additional details beyond
+the information that is stated in the figure caption. Here are some
+useful links:
+\begin{itemize}
+\item \url{http://unilearning.uow.edu.au/report/1fi.html}
+\item \url{http://ocw.mit.edu/courses/biological-engineering/20-109-laboratory-fundamentals-in-biological-engineering-fall-2007/assignments/guide_lab_report-htm/}
+\end{itemize}
+
+By the way, what holds for figures usually also holds for tables.
+google yourself for addional details.
+
+
+\newpage
+
+
+\section{Results}\label{Results}
+
+In this section, we provide general results and include the four figures from HW03. 
+
+
+\subsection{World Record in Men's 1500 Meter Run}
+
+In our first plot (Figure~\ref{HW03_Plot1}), we examine the development
+of the world record times in men's 1500 meter run from 1892 to 2012.
+Overall, the time for the world record  was reduced from about 265 sec to about 206 sec,
+i.e., roughly by a minute, during the last 120 years.
+The world record was broken (or equalized) 51 times by 41 different
+world record holders.
+
+\begin{figure}[h]
+\centerline{\includegraphics[width=0.99\textwidth]{HW03_Plot1.pdf}}
+\caption{\label{HW03_Plot1}
+This figure shows the world record times (in sec) in men's 1500 meter run 
+from 1892 to 2012. Marked are two periods (1944 and 1998) when the
+world record wasn't further improved for ten and fourteen years,
+respectively. The names of the two world record holders during these
+periods are indicated. 
+}
+\end{figure}
+
+
+\newpage
+
+
+\subsection{Total Medals in Relation to Population and GDP}
+
+Figure~\ref{HW03_Plot2} shows a three--way relationship between the
+population of a country (horizontal), the GDP per person (vertical),
+and the 2012 total medals won (area of the circles) for those
+countries that won at least one medal at the 2012 Summer Olympics
+in London. While there is no noticeable relationship between
+GDP per person and population (both on the log scale),
+it is obvious that countries with the largest total number 
+of medals have a relatively large population and a 
+relatively high GDP per person.
+
+As a side note, recall that the HW instructions asked you to
+{\it ``create circles for the plotting
+symbols where the area of the circle is proportional to the 
+total number of medals.''}
+The R help page for {\tt symbols} specifies:
+\begin{verbatim}
+      circles        a vector giving the radii of the circles.
+\end{verbatim}
+Thus, we have to use the {\bf square root} of the total number of medals
+in the R code, and not just the total number of medals itself.
+As a reminder, the area $A$ of a circle is calculated as $A = \pi \cdot r^2$,
+where $r$ is the radius.\footnote{I suppose you know this formula,
+but I wanted to use this opportunity to introduce
+mathematical formulas and the {\tt footnote} command \smiley.
+And yes, \smiley\ and \frownie\
+can be obtained from the \LaTeX\ package {\tt wasysym}.
+}
+
+
+\newpage
+
+
+\begin{figure}[h]
+\centerline{\includegraphics[width=5in]{HW03_Plot2.pdf}}
+\caption{\label{HW03_Plot2}
+This figure shows a scatterplot of the
+2012 total medals in relation to population and GDP per person.
+Both axes are drawn on a log--scale.
+The area of the circles is proportional to the total number of medals won
+for each country. Highlighted (in blue) are the country codes for
+those five countries with the largest number of medals won.
+Also highlighted (in red) is my home country, Germany (``DEU''). 
+}
+\end{figure}
+
+
+\newpage
+
+
+\subsection{Map of Total Medals by Country}
+
+Figure~\ref{HW03_Plot3} shows a map of the world where the number of medals won
+by country has been overlaid as circles. Some inconsistencies become immediately
+apparent (when the circles are small enough). First of all, there are numerous circles
+in the area of the former USSR. The same is true when we zoom into south--east
+Europe where we notice that there are also numerous circles in the area of the former Yugoslavia.
+
+A comparison of names used in the map with names used in the data file is helpful:
+\begin{verbatim}
+   mapCountries = map(namesonly = TRUE)
+   SO2012Ctry$Country[!(SO2012Ctry$Country %in% mapCountries)]
+\end{verbatim}
+
+Overall, there are 85 country names that do not match. This can be expected for
+names with slightly different spellings, in particular when spaces are removed
+from the country names, such as UnitedArabEmirates, UnitedKingdom, and NorthKorea.
+Moreover, we see that the countries of the former USSR (from Armenia to Uzbekistan)
+and of the former Yugoslavia (from Bosnia to Slovenia) appear in the data file,
+but not in the map.
+
+This outcome should not have come totally unexpected. The documentation of the
+{\tt maps} package at \url{http://cran.r-project.org/web/packages/maps/} states:
+{\it ``Original S code by Richard A. Becker and Allan R. Wilks.''} So, this
+is based on a map from the 1980s. A more recent version of a world map is
+accessible via the R package {\tt maptools} (see
+\url{http://cran.r-project.org/web/packages/maptools/}
+for details).
+
+\underline{\bf Note:} As a side note, I rescale the width of Figure~\ref{HW03_Plot3}
+to \verb|1.5\textwidth|. Typically, we only rescale to a maximum
+of 0.99 times the textwidth so that a figure occupies the maximum
+possible width on a page. Here, the original pdf figure produced in R
+contains a lot of white space on both sides of the figure. So, after rescaling,
+the figure actually extends into the margins on both sides, but this
+is fortunately not visible.
+
+
+\newpage
+
+
+\begin{figure}[t]
+\centerline{\includegraphics[width=1.5\textwidth]{HW03_Plot3.pdf}}
+\caption{\label{HW03_Plot3}
+This figure shows the map of the world, with the 2012 total number of
+medals by country overlaid as circles. The area of the circles is proportional 
+to the total number of medals for each country. Some inconsistencies
+exist and are further discussed in the text.
+}
+\end{figure} ~\\
+
+
+\newpage
+
+
+\subsection{Participants by Sex and Sports}
+
+\begin{figure}[b]
+\centerline{\includegraphics[width=4.5in]{HW03_Plot4.pdf}}
+\caption{\label{HW03_Plot4}
+Side--by--side bar charts of female and male participants in the 2012
+Olympics by sport. The disciplines are sorted increasingly with respect to the
+total number of participants of both genders in each sport. 
+}
+\end{figure}
+
+Figure~\ref{HW03_Plot4} shows side--by--side bar charts of the female and
+male participants in the 2012 Olympics. By far the most participants (of both genders)
+participate in athletics. The next four most popular disciplines are
+swimming, football ($=$ soccer), rowing, and cycling. The numbers of
+female and male participants in most sports are similar, possibly with
+a few more men participating. However, four sports have a rather different
+gender distribution: wrestling and boxing have mostly male participants,
+while synchronised swimming and gymnastics rhythmics have only
+female participants.
+
+\underline{\bf Note:} There is a problem in the data. Did you notice
+on the lower left side of Figure~\ref{HW03_Plot4}  that there is
+a single participant in cycling --- but that cycling is also the fifth
+most popular sport? A closer look at the actual data resolves this problem:
+One participant's sport is listed as {\it ``Cycling~''} (with an extra space 
+at the end), rather than
+{\it ``Cycling''}. This should be corrected, either in the data file
+or in R, and a corrected plot should be produced.
+
+
+\newpage
+
+
+\begin{appendices}
+
+
+\section{R Code for Homework 3}\label{AppendixWithRCode}
+
+Here is the R code for Homework 3:
+
+\scriptsize
+\verbatiminput{HW03_Graphics_sol.R}
+
+\end{appendices}
+
+
+\end{document}
+
