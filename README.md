@@ -1,6 +1,6 @@
-# Juergen Symanzik's Personal Web Page
+# J&uuml;rgen Symanzik's Personal Web Page
 
-This repository contains the source files for Juergen Symanzik's personal web page. 
+This repository contains the source files for J&uuml;rgen Symanzik's personal web page. 
 The rendered page can be accessed at
 https://symanzik.github.io/.
 
