@@ -1,7 +1,6 @@
 project:
   type: website
   resources:
-    - keybase.txt
     - resume.pdf
 
 website:
