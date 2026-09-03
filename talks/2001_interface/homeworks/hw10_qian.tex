@@ -1,0 +1,408 @@
+From - Thu Jun  1 15:36:30 2000
+Received: from mr.usu.edu (mr.usu.edu [129.123.1.3])
+	by math.usu.edu (8.9.3+Sun/8.9.1) with ESMTP id AAA08239
+	for <symanzik@sunfs.math.usu.edu>; Thu, 1 Jun 2000 00:00:07 -0600 (MDT)
+Received: from hotmail.com (panda.uwrl.usu.edu [129.123.9.28])
+	by mr.usu.edu (Postfix) with ESMTP id 38C181D2B2
+	for <symanzik@sunfs.math.usu.edu>; Thu,  1 Jun 2000 00:02:00 -0600 (MDT)
+Message-ID: <3935FDE7.3EF11C50@hotmail.com>
+Date: Thu, 01 Jun 2000 00:08:39 -0600
+From: Chian <chian98@hotmail.com>
+X-Mailer: Mozilla 4.61 [en] (Win98; U)
+X-Accept-Language: en
+MIME-Version: 1.0
+To: symanzik@sunfs.math.usu.edu
+Subject: Hw#10
+Content-Type: multipart/mixed;
+ boundary="------------9AEA3EF868EADF086FB7F6D0"
+Content-Length: 9152
+Status: RO
+X-Mozilla-Status: 8001
+X-Mozilla-Status2: 00000000
+X-UIDL: 38baa60a00000365
+
+This is a multi-part message in MIME format.
+--------------9AEA3EF868EADF086FB7F6D0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+
+
+--------------9AEA3EF868EADF086FB7F6D0
+Content-Type: text/plain; charset=us-ascii;
+ name="Hw"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline;
+ filename="Hw"
+
+Use of the JavaScript Version of Rweb
+
+http://www.math.montana.edu/Rweb/
+
+Data file URL:
+http://www.math.usu.edu/~vukasino/teaching/spring2000/complab/student_data1.prn
+
+#1.  Solution,
+The following lines are type into the input area:
+mean(X[,7])
+median(X[,7])
+var(X[,7])
+mean(X[,8])
+median(X[,8])
+var(X[,8])
+cor(X[,7], X[,8])
+plot(X[,7], X[,8], main="Weight vs Height")
+
+Height is in column 7 and weight is in column 8. So X[,7] represents height, while X[,8] represents weight.
+Mean is used to calculate mean of variables. Median is used to compute median of variables. Var is used to compute the variance of variables. Cor is used to compute the correlation between two variables. The results are presented as below:
+
+[1] 69.11628
+[1] 69
+[1] 15.86711
+[1] 159.8605
+[1] 155
+[1] 832.5039
+[1] 0.5379353
+
+The scatterplot is shown as below:
+
+
+
+#2. Solution,
+The following lines are type into the input area:
+result<-lm(X[,8]~ X[,3])
+summary(result) 
+
+X[,3] represent variable Age. Lm is function of linear regression. Summary is used to compute the summary statistics of results. The results are shown as below:
+
+Call:
+lm(formula = X[, 8] ~ X[, 3])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-49.500 -14.462  -1.769   9.904  84.308 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)
+(Intercept)   15.231     38.134   0.399 0.691668
+X[, 3]         6.269      1.645   3.812 0.000455
+
+Residual standard error: 25.09 on 41 degrees of freedom
+Multiple R-Squared: 0.2617,     Adjusted R-squared: 0.2437 
+F-statistic: 14.53 on 1 and 41 degrees of freedom,      p-value: 0.0004551 
+
+
+
+Rice Virtual Lab in Statistics
+
+http://www.ruf.rice.edu/~lane/rvls.html
+
+Data file URL:
+http://www.math.usu.edu/~vukasino/teaching/spring2000/complab/student_data1.prn 
+
+First let's go to the homepage of Rice Virtual Lab in Statistics. Then click on 'Analysis Lab' to activate the program. When the page is fully loaded, click on 'Analyze' button and the following Data Analysis Lab window appear:
+
+
+
+Next, we need to input dataset. We use copy/paste to input data in clipboard. Since non-numerical values are not recognized by the Lab, we need to change all the non-numerical variables into integer values. Following rules are used to archive this:
+
+Gender: 
+        1 - male 
+        2 - female 
+    Eyecolor: 
+        1 - blue 
+        2 - brown 
+        3 - green 
+    Major: 
+        1 - Biology 
+        2 - CompSci 
+        3 - Chemistry 
+        4 - Health 
+        5 - Other
+
+Then we copy this data file and paste to the Data Analysis Clipboard. I use "Control + C " to do this. Click on Accept Data, the clipboard window disappears. Then we are able to do analysis on this dataset. 
+
+#1. Solution,
+ Choose 'Height' as Dependent variable, Click on Descriptive window to obtain summary statistics. The following are results of descriptive statistics.
+
+
+
+Then click on Boxplot, the following plot is presented:
+
+
+
+ 
+
+
+Then click on Histogram, following plot is shown: We could change the bin width of the histogram so it will look different. 
+
+
+
+The click on the Stem-and-Leaf, we have:
+
+
+
+Then we change the dependent variable to Weight. Do exactly the same on this variable. We have the following output.
+
+
+
+
+
+
+
+
+
+
+#2. Solution,
+
+Next, we choose Weight as Dependent Variable, Age as Predictor Variable. Then click on the Correlatin/regression. The results are shown as below:
+
+
+
+
+
+
+
+#3. Solution,
+
+Next, we choose Weight as Dependent variable, Eyecolor as Grouping variable. The click on the ANOVA. The following results are presented:
+
+
+
+
+
+
+
+Webstats:
+
+ http://www.stat.sc.edu/webstat/ 
+
+Sample Dataset: Labor force
+
+
+#1. Solution,
+
+This data set is measuring the Labor force participation rate of women in 19 cities.
+The original dataset is presented as below:
+
+# Labor Force
+#
+# Reference: United States Department of Labor Statistics
+#
+# Description: Labor force participation rate of women for 19 cities
+#    and two years: 1968 and 1972.
+#
+# Number of cases: 19
+#
+# Variable Names:
+#    1. City: city name
+#    2. 1972: labor force participation rate of women in 1972
+#    2. 1968: labor force participation rate of women in 1968
+#
+# The above information was taken from the Data and Story Library.  
+# For other interesting data sets, check out http://stat.cmu.edu/DASL/.
+#
+varnames = City 1972 1968
+New_York        .45     .42
+Los_Angeles     .50     .50
+Chicago         .52     .52
+Philadelphia    .45     .45
+Detroit         .46     .43
+San_Francisco   .55     .55
+Boston          .60     .45
+Pittsburgh      .49     .34
+St._Louis       .35     .45
+Connecticut     .55     .54
+Washington_D.C. .52     .42
+Cincinati       .53     .51
+Baltimore       .57     .49
+Newark          .53     .54
+Minn./St._Paul  .59     .50
+Buffalo         .64     .58
+Houston         .50     .49
+Patterson       .57     .56
+Dallas          .64     .63
+
+#2, Solution:
+
+First let's go to the homepage of Webstat. Click on the orange button on the top of this page, a new window appears. Click on the Data on the head tool bar. Then click on Sample Data Sets and choose labor force. Then the dataset is input in the window. We are now able to do analysis on this dataset. Click on Stat on the head tool bar, choose T-test and the choose Paired from the submenu. Then a window appear. We choose 1972 as Var1 and 1968 as Var2. Then click on Next. Then click on Calculate. We have the following answer:
+
+
+#3. Solution,
+
+Then we click on Stat and choose Summary Stat from the submenu, then a window appears and we choose the statistics we want and then click on Calculate. Then we got the following results:
+
+#4. Solution,
+
+Then we click on Graphics and choose Boxplot and Histogram. And choose 1972 and 1968 as variables, we got the following plots:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+INTRODUCTION TO STATLETS
+
+http://www.statlets.com/statletsindex.htm 
+
+Data file: 
+http://www.math.usu.edu/~vukasino/teaching/spring2000/complab/student_data2.prn 
+
+#1. Solution,
+
+Follow the procedures described in the HW, we change 103.0 to 67.0 and do the analysis.
+
+Estimation of Population Mean for Height
+ 
+Sample size = 45
+Mean = 69.5111
+ 
+95.0% confidence interval for mean: 69.5111 +/- 1.24635   [68.2648,70.7575]
+ 
+t-test
+------
+Null hypothesis: mean = 68.0
+Alt. hypothesis: not equal
+Computed t-statistic = 2.44349
+P-value = 0.0186264
+Reject the null hypothesis for alpha = 0.05
+ 
+ 
+Statistical Interpreter
+-----------------------
+This table displays the result of a t-test performed to test the null
+hypothesis that the mean of the population from which the sample data
+come equals 68.0 versus the alternative hypothesis that the mean is
+not equal to 68.0. Since the P-value for this test is less than 0.05,
+we can reject the null hypothesis at the 95.0% confidence level. Also
+shown is a 95.0% confidence interval for the population mean. In
+repeated sampling, 95.0% of all such intervals will contain the true
+mean. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+An Introduction to XploRe
+http://www.XploRe-stat.de
+
+Data file: 
+http://www.math.usu.edu/~vukasino/teaching/spring2000/complab/student_data1.prn,
+
+#1. Solution
+
+   Program for histogram & boxplot of Sibling:
+    library("XploRe")
+     x = readm("user")
+     z = x.double[ , 3]
+     library ("plot")
+     plothist(z)
+     plotbox(z)
+
+Boxplot of sibling:
+
+
+
+
+
+
+
+
+Histogram of Sibling:
+
+
+
+program for histogram & boxplot of weight
+    library("XploRe")
+    x = readm("user")
+    z = x.double[ , 5]
+    library ("plot")
+    plothist(z)
+    plotbox(z)
+
+
+
+
+
+
+
+
+#2. Solution
+
+program for regression analysis
+     library("XploRe")
+     x = readm("user")
+     y = x.double[ , 4|5]
+     y1 = y[ , 1]
+     y2 = y[ , 2]
+     library("stats")
+   {b, bse, bstan, bpval} = linreg(y1, y2)
+    library("plot")
+    plot(y)
+    regy=grlinreg(y)
+    plot(y, regy)
+
+
+the regression  line of Weight on height :
+
+
+
+Output of ANOVA:
+Contents of string
+[1,] "readm: Found   43 line(s) and    8 column(s)"
+
+Contents of out
+[ 1,] ""
+[ 2,] "A  N  O  V  A                   SS      df     MSS       F-test   P-value"
+[ 3,] "_________________________________________________________________________"
+[ 4,] "Regression                 10118.023     1 10118.023      16.696   0.0002"
+[ 5,] "Residuals                  24847.140    41   606.028"
+[ 6,] "Total Variation            34965.163    42   832.504"
+[ 7,] ""
+[ 8,] "Multiple R      = 0.53794"
+[ 9,] "R^2             = 0.28937"
+[10,] "Adjusted R^2    = 0.27204"
+[11,] "Standard Error  = 24.61763"
+[12,] ""
+[13,] ""
+[14,] "PARAMETERS         Beta         SE         StandB        t-test   P-value"
+[15,] "________________________________________________________________________"
+[16,] "b[ 0,]=       -109.4509      66.0171       0.0000        -1.658   0.1049"
+[17,] "b[ 1,]=          3.8965       0.9536       0.5379         4.086   0.0002"
+
+
+
+
+
+
+
+
+--------------9AEA3EF868EADF086FB7F6D0--
+

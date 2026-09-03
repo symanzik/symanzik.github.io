@@ -1,0 +1,38 @@
+Homework 5							Roxanne Drachenberg
+								Ann Kitchen
+
+Web site: www.statsoft.com/textbook/stathome.html
+
+Date Accessed: May 12, 2000
+
+Objective of site:  This site offers a textbook aimed at educating students on statistical theory and its application. The textbook  presents statistics as used in many different fields including laboratory research, business, social science, surveys, data mining, engineering and quality control applications.
+
+Effectiveness of page/ Overview:
+
+When you first access this Web page you see a table of contents running down the right side of the screen which we thought was very helpful.  However, the chapter titles gave us our first hint that this was a more advanced on-line textbook than one for an introductory statistics course.  The last six chapters listed on the right side table of contents are all reference links.  There is a glossary, search engine, statistical advisor, distribution tables, references and an e-mail link to send your comments about the site.  These are all excellent additions to any textbook.
+            Clicking on a chapter takes you to an outline of links, or a mini table of contents, for that chapter which we thought was very good.  All in all, the navigational tools in this Web site were excellent.  However, as you start reading the chapters you notice that there is a great deal of text with very little white space.  They didn't use different colors of text book.  There are some moving graphics and nicely colored graphics that help to mix up the monotony of text a little, but not enough.  There are no interactive graphics anywhere in this site that we could find.  Nothing to make this any more than a textbook that was put on the web.
+            So that is how we see this Website.  It is simply a textbook that is written on the Web instead of in hardcopy.  Without a professor to guide a student through the textbook in a course of study, it would be very difficult for one to garner much on their own.  This still has its advantages such as fast, easy navigations and searches, low cost to a student, and it saves on paper.  However, it lacks the interactive nature that some of the other electronic textbooks have.
+
+Specific chapters:
+
+I looked a two chapters, one on a topic that I was already familiar with to evaluate accuracy, breadth and comprehensiveness, and one on a topic that I knew nothing about to assess how clearly presented and understandable new material was.
+
+Chapter 2:  Basic statistics
+	I found this chapter to be comprehensive and understandable.  Concepts are defined briefly in the text, but they are also linked to the section of the text that explains them in more detail.  There are also links to earlier chapters for concepts covered in more detail in other chapters, however, the link just takes you to the main index for the chapter, not to the exact place that you need to go.  
+
+	The graphics in the chapter aided understanding, and the fact that they were dynamic made the concept easier to grasp and more interesting to look at for the student.  However, for some of the graphics, allowing the student to control the movement may have facilitated understanding.  The whole chapter was presented on one page, so moving around through it was easy.  The index for the chapter also made it easy to find the topic of interest.  At times large chunks of text were presented and this made it a bit heavy to wade through.
+
+
+Chap 4: Canonical Analysis
+	I chose the chapter on canonical analysis as I have previously had no exposure to this topic. After reading through the chapter, I found that I gained some understanding of the topic, although the long paragraphs of text would be quite discouraging to the average student to plow through, especially when they have no background in the topic presented.  More graphics are needed and the lack of examples and exercises are a major downfall.
+
+We graded the textbook in each of the topics that we discussed in class as being indicative of a 'good' textbook:
+
+* easy to read and understand-  B
+* accurate- A
+* well organized- A
+* many examples and case studies- D
+* exercises and solutions- D
+* glossary and index- A
+* references for further reading- A
+* good graphics- A (although more of them would be beneficial)

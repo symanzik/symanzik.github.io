@@ -1,0 +1,383 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>HW 10 - Weiping</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="white" LINK="#0000ff" VLINK="#800080">
+
+<H2>Homework of Using Statistical Software on the Web</H2>
+
+
+<UL>
+<B><U><LI>Rweb</LI></UL>
+</B></U>
+<P>
+<U>Use of the JavaScript Version of Rweb</U>
+
+<P>
+I started at <A HREF="http://www.math.montana.edu/Rweb/">http://www.math.montana.edu/Rweb/</A>, then clicked on "JavaScript Version of Rweb". <BR>
+I scrolled down on this page until I saw the Open Code Window button. After I clicked this button, a new window appeared. I enlarged this window to see all of its features and controls. The last line in this window read "Last Modified: ..." <BR>
+<BR>
+In the field Enter a dataset URL, enter </H2>
+<PRE><A HREF="http://www.math.usu.edu/~vukasino/teaching/spring2000/complab/student_data1.prn">http://www.math.usu.edu/~vukasino/teaching/spring2000/complab/student_data1.prn 
+<PRE></PRE></A>
+<B>Problem 1:</PRE>
+</B><P>Type the following lines in the big input area: </P>
+
+<I><PRE>median(X[,7])
+median(X[,8])
+var(X[,7])
+var(X[,8])
+cor(X[,7], X[,8])
+plot(X[,7], X[,8], main="Height vs Weight")
+
+</I><B>X</B> is the data matrix that is created from the data stored at the given URL. Column 7 is <B>Height</B> and column 8 is <B>Weight</B>. <B>median(X[,7])</B>and <B>median(X[,8]</B>), <B>var(X[,7]) </B>and <B>var(X[,8])</B>provide us with the medians and variance of <B>Height</B> and <B>Weight</B>. cor(X[,7], X[,8]) compute the correlation between <B>Height</B> and <B>Weight. plot(X[,7], X[,8], main="Height vs Weight") </B>create a scatterplot of the <B>Height </B>(horizontal)<B> </B>vs <B>Weight </B>(vertical).
+
+</PRE>
+<P>Now click on <B>Submit</B>. It takes a few seconds to calculate the results. Three new windows are available. <BR>
+</P>
+<OL>
+
+<LI>One Window (without a name) contains the input and output produced when executing R. Here you see which commands have been executed internally, possible warnings, and error messages. </LI>
+
+
+<P>
+<LI>The window entitled "Rweb Analysis Output" contains 
+<PRE>      
+<I>
+      [1] 69
+      [1] 155
+      [1] 15.86711
+      [1] 832.5039
+      [1] 0.5379353</PRE>
+</I>
+
+which are the arithmetic medians and variances for <B>Height </B>and <B>Weight</B>, respectively, and correlation between them.
+</P>
+
+<P>
+<LI>The window entitled "Rweb images" should contain the scatterplot of <B>Height</B> vs. <B>Weight</B>.</P>
+
+</OL>
+
+<B><P>Problem 2</B>:</P>
+
+<P>Type the following lines in a new input area: </P>
+<FONT FACE="Courier New" SIZE=2>
+</FONT><I><P>result &lt;- lm(X[,8]~X[,3]) </P>
+<P>summary(result)</P>
+</I>
+<P>In the matrix X, column 8 is <B>Weight</B> and column 3 is <B>Age</B>. <B>lm(X[,8]~X[,3])</B> calculate a simple linear regression of <B>Weight </B>on <B>Age</B>. Assign the outcome of this calculation to a new variable <B>result</B>. <B>summary(result</B>) produces the visible output .</P>
+
+<P>Then click on <B>Submit</B>. The output window has the following output:</P>
+<PRE>  
+<I>Call:
+lm(formula = X[, 8] ~ X[, 3])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-49.500 -14.462  -1.769   9.904  84.308 
+
+Coefficients:
+            Estimate Std. Error t value Pr(&gt;|t|)
+(Intercept)   15.231     38.134   0.399 0.691668
+X[, 3]         6.269      1.645   3.812 0.000455
+
+Residual standard error: 25.09 on 41 degrees of freedom
+Multiple R-Squared: 0.2617,&#9;Adjusted R-squared: 0.2437 
+F-statistic: 14.53 on 1 and 41 degrees of freedom,&#9;p-value: 0.0004551 
+
+Since the P-value is much less than 0.05, we conclude that this linear model Y=15.231 + 6.269X + e is quite significant.</PRE>
+</I>
+<B><P>&nbsp;</P>
+<P>&nbsp;</P>
+
+<UL>
+<U><LI>Rice virtual lab in statistics - data analysis</B>       </LI></UL>
+
+</U><B><P>  </B>First open<B> </B><A HREF="http://www.ruf.rice.edu/~lane/rvls.html">http://www.ruf.rice.edu/~lane/rvls.html</A><B>, </B>and then<B> </B>click on "Analysis Lab" to activate the program. When the page is fully loaded, click on the "Analyze" button. </P>
+<U><P>Using user-entered datasets</U> </P>
+<P>By clicking on <B>Enter/Edit User Data</B> a clipboard will appear. Now open the following file: <A HREF="http://www.math.usu.edu/~vukasino/teaching/spring2000/complab/student_data1.prn">http://www.math.usu.edu/~vukasino/teaching/spring2000/complab/student_data1.prn</A>. </P>
+<P>However, we cannot use this data directly, because it contains non-numerical values. The Data Analysis Lab requires all data to be numeric. So first we have to recode the nonnumerical variables (Gender, Eyecolor, Major) and replace them by the coding integer values, ranging from 1 to the number of levels of the variable. </P>
+<P>To recode the data, open the file in a wordpad that has a "Replace" function and recode the non-numerical variables as follows: </P>
+
+<UL>
+<LI>Gender: </LI>
+
+<UL>
+<LI>1 - male </LI>
+<LI>2 - female </LI></UL>
+
+<LI>Eyecolor: </LI>
+
+<UL>
+<LI>1 - blue </LI>
+<LI>2 - brown </LI>
+<LI>3 - green </LI></UL>
+
+<LI>Major: </LI>
+
+<UL>
+<LI>1 - Biology </LI>
+<LI>2 - CompSci </LI>
+<LI>3 - Chemistry </LI>
+<LI>4 - Health </LI>
+<LI>5 - Other </LI></UL>
+</UL>
+
+<P>After recoding the data, while still in the text editor, select "Select all" from the "Edit" menu and then "Copy". Then change to the Data Analysis Clipboard window and paste the data (by clicking on "Paste" in the "Data" menu at the top of the window). If this does not work, paste the data by pressing "Control" and "v" key at the same time. Do not delete the first row which contains the names of the variables. Click on <B>Accept Data.</B> The clipboard window should disappear. </P>
+<P>When the data are accepted, the names of the variables will appear in the window on the right. In the selection menu on the left, we can choose any of the variables as dependent or predictor variable. However, only "Gender", "Eyecolor", and "Major" are listed as possible grouping variables. Actually, all variables that have integer values from one to (any) number of levels without any gaps will be listed as grouping variables. </P>
+
+<B><P>Part 1:</P>
+</B><P>Now choose "<B>Height</B>" as dependent variable. Click on <B>Descriptive</B> window to obtain summary statistics for Age. Click on <B>Box Plot</B>, <B>Histogram </B>and <B>Stem-and-Leaf</B> windows to get box plot, histogram, and stem-leaf graphs, respectively. In the window with a histogram, note that the applet allows some interactivity, i.e., you can change the bin width and the lower limit of the first bin. The histogram applet automatically provides auxiliary graphs of the cross-validation functions that estimate the quality of the currently displayed histogram. Smaller values of the cross-validation function generally imply smaller errors in the approximation. </P>
+
+<P>Then go back to the selection menu and select "<B>Weight</B>" as dependent variable, and perform the same procedures as we did for "<B>Height</B>" above. </P>
+
+<B><P>Part 2:</P>
+</B><P>Go back to the selection menu. Select "<B>Weight</B>" as dependent variable and "<B>Age</B>" as predictor variable. Click on <B>Correlation/regression</B> window to perform a regression analysis of "<B>Weight</B>" on "<B>Age</B>". A window with a scatterplot will appear. We can choose whether or not to show the regression line and the numerical results of the regression analysis. The result is the same as in the problem 2 of using <B>Rweb</B>.</P>
+
+<B><P>Part 3</B>:</P>
+<P>Again, go back to the selection menu. Select "<B>Weight</B>" as dependent variable and select "<B>Eyecolor</B>" as grouping variable. Note that all the windows change and now offer separate analyses for each level of the grouping variable. In the ANOVA window, it says ANOVA with IV "Eyecolor" and DV "Weight". After clicking on this widow, an ANOVA table appears. However, this table is blank, without any input. I have tried several times, but the output table is still empty. I asked Natascha about this. She said it would work on advanced browser. </P>
+
+
+<UL>
+<B><U><LI>Webstat</LI></UL>
+
+</U>
+</B><P>First open Webstat at <A HREF="http://www.stat.sc.edu/webstat/">http://www.stat.sc.edu/webstat/</A>, and hit the orange button: <B>Click here to fire it up.</B> The <B>Webstat 2.0</B> window appears. Click on <B>Data</B> button in the main menu, select <B>Sample data sets, </B>and then choose <B>Labor Force</B>. The data fill in the first 3 columns of the table immediately.</P>
+
+<B><P>Part 1</B>:</P>
+<P>The first column (variable) is the name of the 19 cities. The second and third columns are the measurements of labor force for each city in 1972 and 1968, respectively. </P>
+
+<B><P>Part 2:</P>
+</B><P>Click on <B>Stat</B> in the main menu, select <B>T statistics</B>, and choose <B>Paired</B>. Then the <B>Paired T</B> window appears. Select <B>1972</B> as <B>var1</B> and <B>1968</B> as <B>var2. </B>We can click <B>Save the differences</B> if we want. Click on the <B>Next</B> button, and then select the <B>Hypothesis Test</B>. It shows the null: mean difference = 0, and the alternative: not equal. We can do some interactivity, i.e. the mean difference can be changed.  If we set the null: mean difference = 0, and click the <B>Calculate </B>button, the following output appears in the <B>Results</B> window.</P>
+
+<I><P>Two tailed Paired T-test results:</P>
+<DIR>
+<PRE>
+Difference    Delta0   Estimate     Std. Err.     DF
+1972 - 1968   0        0.03368421   0.013705561   18
+
+Difference    Tstat       Pval
+1972 - 1968   2.4577038   0.0244
+
+Differences stored in column var4.
+
+</PRE>
+</DIR>
+</I>
+<P>From the results, P-value = 0.0244, less than 0.05, so we reject the null hypothesis and conclude that the Labor Forces in 1972 and 1968 are significantly different.</P>
+
+<B><P>Part 3:</P>
+</B><P>Click on <B>Stat</B> in the main menu again, and select <B>Summary Stats. </B>In the <B>Summary Statistics</B> window, select 1972 and 1968 as variables, and click on <B>Next</B> button. Click all the statistics and click on the <B>Calculate</B> button. The following results appear in the <B>Results</B> window.</P>
+
+<I><P>Summary Statistics: </P>
+
+<DIR>
+<PRE>
+Variable   n    Mean        Variance      Std. Dev.    Median
+1972       19   0.5268421   0.005011696   0.07079333   0.53
+1968       19   0.4931579   0.004622807   0.06799123   0.5
+
+Variable   Range   Min    Max    Q1     Q3
+1972       0.29    0.35   0.64   0.49   0.57
+1968       0.29    0.34   0.63   0.45   0.54
+</PRE>
+</DIR>
+</I>
+
+<B>
+<P>Part 4</B>:</P>
+<P>Click on <B>Graphics</B> in the main menu, and select <B>Pie Chart</B>. In the <B>Pie Chart</B> window, select variable <B>1972</B>, and click on the <B>Next</B> button. We can type the name of the chart title in the <B>Labels </B>window, and click on the <B>Next </B>button. In the <B>Colors</B> window, we can select the colors of background and foreground, and then click on the <B>Create Graph</B> button. The colorful pie chart appears in the Graphics window. We can also obtain the <B>Pie Chart</B> for variable <B>1968</B>, using the similar steps.</P>
+<P>Click on <B>Graphics</B> in the main menu, and select <B>Histogram</B>. In the <B>Histogram</B> window, select <B>1972 </B>and <B>1968 </B>as the variables, and click the <B>Next</B> button.  We can change the starting point and class width of the histogram, and then click the <B>Next</B> button. In the <B>labels window</B>, we can type the labels for the title, x-axis and y-axis, and then click the <B>Next</B> button. In the <B>Colors</B> window, the colors of background and foreground can be reset. Click the Create Graph button, and then Histogram of <B>1972</B> and <B>1968</B> are shown in the same Graphics window. Using the same steps, but selecting <B>Boxplot</B> instead of Histogram,  we can get the <B>Boxplot</B> of <B>1972</B> and <B>1968</B>.</P>
+<P>I think the Pie Chart, Histogram and Boxplot display the data best.</P>
+
+
+<UL>
+<B><U><LI>Statlet</LI></UL>
+
+</U>
+</B><P>Start at <A HREF="http://www.statlets.com/statletsindex.htm">http://www.statlets.com/statletsindex.htm</A>, and select <B>Internet Access</B> button. Click on <B>Menu Version</B> in the Version 1.1B. The <B>STATLETS-Data statlet</B> window is open. </P>
+<B>
+<P>1. Load the data</B>. </P>
+<P>Let's load data into this window. Click on the data file in the lecture page of Statlet. Edit, select all, and copy the data. Then go to <B>STATLETS-Data statlet</B> window. Click <B>Clipboard</B>, Click inside the clipboard and paste the data. The data is now in the clipboard.  Click <B>Data</B>, and select <B>Clip-in. </B>Then the data fill in the table in the Data statlet window.</P>
+<P>According to the problem, in this data table, find out 103 in the column that represent height, and replace it by 67.  </P>
+<B>
+<P>2. Find the 95% confidence interval of height.</P>
+</B><P>Click on <B>Analyze</B> in the main menu, select <B>One Sample</B>, and choose <B>One Variable Analysis</B>. The <B>STATLETS-One Variable Analysis 2 </B>window is open. Select variable <B>Height</B> as the sample data and click on the <B>t-test</B> button. Then the following output appears. </P>
+
+<I><P>Estimation of Population Mean for height</P>
+
+<DIR>
+<PRE>
+Sample size = 45
+Mean = 69.5111
+
+95.0% confidence interval for mean: 69.5111 +/- 1.24635   [68.2648,70.7575]
+</PRE>
+</DIR>
+</I>
+
+<P><B>3. Do a t-test on H<SUB>0</SUB> :<FONT FACE="symbol"> m</FONT>=68''.</B> </P>
+<P>In the output window we have got in part 2, click on the <B>Options</B> button. In the <B>Hypothesis Test Options </B>window, change 0.0 to 68.0 as the null hypothesis. Alt. hypothesis is still not equal and alpha is 5.0%. Then click on <B>OK. </B>We have the following output: </P>
+
+<I><P>Estimation of Population Mean for height</P>
+
+<DIR>
+<PRE>
+Sample size = 45
+Mean = 69.5111
+
+95.0% confidence interval for mean: 69.5111 +/- 1.24635   [68.2648,70.7575]
+
+t-test
+------
+Null hypothesis: mean = 68.0
+Alt. hypothesis: not equal
+Computed t-statistic = 2.44349
+P-value = 0.0186264
+Reject the null hypothesis for alpha = 0.05
+
+Statistical Interpreter
+-----------------------
+This table displays the result of a t-test performed to test the null
+hypothesis that the mean of the population from which the sample data
+come equals 68.0 versus the alternative hypothesis that the mean is
+not equal to 68.0. Since the P-value for this test is less than 0.05,
+we can reject the null hypothesis at the 95.0% confidence level. Also
+shown is a 95.0% confidence interval for the population mean. In
+repeated sampling, 95.0% of all such intervals will contain the true
+mean.
+
+Since the 95% confidence interval is [68.2648, 70.7575], and 68 is
+outside this interval, so we reject the null hypothesis at 5% level.
+
+</PRE>
+</DIR>
+</I>
+
+<B><P>4. For what value of <FONT FACE="symbol"> m</FONT> would we not reject at 5%?</P>
+</B><P>Since the 95% confidence interval is [68.2648, 70.7575], for any number within this interval as <B><FONT FACE="symbol"> m</FONT> </B>we would not reject at 5%. </P>
+
+
+<UL>
+<B><U><LI>XploRe</LI></UL>
+
+</B></U>
+<P>First, we must download XploRe package from web page at <A HREF="http://www.xplore-stat.de/">http://www.XploRe-stat.de/</A>. </P>
+<P>Click the XploRe icon, and then the <B>XploRe </B>window is open. Click on <B>Program</B> button, and select <B>New</B>. Now, a new editor window is open. By clicking 
+<U><FONT COLOR="#0000ff">http://www.math.usu.edu/~vukasino/teaching/spring2000/complab/student_data1.prn</U></FONT> ,  open the data . Copy the data to the new  editor window in the XploRe.  We should delete the first line that contains the names of the variables. The data is in the matrix form. Then save the data as user.dat . </P>
+
+<P>Let's open a new editor window by clicking on <B>Program</B> and select <B>New</B> again. Since this data set includes both Numerical and Text Data, we use READM to read the mixed data set.</P>
+
+<P>Type the following lines into the new editor area:</P>
+
+<I>
+<DIR>
+<PRE>
+library("XploRe")
+x = readm("user")
+x
+</PRE>
+</DIR>
+</I>
+
+<P>Click on <B>Execute </B>to get the output. In the output-window, 'x.type', 'x.double' and 'x.text 'are shown. The original data set was divided into two parts.  The numerical data are double type, and the character data are text type. The 'x.double' has 5 variables in order: <B>nr, age, sibling, height, weight.</B> </P>
+
+<B><P>Problem 1. </B> Click on <B>Program </B>and select <B>New</B>  to open a new editor window. Type the following lines in this new editor window.</P>
+
+<I>
+<DIR>
+<PRE>
+library("xplore")
+x = readm("user")
+z = x.double[ , 3]
+library ("plot")
+plothist(z)
+plotbox(z)
+</PRE>
+</DIR>
+</I>
+
+<P>The first two command lines are to read the mixed data. z = x.double[ , 3]<I> </I>means to select the third column (sibling) in the numerical data matrix x.double, and assign it to vector z. Load the library "plot", and use the function plothist and plotbox to get the histgram and boxplot of sibling.</P>
+<P>Click <B>Execute</B> button. Histogram and boxplot of sibling are shown in the display windows.</P>
+
+<P>We can write the similar program to plot the histgram and boxplot of weight. Weight is the fifth column in the matrix x.double. Open a new editor window and type the following command lines in it.</P>
+
+<I>
+<PRE>
+<DIR>
+library("xplore")
+x = readm("user")
+u = x.double[ , 5]
+library ("plot")
+plothist(u)
+plotbox(u)
+</DIR>
+</PRE>
+</I>
+
+<P>Click <B>Execute</B> button. Histogram and boxplot of weight are shown in the display windows.</P>
+<I>
+</I><B>
+<P>Problem 2. </B> Open a new editor window and type the following lines in it.</P>
+
+<I>
+<PRE>
+<DIR>
+library("XploRe")
+x = readm("user")
+y = x.double[ , 4|5]
+y1 = y[ , 1]
+y2 = y[ , 2]
+library("stats")
+{b, bse, bstan, bpval} = linreg(y1, y2)
+library("plot")
+regy=grlinreg(y)
+plot(y, regy)
+</DIR>
+</PRE>
+</I>
+
+<PRE>The first two lines read the data. y = x.double[ , 4|5] means to select the fourth column (<B>height</B>) and fifth column (<B>weight</B>) in the matrix x.double, and assign the two columns to matrix y. y1 = y[ , 1], y2 = y[ , 2] assign the first column (<B>height</B>) and second column (<B>weight</B>) of matrix y to vectors y1 and y2 respectively. Load the library "stats", and perform the linear regression. The function linreg(y1, y2) is to perform a linear regression of y2 (<B>weight</B>) on y1 (<B>height</B>). y1 is the predictor variable, and y2 is the dependent variable. {b, bse, bstan, bpval} = linreg(y1, y2) assign the outcomes of the linear regression of y2 on y1 to {b, bse, bstan, bpval}. Here b represents the estimates of the coefficients, bse is standard error, bstan is standardized b, and bpval is the p-value. To plot the scatterplot and regression line, we should load library "plot" first. regy=grlinreg(y)means to assign the regression line of y2 on y1 to regy. plot(y, regy) is to plot the scatterplot of matrix y and the regression line regy.
+
+Click <B>Execute</B>, we have the following output.
+
+<BR><BR>
+
+<I>Contents of out
+
+<DIR>
+
+[ 1,] ""
+[ 2,] "A  N  O  V  A                   SS      df     MSS  F-test P-value"
+[ 3,] "_________________________________________________________________________"
+[ 4,] "Regression                 10118.023     1 10118.023 16.696 0.0002"
+[ 5,] "Residuals                  24847.140    41   606.028"
+[ 6,] "Total Variation            34965.163    42   832.504"
+[ 7,] ""
+[ 8,] "Multiple R      = 0.53794"
+[ 9,] "R^2             = 0.28937"
+[10,] "Adjusted R^2    = 0.27204"
+[11,] "Standard Error  = 24.61763"
+[12,] ""
+[13,] ""
+[14,] "PARAMETERS         Beta         SE         StandB   t-test   P-value"
+[15,] "________________________________________________________________________"
+[16,] "b[ 0,]=       -109.4509      66.0171       0.0000    -1.658  0.1049"
+[17,] "b[ 1,]=          3.8965       0.9536       0.5379    4.086   0.0002"
+
+</DIR>
+
+</I>The p-value 0.0002 is much less than 0.05, so we conclude that this linear model is quite siginificant.
+The regression equation is Y = -109.4509 + 3.8965 X + e. 
+The scatterplot and regression line are shown in the plot display window.
+
+
+Weiping Deng
+5/30/00</PRE>
+
+</BODY>
+</HTML>
