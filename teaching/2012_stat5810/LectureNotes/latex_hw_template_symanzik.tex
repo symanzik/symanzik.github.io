@@ -1,0 +1,251 @@
+\documentclass[12pt]{article}
+
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{hyperref}
+
+\renewcommand{\topfraction}{1.0}
+\renewcommand{\bottomfraction}{1.0}
+\renewcommand{\textfraction}{0.0}
+\renewcommand{\floatpagefraction}{1.0}
+\renewcommand{\dbltopfraction}{1.0}
+
+
+\begin{document}
+
+\begin{titlepage}
+
+\begin{center}
+{\large STAT 5810/6810 Introduction to Statistical Computing} \\[4cm]
+
+{\LARGE \bf Instructions for Homework  2} \\[1cm]
+by \\[0.5cm]
+{\bf J\"urgen Symanzik} \\[2.5cm]
+{\bf Date:} \today \\[2cm]
+
+UTAH STATE UNIVERSITY \\[0.5cm]
+Logan, UT \\[0.5cm]
+Fall 2012 \\[0.5cm]
+\end{center}
+
+\thispagestyle{empty}
+\vfill
+\end{titlepage}
+
+
+\newpage 
+
+
+\pagenumbering{roman}
+
+\tableofcontents
+
+
+\newpage
+
+
+%\listoftables
+%\addcontentsline{toc}{section}{List of Tables}
+%
+%\newpage
+%
+%\listoffigures
+%\addcontentsline{toc}{section}{List of Figures}
+%
+%\newpage 
+
+
+\pagenumbering{arabic}
+
+
+\section{\LaTeX\ Installation and Usage} 
+
+\subsection{\LaTeX\ Installation}
+
+\LaTeX\ has been installed on many computers at Utah State University (USU). If you need to install
+\LaTeX\ on your own computer, google for it. For PCs, a frequently used version of \LaTeX\ is
+MikTeX which can be obtained from \url{http://miktex.org/}.
+Follow the download and installation instructios.
+
+
+\subsection{\LaTeX\ Usage}
+
+There exist many support tools that simplify the usage of \LaTeX. 
+I use {\it TeXworks} from \url{http://www.tug.org/texworks/}.
+Depending on your \LaTeX\ installation, {\it TeXworks} may be installed
+automatically as part of the  \LaTeX\ installation.
+If not, follow the download and installation instructions.
+Other tools that simplify the use and translation of \LaTeX\ documents
+also exists. It is up to you to explore what is available. Talk to some
+of the other graduate students who use \LaTeX\ for their MS and PhD work
+and let them explain which support tools (if any) they use for their work with \LaTeX.
+
+Most of these tools allow you to translate a \LaTeX\ document (a file with
+extension {\tt .tex}) via the click of one (or a few) buttons.
+
+If you can't decide which support tool to install, you will have to 
+translate your \LaTeX\ files manually. Change your working directory
+to the directory where the main {\tt .tex} file is located.
+Then type \verb|pdflatex filename| (assuming your main file is
+called {\tt filename.tex}). This will create a file called 
+ {\tt filename.pdf} plus several support files. These files
+will be used in future steps to create the table of context,
+the reference list, an index section, and so on. 
+
+Just to be on the safe side that everything gets properly updated, 
+you should run \verb|pdflatex filename| three times before you
+finally submit a dcoument --- or otherwise, it may happen that
+a last minute shift of a section heading to a new page may not
+be reflected in the final table of contents.
+
+If you installed a support tool, this tool almost certainly will
+know how many times it needs to repeat the \verb|pdflatex filename|
+sequence (and any other steps that  may be needed).
+
+
+\subsection{Images in \LaTeX}
+
+\subsubsection{pdf, jpg, and png Format}
+
+\LaTeX\ supports most major types of images, but those cannot be mixed
+in arbitrary ways. {\tt pdflatex}, as described above, allows you to
+incorporate images in pdf, jpg, and png format. 
+
+
+\subsubsection{ps and eps Format}
+
+If you happen to have images in ps or eps format, then you have
+to translate your document via  \verb|latex filename|.
+This will create a file called 
+{\tt filename.dvi} plus several support files. You can view this
+file directly (check the help pages of your installation),
+or you can translate it via  \verb|dvips filename| or
+ \verb|dvi2ps filename| into a ps document (again, check the help
+pages of your installation). You can view this ps file
+directly with a postscript viewer or translate it further into pdf
+with Adobe Acrobat. In any case, working with ps \& eps
+images is more complicated, but such images usually are of a
+higher quality than jpg images in particular.
+
+
+\subsubsection{tiff Format}
+
+\LaTeX\ does not support tiff images, although many publishers request
+tiff images. In such a case, you  need to create a working copy of
+your image (e.g., in jpg format) and use that for your local 
+\LaTeX\ translation. Once  you have submitted your \LaTeX\ source files
+to the publisher, they will replace the working copy of your image
+with the high--resolution tiff image on their side at the final
+production stage of a book chapter or journal article.
+
+
+\subsubsection{Inclusion of Images}
+
+Below is an example that shows how to include a pdf image.
+\LaTeX\ allows you to determine where to place a figure
+(here at the {\bf b}ottom of the page), adjust the width (or height)
+of a figure (here, 99\% of the maximum textwidth), and later reference this figure via
+\verb|Figure~\ref{fig_CCmap}|:
+
+\newpage 
+
+{\small
+\begin{verbatim}
+\begin{figure}[b]
+\includegraphics[width=0.99\textwidth]{fig_CCmap.pdf}
+\caption{\label{fig_CCmap}
+CCmaps, based on data from the USDA--NASS web page,
+related to soybean production in the United States.
+The plot shows the dependent variable production [top slider] that is 
+conditioned on the two independent variables acreage [bottom slider] 
+and yield [right slider].
+}
+\end{figure}
+\end{verbatim}
+}
+
+Whenever you include figures (and tables), create meaningful  captions!
+Also, keep in mind that each figure must be referenced at least
+once in the text. Figures (and tables) {\bf must} be numbered in
+the order they are referenced in the text. You can't refer to
+Fig.~2 before you  refer to Fig.~1. In such a case, you must
+change the order of your figures in your document.
+
+
+\section{Homework 2}
+
+In most cases, we start with a \LaTeX\ template. There exists templates for
+MS reports, MS theses, and PhD dissertations at USU. Check with other graduate
+students for good templates. Also, many journals, major publishers, or organizers
+for conferences provide \LaTeX\ templates for their publications. Authors
+basically are asked to keep the overall formatting in place and
+just make changes to the template, e.g., filling in author names,
+title, abstract, and, of course, the actual text.
+
+For Homework 2, you have to do the same, i.e., start with this template,
+fill in your name, and your answers, but keep the overall formatting, title page, and so on.
+During the next few months, we will extend this template with additional
+\LaTeX\ features.
+
+
+\newpage
+
+
+In particular, for this homework, incorporate the answers in your .R file as follows:
+
+{\small
+\begin{verbatim}
+Your answers to Homework 2 should be incorporated in a 
+verbatim enviroment (see the .tex source file for details).
+
+See w h a t this      environment does
+1
+ 2
+   3
+     4
+       5
+End (of verbatim).
+\end{verbatim}
+}
+
+Just as a comparison, below are the previous seven lines, now outside a verbatim environment: \\[1cm]
+
+ See w h a t this      environment does
+1
+ 2
+   3
+     4
+       5
+End (of verbatim). \\[1cm]
+
+\noindent
+{\bf \Large All you need to submit for this homework is the final resulting pdf file.}
+
+
+\section{Getting Help}
+
+There exist numerous sources for help with \LaTeX:
+
+\begin{enumerate}
+\item The \LaTeX\ Wikibook at \url{http://en.wikibooks.org/wiki/LaTeX}.
+
+\item The Wikipedia page of \LaTeX\ at \url{http://en.wikipedia.org/wiki/LaTeX}
+with many excellent references (online and books).
+
+\item Information from the TeX Users Group (TUG) at
+\url{http://www.tug.org/begin.html}.
+\end{enumerate}
+
+As mentioned above, many of the other graduate students at USU are using \LaTeX.
+Help may be available at the next desk. Otherwise, ask some of the other
+students in class, use Canvas to ask a question, or directly contact  me!
+
+{\bf Finally, do not forget to google!} I usually include the word {\tt latex}
+in my google query when I search for a particular \LaTeX\ command. \\[2cm]
+
+\noindent
+{\Huge Good luck!!!}
+
+
+\end{document}
+

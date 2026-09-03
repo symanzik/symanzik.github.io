@@ -1,0 +1,204 @@
+\documentclass[11pt]{article}
+
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{verbatim}
+\usepackage[title,titletoc,toc]{appendix}
+\usepackage{wasysym}
+
+\renewcommand{\topfraction}{1.0}
+\renewcommand{\bottomfraction}{1.0}
+\renewcommand{\textfraction}{0.0}
+\renewcommand{\floatpagefraction}{1.0}
+\renewcommand{\dbltopfraction}{1.0}
+
+\textwidth 16cm
+\textheight 23cm
+\voffset -0.5in
+\hoffset -0.5in
+
+\parindent0pt
+\setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
+
+
+\begin{document}
+
+\SweaveOpts{concordance=TRUE}
+
+\begin{titlepage}
+
+\begin{center}
+{\large STAT 6910 Advanced R} \\[4cm]
+
+{\LARGE \bf Extra Credit 1} \\[1cm]
+by \\[0.5cm]
+{\bf J\"urgen Symanzik} \\[2.5cm]
+{\bf Date:} \today \\[2cm]
+{\bf Due Date:} Wednesday, October 30, 2013, 11:59pm (by e--mail) \\[2cm]
+
+
+UTAH STATE UNIVERSITY \\[0.5cm]
+Logan, UT \\[0.5cm]
+Fall 2013 \\[0.5cm]
+\end{center}
+
+\thispagestyle{empty}
+\vfill
+\end{titlepage}
+
+
+\newpage 
+
+
+\pagenumbering{roman}
+
+\tableofcontents
+
+
+\newpage
+
+
+%\listoftables
+%\addcontentsline{toc}{section}{List of Tables}
+
+%\newpage
+
+%\listoffigures
+%\addcontentsline{toc}{section}{List of Figures}
+
+%\newpage 
+
+
+\pagenumbering{arabic}
+
+\section{General Instructions}
+
+You can participate in this extra credit (EC) homework in two
+different roles, depending on your performance in Quiz~1:
+\begin{description}
+\item[Solver:] If your score was 10 points or less in Quiz~1, you
+can work on these questions and turn in your answers for grading.
+You can obtain 8 EC points at most.
+
+Your answers should be prepared in RStudio, using the combination
+of R, \LaTeX, and Sweave (or knitr). Similar to our homeworks, you
+need to submit the \verb|.Rnw| file and the \verb|.pdf| file produced on your side.
+{\bf Do not include your names in any of these files. Only name the
+file names according to the rules for our homeworks!}
+
+\item[Grader:] If your score was between 11 and 20 points in Quiz~1, you
+should still work on  these questions, but you receive points only
+for grading the submissions from the Solvers.
+You can obtain 4 EC points at most.
+
+{\bf Please let me know by e--mail (by the due data) whether you want
+to participate as Grader in this assignment.}
+
+\end{description}
+
+Everyone else can participate as an {\bf Advisor}. You should give hints,
+either in person or when a question is asked in Canvas. You should
+not provide a full answer! These EC questions are really intended
+(and needed) for everyone who did not do so well in Quiz~1.
+
+Depending on how many submissions I get from the Solvers, each Grader
+may receive one or two such submissions. This will be anonymous,
+i.e., the Graders won't know whom they are grading and the Solvers
+won't know who were their Graders. 
+
+The score for the Solvers will be determined by the Graders 
+as the median of the reported scores obtained from
+several Graders. Don't expect to obtain
+full points this way.
+
+I will only check the work of the Graders in the following way:
+Graders start with the maximum number of 4 points. For each
+falsely deducted point when grading a submission, the Grader
+will be deducted 1/2 point. Moreover, if there was no point
+deductation made by a Grader, but in case I would have made 
+such a point deduction, the Grader also loses 1/2 point.
+So, Graders are encouraged to grade carefully. The minimum
+score for a Grader is 0 points. Graders will have
+one week to finish grading.
+
+
+
+\newpage
+
+
+\section{Question 1 (3 Points)}
+
+The Hermite polynomials are defined recursively by
+\[
+H_0 (x) = 1, ~~~ H_1 (x) = x, ~~~ H_{n+1} (x) = 
+x H_n (x) - n H_{n-1} (x), \mbox{for } n \geq 1.
+\]
+Write a function called \verb|CalculateHermite| with arguments
+\verb|n| and \verb|x|, where \verb|n| is a non--negative integer
+and \verb|x| can be any numeric value. Do some minimal checks
+that the values provided by the user meet these requirements.
+
+Calculate the first 6 Hermite polynomials (for $x$ ranging
+from $-5$ to $5$) and plot them on the same coordinate system.
+Limit the range of the vertical axis to the interval $[-30, 30]$.
+
+Compare your results with those shown at
+\url{http://en.wikipedia.org/wiki/Hermite_polynomials}.
+Note that two families of Hermite polynomials exist.
+Which of these is represented by our recursive formula above?
+Do the necessary math or carefully compare your figure with 
+the figures shown on the wikipedia page.
+
+
+
+\section{Question 2 (3 Points)}
+
+Recall that
+\[
+{n \choose k} = \frac{n!}{k! \cdot (n-k)!} = {n \choose n-k}.
+\]
+Instead of using factorials, we can use the following fast
+calculations, as shown for two examples:
+\[
+{5 \choose 2} = \frac{5!}{2! \cdot 3!} = 
+\frac{5 \cdot 4 \cdot 3 \cdot 2 \cdot 1}{(1 \cdot 2) \cdot (3 \cdot 2 \cdot 1)} =
+\frac{5 \cdot 4}{1 \cdot 2} = (((5 / 1) \cdot 4) / 2) = 10
+\]
+and
+\[
+{1000 \choose 999} = \frac{1000!}{999! \cdot 1!} = \frac{1000!}{1! \cdot 999!} =
+\frac{1000 \cdot 999!}{1 \cdot 999!} =
+\frac{1000}{1} = 1000 / 1 = 1000
+\]
+Write a function called \verb|myBinomialCoeff| with arguments
+\verb|n| and \verb|k| that calculates Binomial coefficients
+according to the principle above. 
+Use a while--loop and alternate devision and multiplication
+in the correct order!
+Note that we won't have to calculate
+large factorials this way, and, moreover, we never leave 
+the domain of integer numbers during
+our calculations (if we do this in the correct order).
+
+Your function should check whether \verb|n| and \verb|k| both are valid 
+non--negative integers. If not, return NA and issue a warning.
+
+Test your function with these 2 examples above and add at least 5 more
+test scenarios, two of which should include 0 for \verb|n| and/or \verb|k|.
+Compare your results with those obtained from the build--in 
+function \verb|choose|.
+
+
+
+\section{Question 3 (2 Points)}
+
+For the \verb|chip04.txt| data set from the {\it Graphics 2}
+chapter of the lecture notes, recreate the plot in the 
+upper left panel of the notes (showing all 4 lines, standardized
+to 1 in 1975). Your version of this figure should resemble the printed
+version from the lecture notes as closely as possible.
+
+
+\end{document}
+

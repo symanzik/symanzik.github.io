@@ -1,0 +1,93 @@
+\documentclass{article}
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+
+Here are normal random numbers!
+
+Code chunk:
+<<>>=
+xx = rnorm(50)
+xx
+@
+
+
+Code chunk with \verb|echo=false|:
+<<echo=false>>=
+xx = rnorm(50)
+xx
+@
+
+
+Just the R code (without any results):
+<<results=hide>>=
+xx = rnorm(50)
+xx
+@
+
+
+And this can be used for exams (no code and no results):
+<<echo=false,results=hide>>=
+xx1 = rnorm(50)
+xx1
+@
+
+
+But the mean of \verb|xx1| can be calculated:
+<<>>=
+mean(xx1)
+@
+
+\newpage
+
+
+A figure:
+<<fig=true>>=
+hist(xx)
+@
+
+\newpage
+
+
+A figure with \verb|echo=false|:
+
+<<echo=false,fig=true>>=
+hist(xx)
+@
+
+\newpage
+
+
+\textbf{Attempt 1:}
+
+The mean is
+<<echo=false>>=
+mean(xx)
+@
+and the SD is
+<<echo=false>>=
+sd(xx)
+@
+
+\textbf{Attempt 2:}
+
+The mean is
+\Sexpr{format(mean(xx), digits = 4)}
+and the SD is
+\Sexpr{format(sd(xx), digits = 3)}.
+
+If you prefer more digits, here they are:
+The mean $\bar{x}$ is
+\Sexpr{format(mean(xx), digits = 10)}
+and the SD $\sigma$ is
+\Sexpr{format(sd(xx), digits = 10)}.
+
+Or for $\pi$: 
+\Sexpr{format(pi, digits = 20)} \\
+
+
+\textbf{\Large THE END!}
+
+
+
+\end{document}

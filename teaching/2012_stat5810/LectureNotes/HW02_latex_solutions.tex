@@ -1,0 +1,128 @@
+\documentclass[12pt]{article}
+
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{verbatim}
+
+\renewcommand{\topfraction}{1.0}
+\renewcommand{\bottomfraction}{1.0}
+\renewcommand{\textfraction}{0.0}
+\renewcommand{\floatpagefraction}{1.0}
+\renewcommand{\dbltopfraction}{1.0}
+
+
+\begin{document}
+
+\begin{titlepage}
+
+\begin{center}
+{\large STAT 5810/6810 Introduction to Statistical Computing} \\[4cm]
+
+{\LARGE \bf Solutions for Homework  2} \\[1cm]
+by \\[0.5cm]
+{\bf J\"urgen Symanzik} \\[2.5cm]
+{\bf Date:} \today \\[2cm]
+
+UTAH STATE UNIVERSITY \\[0.5cm]
+Logan, UT \\[0.5cm]
+Fall 2012 \\[0.5cm]
+\end{center}
+
+\thispagestyle{empty}
+\vfill
+\end{titlepage}
+
+
+\newpage 
+
+
+\pagenumbering{roman}
+
+\tableofcontents
+
+
+\newpage
+
+
+%\listoftables
+%\addcontentsline{toc}{section}{List of Tables}
+%
+%\newpage
+
+\listoffigures
+\addcontentsline{toc}{section}{List of Figures}
+
+\newpage 
+
+
+\pagenumbering{arabic}
+
+
+\section{Solutions for Homework 2}
+
+\subsection{General Comments}
+
+Here are my solutions for Homework 2 --- plus a few more \LaTeX\ features! Note in the {\tt .tex} code
+how we create a list of figures and even include this in the table of contents.
+
+Also, note how we can include multiple plots into the same figure ---
+see the \LaTeX\ code for Figure~\ref{HW02_Q3} for details.
+
+Moreover, note how to create an appendix and how to incorporate your R code
+into a verbatim environment in \LaTeX\ without actually copying the R code into
+your  \LaTeX\ file.
+
+As we should cite each figure, let's do so: Figure~\ref{HW02_Q10} shows the plot that results
+from the provided R code from Q10.
+
+R code for all questions can be found in Appendix~\ref{AppendixWithRCode}.
+
+
+\newpage
+
+
+\subsection{Figures}
+
+In this subsection, we include the three figures from HW02. Check the \LaTeX\ documentation
+to learn more about the placement of figures in the text via the \verb|[htbp]| options.
+Also note how the plots get centered.
+
+\begin{figure}[h]
+\centerline{
+(a)\includegraphics[width=0.3\textwidth]{HW02_Q3_original.pdf}%
+\includegraphics[width=0.3\textwidth]{HW02_Q3_improved.pdf}(b)
+}
+\caption{\label{HW02_Q3}
+(a) Plot that results from the original R code and (b) plot that results from the improved R code.
+You should provide more details in the caption!}
+\end{figure}
+
+\begin{figure}[h]
+\centerline{\includegraphics[width=3in]{HW02_Q10_provided.pdf}}
+\caption{\label{HW02_Q10}
+Plot that results from the R code provided for Q10.
+You should provide more details in the caption!}
+\end{figure}
+
+
+\newpage
+
+
+\appendix
+
+\section{R Code for Homework 2}\label{AppendixWithRCode}
+
+Note that I have now included \verb|\usepackage{verbatim}| at the start of the {\tt .tex} file.
+This allows us to include the R code immediately from an external file without
+copying it into the {\tt .tex} file. Thus, when you make changes to your R code
+and retranslate the {\tt .tex} file afterwards, \LaTeX\ will always include the current version of your R code.
+No need to manually replace the R code in your {\tt .tex} file. 
+
+Here is R code for Homework 2:
+
+\scriptsize
+\verbatiminput{HW02_DataFrames_sol.R}
+
+\end{document}
+

@@ -1,0 +1,241 @@
+\documentclass[12pt]{article}
+
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{verbatim}
+\usepackage[title,titletoc,toc]{appendix}
+\usepackage{wasysym}
+
+\usepackage{natbib}
+%\usepackage[numbers]{natbib}
+%\usepackage[super]{natbib}
+
+\renewcommand{\topfraction}{1.0}
+\renewcommand{\bottomfraction}{1.0}
+\renewcommand{\textfraction}{0.0}
+\renewcommand{\floatpagefraction}{1.0}
+\renewcommand{\dbltopfraction}{1.0}
+
+\textwidth6.5in
+
+\begin{document}
+
+%\SweaveOpts{concordance=TRUE}
+
+
+\begin{titlepage}
+
+\begin{center}
+{\large STAT 5810/6810 Introduction to Statistical Computing} \\[4cm]
+
+{\LARGE \bf Citations and References in LaTeX} \\[1cm]
+by \\[0.5cm]
+{\bf J\"urgen Symanzik} \\[2.5cm]
+{\bf Date:} \today \\[2cm]
+
+UTAH STATE UNIVERSITY \\[0.5cm]
+Logan, UT \\[0.5cm]
+Fall 2012 \\[0.5cm]
+\end{center}
+
+\thispagestyle{empty}
+\vfill
+\end{titlepage}
+
+
+\newpage 
+
+
+\pagenumbering{roman}
+
+\tableofcontents
+
+
+\newpage
+
+\pagenumbering{arabic}
+
+
+\section{Automatic Creation of Citations and References}
+
+
+\subsection{What is BibTeX?}
+
+\url{http://www.bibtex.org/} states:
+\begin{quotation}
+The word ``BibTeX'' stands for a tool and a file format which are used to describe and process lists of references, mostly in conjunction with LaTeX documents.
+\end{quotation}
+
+
+\noindent
+\url{http://www.bibtex.org/About/} further states:
+\begin{quotation}
+BibTeX has been widely in use since its introduction by Oren Patashnik 20 years ago. As the name suggests, it was intended to be used in combination with the typesetting system LaTeX, but it has become possible, for instance, to include BibTeX-bibliographies even in Word-Documents using third-party tools.
+
+BibTeX utilizes a plain-text file-format which can be created and modified using an arbitrary text-editor by the user. There are tools in existence which provide a more convenient UI.
+\end{quotation}
+
+The BibTeX format is briefly described at \url{http://www.bibtex.org/Format/}.
+However, it makes more sense to take a closer look at an existing
+collection of BibTeX entries, i.e., my personal
+\url{references.bib}.
+This file has been continuosly extended during the last 18 years and
+contains almost all references I have ever cited for publications
+and classes --- given that I was the leading author who handled a
+document and that this document was produced via \LaTeX.
+
+
+\subsection{\LaTeX\ Setup}
+
+A common setting for publications in the statistical community is to work
+with the {\it natbib} package and the {\it agsm} bibliography style.
+By the way, {\it agsm} stands for {\it Australian Government Style manual}.
+ 
+In your \LaTeX\ file, you have to make the following additions:
+\begin{itemize}
+
+\item In the preamble of your document, you have to add:
+\begin{verbatim}
+\usepackage{natbib}
+\end{verbatim}
+
+\item In the main document (where the references should appear), you have to add:
+\begin{verbatim}
+\bibliographystyle{agsm}
+\bibliography{references}
+\end{verbatim}
+\end{itemize}
+
+
+%\subsection{Setup}
+%
+% No success via RStudio if no previous bbl file; works if such a file is present
+%
+%I found the following information at
+%\url{http://jaredknowles.com/journal/2012/1/27/rstudio-bibtex-and-latex.html}:
+%
+%\begin{verbatim}
+%library(tools)
+%
+%#Set Environment Variables
+%TEXINPUTS="C:\\JUE\\Teaching\\Stat5810_Fa2012_IntroStatComputing_XXX\\RR" 
+%BIBINPUTS="C:\\JUE\\Teaching\\Stat5810_Fa2012_IntroStatComputing_XXX\\RR"
+%BSTINPUTS="C:\\JUE\\Teaching\\Stat5810_Fa2012_IntroStatComputing_XXX\\RR"
+%#Path to tex file in Windows
+%
+%Sys.setenv(TEXINPUTS="C:\\JUE\\Teaching\\Stat5810_Fa2012_IntroStatComputing_XXX\\RR~",BIBINPUTS=TEXINPUTS,BSTINPUTS=TEXINPUTS) 
+%
+%#Path to texfiles in Windows, set BIB files and BST files the same
+%
+%#Run before clicking "Compile PDF"
+%\end{verbatim}
+
+
+\subsection{Citations and References}
+
+We cite references via the commands \verb|\cite{citation-key}|
+or \verb|\citep{citation-key}|. The first one produces
+an in--text citation of the type Author (Year). The second one
+produces an in--parentheses citation of the type (Author Year).
+
+Here are some examples produced via \verb|\cite{citation-key}|,
+e.g., \cite{Sym2011} is an article,
+\cite{RS2006} is a book, \cite{SEGVW2004ASA} is
+a conference proceedings article, and
+\cite{CW2011} is a manual for an R package.
+Other document types exist. See the BibTeX documentation
+for further details
+and my \url{references.bib} for additional examples.
+
+And here the same citations as above, but produced via
+\verb|\citep{citation-key}|:
+\citep{Sym2011}, \citep{RS2006}, \citep{SEGVW2004ASA}, and \citep{CW2011}.
+
+We can combine several references into one cite command, e.g.,
+\citep{We50,Pajarola:98th}.
+
+Moreover, we can add additional information to a citation, e.g.,
+\citep[p.~486]{Sym2011} or \citep[see for example][p.~487]{Sym2011}.
+Check the source code how this has been produced.
+
+\subsection{Errors in the .bib File}
+
+Errors can be easily introduced into your .bib file, e.g., by missing to
+enter a single ``,'', a ``\{'', or a ``\}''. Finding these errors is not
+always easy and straightforward. Unfortunately, in many cases,
+errors are not even reported when translating a .bib file.
+
+To make sure that there are no errors, you should (manually)
+open the resulting .blg file in a text editor. Everything
+is fine if this file looks as follows:
+\begin{verbatim}
+This is BibTeX, Version 0.99cThe top-level auxiliary file: RefsViaBibtex.aux
+The style file: agsm.bst
+Database file #1: references.bib
+\end{verbatim}
+
+If there is anything else in this file, this means that there is an 
+error in your .bib file.
+
+\subsection{Different Styles for Citations and Reference Lists}
+
+There exist many ways how to cite references and arrange reference lists.
+Some journals cite by number and do not sort the reference list 
+alphabetically, but rather leave it in sequential order. As authors,
+we have to follow the instructions provided by the publisher
+of our article, book, or any other publication.
+
+BibTeX makes it easy to change the appearance of citations 
+and the reference list. First, comment out the 
+\verb|\usepackage{natbib}| command in the preamble.
+Then replace it by one of the following options:
+
+\begin{itemize}
+\item Use \verb|\usepackage[numbers]{natbib}|.
+\item Use \verb|\usepackage[super]{natbib}|.
+\end{itemize}
+
+More details on the {\it natbib} package usage can be found at
+\url{http://merkel.zoneo.net/Latex/natbib.php}.
+
+There exists even a large number of different bibstyles,
+documented at \url{http://amath.colorado.edu/documentation/LaTeX/reference/faq/bibstyles.html}
+and at
+\url{http://amath.colorado.edu/documentation/LaTeX/reference/faq/bibstyles.pdf}.
+
+Moreover, the commands used for citations may be called
+\verb|\citeasnoun{}| or \verb|\citet{}|, to mention just some
+frequently encountered modifications.
+
+An easy--to--read BibTeX tutorial (derived from a ppt presentation) 
+can be found at 
+\url{http://www.ntg.nl/bijeen/pdf-s.20031113/BibTeX-tutorial.pdf}.
+
+{\bf Whenever you change the style, you should first
+remove the previous .bbl file to ensure that a new .bbl file
+is created according to the new style.}
+
+
+\section{Conclusion}
+
+The main advantage of working with a bibliography file is that this
+file is growing with your work. Over time, we are likely to cite
+the same references many times. However, the appearance
+of the citations and the reference list likely will differ from
+document to document. There will be differences
+when working on a MS report or a dissertation, a conference paper,
+a journal article, or a book chapter. Likely, citation styles will be different
+for different disciplines and even for different publishers.
+
+However, once you have entered your references into your bibliography file,
+you will usually only have to modify two or three commands
+to adapt to a new style --- rather than manually adjusting
+and reformatting dozens of references in a single document.
+
+
+\bibliographystyle{agsm}
+\bibliography{references}
+
+\end{document}
+

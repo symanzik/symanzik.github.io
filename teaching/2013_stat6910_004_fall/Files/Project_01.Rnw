@@ -1,0 +1,285 @@
+\documentclass[11pt]{article}
+
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{verbatim}
+\usepackage[title,titletoc,toc]{appendix}
+\usepackage{wasysym}
+
+\renewcommand{\topfraction}{1.0}
+\renewcommand{\bottomfraction}{1.0}
+\renewcommand{\textfraction}{0.0}
+\renewcommand{\floatpagefraction}{1.0}
+\renewcommand{\dbltopfraction}{1.0}
+
+\textwidth 16cm
+\textheight 23cm
+\voffset -0.5in
+\hoffset -0.5in
+
+\parindent0pt
+\setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
+
+
+\begin{document}
+
+\SweaveOpts{concordance=TRUE}
+
+\begin{titlepage}
+
+\begin{center}
+{\large STAT 6910 Advanced R} \\[4cm]
+
+{\LARGE \bf Project 1} \\[1cm]
+by \\[0.5cm]
+{\bf J\"urgen Symanzik} \\[2.5cm]
+{\bf Date:} \today \\[2cm]
+{\bf Due Date:} Monday, December 9, 2013, 11:59pm (by e--mail) \\[2cm]
+
+
+UTAH STATE UNIVERSITY \\[0.5cm]
+Logan, UT \\[0.5cm]
+Fall 2013 \\[0.5cm]
+\end{center}
+
+\thispagestyle{empty}
+\vfill
+\end{titlepage}
+
+
+\newpage 
+
+
+\pagenumbering{roman}
+
+\tableofcontents
+
+
+\newpage
+
+
+%\listoftables
+%\addcontentsline{toc}{section}{List of Tables}
+%
+%\newpage
+%
+%\listoffigures
+%\addcontentsline{toc}{section}{List of Figures}
+%
+%\newpage 
+
+
+\pagenumbering{arabic}
+
+\section{General Instructions}
+
+You have to work in small groups of exactly two students 
+on this project. Unless you have a strong request to
+work with someone else for this project, you will
+work with the same partner as in the previous homeworks.
+Any requests to work
+with a new group partner must be made by 10am (MT) on
+Tuesday, November 26, 2013.
+
+I would suggest that you first work independently on this
+project and then compare your results with your partner.
+You can submit only one final version!
+
+You have to submit {\bf three} files via e--mail: The \verb|.Rnw|
+file that contains the \LaTeX\ and R/Sweave (or R/knitr) code,
+the \verb|.R| file that contains the complete R functions,
+and the resulting \verb|.pdf| file prepared on your side.
+Your files should be named
+\verb|LastName1_LastName2_Project01.Rnw|,
+\verb|LastName1_LastName2_Project01_RCode.R|,
+and
+\verb|LastName1_LastName2_Project01.pdf|.
+
+Your R code has to be fully reproducible! 
+You cannot include
+any constants in your \LaTeX\ text. Rather, you have
+to work with \verb|\Sexpr| to extract numeric values
+from your R code. I will likely make changes to your
+R code, e.g., change some of the numerical values,
+to check whether your results properly get adapted to
+these new values.
+
+Use this \verb|.Rnw| file as the basis for your answers.
+Update the title page, e.g., fill in your names and indicate when
+this project gets submitted. 
+However, all of your R functions should be included in a separate
+\verb|.R| file. Include this file in the appendix of your report.
+In the main file, include this \verb|.R| file  via 
+the \verb|source| command. Only show the function calls that
+are needed to produce the numerical results and figures
+in the main text. 
+
+Here is an example: The R code is stored in the external file
+called \verb|Project_01_RCode.R| and is listed in 
+Appendix~\ref{AppendixWithRCode}.
+In the main \verb|.Rnw| file, we have to do the following to be
+able to use this R code:
+<<>>=
+source("Project_01_RCode.R")
+
+myFactorial1(10)
+@
+Or, include the result into the \LaTeX\ text via $5! =$ \Sexpr{myFactorial2(5)}.
+
+Before you submit your project, check once more that you
+follow all recommendations from
+Google's R Style Guide
+(see \url{http://google-styleguide.googlecode.com/svn/trunk/Rguide.xml}).
+
+{\large \bf For general questions related to this project, please
+use the corresponding discussion board in Canvas! I will try to
+reply as quickly as possible. Moreover, if one of you knows
+an answer, please post it. It is fine to refer to web pages
+and R commands, but do not provide the exact R command! This
+will be the task for each individual group.}
+
+\newpage
+
+
+\section{Project Description}
+
+In this project, you will have to deal with e--mails that were previously
+classified as spam by spam detection software called SpamAssassin.
+We want to reassess the decisions made by SpamAssassin  to filter out
+all of these e-mails as being spam e--mails.
+There will be one training file for your R code called \verb|Junkmail|.
+
+You have to solve the following tasks. In your answer, provide a
+brief textual explanation for each task. Include the function call
+(but not the function itself) and the result(s).
+
+For some tasks, you have to decide what to do exactly. Explain your
+choice(s).
+
+\begin{enumerate}
+\item Read in the e--mail data from the external \verb|Junkmail| 
+file and create a data frame
+with the following columns:
+eMailID (from 1 through $n$), fromEMail (note that some e--mails have
+more than one from field --- one is fake), fromTrueName, date, dayOfWeek, time, subject.
+Some of these may be empty or missing.
+
+\item For each e--mail, create a list that consists of two components:
+The total spam points assigned by SpamAssassin and a data frame with 
+two columns where the first column contains the type of the spam
+indicator (such as ``From: does not include a real name'') and the
+second column contain the score for this indicator (such as 0.8).
+The elements should be accessible via the same eMailID as used in part 1.
+
+\item For each e--mail, create a 2nd list that consists of three components:
+The first one is a vector that contains each row of the e--mail header
+as a separate string.
+The second one is a vector that contains each row of the e--mail body
+as a separate string. Note that this may be html code.
+The third one is a single number that indicates the number of attachments
+to this e--mail.
+The elements should be accessible via the same eMailID as used in part 1. \\
+
+Use your data structures and write any necessary functions
+to answer the following questions. The numbers below are
+examples that should be used in your report, but your functions
+should also be tested internally with different values. 
+Ideally, the person who did not write the function
+should do the testing! There should be some basic error checking
+in your functions.
+
+The function calls and results for the values below
+should be placed in the main text of your report.
+
+\item How many e--mails are there overall in this file?
+
+\item How many e--mails do not contain a real name?
+
+\item What are the 3 most frequent senders, based on the fromEMail addresses? 
+If there is a tie,
+list all other senders as well that occur the same number of times
+as the 3rd one.
+
+\item During which time period were these e--mails received?
+List the first and last date as ``mm/dd/yyyy''. Do not use
+the format that is used in the e--mails.
+
+\item Create a bar chart that shows the distribution of these e--mails
+during the seven days of the week. Sort from day with most e--mails
+to day with least e--mails received.
+
+\item Create a histogram that shows the distribution of these e--mails
+over the 24 hours of a day. Work with 2--hour wide intervals, starting
+at midnight.
+
+\item What are the 20 most frequent character--based keywords 
+(such as buy, purchase, re, free, fwd)
+in the subject line across all e--mails? 
+Translate all keywords to lower case.
+Remove all numbers, spaces, and any other non--alphabetic symbols.
+If there is a tie,
+list all other keywords as well that occur the same number of times
+as the 20th one.
+
+\item In a graphic of your choice,
+display the distribution of the total spam points of all e--mails.
+
+\item What are the 10 most frequent spam indicators?
+If there is a tie,
+list all other spam indicators as well that occur the same number of times
+as the 10th one.
+
+\item Return the eMailID's of the e--mails with the 5 lowest total spam points.
+Which are those? No need to break any ties here. Just use the first one
+in your list in case of a tie.
+
+\item Write a function called \verb|InspectEMail|
+that has the following arguments:\\
+\begin{tabular}{ll}
+\verb|eMailID| & a single e--mail ID \\
+\verb|part| & this could be ``header'', ``body'', or ``attachment'' \\
+\verb|numLines| & the number of lines to be shown (will be ignored for attachments)
+\end{tabular} ~\\
+This function should show the first \verb|numLines| of the \verb|part|
+or simply indicate the number of attachments.
+If the actual number of lines in \verb|part| is less than \verb|numLines|,
+show all lines from \verb|part|.
+Test your function for 6 different scenarios (two for each \verb|part|).
+
+\item For the 5 e--mails with the lowest total spam points,
+look at 20 lines from the ``body''. Do all of these bodys look
+like spam to you? Be specific! 
+
+\item So, what do you think of the overall performance of the
+SpamAssassin software? Base your conclusions on your previous results.
+
+\end{enumerate}
+
+
+{\bf \large A major part of software development is to (manually) verify the
+results for several test cases!!! You can open \verb|Junkmail| in any text editor
+of your choice and verify whether your R code produces what it is
+supposed to do! Note that what appears to be a space in a text editor
+may not actually be a space in the file. Also be aware that there are 
+often hidden spaces at the end of a line!}
+
+
+\newpage
+
+
+\begin{appendices}
+
+
+\section{R Code for Project 1}\label{AppendixWithRCode}
+
+Here is the R code for Project 1:
+
+\scriptsize
+\verbatiminput{Project_01_RCode.R}
+
+\end{appendices}
+
+
+\end{document}
+

@@ -1,0 +1,95 @@
+\documentclass[12pt]{article}
+
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{verbatim}
+\usepackage[title,titletoc,toc]{appendix}
+\usepackage{wasysym}
+
+\renewcommand{\topfraction}{1.0}
+\renewcommand{\bottomfraction}{1.0}
+\renewcommand{\textfraction}{0.0}
+\renewcommand{\floatpagefraction}{1.0}
+\renewcommand{\dbltopfraction}{1.0}
+
+
+\begin{document}
+
+\begin{titlepage}
+
+\begin{center}
+{\large STAT 5810/6810 Introduction to Statistical Computing} \\[4cm]
+
+{\LARGE \bf Reproducible Research (RR)} \\[1cm]
+by \\[0.5cm]
+{\bf J\"urgen Symanzik} \\[2.5cm]
+{\bf Date:} \today \\[2cm]
+
+UTAH STATE UNIVERSITY \\[0.5cm]
+Logan, UT \\[0.5cm]
+Fall 2012 \\[0.5cm]
+\end{center}
+
+\thispagestyle{empty}
+\vfill
+\end{titlepage}
+
+
+\newpage 
+
+
+\pagenumbering{roman}
+
+\tableofcontents
+
+
+\newpage
+
+\pagenumbering{arabic}
+
+
+\section{Basics about \LaTeX\ via RStudio}
+
+First, notice that you can open a \LaTeX\ .tex file from within RStudio.
+This file is recognized as a .tex file --- and you can translate it 
+via the Compile PDF option from within RStudio!
+
+When working with .tex in RStudio, you have options to introduce
+some \LaTeX\ formatting via highlighting and mouse clicke. Let's
+try this for the words bold, italic, and typewriter.
+
+
+Now, we want a new subsection
+
+Notice what is being produced here!
+
+
+
+And what about a bullet list hereafter?
+
+
+
+\section{Using Sweave and knitr in RStudio}
+
+Detailed information can be found at
+\url{http://www.rstudio.com/ide/docs/authoring/overview}.
+
+Basically, you need to start at \textbf{File $->$ New $->$ R Sweave}.
+Let's do so.
+
+
+If you want to use an existing .tex file, you must change the file
+extension to .Rnw and add the line
+\begin{verbatim}
+\SweaveOpts{concordance=TRUE}
+\end{verbatim}
+after the 
+\begin{verbatim}
+\begin{document}
+\end{verbatim}
+line.
+ 
+
+\end{document}
+
