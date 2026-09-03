@@ -1,0 +1,682 @@
+<html>
+
+<head>
+<title>J&uuml;rgen Symanzik: Teaching</title>
+</head>
+
+<body>
+
+<h1>J&uuml;rgen Symanzik: Teaching</h1>
+
+
+<center>
+<img src=../images/rainbow.gif></img>
+</center>
+
+
+<h3><a name="Teaching">
+<img src=../images/Balls/red.gif>
+Teaching:</a></h3>
+<ul>
+
+<li><P>Spring 2026:
+<a href="2026_stat5560/stat5560.html" target="_top">
+Stat 5560, Section 001 / Stat 6560, Section 001 - 
+Statistical Visualization II</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Spring 2026:
+<a href="2026_stat5410/stat5410.html" target="_top">
+Stat 5410, Section 001 / Stat 6410, Section 001 - 
+Applied Spatial Statistics</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Fall 2025:
+<a href="2025_stat5550/stat5550.html" target="_top">
+Stat 5550, Section 001 - 
+Statistical Visualization I</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Fall 2025:
+<a href="2025_stat5080/stat5080.html" target="_top">
+Stat 5080, Section 001 / Stat 6080, Section 001 - 
+Data Technologies</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Spring 2025:
+<a href="2025_stat5810/stat5810.html" target="_top">
+Stat 5810, Section 001 / Stat 6810, Section 001 - 
+Mathematical Statistics With R</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Spring 2025:
+<a href="2025_stat5560/stat5560.html" target="_top">
+Stat 5560, Section 001 / Stat 6560, Section 001 - 
+Statistical Visualization II</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Fall 2024:
+<a href="2024_stat5550/stat5550.html" target="_top">
+Stat 5550, Section 001 - 
+Statistical Visualization I</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Fall 2024:
+<a href="2024_stat5080/stat5080.html" target="_top">
+Stat 5080, Section 001 / Stat 6080, Section 001 - 
+Data Technologies</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Spring 2024:
+<a href="2024_stat5560/stat5560.html" target="_top">
+Stat 5560, Section 001 / Stat 6560, Section 001 - 
+Statistical Visualization II</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Spring 2024:
+<a href="2024_stat5410/stat5410.html" target="_top">
+Stat 5410, Section 001 / Stat 6410, Section 001 - 
+Applied Spatial Statistics</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Fall 2023:
+<a href="2023_stat5550/stat5550.html" target="_top">
+Stat 5550, Section 001 - 
+Statistical Visualization I</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Fall 2023:
+<a href="2023_stat5080_fall/stat5080.html" target="_top">
+Stat 5080, Section 001 / Stat 6080, Section 001 - 
+Data Technologies</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Spring 2023:
+<a href="2023_stat5560/stat5560.html" target="_top">
+Stat 5560, Section 001 / Stat 6560, Section 001 - 
+Statistical Visualization II</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Spring 2023:
+<a href="2023_stat5080/stat5080.html" target="_top">
+Stat 5080, Section 001 / Stat 6080, Section 001 - 
+Data Technologies</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Fall 2021:
+<a href="2021_stat5550/stat5550.html" target="_top">
+Stat 5550, Section 001 - 
+Statistical Visualization I</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Fall 2021:
+<a href="2021_stat5080/stat5080.html" target="_top">
+Stat 5080, Section 001 / Stat 6080, Section 001 - 
+Data Technologies</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Spring 2021:
+<a href="2021_stat5560/stat5560.html" target="_top">
+Stat 5560, Section LW1 / Stat 6560, Section LW1 - 
+Statistical Visualization II</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Spring 2021:
+<a href="2021_stat5050/stat5050.html" target="_top">
+Stat 5050, Section LW1 - 
+Introduction to R</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Fall 2020:
+<a href="2020_stat5550/stat5550.html" target="_top">
+Stat 5550, Section MW1 - 
+Statistical Visualization I</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Fall 2020:
+<a href="2020_stat5080/stat5080.html" target="_top">
+Stat 5080, Section MW1 / Stat 6080, Section MW1 - 
+Data Technologies</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Fall 2020:
+<a href="2020_stat5050/stat5050.html" target="_top">
+Stat 5050, Section MW1 - 
+Introduction to R</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Spring 2020:
+<a href="2020_stat5560/stat5560.html" target="_top">
+Stat 5560, Section 001 / Stat 6560, Section 001 - 
+Statistical Visualization II</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Spring 2020:
+<a href="2020_stat5410/stat5410.html" target="_top">
+Stat 5410, Section 001 / Stat 6410, Section 001 - 
+Applied Spatial Statistics</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Fall 2019:
+<a href="2019_stat5550/stat5550.html" target="_top">
+Stat 5550, Section 001 - 
+Statistical Visualization I</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Fall 2019:
+<a href="2019_stat5080/stat5080.html" target="_top">
+Stat 5080, Section 001 / Stat 6080, Section 001 - 
+Data Technologies</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Spring 2019:
+<a href="2019_stat5810_005/stat5810_005.html" target="_top">
+Stat 5810, Section 005 / Stat 6910, Section 003 - 
+Statistical Visualization II</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Spring 2019:
+<a href="2019_stat5810_001/stat5810_001.html" target="_top">
+Stat 5810, Section 001 - 
+Introduction to R</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Fall 2018:
+<a href="2018_stat5810_003_fall/stat5810_003.html" target="_top">
+Stat 5810, Section 003 - 
+Statistical Visualization I</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Fall 2018:
+<a href="2018_stat5810_004_fall/stat5810_004.html" target="_top">
+Stat 5810, Section 004 / Stat 6910, Section 004 - 
+Data Technologies</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Spring 2018:
+<a href="2018_stat5810_005/stat5810_005.html" target="_top">
+Stat 5810, Section 005 / Stat 6910, Section 004 - 
+Statistical Visualization II</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Spring 2018:
+<a href="2018_stat5810_004/stat5810_004.html" target="_top">
+Stat 5810, Section 004 / Stat 6910, Section 002 - 
+Applied Spatial Statistics</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Fall 2017:
+<a href="2017_stat5810_004/stat5810_004.html" target="_top">
+Stat 5810, Section 004 - 
+Statistical Visualization I</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Fall 2017:
+<a href="2017_stat5810_003/stat5810_003.html" target="_top">
+Stat 5810, Section 003 / Stat 6910, Section 009 - 
+Data Technologies</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Spring 2017:
+<a href="2017_stat2000/stat2000.html" target="_top">
+Stat 2000, Section 001 - Introduction to Statistical Methods</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Fall 2016:
+<a href="2016_stat2000_fall/stat2000.html" target="_top">
+Stat 2000, Section 001 - Introduction to Statistical Methods</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Spring 2016:
+<a href="2016_stat2000/stat2000.html" target="_top">
+Stat 2000, Section 001 - Introduction to Statistical Methods</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Fall 2015:
+<a href="2015_stat5410/stat5410.html" target="_top">
+Stat 5410/6410, Section 001 - Applied Spatial Statistics</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Fall 2015:
+<a href="2015_stat2000_fall/stat2000.html" target="_top">
+Stat 2000, Section 002 - Introduction to Statistical Methods</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Spring 2015:
+<a href="2015_stat6560/stat6560.html" target="_top">
+Stat 6560, Section 001 - Graphical Methods</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Spring 2015:
+<a href="2015_stat2000/stat2000.html" target="_top">
+Stat 2000, Section 001 - Introduction to Statistical Methods</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Fall 2013:
+<a href="2013_stat6910_004_fall/stat6910.html" target="_top">
+Stat 6910, Section 004 - ST: Advanced R</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Fall 2013:
+<a href="2013_stat6910_003_fall/stat6910.html" target="_top">
+Stat 6910, Section 003 - ST: Introduction to R</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Fall 2013:
+<a href="2013_stat5410/stat5410.html" target="_top">
+Stat 5410/6410, Section 001 - Applied Spatial Statistics</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Spring 2013:
+<a href="2013_stat6910/stat6910.html" target="_top">
+Stat 6910, Section 003 - ST: Introduction to R</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Spring 2013:
+<a href="2013_stat6720/stat6720.html" target="_top">
+Stat 6720/7720, Section 001 - Mathematical Statistics II</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Fall 2012:
+<a href="2012_stat6560/stat6560.html" target="_top">
+Stat 6560, Section 001 - Graphical Methods</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Fall 2012:
+<a href="2012_stat5810/stat5810.html" target="_top">
+Stat 5810, Section 004 / Stat 6810, Section 003 - Introduction to Statistical Computing</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Spring 2012:
+<a href="2012_stat6720/stat6720.html" target="_top">
+Stat 6720/7720, Section 001 - Mathematical Statistics II</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Spring 2012:
+<a href="2012_stat2000/stat2000.html" target="_top">
+Stat 2000, Section 001 - Introduction to Statistical Methods</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Spring 2011:
+<a href="2011_stat6560/stat6560.html" target="_top">
+Stat 6560, Section 001 - Graphical Methods</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Spring 2011:
+<a href="2011_stat2000/stat2000.html" target="_top">
+Stat 2000, Section 001 - Introduction to Statistical Methods</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Fall 2010:
+<a href="2010_stat6710/stat6710.html" target="_top">
+Stat 6710/7710, Section 001 - Mathematical Statistics I</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Fall 2010:
+<a href="2010_stat2000_fall/stat2000.html" target="_top">
+Stat 2000, Section 001 - Introduction to Statistical Methods</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Spring 2010:
+<a href="2010_stat6720/stat6720.html" target="_top">
+Stat 6720, Section 001 - Mathematical Statistics II</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Spring 2010:
+<a href="2010_stat2000/stat2000.html" target="_top">
+Stat 2000, Section 001 - Introduction to Statistical Methods</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Fall 2009:
+<a href="2009_stat6710/stat6710.html" target="_top">
+Stat 6710/7710, Section 001 - Mathematical Statistics I</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Fall 2009:
+<a href="2009_stat2000/stat2000.html" target="_top">
+Stat 2000, Section 001 - Introduction to Statistical Methods</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Spring 2009:
+<a href="2009_stat6560/stat6560.html" target="_top">
+Stat 6560, Section 001 - Graphical Methods</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Spring 2009:
+<a href="2009_stat1040/stat1040.html" target="_top">
+Stat 1040, Section 002 - Introduction to Statistics</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Fall 2008:
+<a href="2008_stat6710/stat6710.html" target="_top">
+Stat 6710/7710, Section 001 - Mathematical Statistics I</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Fall 2008:
+<a href="2008_stat1040_fall/stat1040.html" target="_top">
+Stat 1040, Section 003 - Introduction to Statistics</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Spring 2008:
+<a href="2008_stat6720/stat6720.html" target="_top">
+Stat 6720, Section 001 - Mathematical Statistics II</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Spring 2008:
+<a href="2008_stat1040/stat1040.html" target="_top">
+Stat 1040, Section 008 - Introduction to Statistics</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Fall 2007:
+<a href="2007_stat6710/stat6710.html" target="_top">
+Stat 6710, Section 001 - Mathematical Statistics I</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Fall 2007:
+<a href="2007_stat1040_fall/stat1040.html" target="_top">
+Stat 1040, Sections 007 & 009 - Introduction to Statistics</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Fall 2006:
+<a href="2006_stat2300/stat2300_index.html" target="_top">
+Stat 2300, Section LI6 - Business Statistics -
+International Program</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Spring 2006:
+<a href="2006_stat6720/stat6720.html" target="_top">
+Stat 6720, Section 001 - Mathematical Statistics II</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Spring 2006:
+<a href="2006_stat1040/stat1040.html" target="_top">
+Stat 1040, Section 009 - Introduction to Statistics</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Fall 2005:
+<a href="2005_stat6710/stat6710.html" target="_top">
+Stat 6710, Section 001 - Mathematical Statistics I</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Fall 2005:
+<a href="2005_stat2300/stat2300_index.html" target="_top">
+Stat 2300, Section LI6 - Business Statistics -
+International Program</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Fall 2005:
+<a href="2005_stat1040_fall/stat1040.html" target="_top">
+Stat 1040, Section 006 - Introduction to Statistics</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Spring 2005:
+<a href="2005_stat6720/stat6720.html" target="_top">
+Stat 6720, Section 001 - Mathematical Statistics II</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Spring 2005:
+<a href="2005_stat1040/stat1040.html" target="_top">
+Stat 1040, Section 004 - Introduction to Statistics</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Fall 2004:
+<a href="2004_stat6710/stat6710.html" target="_top">
+Stat 6710, Section 001 - Mathematical Statistics I</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Fall 2004:
+<a href="2004_stat2300/stat2300_index.html" target="_top">
+Stat 2300, Section LI6 - Business Statistics -
+International Program</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Fall 2004:
+<a href="2004_stat1040_fall/stat1040.html" target="_top">
+Stat 1040, Section 006 - Introduction to Statistics</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Summer 2004/Late Session:
+<a href="2004_stat2000_summer_2/stat2000_index.html" target="_top">
+Stat 2000, Section LI6 - Introduction to Statistical Methods -
+International Program</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Summer 2004/Early Session:
+<a href="2004_stat2000_summer/stat2000_index.html" target="_top">
+Stat 2000, Section LI6 - Introduction to Statistical Methods -
+International Program</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Spring 2004:
+<a href="2004_stat6720/stat6720.html" target="_top">
+Stat 6720, Section 001 - Mathematical Statistics II</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Spring 2004:
+<a href="2004_stat2000/stat2000_index.html" target="_top">
+Stat 2000, Section LI1 - Introduction to Statistical Methods -
+International Program</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Spring 2004:
+<a href="2004_stat1040/stat1040.html" target="_top">
+Stat 1040, Section 004 - Introduction to Statistics</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Fall 2003:
+<a href="2003_stat6710/stat6710.html" target="_top">
+Stat 6710, Section 001 - Mathematical Statistics I</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Fall 2003:
+<a href="2003_stat1040_fall/stat1040.html" target="_top">
+Stat 1040, Section 004 - Introduction to Statistics</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Spring 2003:
+<a href="2003_stat1040/stat1040.html" target="_top">
+Stat 1040, Sections 003 & 004 - Introduction to Statistics</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Fall 2002:
+<a href="2002_stat2000/stat2000.html" target="_top">
+Stat 2000, Section 001 - Introduction to Statistical Methods</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Fall 2002:
+<a href="2002_stat1040_fall/stat1040.html" target="_top">
+Stat 1040, Section 006 - Introduction to Statistics</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Spring 2002:
+<a href="2002_stat1040/stat1040.html" target="_top">
+Stat 1040, Sections 003 & 004 - Introduction to Statistics</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Fall 2001:
+<a href="2001_stat2000_2/stat2000.html" target="_top">
+Stat 2000, Section 002 - Introduction to Statistical Methods</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Fall 2001:
+<a href="2001_stat2000_1/stat2000.html" target="_top">
+Stat 2000, Section 001 - Introduction to Statistical Methods</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Spring 2001:
+<a href="2001_stat6720/stat6720.html" target="_top">
+Stat 6720, Section 001 - Mathematical Statistics II</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Fall 2000:
+<a href="2000_stat6710/stat6710.html" target="_top">
+Stat 6710, Section 001 - Mathematical Statistics I</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Fall 2000:
+<a href="2000_spatial/statspatial.html" target="_top">
+Stat 5810, Section 001 - Applied Spatial Statistics</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Summer 2000:
+<a href="2000_stat5810/stat5810.html" target="_top">
+Stat 5810, Section 001 - Web-Based Statistics</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Spring 2000:
+<a href="2000_stat2000/stat2000.html" target="_top">
+Stat 2000, Section 001 - Introduction to Statistical Methods</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Spring 2000:
+<a href="2000_stat6720/stat6720.html" target="_top">
+Stat 6720, Section 001 - Mathematical Statistics II</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Fall 1999:
+<a href="1999_stat6710/stat6710.html" target="_top">
+Stat 6710, Section 001 - Mathematical Statistics I</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Spring 1999:
+<a href="1999_stat250/stat250.html" target="_top">
+Stat 250, Section 003 - Introductory Statistics</a>
+(George Mason University, Fairfax, Virginia).
+</P>
+
+<li><P>Summer 1998:
+<a href="1998_stat250/stat250.html" target="_top">
+Stat 250, Section 701 - Introductory Statistics</a>
+(George Mason University, Fairfax, Virginia).
+</P>
+
+<li><P>Spring 1998:
+<a href="1998_csi979/intro.html" target="_top">
+CSI/INFT 979 - VR / Scientific Visualization</a>
+(George Mason University, Fairfax, Virginia)
+[Joint with E. J. Wegman].
+</P>
+
+<li><P>Spring 1997: 
+<a href="1997_stat305/stat305.html" target="_top">
+Stat 305 - Engineering Statistics</a>
+(Iowa State University, Ames, Iowa).
+</P>
+
+<li><P>Spring 1997: 
+<a href="1997_scourse/sintro" target="_top">
+Short Course - Introduction to S and S-Plus</a>
+(Iowa State University, Ames, Iowa).
+</P>
+
+</ul>
+
+
+<center>
+<img src=../images/rainbow.gif></img>
+</center>
+
+
+<br>
+Last Update September 3, 2026.
+</br>
+
+</body>
+</html>
+
