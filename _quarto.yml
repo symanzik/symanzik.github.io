@@ -2,6 +2,7 @@ project:
   type: website
   resources:
     - resume.pdf
+    - "papers/"
     - "talks/"
     - "teaching/"
 
