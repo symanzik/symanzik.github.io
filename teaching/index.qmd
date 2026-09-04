@@ -674,7 +674,7 @@ Stat 305 - Engineering Statistics</a>
 </P>
 
 <li><P>Spring 1997: 
-<a href="1997_scourse/sintro" target="_top">
+<a href="1997_scourse/sintro.txt" target="_top">
 Short Course - Introduction to S and S-Plus</a>
 (Iowa State University, Ames, Iowa).
 </P>
