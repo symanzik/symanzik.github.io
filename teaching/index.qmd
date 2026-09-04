@@ -19,6 +19,20 @@
 Teaching:</a></h3>
 <ul>
 
+<li><P>Fall 2026:
+<a href="2026_stat5550/stat5550.html" target="_top">
+Stat 5550, Section 001 - 
+Statistical Visualization I</a>
+(Utah State University, Logan, Utah).
+</P>
+
+<li><P>Fall 2026:
+<a href="2026_stat5080/stat5080.html" target="_top">
+Stat 5080, Section 001 / Stat 6080, Section 001 - 
+Data Technologies</a>
+(Utah State University, Logan, Utah).
+</P>
+
 <li><P>Spring 2026:
 <a href="2026_stat5560/stat5560.html" target="_top">
 Stat 5560, Section 001 / Stat 6560, Section 001 - 
