@@ -2,14 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://symanzik.github.io/talks/index.html</loc>
-    <lastmod>2026-09-04T16:30:02.738Z</lastmod>
+    <lastmod>2026-09-04T17:47:00.258Z</lastmod>
+  </url>
+  <url>
+    <loc>https://symanzik.github.io/papers/index.html</loc>
+    <lastmod>2026-09-04T17:46:58.637Z</lastmod>
   </url>
   <url>
     <loc>https://symanzik.github.io/index.html</loc>
-    <lastmod>2026-09-04T16:30:00.860Z</lastmod>
+    <lastmod>2026-09-04T17:46:58.550Z</lastmod>
   </url>
   <url>
     <loc>https://symanzik.github.io/teaching/index.html</loc>
-    <lastmod>2026-09-04T16:30:09.841Z</lastmod>
+    <lastmod>2026-09-04T17:47:06.925Z</lastmod>
   </url>
 </urlset>
