@@ -466,62 +466,72 @@ Refereed Book Chapters:</a></h3>
 
 <ul>
 <li><p>
-Symanzik, J. (2021): Exploratory Spatial Data Analysis [Revised], In:
- Fischer, M. M., Nijkamp,
- P. (Eds.),
-Handbook of Regional Science, Springer, Berlin/Heidelberg,
- 1845-1861, <a 
-href="https://doi.org/10.1007/978-3-662-60723-7_76"> 
-https://doi.org/10.1007/978-3-662-60723-7_76</a>.
+Symanzik, J. 
+(2025): 
+Interactive and Dynamic Statistical Graphics [Revised],
+In: Lovric, M. (Ed.),
+<i>International Encyclopedia of Statistical Science (Second Edition)</i>,
+Springer, Berlin/Heidelberg, 1207-1214.
+[<a href="https://doi.org/10.1007/978-3-662-69359-9_295">https://doi.org/10.1007/978-3-662-69359-9_295</a>]
 </p></li>
 
 <li><p>
-Lommatsch, C. W., Tucker, S. I., Moyer-Packenham, P. S., Symanzik,
- J. (2018): Heatmap and Hierarchical Clustering Analysis to Highlight
- Changes in Young Children's Developmental Progressions Using
- Virtual Manipulative Mathematics Apps, In: Calder, N., Larkin,
- K., Sinclair, N. (Eds.),
-Using Mobile Technologies in the Teaching
-
-and Learning of Mathematics, Springer, Cham, Switzerland, 167-187.
- <a 
-href="https://doi.org/10.1007/978-3-319-90179-4_10"> 
-https://doi.org/10.1007/978-3-319-90179-4_10</a>.
+Symanzik, J. 
+(2021): 
+Exploratory Spatial Data Analysis [Revised], 
+In: Fischer, M. M., Nijkamp, P. (Eds.),
+<i>Handbook of Regional Science</i>, 
+Springer, Berlin/Heidelberg, 1845-1861.
+[<a href="https://doi.org/10.1007/978-3-662-60723-7_76">https://doi.org/10.1007/978-3-662-60723-7_76</a>]
 </p></li>
 
 <li><p>
-Symanzik, J.,
- Carr, D. B., McManus, M. G., Weber, M. H. (2017): Micromaps, In:
-
-Wiley StatsRef: Statistics Reference Online, John Wiley &amp; Sons, Ltd.,
- <a 
-href="https://doi.org/10.1002/9781118445112.stat07938"> 
-https://doi.org/10.1002/9781118445112.stat07938</a>.
+Lommatsch, C. W., Tucker, S. I., Moyer-Packenham, P. S., Symanzik, J. 
+(2018): 
+Heatmap and Hierarchical Clustering Analysis to Highlight
+Changes in Young Children's Developmental Progressions Using
+Virtual Manipulative Mathematics Apps, 
+In: Calder, N., Larkin, K., Sinclair, N. (Eds.),
+<i>Using Mobile Technologies in the Teaching and Learning of Mathematics</i>, 
+Springer, Cham, Switzerland, 167-187.
+[<a href="https://doi.org/10.1007/978-3-319-90179-4_10">https://doi.org/10.1007/978-3-319-90179-4_10</a>]
 </p></li>
 
 <li><p>
-Symanzik, J. (2014): Exploratory Spatial Data Analysis, In: Fischer,
- M. M., Nijkamp, P. (Eds.),
-Handbook of Regional Science, Springer,
- Heidelberg/New York/Dordrecht/London, 1295-1310.
+Symanzik, J., Carr, D. B., McManus, M. G., Weber, M. H. 
+(2017): 
+Micromaps, 
+In: <i>Wiley StatsRef: Statistics Reference Online</i>, 
+John Wiley &amp; Sons, Ltd.
+[<a href="https://doi.org/10.1002/9781118445112.stat07938">https://doi.org/10.1002/9781118445112.stat07938</a>]
 </p></li>
 
 <li><p>
-Symanzik, J. (2012): Interactive and Dynamic Graphics [Revised],
- In: Gentle, J. E., Härdle, W. K., Mori, Y. (Eds.),
-Handbook of
-
-Computational Statistics - Concepts and Methods, Vol. 
- 1 (Second
-
-Revised and Updated Edition), Springer, Berlin/Heidelberg, 335-373.
+Symanzik, J. 
+(2014): 
+Exploratory Spatial Data Analysis, 
+In: Fischer, M. M., Nijkamp, P. (Eds.),
+<i>Handbook of Regional Science</i>, 
+Springer, Heidelberg/New York/Dordrecht/London, 1295-1310.
 </p></li>
 
 <li><p>
-Symanzik, J. (2011): Interactive and Dynamic Statistical Graphics,
- In: Lovric, M. (Ed.),
-International Encyclopedia of Statistical Science,
- Springer, Berlin/Heidelberg, 674-679.
+Symanzik, J. 
+(2012): 
+Interactive and Dynamic Graphics [Revised],
+In: Gentle, J. E., Härdle, W. K., Mori, Y. (Eds.),
+<i>Handbook of Computational Statistics - Concepts and Methods, Vol. 1 
+(Second Revised and Updated Edition)</i>, 
+Springer, Berlin/Heidelberg, 335-373.
+</p></li>
+
+<li><p>
+Symanzik, J. 
+(2011): 
+Interactive and Dynamic Statistical Graphics,
+In: Lovric, M. (Ed.),
+<i>International Encyclopedia of Statistical Science</i>,
+Springer, Berlin/Heidelberg, 674-679.
 </p></li>
 
 <li><p>
@@ -529,33 +539,36 @@ Symanzik, J., Carr, D. B.
 (2008):
 Interactive Linked Micromap Plots for the Display of Geographically
 Referenced Statistical Data,
-In: Chen, C., H&auml;rdle, W., Unwin, A. (Eds.),
+In: Chen, C., Härdle, W., Unwin, A. (Eds.),
 <i>Handbook of Data Visualization</i>,
-Springer, Berlin/Heidelberg, 267-294 &2 Color Plates.
+Springer, Berlin/Heidelberg, 267-294 & 2 Color Plates.
 </p></li>
 
 <li><p>
-Cizek, P., Härdle, W., Symanzik, J. (2007): Spatial Statistics, In:
- Härdle, W., Mori, Y., Vieu, P. (Eds.),
-Statistical Methods for
-
-Biostatistics and Related Fields, Springer, Berlin/Heidelberg, 285-304.
+Cizek, P., Härdle, W., Symanzik, J. 
+(2007): 
+Spatial Statistics, 
+In: Härdle, W., Mori, Y., Vieu, P. (Eds.),
+<i>Statistical Methods for Biostatistics and Related Fields</i>, 
+Springer, Berlin/Heidelberg, 285-304.
 </p></li>
 
 <li><p>
-Symanzik, J. (2004): Interactive and Dynamic Graphics, In: Gentle, J.
- E., Härdle, W., Mori, Y. (Eds.),
-Handbook of Computational Statistics
-
-- Concepts and Methods, Springer, Berlin/Heidelberg, 293-336.
+Symanzik, J. 
+(2004): 
+Interactive and Dynamic Graphics, 
+In: Gentle, J. E., Härdle, W., Mori, Y. (Eds.),
+<i>Handbook of Computational Statistics - Concepts and Methods</i>, 
+Springer, Berlin/Heidelberg, 293-336.
 </p></li>
 
 <li><p>
-Klinke, S., Symanzik, J., Müller, M. (2000): Reading and Writing Data,
- In: Härdle, W., Klinke, S., Müller, M. (Eds.),
-XploRe - Learning
-
-Guide, Springer-Verlag, Berlin, Heidelberg, 411-427.
+Klinke, S., Symanzik, J., Müller, M. 
+(2000): 
+Reading and Writing Data,
+In: Härdle, W., Klinke, S., Müller, M. (Eds.),
+<i>XploRe - Learning Guide</i>, 
+Springer-Verlag, Berlin, Heidelberg, 411-427.
 </p></li>
 </ul>
 
@@ -572,127 +585,117 @@ Refereed Conference Proceedings:</a></h3>
 
 <ul>
 <li><p>
-Dai, X., Symanzik, J., Sharif, A., Fu, G. (2017): Quantitative
- Genetic and Environmental Mapping and Visual Exploration for Leaf
- Shape Variation, In: Lestrel, P. E. (Ed.),
-Biological Shape Analysis:
-
-Proceedings of the 4th International Symposium (ISBSA), School of
-
-Dentistry, UCLA, USA, 19-22 June 2015, World Scientific Publishing,
- Singapore, 95-112.
+Li, C., Symanzik, J. 
+(2024):
+The Linked Microposter Plots Family as New Means for the Visualization of Eye Tracking Data,
+In: Mori, H. and Asahi, Y. (Eds.),
+<i>Human Interface and the Management of Information, HCII 2024, 
+Lecture Notes in Computer Science, Vol. 14690</i>,
+Springer Nature, Cham, Switzerland, 65-82.
+[<a href="https://doi.org/10.1007/978-3-031-60114-9_6>https://doi.org/10.1007/978-3-031-60114-9_6</a>]
 </p></li>
 
 <li><p>
-Symanzik, J., Bao, S., Dai, X., Shui, M., She, B. (2016): Recent
- Advancements in Geovisualization, with a Case Study on Chinese
- Religions, In: Jin, Z., Liu, M., Luo, X. (Eds.),
-New Developments in
-
-Statistical Modeling, Inference and Application: Selected Papers from
-
-the 2014 ICSA/KISS Joint Applied Statistics Symposium in Portland,
-
-OR, Springer, Switzerland, 151-166.
+Dai, X., Symanzik, J., Sharif, A., Fu, G. 
+(2017): 
+Quantitative Genetic and Environmental Mapping and Visual Exploration for Leaf Shape Variation, 
+In: Lestrel, P. E. (Ed.),
+<i>Biological Shape Analysis: Proceedings of the 4th International Symposium (ISBSA), 
+School of Dentistry, UCLA, USA, 19-22 June 2015</i>, 
+World Scientific Publishing, Singapore, 95-112.
 </p></li>
 
 <li><p>
-Moyer-Packenham, P. S., Anderson, K. L., Shumway, J. F., Tucker,
- S., Westenskow, A., Boyer-Thurgood, J., Bullock, E., Mahamane, S.,
- Baker, J., Gulkilik, H., Maahs-Fladung, C., Symanzik, J., Jordan, K.
- (2014): Developing Research Tools for Young Childrens Interactions
- with Mathematics Apps on the iPad,
-2014 Conference Proceedings,
+Symanzik, J., Bao, S., Dai, X., Shui, M., She, B. 
+(2016): 
+Recent Advancements in Geovisualization, with a Case Study on Chinese Religions, 
+In: Jin, Z., Liu, M., Luo, X. (Eds.),
+<i>New Developments in Statistical Modeling, Inference and Application: 
+Selected Papers from the 2014 ICSA/KISS Joint Applied Statistics Symposium in Portland, OR</i>, 
+Springer, Switzerland, 151-166.
+</p></li>
 
-Hawaii International Conference on Education, Honolulu, Hawaii,
-
-January 5-8, 2014.
+<li><p>
+Moyer-Packenham, P. S., Anderson, K. L., Shumway, J. F., Tucker, S., Westenskow, A., 
+Boyer-Thurgood, J., Bullock, E., Mahamane, S., Baker, J., Gulkilik, H., 
+Maahs-Fladung, C., Symanzik, J., Jordan, K.
+(2014): 
+Developing Research Tools for Young Children's Interactions with Mathematics Apps on the iPad,
+<i>2014 Conference Proceedings, Hawaii International Conference on Education, 
+Honolulu, Hawaii, January 5-8, 2014</i>.
 </p></li>
 
 <li><p>
 Andrienko, G., Andrienko, N., Fuchs, G., Olteanu Raimond, A.-M.,
- Symanzik, J., Ziemlicki, C. (2013): Extracting Semantics of Individual
- Places from Movement Data by Analyzing Temporal Patterns of
- Visits,
-COMP 2013, ACM SIGSPATIAL International Workshop on
-
-Computational Models of Place, November 5, 2013, Orlando, Florida,
-
-USA, ACM, <a 
-href="http://stko.geog.ucsb.edu/comp2013/"> 
-http://stko.geog.ucsb.edu/comp2013/</a>. 
+Symanzik, J., Ziemlicki, C. 
+(2013): 
+Extracting Semantics of Individual Places from Movement Data by 
+Analyzing Temporal Patterns of Visits,
+<i>COMP 2013, ACM SIGSPATIAL International Workshop on Computational Models of Place, 
+November 5, 2013, Orlando, Florida, USA</i>, 
+ACM.
+[<a href="http://stko.geog.ucsb.edu/comp2013/">http://stko.geog.ucsb.edu/comp2013/</a>]
 </p></li>
 
 <li><p>
-Symanzik, J., Vukasinovic, N. (2002): Teaching Statistics with
- Electronic Textbooks, In: Härdle, W., Rönz, B. (Eds.),
-COMPSTAT
-
-2002: Proceedings in Computational Statistics, Physica-Verlag,
- Heidelberg, 79-90.
+Symanzik, J., Vukasinovic, N. 
+(2002): 
+Teaching Statistics with Electronic Textbooks, 
+In: Härdle, W., Rönz, B. (Eds.),
+<i>COMPSTAT 2002: Proceedings in Computational Statistics</i>, 
+Physica-Verlag, Heidelberg, 79-90.
 </p></li>
 
 <li><p>
-Schneider, M., Stamm, C., Symanzik, J., Widmayer, P. (2000): Virtual
- Reality and Dynamic Statistical Graphics: A Bidirectional Link in a
- Heterogeneous, Distributed Computing Environment, In: Arabnia, H.
- R. (Ed.),
-Proceedings of the International Conference on Parallel and
-
+Schneider, M., Stamm, C., Symanzik, J., Widmayer, P. 
+(2000): 
+Virtual Reality and Dynamic Statistical Graphics: A Bidirectional Link in a
+Heterogeneous, Distributed Computing Environment, 
+In: Arabnia, H. R. (Ed.),
+<i>Proceedings of the International Conference on Parallel and
 Distributed Processing Techniques and Applications (PDPTA'2000),
-
-Las Vegas, Nevada, June 26-29, 2000, CSREA Press, Volume IV,
- 2345-2351.
+Las Vegas, Nevada, June 26-29, 2000</i>, 
+CSREA Press, Volume IV, 2345-2351.
 </p></li>
 
 <li><p>
-Symanzik, J., Wong, D., Wang, J., Carr, D. B., Woodruff, T. J.,
- Axelrad, D. A. (2000): Web-Based Access and Visualization of
- Hazardous Air Pollutants,
-Geographic Information Systems in Public
-
-Health: Proceedings of the Third National Conference August 18-20,
-
-1998, San Diego, California, Agency for Toxic Substances and Disease
- Registry, <br 
-class="newline" /> <a 
-href="http://www.atsdr.cdc.gov/GIS/conference98/"> 
-http://www.atsdr.cdc.gov/GIS/conference98/</a>.
+Symanzik, J., Wong, D., Wang, J., Carr, D. B., Woodruff, T. J., Axelrad, D. A. 
+(2000): 
+Web-Based Access and Visualization of Hazardous Air Pollutants,
+<i>Geographic Information Systems in Public Health: 
+Proceedings of the Third National Conference August 18-20, 1998, San Diego, California</i>, 
+Agency for Toxic Substances and Disease Registry. 
+[<a href="http://www.atsdr.cdc.gov/GIS/conference98/">http://www.atsdr.cdc.gov/GIS/conference98/</a>]
 </p></li>
 
 <li><p>
-Symanzik, J., Majure, J. J., Cook, D. (1997): The Linked ArcView 2.1
- and XGobi Environment - GIS, Dynamic Statistical Graphics, and
- Spatial Data, In: Shekhar, S., Bergougnoux, P. (Eds.),
-Proceedings of
-
-the Fourth ACM Workshop on Advances in Geographic Information
-
-Systems, Rockville, Maryland, November 15-16, 1996, ACM, New
- York, New York, 147-154.
+Symanzik, J., Majure, J. J., Cook, D. 
+(1997): 
+The Linked ArcView 2.1 and XGobi Environment - GIS, Dynamic Statistical Graphics, and Spatial Data, 
+In: Shekhar, S., Bergougnoux, P. (Eds.),
+<i>Proceedings of the Fourth ACM Workshop on Advances in Geographic Information Systems, 
+Rockville, Maryland, November 15-16, 1996</i>, 
+ACM, New York, New York, 147-154.
 </p></li>
 
 <li><p>
-Cook, D., Cressie, N., Majure, J., Symanzik, J. (1994): Some Dynamic
- Graphics for Spatial Data (with Multiple Attributes) in a GIS, In:
- Dutter, R., Grossmann, W. (Eds.),
-COMPSTAT 1994: Proceedings in
-
-Computational Statistics, Physica-Verlag, Heidelberg, 105-119.
+Cook, D., Cressie, N., Majure, J., Symanzik, J. 
+(1994): 
+Some Dynamic Graphics for Spatial Data (with Multiple Attributes) in a GIS, 
+In: Dutter, R., Grossmann, W. (Eds.),
+<i>COMPSTAT 1994: Proceedings in Computational Statistics</i>, 
+Physica-Verlag, Heidelberg, 105-119.
 </p></li>
 
 <li><p>
-Symanzik, J. (1993): Anaglyphen 3D - A Program for the Interactive
- Representation of Three-Dimensional Perspective Plots of Statistical
- Data, In: Opitz, O., Lausen, B., Klar, R. (Eds.),
-Information and
-
-Classification. Concepts, Methods and Applications. Proceedings of the
-
-16th Annual Conference of the &#8220;Gesellschaft f 
-ür Klassifikation e. 
- V.&#8221;,
- Springer-Verlag, Berlin, Heidelberg, 384-389.
+Symanzik, J. 
+(1993): 
+Anaglyphen 3D - A Program for the Interactive Representation of 
+Three-Dimensional Perspective Plots of Statistical Data, 
+In: Opitz, O., Lausen, B., Klar, R. (Eds.),
+<i>Information and Classification. Concepts, Methods and Applications. Proceedings of the
+16th Annual Conference of the ``Gesellschaft für Klassifikation e. V.''</i>,
+Springer-Verlag, Berlin, Heidelberg, 384-389.
 </p></li>
 </ul>
 
