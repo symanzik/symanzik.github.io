@@ -1542,69 +1542,50 @@ Videos:</a></h3>
 <ul>
 <li><p>
 Cook, D., Lechner, U., Symanzik, J., Kohlmeyer, B. D., Cruz-Neira, C.
- (1996):
-Interaction Tools for Dynamic Statistical Graphics in a Highly
-
-Immersive Environment, ASA Statistical Graphics Video Library
- (<a 
-href="http://stat-graphics.org/movies/"> 
-http://stat-graphics.org/movies/</a>).
+(1996):
+Interaction Tools for Dynamic Statistical Graphics in a Highly Immersive Environment, 
+<i>ASA Statistical Graphics Video Library</i>.
+[<a href="http://stat-graphics.org/movies/">http://stat-graphics.org/movies/</a>]
 </p></li>
 
 <li><p>
-Symanzik, J., Cook, D., Kohlmeyer, B. D., Lechner, U., Cruz-Neira,
- C. (1996):
-Dynamic Statistical Graphics in a Highly Immersive
-
-Environment (People Version), ASA Statistical Graphics Video
- Library (<a 
-href="http://stat-graphics.org/movies/"> 
-http://stat-graphics.org/movies/</a>).
+Symanzik, J., Cook, D., Kohlmeyer, B. D., Lechner, U., Cruz-Neira, C. 
+(1996):
+Dynamic Statistical Graphics in a Highly Immersive Environment (People Version), 
+<i>ASA Statistical Graphics Video Library</i>.
+[<a href="http://stat-graphics.org/movies/">http://stat-graphics.org/movies/</a>]
 </p></li>
 
 <li><p>
-Symanzik, J., Cook, D., Kohlmeyer, B.
- D., Lechner, U., Cruz-Neira, C. (1996):
-Dynamic Statistical Graphics
-
-in a Highly Immersive Environment, ASA Statistical Graphics Video
- Library (<a 
-href="http://stat-graphics.org/movies/"> 
-http://stat-graphics.org/movies/</a>).
+Symanzik, J., Cook, D., Kohlmeyer, B. D., Lechner, U., Cruz-Neira, C. 
+(1996):
+Dynamic Statistical Graphics in a Highly Immersive Environment, 
+<i>ASA Statistical Graphics Video Library</i>.
+[<a href="http://stat-graphics.org/movies/">http://stat-graphics.org/movies/</a>]
 </p></li>
 
 <li><p>
-Majure, J. J., Cook,
- D., Symanzik, J., Megretskaia, I. (1996):
-An Interactive Environment
-
-for the Graphical Analysis of Spatial Data, ASA Statistical Graphics
- Video Library (<a 
-href="http://stat-graphics.org/movies/"> 
-http://stat-graphics.org/movies/</a>).
+Majure, J. J., Cook, D., Symanzik, J., Megretskaia, I. 
+(1996):
+An Interactive Environment for the Graphical Analysis of Spatial Data, 
+<i>ASA Statistical Graphics Video Library</i>.
+[<a href="http://stat-graphics.org/movies/">http://stat-graphics.org/movies/</a>]
 </p></li>
 
 <li><p>
-Majure, J. J., Cook, D., Cressie, N., Kaiser, M., Lahiri, S., Symanzik,
- J. (1995):
-Spatial CDF Estimation and Visualization with Applications
-
-to Forest Health Monitoring, ASA Statistical Graphics Video Library
- (<a 
-href="http://stat-graphics.org/movies/"> 
-http://stat-graphics.org/movies/</a>).
+Majure, J. J., Cook, D., Cressie, N., Kaiser, M., Lahiri, S., Symanzik, J. 
+(1995):
+Spatial CDF Estimation and Visualization with Applications to Forest Health Monitoring, 
+<i>ASA Statistical Graphics Video Library</i>.
+[<a href="http://stat-graphics.org/movies/">http://stat-graphics.org/movies/</a>]
 </p></li>
 
 <li><p>
-Symanzik, J., Majure, J. J., Cook, D. (1995):
-Dynamic Graphics in a
-
-GIS: Analyzing and
-
-Exploring Multivariate Spatial Data, ASA Statistical Graphics Video
- Library (<a 
-href="http://stat-graphics.org/movies/"> 
-http://stat-graphics.org/movies/</a>).
+Symanzik, J., Majure, J. J., Cook, D. 
+(1995):
+Dynamic Graphics in a GIS: Analyzing and Exploring Multivariate Spatial Data, 
+<i>ASA Statistical Graphics Video Library</i> 
+[<a href="http://stat-graphics.org/movies/">http://stat-graphics.org/movies/</a>]
 </p></li>
 </ul>
 
