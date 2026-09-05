@@ -712,221 +712,238 @@ Conference Proceedings (Non-Refereed):</a></h3>
 
 <ul>
 <li><p>
-McKinney, E., Symanzik, J. (2021): Extensions to the Syrjala Test with
- Eye-Tracking Analysis Applications,
-2021 JSM Proceedings, American
- Statistical Association, Alexandria, Virginia, Forthcoming.
+Symanzik, J., Holdrege, M. 
+(2025):
+Linked Micromap Plots for Point Locations,
+<i>2025 JSM Proceedings</i>,
+American Statistical Association, Alexandria, Virginia, 
+[<a href="https://doi.org/10.5281/zenodo.17382888">https://doi.org/10.5281/zenodo.17382888</a>]
 </p></li>
 
 <li><p>
-Medri, J., Coltrin, J. D., Fleming, A., Hilyard, C., Telllez, R.,
- Symanzik, J. (2021): Is Africa Ready for a New Regional IASC
- Section? Results and Student Experiences from a Web Scraping
- Assignment, In: Moncayo-Martínez, L. A., Muñoz, D. F. (Eds.)
-
-Applications of Statistical Computing, V Latin American Conference
-
-on Statistical Computing, 19-21 April, 2021, Conference Proceedings,
- Instituto Tecnológico Autónomo de México (ITAM), Mexico City,
- Mexico, 81-89.
+McKinney, E., Symanzik, J. 
+(2021): 
+Extensions to the Syrjala Test with Eye-Tracking Analysis Applications,
+<i>2021 JSM Proceedings</i>, 
+American Statistical Association, Alexandria, Virginia,
+CD.
 </p></li>
 
 <li><p>
-Coltrin, J., McKinney, E., Studenka, B., Symanzik, J. (2020): Defining
- Areas of Interest for Eye-Tracking Data: Implementing a Systematic
- Approach,
-2020 JSM Proceedings, American Statistical Association,
- Alexandria, Virginia, CD.
+Medri, J., Coltrin, J. D., Fleming, A., Hilyard, C., Telllez, R., Symanzik, J. 
+(2021): 
+Is Africa Ready for a New Regional IASC  Section? Results and Student Experiences 
+from a Web Scraping Assignment, 
+In: Moncayo-Martínez, L. A., Muñoz, D. F. (Eds.)
+<i>Applications of Statistical Computing, V Latin American Conference
+on Statistical Computing, 19-21 April, 2021, Conference Proceedings</i>,
+Instituto Tecnológico Autónomo de México (ITAM), Mexico City, Mexico, 81-89.
 </p></li>
 
 <li><p>
-Probst, B., Symanzik, J. (2020): Using &#8216;rmapshaper' to Modify Boundary
- Files for Use in Linked Micromap Plots,
-Proceeding, Contributed Paper
-
-Session Volume 4, 62nd ISI World Statistics Congress 2019, 18-23
-
-August 2019, Kuala Lumpur, Malaysia, Department of Statistics Malaysia,
- Putrajaya, Malaysia, 281-289, <a 
-href="http://2019.isiproceedings.org/Files/10.Contributed-Paper-Session(CPS)-Volume-4.pdf"> 
-http://2019.isiproceedings.org/Files/10.Contributed-Paper-Session(CPS)-Volume-4.pdf</a>.
+Coltrin, J., McKinney, E., Studenka, B., Symanzik, J. 
+(2020): 
+Defining Areas of Interest for Eye-Tracking Data: Implementing a Systematic Approach,
+<i>2020 JSM Proceedings</i>, 
+American Statistical Association, Alexandria, Virginia, 
+CD.
 </p></li>
 
 <li><p>
-McKinney, E., Symanzik, J. (2019): Modifications of the Syrjala Test
- for Testing Spatial Distribution Differences Between Two Populations,
-
-2019 JSM Proceedings, American Statistical Association, Alexandria,
- Virginia, CD.
+Probst, B., Symanzik, J. 
+(2020): 
+Using `rmapshaper' to Modify Boundary Files for Use in Linked Micromap Plots,
+<i>Proceeding, Contributed Paper Session Volume 4, 62nd ISI World Statistics Congress 2019, 
+18-23 August 2019, Kuala Lumpur, Malaysia</i>, 
+Department of Statistics Malaysia, Putrajaya, Malaysia, 281-289.
+[<a href="http://2019.isiproceedings.org/Files/10.Contributed-Paper-Session(CPS)-Volume-4.pdf">http://2019.isiproceedings.org/Files/10.Contributed-Paper-Session(CPS)-Volume-4.pdf</a>]
 </p></li>
 
 <li><p>
-Medri, J., Probst, B. D., Symanzik, J. (2019): Housing Affordability
- and Immigration: An Exploratory Analysis in New York City,
-
-2019 JSM Proceedings, American Statistical Association, Alexandria,
- Virginia, CD.
+McKinney, E., Symanzik, J. 
+(2019): 
+Modifications of the Syrjala Test for Testing Spatial Distribution Differences Between Two Populations,
+<i>2019 JSM Proceedings</i>, 
+American Statistical Association, Alexandria, Virginia, 
+CD.
 </p></li>
 
 <li><p>
-Symanzik, J., Friendly, M., Onder, O. (2019): The Unsinkable Titanic
- Data,
-2019 JSM Proceedings, American Statistical Association,
- Alexandria, Virginia, CD.
+Medri, J., Probst, B. D., Symanzik, J. 
+(2019): 
+Housing Affordability and Immigration: An Exploratory Analysis in New York City,
+<i>2019 JSM Proceedings</i>, 
+American Statistical Association, Alexandria, Virginia, CD.
 </p></li>
 
 <li><p>
-Lundell, J., Bean, B., Symanzik, J. (2018): Let's Talk About the
- Weather,
-2018 JSM Proceedings, American Statistical Association,
- Alexandria, Virginia, CD.
+Symanzik, J., Friendly, M., Onder, O. 
+(2019): 
+The Unsinkable Titanic Data,
+<i>2019 JSM Proceedings</i>, 
+American Statistical Association, Alexandria, Virginia, 
+CD.
 </p></li>
 
 <li><p>
-Symanzik, J., McKinney, E., Studenka, B., Bean, B., Athens, M.,
- Hansen, M. (2018): Eye-Tracking in Practice: Results from a Study
- on Human Postures,
-2018 JSM Proceedings, American Statistical
- Association, Alexandria, Virginia, CD.
+Lundell, J., Bean, B., Symanzik, J. 
+(2018): 
+Let's Talk About the Weather,
+<i>2018 JSM Proceedings</i>, 
+American Statistical Association, Alexandria, Virginia, 
+CD.
 </p></li>
 
 <li><p>
-Li, C., Symanzik, J. (2017): EyeTrackR: An R Package for Extracting
- and Visualizing Data from Mobile and Static Eye Trackers,
-2018 JSM
-
-Proceedings, American Statistical Association, Alexandria, Virginia,
- CD.
+Symanzik, J., McKinney, E., Studenka, B., Bean, B., Athens, M., Hansen, M. 
+(2018): 
+Eye-Tracking in Practice: Results from a Study on Human Postures,
+<i>2018 JSM Proceedings</i>, 
+American Statistical Association, Alexandria, Virginia, 
+CD.
 </p></li>
 
 <li><p>
-Symanzik, J., Li, C., Zhang, B., Studenka, B., McKinney, E. (2017):
- Eye-Tracking in Practice: A First Analysis of a Study on Human
- Postures,
-2017 JSM Proceedings, American Statistical Association,
- Alexandria, Virginia, CD.
+Li, C., Symanzik, J. 
+(2017): 
+EyeTrackR: An R Package for Extracting and Visualizing Data from Mobile and Static Eye Trackers,
+<i>2018 JSM Proceedings</i>, 
+American Statistical Association, Alexandria, Virginia,
+CD.
 </p></li>
 
 <li><p>
-Li, C., Symanzik, J. (2016): The Linked Microposter Plot as a
- New Means for the Visualization of Eye Tracking Data,
-2016 JSM
-
-Proceedings, American Statistical Association, Alexandria, Virginia,
- CD.
+Symanzik, J., Li, C., Zhang, B., Studenka, B., McKinney, E. 
+(2017):
+Eye-Tracking in Practice: A First Analysis of a Study on Human Postures,
+<i>2017 JSM Proceedings</i>, 
+American Statistical Association, Alexandria, Virginia, 
+CD.
 </p></li>
 
 <li><p>
-Symanzik, J., Robbins, N. B., Heiberger, R. M. (2016): Observations
- on the Type and Quality of Graphs Used in the ASA/NCTM
- Annual Poster Competition during the Years 2013 to 2016,
-2016 JSM
-
-Proceedings, American Statistical Association, Alexandria, Virginia,
- CD.
+Li, C., Symanzik, J. 
+(2016): 
+The Linked Microposter Plot as a New Means for the Visualization of Eye Tracking Data,
+<i>2016 JSM Proceedings</i>, 
+American Statistical Association, Alexandria, Virginia,
+CD.
 </p></li>
 
 <li><p>
-Dai, X., Symanzik, J. (2014): Tree Representations of XML and JSON
- Data Formats with an Implementation in R,
-2014 JSM Proceedings,
- American Statistical Association, Alexandria, Virginia, CD.
+Symanzik, J., Robbins, N. B., Heiberger, R. M. 
+(2016): 
+Observations on the Type and Quality of Graphs Used in the ASA/NCTM
+Annual Poster Competition during the Years 2013 to 2016,
+<i>2016 JSM Proceedings</i>, 
+American Statistical Association, Alexandria, Virginia,
+CD.
 </p></li>
 
 <li><p>
-Heiberger, R. M., Robbins, N. B., Symanzik, J. (2014): Statistical
- Graphics Recommendations for the ASA/NCTM Annual Poster
- Competition and Project Competition,
-2014 JSM Proceedings,
- American Statistical Association, Alexandria, Virginia, CD.
+Dai, X., Symanzik, J. 
+(2014): 
+Tree Representations of XML and JSON Data Formats with an Implementation in R,
+<i>2014 JSM Proceedings</i>,
+American Statistical Association, Alexandria, Virginia, 
+CD.
 </p></li>
 
 <li><p>
-Moyer-Packenham, P. S., Westenskow, A., Shumway, J. F., Bullock,
- E., Tucker, S. I., Anderson-Pence, K. L., Boyer-Thurgood, J.,
- Maahs-Fladung, C., Symanzik, J., Mahamane, S., MacDonald, B.,
- Jordan, K. (2014): The Effects of Different Virtual Manipulatives
- for Second Graders' Mathematics Learning in the Touch-screen
- Environment.
-Proceedings of the 12th International Conference of the
-
-Mathematics Education into the 21st Century Project, Vol. 1, 1-6,
- Herceg Novi, Montenegro.
+Heiberger, R. M., Robbins, N. B., Symanzik, J. 
+(2014): 
+Statistical Graphics Recommendations for the ASA/NCTM Annual Poster
+Competition and Project Competition,
+<i>2014 JSM Proceedings</i>,
+American Statistical Association, Alexandria, Virginia, 
+CD.
 </p></li>
 
 <li><p>
-Quach, A., Symanzik, J., Forsgren Velasquez, N. (2013): Soul of the
- Community: A First Attempt to Assess Attachment to a Community,
-
-2013 JSM Proceedings, American Statistical Association, Alexandria,
- Virginia, CD.
+Moyer-Packenham, P. S., Westenskow, A., Shumway, J. F., Bullock, E., Tucker, S. I., 
+Anderson-Pence, K. L., Boyer-Thurgood, J., Maahs-Fladung, C., Symanzik, J., 
+Mahamane, S., MacDonald, B., Jordan, K. 
+(2014): 
+The Effects of Different Virtual Manipulatives for Second Graders' Mathematics Learning 
+in the Touch-screen Environment,
+<i>Proceedings of the 12th International Conference of the
+Mathematics Education into the 21st Century Project</i>, 
+Vol. 1, 1-6, 
+Herceg Novi, Montenegro.
 </p></li>
 
 <li><p>
-Aghababyan, A., Symanzik, J., Martin, T. (2013): Visualization of
- &#8220;States&#8221; in Online Educational Games,
-Proceedings of the 59th World
-
-Statistics Congress of the International Statistical Institute, Hong
-
-Kong, International Statistical Institute, The Hague, The Netherlands,
- 3382-3387,
- <a 
-href="http://2013.isiproceedings.org/Files/CPS007-P7-S.pdf"> 
-http://2013.isiproceedings.org/Files/CPS007-P7-S.pdf</a>.
+Quach, A., Symanzik, J., Forsgren Velasquez, N. 
+(2013): 
+Soul of the Community: A First Attempt to Assess Attachment to a Community,
+<i>2013 JSM Proceedings</i>, 
+American Statistical Association, Alexandria, Virginia, 
+CD.
 </p></li>
 
 <li><p>
-Symanzik, J., Carr, D. B. (2013): Linked Micromap Plots in R, In:
- Cho, S.-H. (Ed.),
-Proceedings of Joint Meeting of the IASC Satellite
-
-Conference and the 8th Conference of the Asian Regional Section of
-
-the IASC, Asian Regional Section of the IASC, 213-218.
+Aghababyan, A., Symanzik, J., Martin, T. 
+(2013): 
+Visualization of ``States'' in Online Educational Games,
+<i>Proceedings of the 59th World Statistics Congress of the International Statistical Institute, 
+Hong Kong</i>, 
+International Statistical Institute, The Hague, The Netherlands, 3382-3387.
+[<a href="http://2013.isiproceedings.org/Files/CPS007-P7-S.pdf">http://2013.isiproceedings.org/Files/CPS007-P7-S.pdf</a>]
 </p></li>
 
 <li><p>
-Sharif, A., Symanzik, J. (2013): ActiVis, an R Package for the
- Visualization of Functional Actigraphy Data (and Beyond), In: Cho,
- S.-H. (Ed.),
-Proceedings of Joint Meeting of the IASC Satellite
-
-Conference and the 8th Conference of the Asian Regional Section of
-
-the IASC, Asian Regional Section of the IASC, 145-150.
+Symanzik, J., Carr, D. B. 
+(2013): 
+Linked Micromap Plots in R, 
+In: Cho, S.-H. (Ed.),
+<i>Proceedings of Joint Meeting of the IASC Satellite Conference and 
+the 8th Conference of the Asian Regional Section of the IASC</i>, 
+Asian Regional Section of the IASC, 213-218.
 </p></li>
 
 <li><p>
-Sharif, A., Symanzik, J. (2012): Graphical Representation of Clustered
- Functional Actigraphy Data,
-2012 JSM Proceedings, American
- Statistical Association, Alexandria, Virginia, CD.
+Sharif, A., Symanzik, J. 
+(2013): 
+ActiVis, an R Package for the Visualization of Functional Actigraphy Data (and Beyond), 
+In: Cho, S.-H. (Ed.),
+<i>Proceedings of Joint Meeting of the IASC Satellite Conference and 
+the 8th Conference of the Asian Regional Section of the IASC</i>, 
+Asian Regional Section of the IASC, 145-150.
 </p></li>
 
 <li><p>
-Voge, N. D., Symanzik, J. (2011): Ignoring the Spatial Context in Intro
- Stats Classes - And Some Simple Graphical Remedies,
-2011 JSM
-
-Proceedings, American Statistical Association, Alexandria, Virginia,
- CD.
+Sharif, A., Symanzik, J. 
+(2012): 
+Graphical Representation of Clustered Functional Actigraphy Data,
+<i>2012 JSM Proceedings</i>, 
+American Statistical Association, Alexandria, Virginia, 
+CD.
 </p></li>
 
 <li><p>
-Sherick, P., Symanzik, J., Shannon, W. D. (2010): Accuracy, Bias, and
- Notable Observations for Experimental Actigraphy Data,
-2010 JSM
-
-Proceedings, American Statistical Association, Alexandria, Virginia,
- CD.
+Voge, N. D., Symanzik, J. 
+(2011): 
+Ignoring the Spatial Context in Intro Stats Classes - And Some Simple Graphical Remedies,
+<i>2011 JSM Proceedings</i>, 
+American Statistical Association, Alexandria, Virginia,
+CD.
 </p></li>
 
 <li><p>
-Sharif, A., Symanzik, J., Shannon, W. D. (2010): An Object-Oriented
- Approach in R for the Visualization of Functional Actigraphy Data,
+Sherick, P., Symanzik, J., Shannon, W. D. 
+(2010): 
+Accuracy, Bias, and Notable Observations for Experimental Actigraphy Data,
+<i>2010 JSM Proceedings</i>, 
+American Statistical Association, Alexandria, Virginia,
+CD.
+</p></li>
 
-Computing Science and Statistics, Vol. 41, Forthcoming.
+<li><p>
+Sharif, A., Symanzik, J., Shannon, W. D. 
+(2010): 
+An Object-Oriented Approach in R for the Visualization of Functional Actigraphy Data,
+<i>Computing Science and Statistics</i>, 
+Vol. 41, Forthcoming.
 </p></li>
 
 <li><p>
@@ -940,347 +957,339 @@ CD.
 </p></li>
 
 <li><p>
-Symanzik, J., Wallet, B., Shannon, W. (2007): The Image Grand
- Tour for Exploring Medical Images,
-2007 JSM Proceedings, American
- Statistical Association, Alexandria, Virginia, CD.
+Symanzik, J., Wallet, B., Shannon, W. 
+(2007): 
+The Image Grand Tour for Exploring Medical Images,
+<i>2007 JSM Proceedings</i>, 
+American Statistical Association, Alexandria, Virginia, 
+CD.
 </p></li>
 
 <li><p>
-Symanzik, J., Vukasinovic, N. (2006): Changing Answers in Exams -
- For the Better or for the Worse?
-2006 JSM Proceedings, American
- Statistical Association, Alexandria, Virginia, CD.
+Symanzik, J., Vukasinovic, N. 
+(2006): 
+Changing Answers in Exams - For the Better or for the Worse?
+<i>2006 JSM Proceedings</i>, 
+American Statistical Association, Alexandria, Virginia, 
+CD.
 </p></li>
 
 <li><p>
-Zhao, Q., Symanzik, J. (2006): A Spatio-Temporal Model for Urban
- Growth Using Impervious Surface Area Images,
-Computing Science
-
-and Statistics, Vol. 38, CD, Forthcoming.
+Zhao, Q., Symanzik, J. 
+(2006): 
+A Spatio-Temporal Model for Urban Growth Using Impervious Surface Area Images,
+<i>Computing Science and Statistics</i>, 
+Vol. 38, CD, Forthcoming.
 </p></li>
 
 <li><p>
-Gillies, R. R., Symanzik, J., Ma, P., Lee, H. I. (2006): NDVI Data
- Reduction for a Fuzzy Statistical Evaluation,
-Computing Science and
-
-Statistics, Vol. 38, CD, Forthcoming.
+Gillies, R. R., Symanzik, J., Ma, P., Lee, H. I. 
+(2006): 
+NDVI Data Reduction for a Fuzzy Statistical Evaluation,
+<i>Computing Science and Statistics</i>, 
+Vol. 38, CD, Forthcoming.
 </p></li>
 
 <li><p>
-Symanzik, J., Vukasinovic, N., Wun, A. C. K. (2005): Experiences with
- International Web-Based Introductory Long-Distance
- Statistics Courses,
-2005 Proceedings, American Statistical Association,
- Alexandria, Virginia, CD.
+Symanzik, J., Vukasinovic, N., Wun, A. C. K. 
+(2005): 
+Experiences with International Web-Based Introductory Long-Distance
+Statistics Courses,
+<i>2005 Proceedings</i>, 
+American Statistical Association, Alexandria, Virginia, 
+CD.
 </p></li>
 
 <li><p>
-Symanzik, J., Erbacher, R., Gaenir, P., Vukasinovic, N., Wun, A. C.
- K. (2004): On the Effect of the Ordering of Questions in Exams - A
- Visual Analysis,
-2004 Proceedings, American Statistical Association,
- Alexandria, Virginia, CD.
+Symanzik, J., Erbacher, R., Gaenir, P., Vukasinovic, N., Wun, A. C. K. 
+(2004): 
+On the Effect of the Ordering of Questions in Exams - A Visual Analysis,
+<i>2004 Proceedings</i>, 
+American Statistical Association, Alexandria, Virginia, 
+CD.
 </p></li>
 
 <li><p>
-Symanzik, J., Gebreab, S., Gillies, R., Wilson, J. (2003): Visualizing
- the Spread of West Nile Virus,
-2003 Proceedings, American Statistical
- Association, Alexandria, Virginia, CD.
+Symanzik, J., Gebreab, S., Gillies, R., Wilson, J. 
+(2003): 
+Visualizing the Spread of West Nile Virus,
+<i>2003 Proceedings</i>, 
+American Statistical Association, Alexandria, Virginia, 
+CD.
 </p></li>
 
 <li><p>
-Hurst, J., Symanzik, J., Gunter, L. (2003): Interactive Federal Statistical
- Data on the Web using &#8220;nViZn&#8221;,
-Computing Science and Statistics,
- Vol. 35, CD &amp; <a 
-href="http://interfacesymposia.org/I03/I2003Proceedings/HurstJon/HurstJon.paper.pdf"> 
-http://interfacesymposia.org/I03/I2003Proceedings/HurstJon/HurstJon.paper.pdf</a>.
+Hurst, J., Symanzik, J., Gunter, L. 
+(2003): 
+Interactive Federal Statistical Data on the Web using ``nViZn'',
+<i>Computing Science and Statistics</i>,
+Vol. 35, CD.
+[<a href="http://interfacesymposia.org/I03/I2003Proceedings/HurstJon/HurstJon.paper.pdf">http://interfacesymposia.org/I03/I2003Proceedings/HurstJon/HurstJon.paper.pdf</a>]
 </p></li>
 
 <li><p>
-Symanzik, J., Hurst, J., Gunter, L. (2002): Recent Developments
- for Interactive Statistical Graphics on the Web using &#8220;nViZn&#8221;,
-2002
-
-Proceedings, American Statistical Association, Alexandria, Virginia,
- CD.
+Symanzik, J., Hurst, J., Gunter, L. 
+(2002): 
+Recent Developments for Interactive Statistical Graphics on the Web using ``nViZn'',
+<i>2002 Proceedings</i>, 
+American Statistical Association, Alexandria, Virginia,
+CD.
 </p></li>
 
 <li><p>
-Symanzik, J., Swayne, D. F., Temple Lang, D., Cook, D. (2002):
- Software Integration for Multivariate Exploratory Spatial Data
- Analysis,
-New Tools for Spatial Data Analysis: Proceedings of the
-
-Specialist Meeting, Upham Hotel, Santa Barbara, California, May
-
-10-11, 2002, Center for Spatially Integrated Social Science, CD.
+Symanzik, J., Swayne, D. F., Temple Lang, D., Cook, D. 
+(2002):
+Software Integration for Multivariate Exploratory Spatial Data Analysis,
+<i>New Tools for Spatial Data Analysis: Proceedings of the
+Specialist Meeting, Upham Hotel, Santa Barbara, California, May 10-11, 2002</i>, 
+Center for Spatially Integrated Social Science, 
+CD.
 </p></li>
 
 <li><p>
-Symanzik, J., Wegman, E. J., Braverman, A. J., Luo, Q. (2002): New
- Applications of the Image Grand Tour,
-Computing Science and Statistics,
- Vol. 34, CD &amp; <a 
-href="http://interfacesymposia.org/I02/I2002Proceedings/SymanzikJuergen/SymanzikJuergen.paper.pdf"> 
-http://interfacesymposia.org/I02/I2002Proceedings/SymanzikJuergen/SymanzikJuergen.paper.pdf</a>.
+Symanzik, J., Wegman, E. J., Braverman, A. J., Luo, Q. 
+(2002): 
+New Applications of the Image Grand Tour,
+<i>Computing Science and Statistics</i>,
+Vol. 34, CD.
+[<a href="http://interfacesymposia.org/I02/I2002Proceedings/SymanzikJuergen/SymanzikJuergen.paper.pdf">http://interfacesymposia.org/I02/I2002Proceedings/SymanzikJuergen/SymanzikJuergen.paper.pdf</a>]
 </p></li>
 
 <li><p>
-Wegman, E. J., Symanzik, J. (2001): Data Visualization and
- Exploration via Virtual Reality - An Overview,
-Bulletin of
-
-the International Statistical Institute, 53rd Session Seoul 2001,
-
-Proceedings Book 2, 76-79.
+Wegman, E. J., Symanzik, J. 
+(2001): 
+Data Visualization and Exploration via Virtual Reality - An Overview,
+<i>Bulletin of the International Statistical Institute, 53rd Session Seoul 2001, Proceedings Book 2</i>, 
+76-79.
 </p></li>
 
 <li><p>
-Symanzik, J., Jones, L. (2001): &#8220;nViZn&#8221; Federal Statistical Data on the
- Web,
-2001 Proceedings, American Statistical Association, Alexandria,
- Virginia, CD.
+Symanzik, J., Jones, L. 
+(2001): 
+``nViZn'' Federal Statistical Data on the Web,
+<i>2001 Proceedings</i>, 
+American Statistical Association, Alexandria, Virginia, 
+CD.
 </p></li>
 
 <li><p>
-Jones, L., Symanzik, J. (2001): Statistical Visualization of Environmental
- Data on the Web Using nViZn,
-Computing Science and Statistics,
- Vol. 33, CD &amp; <a 
-href="http://interfacesymposia.org/I01/I2001Proceedings/LJones/LJones.pdf"> 
-http://interfacesymposia.org/I01/I2001Proceedings/LJones/LJones.pdf</a>.
+Jones, L., Symanzik, J. 
+(2001): 
+Statistical Visualization of Environmental Data on the Web Using nViZn,
+<i>Computing Science and Statistics</i>,
+Vol. 33, CD.
+[<a href="http://interfacesymposia.org/I01/I2001Proceedings/LJones/LJones.pdf">http://interfacesymposia.org/I01/I2001Proceedings/LJones/LJones.pdf</a>]
 </p></li>
 
 <li><p>
-Symanzik, J., Vukasinovic, N. (2001): Experiences with a Course on
- &#8220;Web-Based Statistics&#8221;,
-Computing Science and Statistics, Vol. 33,
- CD &amp; <br 
-class="newline" /><a 
-href="http://interfacesymposia.org/I01/I2001Proceedings/JSymanzik/JSymanzik.pdf"> 
-http://interfacesymposia.org/I01/I2001Proceedings/JSymanzik/JSymanzik.pdf</a>.
+Symanzik, J., Vukasinovic, N. 
+(2001): 
+Experiences with a Course on ``Web-Based Statistics'',
+<i>Computing Science and Statistics</i>, 
+Vol. 33, CD.
+[<a href="http://interfacesymposia.org/I01/I2001Proceedings/JSymanzik/JSymanzik.pdf">]http://interfacesymposia.org/I01/I2001Proceedings/JSymanzik/JSymanzik.pdf</a>.
 </p></li>
 
 <li><p>
-Symanzik, J., Griffiths, L., Gillies, R. (2000): Visual Exploration of
- Satellite Images,
-2000 Proceedings of the Statistical Computing Section
-
-and Section on Statistical Graphics, American Statistical Association,
- Alexandria, Virginia, 10-19.
+Symanzik, J., Griffiths, L., Gillies, R. 
+(2000): 
+Visual Exploration of Satellite Images,
+<i>2000 Proceedings of the Statistical Computing Section and Section on Statistical Graphics</i>, 
+American Statistical Association, Alexandria, Virginia, 10-19.
 </p></li>
 
 <li><p>
-Lewin-Koh, N. J., Symanzik, J., Cook, D. (1999): Dynamic Linking
- of ArcView, XGobi and XploRe for Multivariate Spatial Data: Linked
- Brushing for Points, Polygons, and Lines,
-Proceedings of the 20th
-
-Asian Conference on Remote Sensing, Hong Kong, China, November
-
-22-25, 1999, Joint Laboratory for Geo Information Science of The
- Chinese Academy of Sciences and The Chinese University of Hong
- Kong (JLGIS), Volume 1, 575-580.
+Lewin-Koh, N. J., Symanzik, J., Cook, D. 
+(1999): 
+Dynamic Linking of ArcView, XGobi and XploRe for Multivariate Spatial Data: 
+Linked Brushing for Points, Polygons, and Lines,
+<i>Proceedings of the 20th Asian Conference on Remote Sensing, Hong Kong, China, November 22-25, 1999</i>, 
+Joint Laboratory for Geo Information Science of The Chinese Academy of Sciences and 
+The Chinese University of Hong Kong (JLGIS), Volume 1, 575-580.
 </p></li>
 
 <li><p>
-Symanzik, J., Carr, D. B., Axelrad, D. A., Wang, J., Wong, D.,
- Woodruff, T. J. (1999): Interactive Tables and Maps - A Glance at
- EPA's Cumulative Exposure Project Web Page,
-1999 Proceedings of
-
-the Section on Statistical Graphics, American Statistical Association,
- Alexandria, Virginia, 94-99.
+Symanzik, J., Carr, D. B., Axelrad, D. A., Wang, J., Wong, D., Woodruff, T. J. 
+(1999): 
+Interactive Tables and Maps - A Glance at EPA's Cumulative Exposure Project Web Page,
+<i>1999 Proceedings of the Section on Statistical Graphics</i>, 
+American Statistical Association, Alexandria, Virginia, 94-99.
 </p></li>
 
 <li><p>
-Symanzik, J., Ascoli, G. A., Washington, S. S., Krichmar, J. L. (1999):
- Visual Data Mining of Brain Cells,
-Computing Science and Statistics,
- Vol. 31, 445-449.
+Symanzik, J., Ascoli, G. A., Washington, S. S., Krichmar, J. L. 
+(1999):
+Visual Data Mining of Brain Cells,
+<i>Computing Science and Statistics</i>,
+Vol. 31, 445-449.
 </p></li>
 
 <li><p>
-Wegman, E. J., Symanzik, J., Vandersluis, J. P., Luo, Q., Camelli,
- F., Dzubay, A., Fu, X., Khumbah, N.-A., Moustafa, R. E. A., Wall,
- R. L., Zhu, Y. (1999): The MiniCAVE - A Voice-Controlled IPT
- Environment, In: Bullinger, H.-J., Riedel, O. (Eds.)
-3. International
-
-Immersive Projection Technology Workshop, 10./11. May 1999,
-
-Center of the Fraunhofer Society Stuttgart IZS, Springer, Heidelberg,
- 179-190.
+Wegman, E. J., Symanzik, J., Vandersluis, J. P., Luo, Q., Camelli, F., Dzubay, A., Fu, X., 
+Khumbah, N.-A., Moustafa, R. E. A., Wall, R. L., Zhu, Y. 
+(1999): 
+The MiniCAVE - A Voice-Controlled IPT Environment, 
+In: Bullinger, H.-J., Riedel, O. (Eds.)
+<i>3. International Immersive Projection Technology Workshop, 10./11. May 1999,
+Center of the Fraunhofer Society Stuttgart IZS</i>, 
+Springer, Heidelberg, 179-190.
 </p></li>
 
 <li><p>
-Symanzik, J., Axelrad, D. A., Carr, D. B., Wang, J., Wong, D.,
- Woodruff, T. J. (1999): HAPs, Micromaps and GPL - Visualization of
- Geographically Referenced Statistical Summaries on the World Wide
- Web,
-1999 American Congress on Surveying and Mapping, Annual
-
-Proceedings, ACSM-WFPS-PLSO-LSAW 1999 Conference CD.
+Symanzik, J., Axelrad, D. A., Carr, D. B., Wang, J., Wong, D., Woodruff, T. J. 
+(1999): 
+HAPs, Micromaps and GPL - Visualization of Geographically Referenced Statistical 
+Summaries on the World Wide Web,
+<i>1999 American Congress on Surveying and Mapping, Annual Proceedings</i>, 
+ACSM-WFPS-PLSO-LSAW 1999 Conference CD.
 </p></li>
 
 <li><p>
-Symanzik, J., Pajarola, R., Widmayer, P. (1998): XGobi and XploRe
- Meet ViRGIS,
-1998 Proceedings of the Section on Statistical Graphics,
- American Statistical Association, Alexandria, Virginia, 50-55.
+Symanzik, J., Pajarola, R., Widmayer, P. 
+(1998): 
+XGobi and XploRe Meet ViRGIS,
+<i>1998 Proceedings of the Section on Statistical Graphics</i>,
+American Statistical Association, Alexandria, Virginia, 50-55.
 </p></li>
 
 <li><p>
-Wilhelm, A. F. X., Wegman, E. J., Symanzik, J. (1998):
- Visual Clustering,
-Short Papers, Data Science Classification and
-
-Related Methods, VI Conference of the International Federation of
-
-Classification Societies, Rome, 21-24 July 1998, 349-352.
+Wilhelm, A. F. X., Wegman, E. J., Symanzik, J. 
+(1998):
+Visual Clustering,
+<i>Short Papers, Data Science Classification and Related Methods, 
+VI Conference of the International Federation of
+Classification Societies, Rome, 21-24 July 1998</i>, 
+349-352.
 </p></li>
 
 <li><p>
-Symanzik, J. (1998): Current Internet Technology and Statistics
- - Blessing or Curse?,
-Computing Science and Statistics, Vol. 30,
- 500-509.
+Symanzik, J. 
+(1998): 
+Current Internet Technology and Statistics - Blessing or Curse?,
+<i>Computing Science and Statistics</i>, 
+Vol. 30, 500-509.
 </p></li>
 
 <li><p>
-Vandersluis, J. P., Cooke, J. D., Ascoli, G. A., Krichmar, J.
- L., Michaels, G. S., Montgomery, M., Symanzik, J., Vitucci, B.
- (1998): Exploratory Statistical Graphics for an Initial Motion Control
- Experiment,
-Computing Science and Statistics, Vol. 30, 482-487.
+Vandersluis, J. P., Cooke, J. D., Ascoli, G. A., Krichmar, J. L., 
+Michaels, G. S., Montgomery, M., Symanzik, J., Vitucci, B.
+(1998): 
+Exploratory Statistical Graphics for an Initial Motion Control Experiment,
+<i>Computing Science and Statistics</i>, 
+Vol. 30, 482-487.
 </p></li>
 
 <li><p>
-Symanzik, J., Cook, D., Klinke, S., Lewin, N. (1998): Exploration of
- Satellite Images in the Dynamically Linked ArcView/XGobi/XploRe
- Environment, In: Bodt, B. A. (Ed.)
-Proceedings of the Third Annual
-
-U.S. Army Conference on Applied Statistics, 22-24 October 1997,
- Army Research Laboratory ARL-SR-74, Aberdeen Proving Ground,
- Maryland, 23-33.
+Symanzik, J., Cook, D., Klinke, S., Lewin, N. 
+(1998): 
+Exploration of Satellite Images in the Dynamically Linked ArcView/XGobi/XploRe Environment, 
+In: Bodt, B. A. (Ed.)
+<i>Proceedings of the Third Annual U.S. Army Conference on Applied Statistics, 22-24 October 1997</i>,
+Army Research Laboratory ARL-SR-74, Aberdeen Proving Ground, Maryland, 23-33.
 </p></li>
 
 <li><p>
-Symanzik, J., Klinke, S., Schmelzer, S., Cook, D., Lewin, N. (1997):
- The ArcView/XGobi/XploRe Environment: Technical Details and
- Applications for Spatial Data Analysis,
-1997 Proceedings of the Section
-
-on Statistical Graphics, American Statistical Association, Alexandria,
- Virginia, 73-78.
+Symanzik, J., Klinke, S., Schmelzer, S., Cook, D., Lewin, N. 
+(1997):
+The ArcView/XGobi/XploRe Environment: Technical Details and Applications for Spatial Data Analysis,
+<i>1997 Proceedings of the Section on Statistical Graphics</i>, 
+American Statistical Association, Alexandria, Virginia, 73-78.
 </p></li>
 
 <li><p>
-Deisinger, J., Cruz-Neira, C., Riedel, O., Symanzik, J. (1997):
- The Effect of Different Viewing Devices for the Sense of
- Presence and Immersion in Virtual Environments: A Comparison of
- Stereoprojections Based on Monitors, HMDs, and Screen, In: Smith,
- M. J., Salvendy, G., Koubek, R. J. (Eds.)
-Advances in Human
-
-Factors/Ergonomics (21B). Design of Computing Systems: Social and
-
-Ergonomic Considerations. Elsevier Science, Amsterdam, 881-884.
+Deisinger, J., Cruz-Neira, C., Riedel, O., Symanzik, J. 
+(1997):
+The Effect of Different Viewing Devices for the Sense of Presence and Immersion 
+in Virtual Environments: A Comparison of Stereoprojections Based on Monitors, HMDs, and Screen, 
+In: Smith, M. J., Salvendy, G., Koubek, R. J. (Eds.)
+<i>Advances in Human Factors/Ergonomics (21B). Design of Computing Systems: 
+Social and Ergonomic Considerations</i>,
+Elsevier Science, Amsterdam, 881-884.
 </p></li>
 
 <li><p>
-Cook, D., Cruz-Neira, C., Lechner, U., Nelson, L., Olsen, A., Pierson,
- S., Symanzik, J. (1997): Using Dynamic Statistical Graphics in
- a Highly Immersive Virtual Reality Environment to Understand
- Multivariate (Spatial) Data,
-Bulletin of the International Statistical
-
-Institute, 51st Session Istanbul 1997, Proceedings Book 2, 31-34.
+Cook, D., Cruz-Neira, C., Lechner, U., Nelson, L., Olsen, A., Pierson, S., Symanzik, J. 
+(1997): 
+Using Dynamic Statistical Graphics in a Highly Immersive Virtual Reality 
+Environment to Understand Multivariate (Spatial) Data,
+<i>Bulletin of the International Statistical Institute, 51st Session Istanbul 1997, Proceedings Book 2<i>, 
+31-34.
 </p></li>
 
 <li><p>
-Symanzik, J., Kötter, T., Schmelzer, S., Klinke, S., Cook, D.,
- Swayne, D. F. (1998): Spatial Data Analysis in the Dynamically
- Linked ArcView/XGobi/XploRe Environment,
-Computing Science
-
-and Statistics, Vol. 29, No. 1, 561-569.
+Symanzik, J., Kötter, T., Schmelzer, S., Klinke, S., Cook, D., Swayne, D. F. 
+(1998): 
+Spatial Data Analysis in the Dynamically Linked ArcView/XGobi/XploRe Environment,
+<i>Computing Science and Statistics</i>, 
+Vol. 29, No. 1, 561-569.
 </p></li>
 
 <li><p>
-Symanzik, J., Cook, D., Kohlmeyer, B. D., Lechner, U., Cruz-Neira,
- C. (1997): Dynamic Statistical Graphics in the C2 Virtual Reality
- Environment,
-Computing Science and Statistics, Vol. 29, No. 2,
- 41-47.
+Symanzik, J., Cook, D., Kohlmeyer, B. D., Lechner, U., Cruz-Neira, C. 
+(1997): 
+Dynamic Statistical Graphics in the C2 Virtual Reality Environment,
+<i>Computing Science and Statistics</i>, 
+Vol. 29, No. 2, 41-47.
 </p></li>
 
 <li><p>
-Symanzik, J., Majure, J. J., Cook, D. (1997): Dynamic Graphics in
- a GIS: A Bidirectional Link between ArcView 2.1 and XGobi - An
- Update,
-Computing Science and Statistics, Vol. 29, No. 2, 35-40.
+Symanzik, J., Majure, J. J., Cook, D. 
+(1997): 
+Dynamic Graphics in a GIS: A Bidirectional Link between ArcView 2.1 and XGobi - An Update,
+<i>Computing Science and Statistics</i>, 
+Vol. 29, No. 2, 35-40.
 </p></li>
 
 <li><p>
-Symanzik, J., Megretskaia, I., Majure, J. J., Cook, D. (1997):
- Implementation Issues of Variogram Cloud Plots and Spatially Lagged
- Scatterplots in the Linked ArcView 2.1 and XGobi Environment,
-
-Computing Science and Statistics, Vol. 28, 369-374.
+Symanzik, J., Megretskaia, I., Majure, J. J., Cook, D. 
+(1997):
+Implementation Issues of Variogram Cloud Plots and Spatially Lagged
+Scatterplots in the Linked ArcView 2.1 and XGobi Environment,
+<i>Computing Science and Statistics</i>, Vol. 28, 369-374.
 </p></li>
 
 <li><p>
-Majure, J. J., Cressie, N., Cook, D., Symanzik, J. (1996): GIS,
- Spatial Statistical Graphics, and Forest Health, In:
-Proceedings of
-
-the Third International Conference/Workshop on Integrating GIS and
-
-Environmental Modeling,
-
-Santa Fe, New Mexico, January 21-25, 1996, National Center for
- Geographic Information and Analysis, Santa Barbara, CA, CD and
-<a 
-href="http://www.ncgia.ucsb.edu/conf/SANTA_FE_CD-ROM/main.html"> 
-http://www.ncgia.ucsb.edu/conf/SANTA_FE_CD-ROM/main.html</a>.
+Majure, J. J., Cressie, N., Cook, D., Symanzik, J. 
+(1996): 
+GIS, Spatial Statistical Graphics, and Forest Health, 
+In:
+<i>Proceedings of the Third International Conference/Workshop on Integrating GIS and
+Environmental Modeling, Santa Fe, New Mexico, January 21-25, 1996</i>, 
+National Center for Geographic Information and Analysis, Santa Barbara, CA, 
+CD.
+[<a href="http://www.ncgia.ucsb.edu/conf/SANTA_FE_CD-ROM/main.html">http://www.ncgia.ucsb.edu/conf/SANTA_FE_CD-ROM/main.html</a>]
 </p></li>
 
 <li><p>
-Symanzik, J., Majure, J. J., Cook, D. (1996): Dynamic Graphics
- in a GIS: A Bidirectional Link between ArcView 2.0 and XGobi,
-
-Computing Science and Statistics, Vol. 27, 299-303.
+Symanzik, J., Majure, J. J., Cook, D. 
+(1996): 
+Dynamic Graphics in a GIS: A Bidirectional Link between ArcView 2.0 and XGobi,
+<i>Computing Science and Statistics</i>, 
+Vol. 27, 299-303.
 </p></li>
 
 <li><p>
-Majure, J. J., Cook, D., Cressie, N., Kaiser, M., Lahiri, S., Symanzik,
- J. (1996): Spatial CDF Estimation and Visualization with Applications
- to Forest Health Monitoring,
-Computing Science and Statistics,
- Vol. 27, 93-101.
+Majure, J. J., Cook, D., Cressie, N., Kaiser, M., Lahiri, S., Symanzik, J. 
+(1996): 
+Spatial CDF Estimation and Visualization with Applications to Forest Health Monitoring,
+<i>Computing Science and Statistics</i>,
+Vol. 27, 93-101.
 </p></li>
 
 <li><p>
-Symanzik, J., Majure, J., Cook, D., Cressie, N. (1994): Dynamic
- Graphics in a GIS: A Link between ARC/INFO and XGobi,
-
-Computing Science and Statistics, Vol. 26, 431-435.
+Symanzik, J., Majure, J., Cook, D., Cressie, N. 
+(1994): 
+Dynamic Graphics in a GIS: A Link between ARC/INFO and XGobi,
+<i>Computing Science and Statistics</i>, 
+Vol. 26, 431-435.
 </p></li>
 
 <li><p>
-Symanzik, J. (1993): Three-Dimensional Statistical Graphics based
- on Interactively Animated Anaglyphs,
-1993 Proceedings of the Section
-
-on Statistical Graphics, American Statistical Association, Alexandria,
- Virginia, 71-76.
+Symanzik, J. 
+(1993): 
+Three-Dimensional Statistical Graphics based on Interactively Animated Anaglyphs,
+<i>1993 Proceedings of the Section on Statistical Graphics</i>, 
+American Statistical Association, Alexandria, Virginia, 71-76.
 </p></li>
 </ul>
 
@@ -1297,119 +1306,145 @@ Other Publications:</a></h3>
 
 <ul>
 <li><p>
-Friendly, M., Symanzik, J., Onder, O. (2019): Visualizing the Titanic
- Disaster,
-Significance, Vol. 16, No. 1, 14-19,
- <a 
-href="https://doi.org/10.1111/j.1740-9713.2019.01229.x"> 
-https://doi.org/10.1111/j.1740-9713.2019.01229.x</a>.
+Symanzik, J., Mori, Y., Vieu, P. 
+(2024):
+A Memorial for the Late Professor Friedrich Leisch,
+<i>Computational Statistics</i>,
+Vol. 39, No. 7, 3485-3492.
+[<a href="https://doi.org/10.1007/s00180-024-01568-0">https://doi.org/10.1007/s00180-024-01568-0</a>]
 </p></li>
 
 <li><p>
-Symanzik, J., Robbins, N. B., Heiberger, R. M. (2014): Observations
- from the Winners of the 2013 Statistics Poster Competition - Praise
- and Future Improvements,
-The Statistics Teacher Network, Vol. 83,
- 2-5, <a 
-href="http://www.amstat.org/education/stn/pdfs/stn83.pdf"> 
-http://www.amstat.org/education/stn/pdfs/stn83.pdf</a>.
+Friendly, M., Symanzik, J., Onder, O. 
+(2019): 
+Visualizing the Titanic Disaster,
+<i>Significance</i>, 
+Vol. 16, No. 1, 14-19.
+[<a href="https://doi.org/10.1111/j.1740-9713.2019.01229.x">https://doi.org/10.1111/j.1740-9713.2019.01229.x</a>]
 </p></li>
 
 <li><p>
-Mori, Y., Herwartz, H., Symanzik, J. (2013): A Memorial for the Late
- Professor Wolfgang Polasek,
-Computational Statistics, Vol. 28, No. 4,
- 1383-1384, <br 
-class="newline" /><a 
-href="https://doi.org/10.1007/s00180-013-0431-8"> 
-https://doi.org/10.1007/s00180-013-0431-8</a>.
+Symanzik, J., Robbins, N. B., Heiberger, R. M. 
+(2014): 
+Observations from the Winners of the 2013 Statistics Poster Competition - 
+Praise and Future Improvements,
+<i>The Statistics Teacher Network</i>, 
+Vol. 83, 2-5. 
+[<a href="http://www.amstat.org/education/stn/pdfs/stn83.pdf">http://www.amstat.org/education/stn/pdfs/stn83.pdf</a>]
 </p></li>
 
 <li><p>
-Ding, J., Symanzik, J., Sharif, A., Wang, J., Duntley, S., Shannon, W.
- D. (2011): Powerful Actigraphy Data
- Through Functional Representation,
-Chance, Vol. 24, No. 3, 30-36,
- <a 
-href="https://doi.org/10.1080/09332480.2011.10739872"> 
-https://doi.org/10.1080/09332480.2011.10739872</a>.
+Mori, Y., Herwartz, H., Symanzik, J. 
+(2013): 
+A Memorial for the Late Professor Wolfgang Polasek,
+<i>Computational Statistics</i>, 
+Vol. 28, No. 4, 1383-1384.
+[<a href="https://doi.org/10.1007/s00180-013-0431-8">https://doi.org/10.1007/s00180-013-0431-8</a>]
 </p></li>
 
 <li><p>
-Symanzik, J. (2011): A Word from our 2011 Section Chairs,
-Statistical
-
-Computing &amp; Statistical Graphics Newsletter, Vol. 21, No. 1, 1-3.
+Ding, J., Symanzik, J., Sharif, A., Wang, J., Duntley, S., Shannon, W. D. 
+(2011): 
+Powerful Actigraphy Data Through Functional Representation,
+<i>Chance</i>, 
+Vol. 24, No. 3, 30-36.
+[<a href="https://doi.org/10.1080/09332480.2011.10739872">https://doi.org/10.1080/09332480.2011.10739872</a>]
 </p></li>
 
 <li><p>
-Symanzik, J. (2011): Book Review of &#8220;Paul Murrell: Introduction to
- Data Technologies&#8221;,
-Technometrics, Vol. 53, No. 2, 214-215.
-</p></li>
-<li><p>Symanzik, J., Vukasinovic, N. (May 2011): Peace Through Statistics,
-
-Amstat News, Issue #407, 10-14.
+Symanzik, J. 
+(2011): 
+A Word from our 2011 Section Chairs,
+<i>Statistical Computing & Statistical Graphics Newsletter</i>, 
+Vol. 21, No. 1, 1-3.
 </p></li>
 
 <li><p>
-Symanzik, J. (2010): Results of &#8220;A Real Challenger of a Puzzle&#8221;
- Graphics Contest,
-Chance, Vol. 23, No. 2, 25.
+Symanzik, J. 
+(2011): 
+Book Review of ``Paul Murrell: Introduction to Data Technologies'',
+<i>Technometrics</i>, 
+Vol. 53, No. 2, 214-215.
 </p></li>
 
 <li><p>
-Symanzik, J. (2009): Contest: &#8220;A Real Challenger of a Puzzle&#8221;,
-
-Chance, Vol. 22, No. 4, 28.
+Symanzik, J., Vukasinovic, N. 
+(May 2011): 
+Peace Through Statistics,
+<i>Amstat News</i>, 
+Issue #407, 10-14.
 </p></li>
 
 <li><p>
-Symanzik, J. (July 2006): Statistical Graphics: Invited Sessions, Data
- Expo, Mixer Highlight JSM for Section,
-Amstat News, Issue #349, 40.
+Symanzik, J. 
+(2010): 
+Results of ``Real Challenger of a Puzzle'' Graphics Contest,
+<i>Chance</i>, 
+Vol. 23, No. 2, 25.
 </p></li>
 
 <li><p>
-LaVange, L. (Text), Johnson, C. (Art), Symanzik, J. (Photos) (May
- 2006): Meetings: JSM 2006: Piecing it Together,
-Amstat News, Issue
- #347, Cover &amp; 22-23.
+Symanzik, J. 
+(2009): 
+Contest: ``A Real Challenger of a Puzzle'',
+<i>Chance</i>, 
+Vol. 22, No. 4, 28.
 </p></li>
 
 <li><p>
-Symanzik, J. (December 2005): Utah: Past and Future Activities,
-
-Amstat News, Issue #342, 50-51.
+Symanzik, J. 
+(July 2006): 
+Statistical Graphics: Invited Sessions, Data Expo, Mixer Highlight JSM for Section,
+<i>Amstat News</i>, 
+Issue #349, 40.
 </p></li>
 
 <li><p>
-Symanzik, J. (2005): Book Review of &#8220;Peter J. Diggle: Statistical
- Analysis of Spatial Point Patterns, Second Edition&#8221;,
-Technometrics,
- Vol. 47, No. 4, 516-517.
+LaVange, L. (Text), Johnson, C. (Art), Symanzik, J. (Photos) 
+(May 2006): 
+Meetings: JSM 2006: Piecing it Together,
+<i>Amstat News</i>, 
+Issue #347, Cover & 22-23.
 </p></li>
 
 <li><p>
-Symanzik, J., Vukasinovic, N. (2003): Comparative Review of
- ActivStats, CyberStats, and MM*Stat,
-MSOR Connections (LTSN
-
-Maths, Stats &amp; OR Newsletter), Vol. 3, No. 1, 37-42.
+Symanzik, J. 
+(December 2005): 
+Utah: Past and Future Activities,
+<i>Amstat News</i>, 
+Issue #342, 50-51.
 </p></li>
 
 <li><p>
-Symanzik, J. (2001): Book Review of &#8220;Daniel A. Griffith and
- Larry J. Layne: A Casebook for Spatial Statistical Data Analysis&#8221;,
-
-Technometrics, Vol. 43, No. 3, 375-376.
+Symanzik, J. 
+(2005): 
+Book Review of ``Peter J. Diggle: Statistical Analysis of Spatial Point Patterns, Second Edition'',
+<i>Technometrics</i>,
+Vol. 47, No. 4, 516-517.
 </p></li>
 
 <li><p>
-Symanzik, J., Cressie, N. (1998): Book and Software Review of &#8220;Yvan
- Pannatier: Variowin - Software for Spatial Data Analysis in 2D&#8221;,
+Symanzik, J., Vukasinovic, N. 
+(2003): 
+Comparative Review of ActivStats, CyberStats, and MM*Stat,
+<i>MSOR Connections (LTSN Maths, Stats & OR Newsletter)</i>, 
+Vol. 3, No. 1, 37-42.
+</p></li>
 
-Computational Statistics, Vol. 13, No. 3, 419-422.
+<li><p>
+Symanzik, J. 
+(2001): 
+Book Review of ``Daniel A. Griffith and Larry J. Layne: A Casebook for Spatial Statistical Data Analysis'',
+<i>Technometrics</i>, 
+Vol. 43, No. 3, 375-376.
+</p></li>
+
+<li><p>
+Symanzik, J., Cressie, N. 
+(1998): 
+Book and Software Review of ``Yvan Pannatier: Variowin - Software for Spatial Data Analysis in 2D'',
+<i>Computational Statistics</i>, 
+Vol. 13, No. 3, 419-422.
 </p></li>
 </ul>
 
@@ -1426,56 +1461,70 @@ Technical Reports (Otherwise Unpublished):</a></h3>
 
 <ul>
 <li><p>
-Symanzik, J., Majure, J. J., Cook, D. (1997): Linking ArcView 3.0 and
- XGobi: Insight Behind the Front End, Preprint 97-10, Department of
- Statistics, Iowa State University, Ames, Iowa.
+Symanzik, J., Majure, J. J., Cook, D. 
+(1997): 
+Linking ArcView 3.0 and XGobi: Insight Behind the Front End, 
+Preprint 97-10, 
+Department of Statistics, Iowa State University, Ames, Iowa.
 </p></li>
 
 <li><p>
-Symanzik, J. (1996): Stochastic Analysis of Periodic Timed Data Flow
- Diagrams with Markovian Transition Times, Technical Report 96-24,
- Department of Computer Science, Iowa State University, Ames, Iowa.
+Symanzik, J. 
+(1996): 
+Stochastic Analysis of Periodic Timed Data Flow Diagrams 
+with Markovian Transition Times, 
+Technical Report 96-24,
+Department of Computer Science, Iowa State University, Ames, Iowa.
 </p></li>
 
 <li><p>
-Symanzik, J., Baker, A. L. (1996): Timed Data Flow Diagrams,
- Technical Report 96-23, Department of Computer Science, Iowa State
- University, Ames, Iowa.
+Symanzik, J., Baker, A. L. 
+(1996): 
+Timed Data Flow Diagrams,
+Technical Report 96-23, 
+Department of Computer Science, Iowa State University, Ames, Iowa.
 </p></li>
 
 <li><p>
-Symanzik, J., Baker, A. L. (1996): Subclasses of Formalized Data
- Flow Diagrams: Monogeneous, Linear, and Topologically Free Choice
- RDFD's, Technical Report 96-22, Department of Computer Science,
- Iowa State University, Ames, Iowa.
+Symanzik, J., Baker, A. L. 
+(1996): 
+Subclasses of Formalized Data Flow Diagrams: Monogeneous, Linear, and 
+Topologically Free Choice RDFD's, 
+Technical Report 96-22, 
+Department of Computer Science, Iowa State University, Ames, Iowa.
 </p></li>
 
 <li><p>
-Symanzik, J., Baker, A. L. (1996): Non-Atomic Components of Data
- Flow Diagrams: Stores, Persistent Flows, and Tests for Empty Flows,
- Technical Report 96-21, Department of Computer Science, Iowa State
- University, Ames, Iowa.
+Symanzik, J., Baker, A. L. 
+(1996): 
+Non-Atomic Components of Data Flow Diagrams: Stores, 
+Persistent Flows, and Tests for Empty Flows,
+Technical Report 96-21, 
+Department of Computer Science, Iowa State University, Ames, Iowa.
 </p></li>
 
 <li><p>
-Symanzik, J., Baker, A. L. (1996): Formalized Data Flow Diagrams
- and Their Relation to Other Computational Models, Technical Report
- 96-20, Department of Computer Science, Iowa State University, Ames,
- Iowa.
+Symanzik, J., Baker, A. L. 
+(1996): 
+Formalized Data Flow Diagrams and Their Relation to Other Computational Models, 
+Technical Report 96-20, 
+Department of Computer Science, Iowa State University, Ames, Iowa.
 </p></li>
 
 <li><p>
 Symanzik, J., Cook, D., Kohlmeyer, B. D., Cruz-Neira, C.
- (1996): Dynamic Statistical Graphics in the CAVE Virtual Reality
- Environment, Preprint 96-10, Department of Statistics, Iowa State
- University, Ames, Iowa.
+(1996): 
+Dynamic Statistical Graphics in the CAVE Virtual Reality Environment, 
+Preprint 96-10, 
+Department of Statistics, Iowa State University, Ames, Iowa.
 </p></li>
 
 <li><p>
-Hering, F., Symanzik, J. (1992): Anaglyphen 3D - Ein Programm
- zur interaktiven Anaglyphendarstellung, Forschungsbericht 92/1,
- Fachbereich Statistik, Universität Dortmund, Dortmund, Germany (in
- German).
+Hering, F., Symanzik, J. 
+(1992): 
+Anaglyphen 3D - Ein Programm zur interaktiven Anaglyphendarstellung, 
+Forschungsbericht 92/1,
+Fachbereich Statistik, Universität Dortmund, Dortmund, Germany (in German).
 </p></li>
 </ul>
 
