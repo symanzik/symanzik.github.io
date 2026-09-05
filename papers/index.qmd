@@ -16,7 +16,7 @@
 
 <h3><a name="RefereedJournals">
 <img src=../images/Balls/red.gif>
-Refereed Journals:</a></h3>
+Refereed Journals</a></h3>
 
 
 <ul>
@@ -461,7 +461,7 @@ Vol. 11, No. 4, 467-480.
 
 <h3><a name="RefereedBookChapters">
 <img src=../images/Balls/red.gif>
-Refereed Book Chapters:</a></h3>
+Refereed Book Chapters</a></h3>
 
 
 <ul>
@@ -580,7 +580,7 @@ Springer-Verlag, Berlin, Heidelberg, 411-427.
 
 <h3><a name="RefereedConferenceProceedings">
 <img src=../images/Balls/red.gif>
-Refereed Conference Proceedings:</a></h3>
+Refereed Conference Proceedings</a></h3>
 
 
 <ul>
@@ -707,7 +707,7 @@ Springer-Verlag, Berlin, Heidelberg, 384-389.
 
 <h3><a name="Conference ProceedingsNonRefereed">
 <img src=../images/Balls/red.gif>
-Conference Proceedings (Non-Refereed):</a></h3>
+Conference Proceedings (Non-Refereed)</a></h3>
 
 
 <ul>
@@ -1212,7 +1212,7 @@ Cook, D., Cruz-Neira, C., Lechner, U., Nelson, L., Olsen, A., Pierson, S., Syman
 (1997): 
 Using Dynamic Statistical Graphics in a Highly Immersive Virtual Reality 
 Environment to Understand Multivariate (Spatial) Data,
-<i>Bulletin of the International Statistical Institute, 51st Session Istanbul 1997, Proceedings Book 2<i>, 
+<i>Bulletin of the International Statistical Institute, 51st Session Istanbul 1997, Proceedings Book 2</i>, 
 31-34.
 </p></li>
 
@@ -1301,7 +1301,7 @@ American Statistical Association, Alexandria, Virginia, 71-76.
 
 <h3><a name="OtherPublications">
 <img src=../images/Balls/red.gif>
-Other Publications:</a></h3>
+Other Publications</a></h3>
 
 
 <ul>
@@ -1456,7 +1456,7 @@ Vol. 13, No. 3, 419-422.
 
 <h3><a name="TechnicalReportsOtherwiseUnpublished">
 <img src=../images/Balls/red.gif>
-Technical Reports (Otherwise Unpublished):</a></h3>
+Technical Reports (Otherwise Unpublished)</a></h3>
 
 
 <ul>
@@ -1536,7 +1536,7 @@ Fachbereich Statistik, Universität Dortmund, Dortmund, Germany (in German).
 
 <h3><a name="Videos">
 <img src=../images/Balls/red.gif>
-Videos:</a></h3>
+Videos</a></h3>
 
 
 <ul>
