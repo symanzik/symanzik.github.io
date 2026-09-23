@@ -19,6 +19,9 @@ about:
       url: "mailto:juergen.symanzik@usu.edu"
     - text: CV
       url: "resume.pdf"
+    - text: ORCID
+      icon: orcid.widget
+      url: "https://orcid.org/0009-0006-8958-8120"
 comments: false
 ---
 
