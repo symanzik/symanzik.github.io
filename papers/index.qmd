@@ -44,7 +44,7 @@ Medri, J., Probst, B. D., Symanzik, J.
 (2023):
 Housing Variables and Immigration: An Exploratory Analysis in New York City
 (& Correction).
-<i>Computational Statistics}</i>,
+<i>Computational Statistics</i>,
 Vol. 38, No. 4, 1687-1717 & 1719.
 [<a href="https://doi.org/10.1007/s00180-023-01412-x">https://doi.org/10.1007/s00180-023-01412-x</a>
 and
@@ -98,8 +98,7 @@ Kindergarten Children's Interactions with Touchscreen Mathematics Virtual Manipu
 An Innovative Mixed Methods Analysis, 
 <i>International Journal of Research in Education and Science (IJRES)</i>, 
 Vol. 3, No. 2, 646-665.
-[<a href="https://www.ijres.net/index.php/ijres/article/view/250"> 
-https://www.ijres.net/index.php/ijres/article/view/250</a>]
+[<a href="https://www.ijres.net/index.php/ijres/article/view/250">https://www.ijres.net/index.php/ijres/article/view/250</a>]
 </p></li>
 
 <li><p>
@@ -592,7 +591,7 @@ In: Mori, H. and Asahi, Y. (Eds.),
 <i>Human Interface and the Management of Information, HCII 2024, 
 Lecture Notes in Computer Science, Vol. 14690</i>,
 Springer Nature, Cham, Switzerland, 65-82.
-[<a href="https://doi.org/10.1007/978-3-031-60114-9_6>https://doi.org/10.1007/978-3-031-60114-9_6</a>]
+[<a href="https://doi.org/10.1007/978-3-031-60114-9_6">https://doi.org/10.1007/978-3-031-60114-9_6</a>]
 </p></li>
 
 <li><p>
