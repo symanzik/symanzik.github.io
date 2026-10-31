@@ -602,6 +602,7 @@ In: Lestrel, P. E. (Ed.),
 <i>Biological Shape Analysis: Proceedings of the 4th International Symposium (ISBSA), 
 School of Dentistry, UCLA, USA, 19-22 June 2015</i>, 
 World Scientific Publishing, Singapore, 95-112.
+[<a href="https://doi.org/10.1142/9789813225701_0006">https://doi.org/10.1142/9789813225701_0006</a>]
 </p></li>
 
 <li><p>
@@ -611,7 +612,8 @@ Recent Advancements in Geovisualization, with a Case Study on Chinese Religions,
 In: Jin, Z., Liu, M., Luo, X. (Eds.),
 <i>New Developments in Statistical Modeling, Inference and Application: 
 Selected Papers from the 2014 ICSA/KISS Joint Applied Statistics Symposium in Portland, OR</i>, 
-Springer, Switzerland, 151-166.
+Springer, Cham, Switzerland, 151-166.
+[<a href="https://doi.org/10.1007/978-3-319-42571-9_8">https://doi.org/10.1007/978-3-319-42571-9_8</a>]
 </p></li>
 
 <li><p>
@@ -622,6 +624,7 @@ Maahs-Fladung, C., Symanzik, J., Jordan, K.
 Developing Research Tools for Young Children's Interactions with Mathematics Apps on the iPad,
 <i>2014 Conference Proceedings, Hawaii International Conference on Education, 
 Honolulu, Hawaii, January 5-8, 2014</i>.
+[<a href="https://hiceducation.org/wp-content/uploads/proceedings-library/EDU2014.pdf">https://hiceducation.org/wp-content/uploads/proceedings-library/EDU2014.pdf</a>]
 </p></li>
 
 <li><p>
@@ -633,7 +636,7 @@ Analyzing Temporal Patterns of Visits,
 <i>COMP 2013, ACM SIGSPATIAL International Workshop on Computational Models of Place, 
 November 5, 2013, Orlando, Florida, USA</i>, 
 ACM.
-[<a href="http://stko.geog.ucsb.edu/comp2013/">http://stko.geog.ucsb.edu/comp2013/</a>]
+[<a href="https://web.archive.org/web/20170812021954/http://stko.geog.ucsb.edu/comp2013/comp2013_submission_1.pdf">https://web.archive.org/web/20170812021954/http://stko.geog.ucsb.edu/comp2013/comp2013_submission_1.pdf (archived version)</a>]
 </p></li>
 
 <li><p>
@@ -643,6 +646,7 @@ Teaching Statistics with Electronic Textbooks,
 In: Härdle, W., Rönz, B. (Eds.),
 <i>COMPSTAT 2002: Proceedings in Computational Statistics</i>, 
 Physica-Verlag, Heidelberg, 79-90.
+[<a href="https://doi.org/10.1007/978-3-642-57489-4_8">https://doi.org/10.1007/978-3-642-57489-4_8</a>]
 </p></li>
 
 <li><p>
@@ -664,7 +668,7 @@ Web-Based Access and Visualization of Hazardous Air Pollutants,
 <i>Geographic Information Systems in Public Health: 
 Proceedings of the Third National Conference August 18-20, 1998, San Diego, California</i>, 
 Agency for Toxic Substances and Disease Registry. 
-[<a href="http://www.atsdr.cdc.gov/GIS/conference98/">http://www.atsdr.cdc.gov/GIS/conference98/</a>]
+[<a href="https://www.atsdr.cdc.gov/GIS/conference98/">https://www.atsdr.cdc.gov/GIS/conference98/</a>]
 </p></li>
 
 <li><p>
@@ -755,7 +759,7 @@ Using `rmapshaper' to Modify Boundary Files for Use in Linked Micromap Plots,
 <i>Proceeding, Contributed Paper Session Volume 4, 62nd ISI World Statistics Congress 2019, 
 18-23 August 2019, Kuala Lumpur, Malaysia</i>, 
 Department of Statistics Malaysia, Putrajaya, Malaysia, 281-289.
-[<a href="http://2019.isiproceedings.org/Files/10.Contributed-Paper-Session(CPS)-Volume-4.pdf">http://2019.isiproceedings.org/Files/10.Contributed-Paper-Session(CPS)-Volume-4.pdf</a>]
+[<a href="https://2019.isiproceedings.org/Files/10.Contributed-Paper-Session(CPS)-Volume-4.pdf">https://2019.isiproceedings.org/Files/10.Contributed-Paper-Session(CPS)-Volume-4.pdf</a>]
 </p></li>
 
 <li><p>
@@ -887,7 +891,7 @@ Visualization of ``States'' in Online Educational Games,
 <i>Proceedings of the 59th World Statistics Congress of the International Statistical Institute, 
 Hong Kong</i>, 
 International Statistical Institute, The Hague, The Netherlands, 3382-3387.
-[<a href="http://2013.isiproceedings.org/Files/CPS007-P7-S.pdf">http://2013.isiproceedings.org/Files/CPS007-P7-S.pdf</a>]
+[<a href="https://2013.isiproceedings.org/Files/CPS007-P7-S.pdf">https://2013.isiproceedings.org/Files/CPS007-P7-S.pdf</a>]
 </p></li>
 
 <li><p>
@@ -1023,7 +1027,7 @@ Hurst, J., Symanzik, J., Gunter, L.
 Interactive Federal Statistical Data on the Web using ``nViZn'',
 <i>Computing Science and Statistics</i>,
 Vol. 35, CD.
-[<a href="http://interfacesymposia.org/I03/I2003Proceedings/HurstJon/HurstJon.paper.pdf">http://interfacesymposia.org/I03/I2003Proceedings/HurstJon/HurstJon.paper.pdf</a>]
+[<a href="https://interfacesymposia.org/I03/I2003Proceedings/HurstJon/HurstJon.paper.pdf">https://interfacesymposia.org/I03/I2003Proceedings/HurstJon/HurstJon.paper.pdf</a>]
 </p></li>
 
 <li><p>
@@ -1051,7 +1055,7 @@ Symanzik, J., Wegman, E. J., Braverman, A. J., Luo, Q.
 New Applications of the Image Grand Tour,
 <i>Computing Science and Statistics</i>,
 Vol. 34, CD.
-[<a href="http://interfacesymposia.org/I02/I2002Proceedings/SymanzikJuergen/SymanzikJuergen.paper.pdf">http://interfacesymposia.org/I02/I2002Proceedings/SymanzikJuergen/SymanzikJuergen.paper.pdf</a>]
+[<a href="https://interfacesymposia.org/I02/I2002Proceedings/SymanzikJuergen/SymanzikJuergen.paper.pdf">https://interfacesymposia.org/I02/I2002Proceedings/SymanzikJuergen/SymanzikJuergen.paper.pdf</a>]
 </p></li>
 
 <li><p>
@@ -1077,7 +1081,7 @@ Jones, L., Symanzik, J.
 Statistical Visualization of Environmental Data on the Web Using nViZn,
 <i>Computing Science and Statistics</i>,
 Vol. 33, CD.
-[<a href="http://interfacesymposia.org/I01/I2001Proceedings/LJones/LJones.pdf">http://interfacesymposia.org/I01/I2001Proceedings/LJones/LJones.pdf</a>]
+[<a href="https://interfacesymposia.org/I01/I2001Proceedings/LJones/LJones.pdf">https://interfacesymposia.org/I01/I2001Proceedings/LJones/LJones.pdf</a>]
 </p></li>
 
 <li><p>
@@ -1086,7 +1090,7 @@ Symanzik, J., Vukasinovic, N.
 Experiences with a Course on ``Web-Based Statistics'',
 <i>Computing Science and Statistics</i>, 
 Vol. 33, CD.
-[<a href="http://interfacesymposia.org/I01/I2001Proceedings/JSymanzik/JSymanzik.pdf">]http://interfacesymposia.org/I01/I2001Proceedings/JSymanzik/JSymanzik.pdf</a>.
+[<a href="https://interfacesymposia.org/I01/I2001Proceedings/JSymanzik/JSymanzik.pdf">]https://interfacesymposia.org/I01/I2001Proceedings/JSymanzik/JSymanzik.pdf</a>.
 </p></li>
 
 <li><p>
@@ -1256,7 +1260,7 @@ In:
 Environmental Modeling, Santa Fe, New Mexico, January 21-25, 1996</i>, 
 National Center for Geographic Information and Analysis, Santa Barbara, CA, 
 CD.
-[<a href="http://www.ncgia.ucsb.edu/conf/SANTA_FE_CD-ROM/main.html">http://www.ncgia.ucsb.edu/conf/SANTA_FE_CD-ROM/main.html</a>]
+[<a href="https://www.ncgia.ucsb.edu/conf/SANTA_FE_CD-ROM/main.html">https://www.ncgia.ucsb.edu/conf/SANTA_FE_CD-ROM/main.html</a>]
 </p></li>
 
 <li><p>
@@ -1329,7 +1333,7 @@ Observations from the Winners of the 2013 Statistics Poster Competition -
 Praise and Future Improvements,
 <i>The Statistics Teacher Network</i>, 
 Vol. 83, 2-5. 
-[<a href="http://www.amstat.org/education/stn/pdfs/stn83.pdf">http://www.amstat.org/education/stn/pdfs/stn83.pdf</a>]
+[<a href="https://www.amstat.org/education/stn/pdfs/stn83.pdf">https://www.amstat.org/education/stn/pdfs/stn83.pdf</a>]
 </p></li>
 
 <li><p>
@@ -1544,7 +1548,7 @@ Cook, D., Lechner, U., Symanzik, J., Kohlmeyer, B. D., Cruz-Neira, C.
 (1996):
 Interaction Tools for Dynamic Statistical Graphics in a Highly Immersive Environment, 
 <i>ASA Statistical Graphics Video Library</i>.
-[<a href="http://stat-graphics.org/movies/">http://stat-graphics.org/movies/</a>]
+[<a href="https://stat-graphics.org/movies/">https://stat-graphics.org/movies/</a>]
 </p></li>
 
 <li><p>
@@ -1552,7 +1556,7 @@ Symanzik, J., Cook, D., Kohlmeyer, B. D., Lechner, U., Cruz-Neira, C.
 (1996):
 Dynamic Statistical Graphics in a Highly Immersive Environment (People Version), 
 <i>ASA Statistical Graphics Video Library</i>.
-[<a href="http://stat-graphics.org/movies/">http://stat-graphics.org/movies/</a>]
+[<a href="https://stat-graphics.org/movies/">https://stat-graphics.org/movies/</a>]
 </p></li>
 
 <li><p>
@@ -1560,7 +1564,7 @@ Symanzik, J., Cook, D., Kohlmeyer, B. D., Lechner, U., Cruz-Neira, C.
 (1996):
 Dynamic Statistical Graphics in a Highly Immersive Environment, 
 <i>ASA Statistical Graphics Video Library</i>.
-[<a href="http://stat-graphics.org/movies/">http://stat-graphics.org/movies/</a>]
+[<a href="https://stat-graphics.org/movies/">https://stat-graphics.org/movies/</a>]
 </p></li>
 
 <li><p>
@@ -1568,7 +1572,7 @@ Majure, J. J., Cook, D., Symanzik, J., Megretskaia, I.
 (1996):
 An Interactive Environment for the Graphical Analysis of Spatial Data, 
 <i>ASA Statistical Graphics Video Library</i>.
-[<a href="http://stat-graphics.org/movies/">http://stat-graphics.org/movies/</a>]
+[<a href="https://stat-graphics.org/movies/">https://stat-graphics.org/movies/</a>]
 </p></li>
 
 <li><p>
@@ -1576,7 +1580,7 @@ Majure, J. J., Cook, D., Cressie, N., Kaiser, M., Lahiri, S., Symanzik, J.
 (1995):
 Spatial CDF Estimation and Visualization with Applications to Forest Health Monitoring, 
 <i>ASA Statistical Graphics Video Library</i>.
-[<a href="http://stat-graphics.org/movies/">http://stat-graphics.org/movies/</a>]
+[<a href="https://stat-graphics.org/movies/">https://stat-graphics.org/movies/</a>]
 </p></li>
 
 <li><p>
@@ -1584,7 +1588,7 @@ Symanzik, J., Majure, J. J., Cook, D.
 (1995):
 Dynamic Graphics in a GIS: Analyzing and Exploring Multivariate Spatial Data, 
 <i>ASA Statistical Graphics Video Library</i> 
-[<a href="http://stat-graphics.org/movies/">http://stat-graphics.org/movies/</a>]
+[<a href="https://stat-graphics.org/movies/">https://stat-graphics.org/movies/</a>]
 </p></li>
 </ul>
 
@@ -1595,7 +1599,7 @@ Dynamic Graphics in a GIS: Analyzing and Exploring Multivariate Spatial Data,
 
 
 <br>
-Last Update September 4, 2026.
+Last Update October 30, 2026.
 </br>
 
 </body>
