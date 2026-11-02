@@ -1,0 +1,13399 @@
+%!PS-Adobe-3.0
+%%Title: (\376\377)
+%%Version: 1 2
+%%Creator: (\376\377)
+%%CreationDate: (D:20020701150729)
+%%DocumentData: Clean7Bit
+%%LanguageLevel: 2
+%%BoundingBox: 0 0 612 792
+%%Pages: 18
+%%DocumentProcessColors: (atend)
+%%DocumentSuppliedResources:
+%%+ font TimesNewRoman,BoldItalic
+%%+ font Symbol
+%%+ font TimesNewRoman,Bold$2X1
+%%+ font Symbol,Italic
+%%+ font TimesNewRoman$2X1
+%%+ font TimesNewRoman,Italic$2X1
+%%+ font Arial$2X1
+%%+ procset (Adobe Acrobat - PDF operators) 1.2 0
+%%+ procset (Adobe Acrobat - type operators) 1.2 0
+%%EndComments
+%%BeginDefaults
+%%EndDefaults
+%%BeginProlog
+%%EndProlog
+%%BeginSetup
+%%BeginFile: l2check
+%%Copyright: Copyright 1993 Adobe Systems Incorporated. All Rights Reserved.
+systemdict /languagelevel known
+{ systemdict /languagelevel get 1 eq }
+{ true }
+ifelse
+{
+initgraphics /Helvetica findfont 18 scalefont setfont
+72 600 moveto (Error: Your printer driver needs to be configured) dup show
+72 580 moveto (for printing to a PostScript Level 1 printer.) dup show
+exch = =
+/Helvetica-Bold findfont 16 scalefont setfont
+72 520 moveto (Windows and Unix) show
+/Times-Roman findfont 16 scalefont setfont
+72 500 moveto (Select ªLevel 1º in the PostScript options section) show
+72 480 moveto (of the Acrobat Exchange or Reader print dialog.) show
+/Helvetica-Bold findfont 16 scalefont setfont
+72 440 moveto (Macintosh) show
+/Times-Roman findfont 16 scalefont setfont
+72 420 moveto (In the Chooser, select your printer driver.) show
+72 400 moveto (Then select your printer and click the Setup button.) show
+72 380 moveto (Follow any on-screen dialogs that may appear.) show
+showpage
+quit
+}
+if
+%%EndFile
+/currentpacking where{pop currentpacking true setpacking}if
+userdict /PDF 85 dict put
+%%BeginFile: pdfvars.prc
+%%Copyright: Copyright 1987-1996 Adobe Systems Incorporated. All Rights Reserved.
+userdict /PDFVars 75 dict dup begin put
+/_save 0 def
+/_cshow 0 def
+/InitAll 0 def
+/TermAll 0 def
+/_lp /none def
+/_doClip 0 def
+/sfc 0 def
+/_sfcs 0 def
+/_sfc 0 def
+/ssc 0 def
+/_sscs 0 def
+/_ssc 0 def
+/_fcs 0 def
+/_scs 0 def
+/_fp 0 def
+/_sp 0 def
+/_f0 0 array def
+/_f1 1 array def
+/_f3 3 array def
+/_f4 4 array def
+/_fc null def
+/_s0 0 array def
+/_s1 1 array def
+/_s3 3 array def
+/_s4 4 array def
+/_sc null def
+/_cpcf null def
+/_cpcs null def
+/_inT false def
+/_tr -1 def
+/_rise 0 def
+/_ax 0 def
+/_cx 0 def
+/_ld 0 def
+/_tm matrix def
+/_ctm matrix def
+/_mtx matrix def
+/_hy (-) def
+/_fScl 0 def
+/_hs 1 def
+/_pdfEncodings 2 array def
+/_baselineadj 0 def
+/_Tj 0 def
+/_italMtx[1 0 .212557 1 0 0]def
+/_italMtx_WMode1 [1 -.212557 0 1 0 0]def
+/_basefont 0 def
+/_basefonto 0 def
+/_pdf_oldCIDInit null def
+/_categories 10 dict def
+/_sa? true def
+/_op? false def
+/_ColorSep5044? false def
+/_tmpcolr? [] def
+/_tmpop? {} def
+end
+%%EndFile
+PDFVars begin PDF begin
+%%BeginFile: pdfutil.prc
+%%Copyright: Copyright 1993 Adobe Systems Incorporated. All Rights Reserved.
+/bd {bind def} bind def
+/ld {load def} bd
+/dd { PDFVars 3 1 roll put } bd
+/xdd { exch dd } bd
+/Level2?
+systemdict /languagelevel known
+{ systemdict /languagelevel get 2 ge } { false } ifelse
+def
+/here {
+dup currentdict exch known
+{ currentdict exch get true }
+{ pop false }
+ifelse
+} bd
+/isdefined? { where { pop true } { false } ifelse } bd
+/StartLoad { dup dup not { /_save save dd } if } bd
+/EndLoad { if not { _save restore } if } bd
+/npop { { pop } repeat } bd
+%%EndFile
+%%BeginFile: pdf.prc
+%%Copyright: Copyright 1987-1996 Adobe Systems Incorporated. All Rights Reserved.
+/initialize {
+_ColorSep5044? {sep_ops begin 50 dict begin} if
+newpath
+} bd
+/terminate {
+_ColorSep5044? {end end} if
+} bd
+Level2? StartLoad
+{ /m/moveto ld
+/l/lineto ld
+/c/curveto ld
+/setSA/setstrokeadjust ld
+} EndLoad
+Level2? not StartLoad
+{
+/pl {
+transform
+0.25 sub round 0.25 add exch
+0.25 sub round 0.25 add exch
+itransform
+} bd
+/m { _sa? { pl } if moveto } bd
+/l { _sa? { pl } if lineto } bd
+/c { _sa? { pl } if curveto } bd
+/setSA { /_sa? xdd } bd
+} EndLoad
+/v { currentpoint 6 2 roll c } bd
+/y { 2 copy c } bd
+/h/closepath ld
+/d/setdash ld
+/j/setlinejoin ld
+/J/setlinecap ld
+/M/setmiterlimit ld
+/w/setlinewidth ld
+/cf currentflat def
+/i {
+dup 0 eq { pop cf } if
+setflat
+} bd
+/ilp { /_lp /none dd } bd
+/sfc {
+_lp /fill ne {
+_sfcs
+_sfc
+/_lp /fill dd
+} if
+} dd
+/ssc {
+_lp /stroke ne {
+_sscs
+_ssc
+/_lp /stroke dd
+} if
+} dd
+/n {
+_doClip 1 ge {
+_doClip 1 eq { clip } { eoclip } ifelse
+/_doClip 0 dd
+} if
+newpath
+} bd
+/f {
+_doClip 1 ge
+{
+gsave sfc fill grestore
+_doClip 1 eq { clip } { eoclip } ifelse
+newpath
+ilp
+/_doClip 0 dd
+}
+{ sfc fill }
+ifelse
+} bd
+/f* {
+_doClip 1 ge
+{
+gsave sfc eofill grestore
+_doClip 1 eq { clip } { eoclip } ifelse
+newpath
+ilp
+/_doClip 0 dd
+}
+{ sfc eofill }
+ifelse
+} bd
+/S {
+_doClip 1 ge
+{
+gsave ssc stroke grestore
+_doClip 1 eq { clip } { eoclip } ifelse
+newpath
+ilp
+/_doClip 0 dd
+}
+{ ssc stroke }
+ifelse
+} bd
+/s { h S } bd
+/B {
+_doClip dup 1 ge
+gsave f grestore
+{
+gsave S grestore
+1 eq { clip } { eoclip } ifelse
+newpath
+ilp
+/_doClip 0 dd
+}
+{ pop S }
+ifelse
+} bd
+/b { h B } bd
+/B* {
+_doClip dup 1 ge
+gsave f* grestore
+{
+gsave S grestore
+1 eq { clip } { eoclip } ifelse
+newpath
+ilp
+/_doClip 0 dd
+}
+{ pop S }
+ifelse
+} bd
+/b* { h B* } bd
+/W { /_doClip 1 dd } bd
+/W* { /_doClip 2 dd } bd
+/q/save ld
+/Q { restore ilp } bd
+Level2? StartLoad
+{ /defineRes/defineresource ld
+/findRes/findresource ld
+currentglobal
+true systemdict /setglobal get exec
+[/Function /ExtGState /Form]
+{ /Generic /Category findresource dup length dict copy /Category defineresource pop }
+forall
+systemdict /setglobal get exec
+} EndLoad
+Level2? not StartLoad
+{ /AlmostFull?
+{ dup maxlength exch length sub 2 le
+} bind def
+/Expand
+{ 1 index maxlength mul cvi dict
+dup begin exch { def } forall end
+} bind def
+/xput
+{ 3 2 roll
+dup 3 index known not
+{ dup AlmostFull? { 1.5 Expand } if
+} if
+dup 4 2 roll put
+} bind def
+/defineRes
+{ _categories 1 index known not
+{ /_categories _categories 2 index 10 dict xput store
+} if
+_categories exch 2 copy get 5 -1 roll 4 index xput put
+} bind def
+/findRes
+{ _categories exch get exch get
+} bind def
+} EndLoad
+/cs
+{
+dup where { pop load } if
+dup /_fcs xdd
+ucs
+_cpcf exch get
+/_fc xdd
+/_fp null dd
+} bd
+/CS
+{
+dup where { pop load } if
+dup /_scs xdd ucs _cpcs exch get /_sc xdd /_sp null dd
+} bd
+/ucs {
+dup type /arraytype eq
+{ dup 0 get
+dup /Indexed eq
+{ pop 0 get }
+{ /Pattern eq
+{ dup length 2 eq
+{ 1 get ucs }
+{ 0 get }
+ifelse }
+{ 0 get }
+ifelse }
+ifelse }
+if }
+bd
+/_cpcf
+15 dict dup begin
+/DefaultGray _f1 def
+/DeviceGray _f1 def
+/DefaultRGB _f3 def
+/DeviceRGB _f3 def
+/DeviceCMYK _f4 def
+/CalGray _f1 def
+/CalRGB _f3 def
+/CalCMYK _f4 def
+/Lab _f3 def
+/Pattern _f0 def
+/Indexed _f1 def
+/Separation _f1 def
+/CIEBasedA _f1 def
+/CIEBasedABC _f3 def
+end
+dd
+/_cpcs
+15 dict dup begin
+/DefaultGray _s1 def
+/DeviceGray _s1 def
+/DefaultRGB _s3 def
+/DeviceRGB _s3 def
+/DeviceCMYK _s4 def
+/CalGray _s1 def
+/CalRGB _s3 def
+/CalCMYK _s4 def
+/Lab _s3 def
+/Pattern _s0 def
+/Indexed _s1 def
+/Separation _s1 def
+/CIEBasedA _s1 def
+/CIEBasedABC _s3 def
+end
+dd
+Level2? not StartLoad {
+/ri/pop ld
+/makePat/pop ld
+} EndLoad
+Level2? StartLoad {
+/ri
+{
+/findcolorrendering isdefined?
+{
+mark exch
+findcolorrendering
+counttomark 2 eq
+{ type /booleantype eq
+{ dup type /nametype eq
+{ dup /ColorRendering resourcestatus
+{ pop pop
+dup /DefaultColorRendering ne
+{
+/ColorRendering findresource
+setcolorrendering
+} if
+} if
+} if
+} if
+} if
+cleartomark
+}
+{ pop
+} ifelse
+} bd
+/makePat /makepattern ld
+} EndLoad
+Level2? not _ColorSep5044? or StartLoad
+{
+/L1setcolor {
+aload length
+dup 0 eq
+{ pop .5 setgray }
+{ dup 1 eq
+{ pop setgray }
+{ 3 eq
+{ setrgbcolor }
+{ setcmykcolor }
+ifelse }
+ifelse }
+ifelse
+} bind dd
+/_sfcs { } dd
+/_sscs { } dd
+} EndLoad
+Level2? not _ColorSep5044? not and StartLoad
+{
+/_sfc { _fc L1setcolor } dd
+/_ssc { _sc L1setcolor } dd
+} EndLoad
+Level2? _ColorSep5044? not and StartLoad
+{
+/_sfcs
+{
+_fcs setcolorspace
+} bind dd
+/_sscs
+{
+_scs setcolorspace
+} bind dd
+/_sfc
+{
+_fc aload pop
+_fp null eq
+{ setcolor }
+{ _fp setpattern }
+ifelse
+} bind dd
+/_ssc
+{
+_sc aload pop
+_sp null eq { setcolor } { _sp setpattern } ifelse
+} bind dd
+} EndLoad
+/sc
+{
+_fc astore pop
+ilp
+} bd
+/SC
+{
+_sc astore pop
+ilp
+} bd
+/scn {
+dup type /dicttype eq
+{ dup /_fp xdd
+/PaintType get 1 eq
+{ /_fc _f0 dd ilp }
+{ /_fc _cpcf _fcs ucs get dd
+sc }
+ifelse }
+{ sc }
+ifelse
+} bd
+/SCN {
+dup type /dicttype eq
+{ dup /_sp xdd
+/PaintType get 1 eq
+{ /_sc _s0 dd ilp }
+{ /_sc _cpcs _scs ucs get dd
+SC }
+ifelse }
+{ SC }
+ifelse
+} bd
+/g { /DefaultGray cs sc } bd
+/rg { /DefaultRGB cs sc } bd
+/k { /DeviceCMYK cs sc } bd
+/G { /DefaultGray CS SC } bd
+/RG { /DefaultRGB CS SC } bd
+/K { /DeviceCMYK CS SC } bd
+/cm { _mtx astore concat } bd
+/re {
+4 2 roll m
+1 index 0 rlineto
+0 exch rlineto
+neg 0 rlineto
+h
+} bd
+/RC/rectclip ld
+/EF/execform ld
+/PS { cvx exec } bd
+/initgs {
+/DefaultGray where
+{ pop }
+{ /DefaultGray /DeviceGray dd }
+ifelse
+/DefaultRGB where
+{ pop }
+{ /DefaultRGB /DeviceRGB dd }
+ifelse
+0 g 0 G
+[] 0 d 0 j 0 J 10 M 1 w
+true setSA
+} bd
+21 dict dup begin
+/CosineDot
+{ 180 mul cos exch 180 mul cos add 2 div } bd
+/Cross
+{ abs exch abs 2 copy gt { exch } if pop neg } bd
+/Diamond
+{ abs exch abs 2 copy add .75 le
+{ dup mul exch dup mul add 1 exch sub }
+{ 2 copy add 1.23 le
+{ .85 mul add 1 exch sub }
+{ 1 sub dup mul exch 1 sub dup mul add 1 sub }
+ifelse }
+ifelse } bd
+/Double
+{ exch 2 div exch 2 { 360 mul sin 2 div exch } repeat add } bd
+/DoubleDot
+{ 2 { 360 mul sin 2 div exch } repeat add } bd
+/Ellipse
+{ abs exch abs 2 copy 3 mul exch 4 mul add 3 sub dup 0 lt
+{ pop dup mul exch .75 div dup mul add 4 div
+1 exch sub }
+{ dup 1 gt
+{pop 1 exch sub dup mul exch 1 exch sub
+.75 div dup mul add 4 div 1 sub }
+{ .5 exch sub exch pop exch pop }
+ifelse }
+ifelse } bd
+/EllipseA
+{ dup mul .9 mul exch dup mul add 1 exch sub } bd
+/EllipseB
+{ dup 5 mul 8 div mul exch dup mul exch add sqrt 1 exch sub } bd
+/EllipseC
+{ dup .5 gt { 1 exch sub } if
+dup .25 ge
+{ .5 exch sub 4 mul dup mul 1 sub }
+{ 4 mul dup mul 1 exch sub }
+ifelse
+exch
+dup .5 gt { 1 exch sub } if
+dup .25 ge
+{ .5 exch sub 4 mul dup mul 1 sub }
+{ 4 mul dup mul 1 exch sub }
+ifelse
+add -2 div } bd
+/InvertedDouble
+{ exch 2 div exch 2 { 360 mul sin 2 div exch } repeat add neg } bd
+/InvertedDoubleDot
+{ 2 { 360 mul sin 2 div exch } repeat add neg } bd
+/InvertedEllipseA
+{ dup mul .9 mul exch dup mul add 1 sub } bd
+/InvertedSimpleDot
+{ dup mul exch dup mul add 1 sub } bd
+/Line
+{ exch pop abs neg } bd
+/LineX
+{ pop } bd
+/LineY
+{ exch pop } bd
+/Rhomboid
+{ abs exch abs 0.9 mul add 2 div } bd
+/Round
+{ abs exch abs 2 copy add 1 le
+{ dup mul exch dup mul add 1 exch sub }
+{ 1 sub dup mul exch 1 sub dup mul add 1 sub }
+ifelse } bd
+/SimpleDot
+{ dup mul exch dup mul add 1 exch sub } bd
+/Square
+{ abs exch abs 2 copy lt { exch } if pop neg } bd
+end
+{ /Function defineRes pop } forall
+/Identity {} /Function defineRes pop
+_ColorSep5044? StartLoad {
+/_defaulttransferfunc currenttransfer def
+/currentcolortransfer where
+{ pop /_defaultcolortransferfuncs [ currentcolortransfer ] def }
+if
+/concattransferfuncs {
+[ 3 1 roll /exec load exch /exec load ] cvx
+} bd
+/concatandsettransfer {
+/_defaulttransferfunc load concattransferfuncs settransfer
+} bd
+/concatandsetcolortransfer {
+colorplate 0 eq
+{
+_defaultcolortransferfuncs aload pop
+8 -1 roll 5 -1 roll concattransferfuncs 7 1 roll
+6 -1 roll 4 -1 roll concattransferfuncs 5 1 roll
+4 -1 roll 3 -1 roll concattransferfuncs 3 1 roll
+concattransferfuncs
+setcolortransfer
+} if
+colorplate 1 ge colorplate 4 le and
+{
+4 colorplate sub index 4 { exch pop } repeat
+concatandsettransfer
+} if
+colorplate 5 ge
+{
+0 index 4 { exch pop } repeat
+concatandsettransfer
+} if
+} bd
+/tn5044sethalftone
+{
+begin
+HalftoneType 5 eq
+{ [/Default /Cyan /Magenta /Yellow /Black /Default /Default /Default]
+colorplate get
+here not {
+/Default here not { currentdict } if
+} if
+}
+{ currentdict }
+ifelse
+end
+begin
+/TransferFunction here
+{
+concatandsettransfer
+currentdict dup length dict
+begin
+{
+1 index /TransferFunction ne { def } { pop pop } ifelse
+} forall
+currentdict
+end
+}
+{
+currentdict
+} ifelse
+end
+sethalftone
+} bd
+} EndLoad
+Level2? StartLoad {
+/gs
+{
+begin
+/SA here { setstrokeadjust } if
+/OP here { setoverprint } if
+/BG here { setblackgeneration } if
+/UCR here { setundercolorremoval } if
+/TR here
+{
+_ColorSep5044?
+{
+dup xcheck
+{ concatandsettransfer }
+{ aload pop concatandsetcolortransfer }
+ifelse
+}
+{
+dup xcheck
+{ settransfer }
+{ aload pop setcolortransfer }
+ifelse
+} ifelse
+} if
+/sethalftonephase isdefined? { /HTP here { sethalftonephase } if } if
+/HT here
+{ _ColorSep5044?
+{ tn5044sethalftone }
+{ sethalftone }
+ifelse
+} if
+end
+} bd
+/_defaulthalftone currenthalftone def
+} EndLoad
+Level2? not StartLoad {
+/gs
+{
+begin
+/SA here { /_sa? xdd } if
+/OP here { dup /_op? xdd
+/setoverprint where {pop setoverprint}
+{pop} ifelse
+} if
+/TR here
+{
+_ColorSep5044?
+{ dup xcheck
+{ concatandsettransfer }
+{ aload pop concatandsetcolortransfer }
+ifelse
+}
+{ dup xcheck
+{ settransfer }
+{ aload pop setcolortransfer }
+ifelse
+} ifelse
+} if
+/HT here
+{ _ColorSep5044?
+{ tn5044sethalftone }
+{ sethalftone }
+ifelse
+} if
+end
+} bd
+5 dict dup
+begin
+currentscreen 1 [/HalftoneType /SpotFunction /Angle /Frequency ]
+{ exch def } forall
+end
+/_defaulthalftone exch def
+} EndLoad
+/int {
+dup 2 index sub 3 index 5 index sub div 6 -2 roll sub mul
+exch pop add exch pop
+} bd
+/limit {
+dup 2 index le { exch } if pop
+dup 2 index ge { exch } if pop
+} bd
+_ColorSep5044? StartLoad {
+/_sfc
+{
+_fp null eq
+{ _fcs type /arraytype eq
+{_fcs 0 get /Separation eq
+{
+_fcs 1 get /All eq
+{
+_fc aload pop 1 exch sub
+/setseparationgray where pop begin setseparationgray end
+}
+{
+1 _fcs 3 get exec _fcs 1 get
+/findcmykcustomcolor where pop begin findcmykcustomcolor end
+_fc aload pop
+/setcustomcolor where pop begin setcustomcolor end
+}
+ifelse
+}
+{ _fc L1setcolor }
+ifelse
+}
+{ _fc L1setcolor }
+ifelse
+}
+{ _fc L1setcolor }
+ifelse
+} bind dd
+/_ssc
+{
+_sp null eq
+{ _scs type /arraytype eq
+{_scs 0 get /Separation eq
+{
+_scs 1 get /All eq
+{
+_sc aload pop 1 exch sub
+/setseparationgray where pop begin setseparationgray end
+}
+{
+1 _scs 3 get exec _scs 1 get
+/findcmykcustomcolor where pop begin findcmykcustomcolor end
+_sc aload pop
+/setcustomcolor where pop begin setcustomcolor end
+}
+ifelse
+}
+{ _sc L1setcolor }
+ifelse
+}
+{ _sc L1setcolor }
+ifelse
+}
+{ _sc L1setcolor }
+ifelse
+} bind dd
+} EndLoad
+%%EndFile
+%%BeginFile: pdftext.prc
+%%Copyright: Copyright 1987-1997 Adobe Systems Incorporated. All Rights Reserved.
+PDF /PDFText 65 dict dup begin put
+/initialize { PDFText begin } bd
+/terminate { end } bd
+/pdf_has_composefont? systemdict /composefont known def
+/CopyFont {
+{
+1 index /FID ne 2 index /UniqueID ne and
+{ def } { pop pop } ifelse
+} forall
+} bd
+/Type0CopyFont
+{
+exch
+dup length dict
+begin
+CopyFont
+[
+exch
+FDepVector
+{
+dup /FontType get 0 eq
+{
+1 index Type0CopyFont
+/_pdfType0 exch definefont
+}
+{
+/_pdfBaseFont exch
+2 index exec
+}
+ifelse
+exch
+}
+forall
+pop
+]
+/FDepVector exch def
+currentdict
+end
+} bd
+/cHexEncoding
+[/c00/c01/c02/c03/c04/c05/c06/c07/c08/c09/c0A/c0B/c0C/c0D/c0E/c0F/c10/c11/c12
+/c13/c14/c15/c16/c17/c18/c19/c1A/c1B/c1C/c1D/c1E/c1F/c20/c21/c22/c23/c24/c25
+/c26/c27/c28/c29/c2A/c2B/c2C/c2D/c2E/c2F/c30/c31/c32/c33/c34/c35/c36/c37/c38
+/c39/c3A/c3B/c3C/c3D/c3E/c3F/c40/c41/c42/c43/c44/c45/c46/c47/c48/c49/c4A/c4B
+/c4C/c4D/c4E/c4F/c50/c51/c52/c53/c54/c55/c56/c57/c58/c59/c5A/c5B/c5C/c5D/c5E
+/c5F/c60/c61/c62/c63/c64/c65/c66/c67/c68/c69/c6A/c6B/c6C/c6D/c6E/c6F/c70/c71
+/c72/c73/c74/c75/c76/c77/c78/c79/c7A/c7B/c7C/c7D/c7E/c7F/c80/c81/c82/c83/c84
+/c85/c86/c87/c88/c89/c8A/c8B/c8C/c8D/c8E/c8F/c90/c91/c92/c93/c94/c95/c96/c97
+/c98/c99/c9A/c9B/c9C/c9D/c9E/c9F/cA0/cA1/cA2/cA3/cA4/cA5/cA6/cA7/cA8/cA9/cAA
+/cAB/cAC/cAD/cAE/cAF/cB0/cB1/cB2/cB3/cB4/cB5/cB6/cB7/cB8/cB9/cBA/cBB/cBC/cBD
+/cBE/cBF/cC0/cC1/cC2/cC3/cC4/cC5/cC6/cC7/cC8/cC9/cCA/cCB/cCC/cCD/cCE/cCF/cD0
+/cD1/cD2/cD3/cD4/cD5/cD6/cD7/cD8/cD9/cDA/cDB/cDC/cDD/cDE/cDF/cE0/cE1/cE2/cE3
+/cE4/cE5/cE6/cE7/cE8/cE9/cEA/cEB/cEC/cED/cEE/cEF/cF0/cF1/cF2/cF3/cF4/cF5/cF6
+/cF7/cF8/cF9/cFA/cFB/cFC/cFD/cFE/cFF] def
+/modEnc {
+/_enc xdd
+/_icode 0 dd
+counttomark 1 sub -1 0
+{
+index
+dup type /nametype eq
+{
+_enc _icode 3 -1 roll put
+_icode 1 add
+}
+if
+/_icode xdd
+} for
+cleartomark
+_enc
+} bd
+/trEnc {
+/_enc xdd
+255 -1 0 {
+exch dup -1 eq
+{ pop /.notdef }
+{ Encoding exch get }
+ifelse
+_enc 3 1 roll put
+} for
+pop
+_enc
+} bd
+/TE {
+/_i xdd
+StandardEncoding 256 array copy modEnc
+_pdfEncodings exch _i exch put
+} bd
+/TZ
+{
+/_usePDFEncoding xdd
+findfont
+dup length 2 add dict
+begin
+{
+1 index /FID ne { def } { pop pop } ifelse
+} forall
+/FontName exch def
+_usePDFEncoding 0 ge
+{
+/Encoding _pdfEncodings _usePDFEncoding get def
+pop
+}
+{
+_usePDFEncoding -1 eq
+{
+counttomark 0 eq
+{ pop }
+{
+Encoding 256 array copy
+modEnc /Encoding exch def
+}
+ifelse
+}
+{
+256 array
+trEnc /Encoding exch def
+}
+ifelse
+}
+ifelse
+FontName currentdict
+end
+definefont pop
+}
+bd
+/Level2?
+systemdict /languagelevel known
+{systemdict /languagelevel get 2 ge}
+{false}
+ifelse
+def
+Level2?
+{
+/_pdfFontStatus
+{
+currentglobal exch
+/Font resourcestatus
+{pop pop true}
+{false}
+ifelse
+exch setglobal
+} bd
+}
+{
+/_pdfFontStatusString 50 string def
+_pdfFontStatusString 0 (fonts/) putinterval
+/_pdfFontStatus
+{
+_pdfFontStatusString 6 42 getinterval
+cvs length 6 add
+_pdfFontStatusString exch 0 exch getinterval
+status
+{ pop pop pop pop true}
+{ false }
+ifelse
+} bd
+}
+ifelse
+Level2?
+{
+/_pdfCIDFontStatus
+{
+/CIDFont /Category resourcestatus
+{
+pop pop
+/CIDFont resourcestatus
+{pop pop true}
+{false}
+ifelse
+}
+{ pop false }
+ifelse
+} bd
+}
+if
+/_pdfString100 100 string def
+/_pdfComposeFontName
+{
+dup length 1 eq
+{
+0 get
+1 index
+type /nametype eq
+{
+_pdfString100 cvs
+length dup dup _pdfString100 exch (-) putinterval
+_pdfString100 exch 1 add dup _pdfString100 length exch sub getinterval
+2 index exch cvs length
+add 1 add _pdfString100 exch 0 exch getinterval
+exch pop
+true
+}
+{
+pop pop
+false
+}
+ifelse
+}
+{
+false
+}
+ifelse
+} bd
+pdf_has_composefont?
+{
+/_pdfComposeFont
+{
+1 index /CMap resourcestatus
+{pop pop true}
+{false}
+ifelse
+1 index true exch
+{
+_pdfCIDFontStatus not
+{pop false exit}
+if
+}
+forall
+and
+{ 3 -1 roll pop composefont true}
+{
+4 -1 roll pop
+_pdfComposeFontName
+{
+dup _pdfFontStatus
+{ findfont definefont true }
+{
+pop
+dup _pdfFontStatus
+{ findfont true }
+{ pop false }
+ifelse
+}
+ifelse
+}
+{
+dup _pdfFontStatus
+{ findfont true }
+{ pop false }
+ifelse
+}
+ifelse
+}
+ifelse
+} bd
+}
+{
+/_pdfComposeFont
+{
+4 -1 roll pop
+_pdfComposeFontName not
+{
+dup
+}
+if
+2 copy _pdfFontStatus
+{pop findfont exch pop true}
+{
+eq
+{pop false}
+{
+dup _pdfFontStatus
+{findfont true}
+{pop false}
+ifelse
+}
+ifelse
+}
+ifelse
+} bd
+}
+ifelse
+/_pdfFaceByStyleDict 4 dict dup begin
+Level2?
+{
+/Serif
+/HeiseiMin-W3-83pv-RKSJ-H _pdfFontStatus
+{/HeiseiMin-W3}
+{/Ryumin-Light}
+ifelse
+def
+/SansSerif
+/HeiseiKakuGo-W5-83pv-RKSJ-H _pdfFontStatus
+{/HeiseiKakuGo-W5}
+{/GothicBBB-Medium}
+ifelse
+def
+/HeiseiMaruGo-W4-83pv-RKSJ-H _pdfFontStatus
+{/HeiseiMaruGo-W4}
+{
+/Jun101-Light-RKSJ-H _pdfFontStatus
+{ /Jun101-Light }
+{ SansSerif }
+ifelse
+}
+ifelse
+/RoundSansSerif exch def
+/Default Serif def
+}
+{
+/Serif /Ryumin-Light def
+/SansSerif /GothicBBB-Medium def
+{
+(fonts/Jun101-Light-83pv-RKSJ-H) status
+}stopped
+{pop}{
+{ pop pop pop pop /Jun101-Light }
+{ SansSerif }
+ifelse
+/RoundSansSerif exch def
+}ifelse
+/Default Serif def
+}
+ifelse
+end
+def
+/_pdf_Adobe-Japan1-2 (Adobe-Japan1-2) def
+/_pdfConcatNames
+{
+exch
+_pdfString100 cvs
+length dup dup _pdfString100 exch (-) putinterval
+_pdfString100 exch 1 add dup _pdfString100 length exch sub getinterval
+3 -1 roll exch cvs length
+add 1 add _pdfString100 exch 0 exch getinterval
+} bind def
+/_pdfSubSetFontByStyleDict 4 dict dup begin
+_pdfFaceByStyleDict
+{
+_pdf_Adobe-Japan1-2 _pdfConcatNames
+dup _pdfFontStatus
+{ def }
+{
+{
+pop
+dup /SansSerif eq
+{
+/HeiseiKakuGo-W5-Adobe-Japan1-2 dup _pdfFontStatus
+{ def exit }
+{ pop }
+ifelse
+}
+if
+dup /Serif eq
+{
+/HeiseiMin-W3-Adobe-Japan1-2 dup _pdfFontStatus
+{ def exit }
+{ pop }
+ifelse
+}
+if
+pop exit
+}
+loop
+}
+ifelse
+}
+forall
+end def
+/TZzero
+{
+/_fyAdj xdd
+/_wmode xdd
+/_styleArr xdd
+4 copy
+_pdfComposeFont
+{exch pop exch pop exch pop}
+{
+[
+0 1 _styleArr length 1 sub
+{
+_styleArr exch get
+_pdfFaceByStyleDict exch 2 copy known not
+{ pop /Default }
+if
+get
+}
+for
+]
+exch pop
+3 index 3 index 4 2 roll
+_pdfComposeFont
+{exch pop}
+{
+findfont
+}
+ifelse
+}
+ifelse
+dup /FontType get 3 eq _wmode 1 eq and
+{
+_pdfVerticalRomanT3Font dup length dict copy
+begin
+/_basefont exch def
+/Encoding _basefont /Encoding get def
+}
+{
+dup length 2 add dict
+begin
+{1 index /FID ne {def}{pop pop} ifelse }
+forall
+} ifelse
+/WMode _wmode def
+/BaseLineAdj _fyAdj def
+FontType 0 ne
+{
+/Encoding Encoding dup length array copy dup 16#5c /yen put def
+/_fauxfont true def
+} if
+currentdict
+end
+definefont pop
+}
+bd
+/swj {
+dup 4 1 roll
+dup length exch stringwidth
+exch 5 -1 roll 3 index mul add
+4 1 roll 3 1 roll mul add
+6 2 roll /_cnt 0 dd
+{1 index eq {/_cnt _cnt 1 add dd} if} forall pop
+exch _cnt mul exch _cnt mul 2 index add 4 1 roll 2 index add 4 1 roll pop pop
+} bd
+/jss {
+4 1 roll
+{
+2 npop
+(0) exch 2 copy 0 exch put
+gsave
+32 eq
+{
+exch 6 index 6 index 6 index 5 -1 roll widthshow
+currentpoint
+}
+{
+false charpath currentpoint
+4 index setmatrix stroke
+}
+ifelse
+grestore
+moveto
+2 copy rmoveto
+} exch cshow
+6 npop
+} def
+/jsfTzero {
+{
+2 npop
+(0) exch 2 copy 0 exch put
+exch show
+32 eq
+{
+4 index 4 index rmoveto
+}
+if
+2 copy rmoveto
+} exch cshow
+5 npop
+} def
+/jsp
+{
+{
+2 npop
+(0) exch 2 copy 0 exch put
+32 eq
+{ exch 5 index 5 index 5 index 5 -1 roll widthshow }
+{ false charpath }
+ifelse
+2 copy rmoveto
+} exch cshow
+5 npop
+} bd
+/trj { _cx 0 fWModeProc 32 _ax 0 fWModeProc 6 5 roll } bd
+/pjsf { trj sfc fawidthshowProc } bd
+/pjss { trj _ctm ssc jss } bd
+/pjsc { trj jsp } bd
+/_Tjdef [
+/pjsf load
+/pjss load
+{
+dup
+currentpoint 3 2 roll
+pjsf
+newpath moveto
+pjss
+} bind
+{
+trj swj rmoveto
+} bind
+{
+dup currentpoint 4 2 roll gsave
+pjsf
+grestore 3 1 roll moveto
+pjsc
+} bind
+{
+dup currentpoint 4 2 roll
+currentpoint gsave newpath moveto
+pjss
+grestore 3 1 roll moveto
+pjsc
+} bind
+{
+dup currentpoint 4 2 roll gsave
+dup currentpoint 3 2 roll
+pjsf
+newpath moveto
+pjss
+grestore 3 1 roll moveto
+pjsc
+} bind
+/pjsc load
+] def
+/BT
+{
+/_inT true dd
+_ctm currentmatrix pop matrix _tm copy pop
+0 _rise _baselineadj add translate _hs 1 scale
+0 0 moveto
+} bd
+/ET
+{
+/_inT false dd
+_tr 3 gt {clip} if
+_ctm setmatrix newpath
+} bd
+/Tr {
+_inT { _tr 3 le {currentpoint newpath moveto} if } if
+dup /_tr xdd
+_Tjdef exch get /_Tj xdd
+} bd
+/Tj {
+userdict /$$copystring 2 index put
+_Tj
+} bd
+/iTm { _ctm setmatrix _tm concat 0 _rise _baselineadj add translate _hs 1 scale } bd
+/Tm { _tm astore pop iTm 0 0 moveto } bd
+/Td { _mtx translate _tm _tm concatmatrix pop iTm 0 0 moveto } bd
+/TD { dup /_ld xdd Td } bd
+/_nullProc {} bd
+/Tf {
+dup 1000 div /_fScl xdd
+exch findfont dup
+/_nullProc exch
+/WMode known
+{
+1 index /WMode get 1 eq
+{pop /exch}
+if
+}
+if
+load /fWModeProc xdd
+dup
+/FontType get 0 eq dup _cx 0 ne and
+{ /jsfTzero }
+{ /awidthshow }
+ifelse
+load /fawidthshowProc xdd
+/_fTzero xdd
+dup /BaseLineAdj known
+{ dup /BaseLineAdj get _fScl mul }
+{ 0 }
+ifelse
+/_baselineadj xdd
+currentpoint iTm moveto
+exch scalefont setfont
+} bd
+/TL { neg /_ld xdd } bd
+/Tw {
+/_cx xdd
+_cx 0 ne _fTzero and
+{ /jsfTzero }
+{ /awidthshow }
+ifelse
+load /fawidthshowProc xdd
+} bd
+/Tc { /_ax xdd } bd
+/Ts { /_rise xdd currentpoint iTm moveto } bd
+/Tz { 100 div /_hs xdd iTm } bd
+/Tk { exch pop _fScl mul neg 0 fWModeProc rmoveto } bd
+/T* { 0 _ld Td } bd
+/' { T* Tj } bd
+/" { exch Tc exch Tw ' } bd
+/TJ {
+{
+dup type /stringtype eq
+{ Tj }
+{ 0 exch Tk }
+ifelse
+} forall
+} bd
+/T- { _hy Tj } bd
+/d0/setcharwidth ld
+/d1 { setcachedevice /sfc{}dd /ssc{}dd } bd
+/nND {{/.notdef} repeat} bd
+/T3Defs {
+/BuildChar
+{
+1 index /Encoding get exch get
+1 index /BuildGlyph get exec
+}
+def
+/BuildGlyph {
+exch begin
+GlyphProcs exch get exec
+end
+} def
+} bd
+/_pdfBoldRomanWidthProc
+{
+stringwidth 1 index 0 ne { exch .03 add exch }if setcharwidth
+} bd
+/_pdfType0WidthProc
+{
+dup stringwidth 0 0 moveto
+2 index true charpath pathbbox
+0 -1
+7 index 2 div .88
+setcachedevice2
+pop
+} bd
+/_pdfBoldBaseFont
+10 dict begin
+/FontType 3 def
+/FontMatrix[1 0 0 1 0 0]def
+/FontBBox[0 0 1 1]def
+/Encoding cHexEncoding def
+/_setwidthProc /_pdfBoldRomanWidthProc load def
+/_bcstr1 1 string def
+/BuildChar
+{
+exch begin
+_basefont setfont
+_bcstr1 dup 0 4 -1 roll put
+dup
+_setwidthProc
+0 0 moveto
+dup show
+_basefonto setfont
+0 0 moveto
+show
+end
+}bd
+currentdict
+end
+def
+/_pdfVerticalRomanT3Font
+10 dict begin
+/FontType 3 def
+/FontMatrix[1 0 0 1 0 0]def
+/FontBBox[0 0 1 1]def
+/_bcstr1 1 string def
+/BuildChar
+{
+exch begin
+_basefont setfont
+_bcstr1 dup 0 4 -1 roll put
+dup
+_pdfType0WidthProc
+0 0 moveto
+show
+end
+}bd
+currentdict
+end
+def
+/MakeBoldFont
+{
+dup dup length 2 add dict
+begin
+CopyFont
+/PaintType 2 def
+/StrokeWidth .03 0 FontMatrix idtransform pop def
+/dummybold currentdict
+end
+definefont
+_pdfBoldBaseFont 8 dict copy begin
+/_basefont exch def
+/_basefonto exch def
+currentdict
+end
+definefont
+} bd
+/MakeBold {
+findfont dup
+/FontType get 0 eq
+{
+_pdfBoldBaseFont /_setwidthProc /_pdfType0WidthProc load put
+{MakeBoldFont} Type0CopyFont definefont
+}
+{
+dup /_fauxfont known not
+{
+_pdfBoldBaseFont /_setwidthProc /_pdfBoldRomanWidthProc load put
+MakeBoldFont
+}
+{ definefont }
+ifelse
+}
+ifelse
+pop
+}bd
+/MakeItalic {
+findfont
+dup /WMode 2 copy known
+{
+get 1 eq
+{ _italMtx_WMode1 }
+{ _italMtx }
+ifelse
+}
+{ pop pop _italMtx }
+ifelse
+makefont
+definefont pop
+}bd
+/MakeBoldItalic {
+/dummybold exch
+MakeBold
+/dummybold
+MakeItalic
+}bd
+currentdict readonly pop end
+%%EndFile
+PDFText begin
+[39/quotesingle 96/grave 128/Adieresis/Aring/Ccedilla/Eacute/Ntilde/Odieresis
+/Udieresis/aacute/agrave/acircumflex/adieresis/atilde/aring/ccedilla/eacute
+/egrave/ecircumflex/edieresis/iacute/igrave/icircumflex/idieresis/ntilde
+/oacute/ograve/ocircumflex/odieresis/otilde/uacute/ugrave/ucircumflex
+/udieresis/dagger/degree/cent/sterling/section/bullet/paragraph/germandbls
+/registered/copyright/trademark/acute/dieresis/.notdef/AE/Oslash
+/.notdef/plusminus/.notdef/.notdef/yen/mu/.notdef/.notdef
+/.notdef/.notdef/.notdef/ordfeminine/ordmasculine/.notdef/ae/oslash
+/questiondown/exclamdown/logicalnot/.notdef/florin/.notdef/.notdef
+/guillemotleft/guillemotright/ellipsis/.notdef/Agrave/Atilde/Otilde/OE/oe
+/endash/emdash/quotedblleft/quotedblright/quoteleft/quoteright/divide
+/.notdef/ydieresis/Ydieresis/fraction/currency/guilsinglleft/guilsinglright
+/fi/fl/daggerdbl/periodcentered/quotesinglbase/quotedblbase/perthousand
+/Acircumflex/Ecircumflex/Aacute/Edieresis/Egrave/Iacute/Icircumflex
+/Idieresis/Igrave/Oacute/Ocircumflex/.notdef/Ograve/Uacute/Ucircumflex
+/Ugrave/dotlessi/circumflex/tilde/macron/breve/dotaccent/ring/cedilla
+/hungarumlaut/ogonek/caron
+0 TE
+[1/dotlessi/caron 39/quotesingle 96/grave 
+127/bullet/bullet/bullet/quotesinglbase/florin/quotedblbase/ellipsis
+/dagger/daggerdbl/circumflex/perthousand/Scaron/guilsinglleft/OE
+/bullet/bullet/bullet/bullet/quoteleft/quoteright/quotedblleft
+/quotedblright/bullet/endash/emdash/tilde/trademark/scaron
+/guilsinglright/oe/bullet/bullet/Ydieresis/space/exclamdown/cent/sterling
+/currency/yen/brokenbar/section/dieresis/copyright/ordfeminine
+/guillemotleft/logicalnot/hyphen/registered/macron/degree/plusminus
+/twosuperior/threesuperior/acute/mu/paragraph/periodcentered/cedilla
+/onesuperior/ordmasculine/guillemotright/onequarter/onehalf/threequarters
+/questiondown/Agrave/Aacute/Acircumflex/Atilde/Adieresis/Aring/AE/Ccedilla
+/Egrave/Eacute/Ecircumflex/Edieresis/Igrave/Iacute/Icircumflex/Idieresis
+/Eth/Ntilde/Ograve/Oacute/Ocircumflex/Otilde/Odieresis/multiply/Oslash
+/Ugrave/Uacute/Ucircumflex/Udieresis/Yacute/Thorn/germandbls/agrave
+/aacute/acircumflex/atilde/adieresis/aring/ae/ccedilla/egrave/eacute
+/ecircumflex/edieresis/igrave/iacute/icircumflex/idieresis/eth/ntilde
+/ograve/oacute/ocircumflex/otilde/odieresis/divide/oslash/ugrave/uacute
+/ucircumflex/udieresis/yacute/thorn/ydieresis
+1 TE
+end
+currentdict readonly pop
+end end
+/currentpacking where {pop setpacking}if
+PDFVars/InitAll{[PDF PDFText]{/initialize get exec}forall initgs 0 Tr}put
+PDFVars/TermAll{[PDFText PDF]{/terminate get exec}forall}put
+PDFVars begin PDF begin PDFVars/InitAll get exec
+userdict begin
+%%BeginResource: font TimesNewRoman,Italic
+%%EndResource
+end
+% Begin encoding-delta
+[/N23/Times-Italic 1 TZ
+% End encoding-delta
+userdict begin
+%%BeginResource: font TimesNewRoman,Bold
+%%EndResource
+end
+% Begin encoding-delta
+[/N8/Times-Bold 1 TZ
+% End encoding-delta
+userdict begin
+%%BeginResource: font TimesNewRoman
+%%EndResource
+end
+% Begin encoding-delta
+[/N6/Times-Roman 1 TZ
+% End encoding-delta
+userdict begin
+%%BeginResource: font Symbol,Italic
+%%EndResource
+end
+% Begin encoding-delta
+[/N43/Helvetica -1 TZ
+% End encoding-delta
+% Begin encoding-delta
+[/N18/Symbol -1 TZ
+% End encoding-delta
+userdict begin
+%%BeginResource: font TimesNewRoman,BoldItalic
+%%EndResource
+end
+% Begin encoding-delta
+[/N51/Times-BoldItalic 1 TZ
+% End encoding-delta
+userdict begin
+%%BeginResource: font Arial
+%%EndResource
+end
+% Begin encoding-delta
+[/N38/Helvetica 1 TZ
+% End encoding-delta
+PDFVars/TermAll get exec end end
+
+%%EndSetup
+%%Page: 1 1
+%%BeginPageSetup
+userdict /pgsave save put
+PDFVars begin PDF begin PDFVars/InitAll get exec
+%%EndPageSetup
+0 0 612 792 RC
+BT
+135.75 38.25 TD
+0 0 0 rg
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+335.25 0 TD
+0 0 1 rg
+0.375 Tc
+0 Tw
+(1)Tj
+ET
+q
+471 36 5.25 11.25 re
+W n 
+BT
+475.5 38.25 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+Q
+BT
+305.25 654 TD
+0 0 0 rg
+/N8 12 Tf
+0 Tc
+( )Tj
+0 -14.25 TD
+( )Tj
+0 -13.5 TD
+( )Tj
+T*
+( )Tj
+0 -14.25 TD
+( )Tj
+0 -13.5 TD
+( )Tj
+-169.5 -19.5 TD
+/N6 18 Tf
+-0.0171 Tc
+0.0171 Tw
+(Assessing the reliability of web)Tj
+226.5 0 TD
+0.006 Tc
+0 Tw
+(-)Tj
+6 0 TD
+0.0528 Tc
+-0.0528 Tw
+(based )Tj
+-232.5 -20.25 TD
+-0.012 Tc
+0.012 Tw
+(statistical software)Tj
+134.25 0 TD
+0 Tc
+0 Tw
+( )Tj
+-134.25 -15.75 TD
+/N6 12 Tf
+( )Tj
+0 -13.5 TD
+( )Tj
+0 -14.25 TD
+-0.0823 Tc
+0.3323 Tw
+(A. M. Kitchen, R. Drachenberg, J. Symanzik)Tj
+215.25 0 TD
+0 Tc
+0 Tw
+( )Tj
+-215.25 -12 TD
+/N6 9.75 Tf
+-0.1875 Tw
+( )Tj
+0 -12.75 TD
+/N6 12 Tf
+-0.0141 Tc
+0.0141 Tw
+(Department of Mathematics and Statistics, Utah State University, )Tj
+0 -14.25 TD
+-0.0808 Tc
+0.2951 Tw
+(3900 Old Main Hill, Logan, UT 84322, U.S.A.)Tj
+225 0 TD
+0 Tc
+0 Tw
+( )Tj
+-225 -13.5 TD
+/N8 12 Tf
+( )Tj
+0 -13.5 TD
+( )Tj
+144.75 -14.25 TD
+-0.0591 Tc
+(Summary)Tj
+50.25 0 TD
+0 Tc
+( )Tj
+-195 -13.5 TD
+( )Tj
+36 -12.75 TD
+/N6 9.75 Tf
+0.1055 Tc
+1.207 Tw
+(Statistical reference da)Tj
+93.75 0 TD
+0.0971 Tc
+1.1216 Tw
+(tasets from the National Institute of Standards and )Tj
+-129.75 -11.25 TD
+0.1384 Tc
+1.7195 Tw
+(Technology were used to evaluate the accuracy and precision of two web)Tj
+314.25 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0.0599 Tc
+-0.2474 Tw
+(based )Tj
+-317.25 -11.25 TD
+0.1323 Tc
+0.4302 Tw
+(statistical packages, WebStat \(found at )Tj
+161.25 0 TD
+0.107 Tc
+0 Tw
+(http://www.stat.sc.edu/webstat/)Tj
+ET
+297 371.25 126 0.75 re
+f 
+BT
+423 372.75 TD
+0.0384 Tc
+0.2741 Tw
+(\) and Statlets )Tj
+-287.25 -12 TD
+0.1834 Tc
+0.7541 Tw
+(\(found at )Tj
+42 0 TD
+0.1222 Tc
+0 Tw
+(http://www.statlets.com/statletsindex.htm)Tj
+ET
+177.75 359.25 165 0.75 re
+f 
+BT
+342.75 360.75 TD
+0.0969 Tc
+0.9656 Tw
+(\).  This evaluation revealed that )Tj
+-207 -11.25 TD
+0.1346 Tc
+-0.2596 Tw
+(both packages performed reasonably well in the analysis of lower difficu\
+lty datasets, )Tj
+0 -11.25 TD
+0.0779 Tc
+2.4346 Tw
+(with decreasing accuracy as difficulty increases.  The decrease in )Tj
+288.75 0 TD
+-0.0237 Tc
+2.8362 Tw
+(accuracy for)Tj
+0 Tc
+-0.9375 Tw
+( )Tj
+-288.75 -12 TD
+0.1132 Tc
+1.0263 Tw
+(datasets of higher difficulty can often be contributed to the dataset st\
+orage format )Tj
+0 -11.25 TD
+0.1339 Tc
+0.2286 Tw
+(\(which seems to be single precision in Statlets and is double precision\
+ in WebStat\).  )Tj
+T*
+0.1404 Tc
+1.9903 Tw
+(For most statistical analysis needs, the level of accuracy found in WebS\
+)Tj
+311.25 0 TD
+0.0285 Tc
+0.909 Tw
+(tat and )Tj
+-311.25 -12 TD
+0.0951 Tc
+1.0924 Tw
+(Statlets would likely be unsatisfactory.  Limitations of the packages ar\
+e discussed )Tj
+0 -11.25 TD
+0.1303 Tc
+1.0322 Tw
+(and comparisons of accuracy with commercially available statistical pack\
+ages are )Tj
+T*
+0.1623 Tc
+0.0252 Tw
+(presented.  WebStat and Statlets are user)Tj
+165 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0.0929 Tc
+0.3446 Tw
+(friendly packages that are amenable to us)Tj
+168 0 TD
+-0.579 Tc
+-0.3585 Tw
+(e )Tj
+-336 -12 TD
+0.1609 Tc
+1.5802 Tw
+(as teaching tools.  Thus we advise that the statistics packages we evalu\
+ated be )Tj
+0 -11.25 TD
+0.1381 Tc
+0.2838 Tw
+(restricted to use in teaching situations.  They should not be used for t\
+he analysis of )Tj
+T*
+0.1189 Tc
+-0.1189 Tw
+(datasets with higher difficulty levels.)Tj
+147.75 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-147.75 -12 TD
+( )Tj
+0 -11.25 TD
+/N8 9.75 Tf
+0.1118 Tc
+0 Tw
+(Keywords:)Tj
+45.75 0 TD
+/N6 9.75 Tf
+0.0915 Tc
+1.071 Tw
+(  Numerical performance, Statistical )Tj
+154.5 0 TD
+0.1069 Tc
+1.0181 Tw
+(reference datasets, Statlets, StRD, )Tj
+-200.25 -11.25 TD
+0.2792 Tc
+0 Tw
+(WebStat.)Tj
+37.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-37.5 -13.5 TD
+/N6 12 Tf
+0 Tw
+( )Tj
+0 -13.5 TD
+/N8 12 Tf
+( )Tj
+ET
+PDFVars/TermAll get exec end end
+userdict /pgsave get restore
+showpage
+%%PageTrailer
+%%EndPage
+%%Page: 2 2
+%%BeginPageSetup
+userdict /pgsave save put
+PDFVars begin PDF begin PDFVars/InitAll get exec
+%%EndPageSetup
+0 0 612 792 RC
+BT
+135.75 38.25 TD
+0 0 0 rg
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+335.25 0 TD
+0 0 1 rg
+0.375 Tc
+0 Tw
+(2)Tj
+ET
+q
+471 36 5.25 11.25 re
+W n 
+BT
+475.5 38.25 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+Q
+BT
+135.75 650.25 TD
+0 0 0 rg
+/N8 15.75 Tf
+0.0662 Tc
+0.4963 Tw
+(I. Introduction)Tj
+100.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-100.5 -15 TD
+/N8 12 Tf
+0 Tw
+( )Tj
+36 -12 TD
+/N6 9.75 Tf
+0.0952 Tc
+0.3006 Tw
+(The reliability of commercially available statistical software packages \
+such )Tj
+-36 -11.25 TD
+0.1681 Tc
+1.8944 Tw
+(as SAS, SPSS, S)Tj
+72 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0.0768 Tc
+1.7357 Tw
+(Plus, Microsoft Excel, and Mathematica 4 has been previously )Tj
+-75 -12 TD
+0.1306 Tc
+1.9319 Tw
+(assessed \(McCullough 1998, McCullough)Tj
+174.75 0 TD
+0.1168 Tc
+1.5707 Tw
+( 1999a, McCullough and Wilson 1999, )Tj
+-174.75 -11.25 TD
+0.116 Tc
+0.4465 Tw
+(McCullough 2000\).  These evaluations have been carried out because it i\
+s essential )Tj
+0 -11.25 TD
+0.1113 Tc
+0.3976 Tw
+(to be aware of the level of accuracy and precision associated with numer\
+ical output )Tj
+0 -12 TD
+0.1295 Tc
+-0.2233 Tw
+(from a statistical package.  These tests have reveale)Tj
+207 0 TD
+0.1428 Tc
+-0.1803 Tw
+(d mixed competencies of various )Tj
+-207 -11.25 TD
+0.0824 Tc
+3.4801 Tw
+(statistical packages in entry level and intermediate level tests in thre\
+e areas:)Tj
+0 Tc
+-0.9375 Tw
+( )Tj
+0 -11.25 TD
+0.0864 Tc
+1.8094 Tw
+(estimation, random number generation, and statistical distributions \(e.\
+g. Sawitzki )Tj
+0 -12 TD
+0.1623 Tc
+3.4002 Tw
+(1994a, b; McCullough 1999a, McCullough and Wilson 1999\).  As)Tj
+299.25 0 TD
+0.1163 Tc
+3.4462 Tw
+( software)Tj
+0 Tc
+-0.1875 Tw
+( )Tj
+-299.25 -11.25 TD
+0.1111 Tc
+0.163 Tw
+(packages often do not disclose the algorithms or methods of implementati\
+on used in )Tj
+0 -11.25 TD
+0.1384 Tc
+1.1059 Tw
+(procedures, the reliability of software packages is frequently not readi\
+ly apparent )Tj
+0 -12 TD
+0.0799 Tc
+1.1749 Tw
+(from information within the package.  Thus a comparison of output to ben\
+chmark )Tj
+0 -11.25 TD
+0.1064 Tc
+0.1347 Tw
+(results has been the preferred method used to evaluate the accuracy and \
+precision of )Tj
+T*
+0.0631 Tc
+1.7316 Tw
+(software packages.  In this paper we evaluate the accuracy and precision\
+ of two )Tj
+0 -12 TD
+0.0855 Tc
+0 Tw
+(web)Tj
+16.5 0 TD
+-0.2467 Tc
+(-)Tj
+3 0 TD
+0.1676 Tc
+1.1449 Tw
+(based packages, WebStat and Statlets.  While these web)Tj
+237 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0.1819 Tc
+0.3806 Tw
+(based packages are )Tj
+-259.5 -11.25 TD
+0.0063 Tc
+0.5562 Tw
+(most commonly)Tj
+64.5 0 TD
+0.079 Tc
+0.296 Tw
+( used for teaching purposes, students that are exposed to a particular )Tj
+-64.5 -11.25 TD
+0.0473 Tc
+0.3652 Tw
+(software package in the classroom are likely to continue to use this pac\
+kage. Thus, a )Tj
+0 -12 TD
+0.1166 Tc
+2.6959 Tw
+(comparison of the results of web)Tj
+144.75 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0.0934 Tc
+2.3976 Tw
+(based packages to the results of commercial )Tj
+-147.75 -11.25 TD
+0.1673 Tc
+-0.3548 Tw
+(packages is warranted.)Tj
+90.75 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+2.25 0 TD
+( )Tj
+-93 -11.25 TD
+( )Tj
+0 -16.5 TD
+( )Tj
+36 0 TD
+0.1264 Tc
+0.2861 Tw
+(The Statistical Reference Datasets Project was developed by the Statisti\
+cal )Tj
+-36 -12 TD
+0.1217 Tc
+1.1908 Tw
+(Engineering Division and the Mathematical and Computational Sciences Div\
+ision )Tj
+0 -11.25 TD
+0.0702 Tc
+0.2878 Tw
+(within the Information Technology Laboratory of the American National In\
+stitute of )Tj
+T*
+0.1848 Tc
+7.1278 Tw
+(Standards and )Tj
+7.5428 Tc
+0 Tw
+(T)Tj
+80.25 0 TD
+0.0698 Tc
+7.3365 Tw
+(echnology \(NIST\).  These datasets can be found at)Tj
+0 Tc
+-0.1875 Tw
+( )Tj
+-80.25 -12 TD
+0.079 Tc
+0 Tw
+(http://www.nist.gov/itl/div898/strd)Tj
+ET
+135.75 340.5 139.5 0.75 re
+f 
+BT
+275.25 342 TD
+0.1089 Tc
+1.2036 Tw
+(.  The statistical reference datasets \(StRD\) were )Tj
+-139.5 -11.25 TD
+0.1454 Tc
+0.3338 Tw
+(compiled for the express purpose of facilitating statisticians in eval)Tj
+273.75 0 TD
+0.1053 Tc
+0.0822 Tw
+(uating statistical )Tj
+-273.75 -11.25 TD
+0.1694 Tc
+-0.3069 Tw
+(software packages \(Rogers et al. 1998\), but they have also been used i\
+n validation of )Tj
+0 -12 TD
+0.1289 Tc
+6.4336 Tw
+(econometric and spreadsheet software \(McCullough 1998, 1999a, 1999b,)Tj
+0 Tc
+0.5625 Tw
+( )Tj
+0 -11.25 TD
+0.1672 Tc
+0.4578 Tw
+(McCullough and Vinod 1999, McCullough and Wilson 1999, Vinod 2000\).  Th\
+ere )Tj
+T*
+0.0998 Tc
+0.4627 Tw
+(are fou)Tj
+28.5 0 TD
+0.1006 Tc
+0.3785 Tw
+(r areas covered by the StRD: univariate summary statistics, one)Tj
+257.25 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0.0311 Tc
+0.1564 Tw
+(way analysis )Tj
+-288.75 -12 TD
+0.1018 Tc
+3.7607 Tw
+(of variance, linear regression, and nonlinear regression.  Each area inc\
+ludes)Tj
+0 Tc
+-0.1875 Tw
+( )Tj
+0 -11.25 TD
+0.1405 Tc
+0.572 Tw
+(problems of lower \(l\), average \(a\) and higher difficulty \(h\).  The\
+ difficulty level is )Tj
+T*
+0.1571 Tc
+0.7804 Tw
+(determined by )Tj
+63 0 TD
+0.1508 Tc
+1.0784 Tw
+(the sources of inaccuracy: truncation error, cancellation error, and )Tj
+-63 -12 TD
+0.0814 Tc
+1.7766 Tw
+(accumulation error.  Truncation error relates to the inexact binary repr\
+esentation )Tj
+0 -11.25 TD
+0.1255 Tc
+-0.0822 Tw
+(error in storing decimal numbers.  Cancellation error results from the \221\
+stiffness\222, i.e., )Tj
+T*
+0.0389 Tc
+1.2736 Tw
+(the number of )Tj
+63.75 0 TD
+0.0892 Tc
+1.5358 Tw
+(constant leading digits in the datasets.  Since the total number of )Tj
+-63.75 -11.25 TD
+0.1499 Tc
+1.1001 Tw
+(arithmetic computations is proportional to the size of a dataset, the ac\
+cumulation )Tj
+0 -12 TD
+0.1107 Tc
+0.3941 Tw
+(error may increase as the number of observations increases due to the ac\
+cumulation )Tj
+0 -10.5 TD
+0.1304 Tc
+-0.3179 Tw
+(of small errors.  )Tj
+65.25 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-29.25 -21.75 TD
+0.0143 Tc
+0 Tw
+(Can)Tj
+15.75 0 TD
+0.1335 Tc
+1.779 Tw
+(cellation error and accumulation error have been discussed in more )Tj
+-51.75 -12 TD
+0.132 Tc
+1.1805 Tw
+(detail in Simon and Lesage \(1989\).  Note that most of the ANOVA datase\
+ts and )Tj
+ET
+PDFVars/TermAll get exec end end
+userdict /pgsave get restore
+showpage
+%%PageTrailer
+%%EndPage
+%%Page: 3 3
+%%BeginPageSetup
+userdict /pgsave save put
+PDFVars begin PDF begin PDFVars/InitAll get exec
+%%EndPageSetup
+0 0 612 792 RC
+BT
+135.75 38.25 TD
+0 0 0 rg
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+335.25 0 TD
+0 0 1 rg
+0.375 Tc
+0 Tw
+(3)Tj
+ET
+q
+471 36 5.25 11.25 re
+W n 
+BT
+475.5 38.25 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+Q
+BT
+135.75 655.5 TD
+0 0 0 rg
+0.0817 Tc
+0.3201 Tw
+(several of the univariate summary statistics datasets from the StRD are \
+based on the )Tj
+0 -10.5 TD
+0.1285 Tc
+-0.316 Tw
+(construction principle outl)Tj
+105.75 0 TD
+0.1156 Tc
+-0.196 Tw
+(ined by Simon and Lesage \(1989\).  )Tj
+141.75 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-247.5 -17.25 TD
+( )Tj
+36 -12 TD
+0.0979 Tc
+0.4646 Tw
+(The StRD provides \221certified values\222 to 15 digits for linear proce\
+dures and )Tj
+-36 -11.25 TD
+0.1473 Tc
+1.6652 Tw
+(11 digits for nonlinear procedures.  These values were produced using mu\
+ltiple )Tj
+0 -11.25 TD
+0.1082 Tc
+2.1418 Tw
+(precision computer arithmetic to 500 digits for linear procedures)Tj
+276.75 0 TD
+0.0776 Tc
+0.9849 Tw
+( and quadruple )Tj
+-276.75 -12 TD
+0.0684 Tc
+1.6816 Tw
+(precision for nonlinear least squares problems, thus reducing rounding e\
+rror to a )Tj
+0 -11.25 TD
+0.0818 Tc
+1.1807 Tw
+(minimum.  For an interpretation of results obtained from the use of StRD\
+ on PCs )Tj
+T*
+0.1266 Tc
+4.1859 Tw
+(where only double precision instead of multiple precision is available, \
+see)Tj
+0 Tc
+-0.1875 Tw
+( )Tj
+0 -12 TD
+0.25 Tc
+0 Tw
+(McC)Tj
+19.5 0 TD
+0.0958 Tc
+0.5417 Tw
+(ollough \(1999c\).  Gentle \(1998\) summarizes facts about digital repre\
+sentations )Tj
+-19.5 -11.25 TD
+0.0709 Tc
+1.1345 Tw
+(of numeric data.  According to the IEEE Standard 754, the mantissa of a \
+floating)Tj
+336.75 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+-336.75 -11.25 TD
+0.0787 Tc
+0.3514 Tw
+(point number with base 2 must consist of 24 bits for single precision an\
+d 53 bits for )Tj
+0 -12.75 TD
+0.0844 Tc
+0.4781 Tw
+(double pre)Tj
+43.5 0 TD
+0.1129 Tc
+0.1996 Tw
+(cision.  Since )Tj
+57.75 0 TD
+/N18 9.75 Tf
+0.006 Tc
+0 Tw
+(\353)Tj
+4.5 0 TD
+/N6 9.75 Tf
+0.0965 Tc
+(log)Tj
+12.75 -1.5 TD
+/N6 6.75 Tf
+0.375 Tc
+(10)Tj
+7.5 1.5 TD
+/N6 9.75 Tf
+0.1875 Tw
+( 2)Tj
+7.5 4.5 TD
+/N6 6.75 Tf
+-0.375 Tc
+0 Tw
+(24)Tj
+6.75 -4.5 TD
+/N18 9.75 Tf
+0.006 Tc
+(\373)Tj
+3.75 0 TD
+/N6 9.75 Tf
+-0.249 Tc
+0.4365 Tw
+( = )Tj
+11.25 0 TD
+/N18 9.75 Tf
+0.006 Tc
+0 Tw
+(\353)Tj
+4.5 0 TD
+/N6 9.75 Tf
+-0.1406 Tc
+(7.22)Tj
+16.5 0 TD
+/N18 9.75 Tf
+0.006 Tc
+(\373)Tj
+4.5 0 TD
+/N6 9.75 Tf
+0.3594 Tc
+0.2031 Tw
+( = 7 and )Tj
+38.25 0 TD
+/N18 9.75 Tf
+0.006 Tc
+0 Tw
+(\353)Tj
+3.75 0 TD
+/N6 9.75 Tf
+0.0965 Tc
+(log)Tj
+12.75 -1.5 TD
+/N6 6.75 Tf
+0.375 Tc
+(10)Tj
+7.5 1.5 TD
+/N6 9.75 Tf
+0.1875 Tw
+( 2)Tj
+7.5 4.5 TD
+/N6 6.75 Tf
+0 Tw
+(53)Tj
+7.5 -4.5 TD
+/N18 9.75 Tf
+0.006 Tc
+(\373)Tj
+3.75 0 TD
+/N6 9.75 Tf
+-0.249 Tc
+0.4365 Tw
+( = )Tj
+11.25 0 TD
+/N18 9.75 Tf
+0.006 Tc
+0 Tw
+(\353)Tj
+3.75 0 TD
+/N6 9.75 Tf
+0.2625 Tc
+(15.95)Tj
+22.5 0 TD
+/N18 9.75 Tf
+0.006 Tc
+(\373)Tj
+3.75 0 TD
+/N6 9.75 Tf
+0.1575 Tc
+0.655 Tw
+( =15, we )Tj
+-303 -11.25 TD
+0.1649 Tc
+0.3976 Tw
+(can correctly store about 7 decimal digits in single precision and about\
+ 15 decimal )Tj
+0 -11.25 TD
+0.1213 Tc
+1.0759 Tw
+(digits in double precision, given that there exists a finite binary repr\
+esentation of )Tj
+0 -12 TD
+0.1752 Tc
+-0.3627 Tw
+(these number)Tj
+53.25 0 TD
+0.2599 Tc
+-0.4474 Tw
+(s.  )Tj
+11.25 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-64.5 -11.25 TD
+( )Tj
+0 -15.75 TD
+( )Tj
+36 0 TD
+0.364 Tc
+0 Tw
+(Web)Tj
+19.5 0 TD
+-0.2467 Tc
+(-)Tj
+3 0 TD
+0.1448 Tc
+1.6177 Tw
+(based statistical packages such as WebStat \(West 1997, West and )Tj
+-58.5 -12 TD
+0.041 Tc
+0.5215 Tw
+(Ogden 1997, 1998, West et al. 1998\), Statlets and XploRe \(K\366tter, 1\
+997a, b, M\374ller, )Tj
+0 -12 TD
+0.1351 Tc
+1.1774 Tw
+(1998, Schmelzer et al. 1996\) have been available for a number of years,\
+ and are )Tj
+0 -11.25 TD
+0.1528 Tc
+0.4097 Tw
+(used for statisti)Tj
+62.25 0 TD
+0.0979 Tc
+0.3574 Tw
+(cal data analysis and as teaching tools.  They are available to a wide )Tj
+-62.25 -11.25 TD
+0.0923 Tc
+1.0471 Tw
+(variety of users, including students, teachers, and other data analyzers\
+.  Using the )Tj
+0 -12 TD
+0.0917 Tc
+9.4708 Tw
+(\223Advanced Search\224 and \223links to this URL\224 feature available \
+at)Tj
+0 Tc
+0.5625 Tw
+( )Tj
+0 -11.25 TD
+0.0237 Tc
+0 Tw
+(http://hotbot.lycos.com/)Tj
+ET
+135.75 378.75 95.25 0.75 re
+f 
+BT
+231 380.25 TD
+0.0657 Tc
+1.1104 Tw
+(, on April 16, 2001, we found approximately 60 pages that )Tj
+-95.25 -11.25 TD
+0.0742 Tc
+1.3633 Tw
+(contain links to the WebStat URL )Tj
+148.5 0 TD
+0.1509 Tc
+0 Tw
+(http://www.stat.sc.edu/webstat)Tj
+ET
+284.25 367.5 124.5 0.75 re
+f 
+BT
+408.75 369 TD
+-0.0077 Tc
+1.5077 Tw
+(, and more than )Tj
+-273 -12 TD
+0.1469 Tc
+0.2281 Tw
+(400 pages that contain the old WebStat URL )Tj
+186.75 0 TD
+0.1575 Tc
+0 Tw
+(http://www.stat.sc.edu/~west/webstat)Tj
+ET
+322.5 355.5 151.5 0.75 re
+f 
+BT
+474 357 TD
+-0.9375 Tc
+0.75 Tw
+(.  )Tj
+-338.25 -11.25 TD
+0.1325 Tc
+9.43 Tw
+(We found more than 500 pages that contain the Statlets URL)Tj
+0 Tc
+-0.1875 Tw
+( )Tj
+0 -11.25 TD
+0.1556 Tc
+0 Tw
+(http://www.statlets.com)Tj
+ET
+135.75 333 95.25 0.75 re
+f 
+BT
+231 334.5 TD
+-0.1875 Tc
+(.  )Tj
+6.75 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-66 -28.5 TD
+0.1863 Tc
+1.8762 Tw
+(The accuracy and precision of such packag)Tj
+186.75 0 TD
+0.1435 Tc
+1.469 Tw
+(es, however, have not been )Tj
+-222.75 -12 TD
+0.0592 Tc
+0.3879 Tw
+(evaluated so far.  In this paper we present an evaluation of two web)Tj
+272.25 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0.0806 Tc
+-0.2681 Tw
+(based packages, )Tj
+-275.25 -11.25 TD
+0.1054 Tc
+1.6446 Tw
+(WebStat and Statlets, and compare their accuracy and precision to that o\
+btained )Tj
+0 -11.25 TD
+0.0968 Tc
+1.9657 Tw
+(when using commercially available statistical software packages.)Tj
+271.5 0 TD
+0.0087 Tc
+1.4538 Tw
+(  We found that )Tj
+-271.5 -12 TD
+0.1341 Tc
+2.8659 Tw
+(results obtained from the web)Tj
+131.25 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0.1713 Tc
+2.3198 Tw
+(based packages were highly variable and often )Tj
+-134.25 -11.25 TD
+0.1317 Tc
+1.9933 Tw
+(lacking in accuracy and precision.  In addition, the packages had variou\
+s other)Tj
+0 Tc
+-0.9375 Tw
+( )Tj
+0 -11.25 TD
+0.0803 Tc
+1.0822 Tw
+(limitations, including processes involved with data entry and data trans\
+formations. )Tj
+342 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-342 -12 TD
+0.129 Tc
+2.8199 Tw
+(We conclude that the packages lack the reliability needed for most stati\
+stical)Tj
+0 Tc
+-0.1875 Tw
+( )Tj
+0 -11.25 TD
+0.1407 Tc
+-0.3282 Tw
+(applications, and should be limited to teaching applications.  )Tj
+244.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-244.5 -27.75 TD
+( )Tj
+ET
+PDFVars/TermAll get exec end end
+userdict /pgsave get restore
+showpage
+%%PageTrailer
+%%EndPage
+%%Page: 4 4
+%%BeginPageSetup
+userdict /pgsave save put
+PDFVars begin PDF begin PDFVars/InitAll get exec
+%%EndPageSetup
+0 0 612 792 RC
+BT
+135.75 38.25 TD
+0 0 0 rg
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+335.25 0 TD
+0 0 1 rg
+0.375 Tc
+0 Tw
+(4)Tj
+ET
+q
+471 36 5.25 11.25 re
+W n 
+BT
+475.5 38.25 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+Q
+BT
+135.75 650.25 TD
+0 0 0 rg
+/N8 15.75 Tf
+0.0188 Tc
+0.5437 Tw
+(II. Methods)Tj
+79.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-79.5 -15 TD
+/N6 12 Tf
+0 Tw
+( )Tj
+0 -12 TD
+( )Tj
+36 0 TD
+/N6 9.75 Tf
+0.176 Tc
+0.3865 Tw
+(We assessed two web)Tj
+89.25 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0.1118 Tc
+0.4507 Tw
+(based statistical packages; WebStat 2.0 \(West 1997, )Tj
+-128.25 -11.25 TD
+0.1164 Tc
+0.4461 Tw
+(West and Ogden 1997, 199)Tj
+110.25 0 TD
+0.0892 Tc
+0.3983 Tw
+(8, West et al. 1998\), and Statlets \(NWP Associates, Inc., )Tj
+-110.25 -12 TD
+0.0936 Tc
+0.9462 Tw
+(Englewood Cliffs, N.J.\) by comparing the results of univariate summary \
+statistics, )Tj
+0 -11.25 TD
+0.1296 Tc
+0.3705 Tw
+(analysis of variance, and linear regression operations with certified va\
+lues stated in )Tj
+T*
+0.1014 Tc
+1.9611 Tw
+(the statistical reference da)Tj
+110.25 0 TD
+0.1328 Tc
+1.5964 Tw
+(taset collection \(StRD\).  We did not evaluate random )Tj
+-110.25 -12 TD
+0.111 Tc
+4.0348 Tw
+(number generation and statistical distributions since these features wer\
+e not)Tj
+0 Tc
+-0.1875 Tw
+( )Tj
+0 -11.25 TD
+0.1164 Tc
+1.1384 Tw
+(available in WebStat and Statlets when this analysis was conducted.  In \
+addition, )Tj
+T*
+0.071 Tc
+0.4915 Tw
+(nonlinear regression analysis was not evalu)Tj
+175.5 0 TD
+0.1085 Tc
+-0.171 Tw
+(ated because these packages were unable )Tj
+-175.5 -12 TD
+0.1066 Tc
+0.4559 Tw
+(to carry out these procedures.  We used Netscape Navigator 4.73 with Jav\
+a runtime )Tj
+0 -11.25 TD
+0.1623 Tc
+-0.2921 Tw
+(engine version 1.3.1_01 under Microsoft Windows 98 for all our evaluatio\
+ns.  While )Tj
+T*
+0.1066 Tc
+1.0184 Tw
+(the host computer can affect the least significant )Tj
+205.5 0 TD
+0.1279 Tc
+0.8096 Tw
+(bit, depending on the number of )Tj
+-205.5 -12 TD
+0.1594 Tc
+2.5377 Tw
+(bits carried on to the numeric coprocessor, the evaluation of an algorit\
+hm is )Tj
+0 -11.25 TD
+0.159 Tc
+-0.3465 Tw
+(completely dependent on the Java runtime engine that the browser is usin\
+g.  )Tj
+306 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-306 -11.25 TD
+( )Tj
+36 -12 TD
+0.0746 Tc
+0.4254 Tw
+(We used the simplest or most obvious methods within the software to )Tj
+284.25 0 TD
+-0.1053 Tc
+-0.0822 Tw
+(carry )Tj
+-320.25 -11.25 TD
+0.1726 Tc
+1.0899 Tw
+(out each analysis.  For example, to carry out a simple linear regression\
+ we used )Tj
+0 -11.25 TD
+0.0746 Tc
+2.8129 Tw
+(\223simple linear regression,\224 rather than using multiple regression \
+with only one)Tj
+0 Tc
+-0.9375 Tw
+( )Tj
+0 -12 TD
+0.1024 Tc
+0.1101 Tw
+(independent variable.  This was done for the purpose of analyzing the da\
+ta using the )Tj
+0 -11.25 TD
+0 Tc
+0 Tw
+(meth)Tj
+19.5 0 TD
+0.0944 Tc
+1.7181 Tw
+(od that would be most commonly used.  However, a polynomial regression )Tj
+-19.5 -11.25 TD
+0.1442 Tc
+0.1683 Tw
+(analysis was conducted on one dataset, )Tj
+162 0 TD
+/N23 9.75 Tf
+-0.0148 Tc
+0 Tw
+(Wampler1)Tj
+41.25 0 TD
+/N6 9.75 Tf
+0.0653 Tc
+0.3901 Tw
+(, using both the most obvious and )Tj
+-203.25 -12 TD
+0.1415 Tc
+0.471 Tw
+(an alternate method in order to compare the results.  The most obvious m\
+ethod for )Tj
+0 -11.25 TD
+0.1253 Tc
+0.8122 Tw
+(polynomial regression )Tj
+94.5 0 TD
+0.1023 Tc
+0.8352 Tw
+(involves the use of the polynomial regression option that is )Tj
+-94.5 -11.25 TD
+0.1052 Tc
+1.1632 Tw
+(available in Statlets \(see results in Table 3\).  Note that this option\
+ is limited to a )Tj
+0 -12 TD
+0.084 Tc
+3.5467 Tw
+(single explanatory variable.  For the alternative method, we used a mult\
+iple)Tj
+0 Tc
+0.5625 Tw
+( )Tj
+0 -11.25 TD
+0.0241 Tc
+0.5384 Tw
+(regression analysis by importin)Tj
+125.25 0 TD
+0.2123 Tc
+0.3502 Tw
+(g columns of x)Tj
+60.75 4.5 TD
+/N6 6.75 Tf
+0.375 Tc
+0.1875 Tw
+(2 )Tj
+5.25 -4.5 TD
+/N6 9.75 Tf
+0.0332 Tc
+0.3418 Tw
+(etc.  These results are reported in the )Tj
+-191.25 -11.25 TD
+0.0854 Tc
+1.1271 Tw
+(text.  In addition, it is possible to generate powers of variables withi\
+n the Statlets )Tj
+0 -12 TD
+0.088 Tc
+1.1173 Tw
+(program, but we chose to calculate the values to full precision in Micro\
+soft Excel )Tj
+0 -11.25 TD
+0.2305 Tc
+0.332 Tw
+(and type them in by hand due t)Tj
+129.75 0 TD
+0.1429 Tc
+0.5134 Tw
+(o errors found in the calculations performed within )Tj
+-129.75 -11.25 TD
+0.2054 Tc
+0 Tw
+(Statlets.)Tj
+32.25 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+3.75 -12 TD
+( )Tj
+0 -11.25 TD
+0.0942 Tc
+1.1245 Tw
+(The mean and standard deviations obtained from the web)Tj
+237.75 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0.1012 Tc
+0.4613 Tw
+(based packages )Tj
+-276.75 -11.25 TD
+0.0888 Tc
+3.4737 Tw
+(when performing univariate summary statistic analyses were compared to t\
+he)Tj
+0 Tc
+-0.9375 Tw
+( )Tj
+0 -12 TD
+0.1357 Tc
+2.0518 Tw
+(reference dataset results.  Results evaluated fr)Tj
+197.25 0 TD
+0.0921 Tc
+1.9704 Tw
+(om one)Tj
+31.5 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3.75 0 TD
+0.1585 Tc
+1.3415 Tw
+(way analyses of variance )Tj
+-232.5 -11.25 TD
+0.3366 Tc
+2.4759 Tw
+(involved the F)Tj
+63 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0.0557 Tc
+2.4568 Tw
+(ratio.  Results of linear regression analyses that were evaluated )Tj
+-66 -11.25 TD
+0.1229 Tc
+-0.3104 Tw
+(involved coefficients, standard errors, and R)Tj
+177 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0.2199 Tc
+-0.4074 Tw
+(squared values.  )Tj
+67.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-247.5 -12 TD
+( )Tj
+0 -11.25 TD
+( )Tj
+36 0 TD
+0.151 Tc
+0.5365 Tw
+(The base 10 log relative error \(LRE\) \(McCullough and Wilson 1999\) wa\
+s )Tj
+-36 -11.25 TD
+-0.0874 Tc
+0 Tw
+(calcula)Tj
+27.75 0 TD
+0.0816 Tc
+1.7309 Tw
+(ted to compare results obtained from WebStat and Statlets with the StRD \
+)Tj
+-27.75 -12 TD
+0.1151 Tc
+1.1506 Tw
+(result for all procedures.  The LRE value is an estimate of the number o\
+f correct )Tj
+0 -11.25 TD
+0.1539 Tc
+-0.3914 Tw
+(digits in the result as compared to certified values from the reference \
+dataset.  Where )Tj
+T*
+0.1217 Tc
+1.1908 Tw
+(x is the value)Tj
+57 0 TD
+0.1068 Tc
+1.0182 Tw
+( obtained from the statistical package under evaluation, and c is the )Tj
+-57 -12 TD
+0.0609 Tc
+1.0909 Tw
+(certified value from the StRD reference datasets, the number of correct \
+digits in x )Tj
+0 -11.25 TD
+0.176 Tc
+-0.3635 Tw
+(can be calculated by the log relative error as follows:)Tj
+211.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+PDFVars/TermAll get exec end end
+userdict /pgsave get restore
+showpage
+%%PageTrailer
+%%EndPage
+%%Page: 5 5
+%%BeginPageSetup
+userdict /pgsave save put
+PDFVars begin PDF begin PDFVars/InitAll get exec
+%%EndPageSetup
+0 0 612 792 RC
+BT
+135.75 38.25 TD
+0 0 0 rg
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+335.25 0 TD
+0 0 1 rg
+0.375 Tc
+0 Tw
+(5)Tj
+ET
+q
+471 36 5.25 11.25 re
+W n 
+BT
+475.5 38.25 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+Q
+BT
+135.75 655.5 TD
+0 0 0 rg
+0 Tc
+-0.1875 Tw
+( )Tj
+0 -12 TD
+( )Tj
+36 0 TD
+( )Tj
+36 0 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+5.25 0 TD
+/N6 9.75 Tf
+-0.249 Tc
+0.5115 Tw
+(  =   )Tj
+18 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0.0965 Tc
+0.466 Tw
+( log)Tj
+15.75 -1.5 TD
+/N6 6.75 Tf
+0.375 Tc
+0 Tw
+(10)Tj
+7.5 1.5 TD
+/N6 9.75 Tf
+-0.3572 Tc
+-0.5803 Tw
+(\(|x )Tj
+11.25 0 TD
+0.375 Tc
+0 Tw
+(\226)Tj
+5.25 0 TD
+0.0764 Tc
+-0.0764 Tw
+( c| / |c|\) )Tj
+30.75 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-168.75 -12 TD
+/N8 9.75 Tf
+( )Tj
+36 -11.25 TD
+/N6 9.75 Tf
+0.074 Tc
+0.3731 Tw
+(Any LRE between zero and one was set to zero following McCullough and )Tj
+-36 -11.25 TD
+0.1226 Tc
+0.5399 Tw
+(Wilson \(1999\).  In cases where there are multiple LRE values for any o\
+ne analysis )Tj
+0 -12.75 TD
+-0.0243 Tc
+0.5868 Tw
+(\(e.g. for )Tj
+36.75 0 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+4.5 -1.5 TD
+/N18 6.75 Tf
+0.0443 Tc
+(b)Tj
+3.75 0 TD
+/N23 6.75 Tf
+-0.1875 Tc
+(, )Tj
+5.25 1.5 TD
+/N18 9.75 Tf
+-0.1028 Tc
+(l)Tj
+4.5 -1.5 TD
+/N18 6.75 Tf
+-0.3203 Tc
+(s)Tj
+3.75 0 TD
+/N23 6.75 Tf
+-0.1875 Tc
+(,)Tj
+1.5 1.5 TD
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+4.5 0 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+4.5 -1.5 TD
+/N6 6.75 Tf
+-0.0022 Tc
+(R)Tj
+5.25 1.5 TD
+/N6 9.75 Tf
+0.1403 Tc
+1.1097 Tw
+(\), the lowest LRE is reported.  The LRE gives us a c)Tj
+222.75 0 TD
+0.0011 Tc
+0.5614 Tw
+(oncise and )Tj
+-297 -11.25 TD
+0.0568 Tc
+1.025 Tw
+(comparable measure of the accuracy of the statistical packages under rev\
+iew.  The )Tj
+0 -11.25 TD
+0.0883 Tc
+0.3671 Tw
+(precision of the statistical package in terms of number of decimal place\
+s reported in )Tj
+0 -12 TD
+0.0816 Tc
+0.9309 Tw
+(the output is also of interest.  The precision required from the output \
+of a )Tj
+307.5 0 TD
+0.0441 Tc
+-0.9816 Tw
+(package )Tj
+-307.5 -11.25 TD
+0.1435 Tc
+0.9815 Tw
+(will vary upon the application of the analysis, but it is important to n\
+ote that the )Tj
+0 -11.25 TD
+0.1294 Tc
+1.0831 Tw
+(level of precision of reported values can affect the accuracy of the res\
+ults in two )Tj
+0 -12 TD
+0.0448 Tc
+0.5177 Tw
+(ways.  If, for example, the certified value is 0.004, and the estimated \
+value i)Tj
+306 0 TD
+0.0207 Tc
+0.5418 Tw
+(s 0.0036 )Tj
+-306 -11.25 TD
+0.1219 Tc
+2.7531 Tw
+(but becomes rounded to 0.004, its accuracy is overstated.  Conversely, i\
+f the)Tj
+0 Tc
+-0.1875 Tw
+( )Tj
+0 -11.25 TD
+0.0896 Tc
+0.4729 Tw
+(certified value is 0.0024 and the estimated value is 0.0024, a rounding \
+to 0.002 will )Tj
+0 -12 TD
+0.1461 Tc
+-0.3336 Tw
+(result in an understatement of the accuracy of the result. )Tj
+226.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-190.5 -11.25 TD
+( )Tj
+0 -11.25 TD
+0.0414 Tc
+0.5211 Tw
+(For our evaluation, we)Tj
+91.5 0 TD
+0.1146 Tc
+0.4479 Tw
+( rounded the certified StRD results to 6 and 8 digits )Tj
+-127.5 -12 TD
+0.1454 Tc
+1.7126 Tw
+(respectively and compared those rounded results with the results obtaine\
+d from )Tj
+0 -11.25 TD
+0.1685 Tc
+1.0369 Tw
+(Statlets and WebStat.  For example, for )Tj
+171 0 TD
+/N23 9.75 Tf
+0.0513 Tc
+0 Tw
+(Mavro)Tj
+27 0 TD
+/N6 9.75 Tf
+0.1815 Tc
+0.9167 Tw
+( \(see Table 1\), Statlets reported a )Tj
+-198 -11.25 TD
+0.0793 Tc
+1.9832 Tw
+(mean of 2.00186.  The exact result from th)Tj
+186 0 TD
+0.053 Tc
+2.0095 Tw
+(e StRD is 2.001856.  However, this )Tj
+-186 -12 TD
+0.0614 Tc
+2.5203 Tw
+(becomes 2.00186 when rounded to 6 significant digits, i.e., the same res\
+ult as )Tj
+0 -11.25 TD
+0.1357 Tc
+-0.2295 Tw
+(reported by Statlets.  Thus, this relates to the maximum LRE of 6.0 for \
+Statlets.  )Tj
+321.75 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-321.75 -11.25 TD
+/N8 9.75 Tf
+( )Tj
+0 -13.5 TD
+/N8 12 Tf
+0 Tw
+( )Tj
+T*
+( )Tj
+0 -18 TD
+/N8 15.75 Tf
+0.0125 Tc
+0.175 Tw
+(II.1. WebStat 2.0)Tj
+115.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-115.5 -14.25 TD
+/N8 12 Tf
+0 Tw
+( )Tj
+36 -12.75 TD
+/N6 9.75 Tf
+0.1527 Tc
+1.0348 Tw
+(WebStat is a freely available data a)Tj
+147.75 0 TD
+0.1395 Tc
+0.548 Tw
+(nalysis software package for use over )Tj
+-183.75 -11.25 TD
+0.1344 Tc
+0.4281 Tw
+(the World Wide Web \()Tj
+93 0 TD
+0.0828 Tc
+0 Tw
+(http://www.stat.sc.edu/webstat/)Tj
+ET
+228.75 316.5 126 0.75 re
+f 
+BT
+354.75 318 TD
+0.0031 Tc
+0.476 Tw
+(\). It is written in the form of a )Tj
+-219 -11.25 TD
+0.1104 Tc
+1.0615 Tw
+(Java applet and is designed to run on any of the three major platforms \(\
+Mac, PC, )Tj
+0 -11.25 TD
+0.1055 Tc
+2.6133 Tw
+(Unix\).  WebStat was created to provide a statistical)Tj
+225.75 0 TD
+0.0492 Tc
+2.2633 Tw
+( analysis tool to users not )Tj
+-225.75 -12 TD
+0.119 Tc
+1.1185 Tw
+(familiar with the more commonly used commercially available statistical \
+analysis )Tj
+0 -11.25 TD
+0.0934 Tc
+1.6566 Tw
+(packages.  These packages often require knowledge of languages such as S\
+plus, )Tj
+T*
+0.0749 Tc
+1.9876 Tw
+(SAS, Minitab, etc., which are mainly specific to statisticians. Stude)Tj
+285.75 0 TD
+-0.0449 Tc
+1.1074 Tw
+(nts and other )Tj
+-285.75 -12 TD
+0.0625 Tc
+0.4375 Tw
+(potential users are commonly not proficient with these languages, and th\
+erefore may )Tj
+0 -11.25 TD
+0.1824 Tc
+-0.3699 Tw
+(not be able to use the procedures.  By using Java and the World Wide Web\
+, WebStat )Tj
+T*
+0.1439 Tc
+1.8114 Tw
+(is amenable for use by a broad range of statistical software users.  In \
+addi)Tj
+321.75 0 TD
+0.0783 Tc
+-0.2658 Tw
+(tion, )Tj
+-321.75 -12 TD
+0.1345 Tc
+-0.322 Tw
+(WebStat is part of the commercial electronic textbook CyberStats by Cybe\
+rGnostics, )Tj
+0 -11.25 TD
+0.423 Tc
+1.6395 Tw
+(Inc. \()Tj
+22.5 0 TD
+0 0 1 rg
+0.0685 Tc
+0 Tw
+(http://www.cyberk.com/index.html)Tj
+ET
+158.25 201.75 141 0.75 re
+f 
+BT
+299.25 203.25 TD
+0 0 0 rg
+0.0721 Tc
+1.7404 Tw
+(\) and thus will be the first statistical tool )Tj
+-163.5 -11.25 TD
+0.0658 Tc
+0.0467 Tw
+(many students will work with. )Tj
+123 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-123 -12 TD
+( )Tj
+0 -11.25 TD
+( )Tj
+36 0 TD
+0.0953 Tc
+1.1101 Tw
+(WebStat is equipped with univariate summary statistics, one)Tj
+249 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0.0311 Tc
+0.5314 Tw
+(way analysis )Tj
+-288 -11.25 TD
+0.0994 Tc
+1.1506 Tw
+(of variance, and simple and multiple linear regression procedures, and t\
+hese were )Tj
+0 -12 TD
+0.147 Tc
+0.4155 Tw
+(thus attempted as part of our evaluation.  Nonlinear regression analysis\
+ procedures )Tj
+0 -11.25 TD
+0.0292 Tc
+-0.2167 Tw
+(are not available)Tj
+65.25 0 TD
+0.1212 Tc
+-0.1587 Tw
+( in this package.  )Tj
+69.75 0 TD
+/N8 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+PDFVars/TermAll get exec end end
+userdict /pgsave get restore
+showpage
+%%PageTrailer
+%%EndPage
+%%Page: 6 6
+%%BeginPageSetup
+userdict /pgsave save put
+PDFVars begin PDF begin PDFVars/InitAll get exec
+%%EndPageSetup
+0 0 612 792 RC
+BT
+135.75 38.25 TD
+0 0 0 rg
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+335.25 0 TD
+0 0 1 rg
+0.375 Tc
+0 Tw
+(6)Tj
+ET
+q
+471 36 5.25 11.25 re
+W n 
+BT
+475.5 38.25 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+Q
+BT
+135.75 654 TD
+0 0 0 rg
+/N8 12 Tf
+0 Tc
+( )Tj
+0 -14.25 TD
+( )Tj
+0 -13.5 TD
+( )Tj
+0 -17.25 TD
+/N8 15.75 Tf
+0.0678 Tc
+-0.2553 Tw
+(II.2. Statlets)Tj
+82.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-82.5 -15 TD
+/N8 12 Tf
+0 Tw
+( )Tj
+36 -12 TD
+/N6 9.75 Tf
+0.14 Tc
+7.9225 Tw
+(Statlets is a web)Tj
+89.25 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0.1426 Tc
+7.7699 Tw
+(based statistical software package found at)Tj
+0 Tc
+-0.1875 Tw
+( )Tj
+-128.25 -12 TD
+0.1405 Tc
+0 Tw
+(http://www.statlets.com/statletsindex.htm)Tj
+ET
+135.75 568.5 165.75 0.75 re
+f 
+BT
+301.5 570 TD
+0.1455 Tc
+1.017 Tw
+(.  For our analyses, we used a version of )Tj
+-165.75 -11.25 TD
+0.1384 Tc
+2.6741 Tw
+(Statlets that)Tj
+49.5 0 TD
+0.0236 Tc
+2.7889 Tw
+( is available free of charge through the web.  This free web)Tj
+264.75 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0.0599 Tc
+-0.2474 Tw
+(based )Tj
+-317.25 -11.25 TD
+0.1173 Tc
+0.4987 Tw
+(package serves as a demo for the commercial version that can analyze 20,\
+000 rows )Tj
+0 -12 TD
+0.0825 Tc
+0.4359 Tw
+(by 100 columns.  The free version limits the amount of data that can be \
+analyzed to )Tj
+0 -11.25 TD
+0.0758 Tc
+0.3367 Tw
+(100 rows by 10 columns. )Tj
+105 0 TD
+0.0717 Tc
+0.3301 Tw
+( Statlets is available in two forms.  It can be accessed as a )Tj
+-105 -11.25 TD
+0.1455 Tc
+-0.258 Tw
+(group of standalone applets or as a menu driven integrated package.)Tj
+272.25 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-236.25 -12 TD
+( )Tj
+0 -11.25 TD
+0.0698 Tc
+2.47 Tw
+(For our purposes, we analyzed the free menu driven version available )Tj
+-36 -11.25 TD
+0.1517 Tc
+0.4108 Tw
+(through the above URL by clicking on \223internet access\224 a)Tj
+236.25 0 TD
+0.0898 Tc
+0.4727 Tw
+(nd then choosing Version )Tj
+-236.25 -12 TD
+0.0148 Tc
+-0.2023 Tw
+(1.1B )Tj
+23.25 0 TD
+0.375 Tc
+0 Tw
+(\226)Tj
+5.25 0 TD
+0.136 Tc
+1.6265 Tw
+( March 4, 1998.  Then we chose the Menu version because this is more )Tj
+-28.5 -11.25 TD
+0.0787 Tc
+0.2838 Tw
+(versatile than the standalone applets.  A dataset can be loaded into the\
+ clipboard and )Tj
+0 -11.25 TD
+0.1411 Tc
+4.0964 Tw
+(various applets can then perform numerous analyses.  Statlets can per)Tj
+321 0 TD
+-0.051 Tc
+-0.1365 Tw
+(form )Tj
+-321 -12 TD
+0.1317 Tc
+0.2641 Tw
+(numerical and graphical summary statistics, hypothesis testing, regressi\
+on analysis, )Tj
+0 -11.25 TD
+0.173 Tc
+-0.3605 Tw
+(analysis of variance and others.)Tj
+126 0 TD
+/N8 15.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+-126 -16.5 TD
+( )Tj
+0 -18.75 TD
+0.0622 Tc
+-0.2497 Tw
+(III. Results)Tj
+75.75 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-75.75 -12.75 TD
+/N6 9.75 Tf
+( )Tj
+36 -12 TD
+0.1367 Tc
+-0.1634 Tw
+(The StRD provides datasets of lower \(l\), average \(a\), and higher \(h\
+\) level of )Tj
+-36 -11.25 TD
+0.0468 Tc
+3.5157 Tw
+(difficulty.  For univariate summary)Tj
+153.75 0 TD
+0.0918 Tc
+3.3635 Tw
+( statistics and ANOVA tests, the level of)Tj
+0 Tc
+-0.9375 Tw
+( )Tj
+-153.75 -11.25 TD
+0.1034 Tc
+1.0091 Tw
+(difficulty is based on the stiffness, i.e., the number of constant leadi\
+ng digits in a )Tj
+0 -12 TD
+0.15 Tc
+0.2971 Tw
+(dataset, and the number of observations.  As the number of observations \
+increases, )Tj
+0 -11.25 TD
+0.0828 Tc
+2.7297 Tw
+(the total number of arithmetic operations al)Tj
+188.25 0 TD
+0.0279 Tc
+2.4096 Tw
+(so increases.  This may lead to an )Tj
+-188.25 -11.25 TD
+0.1133 Tc
+2.5117 Tw
+(accumulation of small errors, i.e., possibly a larger accumulation error\
+.  With )Tj
+0 -12 TD
+0.0593 Tc
+0.435 Tw
+(increasing stiffness, i.e., with more constant leading digits, the accur\
+ate computation )Tj
+0 -11.25 TD
+0.0759 Tc
+1.1295 Tw
+(of standard deviations becomes more difficult as poin)Tj
+222 0 TD
+0.0287 Tc
+0.7838 Tw
+(ted out in Simon and Lesage )Tj
+-222 -11.25 TD
+0.0893 Tc
+0.2232 Tw
+(\(1989\).  In general, as the stiffness and the number of observations i\
+ncrease, so does )Tj
+0 -12 TD
+0.1682 Tc
+-0.3557 Tw
+(the difficulty level of a dataset.  )Tj
+129.75 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-93.75 -11.25 TD
+( )Tj
+-36 -11.25 TD
+0.099 Tc
+0.1635 Tw
+(Two linear regression datasets that are used for fitting a line through \
+the origin have )Tj
+0 -12 TD
+0.1678 Tc
+3.3948 Tw
+(been assigned )Tj
+3.921 Tc
+0 Tw
+(a)Tj
+70.5 0 TD
+0.1103 Tc
+3.4522 Tw
+(n average level of difficulty since NIST encountered several)Tj
+0 Tc
+-0.1875 Tw
+( )Tj
+-70.5 -11.25 TD
+0.1421 Tc
+-0.3296 Tw
+(software packages that produced negative R)Tj
+176.25 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0.1486 Tc
+-0.3361 Tw
+(squared values and incorrect F)Tj
+122.25 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0.1661 Tc
+-0.3536 Tw
+(statistics )Tj
+-304.5 -11.25 TD
+0.1174 Tc
+2.4067 Tw
+(for these datasets.  Linear regression datasets of higher level of diffi\
+culty are )Tj
+0 -12 TD
+0.0683 Tc
+-0.2558 Tw
+(multicollinear and therefore)Tj
+111 0 TD
+0.141 Tc
+-0.1142 Tw
+( mostly test matrix inversion functions.  )Tj
+162.75 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-273.75 -11.25 TD
+( )Tj
+ET
+PDFVars/TermAll get exec end end
+userdict /pgsave get restore
+showpage
+%%PageTrailer
+%%EndPage
+%%Page: 7 7
+%%BeginPageSetup
+userdict /pgsave save put
+PDFVars begin PDF begin PDFVars/InitAll get exec
+%%EndPageSetup
+0 0 612 792 RC
+BT
+135.75 38.25 TD
+0 0 0 rg
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+335.25 0 TD
+0 0 1 rg
+0.375 Tc
+0 Tw
+(7)Tj
+ET
+q
+471 36 5.25 11.25 re
+W n 
+BT
+475.5 38.25 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+Q
+BT
+135.75 650.25 TD
+0 0 0 rg
+/N8 15.75 Tf
+0.0038 Tc
+0.1837 Tw
+(III.1. WebStat 2.0)Tj
+121.5 0 TD
+/N8 12 Tf
+0 Tc
+0 Tw
+( )Tj
+-121.5 -15 TD
+/N6 12 Tf
+( )Tj
+36 -12 TD
+/N6 9.75 Tf
+0.0884 Tc
+0.4116 Tw
+(We found that WebStat performed reasonably well in the analysis of lower\
+ )Tj
+-36 -11.25 TD
+0.1082 Tc
+1.0168 Tw
+(difficulty datasets over all procedures.  However, as the difficulty ass\
+ociated with )Tj
+0 -12 TD
+0.126 Tc
+-0.3135 Tw
+(the dataset increased, the accura)Tj
+129 0 TD
+0.1283 Tc
+-0.1908 Tw
+(cy of the results decreased markedly. )Tj
+150 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-279 -11.25 TD
+( )Tj
+36 -11.25 TD
+0.0727 Tc
+1.1565 Tw
+(Overall, WebStat performed well in univariate summary statistic analyses\
+ )Tj
+-36 -12 TD
+0.1504 Tc
+0.5121 Tw
+(\(under the constraints of maximal 8 decimal digits of output\) with a r\
+ange of LRE )Tj
+0 -11.25 TD
+0.0966 Tc
+1.9659 Tw
+(values of all variables excluding one falling between 7.2 and)Tj
+260.25 0 TD
+0.007 Tc
+1.4305 Tw
+( 8.0 \(see Table 1\).  )Tj
+-260.25 -11.25 TD
+0.0236 Tc
+1.1952 Tw
+(Behind the name of each dataset, Table 1 provides the difficulty level \(\
+l, a, h\) and )Tj
+0 -12 TD
+0.1051 Tc
+1.1074 Tw
+(stiffness, i.e., the number of constant leading digits, of each dataset.\
+  A low LRE )Tj
+0 -11.25 TD
+0.0711 Tc
+1.9914 Tw
+(value of 2.7 was determined for the standard deviation of the data)Tj
+283.5 0 TD
+0.1392 Tc
+0.4233 Tw
+(set )Tj
+15.75 0 TD
+/N23 9.75 Tf
+0.156 Tc
+0 Tw
+(NumAcc4)Tj
+39 0 TD
+/N6 9.75 Tf
+-0.9375 Tc
+0.75 Tw
+(.  )Tj
+-338.25 -11.25 TD
+0.1171 Tc
+3.309 Tw
+(This was the only higher difficulty dataset provided in the reference da\
+taset)Tj
+0 Tc
+-0.1875 Tw
+( )Tj
+0 -12 TD
+0.0714 Tc
+1.7183 Tw
+(collection for univariate summary statistics.  All datasets for univaria\
+te summary )Tj
+0 -11.25 TD
+0.1352 Tc
+-0.3227 Tw
+(statistics from the reference dataset collection could be run on WebStat\
+.  Obtain)Tj
+320.25 0 TD
+0.1151 Tc
+-0.3026 Tw
+(ing a )Tj
+-320.25 -11.25 TD
+0.0746 Tc
+1.7152 Tw
+(LRE value of 8.0 for datasets with high stiffness such as )Tj
+246.75 0 TD
+/N23 9.75 Tf
+0.0489 Tc
+0.5136 Tw
+(NumAcc3 )Tj
+42.75 0 TD
+/N6 9.75 Tf
+-0.0501 Tc
+1.1126 Tw
+(which has 7 )Tj
+-289.5 -12 TD
+0.0861 Tc
+1.0389 Tw
+(common leading digits suggests that the internal calculations in WebStat\
+ are done )Tj
+0 -11.25 TD
+0.0798 Tc
+1.6365 Tw
+(with double precision.  The use of double precision for computations and\
+ single )Tj
+T*
+0.1118 Tc
+0.4507 Tw
+(precision )Tj
+39 0 TD
+0.1427 Tc
+-0.2052 Tw
+(in the output has been confirmed by West \(2002, private communication\)\
+.  )Tj
+300.75 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-339.75 -12 TD
+( )Tj
+ET
+PDFVars/TermAll get exec end end
+userdict /pgsave get restore
+showpage
+%%PageTrailer
+%%EndPage
+%%Page: 8 8
+%%BeginPageSetup
+userdict /pgsave save put
+PDFVars begin PDF begin PDFVars/InitAll get exec
+%%EndPageSetup
+0 0 612 792 RC
+BT
+135.75 38.25 TD
+0 0 0 rg
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+335.25 0 TD
+0 0 1 rg
+0.375 Tc
+0 Tw
+(8)Tj
+ET
+q
+471 36 5.25 11.25 re
+W n 
+BT
+475.5 38.25 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+Q
+BT
+135.75 655.5 TD
+0 0 0 rg
+0.1507 Tc
+-0.2445 Tw
+(Table 1. LRE values of univariate summary statistic analyses.)Tj
+247.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-247.5 -15 TD
+/N8 9.75 Tf
+0.1449 Tc
+-0.3324 Tw
+(Summary Statistics)Tj
+84 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+134.25 636 100.5 0.75 re
+f 
+BT
+253.5 640.5 TD
+/N6 9.75 Tf
+( )Tj
+ET
+235.5 636 35.25 0.75 re
+f 
+BT
+294 640.5 TD
+( )Tj
+ET
+271.5 636 44.25 0.75 re
+f 
+BT
+334.5 640.5 TD
+( )Tj
+ET
+316.5 636 35.25 0.75 re
+f 
+BT
+372.75 640.5 TD
+( )Tj
+ET
+352.5 636 39.75 0.75 re
+f 
+BT
+415.5 640.5 TD
+( )Tj
+ET
+393 636 44.25 0.75 re
+f 
+q
+437.25 18 54 756 re
+W n 
+BT
+490.5 640.5 TD
+( )Tj
+ET
+Q
+438 636 53.25 0.75 re
+f 
+133.5 649.5 101.25 0.75 re
+f 
+234.75 649.5 0.75 0.75 re
+f 
+235.5 649.5 35.25 0.75 re
+f 
+270.75 649.5 0.75 0.75 re
+f 
+271.5 649.5 44.25 0.75 re
+f 
+315.75 649.5 0.75 0.75 re
+f 
+316.5 649.5 35.25 0.75 re
+f 
+351.75 649.5 0.75 0.75 re
+f 
+352.5 649.5 39.75 0.75 re
+f 
+392.25 649.5 0.75 0.75 re
+f 
+393 649.5 44.25 0.75 re
+f 
+437.25 649.5 0.75 0.75 re
+f 
+438 649.5 53.25 0.75 re
+f 
+BT
+222 627.75 TD
+/N8 9.75 Tf
+( )Tj
+15.75 0 TD
+-0.0148 Tc
+0 Tw
+(Statlets)Tj
+ET
+q
+234.75 18 36 756 re
+W n 
+BT
+269.25 627.75 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+Q
+BT
+275.25 627.75 TD
+0.1729 Tc
+(WebStat)Tj
+36.75 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+12.75 0 TD
+0.2895 Tc
+0.273 Tw
+(SAS )Tj
+-4.5 -12 TD
+0.1563 Tc
+0 Tw
+(v6.12*)Tj
+27.75 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+12.75 12 TD
+0.2574 Tc
+0.3051 Tw
+(SPSS )Tj
+0.75 -12 TD
+0.1125 Tc
+0 Tw
+(v7.5*)Tj
+22.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+14.25 12 TD
+-0.171 Tc
+0 Tw
+(S)Tj
+6 0 TD
+-0.2467 Tc
+(-)Tj
+3 0 TD
+-0.0427 Tc
+0.6052 Tw
+(PLUS )Tj
+-3 -12 TD
+0.1125 Tc
+0 Tw
+(v4.0*)Tj
+22.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+12.75 12 TD
+0.1393 Tc
+-0.3268 Tw
+(Excel 97**)Tj
+45.75 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-263.25 -23.25 TD
+( )Tj
+31.5 0 TD
+( )Tj
+40.5 0 TD
+( )Tj
+40.5 0 TD
+( )Tj
+38.25 0 TD
+( )Tj
+42.75 0 TD
+( )Tj
+ET
+q
+437.25 18 54 756 re
+W n 
+BT
+490.5 604.5 TD
+( )Tj
+ET
+Q
+BT
+135.75 591.75 TD
+/N6 9.75 Tf
+0.0456 Tc
+-0.2331 Tw
+(PiDigits \(l,0\)#)Tj
+57 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+0.75 w
+1 J
+1 j
+0 0 0 RG
+222.75 593.25 m
+226.5 593.25 l
+S 
+q
+214.5 588 14.25 7.5 re
+W n 
+BT
+222.75 588 TD
+/N6 6.75 Tf
+0.375 Tc
+0 Tw
+(x)Tj
+ET
+Q
+BT
+216 591 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+12.75 0 TD
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+23.25 0.75 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+33 0 TD
+0.1875 Tc
+0 Tw
+(8.0)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+30 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+25.5 0 TD
+-0.1406 Tc
+0 Tw
+(14.7)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+30 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+40.5 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+q
+215.25 574.5 12.75 7.5 re
+W n 
+BT
+223.5 574.5 TD
+/N6 6.75 Tf
+0.3743 Tc
+0 Tw
+(s)Tj
+ET
+Q
+BT
+216.75 577.5 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+11.25 0 TD
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+24 0.75 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+33 0 TD
+0.1875 Tc
+0 Tw
+(8.0)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+30 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+29.25 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+33.75 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+40.5 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-333.75 -12.75 TD
+0.0441 Tc
+-0.2316 Tw
+(Lottery \(l,0\))Tj
+48 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+222.75 567 m
+226.5 567 l
+S 
+q
+214.5 561.75 14.25 7.5 re
+W n 
+BT
+222.75 561.75 TD
+/N6 6.75 Tf
+0.375 Tc
+0 Tw
+(x)Tj
+ET
+Q
+BT
+216 564.75 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+12.75 0 TD
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+23.25 0.75 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+33 0 TD
+0.1875 Tc
+0 Tw
+(7.3)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+30 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+29.25 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+33.75 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+40.5 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+q
+215.25 549 12.75 7.5 re
+W n 
+BT
+223.5 549 TD
+/N6 6.75 Tf
+0.3743 Tc
+0 Tw
+(s)Tj
+ET
+Q
+BT
+216.75 552 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+11.25 0 TD
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+24 0.75 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+33 0 TD
+0.1875 Tc
+0 Tw
+(7.4)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+30 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+29.25 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+33.75 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+40.5 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-333.75 -12.75 TD
+0.176 Tc
+-0.3635 Tw
+(Lew \(l,0\))Tj
+36.75 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+222.75 541.5 m
+226.5 541.5 l
+S 
+q
+214.5 536.25 14.25 7.5 re
+W n 
+BT
+222.75 536.25 TD
+/N6 6.75 Tf
+0.375 Tc
+0 Tw
+(x)Tj
+ET
+Q
+BT
+216 539.25 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+12.75 0 TD
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+23.25 0.75 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+33 0 TD
+0.1875 Tc
+0 Tw
+(8.0)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+30 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+29.25 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+33.75 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+40.5 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+q
+215.25 522.75 12.75 7.5 re
+W n 
+BT
+223.5 522.75 TD
+/N6 6.75 Tf
+0.3743 Tc
+0 Tw
+(s)Tj
+ET
+Q
+BT
+216.75 525.75 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+11.25 0 TD
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+24 0.75 TD
+/N38 9.75 Tf
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0 Tc
+0.2895 Tw
+( )Tj
+33 0 TD
+/N6 9.75 Tf
+0.1875 Tc
+0 Tw
+(7.2)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+30 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+25.5 0 TD
+-0.1406 Tc
+0 Tw
+(13.2)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+30 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+40.5 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-333.75 -12.75 TD
+0.024 Tc
+-0.2115 Tw
+(Mavro \(l,3\))Tj
+45 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+222.75 515.25 m
+226.5 515.25 l
+S 
+q
+214.5 510 14.25 7.5 re
+W n 
+BT
+222.75 510 TD
+/N6 6.75 Tf
+0.375 Tc
+0 Tw
+(x)Tj
+ET
+Q
+BT
+216 513 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+12.75 0 TD
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+18.75 0.75 TD
+0.1875 Tc
+0 Tw
+(6.0)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+28.5 0 TD
+0.1875 Tc
+0 Tw
+(8.0)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+30 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+29.25 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+33.75 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+40.5 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+q
+215.25 497.25 12.75 7.5 re
+W n 
+BT
+223.5 497.25 TD
+/N6 6.75 Tf
+0.3743 Tc
+0 Tw
+(s)Tj
+ET
+Q
+BT
+216.75 500.25 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+11.25 0 TD
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+19.5 0.75 TD
+0.1875 Tc
+0 Tw
+(6.0)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+28.5 0 TD
+0.1875 Tc
+0 Tw
+(7.4)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+26.25 0 TD
+-0.1406 Tc
+0 Tw
+(13.1)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+21.75 0 TD
+-0.1406 Tc
+0 Tw
+(12.1)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+26.25 0 TD
+-0.1406 Tc
+0 Tw
+(13.1)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+35.25 0 TD
+0.1875 Tc
+0 Tw
+(9.4)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-335.25 -13.5 TD
+0.1495 Tc
+-0.337 Tw
+(Michelso \(l,0\))Tj
+56.25 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+222.75 489 m
+226.5 489 l
+S 
+q
+214.5 483.75 14.25 7.5 re
+W n 
+BT
+222.75 483.75 TD
+/N6 6.75 Tf
+0.375 Tc
+0 Tw
+(x)Tj
+ET
+Q
+BT
+216 486.75 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+12.75 0 TD
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+18.75 0.75 TD
+0.1875 Tc
+0 Tw
+(6.0)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+28.5 0 TD
+0.1875 Tc
+0 Tw
+(8.0)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+30 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+29.25 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+33.75 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+40.5 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+q
+215.25 471 12.75 7.5 re
+W n 
+BT
+223.5 471 TD
+/N6 6.75 Tf
+0.3743 Tc
+0 Tw
+(s)Tj
+ET
+Q
+BT
+216.75 474 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+11.25 0 TD
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+19.5 0.75 TD
+0.1875 Tc
+0 Tw
+(6.0)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+28.5 0 TD
+0.1875 Tc
+0 Tw
+(7.6)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+26.25 0 TD
+-0.1406 Tc
+0 Tw
+(13.8)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+21.75 0 TD
+-0.1406 Tc
+0 Tw
+(12.4)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+26.25 0 TD
+-0.1406 Tc
+0 Tw
+(13.8)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+35.25 0 TD
+0.1875 Tc
+0 Tw
+(8.3)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-335.25 -12.75 TD
+-0.2895 Tc
+0 Tw
+(N)Tj
+6.75 0 TD
+0.1319 Tc
+0.4306 Tw
+(umAcc1 \(l,7\))Tj
+53.25 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+222.75 463.5 m
+226.5 463.5 l
+S 
+q
+214.5 458.25 14.25 7.5 re
+W n 
+BT
+222.75 458.25 TD
+/N6 6.75 Tf
+0.375 Tc
+0 Tw
+(x)Tj
+ET
+Q
+BT
+216 461.25 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+12.75 0 TD
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+18.75 0.75 TD
+0.1875 Tc
+0 Tw
+(6.0)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+28.5 0 TD
+0.1875 Tc
+0 Tw
+(8.0)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+30 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+29.25 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+33.75 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+40.5 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+q
+215.25 445.5 12.75 7.5 re
+W n 
+BT
+223.5 445.5 TD
+/N6 6.75 Tf
+0.3743 Tc
+0 Tw
+(s)Tj
+ET
+Q
+BT
+216.75 448.5 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+11.25 0 TD
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+19.5 0.75 TD
+0.1875 Tc
+0 Tw
+(0.0)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+28.5 0 TD
+0.1875 Tc
+0 Tw
+(8.0)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+30 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+29.25 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+33.75 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+40.5 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-333.75 -13.5 TD
+0.0244 Tc
+0.5381 Tw
+(NumAcc2 \(a,1\))Tj
+ET
+q
+133.5 18 65.25 756 re
+W n 
+BT
+197.25 435.75 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+Q
+222.75 437.25 m
+226.5 437.25 l
+S 
+q
+214.5 432 14.25 7.5 re
+W n 
+BT
+222.75 432 TD
+/N6 6.75 Tf
+0.375 Tc
+0 Tw
+(x)Tj
+ET
+Q
+BT
+216 435 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+12.75 0 TD
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+23.25 0.75 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+33 0 TD
+0.1875 Tc
+0 Tw
+(8.0)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+26.25 0 TD
+-0.1406 Tc
+0 Tw
+(14.0)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+25.5 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+30 0 TD
+-0.1406 Tc
+0 Tw
+(14.0)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+33 0 TD
+-0.1406 Tc
+0 Tw
+(14.0)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+q
+215.25 419.25 12.75 7.5 re
+W n 
+BT
+223.5 419.25 TD
+/N6 6.75 Tf
+0.3743 Tc
+0 Tw
+(s)Tj
+ET
+Q
+BT
+216.75 422.25 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+11.25 0 TD
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+24 0.75 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+33 0 TD
+0.1875 Tc
+0 Tw
+(8.0)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+26.25 0 TD
+-0.1406 Tc
+0 Tw
+(14.2)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+25.5 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+33.75 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+36.75 0 TD
+-0.1406 Tc
+0 Tw
+(11.6)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-337.5 -12.75 TD
+0.0244 Tc
+0.5381 Tw
+(NumAcc3 \(a,7\))Tj
+ET
+q
+133.5 18 65.25 756 re
+W n 
+BT
+197.25 410.25 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+Q
+222.75 411.75 m
+226.5 411.75 l
+S 
+q
+214.5 406.5 14.25 7.5 re
+W n 
+BT
+222.75 406.5 TD
+/N6 6.75 Tf
+0.375 Tc
+0 Tw
+(x)Tj
+ET
+Q
+BT
+216 409.5 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+12.75 0 TD
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+23.25 0.75 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+33 0 TD
+0.375 Tc
+0 Tw
+(8)Tj
+4.5 0 TD
+0.4688 Tc
+(.0)Tj
+7.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+30 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+29.25 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+33.75 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+40.5 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+q
+215.25 393.75 12.75 7.5 re
+W n 
+BT
+223.5 393.75 TD
+/N6 6.75 Tf
+0.3743 Tc
+0 Tw
+(s)Tj
+ET
+Q
+BT
+216.75 396.75 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+11.25 0 TD
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+24 0.75 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+33 0 TD
+0.1875 Tc
+0 Tw
+(8.0)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+28.5 0 TD
+0.1875 Tc
+0 Tw
+(9.5)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+26.25 0 TD
+0.1875 Tc
+0 Tw
+(9.5)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+30.75 0 TD
+0.1875 Tc
+0 Tw
+(9.5)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+37.5 0 TD
+0.1875 Tc
+0 Tw
+(1.2)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-335.25 -13.5 TD
+0.1039 Tc
+0.4586 Tw
+(NumAcc4 \(h,8\))Tj
+ET
+q
+133.5 18 65.25 756 re
+W n 
+BT
+198 384 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+Q
+222.75 385.5 m
+226.5 385.5 l
+S 
+q
+214.5 380.25 14.25 7.5 re
+W n 
+BT
+222.75 380.25 TD
+/N6 6.75 Tf
+0.375 Tc
+0 Tw
+(x)Tj
+ET
+Q
+BT
+216 383.25 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+12.75 0 TD
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+23.25 0.75 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+33 0 TD
+0.1875 Tc
+0 Tw
+(8.0)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+26.25 0 TD
+-0.1406 Tc
+0 Tw
+(14.0)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+25.5 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+30 0 TD
+-0.1406 Tc
+0 Tw
+(14.0)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+33 0 TD
+-0.1406 Tc
+0 Tw
+(14.0)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+q
+215.25 367.5 12.75 7.5 re
+W n 
+BT
+223.5 367.5 TD
+/N6 6.75 Tf
+0.3743 Tc
+0 Tw
+(s)Tj
+ET
+Q
+BT
+216.75 370.5 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+11.25 0 TD
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+24 0.75 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+33 0 TD
+0.1875 Tc
+0 Tw
+(2.7)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+28.5 0 TD
+0.1875 Tc
+0 Tw
+(8.3)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+26.25 0 TD
+0.1875 Tc
+0 Tw
+(8.3)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+30.75 0 TD
+0.1875 Tc
+0 Tw
+(8.3)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+41.25 0 TD
+0.375 Tc
+0 Tw
+(0)Tj
+4.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-331.5 -13.5 TD
+0.159 Tc
+-0.3465 Tw
+(#\(difficulty, stiffness\))Tj
+87.75 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-87.75 -12.75 TD
+0.0886 Tc
+-0.2761 Tw
+(* McCullough 1999)Tj
+79.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-79.5 -12 TD
+0.1783 Tc
+-0.3658 Tw
+(** McCullough and Wilson 1999)Tj
+133.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-97.5 -12 TD
+( )Tj
+0 -12 TD
+( )Tj
+0 -11.25 TD
+( )Tj
+T*
+0.3667 Tc
+0 Tw
+(When)Tj
+24.75 0 TD
+0.0839 Tc
+0.4786 Tw
+( examining the results of one)Tj
+118.5 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0.0979 Tc
+0.5896 Tw
+(way analyses of variance performed in )Tj
+-182.25 -12 TD
+0.1364 Tc
+1.1293 Tw
+(WebStat \(see Table 2\), we found that there was a high level of variabi\
+lity in the )Tj
+0 -11.25 TD
+0.0893 Tc
+0.4197 Tw
+(accuracy of the results, with some datasets resulting in very accurate r\
+esults \(a LRE )Tj
+T*
+0.1375 Tc
+1.7375 Tw
+(of 8.0 was obtained )Tj
+90 0 TD
+0.1395 Tc
+1.698 Tw
+(for six datasets\), and others producing results of very low )Tj
+-90 -12 TD
+-0.0299 Tc
+1.2174 Tw
+(accuracy \(e.g. LRE = 0 for )Tj
+114.75 0 TD
+/N23 9.75 Tf
+0.2286 Tc
+0 Tw
+(SmLs09)Tj
+32.25 0 TD
+/N6 9.75 Tf
+0.0719 Tc
+0.8997 Tw
+(\).  It should be noted that no negative sums of )Tj
+-147 -11.25 TD
+0.1192 Tc
+-0.3067 Tw
+(squares were ever reported. )Tj
+111.75 0 TD
+/N6 12 Tf
+0 Tc
+0 Tw
+( )Tj
+-111.75 -11.25 TD
+/N6 9.75 Tf
+-0.1875 Tw
+( )Tj
+ET
+PDFVars/TermAll get exec end end
+userdict /pgsave get restore
+showpage
+%%PageTrailer
+%%EndPage
+%%Page: 9 9
+%%BeginPageSetup
+userdict /pgsave save put
+PDFVars begin PDF begin PDFVars/InitAll get exec
+%%EndPageSetup
+0 0 612 792 RC
+BT
+135.75 38.25 TD
+0 0 0 rg
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+335.25 0 TD
+0 0 1 rg
+0.375 Tc
+0 Tw
+(9)Tj
+ET
+q
+471 36 5.25 11.25 re
+W n 
+BT
+475.5 38.25 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+Q
+BT
+135.75 655.5 TD
+0 0 0 rg
+0.1668 Tc
+-0.2606 Tw
+(Table 2. LRE values of analysis of variance analyses.)Tj
+214.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-214.5 -11.25 TD
+( )Tj
+0 -12.75 TD
+/N8 9.75 Tf
+0.0696 Tc
+0.1179 Tw
+(Analysis of Variance)Tj
+87.75 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+21.75 0 TD
+/N6 9.75 Tf
+( )Tj
+42.75 0 TD
+( )Tj
+40.5 0 TD
+( )Tj
+37.5 0 TD
+( )Tj
+44.25 0 TD
+( )Tj
+ET
+q
+432 18 49.5 756 re
+W n 
+BT
+480.75 631.5 TD
+( )Tj
+ET
+Q
+133.5 640.5 93.75 0.75 re
+f 
+227.25 640.5 0.75 0.75 re
+f 
+228 640.5 34.5 0.75 re
+f 
+262.5 640.5 0.75 0.75 re
+f 
+263.25 640.5 48.75 0.75 re
+f 
+312 640.5 0.75 0.75 re
+f 
+312.75 640.5 30.75 0.75 re
+f 
+343.5 640.5 0.75 0.75 re
+f 
+344.25 640.5 42.75 0.75 re
+f 
+387 640.5 0.75 0.75 re
+f 
+387.75 640.5 44.25 0.75 re
+f 
+432 640.5 0.75 0.75 re
+f 
+432.75 640.5 48.75 0.75 re
+f 
+q
+133.5 18 73.5 756 re
+W n 
+BT
+206.25 618.75 TD
+/N8 9.75 Tf
+( )Tj
+ET
+Q
+q
+207 18 20.25 756 re
+W n 
+BT
+226.5 618.75 TD
+/N8 9.75 Tf
+( )Tj
+ET
+Q
+BT
+229.5 618.75 TD
+/N8 9.75 Tf
+-0.0148 Tc
+0 Tw
+(Statlets)Tj
+ET
+q
+227.25 18 35.25 756 re
+W n 
+BT
+261 618.75 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+Q
+BT
+269.25 618.75 TD
+0.1729 Tc
+(WebStat)Tj
+36.75 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+12.75 0 TD
+0.2895 Tc
+0.273 Tw
+(SAS )Tj
+-4.5 -11.25 TD
+0.1563 Tc
+0 Tw
+(v6.12*)Tj
+ET
+q
+312 18 31.5 756 re
+W n 
+BT
+342 607.5 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+Q
+BT
+354 618.75 TD
+0.2574 Tc
+0.3051 Tw
+(SPSS )Tj
+0.75 -11.25 TD
+0.1125 Tc
+0 Tw
+(v7.5*)Tj
+22.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+15.75 11.25 TD
+-0.171 Tc
+0 Tw
+(S)Tj
+6 0 TD
+-0.2467 Tc
+(-)Tj
+3 0 TD
+-0.0427 Tc
+0.6052 Tw
+(PLUS )Tj
+-3 -11.25 TD
+0.1125 Tc
+0 Tw
+(v4.0*)Tj
+22.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+12.75 11.25 TD
+0.1393 Tc
+-0.3268 Tw
+(Excel 97**)Tj
+ET
+q
+432 18 49.5 756 re
+W n 
+BT
+480 618.75 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+Q
+133.5 627.75 73.5 0.75 re
+f 
+207 627.75 0.75 0.75 re
+f 
+207.75 627.75 19.5 0.75 re
+f 
+227.25 627.75 0.75 0.75 re
+f 
+228 627.75 34.5 0.75 re
+f 
+262.5 627.75 0.75 0.75 re
+f 
+263.25 627.75 48.75 0.75 re
+f 
+312 627.75 0.75 0.75 re
+f 
+312.75 627.75 30.75 0.75 re
+f 
+343.5 627.75 0.75 0.75 re
+f 
+344.25 627.75 42.75 0.75 re
+f 
+387 627.75 0.75 0.75 re
+f 
+387.75 627.75 44.25 0.75 re
+f 
+432 627.75 0.75 0.75 re
+f 
+432.75 627.75 48.75 0.75 re
+f 
+q
+133.5 18 73.5 756 re
+W n 
+BT
+206.25 596.25 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+Q
+q
+207 18 20.25 756 re
+W n 
+BT
+226.5 596.25 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+Q
+BT
+245.25 596.25 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+42.75 0 TD
+( )Tj
+40.5 0 TD
+( )Tj
+37.5 0 TD
+( )Tj
+44.25 0 TD
+( )Tj
+ET
+q
+432 18 49.5 756 re
+W n 
+BT
+480.75 596.25 TD
+( )Tj
+ET
+Q
+BT
+135.75 583.5 TD
+/N6 9.75 Tf
+0.0496 Tc
+-0.2371 Tw
+(SiRstv \(l,3\) #)Tj
+53.25 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+20.25 -0.75 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+4.5 -1.5 TD
+/N6 6.75 Tf
+-0.003 Tc
+(F)Tj
+3.75 1.5 TD
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+21.75 0.75 TD
+0.1875 Tc
+0 Tw
+(3.4)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+30.75 0 TD
+0.1875 Tc
+0 Tw
+(8.0)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+28.5 0 TD
+0.1875 Tc
+0 Tw
+(8.3)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+25.5 0 TD
+0.1875 Tc
+0 Tw
+(9.6)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+30 0 TD
+-0.1406 Tc
+0 Tw
+(13.3)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+33 0 TD
+0.1875 Tc
+0 Tw
+(8.5)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-327.75 -12.75 TD
+0.0944 Tc
+0.4681 Tw
+(SmnLsg01 \(l,1\))Tj
+62.25 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+11.25 -0.75 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+4.5 -1.5 TD
+/N6 6.75 Tf
+-0.003 Tc
+(F)Tj
+3.75 1.5 TD
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+26.25 0.75 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+35.25 0 TD
+0.1875 Tc
+0 Tw
+(8.0)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+26.25 0 TD
+-0.1406 Tc
+0 Tw
+(13.3)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+24.75 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+31.5 0 TD
+-0.1406 Tc
+0 Tw
+(14.5)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+30.75 0 TD
+-0.1406 Tc
+0 Tw
+(14.3)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-330 -12 TD
+0.0944 Tc
+0.4681 Tw
+(SmnLsg02 \(l,1\))Tj
+62.25 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+11.25 -0.75 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+4.5 -1.5 TD
+/N6 6.75 Tf
+-0.003 Tc
+(F)Tj
+3.75 1.5 TD
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+26.25 0.75 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+35.25 0 TD
+0.1875 Tc
+0 Tw
+(8.0)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+26.25 0 TD
+-0.1406 Tc
+0 Tw
+(11.4)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+24.75 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+31.5 0 TD
+-0.1406 Tc
+0 Tw
+(14.3)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+30.75 0 TD
+-0.1406 Tc
+0 Tw
+(12.5)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-330 -12.75 TD
+0.0944 Tc
+0.4681 Tw
+(SmnLsg03 \(l,1\))Tj
+62.25 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+11.25 -0.75 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+4.5 -1.5 TD
+/N6 6.75 Tf
+-0.003 Tc
+(F)Tj
+3.75 1.5 TD
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+26.25 0.75 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+35.25 0 TD
+0.1875 Tc
+0 Tw
+(8.0)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+26.25 0 TD
+-0.1406 Tc
+0 Tw
+(11.8)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+21 0 TD
+-0.1406 Tc
+0 Tw
+(12.7)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+27.75 0 TD
+-0.1406 Tc
+0 Tw
+(12.9)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+30.75 0 TD
+-0.1406 Tc
+0 Tw
+(12.6)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-330 -12.75 TD
+0.0584 Tc
+-0.2459 Tw
+(AtmWtAg \(a,7\))Tj
+62.25 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+11.25 -0.75 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+4.5 -1.5 TD
+/N6 6.75 Tf
+-0.003 Tc
+(F)Tj
+3.75 1.5 TD
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+25.5 0.75 TD
+0.375 Tc
+0 Tw
+(0)Tj
+4.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+34.5 0 TD
+0.1875 Tc
+0 Tw
+(1.9)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+32.25 0 TD
+0.375 Tc
+0 Tw
+(0)Tj
+4.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+17.25 0 TD
+0.1044 Tc
+-0.2919 Tw
+(no result)Tj
+35.25 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+21 0 TD
+0.1875 Tc
+0 Tw
+(9.7)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+35.25 0 TD
+0.1875 Tc
+0 Tw
+(1.8)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-327.75 -12 TD
+0.0276 Tc
+0.5349 Tw
+(SmnLsg04 \(a,7\))Tj
+63.75 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+9.75 -0.75 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+4.5 -1.5 TD
+/N6 6.75 Tf
+-0.003 Tc
+(F)Tj
+3.75 1.5 TD
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+26.25 0.75 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+35.25 0 TD
+0.1875 Tc
+0 Tw
+(8.0)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+32.25 0 TD
+0.375 Tc
+0 Tw
+(0)Tj
+4.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+33 0 TD
+0.375 Tc
+0 Tw
+(0)Tj
+4.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+33.75 0 TD
+-0.1406 Tc
+0 Tw
+(10.4)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+33 0 TD
+0.1875 Tc
+0 Tw
+(1.7)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-327.75 -12.75 TD
+0.0276 Tc
+0.5349 Tw
+(SmnLsg05 \(a,7\))Tj
+63.75 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+9.75 -0.75 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+4.5 -1.5 TD
+/N6 6.75 Tf
+-0.003 Tc
+(F)Tj
+3.75 1.5 TD
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+26.25 0.75 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+35.25 0 TD
+0.1875 Tc
+0 Tw
+(8.0)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+32.25 0 TD
+0.375 Tc
+0 Tw
+(0)Tj
+4.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+33 0 TD
+0.375 Tc
+0 Tw
+(0)Tj
+4.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+33.75 0 TD
+-0.1406 Tc
+0 Tw
+(10.2)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+33 0 TD
+0.1875 Tc
+0 Tw
+(1.1)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-327.75 -12.75 TD
+0.0276 Tc
+0.5349 Tw
+(SmnLsg06 \(a,7\))Tj
+63.75 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+9.75 -0.75 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+4.5 -1.5 TD
+/N6 6.75 Tf
+-0.003 Tc
+(F)Tj
+3.75 1.5 TD
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+26.25 0.75 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+35.25 0 TD
+0.1875 Tc
+0 Tw
+(6.5)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+32.25 0 TD
+0.375 Tc
+0 Tw
+(0)Tj
+4.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+33 0 TD
+0.375 Tc
+0 Tw
+(0)Tj
+4.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+33.75 0 TD
+-0.1406 Tc
+0 Tw
+(10.2)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+36.75 0 TD
+0.375 Tc
+0 Tw
+(0)Tj
+4.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-324 -12 TD
+0.0134 Tc
+0.5491 Tw
+(SmnLsg07 \(h,13\))Tj
+69 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+4.5 -0.75 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+4.5 -1.5 TD
+/N6 6.75 Tf
+-0.003 Tc
+(F)Tj
+3.75 1.5 TD
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+26.25 0.75 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+35.25 0 TD
+0.1875 Tc
+0 Tw
+(1.1)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+32.25 0 TD
+0.375 Tc
+0 Tw
+(0)Tj
+4.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+33 0 TD
+0.375 Tc
+0 Tw
+(0)Tj
+4.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+36 0 TD
+0.1875 Tc
+0 Tw
+(4.6)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+39 0 TD
+0.375 Tc
+0 Tw
+(0)Tj
+4.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-324 -12.75 TD
+0.0134 Tc
+0.5491 Tw
+(SmnLsg08 \(h,13\))Tj
+69 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+4.5 -0.75 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+4.5 -1.5 TD
+/N6 6.75 Tf
+-0.003 Tc
+(F)Tj
+3.75 1.5 TD
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+26.25 0.75 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+35.25 0 TD
+0.1875 Tc
+0 Tw
+(1.8)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+32.25 0 TD
+0.375 Tc
+0 Tw
+(0)Tj
+4.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+33 0 TD
+0.375 Tc
+0 Tw
+(0)Tj
+4.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+36 0 TD
+0.1875 Tc
+0 Tw
+(2.7)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+39 0 TD
+0.375 Tc
+0 Tw
+(0)Tj
+4.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-324 -12.75 TD
+0.0134 Tc
+0.5491 Tw
+(SmnLsg09 \(h,13\))Tj
+69 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+4.5 -0.75 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+4.5 -1.5 TD
+/N6 6.75 Tf
+-0.003 Tc
+(F)Tj
+3.75 1.5 TD
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+26.25 0.75 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+39 0 TD
+0.375 Tc
+0 Tw
+(0)Tj
+4.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+36 0 TD
+0.375 Tc
+0 Tw
+(0)Tj
+4.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+33 0 TD
+0.375 Tc
+0 Tw
+(0)Tj
+4.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+39.75 0 TD
+0.375 Tc
+0 Tw
+(0)Tj
+4.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+42.75 0 TD
+0.375 Tc
+0 Tw
+(0)Tj
+4.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-324 -13.5 TD
+0.159 Tc
+-0.3465 Tw
+(#\(difficulty, stiffness\))Tj
+87.75 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+133.5 454.5 73.5 0.75 re
+f 
+207 454.5 0.75 0.75 re
+f 
+207.75 454.5 19.5 0.75 re
+f 
+227.25 454.5 0.75 0.75 re
+f 
+228 454.5 34.5 0.75 re
+f 
+262.5 454.5 0.75 0.75 re
+f 
+263.25 454.5 15.75 0.75 re
+f 
+279 454.5 0.75 0.75 re
+f 
+279.75 454.5 0.75 0.75 re
+f 
+280.5 454.5 31.5 0.75 re
+f 
+312 454.5 0.75 0.75 re
+f 
+312.75 454.5 30.75 0.75 re
+f 
+343.5 454.5 0.75 0.75 re
+f 
+344.25 454.5 42.75 0.75 re
+f 
+387 454.5 0.75 0.75 re
+f 
+387.75 454.5 44.25 0.75 re
+f 
+432 454.5 0.75 0.75 re
+f 
+432.75 454.5 48.75 0.75 re
+f 
+BT
+135.75 432 TD
+0.0886 Tc
+-0.2761 Tw
+(* McCullough 1999)Tj
+79.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-79.5 -11.25 TD
+0.1783 Tc
+-0.3658 Tw
+(** McCullough and Wilson 1999)Tj
+133.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-133.5 -12.75 TD
+( )Tj
+0 -11.25 TD
+( )Tj
+36 -12.75 TD
+0.1424 Tc
+0.4201 Tw
+(WebStat perfor)Tj
+61.5 0 TD
+0.0768 Tc
+0.4857 Tw
+(med reasonably well on linear regression analyses \()Tj
+207.75 0 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+4.5 -1.5 TD
+/N43 6.75 Tf
+0.0443 Tc
+(b)Tj
+3.75 1.5 TD
+/N6 9.75 Tf
+0.0252 Tc
+0.5373 Tw
+( = 8.0, )Tj
+-313.5 -12 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+5.25 -1.5 TD
+/N18 6.75 Tf
+-0.3203 Tc
+(s)Tj
+3.75 1.5 TD
+/N6 9.75 Tf
+-0.1248 Tc
+0.4373 Tw
+( = 7.7, )Tj
+29.25 0 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+4.5 -1.5 TD
+/N6 6.75 Tf
+-0.0022 Tc
+(R)Tj
+4.5 1.5 TD
+/N6 9.75 Tf
+0.0509 Tc
+0.4116 Tw
+( = 5.2\), again under the constraint that at most 8 decimal digits of ou\
+tput )Tj
+-47.25 -11.25 TD
+0.1601 Tc
+0.4524 Tw
+(are reported \(see Table 3\).  However, due to the fact that only one da\
+taset \()Tj
+310.5 0 TD
+/N23 9.75 Tf
+0.1305 Tc
+0 Tw
+(Norris)Tj
+26.25 0 TD
+/N6 9.75 Tf
+-0.2467 Tc
+0.0592 Tw
+(\) )Tj
+-336.75 -12 TD
+0.2231 Tc
+1.4644 Tw
+(could be run on WebSta)Tj
+105 0 TD
+0.0617 Tc
+1.7962 Tw
+(t, our results in this area are not conclusive.  Although )Tj
+-105 -11.25 TD
+0.1327 Tc
+0.4875 Tw
+(multiple linear regression is a feature included in the WebStat package,\
+ the feature )Tj
+0 -11.25 TD
+0.101 Tc
+0.4615 Tw
+(was not operational; no calculations were made when requested.  Thus, on\
+ly simple )Tj
+0 -12 TD
+0.0446 Tc
+1.5179 Tw
+(linear regression analyses were)Tj
+128.25 0 TD
+0.0772 Tc
+1.0687 Tw
+( undertaken.  In addition, WebStat results from the )Tj
+-128.25 -11.25 TD
+0.1727 Tc
+0.3898 Tw
+(datasets )Tj
+35.25 0 TD
+/N23 9.75 Tf
+0.1108 Tc
+0 Tw
+(NoInt1)Tj
+27 0 TD
+/N6 9.75 Tf
+0.057 Tc
+0.1305 Tw
+( and )Tj
+20.25 0 TD
+/N23 9.75 Tf
+0.1108 Tc
+0 Tw
+(NoInt2)Tj
+27.75 0 TD
+/N6 9.75 Tf
+0.037 Tc
+0.3755 Tw
+( were not reported as the analyses required the regression )Tj
+-110.25 -11.25 TD
+0.175 Tc
+-0.3625 Tw
+(line to go through the origin.  This was not an option in the WebStat pa\
+ckage. )Tj
+313.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-313.5 -13.5 TD
+/N6 12 Tf
+0 Tw
+( )Tj
+ET
+PDFVars/TermAll get exec end end
+userdict /pgsave get restore
+showpage
+%%PageTrailer
+%%EndPage
+%%Page: 10 10
+%%BeginPageSetup
+userdict /pgsave save put
+PDFVars begin PDF begin PDFVars/InitAll get exec
+%%EndPageSetup
+0 0 612 792 RC
+BT
+135.75 38.25 TD
+0 0 0 rg
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+330 0 TD
+0 0 1 rg
+-0.375 Tc
+0 Tw
+(10)Tj
+ET
+q
+465.75 36 10.5 11.25 re
+W n 
+BT
+474.75 38.25 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+Q
+BT
+135.75 655.5 TD
+0 0 0 rg
+0.1362 Tc
+-0.0737 Tw
+(Table 3. LRE values of linear regress)Tj
+150 0 TD
+0.1308 Tc
+-0.3183 Tw
+(ion analyses.)Tj
+51 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-201 -11.25 TD
+( )Tj
+0 -12.75 TD
+/N8 9.75 Tf
+0.0837 Tc
+0.4788 Tw
+(Linear Regression)Tj
+78 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+25.5 0 TD
+/N6 9.75 Tf
+( )Tj
+42.75 0 TD
+( )Tj
+42.75 0 TD
+( )Tj
+33.75 0 TD
+( )Tj
+36 0 TD
+( )Tj
+ET
+q
+414 18 49.5 756 re
+W n 
+BT
+462.75 631.5 TD
+( )Tj
+ET
+Q
+133.5 640.5 87 0.75 re
+f 
+220.5 640.5 0.75 0.75 re
+f 
+221.25 640.5 35.25 0.75 re
+f 
+256.5 640.5 0.75 0.75 re
+f 
+257.25 640.5 48.75 0.75 re
+f 
+306 640.5 0.75 0.75 re
+f 
+306.75 640.5 35.25 0.75 re
+f 
+342 640.5 0.75 0.75 re
+f 
+342.75 640.5 30.75 0.75 re
+f 
+373.5 640.5 0.75 0.75 re
+f 
+374.25 640.5 39.75 0.75 re
+f 
+414 640.5 0.75 0.75 re
+f 
+414.75 640.5 48.75 0.75 re
+f 
+q
+133.5 18 65.25 756 re
+W n 
+BT
+198 618.75 TD
+/N8 9.75 Tf
+( )Tj
+ET
+Q
+q
+198.75 18 21.75 756 re
+W n 
+BT
+219.75 618.75 TD
+/N8 9.75 Tf
+( )Tj
+ET
+Q
+BT
+223.5 618.75 TD
+/N8 9.75 Tf
+-0.0148 Tc
+0 Tw
+(Statlets)Tj
+ET
+q
+220.5 18 36 756 re
+W n 
+BT
+255 618.75 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+Q
+BT
+263.25 618.75 TD
+0.1729 Tc
+(WebStat)Tj
+36.75 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+15 0 TD
+0.2895 Tc
+0.273 Tw
+(SAS )Tj
+-4.5 -11.25 TD
+0.1563 Tc
+0 Tw
+(v6.12*)Tj
+27.75 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+8.25 11.25 TD
+0.2574 Tc
+0.3051 Tw
+(SPSS )Tj
+0.75 -11.25 TD
+0.1125 Tc
+0 Tw
+(v7.5*)Tj
+22.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+7.5 11.25 TD
+-0.171 Tc
+0 Tw
+(S)Tj
+6 0 TD
+-0.2467 Tc
+(-)Tj
+3 0 TD
+-0.0427 Tc
+0.6052 Tw
+(PLUS )Tj
+-3 -11.25 TD
+0.1125 Tc
+0 Tw
+(v4.0*)Tj
+22.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+10.5 11.25 TD
+0.1393 Tc
+-0.3268 Tw
+(Excel 97**)Tj
+ET
+q
+414 18 49.5 756 re
+W n 
+BT
+462 618.75 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+Q
+133.5 627.75 65.25 0.75 re
+f 
+198.75 627.75 0.75 0.75 re
+f 
+199.5 627.75 21 0.75 re
+f 
+220.5 627.75 0.75 0.75 re
+f 
+221.25 627.75 35.25 0.75 re
+f 
+256.5 627.75 0.75 0.75 re
+f 
+257.25 627.75 48.75 0.75 re
+f 
+306 627.75 0.75 0.75 re
+f 
+306.75 627.75 35.25 0.75 re
+f 
+342 627.75 0.75 0.75 re
+f 
+342.75 627.75 30.75 0.75 re
+f 
+373.5 627.75 0.75 0.75 re
+f 
+374.25 627.75 39.75 0.75 re
+f 
+414 627.75 0.75 0.75 re
+f 
+414.75 627.75 48.75 0.75 re
+f 
+q
+133.5 18 65.25 756 re
+W n 
+BT
+198 596.25 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+Q
+q
+198.75 18 21.75 756 re
+W n 
+BT
+219.75 596.25 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+Q
+BT
+239.25 596.25 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+42.75 0 TD
+( )Tj
+42.75 0 TD
+( )Tj
+33.75 0 TD
+( )Tj
+36 0 TD
+( )Tj
+ET
+q
+414 18 49.5 756 re
+W n 
+BT
+462.75 596.25 TD
+( )Tj
+ET
+Q
+BT
+135.75 583.5 TD
+/N6 9.75 Tf
+0.0428 Tc
+-0.2303 Tw
+(Norris \(l\))Tj
+36.75 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+33.75 -0.75 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+4.5 -1.5 TD
+/N18 6.75 Tf
+0.0443 Tc
+(b)Tj
+3.75 1.5 TD
+/N18 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+18.75 0.75 TD
+/N6 9.75 Tf
+0.1875 Tc
+0 Tw
+(6.0)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+30.75 0 TD
+0.1875 Tc
+0 Tw
+(8.0)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+28.5 0 TD
+-0.1406 Tc
+0 Tw
+(12.3)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+17.25 0 TD
+-0.1406 Tc
+0 Tw
+(12.3)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+19.5 0 TD
+-0.1406 Tc
+0 Tw
+(12.5)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+28.5 0 TD
+-0.1406 Tc
+0 Tw
+(12.1)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-312 -12.75 TD
+/N23 9.75 Tf
+0.1321 Tc
+0 Tw
+(simple)Tj
+26.25 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+43.5 -0.75 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+5.25 -1.5 TD
+/N18 6.75 Tf
+-0.3203 Tc
+(s)Tj
+3.75 1.5 TD
+/N18 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+18.75 0.75 TD
+/N6 9.75 Tf
+0.1875 Tc
+0 Tw
+(6.0)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+30.75 0 TD
+0.1875 Tc
+0 Tw
+(7.7)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+28.5 0 TD
+-0.1406 Tc
+0 Tw
+(11.9)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+17.25 0 TD
+-0.1406 Tc
+0 Tw
+(10.2)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+19.5 0 TD
+-0.1406 Tc
+0 Tw
+(14.1)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+28.5 0 TD
+-0.1406 Tc
+0 Tw
+(13.8)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+q
+133.5 18 65.25 756 re
+W n 
+BT
+198 558.75 TD
+( )Tj
+ET
+Q
+BT
+205.5 558 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+4.5 -1.5 TD
+/N6 6.75 Tf
+-0.0022 Tc
+(R)Tj
+4.5 1.5 TD
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+18.75 0.75 TD
+0.1875 Tc
+0 Tw
+(5.2)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+30.75 0 TD
+0.1875 Tc
+0 Tw
+(5.2)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+28.5 0 TD
+-0.1406 Tc
+0 Tw
+(11.6)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+19.5 0 TD
+0.1875 Tc
+0 Tw
+(9.9)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+21.75 0 TD
+-0.1406 Tc
+0 Tw
+(13.8)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+32.25 0 TD
+0.4391 Tc
+0 Tw
+(nr)Tj
+8.25 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-307.5 -12.75 TD
+0.0536 Tc
+-0.2411 Tw
+(Pontius \(l\))Tj
+41.25 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+29.25 -0.75 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+4.5 -1.5 TD
+/N18 6.75 Tf
+0.0443 Tc
+(b)Tj
+3.75 1.5 TD
+/N18 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+18.75 0.75 TD
+/N6 9.75 Tf
+0.1875 Tc
+0 Tw
+(0.0)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+35.25 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+33 0 TD
+-0.1406 Tc
+0 Tw
+(11.4)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+17.25 0 TD
+0.1875 Tc
+0 Tw
+(12.)Tj
+12 0 TD
+0.375 Tc
+(5)Tj
+4.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+19.5 0 TD
+-0.1406 Tc
+0 Tw
+(12.7)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+28.5 0 TD
+-0.1406 Tc
+0 Tw
+(11.2)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-312 -12.75 TD
+/N23 9.75 Tf
+0.1875 Tc
+0 Tw
+(polynomial)Tj
+45.75 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+24 -0.75 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+5.25 -1.5 TD
+/N18 6.75 Tf
+-0.3203 Tc
+(s)Tj
+3.75 1.5 TD
+/N18 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+18.75 0.75 TD
+/N6 9.75 Tf
+0.1875 Tc
+0 Tw
+(0.0)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+35.25 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+35.25 0 TD
+0.1875 Tc
+0 Tw
+(9.2)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+21.75 0 TD
+0.1875 Tc
+0 Tw
+(8.9)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+21.75 0 TD
+-0.1406 Tc
+0 Tw
+(13.2)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+28.5 0 TD
+-0.1406 Tc
+0 Tw
+(14.3)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+q
+133.5 18 65.25 756 re
+W n 
+BT
+198 521.25 TD
+( )Tj
+ET
+Q
+BT
+205.5 520.5 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+4.5 -1.5 TD
+/N6 6.75 Tf
+-0.0022 Tc
+(R)Tj
+4.5 1.5 TD
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+18.75 0.75 TD
+0.1875 Tc
+0 Tw
+(0.0)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+35.25 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+35.25 0 TD
+0.1875 Tc
+0 Tw
+(8.9)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+21.75 0 TD
+0.1875 Tc
+0 Tw
+(8.6)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+21.75 0 TD
+-0.1406 Tc
+0 Tw
+(12.9)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+32.25 0 TD
+0.4391 Tc
+0 Tw
+(nr)Tj
+8.25 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-307.5 -12.75 TD
+0.0618 Tc
+0.5007 Tw
+(NoInt1 \(a\))Tj
+41.25 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+29.25 -0.75 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+4.5 -1.5 TD
+/N18 6.75 Tf
+0.0443 Tc
+(b)Tj
+3.75 1.5 TD
+/N18 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+18.75 0.75 TD
+/N6 9.75 Tf
+0.1875 Tc
+0 Tw
+(6.0)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+35.25 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+33 0 TD
+-0.1406 Tc
+0 Tw
+(14.7)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+17.25 0 TD
+-0.1406 Tc
+0 Tw
+(14.7)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+19.5 0 TD
+-0.1406 Tc
+0 Tw
+(14.7)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+28.5 0 TD
+-0.1406 Tc
+0 Tw
+(14.7)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-312 -12.75 TD
+/N23 9.75 Tf
+0.1893 Tc
+-0.3768 Tw
+(simple w/o)Tj
+43.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+26.25 -0.75 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+5.25 -1.5 TD
+/N18 6.75 Tf
+-0.3203 Tc
+(s)Tj
+3.75 1.5 TD
+/N18 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+18.75 0.75 TD
+/N6 9.75 Tf
+0.1875 Tc
+0 Tw
+(6.0)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+35.25 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+36.75 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+21 0 TD
+-0.1406 Tc
+0 Tw
+(12.5)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+19.5 0 TD
+-0.1406 Tc
+0 Tw
+(14.4)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+32.25 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-308.25 -12 TD
+/N23 9.75 Tf
+0.0654 Tc
+0 Tw
+(intercept)Tj
+36 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+33.75 -0.75 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+4.5 -1.5 TD
+/N6 6.75 Tf
+-0.0022 Tc
+(R)Tj
+4.5 1.5 TD
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+18.75 0.75 TD
+0.1875 Tc
+0 Tw
+(4.5)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+35.25 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+33 0 TD
+-0.1406 Tc
+0 Tw
+(11.6)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+17.25 0 TD
+-0.1406 Tc
+0 Tw
+(12.8)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+19.5 0 TD
+-0.1406 Tc
+0 Tw
+(14.0)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+32.25 0 TD
+0.4391 Tc
+0 Tw
+(nr)Tj
+8.25 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-307.5 -12.75 TD
+0.0618 Tc
+0.5007 Tw
+(NoInt2 \(a\))Tj
+41.25 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+29.25 -0.75 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+4.5 -1.5 TD
+/N18 6.75 Tf
+0.0443 Tc
+(b)Tj
+3.75 1.5 TD
+/N18 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+18.75 0.75 TD
+/N6 9.75 Tf
+0.1875 Tc
+0 Tw
+(6.0)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+35.25 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+36.75 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+24.75 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+27 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+36 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-308.25 -12.75 TD
+/N23 9.75 Tf
+0.1893 Tc
+-0.3768 Tw
+(simple w/o)Tj
+43.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+26.25 -0.75 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+5.25 -1.5 TD
+/N18 6.75 Tf
+-0.3203 Tc
+(s)Tj
+3.75 1.5 TD
+/N18 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+18.75 0.75 TD
+/N6 9.75 Tf
+0.1875 Tc
+0 Tw
+(6.0)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+35.25 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+33 0 TD
+-0.1406 Tc
+0 Tw
+(14.9)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+17.25 0 TD
+0.1875 Tc
+0 Tw
+(14.)Tj
+12 0 TD
+0.375 Tc
+(3)Tj
+4.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+23.25 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+36 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-308.25 -12 TD
+/N23 9.75 Tf
+0.0654 Tc
+0 Tw
+(intercept)Tj
+36 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+33.75 -0.75 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+4.5 -1.5 TD
+/N6 6.75 Tf
+-0.0022 Tc
+(R)Tj
+4.5 1.5 TD
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+18.75 0.75 TD
+0.1875 Tc
+0 Tw
+(4.3)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+35.25 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+36.75 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+21 0 TD
+-0.1406 Tc
+0 Tw
+(13.0)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+19.5 0 TD
+-0.1406 Tc
+0 Tw
+(14.9)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+32.25 0 TD
+0.4391 Tc
+0 Tw
+(nr)Tj
+8.25 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-307.5 -12.75 TD
+0.1192 Tc
+-0.3067 Tw
+(Filip \(h\))Tj
+32.25 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+38.25 -0.75 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+4.5 -1.5 TD
+/N18 6.75 Tf
+0.0443 Tc
+(b)Tj
+3.75 1.5 TD
+/N18 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+19.5 0.75 TD
+/N6 9.75 Tf
+0.5411 Tc
+0 Tw
+(ns)Tj
+9.75 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+36.75 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+36 0 TD
+0.5411 Tc
+0 Tw
+(ns)Tj
+9.75 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+24 0 TD
+0.5411 Tc
+0 Tw
+(ns)Tj
+9.75 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+25.5 0 TD
+0.1875 Tc
+0 Tw
+(7.1)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+36.75 0 TD
+0.375 Tc
+0 Tw
+(0)Tj
+4.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-306 -12.75 TD
+/N23 9.75 Tf
+0.1875 Tc
+0 Tw
+(polynomial)Tj
+45.75 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+24 -0.75 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+5.25 -1.5 TD
+/N18 6.75 Tf
+-0.3203 Tc
+(s)Tj
+3.75 1.5 TD
+/N18 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+19.5 0.75 TD
+/N6 9.75 Tf
+0.5411 Tc
+0 Tw
+(ns)Tj
+9.75 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+36.75 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+36 0 TD
+0.5411 Tc
+0 Tw
+(ns)Tj
+9.75 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+24 0 TD
+0.5411 Tc
+0 Tw
+(ns)Tj
+9.75 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+25.5 0 TD
+0.1875 Tc
+0 Tw
+(7.0)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+36.75 0 TD
+0.375 Tc
+0 Tw
+(0)Tj
+4.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+q
+133.5 18 65.25 756 re
+W n 
+BT
+198 408.75 TD
+( )Tj
+ET
+Q
+BT
+205.5 408 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+4.5 -1.5 TD
+/N6 6.75 Tf
+-0.0022 Tc
+(R)Tj
+4.5 1.5 TD
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+19.5 0.75 TD
+0.5411 Tc
+0 Tw
+(ns)Tj
+9.75 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+36.75 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+36 0 TD
+0.5411 Tc
+0 Tw
+(ns)Tj
+9.75 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+24 0 TD
+0.5411 Tc
+0 Tw
+(ns)Tj
+9.75 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+25.5 0 TD
+0.1875 Tc
+0 Tw
+(7.8)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+34.5 0 TD
+0.4391 Tc
+0 Tw
+(nr)Tj
+8.25 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-307.5 -12.75 TD
+0.1135 Tc
+-0.301 Tw
+(Longley \(h\))Tj
+46.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+24 -0.75 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+4.5 -1.5 TD
+/N18 6.75 Tf
+0.0443 Tc
+(b)Tj
+3.75 1.5 TD
+/N18 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+18.75 0.75 TD
+/N6 9.75 Tf
+0.1875 Tc
+0 Tw
+(0.0)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+35.25 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+35.25 0 TD
+0.1875 Tc
+0 Tw
+(8.6)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+19.5 0 TD
+-0.1406 Tc
+0 Tw
+(12.1)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+19.5 0 TD
+-0.1406 Tc
+0 Tw
+(13.0)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+30.75 0 TD
+0.1875 Tc
+0 Tw
+(7.4)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-309.75 -12.75 TD
+/N23 9.75 Tf
+0.2237 Tc
+0 Tw
+(multiple)Tj
+33.75 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+36 -0.75 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+5.25 -1.5 TD
+/N18 6.75 Tf
+-0.3203 Tc
+(s)Tj
+3.75 1.5 TD
+/N18 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+18.75 0.75 TD
+/N6 9.75 Tf
+0.1875 Tc
+0 Tw
+(6.0)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+35.25 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+33 0 TD
+-0.1406 Tc
+0 Tw
+(10.3)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+17.25 0 TD
+-0.1406 Tc
+0 Tw
+(13.3)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+19.5 0 TD
+-0.1406 Tc
+0 Tw
+(14.2)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+30.75 0 TD
+0.1875 Tc
+0 Tw
+(8.6)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+q
+133.5 18 65.25 756 re
+W n 
+BT
+198 371.25 TD
+( )Tj
+ET
+Q
+BT
+205.5 370.5 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+4.5 -1.5 TD
+/N6 6.75 Tf
+-0.0022 Tc
+(R)Tj
+4.5 1.5 TD
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+18.75 0.75 TD
+0.1875 Tc
+0 Tw
+(6.0)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+35.25 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+33 0 TD
+-0.1406 Tc
+0 Tw
+(10.8)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+17.25 0 TD
+-0.1406 Tc
+0 Tw
+(13.2)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+19.5 0 TD
+-0.1406 Tc
+0 Tw
+(14.1)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+32.25 0 TD
+0.4391 Tc
+0 Tw
+(nr)Tj
+8.25 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-307.5 -12.75 TD
+0.1342 Tc
+-0.3217 Tw
+(Wampler1 \(h\))Tj
+55.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+15 -0.75 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+4.5 -1.5 TD
+/N18 6.75 Tf
+0.0443 Tc
+(b)Tj
+3.75 1.5 TD
+/N18 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+18.75 0.75 TD
+/N6 9.75 Tf
+-0.2813 Tc
+0 Tw
+(0.)Tj
+7.5 0 TD
+0.375 Tc
+(0)Tj
+4.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+35.25 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+35.25 0 TD
+0.1875 Tc
+0 Tw
+(8.3)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+21.75 0 TD
+0.1875 Tc
+0 Tw
+(6.6)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+24 0 TD
+0.1875 Tc
+0 Tw
+(9.8)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+33 0 TD
+0.1875 Tc
+0 Tw
+(7.0)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-309.75 -12.75 TD
+/N23 9.75 Tf
+0.1875 Tc
+0 Tw
+(polynomial)Tj
+45.75 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+24 -0.75 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+5.25 -1.5 TD
+/N18 6.75 Tf
+-0.3203 Tc
+(s)Tj
+3.75 1.5 TD
+/N18 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+18.75 0.75 TD
+/N6 9.75 Tf
+0.1875 Tc
+0 Tw
+(0.0)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+35.25 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+36.75 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+23.25 0 TD
+0.1875 Tc
+0 Tw
+(6.6)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+25.5 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+34.5 0 TD
+0.1875 Tc
+0 Tw
+(7.2)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+q
+133.5 18 65.25 756 re
+W n 
+BT
+198 333.75 TD
+( )Tj
+ET
+Q
+BT
+205.5 333 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+4.5 -1.5 TD
+/N6 6.75 Tf
+-0.0022 Tc
+(R)Tj
+4.5 1.5 TD
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+18.75 0.75 TD
+0.1875 Tc
+0 Tw
+(0.0)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+35.25 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+36.75 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+24.75 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+27 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+36 0 TD
+0.4391 Tc
+0 Tw
+(nr)Tj
+8.25 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-307.5 -12.75 TD
+0.1342 Tc
+-0.3217 Tw
+(Wampler2 \(h\))Tj
+55.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+15 -0.75 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+4.5 -1.5 TD
+/N18 6.75 Tf
+0.0443 Tc
+(b)Tj
+3.75 1.5 TD
+/N18 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+18.75 0.75 TD
+/N6 9.75 Tf
+0.1875 Tc
+0 Tw
+(0.0)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+35.25 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+33 0 TD
+-0.1406 Tc
+0 Tw
+(10.0)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+19.5 0 TD
+0.1875 Tc
+0 Tw
+(9.7)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+21.75 0 TD
+-0.1406 Tc
+0 Tw
+(13.5)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+30.75 0 TD
+0.1875 Tc
+0 Tw
+(9.7)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-309.75 -12.75 TD
+/N23 9.75 Tf
+0.1875 Tc
+0 Tw
+(polynomial)Tj
+45.75 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+24 -0.75 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+5.25 -1.5 TD
+/N18 6.75 Tf
+-0.3203 Tc
+(s)Tj
+3.75 1.5 TD
+/N18 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+18.75 0.75 TD
+/N6 9.75 Tf
+0.1875 Tc
+0 Tw
+(0.0)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+35.25 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+36.75 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+23.25 0 TD
+0.1875 Tc
+0 Tw
+(9.7)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+25.5 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+32.25 0 TD
+-0.1406 Tc
+0 Tw
+(11.8)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+q
+133.5 18 65.25 756 re
+W n 
+BT
+198 296.25 TD
+( )Tj
+ET
+Q
+BT
+205.5 295.5 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+4.5 -1.5 TD
+/N6 6.75 Tf
+-0.0022 Tc
+(R)Tj
+4.5 1.5 TD
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+18.75 0.75 TD
+0.1875 Tc
+0 Tw
+(6.0)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+35.25 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+36.75 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+24.75 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+27 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+36 0 TD
+0.4391 Tc
+0 Tw
+(nr)Tj
+8.25 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-307.5 -12.75 TD
+0.1342 Tc
+-0.3217 Tw
+(Wampler3 \(h\))Tj
+55.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+15 -0.75 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+4.5 -1.5 TD
+/N18 6.75 Tf
+0.0443 Tc
+(b)Tj
+3.75 1.5 TD
+/N18 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+18.75 0.75 TD
+/N6 9.75 Tf
+0.1875 Tc
+0 Tw
+(0.0)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+35.25 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+35.25 0 TD
+0.1875 Tc
+0 Tw
+(7.0)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+21.75 0 TD
+0.1875 Tc
+0 Tw
+(7.4)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+24 0 TD
+0.1875 Tc
+0 Tw
+(9.2)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+33 0 TD
+0.1875 Tc
+0 Tw
+(6.6)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-309.75 -12.75 TD
+/N23 9.75 Tf
+0.1875 Tc
+0 Tw
+(polynomial)Tj
+45.75 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+24 -0.75 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+5.25 -1.5 TD
+/N18 6.75 Tf
+-0.3203 Tc
+(s)Tj
+3.75 1.5 TD
+/N18 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+18.75 0.75 TD
+/N6 9.75 Tf
+0.1875 Tc
+0 Tw
+(0.0)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+35.25 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+33 0 TD
+-0.1406 Tc
+0 Tw
+(10.9)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+17.25 0 TD
+-0.1406 Tc
+0 Tw
+(10.6)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+19.5 0 TD
+-0.1406 Tc
+0 Tw
+(13.5)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+28.5 0 TD
+0.1875 Tc
+0 Tw
+(11.)Tj
+12 0 TD
+0.375 Tc
+(2)Tj
+4.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+q
+133.5 18 65.25 756 re
+W n 
+BT
+198 258.75 TD
+( )Tj
+ET
+Q
+BT
+205.5 258 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+4.5 -1.5 TD
+/N6 6.75 Tf
+-0.0022 Tc
+(R)Tj
+4.5 1.5 TD
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+18.75 0.75 TD
+0.1875 Tc
+0 Tw
+(0.0)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+35.25 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+33 0 TD
+-0.1406 Tc
+0 Tw
+(10.8)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+17.25 0 TD
+-0.1406 Tc
+0 Tw
+(10.8)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+23.25 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+36 0 TD
+0.4391 Tc
+0 Tw
+(nr)Tj
+8.25 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-307.5 -12.75 TD
+0.1342 Tc
+-0.3217 Tw
+(Wampler4 \(h\))Tj
+55.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+15 -0.75 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+4.5 -1.5 TD
+/N18 6.75 Tf
+0.0443 Tc
+(b)Tj
+3.75 1.5 TD
+/N18 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+18.75 0.75 TD
+/N6 9.75 Tf
+0.1875 Tc
+0 Tw
+(0.0)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+35.25 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+35.25 0 TD
+0.1875 Tc
+0 Tw
+(7.0)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+21.75 0 TD
+0.1875 Tc
+0 Tw
+(7.4)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+24 0 TD
+0.1875 Tc
+0 Tw
+(7.5)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+33 0 TD
+0.1875 Tc
+0 Tw
+(6.6)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-309.75 -12.75 TD
+/N23 9.75 Tf
+0.1875 Tc
+0 Tw
+(polynomial)Tj
+45.75 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+24 -0.75 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+5.25 -1.5 TD
+/N18 6.75 Tf
+-0.3203 Tc
+(s)Tj
+3.75 1.5 TD
+/N18 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+18.75 0.75 TD
+/N6 9.75 Tf
+0.1875 Tc
+0 Tw
+(1.9)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+35.25 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+33 0 TD
+-0.1406 Tc
+0 Tw
+(11.5)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+17.25 0 TD
+-0.1406 Tc
+0 Tw
+(10.8)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+19.5 0 TD
+-0.1406 Tc
+0 Tw
+(13.6)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+28.5 0 TD
+-0.1406 Tc
+0 Tw
+(11.2)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+q
+133.5 18 65.25 756 re
+W n 
+BT
+198 221.25 TD
+( )Tj
+ET
+Q
+BT
+205.5 220.5 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+4.5 -1.5 TD
+/N6 6.75 Tf
+-0.0022 Tc
+(R)Tj
+4.5 1.5 TD
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+18.75 0.75 TD
+0.1875 Tc
+0 Tw
+(0.0)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+35.25 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+33 0 TD
+-0.1406 Tc
+0 Tw
+(14.8)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+17.25 0 TD
+-0.1406 Tc
+0 Tw
+(14.2)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+23.25 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+36 0 TD
+0.4391 Tc
+0 Tw
+(nr)Tj
+8.25 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-307.5 -12.75 TD
+0.1342 Tc
+-0.3217 Tw
+(Wampler5 \(h\))Tj
+55.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+15 -0.75 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+4.5 -1.5 TD
+/N18 6.75 Tf
+0.0443 Tc
+(b)Tj
+3.75 1.5 TD
+/N18 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+18.75 0.75 TD
+/N6 9.75 Tf
+0.1875 Tc
+0 Tw
+(0.0)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+35.25 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+35.25 0 TD
+0.1875 Tc
+0 Tw
+(7.0)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+21.75 0 TD
+0.1875 Tc
+0 Tw
+(5.8)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+24 0 TD
+0.1875 Tc
+0 Tw
+(5.5)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+33 0 TD
+0.1875 Tc
+0 Tw
+(6.6)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-309.75 -12.75 TD
+/N23 9.75 Tf
+0.1875 Tc
+0 Tw
+(polynomial)Tj
+45.75 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+24 -0.75 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+5.25 -1.5 TD
+/N18 6.75 Tf
+-0.3203 Tc
+(s)Tj
+3.75 1.5 TD
+/N18 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+18.75 0.75 TD
+/N6 9.75 Tf
+0.1875 Tc
+0 Tw
+(0.0)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+35.25 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+33 0 TD
+-0.1406 Tc
+0 Tw
+(11.5)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+17.25 0 TD
+-0.1406 Tc
+0 Tw
+(10.8)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+19.5 0 TD
+-0.1406 Tc
+0 Tw
+(13.5)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+28.5 0 TD
+-0.1406 Tc
+0 Tw
+(11.2)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+q
+133.5 18 65.25 756 re
+W n 
+BT
+198 183.75 TD
+( )Tj
+ET
+Q
+BT
+205.5 183 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+4.5 -1.5 TD
+/N6 6.75 Tf
+-0.0022 Tc
+(R)Tj
+4.5 1.5 TD
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+18.75 0.75 TD
+0.1875 Tc
+0 Tw
+(0.0)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+35.25 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+36.75 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+24.75 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+27 0 TD
+-0.375 Tc
+0 Tw
+(15)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+36 0 TD
+0.4391 Tc
+0 Tw
+(nr)Tj
+8.25 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+133.5 179.25 65.25 0.75 re
+f 
+198.75 179.25 0.75 0.75 re
+f 
+199.5 179.25 21 0.75 re
+f 
+220.5 179.25 0.75 0.75 re
+f 
+221.25 179.25 35.25 0.75 re
+f 
+256.5 179.25 0.75 0.75 re
+f 
+257.25 179.25 48.75 0.75 re
+f 
+306 179.25 0.75 0.75 re
+f 
+306.75 179.25 35.25 0.75 re
+f 
+342 179.25 0.75 0.75 re
+f 
+342.75 179.25 30.75 0.75 re
+f 
+373.5 179.25 0.75 0.75 re
+f 
+374.25 179.25 39.75 0.75 re
+f 
+414 179.25 0.75 0.75 re
+f 
+414.75 179.25 48.75 0.75 re
+f 
+BT
+135.75 170.25 TD
+( )Tj
+0 -11.25 TD
+0.1022 Tc
+-0.2897 Tw
+(* McCullough 19)Tj
+70.5 0 TD
+-0.375 Tc
+0 Tw
+(99)Tj
+9 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+63.75 0 TD
+( )Tj
+8.25 0 TD
+0.1558 Tc
+-0.3433 Tw
+(nr = not reported)Tj
+67.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-219 -12.75 TD
+0.1783 Tc
+-0.3658 Tw
+(** McCullough and Wilson 1999)Tj
+133.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+9.75 0 TD
+( )Tj
+8.25 0 TD
+0.243 Tc
+-0.4305 Tw
+(ns = no solution)Tj
+65.25 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-216.75 -12 TD
+( )Tj
+ET
+PDFVars/TermAll get exec end end
+userdict /pgsave get restore
+showpage
+%%PageTrailer
+%%EndPage
+%%Page: 11 11
+%%BeginPageSetup
+userdict /pgsave save put
+PDFVars begin PDF begin PDFVars/InitAll get exec
+%%EndPageSetup
+0 0 612 792 RC
+BT
+135.75 38.25 TD
+0 0 0 rg
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+330 0 TD
+0 0 1 rg
+-0.375 Tc
+0 Tw
+(11)Tj
+ET
+q
+465.75 36 10.5 11.25 re
+W n 
+BT
+474.75 38.25 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+Q
+BT
+135.75 655.5 TD
+0 0 0 rg
+0 Tc
+-0.1875 Tw
+( )Tj
+36 0 TD
+0.0942 Tc
+4.9683 Tw
+(In addition to these numerical results, there are some noteworthy)Tj
+0 Tc
+-0.1875 Tw
+( )Tj
+-36 -11.25 TD
+0.1486 Tc
+1.0389 Tw
+(limitations and problems associated with the WebStat package.  The preci\
+sion of )Tj
+0 -12 TD
+0.1302 Tc
+0.4323 Tw
+(WebStat was restrictive for some ana)Tj
+152.25 0 TD
+0.1564 Tc
+0.1918 Tw
+(lyses as WebStat performs analyses in double )Tj
+-152.25 -11.25 TD
+0.1149 Tc
+1.7869 Tw
+(precision but the reported output consists of at most 8 decimal digits, \
+i.e., only )Tj
+0 -11.25 TD
+0.0848 Tc
+3.5402 Tw
+(single precision.  This has an adverse effect on accuracy \(with a maxim\
+um)Tj
+0 Tc
+-0.1875 Tw
+( )Tj
+0 -12 TD
+0.1338 Tc
+0.5358 Tw
+(achievable LRE value of 8.0\) although the \221acceptable\222)Tj
+225.75 0 TD
+0.1535 Tc
+0.409 Tw
+( level of precision will vary )Tj
+-225.75 -11.25 TD
+0.1524 Tc
+-0.3399 Tw
+(from user to user. )Tj
+72.75 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-72.75 -11.25 TD
+( )Tj
+0 -12 TD
+( )Tj
+36 0 TD
+0.0497 Tc
+0.4503 Tw
+(There are limitations in the package in procedures associated with the e\
+ntry )Tj
+-36 -11.25 TD
+0.1065 Tc
+2.3846 Tw
+(of data into the datasheet.  WebStat will only insert a complete dataset\
+ when )Tj
+0 -11.25 TD
+0.0749 Tc
+1.7733 Tw
+(copying and pasting datasets of less than approxi)Tj
+208.5 0 TD
+0.0748 Tc
+1.3877 Tw
+(mately 3000 observations.  For )Tj
+-208.5 -12 TD
+0.1686 Tc
+1.0439 Tw
+(larger datasets, only a portion of the dataset is inserted into the spre\
+adsheet.  To )Tj
+0 -11.25 TD
+0.0398 Tc
+1.7919 Tw
+(analyze datasets larger than 3000 observations, it is necessary to impor\
+t the data )Tj
+T*
+0.0408 Tc
+1.8342 Tw
+(from a URL.  Importing data from a file is also possible )Tj
+246.75 0 TD
+0.0412 Tc
+1.5713 Tw
+(but is limited to users )Tj
+-246.75 -12 TD
+0.1167 Tc
+-0.3042 Tw
+(employing a HotJava browser. )Tj
+123.75 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-123.75 -10.5 TD
+/N51 9.75 Tf
+( )Tj
+0 -12 TD
+/N6 9.75 Tf
+( )Tj
+36 0 TD
+0.1325 Tc
+0.355 Tw
+(WebStat performs four forms of data transformations; square, square root\
+, )Tj
+-36 -12 TD
+0.1326 Tc
+0.3362 Tw
+(log 10, and natural log.  The package computed values accurately up to 8\
+ digits for )Tj
+0 -11.25 TD
+0.134 Tc
+1.3928 Tw
+(square root, log 10, and natural log trans)Tj
+173.25 0 TD
+0.1447 Tc
+0.9178 Tw
+(formations when compared to results of )Tj
+-173.25 -11.25 TD
+0.2013 Tc
+1.8612 Tw
+(computations completed in S)Tj
+122.25 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3.75 0 TD
+0.1266 Tc
+1.5609 Tw
+(Plus and Excel, but reported inaccurate values for )Tj
+-126 -12 TD
+0.098 Tc
+1.8395 Tw
+(certain square transformations \(see Table 4\).  These results are not i\
+mmediately )Tj
+0 -11.25 TD
+0.11 Tc
+0.3587 Tw
+(explainable, in particular when double precision is used )Tj
+228.75 0 TD
+0.0273 Tc
+0.3852 Tw
+(for internal calculations.  In )Tj
+-228.75 -11.25 TD
+0.0596 Tc
+2.6847 Tw
+(addition, WebStat extended its reported precision of 8 digits for the in\
+accurate)Tj
+0 Tc
+-0.9375 Tw
+( )Tj
+0 -12 TD
+0.1268 Tc
+4.1857 Tw
+(square transformations, but did not extend the reported precision for ot\
+her)Tj
+0 Tc
+-0.9375 Tw
+( )Tj
+0 -11.25 TD
+0.1042 Tc
+3.3083 Tw
+(transformations.  Limitations were also imposed on data entry of som)Tj
+309.75 0 TD
+0.0301 Tc
+3.5324 Tw
+(e large)Tj
+0 Tc
+-0.1875 Tw
+( )Tj
+-309.75 -11.25 TD
+0.1298 Tc
+0.6533 Tw
+(numbers.  For example, the last two entries of x values in Table 4 were \
+entered as )Tj
+0 -12 TD
+0.1215 Tc
+0.066 Tw
+(2.0E11 and 2.0E12.)Tj
+78.75 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-78.75 -11.25 TD
+( )Tj
+0 -11.25 TD
+0.1424 Tc
+-0.1799 Tw
+(Table 4: Values before and after a square transformation in WebStat.)Tj
+276 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-276 -12 TD
+( )Tj
+81 -11.25 TD
+-0.375 Tc
+0.392 Tw
+(x           )Tj
+32.25 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+30.75 0 TD
+-0.0625 Tw
+(      )Tj
+15 0 TD
+-0.1875 Tw
+( )Tj
+21 0 TD
+0.375 Tc
+(  x)Tj
+9 4.5 TD
+/N6 6.75 Tf
+0 Tw
+(2)Tj
+3.75 -4.5 TD
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+-111.75 -12.75 TD
+-0.375 Tc
+0.4018 Tw
+(2              )Tj
+39.75 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+23.25 0 TD
+-0.0625 Tw
+(      )Tj
+15 0 TD
+-0.1875 Tw
+( )Tj
+21 0 TD
+0.375 Tc
+0 Tw
+(4)Tj
+4.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+215.25 307.5 212.25 0.75 re
+f 
+BT
+216.75 285.75 TD
+0.101 Tw
+(20             )Tj
+42.75 0 TD
+-0.1875 Tw
+( )Tj
+20.25 0 TD
+0.0938 Tw
+(        )Tj
+20.25 0 TD
+-0.1875 Tw
+( )Tj
+15.75 0 TD
+0.125 Tc
+0 Tw
+(400)Tj
+14.25 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-113.25 -11.25 TD
+-0.125 Tc
+0.1875 Tw
+(200            )Tj
+45 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+18 0 TD
+0.0938 Tw
+(        )Tj
+20.25 0 TD
+-0.1875 Tw
+( )Tj
+15.75 0 TD
+-0.075 Tc
+0 Tw
+(40000)Tj
+24 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-123 -11.25 TD
+0.017 Tw
+(2000           )Tj
+47.25 0 TD
+-0.1875 Tw
+( )Tj
+15.75 0 TD
+0.0938 Tw
+(        )Tj
+20.25 0 TD
+-0.1875 Tw
+( )Tj
+15.75 0 TD
+0.1607 Tc
+0 Tw
+(4000000)Tj
+34.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-133.5 -12 TD
+0.075 Tc
+-0.0958 Tw
+(20000         )Tj
+47.25 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+15.75 0 TD
+0.0938 Tw
+(        )Tj
+20.25 0 TD
+-0.1875 Tw
+( )Tj
+15.75 0 TD
+-0.1039 Tc
+0 Tw
+(4.0E8)Tj
+22.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-121.5 -11.25 TD
+0.1875 Tw
+(200000        )Tj
+50.25 0 TD
+-0.1875 Tw
+( )Tj
+12.75 0 TD
+0.0938 Tw
+(        )Tj
+20.25 0 TD
+-0.1875 Tw
+( )Tj
+15.75 0 TD
+0.1009 Tc
+0 Tw
+(4.0E10)Tj
+27.75 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-126.75 -11.25 TD
+0.0536 Tc
+0.0923 Tw
+(2000000         )Tj
+57.75 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+5.25 0 TD
+( )Tj
+36 0 TD
+0.1459 Tc
+0 Tw
+(3.999999983616E12)Tj
+83.25 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-182.25 -12 TD
+0.0461 Tc
+-0.029 Tw
+(2.0E7           )Tj
+51 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+12 0 TD
+-0.0804 Tw
+(       )Tj
+17.25 0 TD
+-0.1875 Tw
+( )Tj
+18.75 0 TD
+0.1305 Tc
+0 Tw
+(4.00000001507328E14)Tj
+93 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-192 -11.25 TD
+0.0461 Tc
+-0.029 Tw
+(2.0E8           )Tj
+51 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+12 0 TD
+0.0938 Tw
+(        )Tj
+20.25 0 TD
+-0.1875 Tw
+( )Tj
+15.75 0 TD
+0.1428 Tc
+0 Tw
+(4.0000001090256896E1)Tj
+98.25 0 TD
+0.375 Tc
+(6)Tj
+4.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-201.75 -11.25 TD
+0.0461 Tc
+-0.029 Tw
+(2.0E9           )Tj
+51 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+12 0 TD
+0.0938 Tw
+(        )Tj
+20.25 0 TD
+-0.1875 Tw
+( )Tj
+15.75 0 TD
+0.0824 Tc
+0 Tw
+(3.9999999372269978E18)Tj
+102.75 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-201.75 -12 TD
+-0.0241 Tc
+0.0866 Tw
+(2.0E10                  )Tj
+73.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+25.5 0 TD
+0.0824 Tc
+0 Tw
+(4.0000000801635094E20)Tj
+102.75 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-201.75 -11.25 TD
+0.0754 Tc
+-0.0754 Tw
+(1.99999996E11    )Tj
+73.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+25.5 0 TD
+0.1428 Tc
+0 Tw
+(3.999999911278523E22)Tj
+98.25 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-197.25 -11.25 TD
+0.0754 Tc
+-0.0754 Tw
+(1.99999999E12    )Tj
+73.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+25.5 0 TD
+0.1009 Tc
+0 Tw
+(4.0E24)Tj
+27.75 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+215.25 155.25 212.25 0.75 re
+f 
+PDFVars/TermAll get exec end end
+userdict /pgsave get restore
+showpage
+%%PageTrailer
+%%EndPage
+%%Page: 12 12
+%%BeginPageSetup
+userdict /pgsave save put
+PDFVars begin PDF begin PDFVars/InitAll get exec
+%%EndPageSetup
+0 0 612 792 RC
+BT
+135.75 38.25 TD
+0 0 0 rg
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+330 0 TD
+0 0 1 rg
+-0.375 Tc
+0 Tw
+(12)Tj
+ET
+q
+465.75 36 10.5 11.25 re
+W n 
+BT
+474.75 38.25 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+Q
+BT
+135.75 650.25 TD
+0 0 0 rg
+/N8 15.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+0 -18.75 TD
+( )Tj
+0 -18 TD
+0.0539 Tc
+-0.2414 Tw
+(III.2. Statlets)Tj
+88.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-88.5 -15 TD
+/N6 12 Tf
+0 Tw
+( )Tj
+0 -12 TD
+( )Tj
+36 0 TD
+/N6 9.75 Tf
+0.0919 Tc
+3.6849 Tw
+(Statlets performed reasonably well with univariate summary statistics)Tj
+0 Tc
+-0.1875 Tw
+( )Tj
+-36 -11.25 TD
+0.15 Tc
+0 Tw
+(altho)Tj
+20.25 0 TD
+0.0749 Tc
+0.9162 Tw
+(ugh the freely available version could only run three of the nine datase\
+ts \(see )Tj
+-20.25 -12 TD
+0.1641 Tc
+-0.3516 Tw
+(Table 1\).  The other six datasets contained more than 100 observations \
+each, so were )Tj
+0 -11.25 TD
+0.091 Tc
+0.3777 Tw
+(outside the capabilities of this version.  Statlets reports only 6 digit\
+s in its output.  I)Tj
+337.5 0 TD
+-0.4605 Tc
+0.273 Tw
+(t )Tj
+-337.5 -11.25 TD
+0.1934 Tc
+0.3691 Tw
+(accurately returned five or six digits in all but one case.  For the dat\
+aset )Tj
+301.5 0 TD
+/N23 9.75 Tf
+0.0489 Tc
+-0.2364 Tw
+(NumAcc1 )Tj
+-301.5 -12 TD
+/N6 9.75 Tf
+0.0536 Tc
+2.0089 Tw
+(with 7 common leading digits)Tj
+126.75 0 TD
+/N23 9.75 Tf
+-0.1875 Tc
+0 Tw
+(,)Tj
+2.25 0 TD
+/N6 9.75 Tf
+0.0925 Tc
+1.595 Tw
+( Statlets returned a value of zero for the standard )Tj
+-129 -11.25 TD
+0.1682 Tc
+-0.3557 Tw
+(deviation instead of one. )Tj
+101.25 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-101.25 -11.25 TD
+( )Tj
+0 -12 TD
+( )Tj
+36 0 TD
+0.1079 Tc
+1.2046 Tw
+(Most of the analysis of variance datasets exceeded the size)Tj
+246.75 0 TD
+0.1099 Tc
+0.8276 Tw
+( limits of this )Tj
+-282.75 -11.25 TD
+0.1399 Tc
+0.3785 Tw
+(Statlets version and so could not be run \(see Table 2\).  Statlets can \
+only accept the )Tj
+0 -11.25 TD
+0.1457 Tc
+0.5418 Tw
+(data for ANOVA\222s in two column format, and will not run the data if i\
+t is in table )Tj
+0 -12 TD
+0.0755 Tc
+0.487 Tw
+(format.  That only left the following two datasets to test:  )Tj
+234.75 0 TD
+/N23 9.75 Tf
+0.1875 Tc
+0 Tw
+(SiRstv)Tj
+25.5 0 TD
+/N6 9.75 Tf
+0.057 Tc
+0.5055 Tw
+( and)Tj
+17.25 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+3 0 TD
+/N23 9.75 Tf
+0.0183 Tc
+0 Tw
+(AtmWtAg)Tj
+37.5 0 TD
+/N6 9.75 Tf
+-0.0576 Tc
+0.3701 Tw
+(.  For )Tj
+-318 -11.25 TD
+/N23 9.75 Tf
+0.0863 Tc
+-0.2738 Tw
+(AtmWtAg, )Tj
+43.5 0 TD
+/N6 9.75 Tf
+0.1554 Tc
+0.2917 Tw
+(Statlets calculated both the sum of squares and the mean sum of squares \
+)Tj
+-43.5 -11.25 TD
+0.1365 Tc
+0.2593 Tw
+(as zero, thereby not being able to produce an F)Tj
+190.5 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0.088 Tc
+0.2602 Tw
+(ratio \(thus this was interpreted as an )Tj
+-193.5 -12 TD
+0.095 Tc
+1.1104 Tw
+(LRE of 0\).  The last dataset, )Tj
+124.5 0 TD
+/N23 9.75 Tf
+0.0268 Tc
+-0.2143 Tw
+(SiRstv, )Tj
+30.75 0 TD
+/N6 9.75 Tf
+0.1325 Tc
+1.1801 Tw
+(ultimately the only one analyzed by)Tj
+150 0 TD
+-0.0446 Tc
+0.2321 Tw
+( Statlets, )Tj
+-305.25 -11.25 TD
+0.0716 Tc
+0.4909 Tw
+(returned 3.4 digits of accuracy for the F)Tj
+160.5 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0.041 Tc
+0.4382 Tw
+(ratio.  Here we see the decrease in accuracy )Tj
+-163.5 -11.25 TD
+0.1311 Tc
+2.6814 Tw
+(that results from the assumed single precision storage used by Statlets \
+as the)Tj
+0 Tc
+-0.9375 Tw
+( )Tj
+0 -12 TD
+0.0959 Tc
+1.1012 Tw
+(stiffness of the datasets increases.  The results from these two dataset\
+s lead )Tj
+317.25 0 TD
+-0.15 Tc
+0.3375 Tw
+(to the )Tj
+-317.25 -11.25 TD
+0.106 Tc
+0.3411 Tw
+(assumption that Statlets only uses single precision for the internal cal\
+culations.  For )Tj
+0 -11.25 TD
+0.2785 Tc
+-0.466 Tw
+(the )Tj
+15.75 0 TD
+/N23 9.75 Tf
+0.1875 Tc
+-0.375 Tw
+(SiRstv )Tj
+28.5 0 TD
+/N6 9.75 Tf
+0.1741 Tc
+0.3308 Tw
+(dataset with 3 common leading digits, the best we could hope for under )Tj
+-44.25 -12 TD
+0.1064 Tc
+0.3985 Tw
+(single precision is 3 to 4 decimal digits of accuracy.  For the )Tj
+250.5 0 TD
+/N23 9.75 Tf
+0.0183 Tc
+0.5442 Tw
+(AtmWtAg )Tj
+40.5 0 TD
+/N6 9.75 Tf
+0.3106 Tc
+0 Tw
+(dataset)Tj
+29.25 0 TD
+-0.2089 Tc
+0.3964 Tw
+( with )Tj
+-320.25 -11.25 TD
+0.0571 Tc
+0.4172 Tw
+(7 common leading digits, the best we could hope for under single precisi\
+on is 0 to 1 )Tj
+0 -11.25 TD
+0.0456 Tc
+0.3503 Tw
+(decimal digits of accuracy.  In fact, we get 3.4 and 0 digits of accurac\
+y for these two )Tj
+0 -12 TD
+0.1406 Tc
+-0.3281 Tw
+(datasets as expected.  )Tj
+87.75 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-87.75 -11.25 TD
+( )Tj
+0 -11.25 TD
+( )Tj
+36 0 TD
+0.1143 Tc
+0.4482 Tw
+(The linear regression analyses in Statlets are the )Tj
+200.25 0 TD
+0.0689 Tc
+0.3436 Tw
+(most interesting as all the )Tj
+-236.25 -12 TD
+0.0781 Tc
+0.4344 Tw
+(datasets were within the size limitations of this version.  However, thi\
+s is where the )Tj
+0 -11.25 TD
+0.1391 Tc
+-0.2584 Tw
+(performance varied considerably.  There were three simple linear regress\
+ion datasets )Tj
+T*
+0.0927 Tc
+0.3198 Tw
+(and Statlets performed very well with these.  Two of the)Tj
+228 0 TD
+-0.5115 Tc
+0.324 Tw
+(m, )Tj
+12 0 TD
+/N23 9.75 Tf
+0.2358 Tc
+0 Tw
+(NoInt1)Tj
+28.5 0 TD
+/N6 9.75 Tf
+-0.193 Tc
+0.3805 Tw
+( and )Tj
+19.5 0 TD
+/N23 9.75 Tf
+-0.0142 Tc
+0 Tw
+(NoInt2)Tj
+27.75 0 TD
+/N6 9.75 Tf
+-0.0763 Tc
+0.2638 Tw
+(, were )Tj
+-315.75 -12 TD
+0.1624 Tc
+1.2572 Tw
+(run using simple regression, and forcing the y)Tj
+194.25 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0.1441 Tc
+0.7399 Tw
+(intercept to go through the origin.  )Tj
+-197.25 -11.25 TD
+0.1184 Tc
+1.0788 Tw
+(The number of accurate digits returned by Statlets for these three datas\
+ets ranged )Tj
+0 -11.25 TD
+0.1211 Tc
+-0.0586 Tw
+(from four through six \(see Table 3\).)Tj
+143.25 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-143.25 -12 TD
+( )Tj
+0 -11.25 TD
+( )Tj
+36 0 TD
+0.0358 Tc
+2.5266 Tw
+(For the multiple regres)Tj
+98.25 0 TD
+0.1236 Tc
+0.8139 Tw
+(sion dataset, )Tj
+56.25 0 TD
+/N23 9.75 Tf
+0.2265 Tc
+0 Tw
+(Longley)Tj
+33 0 TD
+/N6 9.75 Tf
+0.085 Tc
+1.3775 Tw
+(, Statlets reported a strange )Tj
+-223.5 -11.25 TD
+0.0876 Tc
+0.4749 Tw
+(result.  The constant is reported as )Tj
+142.5 0 TD
+0.375 Tc
+0 Tw
+(\226)Tj
+5.25 0 TD
+0.0446 Tc
+0.5179 Tw
+(348226, whereas the reference dataset reports it )Tj
+-147.75 -12 TD
+0.1377 Tc
+0.4248 Tw
+(as about )Tj
+38.25 0 TD
+0.375 Tc
+0 Tw
+(\226)Tj
+5.25 0 TD
+0.0551 Tc
+1.1997 Tw
+(3482258, i.e., the Statlets result is of a different magnitude of order \
+10, )Tj
+-43.5 -12 TD
+0.0408 Tc
+1.2717 Tw
+(resulting in an LRE of 0.  For t)Tj
+131.25 0 TD
+0.1116 Tc
+0.8259 Tw
+(he coefficients )Tj
+ET
+BT
+1.3333 0 0 1 330.75 171.75 Tm
+/N43 9.75 Tf
+0.2723 Tc
+0 Tw
+(b)Tj
+ET
+BT
+335.25 170.25 TD
+/N6 6.75 Tf
+0.375 Tc
+(1)Tj
+3.75 1.5 TD
+/N6 9.75 Tf
+-0.0428 Tc
+0.9803 Tw
+( to )Tj
+ET
+BT
+1.3333 0 0 1 354 171.75 Tm
+/N43 9.75 Tf
+0.2723 Tc
+0 Tw
+(b)Tj
+ET
+BT
+359.25 170.25 TD
+/N6 6.75 Tf
+0.375 Tc
+(6)Tj
+3.75 1.5 TD
+/N6 9.75 Tf
+-0.0561 Tc
+1.2436 Tw
+(, the LRE falls between 5.5 )Tj
+-227.25 -11.25 TD
+0.0988 Tc
+0.4637 Tw
+(and 6. However, according to the rule of reporting the LRE for the worst\
+ result, we )Tj
+0 -12.75 TD
+0.2785 Tc
+0.284 Tw
+(get )Tj
+15 0 TD
+/N18 9.75 Tf
+-0.1028 Tc
+0 Tw
+(l)Tj
+4.5 -1.5 TD
+/N18 6.75 Tf
+0.0443 Tc
+(b)Tj
+3.75 1.5 TD
+/N6 9.75 Tf
+0.1054 Tc
+0.0071 Tw
+( = 0 for the )Tj
+47.25 0 TD
+/N23 9.75 Tf
+0.2265 Tc
+0 Tw
+(Longley)Tj
+33 0 TD
+/N6 9.75 Tf
+0.2483 Tc
+-0.4358 Tw
+( dataset.)Tj
+33 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-136.5 -11.25 TD
+( )Tj
+ET
+PDFVars/TermAll get exec end end
+userdict /pgsave get restore
+showpage
+%%PageTrailer
+%%EndPage
+%%Page: 13 13
+%%BeginPageSetup
+userdict /pgsave save put
+PDFVars begin PDF begin PDFVars/InitAll get exec
+%%EndPageSetup
+0 0 612 792 RC
+BT
+135.75 38.25 TD
+0 0 0 rg
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+330 0 TD
+0 0 1 rg
+-0.375 Tc
+0 Tw
+(13)Tj
+ET
+q
+465.75 36 10.5 11.25 re
+W n 
+BT
+474.75 38.25 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+Q
+BT
+135.75 655.5 TD
+0 0 0 rg
+0 Tc
+-0.1875 Tw
+( )Tj
+36 0 TD
+0.1393 Tc
+0.3482 Tw
+(The StRD website contains seven polynomial regression datasets.  Statlet\
+s )Tj
+-36 -11.25 TD
+0.352 Tc
+1.7105 Tw
+(failed m)Tj
+33.75 0 TD
+0.0766 Tc
+1.1205 Tw
+(iserably for this procedure matching none of the digits in almost all ca\
+ses )Tj
+-33.75 -12 TD
+0.0911 Tc
+0.6589 Tw
+(\(see Table 3\).  However, it returned an R)Tj
+168 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0.1261 Tc
+0.3293 Tw
+(square value \(with six digits of accuracy\) )Tj
+-171 -11.25 TD
+0.1647 Tc
+1.3978 Tw
+(for the dataset )Tj
+66 0 TD
+/N23 9.75 Tf
+-0.0148 Tc
+0 Tw
+(Wampler2)Tj
+41.25 0 TD
+/N6 9.75 Tf
+0.1335 Tc
+1.679 Tw
+(.  Although, when analyzing a statistical package, one )Tj
+-107.25 -11.25 TD
+0.1764 Tc
+0.3861 Tw
+(should use the s)Tj
+66 0 TD
+0.103 Tc
+0.2095 Tw
+(implest procedure available, in this case we chose to try a backdoor )Tj
+-66 -12 TD
+0.1434 Tc
+0.4191 Tw
+(approach to see what would happen.  For the dataset )Tj
+218.25 0 TD
+/N23 9.75 Tf
+-0.0148 Tc
+0 Tw
+(Wampler1)Tj
+41.25 0 TD
+/N6 9.75 Tf
+0.0699 Tc
+0.3051 Tw
+(, we used Microsoft )Tj
+-259.5 -11.25 TD
+0.1013 Tc
+0.3362 Tw
+(Excel to calculate all the powers of x, and then typed the data into Sta\
+tlets by hand.  )Tj
+0 -11.25 TD
+0.037 Tc
+2.7754 Tw
+(We then ran a multi)Tj
+88.5 0 TD
+0.0932 Tc
+1.9693 Tw
+(ple regression analysis instead of a polynomial regression.  )Tj
+-88.5 -12 TD
+0.0617 Tc
+2.5008 Tw
+(Although the numbers themselves were far closer to the certified values,\
+ \(e.g., )Tj
+0 -11.25 TD
+0.1716 Tc
+1.0159 Tw
+(692.582 is closer to 1 than )Tj
+117 0 TD
+0.375 Tc
+0 Tw
+(\226)Tj
+5.25 0 TD
+0.1014 Tc
+1.2111 Tw
+(61912.7\) they still matched zero or near zero of the )Tj
+-122.25 -11.25 TD
+0.1819 Tc
+-0.3694 Tw
+(digits in this dataset.)Tj
+82.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-82.5 -12 TD
+( )Tj
+0 -16.5 TD
+/N8 15.75 Tf
+0.0697 Tc
+0 Tw
+(III.2.1.)Tj
+46.5 0 TD
+0.1247 Tc
+-0.1247 Tw
+( Rounding error in cut)Tj
+154.5 0 TD
+0.0052 Tc
+0 Tw
+(-)Tj
+5.25 0 TD
+0.287 Tc
+(and)Tj
+25.5 0 TD
+0.375 Tc
+(\226)Tj
+9 0 TD
+0.0694 Tc
+0.4931 Tw
+(pasting )Tj
+-240.75 -18.75 TD
+0.0563 Tc
+0.1312 Tw
+(operations in Statlets)Tj
+143.25 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-143.25 -12.75 TD
+/N6 9.75 Tf
+( )Tj
+0 -12 TD
+( )Tj
+36 0 TD
+0.076 Tc
+3.4865 Tw
+(A severe limitation with Statlets became evident when analyzing the)Tj
+0 Tc
+-0.9375 Tw
+( )Tj
+-36 -11.25 TD
+0.1487 Tc
+0.2263 Tw
+(univariate summary statistics dataset )Tj
+152.25 0 TD
+/N23 9.75 Tf
+0.0489 Tc
+0 Tw
+(NumAcc1)Tj
+38.25 0 TD
+/N6 9.75 Tf
+0.0773 Tc
+0.3914 Tw
+(.  Since the easiest and most obvious )Tj
+-190.5 -11.25 TD
+0.1646 Tc
+1.0407 Tw
+(method of getting data into the Statlets data)Tj
+183.75 0 TD
+0.1246 Tc
+0.9379 Tw
+(sheet is to copy and paste, this is the )Tj
+-183.75 -12 TD
+0.1742 Tc
+-0.4086 Tw
+(method we used in all cases.  This operation involves the data being con\
+verted into a )Tj
+0 -11.25 TD
+0.1311 Tc
+2.6237 Tw
+(string, transferred, and then converted back to a number.  We found that\
+ the)Tj
+0 Tc
+-0.9375 Tw
+( )Tj
+T*
+0.09 Tc
+0.1912 Tw
+(operation produces errors in Statlets.  When pasting )Tj
+211.5 0 TD
+0 Tc
+0.1875 Tw
+(in the )Tj
+25.5 0 TD
+/N23 9.75 Tf
+0.0489 Tc
+0 Tw
+(NumAcc1)Tj
+38.25 0 TD
+/N6 9.75 Tf
+0.0171 Tc
+0.2954 Tw
+( dataset, Statlets )Tj
+-275.25 -12 TD
+0.1626 Tc
+0.3999 Tw
+(rounded the three entries \(see Table 5\).  When we entered the data int\
+o Statlets by )Tj
+0 -11.25 TD
+0.094 Tc
+1.0454 Tw
+(hand, the entries were not rounded and the standard deviation returned b\
+y Statlets )Tj
+T*
+0.1877 Tc
+-0.3752 Tw
+(was 1.0 as expected.)Tj
+81.75 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-81.75 -13.5 TD
+/N6 12 Tf
+0 Tw
+( )Tj
+0 -12 TD
+/N6 9.75 Tf
+0.0805 Tc
+-0.143 Tw
+(Table 5.  Data entered into Statle)Tj
+131.25 0 TD
+0.2323 Tc
+-0.4198 Tw
+(ts by copy/paste and by hand.)Tj
+119.25 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-250.5 -11.25 TD
+( )Tj
+0 -12 TD
+( )Tj
+0 -75 TD
+( )Tj
+0 -13.5 TD
+/N6 12 Tf
+0 Tw
+( )Tj
+36 0 TD
+( )Tj
+36 0 TD
+( )Tj
+3 0 TD
+( )Tj
+-75 -13.5 TD
+( )Tj
+0 -18 TD
+/N8 15.75 Tf
+0.0881 Tc
+0.0244 Tw
+(III.3. Comparisons between WebStat and )Tj
+T*
+0.1257 Tc
+-0.0632 Tw
+(commercially available statistics packages)Tj
+286.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-286.5 -13.5 TD
+/N6 9.75 Tf
+( )Tj
+0 -11.25 TD
+( )Tj
+36 0 TD
+0.0336 Tc
+5.0289 Tw
+(In analyzing univariate summary)Tj
+145.5 0 TD
+0.1088 Tc
+4.8037 Tw
+( statistics, we found that WebStat)Tj
+0 Tc
+-0.1875 Tw
+( )Tj
+-181.5 -11.25 TD
+0.065 Tc
+1.2475 Tw
+(performed averagely \(see Table 1\) in comparison to SAS, SPSS, S)Tj
+275.25 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0.0911 Tc
+0.9714 Tw
+(Plus, which all )Tj
+-278.25 -12 TD
+0.1282 Tc
+1.7035 Tw
+(had LRE values for means and standard deviations ranging between 8.3 and\
+ 15 )Tj
+0 -11.25 TD
+0.0977 Tc
+0.4648 Tw
+(\(McCullough 1999, McCullough and Wilson 1999\).  When comparing th)Tj
+296.25 0 TD
+-0.0408 Tc
+0.1033 Tw
+(e results of )Tj
+-208.5 174 TD
+0.2157 Tc
+0 Tw
+(Dataset)Tj
+30.75 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+18.75 0 TD
+0.2045 Tc
+0 Tw
+(Copy/pasted)Tj
+51 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+12.75 0 TD
+0.1761 Tc
+-0.3636 Tw
+(Hand entered)Tj
+54 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+214.5 315.75 49.5 0.75 re
+f 
+264 315.75 0.75 0.75 re
+f 
+264.75 315.75 67.5 0.75 re
+f 
+332.25 315.75 0.75 0.75 re
+f 
+333 315.75 62.25 0.75 re
+f 
+BT
+224.25 291.75 TD
+0 Tw
+(10000001)Tj
+ET
+q
+214.5 262.5 49.5 54 re
+W n 
+BT
+263.25 291.75 TD
+-0.1875 Tw
+( )Tj
+ET
+Q
+BT
+291 291.75 TD
+-0.2357 Tc
+(1E7)Tj
+15 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+50.25 0 TD
+0 Tw
+(10000001)Tj
+ET
+214.5 302.25 49.5 0.75 re
+f 
+264 302.25 0.75 0.75 re
+f 
+264.75 302.25 67.5 0.75 re
+f 
+332.25 302.25 0.75 0.75 re
+f 
+333 302.25 62.25 0.75 re
+f 
+BT
+224.25 278.25 TD
+(10000003)Tj
+ET
+q
+214.5 262.5 49.5 54 re
+W n 
+BT
+263.25 278.25 TD
+-0.1875 Tw
+( )Tj
+ET
+Q
+BT
+291 278.25 TD
+-0.2357 Tc
+(1E7)Tj
+15 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+50.25 0 TD
+0 Tw
+(10000003)Tj
+-132 -12.75 TD
+(10000002)Tj
+ET
+q
+214.5 262.5 49.5 54 re
+W n 
+BT
+263.25 265.5 TD
+-0.1875 Tw
+( )Tj
+ET
+Q
+BT
+291 265.5 TD
+-0.2357 Tc
+(1E7)Tj
+15 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+50.25 0 TD
+0 Tw
+(10000002)Tj
+ET
+PDFVars/TermAll get exec end end
+userdict /pgsave get restore
+showpage
+%%PageTrailer
+%%EndPage
+%%Page: 14 14
+%%BeginPageSetup
+userdict /pgsave save put
+PDFVars begin PDF begin PDFVars/InitAll get exec
+%%EndPageSetup
+0 0 612 792 RC
+BT
+135.75 38.25 TD
+0 0 0 rg
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+330 0 TD
+0 0 1 rg
+-0.375 Tc
+0 Tw
+(14)Tj
+ET
+q
+465.75 36 10.5 11.25 re
+W n 
+BT
+474.75 38.25 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+Q
+BT
+135.75 655.5 TD
+0 0 0 rg
+0.0868 Tc
+2.0757 Tw
+(WebStat to Excel, we saw that Excel had two very low LRE values; one for\
+ a)Tj
+0 Tc
+-0.9375 Tw
+( )Tj
+0 -11.25 TD
+0.1227 Tc
+0.3148 Tw
+(dataset with an average difficulty rating \()Tj
+167.25 0 TD
+/N23 9.75 Tf
+0.156 Tc
+0 Tw
+(NumAcc3)Tj
+39 0 TD
+/N6 9.75 Tf
+0.0781 Tc
+0.4844 Tw
+(, LRE=1.2\) and one for a dataset )Tj
+-206.25 -12 TD
+0.0885 Tc
+0.474 Tw
+(of higher difficulty \()Tj
+82.5 0 TD
+/N23 9.75 Tf
+0.156 Tc
+0 Tw
+(NumAcc4)Tj
+39 0 TD
+/N6 9.75 Tf
+0.0985 Tc
+0.164 Tw
+(, LRE=0\).  In comparison, WebStat had only one very )Tj
+-121.5 -11.25 TD
+-0.125 Tc
+-0.0625 Tw
+(low )Tj
+20.25 0 TD
+0.131 Tc
+2.6815 Tw
+(LRE value, and this occurred in a dataset of higher difficulty \()Tj
+277.5 0 TD
+/N23 9.75 Tf
+0.156 Tc
+0 Tw
+(NumAcc4)Tj
+39 0 TD
+/N6 9.75 Tf
+0.5625 Tc
+(, )Tj
+-336.75 -11.25 TD
+0.0968 Tc
+1.8407 Tw
+(LRE=2.7\) \(see Table 1\).  WebStat and Excel demonstrated less reliabil\
+ity when )Tj
+0 -12 TD
+0.1752 Tc
+1.1373 Tw
+(compared to SAS, SPSS, and S)Tj
+131.25 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0.1117 Tc
+1.0133 Tw
+(Plus, with one and two LRE values, respectively, )Tj
+-134.25 -11.25 TD
+0.021 Tc
+0.2915 Tw
+(which were below 3.)Tj
+82.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-82.5 -11.25 TD
+( )Tj
+0 -12 TD
+( )Tj
+36 0 TD
+0.0921 Tc
+0 Tw
+(WebSt)Tj
+27.75 0 TD
+0.1075 Tc
+2.455 Tw
+(at showed highly variable results in its performance of one)Tj
+257.25 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+-0.1645 Tc
+-0.023 Tw
+(way )Tj
+-324 -11.25 TD
+0.0864 Tc
+1.7034 Tw
+(analyses of variance. Overall, WebStat\222s performance is comparable to\
+ SAS and )Tj
+0 -11.25 TD
+0.1476 Tc
+0.4149 Tw
+(SPSS \(under the constraint that WebStat only reports 8 significant digi\
+ts compared )Tj
+0 -12 TD
+0.1702 Tc
+1.4423 Tw
+(to the higher precision output )Tj
+131.25 0 TD
+0.1049 Tc
+1.7076 Tw
+(used in the other packages\) for datasets of lower )Tj
+-131.25 -11.25 TD
+0.1012 Tc
+1.7568 Tw
+(difficulty \(see Table 2\).  Surprisingly, WebStat performs considerably\
+ better for )Tj
+0 -11.25 TD
+0.0469 Tc
+0.5156 Tw
+(some of the datasets of average difficulty \(LRE of 8.0\) than SAS and S\
+PSS \(LRE of )Tj
+0 -12 TD
+-0.0197 Tc
+3.2073 Tw
+(0\).  )Tj
+3.579 Tc
+0 Tw
+(S)Tj
+27 0 TD
+-0.2467 Tc
+(-)Tj
+3.75 0 TD
+0.1924 Tc
+2.1701 Tw
+(Plus performed better than WebStat )Tj
+162 0 TD
+0.1491 Tc
+2.1634 Tw
+(with datasets at average levels of )Tj
+-192.75 -11.25 TD
+0.1332 Tc
+0.965 Tw
+(difficulty, but was only slightly better with datasets at higher levels \
+of difficulty.  )Tj
+0 -11.25 TD
+0.044 Tc
+0.5185 Tw
+(WebStat also performed favorably in comparison to Excel, which obtained \
+low LRE )Tj
+0 -12 TD
+0.1594 Tc
+-0.2635 Tw
+(values for all datasets at average and higher levels )Tj
+203.25 0 TD
+0.0886 Tc
+0.0989 Tw
+(of difficulty. )Tj
+52.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-255.75 -11.25 TD
+( )Tj
+0 -11.25 TD
+( )Tj
+36 0 TD
+0.062 Tc
+0.3755 Tw
+(The results of linear regression analyses when using WebStat are limited\
+ as )Tj
+-36 -12 TD
+0.1202 Tc
+1.0257 Tw
+(the package could only compute results for one dataset, )Tj
+236.25 0 TD
+/N23 9.75 Tf
+0.0055 Tc
+0 Tw
+(Norris)Tj
+25.5 0 TD
+/N6 9.75 Tf
+0.066 Tc
+0.9465 Tw
+(.  The results from )Tj
+-261.75 -11.25 TD
+0.1181 Tc
+1.1944 Tw
+(this dataset were reasonably good.  However, all commercially available \
+statisti)Tj
+331.5 0 TD
+0.0641 Tc
+-0.2516 Tw
+(cs )Tj
+-331.5 -11.25 TD
+0.1435 Tc
+-0.331 Tw
+(packages also did well with this dataset \(see Table 3\). )Tj
+216.75 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-216.75 -13.5 TD
+/N6 12 Tf
+0 Tw
+( )Tj
+36 -12 TD
+/N6 9.75 Tf
+0.1469 Tc
+-0.2767 Tw
+(The main factor in the discrepancy in LRE values between WebStat and the\
+ )Tj
+-36 -12 TD
+0.0877 Tc
+0.244 Tw
+(commercial packages is the difference between the 8 digit single precisi\
+on output of )Tj
+0 -11.25 TD
+0.1261 Tc
+1.9364 Tw
+(WebStat compared with the higher prec)Tj
+169.5 0 TD
+0.234 Tc
+1.8285 Tw
+(ision output of SAS, SPSS, S)Tj
+127.5 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3.75 0 TD
+0.148 Tc
+0.7895 Tw
+(Plus, and )Tj
+-300.75 -11.25 TD
+0.0186 Tc
+-0.2061 Tw
+(Excel.  )Tj
+29.25 0 TD
+/N6 12 Tf
+0 Tc
+0 Tw
+( )Tj
+-29.25 -12.75 TD
+( )Tj
+0 -18 TD
+/N8 15.75 Tf
+0.1215 Tc
+-0.009 Tw
+(III.4. Comparisons between Statlets and )Tj
+T*
+0.1257 Tc
+-0.0632 Tw
+(commercially available statistics packages)Tj
+286.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-286.5 -15 TD
+/N6 12 Tf
+0 Tw
+( )Tj
+0 -12 TD
+( )Tj
+36 0 TD
+/N6 9.75 Tf
+0.0889 Tc
+3.2691 Tw
+(Statlets showed a poor performance \(see Table 1\) in the analysis of)Tj
+0 Tc
+-0.9375 Tw
+( )Tj
+-36 -12 TD
+0.0428 Tc
+1.0822 Tw
+(univariate summary statistics, with LRE values of 6.0 )Tj
+224.25 0 TD
+0.0653 Tc
+0.6847 Tw
+(for five variables computed, )Tj
+-224.25 -11.25 TD
+0.0219 Tc
+0.5031 Tw
+(and an LRE of zero for one variable.  The fact that Statlets had an LRE \
+of zero for a )Tj
+0 -11.25 TD
+0.1577 Tc
+0.4048 Tw
+(datset of low difficulty \()Tj
+99.75 0 TD
+/N23 9.75 Tf
+0.156 Tc
+0 Tw
+(NumAcc1)Tj
+39 0 TD
+/N6 9.75 Tf
+0.14 Tc
+0.61 Tw
+(\) means that Statlets does not compare favorably )Tj
+-138.75 -12 TD
+0.0858 Tc
+0.4767 Tw
+(to the commercially available statistical software packages)Tj
+237 0 TD
+0.0811 Tc
+0.7314 Tw
+( \(SAS, SPSS, S)Tj
+62.25 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0.148 Tc
+0.0395 Tw
+(Plus, and )Tj
+-302.25 -11.25 TD
+0.062 Tc
+1.2005 Tw
+(Excel\) which ranged between 8.3 and 15 in all datasets that could be an\
+alyzed by )Tj
+0 -11.25 TD
+0.0759 Tc
+1.6116 Tw
+(Statlets \(McCullough 1999, McCullough and Wilson 1999\).  Again, it sho\
+uld be )Tj
+0 -12 TD
+0.1496 Tc
+0.9129 Tw
+(noted that we used the freely accessible version of Statlets that only s\
+u)Tj
+297 0 TD
+0 Tc
+0.9375 Tw
+(pports 100 )Tj
+-297 -11.25 TD
+0.0679 Tc
+0.3946 Tw
+(rows by 10 columns, thus restricting the number of datasets for our eval\
+uation.  The )Tj
+0 -11.25 TD
+0.1492 Tc
+1.0562 Tw
+(assumed use of single precision in Statlets and the restrictive 6 decima\
+l digits of )Tj
+0 -12 TD
+0.1362 Tc
+0.4263 Tw
+(output, compared to the higher precision output used in the commercially\
+ ava)Tj
+317.25 0 TD
+0.1393 Tc
+0.4232 Tw
+(ilable )Tj
+ET
+PDFVars/TermAll get exec end end
+userdict /pgsave get restore
+showpage
+%%PageTrailer
+%%EndPage
+%%Page: 15 15
+%%BeginPageSetup
+userdict /pgsave save put
+PDFVars begin PDF begin PDFVars/InitAll get exec
+%%EndPageSetup
+0 0 612 792 RC
+BT
+135.75 38.25 TD
+0 0 0 rg
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+330 0 TD
+0 0 1 rg
+-0.375 Tc
+0 Tw
+(15)Tj
+ET
+q
+465.75 36 10.5 11.25 re
+W n 
+BT
+474.75 38.25 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+Q
+BT
+135.75 655.5 TD
+0 0 0 rg
+0.0984 Tc
+3.3277 Tw
+(statistics packages, is an influential factor here resulting in Statlets\
+ having a)Tj
+0 Tc
+-0.9375 Tw
+( )Tj
+0 -11.25 TD
+0.0181 Tc
+0.2944 Tw
+(maximum LRE of 6.0.)Tj
+89.25 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-89.25 -12 TD
+( )Tj
+36 -11.25 TD
+0.0736 Tc
+0.3817 Tw
+(Results of analyses of variance in Statlets are limited as the majority \
+of the )Tj
+-36 -11.25 TD
+0.0963 Tc
+1.5162 Tw
+(reference datasets exceeded the size limitations of the data sheet )Tj
+276.75 0 TD
+0.0093 Tc
+0.9282 Tw
+(in the package.  )Tj
+-276.75 -12 TD
+0.1499 Tc
+0.4703 Tw
+(The one dataset that could be analyzed in Statlets performed poorly in c\
+omparison )Tj
+0 -11.25 TD
+0.0914 Tc
+1.7836 Tw
+(with all commercially available packages \(see Table 2\). Statlets retur\
+ned a LRE )Tj
+T*
+0.2231 Tc
+1.8394 Tw
+(value for the F)Tj
+63.75 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0.0517 Tc
+2.1358 Tw
+(ratio of 3.4 while SAS, SPSS, S)Tj
+137.25 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0.0683 Tc
+1.9942 Tw
+(Plus, and Excel returned valu)Tj
+125.25 0 TD
+-0.3109 Tc
+0.1234 Tw
+(es )Tj
+-332.25 -12 TD
+0.1533 Tc
+0.5092 Tw
+(between 8.3 and 13.3.  This result can be explained by an internal singl\
+e precision )Tj
+0 -11.25 TD
+0.138 Tc
+-0.3255 Tw
+(format used in Statlets.  )Tj
+96.75 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-96.75 -11.25 TD
+( )Tj
+0 -12 TD
+( )Tj
+36 0 TD
+0.08 Tc
+1.7576 Tw
+(For linear regression analysis, the coefficient associated with the lowe\
+st )Tj
+-36 -11.25 TD
+0.0493 Tc
+0.4507 Tw
+(LRE was used to compare with the minimums calculated in the same )Tj
+281.25 0 TD
+-0.0019 Tc
+0.0644 Tw
+(manner for the )Tj
+-281.25 -11.25 TD
+0.1045 Tc
+4.458 Tw
+(commercial software.  Statlets performed reasonably well for simple line\
+ar)Tj
+0 Tc
+0.5625 Tw
+( )Tj
+0 -12 TD
+0.0533 Tc
+0.4092 Tw
+(regression with LRE\222s ranging from 4.3 to 6.0 \(see Table 3\); howeve\
+r all the double )Tj
+0 -11.25 TD
+0.0563 Tc
+0.5062 Tw
+(precision packages did far better with figures from 9.9 to 15.  Polynomi\
+al regress)Tj
+327.75 0 TD
+-0.1535 Tc
+-0.034 Tw
+(ion )Tj
+-327.75 -11.25 TD
+0.0487 Tc
+0.4638 Tw
+(in Statlets, as previously discussed, did very poorly with LRE values of\
+ zero or near )Tj
+0 -12 TD
+0.1348 Tc
+0.3444 Tw
+(zero in almost every category.  In one dataset, )Tj
+192 0 TD
+/N23 9.75 Tf
+-0.0148 Tc
+0 Tw
+(Wampler2)Tj
+41.25 0 TD
+/N6 9.75 Tf
+0.1372 Tc
+0.4253 Tw
+(, Statlets calculated the R)Tj
+103.5 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+-336.75 -11.25 TD
+0.068 Tc
+2.6764 Tw
+(squared value with perfect accuracy \(which seems to be meaningless sinc\
+e the)Tj
+0 Tc
+-0.9375 Tw
+( )Tj
+0 -11.25 TD
+0.0086 Tc
+0 Tw
+(LRE\222s)Tj
+26.25 0 TD
+0.1717 Tc
+-0.3592 Tw
+( for the coefficient and standard error are 0\); but SAS, SPSS and S)Tj
+266.25 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3.75 0 TD
+0.1798 Tc
+-0.1173 Tw
+(Plus did as )Tj
+-296.25 -12 TD
+0.048 Tc
+0.1395 Tw
+(well with LRE\222s equaling 15.)Tj
+117 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-117 -11.25 TD
+( )Tj
+0 -11.25 TD
+( )Tj
+36 0 TD
+0.0724 Tc
+2.2401 Tw
+(There was one multiple regression dataset, )Tj
+188.25 0 TD
+/N23 9.75 Tf
+0.1194 Tc
+0 Tw
+(Longley)Tj
+32.25 0 TD
+/N6 9.75 Tf
+0.0155 Tc
+1.8595 Tw
+(.  Although Statlets )Tj
+-256.5 -12 TD
+0.0658 Tc
+0.4967 Tw
+(performed well for the R)Tj
+99.75 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0.0775 Tc
+0.3184 Tw
+(squared value \(LRE = 6\) and the standard error \(L)Tj
+202.5 0 TD
+-0.1281 Tc
+0.9406 Tw
+(RE = 6\), )Tj
+-305.25 -11.25 TD
+0.066 Tc
+0.5847 Tw
+(it did perform poorly on the coefficient values \(LRE = 0\).  Again, the\
+re really is no )Tj
+0 -11.25 TD
+0.104 Tc
+1.7918 Tw
+(comparison with the double precision packages.  They all out)Tj
+261.75 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0.0693 Tc
+0.8682 Tw
+(performed Statlets )Tj
+-264.75 -12 TD
+0.1296 Tc
+-0.1504 Tw
+(with LRE\222s ranging from 7.4 to 14.2 in all categories.)Tj
+214.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-214.5 -11.25 TD
+( )Tj
+0 -11.25 TD
+( )Tj
+0 -17.25 TD
+/N8 15.75 Tf
+0.0684 Tc
+0.1191 Tw
+(III.5. Comparisons betwe)Tj
+173.25 0 TD
+0.0938 Tc
+-0.0313 Tw
+(en WebStat and Statlets)Tj
+163.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-336.75 -12.75 TD
+/N6 9.75 Tf
+( )Tj
+2.25 0 TD
+( )Tj
+-2.25 -12 TD
+( )Tj
+36 0 TD
+0.1194 Tc
+2.6249 Tw
+(When WebStat and Statlets were both able to run the same analyses,)Tj
+0 Tc
+-0.9375 Tw
+( )Tj
+-36 -11.25 TD
+0.1224 Tc
+0.4401 Tw
+(WebStat performed better than Statlets in all but one case.  In this cas\
+e, \()Tj
+298.5 0 TD
+/N23 9.75 Tf
+0.1305 Tc
+0 Tw
+(Norris)Tj
+26.25 0 TD
+/N6 9.75 Tf
+0.0296 Tc
+0.5329 Tw
+(, R)Tj
+11.25 4.5 TD
+/N6 6.75 Tf
+0.375 Tc
+0 Tw
+(2)Tj
+3.75 -4.5 TD
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+-339.75 -11.25 TD
+0.0982 Tc
+1.2825 Tw
+(value\), WebStat and Statlets did equally well. One major disadvantage o\
+f St)Tj
+318.75 0 TD
+0.0696 Tc
+-0.2571 Tw
+(atlets )Tj
+-318.75 -12 TD
+0.0512 Tc
+0.4613 Tw
+(clearly is that it only reports six significant digits in its output, th\
+us producing lower )Tj
+0 -11.25 TD
+0.1146 Tc
+0.9671 Tw
+(LRE values for many of the datasets than WebStat which reports eight sig\
+nificant )Tj
+T*
+0.1626 Tc
+0.4535 Tw
+(digits.  WebStat was also able to perform more of the analyses because i\
+t doe)Tj
+320.25 0 TD
+0.0617 Tc
+0.1258 Tw
+(s not )Tj
+-320.25 -12 TD
+0.0858 Tc
+0.3696 Tw
+(have the size limitations that the freely accessible version of Statlets\
+ has.  However, )Tj
+0 -11.25 TD
+0.0884 Tc
+1.0195 Tw
+(Statlets could perform more linear regression analyses than WebStat, alt\
+hough the )Tj
+T*
+0.0821 Tc
+0.3733 Tw
+(performance of Statlets on most of the datasets that WebStat could not r\
+un was v)Tj
+327.75 0 TD
+-0.1502 Tc
+-0.0373 Tw
+(ery )Tj
+-327.75 -12 TD
+0.1382 Tc
+0 Tw
+(poor.)Tj
+21 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-21 -11.25 TD
+/N8 9.75 Tf
+( )Tj
+0 -11.25 TD
+( )Tj
+ET
+PDFVars/TermAll get exec end end
+userdict /pgsave get restore
+showpage
+%%PageTrailer
+%%EndPage
+%%Page: 16 16
+%%BeginPageSetup
+userdict /pgsave save put
+PDFVars begin PDF begin PDFVars/InitAll get exec
+%%EndPageSetup
+0 0 612 792 RC
+BT
+135.75 38.25 TD
+0 0 0 rg
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+330 0 TD
+0 0 1 rg
+-0.375 Tc
+0 Tw
+(16)Tj
+ET
+q
+465.75 36 10.5 11.25 re
+W n 
+BT
+474.75 38.25 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+Q
+BT
+135.75 650.25 TD
+0 0 0 rg
+/N8 15.75 Tf
+0.0612 Tc
+0.5013 Tw
+(IV. Conclusion)Tj
+101.25 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-101.25 -13.5 TD
+/N6 9.75 Tf
+( )Tj
+36 -11.25 TD
+0.1356 Tc
+3.4269 Tw
+(The two web)Tj
+59.25 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0.1585 Tc
+3.1897 Tw
+(based software packages WebStat and Statlets that we)Tj
+0 Tc
+-0.9375 Tw
+( )Tj
+-98.25 -11.25 TD
+0.1225 Tc
+1.0293 Tw
+(analyzed in this paper were severely limited in accuracy and precision d\
+ue to the )Tj
+0 -12 TD
+0.0924 Tc
+1.3932 Tw
+(limited output format of 6 \(Statlets\) and 8 \(WebStat\) decimal digits\
+ and the bas)Tj
+336 0 TD
+-0.579 Tc
+-0.3585 Tw
+(e )Tj
+-336 -11.25 TD
+0.1364 Tc
+0.3761 Tw
+(dataset storage used which seems to be single precision only for Statlet\
+s.  For most )Tj
+0 -11.25 TD
+0.0843 Tc
+0.4206 Tw
+(statistical analysis needs, the level of accuracy found in WebStat and S\
+tatlets would )Tj
+0 -12 TD
+0.1022 Tc
+0.4603 Tw
+(likely be unsatisfactory.  High levels of variability in the accuracy of\
+ the result)Tj
+321.75 0 TD
+-0.0403 Tc
+-0.1472 Tw
+(s for )Tj
+-321.75 -11.25 TD
+0.0935 Tc
+0.869 Tw
+(any one procedure in any one package leads us to conclude that the packa\
+ges lack )Tj
+0 -11.25 TD
+0.096 Tc
+1.0022 Tw
+(the reliability needed for many statistical analysis purposes.  Due to t\
+he ease with )Tj
+0 -12 TD
+0.1147 Tc
+3.3114 Tw
+(which these packages can be used, and the availability of introductory l\
+evel)Tj
+0 Tc
+-0.1875 Tw
+( )Tj
+0 -11.25 TD
+0.2848 Tc
+0 Tw
+(statist)Tj
+24 0 TD
+0.0754 Tc
+0.2996 Tw
+(ical procedures, however, they are ideal tools for use in introductory s\
+tatistical )Tj
+-24 -11.25 TD
+0.0947 Tc
+1.6678 Tw
+(classes.  If one has to make a choice between WebStat and Statlets, one \
+should )Tj
+0 -12 TD
+0.0622 Tc
+0.3272 Tw
+(select WebStat since it performs considerably better than Statlets in th\
+ose analyses it )Tj
+0 -11.25 TD
+0.2526 Tc
+1.0599 Tw
+(can ad)Tj
+27.75 0 TD
+0.126 Tc
+1.124 Tw
+(dress.  The polynomial and multiple linear regression analyses that can \
+be )Tj
+-27.75 -11.25 TD
+0.1114 Tc
+0.4511 Tw
+(performed in Statlets but not in WebStat produce absolutely unreliable r\
+esults)Tj
+317.25 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0.0617 Tc
+0.1258 Tw
+( thus )Tj
+-320.25 -12 TD
+0.1209 Tc
+2.6416 Tw
+(suggesting one should not use this feature at all in Statlets.  Since th\
+e main )Tj
+0 -11.25 TD
+0.117 Tc
+3.4455 Tw
+(difference betwee)Tj
+75 0 TD
+0.0794 Tc
+3.4831 Tw
+(n the commercial and demo versions of Statlets is that the)Tj
+0 Tc
+-0.9375 Tw
+( )Tj
+-75 -11.25 TD
+0.0647 Tc
+0.3614 Tw
+(commercial version supports larger datasets, we cannot recommend its pur\
+chase due )Tj
+0 -12 TD
+0.1317 Tc
+-0.1828 Tw
+(to the severe restrictions of the freely available demo version.  )Tj
+251.25 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-251.25 -11.25 TD
+( )Tj
+0 -11.25 TD
+( )Tj
+36 0 TD
+0.0972 Tc
+1.2153 Tw
+(Developing web)Tj
+66.75 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0.1067 Tc
+1.2058 Tw
+(based statistical software pack)Tj
+124.5 0 TD
+0.0325 Tc
+1.13 Tw
+(ages is certainly a difficult )Tj
+-230.25 -12 TD
+0.1699 Tc
+-0.4043 Tw
+(task.  Developers do not only have to create an attractive user interfac\
+e but also have )Tj
+0 -11.25 TD
+0.1333 Tc
+0.4292 Tw
+(to rewrite or redevelop statistical functionality.  However, even with t\
+he most user)Tj
+336.75 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+-336.75 -11.25 TD
+0.0807 Tc
+0.4818 Tw
+(friendly web)Tj
+51 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0.1317 Tc
+0.5808 Tw
+(accessible interface, the true merits of)Tj
+155.25 0 TD
+0.0809 Tc
+0.5888 Tw
+( any statistical package lie in its )Tj
+-209.25 -12 TD
+0.1504 Tc
+4.1621 Tw
+(functionality and the accuracy of its results.  Future \(commercial or n\
+on)Tj
+336.75 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+-336.75 -11.25 TD
+0.0343 Tc
+5.7782 Tw
+(commercial\) web)Tj
+74.25 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0.1324 Tc
+4.6087 Tw
+(based statistical packages have to overcome the accuracy)Tj
+0 Tc
+-0.1875 Tw
+( )Tj
+-77.25 -11.25 TD
+0.1479 Tc
+3.3465 Tw
+(problems reported for WebStat and Statlets in this paper to become serio\
+u)Tj
+336 0 TD
+-0.0428 Tc
+-0.1447 Tw
+(s )Tj
+-336 -12 TD
+0.1348 Tc
+-0.3223 Tw
+(competitors to classical statistical packages such as SAS, SPSS, and S)Tj
+280.5 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0.2026 Tc
+-0.3901 Tw
+(Plus. )Tj
+22.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-306 -11.25 TD
+( )Tj
+0 -11.25 TD
+( )Tj
+36 0 TD
+0.1493 Tc
+1.7087 Tw
+(However, it should be noted that WebStat did considerably better than )Tj
+-36 -12 TD
+0.0568 Tc
+0.3182 Tw
+(Excel for several of the datasets of average and high difficulty level. \
+For most of the )Tj
+0 -11.25 TD
+0.0873 Tc
+0.7252 Tw
+(datasets of low )Tj
+66 0 TD
+0.0591 Tc
+1.0488 Tw
+(difficulty level where Excel did well, WebStat also did well under )Tj
+-66 -11.25 TD
+0.1055 Tc
+2.2784 Tw
+(the constraint of only 8 decimal digits of output, i.e., single precisio\
+n output.  )Tj
+0 -12 TD
+0.1052 Tc
+0.9189 Tw
+(However, it has been pointed out by West \(2002, private communication\)\
+ that the )Tj
+0 -11.25 TD
+0.1616 Tc
+0.4009 Tw
+(next version of WebStat wi)Tj
+111.75 0 TD
+0.1487 Tc
+0.3456 Tw
+(ll have a switch such that users can choose the reported )Tj
+-111.75 -11.25 TD
+0.1274 Tc
+2.8101 Tw
+(precision of their results.  It might therefore be worthwhile to reevalu\
+ate the)Tj
+0 Tc
+-0.1875 Tw
+( )Tj
+0 -12 TD
+0.1584 Tc
+-0.3459 Tw
+(accuracy of this upcoming version of WebStat once it becomes available.)Tj
+293.25 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-293.25 -11.25 TD
+( )Tj
+0 -16.5 TD
+/N8 15.75 Tf
+0.1492 Tc
+0 Tw
+(Acknowledgements)Tj
+132 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-132 -13.5 TD
+/N6 9.75 Tf
+( )Tj
+0 -11.25 TD
+0.1723 Tc
+0.3902 Tw
+(The authors would like to th)Tj
+117 0 TD
+0.016 Tc
+0.5465 Tw
+(ank the Co)Tj
+44.25 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3.75 0 TD
+0.1386 Tc
+0.4239 Tw
+(Editor and an anonymous Associate Editor )Tj
+-165 -11.25 TD
+0.1169 Tc
+1.7148 Tw
+(of Computational Statistics for their helpful comments.  Thanks are also\
+ due to )Tj
+0 -12 TD
+0.1671 Tc
+-0.3546 Tw
+(Webster West for his comments regarding WebStat.  )Tj
+213.75 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-213.75 -11.25 TD
+( )Tj
+ET
+PDFVars/TermAll get exec end end
+userdict /pgsave get restore
+showpage
+%%PageTrailer
+%%EndPage
+%%Page: 17 17
+%%BeginPageSetup
+userdict /pgsave save put
+PDFVars begin PDF begin PDFVars/InitAll get exec
+%%EndPageSetup
+0 0 612 792 RC
+BT
+135.75 38.25 TD
+0 0 0 rg
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+330 0 TD
+0 0 1 rg
+-0.375 Tc
+0 Tw
+(17)Tj
+ET
+q
+465.75 36 10.5 11.25 re
+W n 
+BT
+474.75 38.25 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+Q
+BT
+135.75 650.25 TD
+0 0 0 rg
+/N8 15.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+0 -18.75 TD
+0.1542 Tc
+0 Tw
+(References)Tj
+74.25 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-74.25 -12.75 TD
+/N6 9.75 Tf
+( )Tj
+0 -12 TD
+-0.0132 Tc
+3.7257 Tw
+(Gentle, J. E. \(1998\),  )Tj
+102 0 TD
+/N23 9.75 Tf
+0.1041 Tc
+3.4584 Tw
+(Numerical linear algebra for applica)Tj
+162 0 TD
+0.0921 Tc
+3.4704 Tw
+(tions in statistics)Tj
+74.25 0 TD
+/N6 9.75 Tf
+-0.9375 Tc
+0 Tw
+(, )Tj
+-338.25 -11.25 TD
+0.0543 Tc
+0.2582 Tw
+(Springer, New York, NY.)Tj
+102.75 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-102.75 -11.25 TD
+( )Tj
+0 -16.5 TD
+0.069 Tc
+0.4358 Tw
+(K\366tter, T. \(1997a\),  \223Interactive interfaces of statistical soft\
+ware for the internet\224, in )Tj
+0 -12 TD
+/N23 9.75 Tf
+0.1832 Tc
+0.9418 Tw
+(Advances in Statistical Software 6)Tj
+142.5 0 TD
+/N6 9.75 Tf
+0.0767 Tc
+1.142 Tw
+(, W. Bandilla, and F. Faulbaum, eds., Stuttgart: )Tj
+-142.5 -11.25 TD
+0.0602 Tc
+0.0023 Tw
+(Lucius & Lucius, 153)Tj
+87 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0.0469 Tc
+-0.2344 Tw
+(158. )Tj
+19.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-109.5 -27.75 TD
+0.0573 Tc
+3.5052 Tw
+(K\366tter, )Tj
+3.7928 Tc
+0 Tw
+(T)Tj
+39.75 0 TD
+0.0915 Tc
+3.471 Tw
+(. \(1997b\),  \223Implementation of networked applications for statistic\
+al)Tj
+0 Tc
+-0.1875 Tw
+( )Tj
+-39.75 -12 TD
+0.093 Tc
+-0.2805 Tw
+(computing\224, )Tj
+53.25 0 TD
+/N23 9.75 Tf
+0.0801 Tc
+0.899 Tw
+(Bulletin of the International Statistical Institute, 51st Session Istanb\
+ul )Tj
+-53.25 -12 TD
+0.1143 Tc
+-0.3018 Tw
+(1997, Proceedings Book)Tj
+99 0 TD
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+2.25 0 TD
+/N8 9.75 Tf
+0.375 Tc
+0 Tw
+(2)Tj
+5.25 0 TD
+/N6 9.75 Tf
+-0.3125 Tc
+0.125 Tw
+(, 47)Tj
+13.5 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3.75 0 TD
+-0.0625 Tc
+-0.125 Tw
+(50. )Tj
+14.25 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-138 -23.25 TD
+0.1244 Tc
+-0.2285 Tw
+(McCullough, B. D. \(1998\),  \223Assessing reliability of statistical )Tj
+252.75 0 TD
+0.0625 Tc
+0.25 Tw
+(software: Part I\224, )Tj
+72 0 TD
+/N23 9.75 Tf
+0.125 Tc
+-0.3125 Tw
+(The )Tj
+-324.75 -11.25 TD
+0.1104 Tc
+-0.2979 Tw
+(American Statistician)Tj
+87 0 TD
+/N6 9.75 Tf
+-0.1875 Tc
+0 Tw
+(, )Tj
+4.5 0 TD
+/N8 9.75 Tf
+0.375 Tc
+(52)Tj
+10.5 0 TD
+/N6 9.75 Tf
+0.0469 Tc
+-0.2344 Tw
+(, 358)Tj
+18.75 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3.75 0 TD
+0.2344 Tc
+(366.)Tj
+17.25 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-141.75 -12 TD
+( )Tj
+0 -11.25 TD
+0.0559 Tc
+1.1941 Tw
+(McCullough, B. D. \(1999a\),  \223Assessing reliability of statistical s\
+oftware: Part II\224, )Tj
+T*
+/N23 9.75 Tf
+0.1775 Tc
+-0.365 Tw
+(The American Statistician)Tj
+105 0 TD
+/N6 9.75 Tf
+-0.1875 Tc
+0 Tw
+(, )Tj
+4.5 0 TD
+/N8 9.75 Tf
+0.375 Tc
+(53)Tj
+10.5 0 TD
+/N6 9.75 Tf
+-0.3281 Tc
+0.1406 Tw
+(, 149)Tj
+18.75 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0.0469 Tc
+(159.)Tj
+17.25 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-159 -12 TD
+( )Tj
+0 -11.25 TD
+0.1257 Tc
+2.1035 Tw
+(McCullough, B. D. \(1999b\),  \223The reliability of econometric softwar\
+e:)Tj
+303 0 TD
+0.0512 Tc
+1.2613 Tw
+( Eviews, )Tj
+-303 -11.25 TD
+0.1035 Tc
+-0.1035 Tw
+(LIMDEP, SHAZAM, and TSP\224, )Tj
+132 0 TD
+/N23 9.75 Tf
+0.1878 Tc
+-0.3753 Tw
+(Journal of Applied Econometrics,)Tj
+136.5 0 TD
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+2.25 0 TD
+/N8 9.75 Tf
+0.375 Tc
+0 Tw
+(14)Tj
+10.5 0 TD
+/N6 9.75 Tf
+0.0469 Tc
+-0.2344 Tw
+(, 191)Tj
+18.75 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3.75 0 TD
+0.2344 Tc
+(202.)Tj
+17.25 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-321 -12 TD
+( )Tj
+0 -11.25 TD
+0.1435 Tc
+4.319 Tw
+(McCullough, B. D. \(1999c\),  \223Experience with the StRD: application \
+and)Tj
+0 Tc
+0.5625 Tw
+( )Tj
+T*
+0.0907 Tc
+-0.2782 Tw
+(interpretation\224, )Tj
+63 0 TD
+/N23 9.75 Tf
+0.1566 Tc
+-0.3441 Tw
+(Computing Science and Statistics)Tj
+134.25 0 TD
+/N6 9.75 Tf
+-0.1875 Tc
+0 Tw
+(, )Tj
+4.5 0 TD
+/N8 9.75 Tf
+0.375 Tc
+(31)Tj
+10.5 0 TD
+/N6 9.75 Tf
+0.1875 Tc
+-0.375 Tw
+(, 16)Tj
+14.25 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3.75 0 TD
+0.1875 Tc
+(21.)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-242.25 -12 TD
+( )Tj
+0 -11.25 TD
+0.1187 Tc
+2.9438 Tw
+(McCullough, B. D. \(2000\),  \223The accuracy)Tj
+189.75 0 TD
+0.0641 Tc
+1.2484 Tw
+( of )Tj
+18.75 0 TD
+/N23 9.75 Tf
+0.4312 Tc
+2.3813 Tw
+(Mathematica 4)Tj
+64.5 0 TD
+/N6 9.75 Tf
+0.1224 Tc
+1.9401 Tw
+( as a statistical )Tj
+-273 -11.25 TD
+0.1158 Tc
+-0.3033 Tw
+(package\224, )Tj
+42 0 TD
+/N23 9.75 Tf
+0.1494 Tc
+-0.3369 Tw
+(Computational Statistics,)Tj
+102 0 TD
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+2.25 0 TD
+/N8 9.75 Tf
+0.375 Tc
+0 Tw
+(15)Tj
+10.5 0 TD
+/N6 9.75 Tf
+0.0469 Tc
+-0.2344 Tw
+(, 279)Tj
+18.75 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3.75 0 TD
+-0.1406 Tc
+(299.)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-195.75 -11.25 TD
+( )Tj
+0 -12 TD
+0.0984 Tc
+3.4016 Tw
+(McCullough, B. D., and Wilson, B. \(1999\),  \223On the accuracy of stat\
+istical)Tj
+0 Tc
+-0.1875 Tw
+( )Tj
+0 -11.25 TD
+0.124 Tc
+2.2385 Tw
+(procedures in Microsoft Excel 97\224, )Tj
+157.5 0 TD
+/N23 9.75 Tf
+0.1543 Tc
+2.6582 Tw
+(Computational Statistics & Data Analysis,)Tj
+182.25 0 TD
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+-339.75 -11.25 TD
+/N8 9.75 Tf
+0.375 Tc
+0 Tw
+(31)Tj
+10.5 0 TD
+/N6 9.75 Tf
+0.074 Tc
+-0.2615 Tw
+(\(1\), 27)Tj
+25.5 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3.75 0 TD
+-0.0625 Tc
+(37.)Tj
+12 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-51.75 -12 TD
+( )Tj
+0 -11.25 TD
+-0.0937 Tc
+0 Tw
+(McCu)Tj
+24.75 0 TD
+0.0343 Tc
+3.5282 Tw
+(llough, B. D., and Vinod, H. D. \(1999\),  \223The numerical reliability\
+ of)Tj
+0 Tc
+-0.1875 Tw
+( )Tj
+-24.75 -11.25 TD
+0.1057 Tc
+0.0818 Tw
+(econometric software\224, )Tj
+95.25 0 TD
+/N23 9.75 Tf
+0.1869 Tc
+-0.3744 Tw
+(Journal of Economic Literature)Tj
+128.25 0 TD
+/N6 9.75 Tf
+-0.1875 Tc
+0 Tw
+(, )Tj
+4.5 0 TD
+/N8 9.75 Tf
+0.375 Tc
+(37)Tj
+10.5 0 TD
+/N6 9.75 Tf
+0.0469 Tc
+-0.2344 Tw
+(, 633)Tj
+18.75 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3.75 0 TD
+0.2344 Tc
+(665.)Tj
+17.25 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-278.25 -12 TD
+( )Tj
+0 -15.75 TD
+0.1763 Tc
+-0.3638 Tw
+(M\374ller, M. \(1998\), \223Computer)Tj
+122.25 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0.1411 Tc
+-0.4536 Tw
+(assisted statistics teaching in network environments\224, )Tj
+-125.25 -12 TD
+-0.0428 Tc
+0.6053 Tw
+(in )Tj
+11.25 0 TD
+/N23 9.75 Tf
+0.1193 Tc
+-0.3068 Tw
+(COMPSTAT )Tj
+54 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0.2035 Tc
+1.109 Tw
+( Proceedings in Com)Tj
+88.5 0 TD
+0.1088 Tc
+1.2037 Tw
+(putational Statistics, 13)Tj
+96.75 4.5 TD
+/N23 6.75 Tf
+0.3742 Tc
+0 Tw
+(th)Tj
+6 -4.5 TD
+/N23 9.75 Tf
+0.0643 Tc
+0.6857 Tw
+( Symposium held in )Tj
+-259.5 -11.25 TD
+0.1779 Tc
+1.1346 Tw
+(Bristol, Great Britain, 1998)Tj
+117 0 TD
+/N6 9.75 Tf
+0.0681 Tc
+1.5778 Tw
+(,  R. Payne, and P. Green, eds., Heidelberg: Physica)Tj
+219.75 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+-336.75 -12 TD
+-0.0519 Tc
+0.6144 Tw
+(Verlag, 77)Tj
+42 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0.1875 Tc
+0.375 Tw
+(88. )Tj
+15 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+PDFVars/TermAll get exec end end
+userdict /pgsave get restore
+showpage
+%%PageTrailer
+%%EndPage
+%%Page: 18 18
+%%BeginPageSetup
+userdict /pgsave save put
+PDFVars begin PDF begin PDFVars/InitAll get exec
+%%EndPageSetup
+0 0 612 792 RC
+BT
+135.75 38.25 TD
+0 0 0 rg
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+330 0 TD
+0 0 1 rg
+-0.375 Tc
+0 Tw
+(18)Tj
+ET
+q
+465.75 36 10.5 11.25 re
+W n 
+BT
+474.75 38.25 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+Q
+BT
+135.75 655.5 TD
+0 0 0 rg
+0.0314 Tc
+0.8311 Tw
+(Rogers, J., Filliben, J., Gill, L., Guthrie, W., Lagergren, E., and Vang\
+el, M. \(1998\),  )Tj
+0 -11.25 TD
+0.0706 Tc
+4.2419 Tw
+(\223StRD: statistical refer)Tj
+98.25 0 TD
+0.0912 Tc
+4.2213 Tw
+(ence datasets for assessing the numerical accuracy of)Tj
+0 Tc
+-0.1875 Tw
+( )Tj
+-98.25 -12 TD
+0.0806 Tc
+5.2319 Tw
+(statistical software,\224 NIST TN# 1396, National Institute of Standards\
+ and)Tj
+0 Tc
+-0.1875 Tw
+( )Tj
+0 -11.25 TD
+0.12 Tc
+-0.3075 Tw
+(Technology, USA. )Tj
+77.25 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-77.25 -11.25 TD
+( )Tj
+0 -12 TD
+0.0648 Tc
+2.4749 Tw
+(Sawitzki, G. \(1994a\),  \223Testing numerical reliability of data analy\
+sis systems\224, )Tj
+0 -11.25 TD
+/N23 9.75 Tf
+0.1359 Tc
+-0.3234 Tw
+(Computational Statistics & D)Tj
+118.5 0 TD
+0.227 Tc
+-0.4145 Tw
+(ata Analysis)Tj
+50.25 0 TD
+/N6 9.75 Tf
+-0.1875 Tc
+0 Tw
+(, )Tj
+4.5 0 TD
+/N8 9.75 Tf
+0.375 Tc
+(18)Tj
+10.5 0 TD
+/N6 9.75 Tf
+0.0469 Tc
+-0.2344 Tw
+(, 269)Tj
+18.75 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3.75 0 TD
+-0.1406 Tc
+(286.)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-222.75 -11.25 TD
+( )Tj
+0 -12 TD
+0.1505 Tc
+3.4802 Tw
+(Sawitzki, G. \(1994b\),  \223Report on the reliability of data analysis \
+systems\224,)Tj
+339.75 0 TD
+/N23 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+-339.75 -11.25 TD
+0.1543 Tc
+-0.3418 Tw
+(Computational Statistics & Data Analysis,)Tj
+171 0 TD
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+2.25 0 TD
+/N8 9.75 Tf
+0.375 Tc
+0 Tw
+(18)Tj
+10.5 0 TD
+/N6 9.75 Tf
+0.0469 Tc
+-0.2344 Tw
+(, 289)Tj
+18.75 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3.75 0 TD
+-0.1406 Tc
+(301.)Tj
+16.5 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-222.75 -11.25 TD
+( )Tj
+0 -12 TD
+0.0819 Tc
+0.4306 Tw
+(Schmelzer, S., K\366tter, T., Klinke, S., and H\344rdle, W. \(1996\),  \223\
+A new generation of )Tj
+0 -11.25 TD
+0.0375 Tc
+1.275 Tw
+(a statistic)Tj
+39 0 TD
+0.1407 Tc
+1.0647 Tw
+(al computing environment on the net\224, in )Tj
+177 0 TD
+/N23 9.75 Tf
+0.1193 Tc
+-0.3068 Tw
+(COMPSTAT )Tj
+54.75 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0.1673 Tc
+0.6452 Tw
+( Proceedings in )Tj
+-273.75 -11.25 TD
+0.1091 Tc
+0.8284 Tw
+(Computational Statistics, 12)Tj
+116.25 4.5 TD
+/N23 6.75 Tf
+-0.3758 Tc
+0 Tw
+(th)Tj
+5.25 -4.5 TD
+/N23 9.75 Tf
+0.1289 Tc
+0.9336 Tw
+( Symposium held in Barcelona, Spain, 1996)Tj
+181.5 0 TD
+/N6 9.75 Tf
+-0.0074 Tc
+0.5699 Tw
+(, A. Prat, )Tj
+-303 -12 TD
+0.1163 Tc
+-0.3038 Tw
+(ed., Heidelberg: Physica)Tj
+97.5 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3.75 0 TD
+0.1408 Tc
+-0.3283 Tw
+(Verlag, 135)Tj
+46.5 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3.75 0 TD
+0.2344 Tc
+(148.)Tj
+17.25 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-168.75 -11.25 TD
+( )Tj
+0 -11.25 TD
+0.0856 Tc
+2.7269 Tw
+(Simon, S. D., and Lesage, J. P. \(1989\),  \223Assessing the accuracy)Tj
+285.75 0 TD
+0.0258 Tc
+2.0367 Tw
+( of ANOVA )Tj
+-285.75 -12 TD
+0.0834 Tc
+1.2291 Tw
+(calculations in statistical software\224, )Tj
+151.5 0 TD
+/N23 9.75 Tf
+0.1012 Tc
+1.7738 Tw
+(Computational Statistics & Data Analysis)Tj
+174.75 0 TD
+/N6 9.75 Tf
+-0.1875 Tc
+0 Tw
+(, )Tj
+6.75 0 TD
+/N8 9.75 Tf
+0.375 Tc
+(8)Tj
+5.25 0 TD
+/N6 9.75 Tf
+-0.9375 Tc
+(, )Tj
+-338.25 -11.25 TD
+0.125 Tc
+(325)Tj
+14.25 0 TD
+-0.2467 Tc
+(-)Tj
+3.75 0 TD
+0.2344 Tc
+(332.)Tj
+17.25 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-35.25 -11.25 TD
+( )Tj
+0 -12 TD
+0.0995 Tc
+2.0784 Tw
+(Vinod, H. D. \(2000\),  \223Review of Gauss for Windows, including its n\
+umerical )Tj
+0 -11.25 TD
+0.1342 Tc
+-0.3217 Tw
+(accuracy\224, )Tj
+45 0 TD
+/N23 9.75 Tf
+0.1477 Tc
+-0.3352 Tw
+(Journal of Applied Econometrics)Tj
+132.75 0 TD
+/N6 9.75 Tf
+-0.1875 Tc
+0 Tw
+(, )Tj
+4.5 0 TD
+/N8 9.75 Tf
+0.375 Tc
+(15)Tj
+10.5 0 TD
+/N6 9.75 Tf
+-0.1406 Tc
+-0.0469 Tw
+(, 211)Tj
+19.5 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3 0 TD
+0.0469 Tc
+(220.)Tj
+17.25 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-232.5 -11.25 TD
+( )Tj
+0 -12 TD
+0.0467 Tc
+0.5158 Tw
+(West, R. W. \(1997\))Tj
+78.75 0 TD
+0.148 Tc
+0.2478 Tw
+(,  \223Statistical applications for the World Wide Web\224, )Tj
+219.75 0 TD
+/N23 9.75 Tf
+-0.0214 Tc
+-0.1661 Tw
+(Bulletin of )Tj
+-298.5 -11.25 TD
+0.1025 Tc
+0.3767 Tw
+(the International Statistical Institute, 51st Session Istanbul 1997, Pro\
+ceedings Book)Tj
+339.75 0 TD
+/N6 9.75 Tf
+0 Tc
+-0.1875 Tw
+( )Tj
+-339.75 -11.25 TD
+/N8 9.75 Tf
+0.375 Tc
+0 Tw
+(2)Tj
+5.25 0 TD
+/N6 9.75 Tf
+-0.2813 Tc
+0.0938 Tw
+(, 7)Tj
+9 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3.75 0 TD
+-0.0625 Tc
+-0.125 Tw
+(10. )Tj
+14.25 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-32.25 -12 TD
+( )Tj
+0 -11.25 TD
+0.0637 Tc
+1.0988 Tw
+(West, R. W., and Ogden, R. T. \(1997\),  \223Statistical analysis with W\
+ebStat, a Java )Tj
+T*
+0.0892 Tc
+5.7233 Tw
+(applet for)Tj
+0 Tc
+-0.1875 Tw
+( )Tj
+52.5 0 TD
+0.1401 Tc
+5.6724 Tw
+(the World Wide Web\224,)Tj
+0 Tc
+-0.1875 Tw
+( )Tj
+118.5 0 TD
+/N23 9.75 Tf
+0.1126 Tc
+5.6999 Tw
+(Journal of Statistical Software)Tj
+139.5 0 TD
+/N6 9.75 Tf
+-0.1875 Tc
+0 Tw
+(, )Tj
+10.5 0 TD
+/N8 9.75 Tf
+0.375 Tc
+(2)Tj
+5.25 0 TD
+/N6 9.75 Tf
+-0.0765 Tc
+0.639 Tw
+(\(3\), )Tj
+-326.25 -12 TD
+0.1038 Tc
+0 Tw
+(http://www.jstatsoft.org/v02/i03)Tj
+ET
+135.75 320.25 128.25 0.75 re
+f 
+BT
+264 321.75 TD
+-0.1875 Tc
+(.)Tj
+2.25 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-130.5 -11.25 TD
+( )Tj
+0 -11.25 TD
+0.0978 Tc
+1.1611 Tw
+(West, R. W., and Ogden, R. T. \(1998\),  \223WebStat: An environment for\
+ statistical )Tj
+0 -12 TD
+0.1747 Tc
+0.7628 Tw
+(analysis on the World Wide Web\224, )Tj
+150.75 0 TD
+/N23 9.75 Tf
+0.1049 Tc
+1.2076 Tw
+(Computing Science and Statistics)Tj
+137.25 0 TD
+/N6 9.75 Tf
+-0.1875 Tc
+0 Tw
+(, )Tj
+6 0 TD
+/N8 9.75 Tf
+0.375 Tc
+(29)Tj
+10.5 0 TD
+/N6 9.75 Tf
+-0.0973 Tc
+2.1598 Tw
+(\(1\), 307)Tj
+31.5 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+-336 -11.25 TD
+0.125 Tc
+(310)Tj
+14.25 0 TD
+-0.1875 Tc
+(.)Tj
+2.25 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+-16.5 -11.25 TD
+( )Tj
+0 -12 TD
+0.1258 Tc
+-0.0927 Tw
+(West, R. W., Ogden, R. T., and Rossini, A. J. \(1998\),  \223Statistical\
+ tools on the World )Tj
+0 -11.25 TD
+0.1897 Tc
+-0.3772 Tw
+(Wide Web\224, )Tj
+52.5 0 TD
+/N23 9.75 Tf
+0.1775 Tc
+-0.365 Tw
+(The American Statistician)Tj
+105 0 TD
+/N6 9.75 Tf
+-0.1875 Tc
+0 Tw
+(, )Tj
+4.5 0 TD
+/N8 9.75 Tf
+0.375 Tc
+(52)Tj
+10.5 0 TD
+/N6 9.75 Tf
+0.0099 Tc
+-0.1974 Tw
+(\(3\), 257)Tj
+30 0 TD
+-0.2467 Tc
+0 Tw
+(-)Tj
+3.75 0 TD
+0.2344 Tc
+(262.)Tj
+17.25 0 TD
+0 Tc
+-0.1875 Tw
+( )Tj
+ET
+PDFVars/TermAll get exec end end
+userdict /pgsave get restore
+showpage
+%%PageTrailer
+%%EndPage
+%%Trailer
+%%DocumentProcessColors: Cyan Magenta Yellow Black
+%%EOF
