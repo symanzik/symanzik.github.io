@@ -1,0 +1,163 @@
+\relax 
+\bibstyle{apalike}
+\citation{As85}
+\citation{AB96}
+\citation{AB97}
+\citation{ADH93}
+\citation{AD98}
+\citation{BDLS96}
+\citation{BA86b}
+\citation{BCW88}
+\citation{BH92b}
+\citation{BC96}
+\citation{BCS96}
+\citation{Bao97}
+\citation{BA97}
+\citation{Chau82}
+\citation{Cha97}
+\citation{Cha98}
+\citation{CCMS94}
+\citation{CMSC96}
+\citation{CSMC97}
+\citation{Co91}
+\citation{Cr84}
+\citation{Cr93}
+\citation{CLNL87}
+\citation{COW92}
+\citation{DRMVKSD94}
+\citation{Dyk96}
+\citation{EE98}
+\citation{ESRI96}
+\citation{GHW92}
+\citation{GMSBK97}
+\citation{Gue98}
+\citation{HaBr91b}
+\citation{HKT95}
+\citation{HBCUW91}
+\citation{HMW96}
+\citation{KM94}
+\citation{LSDB92}
+\citation{MacD92}
+\citation{Math96}
+\citation{MCCKLS95}
+\citation{MCCKLSv95}
+\citation{MCCS96}
+\citation{MCSMv96}
+\citation{MC98}
+\citation{MW87}
+\citation{Mon88}
+\citation{Mon89}
+\citation{Nye92}
+\citation{OP96}
+\citation{OPR96}
+\citation{Pajarola:98th}
+\citation{Pan96}
+\citation{RMJF92}
+\citation{Sc94}
+\citation{St90}
+\citation{SCB98}
+\citation{SMCC94}
+\citation{SMC95}
+\citation{SMCv95}
+\citation{SMMC96Int}
+\citation{SMC96ACM}
+\citation{SMC97IASC}
+\citation{SKSKCS97Int}
+\citation{SKSCL97ASA}
+\citation{SCKL98Army}
+\citation{SPW98ASA}
+\citation{UWH90}
+\citation{WLB90}
+\citation{ZG97}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Cartographic and Dynamic Statistical Graphics}{2}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}InterProcess Communication Standards and Remote Procedure Calls}{4}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}The Capabilities of the ArcView/XGobi Link}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Linked Brushing between ArcView and XGobi}{6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Example for the basic (or multivariate) link. The attribute data is displayed in XGobi (left) with a full complement of multivariate graphical tools available. This data is linked by brushing to the map view provided by ArcView (right). In the XGobi plot, two extremes on third quarter precipitation and elevation are painted as solid rectangles and they are shown to be located very close to one another in New Hampshire near the border with Maine in the ArcView map view.}}{7}}
+\newlabel{ex_mult.ps}{{1}{7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Two Motivational Examples}{8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Example for the variogram--cloud link. In the upper left XGobi, we have brushed (using a solid rectangle) the highest values in the variogram--cloud plot ($g_{11} (\unhbox \voidb@x \hbox {\relax \mathversion  {bold}$s_i$}, \unhbox \voidb@x \hbox {\relax \mathversion  {bold}$s_j$})$) versus $d (\unhbox \voidb@x \hbox {\relax \mathversion  {bold}$s_i$}, \unhbox \voidb@x \hbox {\relax \mathversion  {bold}$s_j$})$). In the lower right ArcView map view, each pair of locations, related to a point that has been brushed in XGobi, has been connected by a line.}}{8}}
+\newlabel{ex_vario.ps}{{2}{8}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Technical Implementation Details}{9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}RPCs in the ArcView/XGobi Link}{9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}XGobi Additions}{10}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.1}XGobi's RPC Structure}{10}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.2}Modifications to XGobi's Data Structures}{12}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Data Structures used for the Variogram--Cloud Link are {\it  Initial Data}, {\it  Binary Map}, {\it  Brushing List 1} and {\it  2}, and {\it  Array of Pairs}. In this example, we have $n = 3$ spatial locations and select a cutoff distance $d_{cut} = 1.1$. Numbers printed in bold ({\bf  1}, {\bf  2}, and {\bf  3}) relate to the initial data at spatial locations \relax \mathversion  {bold}$s_1$, \relax \mathversion  {bold}$s_2$, and \relax \mathversion  {bold}$s_3$ in ArcView. Numbers printed in italic ({\it  1} through {\it  7}) relate to points created for use in XGobi.}}{13}}
+\newlabel{DataStructs}{{3}{13}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}ArcView 3.0 Modifications}{15}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces The {\it  View} Document GUI in ArcView 3.0, used for all features of the link except the SCDF link. The following new features of the GUI have been added for the ArcView/XGobi link but are not part of the standard ArcView GUI. The red and green diamond buttons allow the user to start and stop XGobi. The paint brush button switches user control to brushing mode. The ``XGobi'' pulldown menu allows the user to select one of the features of the link. The ``Color'', ``Glyph'', and ``Size'' pulldown menus allow the user to select the plotting symbol.}}{16}}
+\newlabel{GUI3.0.ps}{{4}{16}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Security and Concurrency}{17}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Discussion}{19}}
+\bibdata{references}
+\bibcite{AD98}{Alexandrov and Dongarra, 1998}
+\bibcite{AB96}{Anselin and Bao, 1996}
+\bibcite{AB97}{Anselin and Bao, 1997}
+\bibcite{ADH93}{Anselin et\nobreakspace  {}al., 1993}
+\bibcite{As85}{Asimov, 1985}
+\bibcite{Bao97}{Bao, 1997}
+\bibcite{BA97}{Bao and Anselin, 1997}
+\bibcite{BCW88}{Becker et\nobreakspace  {}al., 1988}
+\bibcite{BDLS96}{Bode et\nobreakspace  {}al., 1996}
+\bibcite{BH92b}{Bradley and Haslett, 1992}
+\bibcite{BC96}{Brunsdon and Charlton, 1996}
+\bibcite{BA86b}{Buja and Asimov, 1986}
+\bibcite{BCS96}{Buja et\nobreakspace  {}al., 1996}
+\bibcite{CLNL87}{Carr et\nobreakspace  {}al., 1987}
+\bibcite{COW92}{Carr et\nobreakspace  {}al., 1992}
+\bibcite{Cha97}{Chambers, 1997}
+\bibcite{Cha98}{Chambers, 1998}
+\bibcite{Chau82}{Chauvet, 1982}
+\bibcite{CCMS94}{Cook et\nobreakspace  {}al., 1994}
+\bibcite{CMSC96}{Cook et\nobreakspace  {}al., 1996}
+\bibcite{CSMC97}{Cook et\nobreakspace  {}al., 1997}
+\bibcite{Co91}{Corbin, 1991}
+\bibcite{Cr84}{Cressie, 1984}
+\bibcite{Cr93}{Cressie, 1993}
+\bibcite{DRMVKSD94}{DiBiase et\nobreakspace  {}al., 1994}
+\bibcite{Dyk96}{Dykes, 1996}
+\bibcite{EE98}{Eddon and Eddon, 1998}
+\bibcite{ESRI96}{{Environmental Systems Research Institute, Inc.}, 1996}
+\bibcite{GHW92}{Goodchild et\nobreakspace  {}al., 1992}
+\bibcite{Gue98}{G{\"u}nther, 1998}
+\bibcite{GMSBK97}{G{\"u}nther et\nobreakspace  {}al., 1997}
+\bibcite{HMW96}{Haining et\nobreakspace  {}al., 1996}
+\bibcite{HKT95}{H{\"a}rdle et\nobreakspace  {}al., 1995}
+\bibcite{HaBr91b}{Haslett and Bradley, 1991}
+\bibcite{HBCUW91}{Haslett et\nobreakspace  {}al., 1991}
+\bibcite{KM94}{Klein and Moreira, 1994}
+\bibcite{LSDB92}{Littman et\nobreakspace  {}al., 1992}
+\bibcite{MacD92}{MacDougall, 1992}
+\bibcite{MCCKLSv95}{Majure et\nobreakspace  {}al., 1995}
+\bibcite{MCCKLS95}{Majure et\nobreakspace  {}al., 1996a}
+\bibcite{MCSMv96}{Majure et\nobreakspace  {}al., 1996b}
+\bibcite{MC98}{Majure and Cressie, 1998}
+\bibcite{MCCS96}{Majure et\nobreakspace  {}al., 1996c}
+\bibcite{Math96}{MathSoft, 1996}
+\bibcite{MW87}{McDonald and Willis, 1987}
+\bibcite{Mon88}{Monmonier, 1988}
+\bibcite{Mon89}{Monmonier, 1989}
+\bibcite{Nye92}{Nye, 1992}
+\bibcite{OP96}{Openshaw and Perr{\'e}e, 1996}
+\bibcite{OPR96}{Otte et\nobreakspace  {}al., 1996}
+\bibcite{Pajarola:98th}{Pajarola, 1998}
+\bibcite{Pan96}{Pannatier, 1996}
+\bibcite{RMJF92}{Rossi et\nobreakspace  {}al., 1992}
+\bibcite{Sc94}{Scott, 1994}
+\bibcite{St90}{Stevens, 1990}
+\bibcite{SCB98}{Swayne et\nobreakspace  {}al., 1998}
+\bibcite{SCKL98Army}{Symanzik et\nobreakspace  {}al., 1998a}
+\bibcite{SKSCL97ASA}{Symanzik et\nobreakspace  {}al., 1997a}
+\bibcite{SKSKCS97Int}{Symanzik et\nobreakspace  {}al., 1998b}
+\bibcite{SMCC94}{Symanzik et\nobreakspace  {}al., 1994}
+\bibcite{SMCv95}{Symanzik et\nobreakspace  {}al., 1995}
+\bibcite{SMC95}{Symanzik et\nobreakspace  {}al., 1996}
+\bibcite{SMC97IASC}{Symanzik et\nobreakspace  {}al., 1997b}
+\bibcite{SMC96ACM}{Symanzik et\nobreakspace  {}al., 1997c}
+\bibcite{SMMC96Int}{Symanzik et\nobreakspace  {}al., 1997d}
+\bibcite{SPW98ASA}{Symanzik et\nobreakspace  {}al., 1998c}
+\bibcite{UWH90}{Unwin et\nobreakspace  {}al., 1990}
+\bibcite{WLB90}{Williams et\nobreakspace  {}al., 1990}
+\bibcite{ZG97}{Zhang and Griffith, 1997}

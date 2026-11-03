@@ -1,0 +1,453 @@
+\begin{thebibliography}{}
+
+\bibitem[Alexandrov and Dongarra, 1998]{AD98}
+Alexandrov, V. and Dongarra, J., editors (1998).
+\newblock {\em {R}ecent {A}dvances in {P}arallel {V}irtual {M}achine and
+  {M}essage {P}assing {I}nterface}.
+\newblock Springer, Berlin.
+\newblock Lecture Notes in Computer Science; Vol.\ 1497.
+
+\bibitem[Anselin and Bao, 1996]{AB96}
+Anselin, L. and Bao, S. (1996).
+\newblock {E}xploratory {S}patial {D}ata {A}nalysis {L}inking {S}pace{S}tat and
+  {A}rc{V}iew.
+\newblock Technical Report 9618, West Virginia University, Morgantown, WV.
+
+\bibitem[Anselin and Bao, 1997]{AB97}
+Anselin, L. and Bao, S. (1997).
+\newblock {E}xploratory {S}patial {D}ata {A}nalysis {L}inking {S}pace{S}tat and
+  {A}rc{V}iew.
+\newblock In Fischer, M.~M. and Getis, A., editors, {\em {R}ecent
+  {D}evelopments in {S}patial {A}nalysis}, pages 35--59. Springer, Berlin.
+
+\bibitem[Anselin et~al., 1993]{ADH93}
+Anselin, L., Dodson, R.~F., and Hudak, S. (1993).
+\newblock {L}inking {GIS} and {S}patial {D}ata {A}nalysis in {P}ractice.
+\newblock {\em Geographical Systems}, 1(1):3--23.
+
+\bibitem[Asimov, 1985]{As85}
+Asimov, D. (1985).
+\newblock {T}he {G}rand {T}our: {A} {T}ool for {V}iewing {M}ultidimensional
+  {D}ata.
+\newblock {\em SIAM Journal on Scientific and Statistical Computing},
+  6(1):128--143.
+
+\bibitem[Bao, 1997]{Bao97}
+Bao, S. (1997).
+\newblock {\em {U}ser's {R}eference for the {S+G}rassland {L}ink}.
+\newblock Mathsoft, Inc., Seattle, WA.
+
+\bibitem[Bao and Anselin, 1997]{BA97}
+Bao, S. and Anselin, L. (1997).
+\newblock {L}inking {S}patial {S}tatistics with {GIS}: {O}perational {I}ssues
+  in the {S}pace{S}tat--{A}rc{V}iew {L}ink and the {S+G}rassland {L}ink.
+\newblock In {\em 1997 Proceedings of the Section on Statistical Graphics},
+  pages 61--66, Alexandria, VA. American Statistical Association.
+
+\bibitem[Becker et~al., 1988]{BCW88}
+Becker, R., Chambers, J., and Wilks, A. (1988).
+\newblock {\em {T}he {N}ew {S} {L}anguage --- {A} {P}rogramming {E}nvironment
+  for {D}ata {A}nalysis and {G}raphics}.
+\newblock Wadsworth and Brooks/Cole, Pacific Grove, CA.
+
+\bibitem[Bode et~al., 1996]{BDLS96}
+Bode, A., Dongarra, J., Ludwig, T., and Sunderam, V., editors (1996).
+\newblock {\em {P}arallel {V}irtual {M}achine --- {E}uro{PVM}'96}.
+\newblock Springer, Berlin.
+\newblock Lecture Notes in Computer Science; Vol.\ 1156.
+
+\bibitem[Bradley and Haslett, 1992]{BH92b}
+Bradley, R. and Haslett, J. (1992).
+\newblock {I}nteractive {G}raphics for the {E}xploratory {A}nalysis of
+  {S}patial {D}ata --- {T}he {I}nteractive {V}ariogram {C}loud.
+\newblock In Dowd, P.~A. and Royer, J.~J., editors, {\em 2nd {CODATA}
+  {C}onference on {G}eomathematics and {G}eostatistics, {S}ci.\ de la {T}erre,
+  {S}er.\ {I}nf.}, volume~31, pages 373--386, Nancy.
+
+\bibitem[Brunsdon and Charlton, 1996]{BC96}
+Brunsdon, C. and Charlton, M. (1996).
+\newblock {D}eveloping an {E}xploratory {S}patial {A}nalysis {S}ystem in
+  {XL}isp--{S}tat.
+\newblock In Parker, D., editor, {\em Innovations in GIS 3}, pages 135--145.
+  Taylor \& Francis, London, U.K.
+
+\bibitem[Buja and Asimov, 1986]{BA86b}
+Buja, A. and Asimov, D. (1986).
+\newblock {G}rand {T}our {M}ethods: {A}n {O}utline.
+\newblock {\em Computing Science and Statistics}, 17:63--67.
+
+\bibitem[Buja et~al., 1996]{BCS96}
+Buja, A., Cook, D., and Swayne, D.~F. (1996).
+\newblock {I}nteractive {H}igh--{D}imensional {D}ata {V}isualization.
+\newblock {\em Journal of Computational and Graphical Statistics}, 5(1):78--99.
+
+\bibitem[Carr et~al., 1987]{CLNL87}
+Carr, D.~B., Littlefield, R.~J., Nicholson, W.~L., and Littlefield, J.~S.
+  (1987).
+\newblock {S}catterplot {M}atrix {T}echniques for {L}arge {N}.
+\newblock {\em Journal of the American Statistical Association},
+  82(398):424--436.
+
+\bibitem[Carr et~al., 1992]{COW92}
+Carr, D.~B., Olsen, A.~R., and White, D. (1992).
+\newblock {H}exagon {M}osaic {M}aps for {D}isplays of {U}nivariate and
+  {B}ivariate {G}eographical {D}ata.
+\newblock {\em Cartography and Geographic Information Systems}, 19(4):228--236,
+  271.
+
+\bibitem[Chambers, 1997]{Cha97}
+Chambers, J.~M. (1997).
+\newblock {E}volution of the {S} {L}anguage.
+\newblock {\em Computing Science and Statistics}, 28:331--337.
+
+\bibitem[Chambers, 1998]{Cha98}
+Chambers, J.~M. (1998).
+\newblock {\em {P}rogramming with {D}ata: {A} {G}uide to the {S} {L}anguage}.
+\newblock Springer, New York, NY.
+
+\bibitem[Chauvet, 1982]{Chau82}
+Chauvet, P. (1982).
+\newblock {T}he {V}ariogram {C}loud.
+\newblock In Johnson, T.~B. and Barnes, R.~J., editors, {\em 17th International
+  Symposium on the Application of Computers and Operations Research in the
+  Mineral Industry}, pages 757--764, New York, NY. Society of Mining Engineers
+  of the American Institute of Mining, Metallurgical, and Petroleum Engineers,
+  Inc. (Colorado School of Mines).
+
+\bibitem[Cook et~al., 1994]{CCMS94}
+Cook, D., Cressie, N., Majure, J., and Symanzik, J. (1994).
+\newblock Some {D}ynamic {G}raphics for {S}patial {D}ata (with {M}ultiple
+  {A}ttributes) in a {GIS}.
+\newblock In Dutter, R. and Grossmann, W., editors, {\em COMPSTAT 1994:
+  Proceedings in Computational Statistics}, pages 105--119, Heidelberg.
+  Physica--Verlag.
+
+\bibitem[Cook et~al., 1996]{CMSC96}
+Cook, D., Majure, J.~J., Symanzik, J., and Cressie, N. (1996).
+\newblock {D}ynamic {G}raphics in a {GIS}: {E}xploring and {A}nalyzing
+  {M}ultivariate {S}patial {D}ata {U}sing {L}inked {S}oftware.
+\newblock {\em Computational Statistics: Special Issue on Computeraided
+  Analysis of Spatial Data}, 11(4):467--480.
+
+\bibitem[Cook et~al., 1997]{CSMC97}
+Cook, D., Symanzik, J., Majure, J.~J., and Cressie, N. (1997).
+\newblock {D}ynamic {G}raphics in a {GIS}: {M}ore {E}xamples {U}sing {L}inked
+  {S}oftware.
+\newblock {\em Computers and Geosciences: Special Issue on Exploratory
+  Cartographic Visualization}, 23(4):371--385.
+\newblock Paper, CD, and {\tt http://www.elsevier.nl/locate/cgvis}.
+
+\bibitem[Corbin, 1991]{Co91}
+Corbin, J.~R. (1991).
+\newblock {\em {T}he {A}rt of {D}istributed {A}pplications: {P}rogramming
+  {T}echniques for {R}emote {P}rocedure {C}alls}.
+\newblock Springer, New York, Berlin, Heidelberg.
+
+\bibitem[Cressie, 1984]{Cr84}
+Cressie, N. (1984).
+\newblock Towards {R}esistant {G}eostatistics.
+\newblock In Verly, G., David, M., Journel, A.~G., and Marechal, A., editors,
+  {\em Geostatistics for {N}atural {R}esources {C}haracterization, {Part 1}},
+  pages 21--44, Dordrecht. Reidel.
+
+\bibitem[Cressie, 1993]{Cr93}
+Cressie, N. A.~C. (1993).
+\newblock {\em {S}tatistics for {S}patial {D}ata ({R}evised {E}dition)}.
+\newblock Wiley, New York, NY.
+
+\bibitem[DiBiase et~al., 1994]{DRMVKSD94}
+DiBiase, D., Reeves, C., MacEachren, A.~M., von Wyss, M., Krygier, J.~B.,
+  Sloan, J.~L., and Detweiler, M.~C. (1994).
+\newblock {M}ultivariate {D}isplay of {G}eographic {D}ata: {A}pplications in
+  {E}arth {S}ystem {S}cience.
+\newblock In MacEachren, A.~M. and Taylor, D. R.~F., editors, {\em
+  {V}isualization in {M}odern {C}artography}, pages 287--312. Pergamon
+  (Elsevier), Oxford, U.K.
+
+\bibitem[Dykes, 1996]{Dyk96}
+Dykes, J. (1996).
+\newblock {D}ynamic {M}aps for {S}patial {S}cience: {A} {U}nified {A}pproach to
+  {C}artographic {V}isualization.
+\newblock In Parker, D., editor, {\em Innovations in GIS 3}, pages 177--187.
+  Taylor \& Francis, London, U.K.
+
+\bibitem[Eddon and Eddon, 1998]{EE98}
+Eddon, G. and Eddon, H. (1998).
+\newblock {\em {I}nside {D}istributed {COM}}.
+\newblock Microsoft Press, Redmond, WA.
+
+\bibitem[{Environmental Systems Research Institute, Inc.}, 1996]{ESRI96}
+{Environmental Systems Research Institute, Inc.} (1996).
+\newblock {\em {A}rc{V}iew 3.0 {O}n--{L}ine {H}elp: {RPCS}erver {P}age}.
+\newblock Redlands, CA.
+
+\bibitem[Goodchild et~al., 1992]{GHW92}
+Goodchild, M.~F., Haining, R.~P., and Wise, S. (1992).
+\newblock {I}ntegrating {GIS} and {S}patial {D}ata {A}nalysis: {P}roblems and
+  {P}ossibilities.
+\newblock {\em International Journal of Geographical Information Systems},
+  6(5):407--423.
+
+\bibitem[G{\"u}nther, 1998]{Gue98}
+G{\"u}nther, O. (1998).
+\newblock {\em {E}nvironmental {I}nformation {S}ystems}.
+\newblock Springer, Berlin, Heidelberg.
+
+\bibitem[G{\"u}nther et~al., 1997]{GMSBK97}
+G{\"u}nther, O., M{\"u}ller, R., Schmidt, P., Bhargava, H.~K., and Krishnan, R.
+  (1997).
+\newblock {MMM}: {A} {W}eb--based {S}ystem for {S}haring {S}tatistical
+  {C}omputing {M}odules,.
+\newblock {\em IEEE Internet Computing}, 1(3):59--68.
+\newblock Paper and {\tt http://computer.org/internet/ic1997/w3toc.htm}.
+
+\bibitem[Haining et~al., 1996]{HMW96}
+Haining, R., Ma, J., and Wise, S. (1996).
+\newblock {D}esign of a {S}oftware {S}ystem for {I}nteractive {S}patial
+  {S}tatistical {A}nalysis {L}inked to a {GIS}.
+\newblock {\em Computational Statistics: Special Issue on Computeraided
+  Analysis of Spatial Data}, 11(4):449--466.
+
+\bibitem[H{\"a}rdle et~al., 1995]{HKT95}
+H{\"a}rdle, W., Klinke, S., and Turlach, B.~A. (1995).
+\newblock {\em {X}plo{R}e: {A}n {I}nteractive {S}tatistical {C}omputing
+  {E}nvironment}.
+\newblock Springer, New York, NY.
+
+\bibitem[Haslett and Bradley, 1991]{HaBr91b}
+Haslett, J. and Bradley, R. (1991).
+\newblock {D}ynamic {G}raphics: {L}inked {P}oints, {L}ines and {R}egions with
+  {A}pplications to {S}patial {D}ata {M}odelling.
+\newblock {\em Computing Science and Statistics}, 23:425--429.
+
+\bibitem[Haslett et~al., 1991]{HBCUW91}
+Haslett, J., Bradley, R., Craig, P., Unwin, A., and Wills, G. (1991).
+\newblock {D}ynamic {G}raphics for {E}xploring {S}patial {D}ata with
+  {A}pplication to {L}ocating {G}lobal and {L}ocal {A}nomalies.
+\newblock {\em The American Statistician}, 45(3):234--242.
+
+\bibitem[Klein and Moreira, 1994]{KM94}
+Klein, R. and Moreira, R.~I. (1994).
+\newblock {E}xploratory {A}nalysis of {A}gricultural {I}mages via {D}ynamic
+  {G}raphics.
+\newblock Technical Report 9/94, Laborat\'{o}rio Nacional de Computa\c{c}\~{a}o
+  Cient\'{i}fica, Rio de Janeiro, Brazil.
+
+\bibitem[Littman et~al., 1992]{LSDB92}
+Littman, M., Swayne, D.~F., Dean, N., and Buja, A. (1992).
+\newblock {V}isualizing the {E}mbedding of {O}bjects in {E}uclidean {S}pace.
+\newblock {\em Computing Science and Statistics}, 24:208--217.
+
+\bibitem[MacDougall, 1992]{MacD92}
+MacDougall, E.~B. (1992).
+\newblock {E}xploratory {A}nalysis, {D}ynamic {S}tatistical {V}isualization,
+  and {G}eographic {I}nformation {S}ystems.
+\newblock {\em Cartography and Geographic Information Systems}, 19(4):237--246.
+
+\bibitem[Majure et~al., 1995]{MCCKLSv95}
+Majure, J.~J., Cook, D., Cressie, N., Kaiser, M., Lahiri, S., and Symanzik, J.
+  (1995).
+\newblock {S}patial {CDF} {E}stimation and {V}isualization with {A}pplications
+  to {F}orest {H}ealth {M}onitoring.
+\newblock ASA Statistical Graphics Video Lending Library (contact:
+  dfs@research.att.com).
+
+\bibitem[Majure et~al., 1996a]{MCCKLS95}
+Majure, J.~J., Cook, D., Cressie, N., Kaiser, M., Lahiri, S., and Symanzik, J.
+  (1996a).
+\newblock {S}patial {CDF} {E}stimation and {V}isualization with {A}pplications
+  to {F}orest {H}ealth {M}onitoring.
+\newblock {\em Computing Science and Statistics}, 27:93--101.
+
+\bibitem[Majure et~al., 1996b]{MCSMv96}
+Majure, J.~J., Cook, D., Symanzik, J., and Megretskaia, I. (1996b).
+\newblock {A}n {I}nteractive {E}nvironment for the {G}raphical {A}nalysis of
+  {S}patial {D}ata.
+\newblock ASA Statistical Graphics Video Lending Library (contact:
+  dfs@research.att.com).
+
+\bibitem[Majure and Cressie, 1998]{MC98}
+Majure, J.~J. and Cressie, N. (1998).
+\newblock {D}ynamic {G}raphics for {E}xploring {S}patial {D}ependence in
+  {M}ultivariate {S}patial {D}ata.
+\newblock {\em Geographical Systems}, 4(2):131--158.
+
+\bibitem[Majure et~al., 1996c]{MCCS96}
+Majure, J.~J., Cressie, N., Cook, D., and Symanzik, J. (1996c).
+\newblock {GIS}, {S}patial {S}tatistical {G}raphics, and {F}orest {H}ealth.
+\newblock In {\em {P}roceedings of the {T}hird {I}nternational
+  {C}onference/{W}orkshop on {I}ntegrating {GIS} and {E}nvironmental
+  {M}odeling, {S}anta {F}e, {NM}, {J}anuary 21--26, 1996}, Santa Barbara, CA.
+  National Center for Geographic Information and Analysis.
+\newblock CD and {\tt
+  http://www.ncgia.ucsb.edu/conf/SANTA\_FE\_CD-ROM/main.html}.
+
+\bibitem[MathSoft, 1996]{Math96}
+MathSoft (1996).
+\newblock {\em {S+GISL}ink}.
+\newblock MathSoft, Inc., Seattle, WA.
+
+\bibitem[McDonald and Willis, 1987]{MW87}
+McDonald, J.~A. and Willis, S. (1987).
+\newblock {U}se of the {G}rand {T}our in {R}emote {S}ensing.
+\newblock ASA Statistical Graphics Video Lending Library (contact:
+  dfs@research.att.com).
+
+\bibitem[Monmonier, 1988]{Mon88}
+Monmonier, M. (1988).
+\newblock {G}eographical {R}epresentations in {S}tatistical {G}raphics: {A}
+  {C}onceptual {F}ramework.
+\newblock In {\em 1988 Proceedings of the Section on Statistical Graphics},
+  pages 1--10, Alexandria, VA. American Statistical Association.
+
+\bibitem[Monmonier, 1989]{Mon89}
+Monmonier, M. (1989).
+\newblock {G}eographic {B}rushing: {E}nhancing {E}xploratory {A}nalysis of the
+  {S}catterplot {M}atrix.
+\newblock {\em Geographical Analysis}, 21(1):81--84.
+
+\bibitem[Nye, 1992]{Nye92}
+Nye, A. (1992).
+\newblock {\em {X}lib {P}rogramming {M}anual ({T}hird {E}dition, for {V}ersion
+  11 of the {X} {W}indow {S}ystem)}.
+\newblock O'Reilly \& Associates, Inc., Sebastopol, CA.
+
+\bibitem[Openshaw and Perr{\'e}e, 1996]{OP96}
+Openshaw, S. and Perr{\'e}e, T. (1996).
+\newblock {U}ser--{C}entred {I}ntelligent {S}patial {A}nalysis of {P}oint
+  {D}ata.
+\newblock In Parker, D., editor, {\em Innovations in GIS 3}, pages 119--134.
+  Taylor \& Francis, London, U.K.
+
+\bibitem[Otte et~al., 1996]{OPR96}
+Otte, R., Patrick, P., and Roy, M. (1996).
+\newblock {\em {U}nderstanding {CORBA}: {T}he {C}ommon {O}bject {R}equest
+  {B}roker {A}rchitecture}.
+\newblock Prentice Hall, Upper Saddle River, NJ.
+
+\bibitem[Pajarola, 1998]{Pajarola:98th}
+Pajarola, R.~B. (1998).
+\newblock {\em {A}ccess to {L}arge {S}cale {T}errain and {I}mage {D}atabases in
+  {G}eoinformation {S}ystems}.
+\newblock PhD thesis, Diss. ETH No. 12729 Department of Computer Science, ETH
+  Z{\"u}rich.
+
+\bibitem[Pannatier, 1996]{Pan96}
+Pannatier, Y. (1996).
+\newblock {\em {VARIOWIN}: {S}oftware for {S}patial {D}ata {A}nalysis in {2D}}.
+\newblock Springer, New York, Berlin, Heidelberg.
+
+\bibitem[Rossi et~al., 1992]{RMJF92}
+Rossi, R.~E., Mulla, D.~J., Journel, A.~G., and Franz, E.~H. (1992).
+\newblock {G}eostatistical {T}ools for {M}odeling and {I}nterpreting
+  {E}cological {S}patial {D}ependence.
+\newblock {\em Ecological Monographs}, 62:277--314.
+
+\bibitem[Scott, 1994]{Sc94}
+Scott, L.~M. (1994).
+\newblock {I}dentification of a {GIS} {A}ttribute {E}rror {U}sing {E}xploratory
+  {D}ata {A}nalysis.
+\newblock {\em The Professional Geographer}, 46(3):378--386.
+
+\bibitem[Stevens, 1990]{St90}
+Stevens, W.~R. (1990).
+\newblock {\em {UNIX} {N}etwork {P}rogramming}.
+\newblock Prentice--Hall, Englewood Cliffs, NJ.
+
+\bibitem[Swayne et~al., 1998]{SCB98}
+Swayne, D.~F., Cook, D., and Buja, A. (1998).
+\newblock {XG}obi: {I}nteractive {D}ynamic {G}raphics in the {X} {W}indow
+  {S}ystem.
+\newblock {\em Journal of Computational and Graphical Statistics},
+  7(1):113--130.
+
+\bibitem[Symanzik et~al., 1998a]{SCKL98Army}
+Symanzik, J., Cook, D., Klinke, S., and Lewin, N. (1998a).
+\newblock {E}xploration of {S}atellite {I}mages in the {D}ynamically {L}inked
+  {A}rc{V}iew/{XG}obi/{X}plo{R}e {E}nvironment.
+\newblock In Bodt, B.~A., editor, {\em Proceedings of the Third Annual U.S.
+  Army Conference on Applied Statistics, 22--24 October 1997}, pages 23--33,
+  Aberdeen Proving Ground, MD. Army Research Laboratory ARL--SR--74.
+
+\bibitem[Symanzik et~al., 1997a]{SKSCL97ASA}
+Symanzik, J., Klinke, S., Schmelzer, S., Cook, D., and Lewin, N. (1997a).
+\newblock {T}he {A}rc{V}iew/{XG}obi/{X}plo{R}e {E}nvironment: {T}echnical
+  {D}etails and {A}pplications for {S}patial {D}ata {A}nalysis.
+\newblock In {\em 1997 Proceedings of the Section on Statistical Graphics},
+  pages 73--78, Alexandria, VA. American Statistical Association.
+
+\bibitem[Symanzik et~al., 1998b]{SKSKCS97Int}
+Symanzik, J., K{\"o}tter, T., Schmelzer, S., Klinke, S., Cook, D., and Swayne,
+  D. (1998b).
+\newblock {S}patial {D}ata {A}nalysis in the {D}ynamically {L}inked
+  {A}rc{V}iew/{XG}obi/{X}plo{R}e {E}nvironment.
+\newblock {\em Computing Science and Statistics}, 29(1):561--569.
+
+\bibitem[Symanzik et~al., 1994]{SMCC94}
+Symanzik, J., Majure, J., Cook, D., and Cressie, N. (1994).
+\newblock {D}ynamic {G}raphics in a {GIS}: {A} {L}ink between {ARC/INFO} and
+  {XG}obi.
+\newblock {\em Computing Science and Statistics}, 26:431--435.
+
+\bibitem[Symanzik et~al., 1995]{SMCv95}
+Symanzik, J., Majure, J.~J., and Cook, D. (1995).
+\newblock {D}ynamic {G}raphics in a {GIS}: {A}nalyzing and {E}xploring
+  {M}ultivariate {S}patial {D}ata.
+\newblock ASA Statistical Graphics Video Lending Library (contact:
+  dfs@research.att.com).
+
+\bibitem[Symanzik et~al., 1996]{SMC95}
+Symanzik, J., Majure, J.~J., and Cook, D. (1996).
+\newblock {D}ynamic {G}raphics in a {GIS}: {A} {B}idirectional {L}ink between
+  {A}rc{V}iew 2.0 and {XG}obi.
+\newblock {\em Computing Science and Statistics}, 27:299--303.
+
+\bibitem[Symanzik et~al., 1997b]{SMC97IASC}
+Symanzik, J., Majure, J.~J., and Cook, D. (1997b).
+\newblock {D}ynamic {G}raphics in a {GIS}: {A} {B}idirectional {L}ink between
+  {A}rc{V}iew 2.1 and {XG}obi --- {A}n {U}pdate.
+\newblock {\em Computing Science and Statistics}, 29(2):35--40.
+
+\bibitem[Symanzik et~al., 1997c]{SMC96ACM}
+Symanzik, J., Majure, J.~J., and Cook, D. (1997c).
+\newblock {T}he {L}inked {A}rc{V}iew 2.1 and {XG}obi {E}nvironment --- {GIS},
+  {D}ynamic {S}tatistical {G}raphics, and {S}patial {D}ata.
+\newblock In Shekhar, S. and Bergougnoux, P., editors, {\em {P}roceedings of
+  the {F}ourth {ACM} {W}orkshop on {A}dvances in {G}eographic {I}nformation
+  {S}ystems, {R}ockville, {M}aryland, {N}ovember 15--16, 1996}, pages 147--154,
+  New York, NY. ACM.
+
+\bibitem[Symanzik et~al., 1997d]{SMMC96Int}
+Symanzik, J., Megretskaia, I., Majure, J.~J., and Cook, D. (1997d).
+\newblock {I}mplementation {I}ssues of {V}ariogram {C}loud {P}lots and
+  {S}patially {L}agged {S}catterplots in the {L}inked {A}rc{V}iew 2.1 and
+  {XG}obi {E}nvironment.
+\newblock {\em Computing Science and Statistics}, 28:369--374.
+
+\bibitem[Symanzik et~al., 1998c]{SPW98ASA}
+Symanzik, J., Pajarola, R., and Widmayer, P. (1998c).
+\newblock {XG}obi and {X}plo{R}e {M}eet {V}i{RGIS}.
+\newblock In {\em 1998 Proceedings of the Section on Statistical Graphics},
+  pages 50--55, Alexandria, VA. American Statistical Association.
+
+\bibitem[Unwin et~al., 1990]{UWH90}
+Unwin, A., Wills, G., and Haslett, J. (1990).
+\newblock {REGARD} --- {G}raphical {A}nalysis of {R}egional {D}ata.
+\newblock In {\em 1990 Proceedings of the Section on Statistical Graphics},
+  pages 36--41, Alexandria, VA. American Statistical Association.
+
+\bibitem[Williams et~al., 1990]{WLB90}
+Williams, I., Limp, W.~F., and Briuer, F.~L. (1990).
+\newblock {U}sing {G}eographic {I}nformation {S}ystems and {E}xploratory {D}ata
+  {A}nalysis for {A}rchaeological {S}ite {C}lassification and {A}nalysis.
+\newblock In Allen, K. M.~S., Green, S.~W., and Zubrow, E. B.~W., editors, {\em
+  {I}nterpreting {S}pace: {GIS} and {A}rchaeology}, pages 239--273. Taylor \&
+  Francis, London, U.K.
+
+\bibitem[Zhang and Griffith, 1997]{ZG97}
+Zhang, Z. and Griffith, D.~A. (1997).
+\newblock {D}eveloping {U}ser--{F}riendly {S}patial {S}tatistical {A}nalysis
+  {M}odules for {GIS}: {A}n {E}xample using {A}rc{V}iew.
+\newblock {\em Computers, Environment and Urban Systems}, 21(1):5--29.
+
+\end{thebibliography}

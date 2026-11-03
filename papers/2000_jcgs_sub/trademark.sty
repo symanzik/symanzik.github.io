@@ -1,0 +1,202 @@
+%**********************************************************************
+%
+%     Trademarks
+%
+% These are a list of trademarks.  There is a command that lists the name with
+% the correct trademark symbol and produces the proper unnumbered footnote.
+% These commands end in `fn'.  The other command produces the name with the
+% symbol with NO footnote.
+%
+% If there are others you would like added, let me know 
+%    Mike Woodbury, RRC 1J-213, 699-5037, mhw@bellcore.com
+%**********************************************************************
+% Modifications
+%
+%  2/16/89 - File created
+%  10Oct90 - Elements of network trademarks incorporated. pc
+%
+%%**********************************************************************
+%\typeout{Trademarks ---- LAST MODIFIED 10Oct90}
+%**********************************************************************
+% Ignore these set-up commands
+%**********************************************************************
+%\catcode`\@=11
+% \tmfootnote{-text-}
+% This command prints an unnumbered footnote
+\long\def\@tmmakefntext#1{\parindent 1em #1}
+\long\def\@tmfootnotetext#1{\insert\footins{\footnotesize
+    \interlinepenalty\interfootnotelinepenalty 
+    \splittopskip\footnotesep
+    \splitmaxdepth \dp\strutbox \floatingpenalty \@MM
+    \hsize\columnwidth \@parboxrestore
+   \edef\@currentlabel{\csname p@footnote\endcsname}\@tmmakefntext
+    {\rule{\z@}{\footnotesep}\ignorespaces
+      #1\strut}}}
+\def\tmfootnote{\@ifnextchar
+    [{\@xfootnotenext}{\xdef\@thefnmark{\thempfn}\@tmfootnotetext}}
+%\catcode`\@=12
+
+% \Rcirc
+% This command prints the registered trademark symbol, a capital R with a
+% circle around it.
+\def\Rcirc{\mbox{\small{\ooalign{\hfil\raise.07ex\hbox{\tiny R}\hfil\crcr\mathhexbox20D}}}}
+
+%**********************************************************************
+% Trademark commands  
+%
+%   \nameRfn  - produces `name' with a registered tradmark symbol ( R
+%                with a circle around it) and the proper footnote
+%
+%   \nameTMfn - produces `name' with a tradmark symbol ( TM )
+%                and the proper footnote
+%
+%   \nameR    - produces `name' with a registered tradmark symbol ( R
+%                with a circle around it) without the footnote
+%
+%   \nameTM   - produces `name' with a tradmark symbol ( TM ) without
+%                the footnote
+%
+% NOTE:  If the spacing after the name and symbol in the text is too
+%        small, place a `\ ', that is backslash-blank, right after the
+%        command, e.g., \nameTM\ .
+%
+%**********************************************************************
+
+% Apple (R)
+\newcommand{\AppleRfn}{${\rm Apple^{\Rcirc}}$\tmfootnote{{\em Apple} is a
+registered trademark of Apple Computer, Inc.}}
+\newcommand{\AppleR}{${\rm Apple^{\Rcirc}}$}
+
+% ART (TM)
+\newcommand{\ARTTMfn}{${\rm ART^{TM}}$\tmfootnote{{\em ART} is a
+trademark of Inference Corporation.}}
+\newcommand{\ARTTM}{${\rm ART^{TM}}$}
+
+% GEM (TM)
+\newcommand{\GEMTMfn}{${\rm GEM^{TM}}$\tmfootnote{{\em GEM} is a
+trademark of Digital Research, Inc.}}
+\newcommand{\GEMTM}{${\rm GEM^{TM}}$}
+
+% KEE (TM)
+\newcommand{\KEETMfn}{${\rm KEE^{TM}}$\tmfootnote{{\em KEE} is a
+trademark of Intellicorp.}}
+\newcommand{\KEETM}{${\rm KEE^{TM}}$}
+
+% Macintosh (R)
+\newcommand{\MacintoshRfn}{${\rm Macintosh^{\Rcirc}}$\tmfootnote{{\em Macintosh}
+is a registered trademark of Apple Computer, Inc.}}
+\newcommand{\MacintoshR}{${\rm Macintosh^{\Rcirc}}$}
+
+% METASAN (R)
+\newcommand{\METASANRfn}{${\rm METASAN^{\Rcirc}}$\tmfootnote{{\em METASAN}
+is a registered trademark of the Industrial Technology Institute.}}
+\newcommand{\METASANR}{${\rm METASAN^{\Rcirc}}$}
+
+% Microsoft Windows (TM)
+\newcommand{\MicrosoftWindowsTMfn}{Microsoft
+${\rm Windows^{TM}}$\tmfootnote{{\em Microsoft Windows} is a
+trademark of Microsoft, Inc.}}
+\newcommand{\MicrosoftWindowsTM}{Microsoft ${\rm Windows^{TM}}$}
+
+% NeWS (TM)
+\newcommand{\NeWSTMfn}{${\rm NeWS^{TM}}$\tmfootnote{{\em NeWS} is a
+trademark of Sun Microsystems, Inc.}}
+\newcommand{\NeWSTM}{${\rm NeWS^{TM}}$}
+
+% OPEN LOOK (TM)
+\newcommand{\OPENLOOKTMfn}{OPEN
+${\rm LOOK^{TM}}$\tmfootnote{{\em OPEN LOOK} is a
+trademark of AT\&T.}}
+\newcommand{\OPENLOOKTM}{OPEN ${\rm LOOK^{TM}}$}
+
+% Postscript (TM)
+\newcommand{\PostscriptTMfn}{${\rm Postscript^{TM}}$\tmfootnote{{\em Postscript}
+is a trademark of Adobe Systems, Inc.}}
+\newcommand{\PostscriptTM}{${\rm Postscript^{TM}}$}
+
+% Presentation Manager (TM)
+\newcommand{\PresentationManagerTMfn}{Presentation
+${\rm Manager^{TM}}$\tmfootnote{{\em Presentation Manager} is a
+trademark of Microsoft, Inc.}}
+\newcommand{\PresentationManagerTM}{Presentation ${\rm Manager^{TM}}$}
+
+% SunView (TM)
+\newcommand{\SunViewTMfn}{${\rm SunView^{TM}}$\tmfootnote{{\em SunView} is a
+trademark of Sun Microsystems, Inc.}}
+\newcommand{\SunViewTM}{${\rm SunView^{TM}}$}
+
+% Unix (R)
+\newcommand{\UnixRfn}{${\rm UNIX^{\Rcirc}}$\tmfootnote{{\em UNIX}
+is a registered trademark of UNIX Systems Laboratories.}}
+\newcommand{\UnixR}{${\rm UNIX^{\Rcirc}}$}
+
+% X Window System (TM)
+\newcommand{\XWindowSystemTMfn}{X Window
+${\rm System^{TM}}$\tmfootnote{{\em X Window System} is a
+trademark of MIT.}}
+\newcommand{\XWindowSystemTM}{X Window ${\rm System^{TM}}$}
+
+% ARC/INFO (TM)
+\newcommand{\ARCINFOTMfn}{ARC/INFO${\rm ^{TM}}$%
+\tmfootnote{{\em ARC/INFO} is a trademark of Environmental
+Systems Research Institute, Inc.}}
+\newcommand{\ARCINFOTM}{ARC/INFO${\rm ^{TM}}$}
+
+% ArcView (TM)
+\newcommand{\ArcViewTMfn}{ArcView${\rm ^{TM}}$%
+\tmfootnote{{\em ArcView} is a trademark of Environmental
+Systems Research Institute, Inc.}}
+\newcommand{\ArcViewTM}{ArcView${\rm ^{TM}}$}
+
+% ArcView 2.0 (TM)
+\newcommand{\ArcViewTWOTMfn}{ArcView 2.0${\rm ^{TM}}$%
+\tmfootnote{{\em ArcView 2.0} is a trademark of Environmental
+Systems Research Institute, Inc.}}
+\newcommand{\ArcViewTWOTM}{ArcView 2.0${\rm ^{TM}}$}
+
+% ArcView 2.1 (TM)
+\newcommand{\ArcViewTWOONETMfn}{ArcView 2.1${\rm ^{TM}}$%
+\tmfootnote{{\em ArcView 2.1} is a trademark of Environmental
+Systems Research Institute, Inc.}}
+\newcommand{\ArcViewTWOONETM}{ArcView 2.1${\rm ^{TM}}$}
+
+% ArcView 3.0 (TM)
+\newcommand{\ArcViewTHREEZEROTMfn}{ArcView 3.0${\rm ^{TM}}$%
+\tmfootnote{{\em ArcView 3.0} is a trademark of Environmental
+Systems Research Institute, Inc.}}
+\newcommand{\ArcViewTHREEZEROTM}{ArcView 3.0${\rm ^{TM}}$}
+
+% S--PLUS (R)
+\newcommand{\SPLUSRfn}{${\rm S-PLUS^{\Rcirc}}$\tmfootnote{{\em S--PLUS} is a
+registered trademark of StatSci, a division of MathSoft, Inc.}}
+\newcommand{\SPLUSR}{${\rm S-PLUS^{\Rcirc}}$}
+
+% Motif (TM)
+\newcommand{\MotifTMfn}{${\rm Motif^{TM}}$\tmfootnote{{\em Motif} is a
+trademark of the Open Software Foundation.}}
+\newcommand{\MotifTM}{${\rm Motif^{TM}}$}
+
+% Sun (TM)
+\newcommand{\SunTMfn}{${\rm Sun^{TM}}$\tmfootnote{{\em Sun} is a
+trademark of Sun Microsystems, Inc.}}
+\newcommand{\SunTM}{${\rm Sun^{TM}}$}
+
+% Sparc (TM)
+\newcommand{\SparcTMfn}{${\rm Sparc^{TM}}$\tmfootnote{{\em Sparc} is a
+trademark of Sun Microsystems, Inc.}}
+\newcommand{\SparcTM}{${\rm Sparc^{TM}}$}
+
+% SGI (TM)
+\newcommand{\SGITMfn}{${\rm SGI^{TM}}$\tmfootnote{{\em SGI} is a
+trademark of Silicon Graphics, Inc.}}
+\newcommand{\SGITM}{${\rm SGI^{TM}}$}
+
+% DEC (TM)
+\newcommand{\DECTMfn}{${\rm DEC^{TM}}$\tmfootnote{{\em DEC} is a 
+trademark of Digital Equipment Corporation.}}
+\newcommand{\DECTM}{${\rm DEC^{TM}}$}
+
+% MIPS (TM)
+\newcommand{\MIPSTMfn}{${\rm MIPS{TM}}$\tmfootnote{{\em MIPS} is 
+a trademark of MIPS Computer Systems.}}
+\newcommand{\MIPSTM}{${\rm MIPS^{TM}}$}
