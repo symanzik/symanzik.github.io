@@ -1,0 +1,187 @@
+<HTML>
+
+<HEAD><TITLE>Visual Clustering and Classification</TITLE></HEAD>
+
+<BODY bgcolor="#FFFFFF" link="#606060" vlink="#808080">
+
+
+<CENTER>
+
+<H2>Visual Clustering and Classification:
+The Oronsay Particle Size Data Set Revisted</H2>
+
+<IMG ISMAP SRC="oronsay/journal/Data_Map.gif" 
+HEIGHT=250 WIDTH=250 ALIGN=LEFT>
+
+<IMG ISMAP SRC="oronsay/journal/EX_AllCCDens.gif" 
+HEIGHT=250 WIDTH=250 ALIGN=RIGHT>
+
+<BR><BR>
+<P>By
+<P>
+<a href="http://www1.math.uni-augsburg.de/~wilhelm/"><H3>Adalbert F. X. Wilhelm</H3></a>
+<BR>
+<a href="http://www.galaxy.gmu.edu/~ewegman/"><H3>Edward J. Wegman</H3></a>
+<BR>and
+<BR>
+<a href="http://www.math.usu.edu/~symanzik/"><H3>J&uuml;rgen Symanzik</H3></a>
+<BR><BR>
+
+</CENTER>
+
+<P><B>ABSTRACT</B>
+
+<P>Interactive statistical graphics can be effectively used to
+find natural groupings in observations. In this paper we want to demonstrate
+how clustering and classification can be done
+with three approaches based on highly interactive graphical environments:
+high-dimensional scatterplots as available in 
+<a href="http://www.research.att.com/~andreas/xgobi/index.html"><B>XGobi</B></a>,
+parallel coordinate plots as available in 
+<a href="ftp://www.galaxy.gmu.edu/pub/software/"><B>ExplorN</B></a>, 
+and linked low-dimensional views as available in 
+<a href="http://jetta.math.uni-augsburg.de/Manet/"><B>Manet</B></a>.
+We will point out the strengths and the
+weaknesses of these techniques by comparing their behavior
+when applied to the Oronsay particle size data set.
+
+
+<P><B>Keywords:</B> 
+High Interaction Graphics, Grand Tour, Parallel Coordinate Plots,
+Linked Views, 
+<a href="http://www.research.att.com/~andreas/xgobi/index.html"><B>XGobi</B></a>,
+<a href="ftp://www.galaxy.gmu.edu/pub/software/"><B>ExplorN</B></a>,
+<a href="http://jetta.math.uni-augsburg.de/Manet/"><B>Manet</B></a>.
+<BR><BR><BR>
+
+<P><B>JOURNAL AND TECHNICAL REPORT</B> 
+
+<P>This Web site comes in two parts:
+
+<UL> 
+<LI>the final
+<a href="oronsay/journal/oronsay_jo.html">journal version</a>
+of our paper including all color graphics, and 
+<BR><BR>
+
+<LI>the full size
+<a href="oronsay/techreport/oronsay_tr.html">technical report</a>
+with additional graphics and sections that are not available
+in the journal version.
+</UL>
+<BR>
+
+
+<P><B>REFERENCES</B> 
+
+<P>The Oronsay particle data set has been extensively analyzed
+in the literature. Main references are:
+
+<UL>
+<LI>Fieller, N. R. J., Flenley, E. C., and Olbricht, W. (1992),
+Statistics of Particle Size Data, <i>Journal of the Royal
+Statistical Society, Series C (Applied Statistics)</i>
+<B>41</B>(1), 127-146.
+<BR><BR>
+
+<LI>Fieller, N. R. J., Gilbertson, D. D., and Olbricht, W. (1984),
+A new Method for Environmental Analysis of Particle Size
+Distribution Data from Shoreline Sediments,
+<i>Nature</i> <B>311</B>, 648-651.
+<BR><BR>
+
+<LI>Fieller, N. R. J., Gilbertson, D. D., Olbricht, W., and Timmins, D. A. Y. (1983),
+<i>A Computer-Compatible Archive of Sedimentological Data from Oronsay,
+Inner Hebrides</i>, Archive No. 2, Department of Prehistory and
+Archaeology, University of Sheffield, Sheffield, UK.
+<BR><BR>
+
+<LI>Fieller, N. R. J., Gilbertson, D. D., and Timmins, D. A. Y. (1987),
+Sedimentological Analyses of the Shell-Midden Sites, in P. A. Mellars, ed.,
+<i>Excavations on Oronsay: Prehistoric Human Ecology on a Small Island</i>,
+Edinburgh University Press, Edinburgh, UK, pp. 78-90.
+<BR><BR>
+
+<LI>Flenley, E. C., and Olbricht, W. (1993), Classification of
+Archaeological Sands by Particle Size Analysis, in O. Opitz, B. Lausen,
+and R. Klar, eds, <i>Information and Classification. Concepts, Methods
+and Applications. Proceedings of the 16th Annual Conference of the
+Gesellschaft f&uuml;r Klassifikation e. V.</i>, Springer,
+Berlin, Heidelberg, pp. 478-489.
+<BR><BR>
+
+<LI>Olbricht, W. (1982), <i>Modern Statistical Analysis of
+Ancient Sand</i>, MSc Thesis, University of Sheffield,
+Sheffield, UK.
+<BR><BR>
+
+<LI>Timmins, D. A. Y. (1981), <i>Study of Sediment in Mesolithic
+Middens on Oronsay</i>, MA Thesis, University of Sheffield,
+Sheffield, UK.
+</UL>
+<BR>
+
+
+<P><B>DATA</B> 
+
+<P>You can download the Oronsay data files through this site:
+
+<UL>
+<LI><a href="oronsay/Oronsay.raw_data">Oronsay.raw_data</a>:
+This is the raw particle size data used for our analysis.
+This file has been processed for use in XGobi (see the next
+4 files below). 
+The data has been updated similarly for use in ExplorN and Manet.
+<BR><BR>
+
+<LI><a href="oronsay/Oronsay.dat">Oronsay.dat</a>: This file
+contains the space delimited particle sizes plus two extra
+columns for all 226 samples. While some of the references speak
+of 227 samples, this data set does not contain sample CC3_9.
+Exactly these 226 samples are used in Flenley and Olbricht (1993).
+<P>
+The first column contains weights for particle sizes >2.0mm, 
+the second column weights for particle sizes 1.4-2.0mm, and so on.
+Column 13 is the total weight for this sample
+and column 14 is the group identifier.
+<BR><BR>
+
+<LI><a href="oronsay/Oronsay.col">Oronsay.col</a>: These are the 
+14 variable names for the particle size data (including total weight
+and group identifier).
+<BR><BR>
+
+<LI><a href="oronsay/Oronsay.row">Oronsay.row</a>: These are the
+individual site codes and identifiers for each of the 226 samples.
+<BR><BR>
+
+<LI><a href="oronsay/Oronsay.colors">Oronsay.colors</a>: Within each
+of the 22 known groups, the first two samples have been brushed
+as a training set. Yellow represents the archaeological training samples,
+red the CC beach samples, Orange the CC dune samples, green the
+CNG beach samples, and blue the CNG due samples.
+</UL>
+<BR>
+
+<P><B>ACKNOWLEDGMENTS</B> 
+
+<P>We would like to thank 
+<a href="http://www.shef.ac.uk/~st1nrjf/">Nick Fieller</a>
+for providing us with the
+Oronsay particle size data set (including the permission to post
+it on this Web site) and additional background information.
+Thanks are also due to Walter Olbricht for his additional comments
+and to Qiang Luo who assisted with the preparation of data
+and the analysis.
+<BR><BR>
+
+
+<HR WIDTH="100%">
+
+<BR>
+Last Update October 12, 1999
+
+</BODY></HTML>
+
+
+  
