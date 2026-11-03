@@ -1,0 +1,303 @@
+<HTML>
+
+<HEAD><TITLE>Visual Clustering and Classification</TITLE></HEAD>
+<BODY bgcolor="#ff#ff#ff">
+
+<CENTER>
+
+<H2>Visual Clustering and Classification:
+The Oronsay Particle Size Data Set Revisted</H2>
+<BR>
+
+<H2>- Journal Version -</H2>
+
+<IMG ISMAP SRC="XG_KnownCCPP2.gif" 
+HEIGHT=250 WIDTH=250 ALIGN=LEFT>
+
+<IMG ISMAP SRC="M_KnownSiteDot.gif" 
+HEIGHT=250 WIDTH=250 ALIGN=RIGHT>
+
+<BR><BR>
+<P>By
+<P>
+<a href="http://www1.math.uni-augsburg.de/~wilhelm/"><H3>Adalbert F. X. Wilhelm</H3></a>
+<BR>
+<a href="http://www.galaxy.gmu.edu/~ewegman/"><H3>Edward J. Wegman</H3></a>
+<BR>and
+<BR>
+<a href="http://www.math.usu.edu/~symanzik/"><H3>J&uuml;rgen Symanzik</H3></a>
+<BR><BR>
+
+</CENTER>
+
+
+<P>A <A HREF="VisClust.ps.Z">
+(Unix) compressed postscript version</A> (2.2MB - extends to 53.3MB) and a 
+<A HREF="VisClust.pdf">pdf version</A> (523KB)
+of the text are available.
+All the figures from the text are available as GIF files below. 
+<BR><BR>
+
+<B>Legends for Figures</B>
+
+<UL>
+
+<LI>
+<A HREF="Data_Map.gif">Figure 1</A>: 
+An excerpt from a map of the Oronsay island, Inner Hebrides. 
+It shows the locations
+of the two archeological sites labeled <I>Caisteal nan Gillean I</I>
+and <I>Cnoc Coig</I> and the four transects TG, CC, ECC, and TUS
+where ``modern'' sand samples have been collected.
+Reprinted with permission from Fieller et al. (1987).
+<BR><BR>
+
+<LI>
+<A HREF="Data_Sums.gif">Figure 2(a)</A> and
+<A HREF="Data_Outlier.gif">Figure 2(b)</A>:
+(a) Scatterplot of summed up weights (vertical) versus
+group (horizontal). While most weights scatter around 60g,
+values around 70g have been observed for most samples from groups
+1 and 22. Group 5 has the smallest sum (51.8g) marked with a
+``filled circle'' but also the largest sum (82.4g) marked with a 
+``filled box''.
+(b) A parallel coordinate plot of group 5 reveals that the ``filled circle''
+sample has an unusual small value for variable 9, i. e., particle size
+[0.125, 0.18) mm, but it also has higher values for
+variables 1 and 7. The ``filled box'' sample has a shape that matches the
+shape of the remaining samples of group 5.
+<BR><BR>
+
+<LI>
+<A HREF="XG_Known1.gif">Figure 3(a)</A> and
+<A HREF="XG_Known2.gif">Figure 3(b)</A>:
+(a) A dotplot of group for the 149 modern samples from known sampling
+locations. Within each of the groups 6 to 20 two training samples have
+been selected. The ``+'' symbols for all observations in groups 18 to 20
+have been obtained through linked brushing in (b) a projection
+of the grand tour. Here, two clusters are clearly distinguishable
+that separate <I>Caisteal nan Gillean</I> samples (the ``+'' samples) from <I>Cnoc Coig</I> samples.
+<BR><BR>
+
+<LI>
+<A HREF="XG_KnownCC1.gif">Figure 4(a)</A>,
+<A HREF="XG_KnownCC2.gif">Figure 4(b)</A>,
+<A HREF="XG_KnownCC3.gif">Figure 4(c)</A>, and
+<A HREF="XG_KnownCC4.gif">Figure 4(d)</A>:
+(a) When considering only the <I>Cnoc Coig</I> samples (groups 6 to 17),
+a dotplot reveals that the cluster brushed with a ``+'' symbol
+in (b) a projection of the grand tour contains mid beach (group 15)
+and upper beach (group 17) samples. (c) A dotplot of the final
+clustering of the <I>Cnoc Coig</I> samples shows the correct classification
+of dune samples (groups 8, 12 to 14) and the
+misclassification of two entire groups of upper beach samples
+(groups 7 and 11) and 1 mid beach sample (from group 10)
+based on (d) a projection of the grand tour where a
+homogeneous group of points has been marked with an ``&times;''
+symbol, assuming these are all dune samples.
+This projection also shows how the ``+'' cluster
+brushed in (b) separates into two subclusters.
+<BR><BR>
+
+<LI>
+<A HREF="XG_KnownCCPP1.gif">Figure 5(a)</A> and
+<A HREF="XG_KnownCCPP2.gif">Figure 5(b)</A>:
+(a) When considering only groups 6 to 17 for the reevaluation
+of Figure 4c in Fieller et al. (1984) a dotplot shows the symbols used
+to mark the 12 known groups at the <I>Cnoc Coig</I> site. (b) A projection
+showing a local optimum based on the projection-pursuit-guided
+grand tour and a manually drawn dividing line shows a separation
+between beach samples (left of the line) and dune samples
+(right of the line). However, upper beach locations from the
+CC transect (group 7) and from the TG transect (group 11) also
+fall right of the line.
+<BR><BR>
+
+<LI>
+<A HREF="XG_KnownCNGPP2.gif">Figure 6(a)</A> and
+<A HREF="XG_KnownCNGPP3.gif">Figure 6(b)</A>:
+Symbols used to mark the 5 groups from
+the <I>Caisteal nan Gillean</I> site for the reevaluation of Figure 4d in
+Fieller et al. (1984)
+are a small ``+'' (group 18),
+a large ``+'' (group 19),
+a ``&times;'' (group 20),
+a ``filled circle'' (group 5),
+and a ``empty box'' (group 21).
+Projection (a) shows a circular arrangement
+and projection (b) shows a linear arrangement, each obtained
+as a local optimum based on the projection-pursuit-guided 
+grand tour. These and many similar projections
+show more differences than similarities between
+archaeological samples (groups 5 and 21) and modern samples (groups
+18 to 20).
+<BR><BR>
+
+<LI>
+<A HREF="XG_All2.gif">Figure 7(a)</A> and
+<A HREF="XG_All3.gif">Figure 7(b)</A>:
+(a) A dotplot shows the symbols used for all 226 samples.
+(b) This projection separates between sites
+(the big ``+'' and ``&times;''
+symbols are <I>Cnoc Coig</I> samples, the small ``+'' and ``&times;'' symbols
+are <I>Caisteal nan Gillean</I> samples) and sands within sites (the ``+'' symbols are
+beach samples and the ``&times;'' symbols are ``dune-like'' samples).
+We see that archaeological <I>Caisteal nan Gillean</I> samples fall close to modern
+<I>Caisteal nan Gillean</I> samples (beach and dune). Archaeological <I>Cnoc Coig</I> samples
+are clearly distinguishable from modern <I>Cnoc Coig</I> beach.
+Sands above CC Midden (group 1) and Sands below CC Midden (groups 2 and 3)
+are close to modern <I>Cnoc Coig</I> dunes.
+CC Shell Midden (group 22) and CC Soil Pit (group 4)
+have some overlap with the other
+archaeological <I>Cnoc Coig</I> samples but they have very little in common
+with modern <I>Cnoc Coig</I> dunes.
+<BR><BR>
+
+<LI>
+<A HREF="EX_KnownOrig.gif">Figure 8</A>:
+Original parallel coordinate plot of all 149 modern samples from 
+<I>Cnoc Coig</I> and <I>Caisteal nan Gillean</I>.
+The <I>Cnoc Coig</I> data is in black, the <I>Caisteal nan Gillean</I> data in gray (red).  Data from the two
+sources strongly separate with the <I>Cnoc Coig</I> sand generally being much finer than
+the sand from the <I>Caisteal nan Gillean</I> site.
+<BR><BR>
+
+<LI>
+<A HREF="EX_KnownCC.gif">Figure 9</A>:
+Parallel coordinate plot of <I>Cnoc Coig</I> data after completing the
+BRUSH-TOUR strategy.  The data are divided into six clusters with red and
+magenta being ``dune-like'' sand. In the present image, all points are
+rendered in grayscale.  The reader is referred to the webpage for full
+color illustrations.
+<BR><BR>
+
+<LI>
+<A HREF="EX_KnownCCSeq.gif">Figure 10</A>:
+Sequence of decompositions for <I>Cnoc Coig</I> sand data.  Red and magenta
+are basically the ``dune-like'' sands, other colors represent the
+``beach-like'' sands. The strongest splits tend to occur early in the
+BRUSH-TOUR strategy.  Thus, the ``dune-beach'' split was the most evident.
+<BR><BR>
+
+<LI>
+<A HREF="EX_CCG2_3.gif">Figure 11</A>:
+Parallel coordinate display of <I>Cnoc Coig</I> known (training) data and <I>Cnoc Coig</I>
+groups 2 and 3 (sands below CC Midden) after partial grand tour.  The group
+2 and 3 data are given
+in black.  The group 2 and 3 data generally follow the red-magenta
+``dune-like'' sand data.  However the group 2 and 3 data clearly depart
+significantly in certain dimensions, notably along the .50-.71 mm axis in
+this illustration.
+<BR><BR>
+
+<LI>
+<A HREF="EX_AllCC.gif">Figure 12</A>:
+Simplified parallel coordinate display of all <I>Cnoc Coig</I> data after
+partial grand tour.  ``Dune-like'' sands are shown in medium gray (red),
+``beach-like'' sands
+are shown in light gray (green), and ``unknown'' sands shown in black.  The
+unknown class
+is distinct from both ``dune-like'' sand and ``beach-like'' sand. This is
+particularly clear in the .25-.355 and the .50-.71 axes.
+<BR><BR>
+
+<LI>
+<A HREF="EX_AllCCDens.gif">Figure 13</A>:
+Simplified scatterplot matrix of all <I>Cnoc Coig</I> data after partial
+grand tour. The coloring is as in Figure 12. A density plot
+of the circled scatterplot is shown in the upper right. In the density plot, the
+tallest bump/mode corresponds to the red ``dune-like'' sand, the two smaller
+bumps/modes to the left-center correspond to the green ``beach-like''
+sand, and the smaller bumps/modes on the right corresponds to the black
+``unknown'' sand. The ``unknown'' sand is most like the ``dune-like''
+sand, but still rather distinct.
+<BR><BR>
+
+<LI>
+<A HREF="M_KnownDot.gif">Figure 14</A>:
+Dotplots of all variables for all 149 modern samples
+from known sampling locations.
+Bright colors represent many points and dark colors only a few
+points. Measurements on the extreme particle sizes >2.0mm, 1.4 - 2.0mm,
+1.0 - 1.4mm, .71  -  1.4mm, .063 - .09mm, and <.06mm are highly
+quantized.
+Large gaps in the data are apparent for variables .355 - .50mm and .25 -
+.355mm.
+<BR><BR>
+
+<LI>
+<A HREF="M_KnownBox.gif">Figure 15</A>:
+Boxplots for all 149 modern (training) samples. 
+Variables >2.0mm, 1.4 - 2.0mm,
+1.0 - 1.4mm, ..., .063 - .09mm, and <.06mm are displayed from
+left to right. Only two variables, .18 - .25mm and
+.09 - .125mm, show no outliers. These two distributions are also only
+slightly skewed. Data on all the other variables is skewed to the right,
+but data on particle size .125 - .18mm is skewed to the left.
+<BR><BR>
+
+<LI>
+<A HREF="M_KnownSiteDot.gif">Figure 16</A>:
+Clear classification between sites <I>Cnoc Coig</I> (top) and <I>Caisteal nan Gillean</I> (bottom) when
+selecting
+clusters of variable `[0.25, 0.355) mm'.  Also the
+variables `[0.355, 0.5) mm',  `[0.125, 0.18) mm', and
+`[0.09, 0.125) mm' allow
+a clear separation between <I>Cnoc Coig</I> and <I>Caisteal nan Gillean</I>.
+<BR><BR>
+
+<LI>
+<A HREF="M_AllSiteSep.gif">Figure 17</A>:
+We apply the classification rule of training data to the entire
+data set of 226 samples. (a) Selecting the right-hand cluster in variable
+.25 - .355mm highlights all training samples at <I>Caisteal nan Gillean</I>, one sample of
+group 5 and also all but
+one samples of group 21. (b) However, 16 points
+fall between the previously established clusters. Those points are
+classified by using the classification rule based on the training data
+for variable .355 - .50mm. (c) The resulting classification
+is correct for groups 18 to 21, but misses two samples in group 5 and
+misclassifies five samples in group 4.
+<BR><BR>
+
+<LI>
+<A HREF="M_KnownCCDune.gif">Figure 18</A>:
+The dune samples at <I>Cnoc Coig</I> split into two groups for variables
+.18 - .25mm and .125 - .18mm. Group 12 (marked red, i. e. bigger
+light dots) is
+different from groups 8, 13, and 14 (all marked blue, i. e. bigger
+dark dots). From the
+position of the two groups it can be concluded that dune sands of
+group 12 are much finer since these samples have heavier weights from
+the finer sieves and lighter weights from the coarser sieves.
+<BR><BR>
+
+<LI>
+<A HREF="M_KnownCC3Groups.gif">Figure 19</A>:
+The distribution for particle size `[0.09, 0.125)mm' seems to be a
+mixture of four individual distributions: one for the <I>Caisteal nan Gillean</I>
+samples, one for groups 7, 8, 11, 13, and 14 (in a), one for groups
+6,  10, 12, and 17 (in b), and one for groups 9, 15, and 16 (in c).
+<BR><BR>
+
+<LI>
+<A HREF="M_KG12.gif">Figure 20</A>:
+Individual separation of group 12 by sequentially
+selecting subclusters (the dashed areas) in the respective highlighting of
+particle sizes
+`[0.09, 0.125)mm', `[0.25, 0.355)mm', and `[0.335, 0.50)mm'. No further
+clustering can be found in the dotplots of the other variables
+.125 - .18mm and .18 - .25mm (right under the bar chart for group).
+<BR><BR>
+
+</UL>
+
+<HR WIDTH="100%">
+
+<BR>
+Last Update January 25, 1999
+
+</BODY></HTML>
+
+
+  
